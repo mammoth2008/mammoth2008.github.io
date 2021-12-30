@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 人生玩家</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://yemengma.cn/post/</link>
     <description>Recent content in Posts on 人生玩家</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 30 Dec 2021 20:07:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 30 Dec 2021 20:07:25 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some Content</title>
-      <link>http://localhost:1313/post/some-content-copy/</link>
+      <link>https://yemengma.cn/post/some-content-copy/</link>
       <pubDate>Thu, 30 Dec 2021 20:07:25 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/some-content-copy/</guid>
+      <guid>https://yemengma.cn/post/some-content-copy/</guid>
       <description>第二个测试 又一个测试.</description>
     </item>
     
     <item>
       <title>Some Content</title>
-      <link>http://localhost:1313/post/some-content/</link>
+      <link>https://yemengma.cn/post/some-content/</link>
       <pubDate>Thu, 30 Dec 2021 18:19:25 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/some-content/</guid>
+      <guid>https://yemengma.cn/post/some-content/</guid>
       <description>测试 又一个测试.</description>
     </item>
     
     <item>
       <title>2021 Week 39 读书小结</title>
-      <link>http://localhost:1313/post/2021-10-02-reading-record/</link>
+      <link>https://yemengma.cn/post/2021-10-02-reading-record/</link>
       <pubDate>Sat, 02 Oct 2021 12:07:25 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/2021-10-02-reading-record/</guid>
-      <description>2021 Week 39 读书小结 推荐一本书：秦谜 真相可能是不是这样，但是并不妨碍建立在史料基础上的合理推测。对于迷雾重重的千古一帝，这本书提出了几个重要问题，</description>
+      <guid>https://yemengma.cn/post/2021-10-02-reading-record/</guid>
+      <description>推荐一本书：秦谜 真相可能是不是这样，但是并不妨碍建立在史料基础上的合理推测。对于迷雾重重的千古一帝，这本书提出了几个重要问题，并且给出了推理</description>
     </item>
     
   </channel>
