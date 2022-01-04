@@ -203,6 +203,16 @@ a:focus {
     line-height: 1.5;
 }
 
+.present img {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.present .small {
+    opacity: 1;
+    transition: 0.7s;
+}
+
 #math span{
     vertical-align: baseline;
 }
@@ -531,30 +541,30 @@ h6 {
 
 
 img {
-    width: 820px;
-    margin-left:    0px;
-    margin-bottom: 20px;  
-    object-fit: cover;
-}
-
-.draw{
     height: auto;
     width: auto;
-    display: block;
+    
     margin:middle;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     max-height: 600px;
-    max-width: 800px;    
+    max-width: 820px;
     object-fit: cover;
+/*  制作和排版时设为1;
+    发布时设为0;
+    注意Z轴取值,避免遮挡;
+*/
+    opacity: 0;
 }
 
 .icon {
+    display: inline-block;
     height: 16px;
     width: 16px;
     vertical-align: middle;
+    opacity: 1;
 }
 
 .small{
@@ -563,17 +573,7 @@ img {
     margin-left:   40px;
     margin-right:   0px;
     margin-top:    20px;
-    margin-bottom: 20px; 
-}
-
-.bg {
-    position: fixed;
-    margin-top: 0px;
-    margin-left: 0px;
-    z-index: -100;
-    opacity: 0.7;
-    height: 100%;
-    transition:  opacity 2s;
+    margin-bottom: 20px;
 }
 
 .lefttext {
@@ -597,7 +597,11 @@ inlinecode {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
-
+div .chglog {
+    font-family: "CONSOLA", consolas, "Inconsolata-Regular", Inconsolata, "Cutive mono", "Courier New", monospace;
+    font-size: 14px;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
 
 .hint {
     /*
