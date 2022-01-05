@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>ITPM | HUST</title>
+    
+    <meta name="description" content="IT项目管理课程使用，为哈尔滨理工大学经济管理学院信息管理与信息系统系设计。" />
+    <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+    </script>
+
+    <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+    <link href="../css/impress-course.css" rel="stylesheet" />
+    <link href="../css/impress-common.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="../img/HUST_LOGO_72.png" />
+    <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+</head>
+
+<body class="impress-not-supported">
+
+<!-- 左上角加上logo -->
+<div class="logo"></div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress"
+    data-transition-duration="1000"
+    
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    
+    data-autoplay="0">
+
+<!-- 
+为每一个 step 加 id；
+规则是每个知识点视为一个模块,一个知识点+多个条目;
+使用相对位置，展开的内容相对于知识点 id 定位;
+使用绝对长度单位，不使用 h 和 w 这样的相对长度单位；
+多个知识点组合成首页；
+除首页外，每个 step 的属性：
+必选
+    id
+    class
+    data-rel-to
+    data-rel-x
+    data-rel-y
+    data-rel-z
+    data-rotate-x
+    data-rotate-y
+    data-rotate-z
+    data-scale
+可选
+    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
+    data-goto-next-list=
+首页使用绝对定位
+    data-x
+    data-y
+    data-z
+-->
+
+<!--
+在 markdown 中插入以下内容，方便排版
+
+</div>
+
+<div 
+id="" 
+class="step markdown" 
+data-rel-to="" 
+data-rel-x="0" 
+data-rel-y="0" 
+data-rel-z="0" 
+data-rotate-x="0" 
+data-rotate-y="0" 
+data-rotate-z="0" 
+data-scale="1">
+
+-->
+
+<!-- 绕 X 轴旋转的四个step，类似方盒子 -->  
+
+<div 
+id="image" 
+class="step markdown" 
+data-x="0"
+data-y="0"
+data-y="0"
+data-scale="2">
+
+![](../img/contact-bg.jpg)
+
+##### contact background
+    
+</div>
+
+<div 
+id="image2" 
+class="step markdown" 
+data-rel-to="image" 
+data-rel-x="0" 
+data-rel-y="1200" 
+data-rel-z="0" 
+data-rotate-x="0" 
+data-rotate-y="30" 
+data-rotate-z="0" 
+data-scale="2">
+
+![](../img/p_p_s_chen.jpg)
+
+##### PPS.陈
+    
+</div>
+
+<div 
+ 
+class="step markdown" 
+data-rel-x="0" 
+data-rel-y="1200" 
+data-rel-z="0" 
+data-rotate-x="0" 
+data-rotate-y="60" 
+data-rotate-z="0" 
+data-scale="2">
+
+![](../img/contact-bg.jpg)
+
+##### contact background
+    
+</div>
+
+<div 
+ 
+class="step markdown" 
+data-rel-x="0" 
+data-rel-y="1200" 
+data-rel-z="0" 
+data-rotate-x="0" 
+data-rotate-y="90" 
+data-rotate-z="0" 
+data-scale="2">
+
+![](../img/p_p_s_chen.jpg)
+
+##### PPS.陈
+    
+</div>
+
+</div>
+
+<!--
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+</script>
+
+<div id="impress-help"></div>
+<div id="impress-toolbar"></div>
+<div class="impress-progress"></div>
+
+<script src="../extras/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+-->
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<!-- 引入数学公式 -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "CommonHTML": {
+        scale: 100
+    }
+});
+</script>   
+<!-- 引入完毕 -->
+
+<script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+<script src="../js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
