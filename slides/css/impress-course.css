@@ -280,7 +280,7 @@ a:focus {
     background-repeat:  no-repeat; 
     background-attachment:  fixed; 
     background-position: 16px 16px; 
-    background-image: url(../img/HUST_LOGO_72.png);
+    background-image: url(../hustlogo72.png);
 }
 
 
@@ -366,7 +366,6 @@ h4 {
 h5 {
     font-size: 36px;
     line-height: 1.2;
-    text-align: center;
 }
 
 h6 {
@@ -386,6 +385,11 @@ h6 {
 
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
+
+#dev {
+    background-color: #FFFFFF;
+}
+
 #big {
     width: 800px;
     text-align: center;
@@ -564,7 +568,7 @@ img {
     display: inline-block;
     height: 16px;
     width: 16px;
-    vertical-align: baseline;
+    vertical-align: middle;
     opacity: 1;
 }
 
@@ -594,10 +598,8 @@ strong {
 /* Inline code, no Highlight.js */
 inlinecode {
     font-family: "CONSOLA", consolas, "Inconsolata-Regular", Inconsolata, "Cutive mono", "Courier New", monospace;
-    display: inline-block;
     font-size: 36px;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    vertical-align: middle;
 }
 
 div .chglog {

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides on 人生玩家</title>
+    <link>https://yemengma.cn/slides/</link>
+    <description>Recent content in Slides on 人生玩家</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://yemengma.cn/slides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://yemengma.cn/slides/3itpm/itpm-basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yemengma.cn/slides/3itpm/itpm-basic/</guid>
+      <description>项目管理的知识体系 启动、计划、执行、控制、收尾五个过程； 整合管理、范围管理、进度管理、 成本管理、质量管理、资源管理、沟通管理、 风险管理、采购</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yemengma.cn/slides/3itpm/temp/pmp%E8%80%83%E5%89%8D%E4%B8%80%E5%B0%8F%E6%97%B6%E7%B3%BB%E5%88%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yemengma.cn/slides/3itpm/temp/pmp%E8%80%83%E5%89%8D%E4%B8%80%E5%B0%8F%E6%97%B6%E7%B3%BB%E5%88%97/</guid>
+      <description>一、三点估算 计划评审技术PERT使用三种估算值来界定活动持续时间的近似区间：最可能时间(tM)、最乐观时间(tO)、最悲观时间(tP)、期望</description>
+    </item>
+    
+  </channel>
+</rss>
