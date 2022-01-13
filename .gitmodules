@@ -1,0 +1,3 @@
+[submodule "slides"]
+	path = slides
+	url = git@github.com:mammoth2008/slides.git
