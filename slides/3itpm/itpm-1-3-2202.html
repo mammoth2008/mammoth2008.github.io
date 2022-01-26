@@ -12,8 +12,19 @@
         <meta name="description" content="IT项目管理课程使用，为哈尔滨理工大学经济管理学院信息管理与信息系统系设计。" />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
+        <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
         <link href="../css/impress-course.css" rel="stylesheet" />
         <link href="../css/impress-common.css" rel="stylesheet" />
+
         <link rel="shortcut icon" href="../hustlogo72.png" />
         <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
 
@@ -21,6 +32,7 @@
 
     <body class="impress-not-supported">
 
+    <!-- 左上角加上logo -->
     <div class="logo"></div>
 
     <div class="fallback-message">
@@ -29,27 +41,29 @@
 
     </div>
 
-    <div id="impress"
-    data-transition-duration="1000"
-    data-width="1024"
-    data-height="768"
-    data-max-scale="3"
-    data-min-scale="0"
-    data-perspective="1000"
-    data-autoplay="0">
+    <div 
+    id                  = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
 
     <!-- 每一节slide的标题是"cxyt",表示章节标题.如第一章第一节标题就是c11t,第三章第二节标题就是c32t -->
     <!-- 每一节slide的标题页class应该是step,不是step markdown -->
     <!-- 类似地,需要HTML排版的slide,class都是step;可以使用markdown的,class才是step markdown -->
 
-    <div
-    id="overview" 
-    data-x="0"
-    data-y="0" 
-    class="step" 
-    data-scale="10">
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "15">
 
     </div>
+
 <!-- 修改id -->
     <div 
     id="c13t" 
@@ -203,6 +217,15 @@
 
     </div>
 
+    <div 
+    id         = "overviewend" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "15">
+
+    </div>
+
     </div>
 
     <!--
@@ -215,6 +238,16 @@
     }
     </script>
     -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
 
     <!-- 页面下方显示进度条 -->
     <div class="impress-progressbar">
@@ -234,6 +267,5 @@
     <!-- impress.js需要放在最下面,并且初始化 -->
     <script src="../js/impress.js"></script>
     <script>impress().init();</script>
-    
     </body>
     </html>

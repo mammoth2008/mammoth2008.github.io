@@ -12,8 +12,19 @@
         <meta name="description" content="IT项目管理课程使用，为哈尔滨理工大学经济管理学院信息管理与信息系统系设计。" />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
+        <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
         <link href="../css/impress-course.css" rel="stylesheet" />
         <link href="../css/impress-common.css" rel="stylesheet" />
+
         <link rel="shortcut icon" href="../hustlogo72.png" />
         <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
 
@@ -21,6 +32,7 @@
 
     <body class="impress-not-supported">
 
+    <!-- 左上角加上logo -->
     <div class="logo"></div>
 
     <div class="fallback-message">
@@ -29,27 +41,29 @@
 
     </div>
 
-    <div id="impress"
-    data-transition-duration="1000"
-    data-width="1024"
-    data-height="768"
-    data-max-scale="3"
-    data-min-scale="0"
-    data-perspective="1000"
-    data-autoplay="0">
+    <div 
+    id                  = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
 
     <!-- 每一节slide的标题是"cxyt",表示章节标题.如第一章第一节标题就是c11t,第三章第二节标题就是c32t -->
     <!-- 每一节slide的标题页class应该是step,不是step markdown -->
     <!-- 类似地,需要HTML排版的slide,class都是step;可以使用markdown的,class才是step markdown -->
 
-    <div
-    id="overview" 
-    data-x="0"
-    data-y="0" 
-    class="step" 
-    data-scale="10">
-
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "15">
+        
     </div>
+
 
     <div 
     id="c11target" 
@@ -107,7 +121,7 @@
     data-rel-y="800" 
     data-z="-10"
     data-scale="2">
-    
+
 ### 项目
 - 沈括《梦溪笔谈》记载:
 - 祥符中，禁火。时丁晋公主营复宫室，患取土远，公乃令凿通衢取土，不日皆成巨堑。乃决汴水入堑中，引诸道竹木排筏及船运杂材，尽自堑中入至宫门。事毕，却以斥弃瓦砾灰尘壤实于堑中，复为街衢。一举而三役济，计省费以亿万计。
@@ -123,7 +137,7 @@
     data-rel-z="-1000" 
     data-rotate-y="90" 
     data-scale="2">
-        
+
         <h3>项目</h3>
         <p class="substep">建造金字塔</p>
         <p class="substep">修建长城</p>
@@ -135,7 +149,7 @@
         <p class="substep">旅游一次</p>
         <p class="substep">写一篇文章</p>
         <p class="substep">装修一次房子</p>
-        
+
     </div>
 
     <div 
@@ -147,7 +161,7 @@
     data-rel-z="-2000" 
     data-rotate-y="180" 
     data-scale="2">
-        
+
         <h3>运营</h3>
         <p class="substep">维护机器</p>
         <p class="substep">打扫卫生</p>
@@ -159,7 +173,7 @@
         <p class="substep">清点库存</p>
         <p class="substep">安排生产计划</p>
         <p class="substep">按时存钱</p>
-        
+
     </div>
 
     <div 
@@ -195,7 +209,7 @@
 
     </div>
 
-	<div 
+    <div 
     id="pvso1" 
     class="step markdown"
     data-rel-to="pvso" 
@@ -248,7 +262,7 @@
 - 管理目的是从周而复始的工作中获得相应回报
 
     </div>
-    
+
     <div 
     id="pvso4" 
     class="step markdown"
@@ -279,7 +293,7 @@
     data-rotate-y="0" 
     data-rotate-z="0"
     data-scale="2">
-        
+
         <h3>课本给出的项目定义</h3>
         <p>用来满足<b class="point">项目利益相关者</b>特定需求的<b class="point">独特性、临时性</b>的努力。</p>
         <br/>
@@ -287,7 +301,7 @@
         <p>项目是为创造<b class="point">独特的</b>产品、服务或成果而进行的<b class="point">临时性</b>工作。</p>
         <br/>
         <p class="footnote" style="text-align: left">* 2017 年，PMI 发布了《PMBOK&reg;指南》(A Guide to the Project Management Body of Knowledge)第六版。第七版于 2021 年末发布，内容有重大改动。</p>
-        
+
     </div>
 
     <div 
@@ -300,7 +314,7 @@
     data-rotate-y="90"
     data-rotate="0"
     data-scale="2">    
-    
+
 ### 项目利益相关者（Stakeholder，即干系人）
 
 - 对某个项目有特定兴趣的实体，包括项目团队成员、项目发起者、利益相关者、雇员和社区等。
@@ -317,7 +331,7 @@
     data-rotate-y="180" 
     data-rotate="0" 
     data-scale="2">
-    
+
 ### 独特性
 
 - 项目所形成的产品、服务、成果、活动，在关键特性上不同于其他的产品、服务、成果或活动。
@@ -334,7 +348,7 @@
     data-rotate-y="270"  
     data-rotate="0" 
     data-scale="2">
-    
+
 ### 临时性
 
 - 项目有明确的起点和终点。
@@ -352,13 +366,13 @@
     data-rotate-y="0" 
     data-rotate="0"
     data-scale="2">
-        
+
         <p>项目团队常常是在项目开始的时候形成，在完成的时候解散。</p>
         <br/>
         <p>项目是由相关活动组成的、有计划、有目标的任务。</p>
         <br/>
         <p>开展项目是为了通过可交付成果达成目标。</p>
-        
+
     </div>
 
     <div 
@@ -370,7 +384,7 @@
     data-rotate-y="0" 
     data-rotate="0"
     data-scale="2">
-    
+
 ### 项目的特点
 
 - 目的性
@@ -390,8 +404,8 @@
     data-rel-y="0" 
     data-rotate-y="0" 
     data-rotate="90"
-    data-scale="2">    
-    
+    data-scale="2">
+
 ### 项目的分类
 
 - 土木工程类
@@ -497,7 +511,7 @@
     data-rotate-y="0" 
     data-rotate="0" 
     data-scale="2">
-    
+
 ### 项目生命周期
 
 - 概念阶段（Conceptual）
@@ -609,7 +623,7 @@
     data-rotate-y="0" 
     data-rotate="360" 
     data-scale="2">
-    
+
 ### 典型项目所包含的元素
 
 - 组织元素
@@ -650,7 +664,7 @@
     data-rotate-z="180" 
     data-rotate-x="77" 
     data-scale="2">
-    
+
 ### 1.1 项目
 
 - 什么是项目？
@@ -658,8 +672,6 @@
 - 项目如何分类？
 - 项目周期分成哪几个阶段，为什么？
 - 和项目相对的概念是什么？这两个概念之间有什么区别？
-
-----
 
 [< 全景图 ](itpm-0-2202.html#/overview)
 [| 练习 |](itpm-exec.html)
@@ -680,6 +692,16 @@
     </script>
     -->
 
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
     <!-- 页面下方显示进度条 -->
     <div class="impress-progressbar">
         <div></div>
@@ -698,6 +720,5 @@
     <!-- impress.js需要放在最下面,并且初始化 -->
     <script src="../js/impress.js"></script>
     <script>impress().init();</script>
-    
     </body>
     </html>
