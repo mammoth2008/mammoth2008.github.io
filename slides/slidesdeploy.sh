@@ -14,7 +14,7 @@ cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
 
 git add -A
 
-msg="rebuilding site $(date)"
+msg="rebuild SLIDES $(date)"
 
 if [ -n "$*" ]; then
 	msg="$*"
@@ -28,7 +28,7 @@ cd $HOME/Documents/2_hust/slides
 
 git add -A
 
-msg="rebuilding site $(date)"
+msg="rebuilding SLIDES $(date)"
 
 if [ -n "$*" ]; then
 	msg="$*"
@@ -38,4 +38,4 @@ git commit -m "$msg"
 
 git push origin main
 
-printf "\n\n👻👻👻\nDEPLOY SLIDES\nALL DONE\n😸😸😸\n\n"
+printf "\n\n 🖥️  🖥️  🖥️ \nDEPLOY SLIDES\nALL DONE\n ⌨️  ⌨️  ⌨️  \n\n"
