@@ -5,6 +5,12 @@ set -e
 
 printf "Deploying SLIDES to GitHub..."
 
+cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
+
+rm -rf slides
+
+mkdir slides
+
 cd $HOME/Documents/2_hust/slides
 
 # 复制除了.git/之外的文件和文件夹
@@ -38,4 +44,4 @@ git commit -m "$msg"
 
 git push origin main
 
-printf "\n\n 🖥️  🖥️  🖥️ \nDEPLOY SLIDES\nALL DONE\n ⌨️  ⌨️  ⌨️  \n\n"
+printf "\n\n 🖥️  🖥️  🖥️ \nDEPLOY SLIDES DONE\n ⌨️  ⌨️  ⌨️  \n\n"
