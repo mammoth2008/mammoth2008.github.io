@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>都 2022 年了，为什么我还在用 Vim - 人生玩家</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="猛犸" /><meta name="description" content="用于创造的工具，效率越高越好" /><meta name="keywords" content="Vim, 工具, 效率" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.1 with theme even" />
+
+
+<link rel="canonical" href="https://yemengma.cn/post/220204-using-vim/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.e816c8c52edc6cd05f17039e596b421f68ea700c293e24c20ac0c38d65e38883.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="都 2022 年了，为什么我还在用 Vim" />
+<meta property="og:description" content="用于创造的工具，效率越高越好" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yemengma.cn/post/220204-using-vim/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-04T08:35:49+08:00" />
+<meta property="article:modified_time" content="2022-02-05T07:28:49+08:00" />
+
+<meta itemprop="name" content="都 2022 年了，为什么我还在用 Vim">
+<meta itemprop="description" content="用于创造的工具，效率越高越好"><meta itemprop="datePublished" content="2022-02-04T08:35:49+08:00" />
+<meta itemprop="dateModified" content="2022-02-05T07:28:49+08:00" />
+<meta itemprop="wordCount" content="4929">
+<meta itemprop="keywords" content="工具,生产力,技能,软件," />
+
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">人生玩家</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo"><img src="/mstile-150x150.png" style="width: 42px; height: 42px; display: inline-block; vertical-align: -4px;">人生玩家</a>
+</div>
+
+
+
+
+</style>
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">都 2022 年了，为什么我还在用 Vim</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-02-04 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/"> 生产力 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#tldr-太长不看">TL;DR 太长不看</a></li>
+            <li><a href="#vim-的最小必要知识">Vim 的最小必要知识</a></li>
+            <li><a href="#一点背景信息">一点背景信息</a></li>
+            <li><a href="#为什么要使用-vim">为什么要使用 Vim</a></li>
+            <li><a href="#如何入门">如何入门</a></li>
+            <li><a href="#基本原则">基本原则</a></li>
+            <li><a href="#几个小提示">几个小提示</a></li>
+            <li><a href="#下一步">下一步</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h3 id="tldr-太长不看">TL;DR 太长不看</h3>
+<ul>
+<li>Vim 是强大高效灵活优雅的文本编辑器；</li>
+<li>使用 Vim 是复利投资，也是有趣的探索；</li>
+<li>所有常见操作系统都有 Vim，你的电脑里可能已经预装了它；</li>
+<li>Vim 有无数强大插件可以提升你的编辑效率；</li>
+<li>要开始使用 Vim，掌握几个基本功能就够了；</li>
+<li>唯一需要的，是不断尝试、总结、改进的练习心态；</li>
+</ul>
+<h3 id="vim-的最小必要知识">Vim 的最小必要知识</h3>
+<ol>
+<li>Vim 用户的最高理想，是以思考的速度编辑文本。也许没有人能真正实现这一理想，但是有些人的确很接近。</li>
+<li>Vim 是世界上寿命最长的软件之一，至今已有 30 年历史，而且还在持续改进中。它的灵感之源是 <a href="https://en.wikipedia.org/wiki/Bill_Joy">Bill Joy</a> 在上世纪七十年代所写的 vi，而 vi 的前身是伴随着 Unix 诞生的 ed。Vim，就是“Vi IMproved”。</li>
+<li>使用 Vim 时无需鼠标。Vim 支持鼠标，但是 Vim 用户嫌弃鼠标拖慢了他们的速度。</li>
+<li>Vim 有庞大的用户社区，是编辑器大战的阵营之一。另一方是 Emacs，第三方是其他所有编辑器：“编辑器之神”和“神之编辑器”，以及其它。</li>
+<li>Vim 和其他常见文本编辑器的根本区别是“模式”。Vim 可以在几种模式中切换，但同一时间只能处于一种模式。大部分时候，Vim 处于“普通”(Normal) 模式。在这种模式下，按下键盘上的某个键将会触发一个命令，而不是把对应的字符显示在屏幕上。这是最困扰 Vim 初级使用者的。</li>
+<li>Vim 有一个深刻洞察（从 vi 继承来的）：无论我们写程序、写小说，或者只是写个简单的说明书，花在修改上的时间总比花在写作上的时间多；而修改时花费时间最多的，是移动光标、选择或删除需要修改的对象。</li>
+<li>Vim 有一个优雅设计（也是从 vi 继承来的）：文本结构化。一篇文章包括一个或多个段，每段包括一个或多个句子，一个句子包括一个或多个词，这些都是可以单独编辑的文本对象。程序代码也是如此，一对引号、一对括号、一对中括号、一对大括号、HTML 中的一对标签，也都是文本对象。想要删除一整块代码？只需要敲三个键。</li>
+<li>Vim 编辑英文文章或程序代码非常流畅，但中文文章时会差一些。这是因为 Vim 不支持中文分词。不过我们可以稍微迂回地解决这个问题。</li>
+<li>很难完全掌握 Vim。它的<a href="https://yianwillis.github.io/vimcdoc/doc/help.html">中文帮助手册和用户参考手册</a>一共有 4000 页。stackoverflow.com 上<a href="https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor">“如何退出 Vim 编辑器？”</a>的浏览次数超过了 250 万次。不过我们只需要启动 Vim，尝试几个简单命令，就已经在使用 Vim 了。</li>
+<li>Vim 并不需要学习；它需要使用。最好每天都用。</li>
+</ol>
+<h3 id="一点背景信息">一点背景信息</h3>
+<p>我的工作主要是和文本打交道：写文章，翻译，写一点程序。2008 年开始比较频繁地使用 Ubuntu，2010 年左右开始以 Ubuntu 为主，偶尔才用 Windows。</p>
+<p>用 Ubuntu 的原因之一是离开微软生态，另一个原因就是久仰的 Vim。不过 Vim 的确不怎么容易上手。跟着官方的 vimtutor 走了几遍，只记住了一些移动命令，还有打开文件、保存文件、退出 Vim，以及剪切、复制和粘贴。</p>
+<p>一开始只能用 hjkl 笨拙地移动，只会用 a 和 i 进入插入模式，只会按 Esc 键回到普通模式，只会用 ZZ 保存和退出，只能用网上搜索拼凑出来的 vimrc 配置文件。虽然总会忘记切换模式，经常会打开莫名其妙的窗口，不过也算是开始使用了。</p>
+<p>只要开始，就总是会有进步的。对笨拙缓慢的操作厌倦了以后，自然就会去找更好的方法；重复某些系列操作太多，自然就会想去把它自动化。渐渐地，按键成了肌肉记忆，就像用双拼输入法般完全不必想。</p>
+<p>2013 年彻底转到 Mac 生态，Vim 的配置和使用习惯也带了过来。机器的性能越来越强，显示器的分辨率越来越高，终端从 gnome-terminal 换成了 iTerm2，Shell 从 bash 换成了 zsh（还加上了 oh-my-zsh)，Vim 也终于升级到了第八个大版本，但一直是我的主力编辑器。</p>
+<p>十几年间，我的 Vim 的配置文件像是忒修斯之船，不知道还有哪里没有被修改过。打开某些开关，关上另外一些；加上几个键盘映射，删掉一些不常用的；添加某个插件，偶尔又卸载掉；旧的插件不维护了，换成新的；性能差的插件被性能好的替代；即使是插件管理插件本身，也经历了几次替换。</p>
+<p>随着需求逐渐清晰和技能慢慢提升，Vim 也在变得越来越顺手。也许永远不会达到完美，永远达不到“以思考的速度编辑”，但是每次发现了一个新用法，总会觉得有一点欣喜，觉得离完美更近了一点。</p>
+<blockquote>
+<p>我们应该致力在不完美的存在中找到完美的存在，应该致力在不完美中找到完美。对我们来说，全然的完美与不完美没有什么不同。
+——铃木俊隆，《禅者的初心》</p>
+</blockquote>
+<p>这么多年来，我写 txt，ReST，Markdown，写一点 C，一点 Python，一点 HTML 和 CSS，最主要的编辑器都是 Vim。有时候我用 Typora 或 Ulysses，有时候会用 Sublime Text、PyCharm、WebStorm，也从 iPython 用到 Jupyter，但最习惯的动作，还是用快捷键呼出 iTerm2，然后输入<code>v &lt;filename&gt;</code>。</p>
+<h3 id="为什么要使用-vim">为什么要使用 Vim</h3>
+<p>首先，当然是<strong>效率</strong>。</p>
+<p>的确，对一般用户来说，<a href="https://dreamsongs.com/WorseIsBetter.html">更糟就是更好</a>是成立的：软件受欢迎的程度并不随功能的增加而提高，太多选择会让人不知所措而心生厌倦。用户使用软件是为了完成自己的任务、达成自己的目标，并不是成为专家。</p>
+<p>日常使用的科技产品追求开箱即用，追求简明清晰，追求只靠直觉来操作。降低认知损耗，这是对的。</p>
+<p><a href="https://book.douban.com/subject/1467587/">《Unix 编程艺术》</a>中也说：“最易用的程序就是用户需要学习新东西最少的程序——或者，换句话说，最易用的程序就是最切合用户已有知识的程序。”</p>
+<p>但编辑器不是日常科技产品，它是用来创造的工具。为了效率，我们需要牺牲一点舒适和直觉。</p>
+<p>开汽车和开飞机哪一个更容易？全拼输入和五笔输入哪一个更容易？而哪一个效率更高呢？不言而喻。</p>
+<p>对于需要使用键盘和鼠标操作的计算机软件来说，简单易用就意味着低效率。我们也许可以列出几条简单的经验法则：</p>
+<ul>
+<li>手臂、手腕、手指在完成操作时的移动距离越短，效率越高；</li>
+<li>击键次数越少、键位越容易被主要手指按到，效率越高；</li>
+<li>操作越熟练，操作过程越不干扰思路，效率越高；</li>
+</ul>
+<p>所以我们认为快捷键效率高于鼠标右键菜单，鼠标右键菜单效率高于菜单栏菜单项；输入 20 次 j 的效率低于输入：20G 的效率；双拼比全拼效率高，五笔比双拼效率高；盲打比二指禅效率高，熟悉的快捷键比陌生的快捷键效率高。</p>
+<p>即使是标榜最简单易用的编辑器，也会列出大量快捷键。不同用户的需求不同，但是软件不应该去阻碍用户对高效的追求。</p>
+<p>同样还是在<a href="https://book.douban.com/subject/1467587/">《Unix 编程艺术》</a>中说：“调试通常会占用四分之三甚至更多的开发时间。”</p>
+<p>使用快捷键，把记忆的负担从机器上转到了人身上，但是提升了操作效率。</p>
+<p>这是“必要的懒惰”。用尽可能少的操作来完成尽可能多的任务；例如设置新的快捷键，设置宏，写几行代码来自动重复操作。这种懒惰，需要尝试、探索、总结才能获得。</p>
+<p>其次，是<strong>灵活</strong>。</p>
+<p>在 Vim 中几乎可以自定义一切。外观可以随意调整，提示方式可以随心更换。几乎所有的功能都可以重新映射，可以把最常用的功能放在最顺手的位置。</p>
+<p>灵活是效率的注脚。灵活意味着可以自行打造自己的工具，最适合自己的使用习惯，最适应自己要完成的任务，也就意味着更高的效率。</p>
+<p>不过当然，灵活意味着让初级用户不知所措，意味着混乱，意味着反复练习，意味着你只能用自己配置的 Vim。</p>
+<p>这些其实不是问题。毕竟初级用户变成中级用户的路途，是以大量尝试和练习来铺就的；而专家用户，只是失败得更多也练习得更多的中级用户。自己的机器只有自己使用已经是常识；就算偶尔要去远程使用其他机器，也完全可以把配置文件连同相关目录打个包扔到网盘、github 或者 U 盘里，到时直接下载就好。</p>
+<p>再次，是<strong>投资</strong>。</p>
+<p>唯一能和 IT 界比潮流速度的，可能只剩时尚界了。</p>
+<p>不过潮流来了又去，底层却不易变化。每过一阵就有新的编辑器、新的框架、新的语言、新的概念独领一时风骚，但 Unix 设计哲学、传统数据结构、C 语言长存。</p>
+<p>Vim 也是如此。它很可能会随着键盘的消失而消失，不过在那之前都会存在——存在时间越长的东西，越有可能继续存在下去。使用 Vim，是对自己工作效率的一项长期复利投资。</p>
+<p>一些现代编辑器也提供了 Vim 模式或 Vim 插件，Sublime Text、Atom、VS Code 都有，可以提供 Vim 的主要功能。在不同工具中使用同一套已经熟悉的操作方法，这也是效率的体现。</p>
+<p>更进一步地，浏览器也有 Vim 插件。Chrome 上有几个插件，其中比较受欢迎的是 Vimium。一旦习惯在 Chrome 中用 u，d，j，k 来上下滚动页面，用 J，K 在标签页之间跳转，用 f 来打开链接，用 F 在新标签页中打开链接，用 v 来选中内容，就很难再回去使用鼠标了。</p>
+<p>有一个可以在终端中运行的软件包叫 ranger，可以看成是简单的资源管理器或 Finder，支持 Vim 键位；键盘编辑器 Karabiner 甚至提供了一套预设的键映射，能在任意 App 中使用 Vim 键位。</p>
+<p>忘掉方向键吧，hjkl 才是真正的方向键；忘掉&lt;Ctrl+C&gt;和&lt;Ctrl+V&gt;吧，y 和 p 才是真正的复制和粘贴。</p>
+<p>最后但绝非最不重要的，是<strong>乐趣</strong>。</p>
+<p>探索的乐趣。解决问题的乐趣。有新发现时的乐趣。</p>
+<p>搞懂规则的乐趣。精进技能的乐趣。</p>
+<p>以及，因为高效，而能将更多时间投入到兴趣、娱乐、社交、学习的乐趣；离开电脑，去接触真实世界的乐趣。</p>
+<h3 id="如何入门">如何入门</h3>
+<p>Vim 的下载页面和安装说明在 <a href="https://www.vim.org/download.php">这里</a>。</p>
+<p>Mac 已经预装了 Vim，只是版本有点低。要安装更高版本，只需要<code>brew install vim</code>即可。本文不详述如何在 Mac 上安装<code>brew</code>，不过安装好后最好把源换成国内源，例如中科大的源。</p>
+<p>想要安装图形用户界面版本，<code>brew install macvim --cask</code>。</p>
+<p>在各种 Linux 发行版上，使用相应的包管理器安装即可。</p>
+<p>在 Windows 上，下载安装包并安装；如果有必要的话，把安装路径到系统环境变量。</p>
+<p>然后，在终端输入命令 vimtutor 就会打开 Vim 教程，可以开始练习 Vim 的基本操作。</p>
+<p>更好的做法，是去找到特定语言的 Vim 教程，复制一份来练习。</p>
+<p>例如，要在 Mac 上使用简体中文版教程，可以这样操作：</p>
+<ol>
+<li>在终端中输入<code>locate tutor.zh</code>并回车。终端中将会列出中文 Vim 教程的所在路径。</li>
+<li>在终端中输入<code>cp / 路径 /tutor.zh_cn.utf-8 ~/Documents</code>，可以将简体中文版 Vim 教程复制到“文档”文件夹下；</li>
+<li>在终端中输入<code>vim ~/Documents/tutor.zh_cn.utf-8</code>，就可以开始练习了。</li>
+</ol>
+<p>完整的练习大概需要半小时，不过并不需要一次完成。</p>
+<p>在一开始，掌握基本移动、模式切换、保存、退出就够了。接下来，就可以尝试把 Vim 用在用在你的工作当中了。</p>
+<h3 id="基本原则">基本原则</h3>
+<p>避免重复（DRY, Don&rsquo;t repeat yourself）：如果你重复了某个操作好几次，那么一定有更好的方法来实现它。停下来，想想看，也许搜索一下。然后再练习一下。</p>
+<p>Vim 的作者曾经写过一篇 <a href="https://moolenaar.net/habits.html">《高效编辑的七个习惯》</a>，<a href="https://baohaojun.github.io/blog/2014/01/03/0-7-habits-of-highly-effective-editting.html">这里</a>有一份中译版。</p>
+<h3 id="几个小提示">几个小提示</h3>
+<p>注：Vim 相关文档中习惯以<code>&lt;C-R&gt;</code>的形式来表示组合键 Ctrl+R。在本文中依然使用传统记法。</p>
+<ol>
+<li>如果你用标准键盘，把 Cap Lock 和 Ctrl 键换一下会是个好主意。</li>
+<li>练习使用<code>&lt;Ctrl+[&gt;</code>回到普通模式，不要使用<code>&lt;Esc&gt;</code>。这个组合键会方便很多。</li>
+<li>HHKB 键盘对 Vim 很友好，但是并不一定非要用它。我在 iMac 上用 HHKB，在 Macbook 上用自带键盘，并没有感到不便。不过我把 Macbook 上的 Cap Lock 和 Ctrl 调换了位置，把 HHKB 上的&quot;~&ldquo;映射成了<code>&lt;Shift+Esc&gt;</code>。</li>
+<li>使用<code>&lt;Ctrl+M&gt;</code>或<code>&lt;Ctrl+J&gt;</code>在插入模式下换行，比敲回车键更方便。严格来说这两种换行方式有一些区别，不过可以先忽略。</li>
+<li>经常回到普通模式。它被叫做“普通（Normal）”模式是有原因的——它才是 Vim 的默认状态。</li>
+<li><code>c</code>，<code>d</code>，<code>y</code>，<code>v</code>这几个命令和文本对象组合起来，会极大提升效率。删除一对引号和其中的内容？<code>da&quot;</code>。删掉一整块用大括号括起来的代码？<code>da}</code>。删掉一对 HTML 标签？<code>dat</code>。如果只想删掉其中的内容但保留成对的符号或标签，把<code>a</code>换成<code>i</code>就可以了。类似地，选中一个句子？<code>vis</code>。复制一段？<code>yip</code>。要删除到下一个分号？<code>dt;</code>。要删除到下一个分号但保留分号？<code>df;</code>即可。</li>
+<li>要快速在文档中跳转，可以考虑四管齐下：使用<code>m</code>标记、使用<code>&lt;Ctrl+I&gt;</code>和<code>&lt;Ctrl+O&gt;</code>，设置使用相对行号<code>set relativenumber</code>，以及安装 vim-easymotion 插件。</li>
+<li>大量使用<code>.</code>和<code>/</code>命令。它们超级好用。</li>
+</ol>
+<h3 id="下一步">下一步</h3>
+<p>你会越来越熟练，也会越来越不满，希望能让自己效率更高。接下来，你会慢慢去查找、去了解这些内容：</p>
+<ul>
+<li>高效移动；</li>
+<li>跳转；</li>
+<li>高效删除；</li>
+<li>查找替换；</li>
+<li>寄存器；</li>
+<li>宏；</li>
+<li>缓冲区；</li>
+<li>窗口；</li>
+<li>标签页；</li>
+<li>配置文件；</li>
+<li>常用插件；</li>
+<li>以及更多更多。</li>
+</ul>
+<p>然后某一天，你会奇怪地问自己：“为什么我没有早一点开始用 Vim?”</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">猛犸</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-02-05
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+          <a href="/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/">生产力</a>
+          <a href="/tags/%E6%8A%80%E8%83%BD/">技能</a>
+          <a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/220101-how-to-read/">
+            <span class="next-text nav-default">新年答问之一：读书的心态</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:mengma@vip.163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.facebook.com/mengma2008/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://github.com/mammoth2008" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/ilifeplayer" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/mengma" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/mammoth2008" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.tumblr.com/blog/mammoth2008" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="https://www.instagram.com/mengma2008/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="/slides/index.html" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://yemengma.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>LifePlayer</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
