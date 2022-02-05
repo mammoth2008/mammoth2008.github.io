@@ -44,4 +44,4 @@ git commit -m "$msg"
 
 git push origin main
 
-printf "\n\n 🖥️  🖥️  🖥️ \nDEPLOY SLIDES DONE\n ⌨️  ⌨️  ⌨️  \n\n"
+printf "\n\n    🖥️  🖥️  🖥️ \nDEPLOY SLIDES DONE\n    ⌨️  ⌨️  ⌨️  \n\n"
