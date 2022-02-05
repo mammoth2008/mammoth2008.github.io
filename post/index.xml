@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 01 Jan 2022 20:35:49 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Feb 2022 08:35:49 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>都 2022 年了，为什么我还在用 Vim</title>
+      <link>https://yemengma.cn/post/220204-vim/</link>
+      <pubDate>Fri, 04 Feb 2022 08:35:49 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/220204-vim/</guid>
+      <description>TL;DR 太长不看 Vim 是强大高效灵活优雅的文本编辑器； 使用 Vim 是复利投资，也是有趣的探索； 所有常见操作系统都有 Vim，你的电脑里可能已经预装了它； Vim 有无</description>
+    </item>
+    
     <item>
       <title>新年答问之一：读书的心态</title>
       <link>https://yemengma.cn/post/%E6%96%B0%E5%B9%B4%E7%AD%94%E9%97%AE%E4%B9%8B%E4%B8%80%E8%AF%BB%E4%B9%A6%E7%9A%84%E5%BF%83%E6%80%81/</link>

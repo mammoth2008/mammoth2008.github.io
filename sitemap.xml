@@ -3,34 +3,76 @@
   
   <url>
     <loc>https://yemengma.cn/categories/</loc>
-    <lastmod>2022-01-02T12:28:49+08:00</lastmod>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/post/</loc>
-    <lastmod>2022-01-02T12:28:49+08:00</lastmod>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/</loc>
-    <lastmod>2022-01-02T12:28:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yemengma.cn/tags/%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%AF%B9/</loc>
-    <lastmod>2022-01-02T12:28:49+08:00</lastmod>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/%E6%8A%80%E8%83%BD/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/post/220204-vim/</loc>
+    <lastmod>2022-02-05T07:28:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/%E4%B8%8D%E4%B8%80%E5%AE%9A%E5%AF%B9/</loc>
     <lastmod>2022-01-02T12:28:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
