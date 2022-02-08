@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 05 Feb 2022 10:24:28 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 15:35:49 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim 的中文支持及解决思路</title>
+      <link>https://yemengma.cn/post/220208-vim-chinese/</link>
+      <pubDate>Tue, 08 Feb 2022 15:35:49 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/220208-vim-chinese/</guid>
+      <description>用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别对应中文输入法和英文输</description>
+    </item>
+    
     <item>
       <title>2022 Week 05 回顾</title>
       <link>https://yemengma.cn/post/22w05-review/</link>
@@ -114,15 +123,6 @@
       
       <guid>https://yemengma.cn/post/21w39-read/</guid>
       <description>推荐一本书：秦谜 真相可能是不是这样，但是并不妨碍建立在史料基础上的合理推测。对于迷雾重重的千古一帝，这本书提出了几个重要问题，并且给出了推理</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://yemengma.cn/post/220208-vim-chinese/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yemengma.cn/post/220208-vim-chinese/</guid>
-      <description>Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别</description>
     </item>
     
   </channel>

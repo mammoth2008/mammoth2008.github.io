@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title> - 人生玩家</title>
+  <title>Vim 的中文支持及解决思路 - 人生玩家</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="猛犸" /><meta name="description" content="Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别" />
+<meta name="author" content="猛犸" /><meta name="description" content="使用 Vim 编辑中文时的问题" /><meta name="keywords" content="工具, 效率, Vim" />
 
 
 
@@ -39,18 +39,18 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别" />
+<meta property="og:title" content="Vim 的中文支持及解决思路" />
+<meta property="og:description" content="使用 Vim 编辑中文时的问题" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yemengma.cn/post/220208-vim-chinese/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-08T15:35:49+08:00" />
+<meta property="article:modified_time" content="2022-02-08T17:28:49+08:00" />
 
-
-
-<meta itemprop="name" content="">
-<meta itemprop="description" content="Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别">
-
-<meta itemprop="wordCount" content="1587">
-<meta itemprop="keywords" content="" />
+<meta itemprop="name" content="Vim 的中文支持及解决思路">
+<meta itemprop="description" content="使用 Vim 编辑中文时的问题"><meta itemprop="datePublished" content="2022-02-08T15:35:49+08:00" />
+<meta itemprop="dateModified" content="2022-02-08T17:28:49+08:00" />
+<meta itemprop="wordCount" content="1576">
+<meta itemprop="keywords" content="Vim,生产力,工具,生活," />
 
 
 <!--[if lte IE 9]>
@@ -127,11 +127,13 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title"></h1>
+      <h1 class="post-title">Vim 的中文支持及解决思路</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 0001-01-01 </span>
-        
+        <span class="post-time"> 2022-02-08 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B/"> 生产力 </a>
+            </div>
         
       </div>
     </header>
@@ -141,7 +143,7 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#vim-的中文支持及解决思路">Vim 的中文支持及解决思路</a>
+    <li>
       <ul>
         <li><a href="#输入法切换">输入法切换</a>
           <ul>
@@ -163,8 +165,7 @@
   </div>
 </div>
     <div class="post-content">
-      <h1 id="vim-的中文支持及解决思路">Vim 的中文支持及解决思路</h1>
-<p>用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。</p>
+      <p>用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。</p>
 <h2 id="输入法切换">输入法切换</h2>
 <p>在插入模式和普通模式之间切换时，应该分别对应中文输入法和英文输入法（或中文输入法的英文状态）。</p>
 <p>Vim 需要在两种模式之间频繁切换，每次都要切换输入法状态会产生干扰，打断心流。</p>
@@ -312,7 +313,7 @@ let g:EasyMotion_smartcase = 1
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        0001-01-01
+        2022-02-08
         
     </span>
   </p>
@@ -323,14 +324,19 @@ let g:EasyMotion_smartcase = 1
   </p>
 </div>
 <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="/tags/vim/">Vim</a>
+          <a href="/tags/%E7%94%9F%E4%BA%A7%E5%8A%9B/">生产力</a>
+          <a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+          <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+          </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/21w39-read/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">2021 Week 39 读书小结</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
+        <a class="next" href="/post/22w05-review/">
+            <span class="next-text nav-default">2022 Week 05 回顾</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
   </article>
