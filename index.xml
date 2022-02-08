@@ -116,5 +116,14 @@
       <description>推荐一本书：秦谜 真相可能是不是这样，但是并不妨碍建立在史料基础上的合理推测。对于迷雾重重的千古一帝，这本书提出了几个重要问题，并且给出了推理</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://yemengma.cn/post/220208-vim-chinese/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yemengma.cn/post/220208-vim-chinese/</guid>
+      <description>Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别</description>
+    </item>
+    
   </channel>
 </rss>

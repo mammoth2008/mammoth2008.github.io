@@ -232,4 +232,10 @@
     <priority>0.5</priority>
   </url>
   
+  <url>
+    <loc>https://yemengma.cn/post/220208-vim-chinese/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>

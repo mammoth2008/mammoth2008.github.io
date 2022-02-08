@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> - 人生玩家</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="猛犸" /><meta name="description" content="Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.92.1 with theme even" />
+
+
+<link rel="canonical" href="https://yemengma.cn/post/220208-vim-chinese/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.e816c8c52edc6cd05f17039e596b421f68ea700c293e24c20ac0c38d65e38883.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yemengma.cn/post/220208-vim-chinese/" /><meta property="article:section" content="post" />
+
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Vim 的中文支持及解决思路 用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。 输入法切换 在插入模式和普通模式之间切换时，应该分别">
+
+<meta itemprop="wordCount" content="1587">
+<meta itemprop="keywords" content="" />
+
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">人生玩家</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo"><img src="/mstile-150x150.png" style="width: 42px; height: 42px; display: inline-block; vertical-align: -4px;">人生玩家</a>
+</div>
+
+
+
+
+</style>
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vim-的中文支持及解决思路">Vim 的中文支持及解决思路</a>
+      <ul>
+        <li><a href="#输入法切换">输入法切换</a>
+          <ul>
+            <li><a href="#1-输入法级的方案">1. 输入法级的方案</a></li>
+            <li><a href="#2-vim-级的方案">2. Vim 级的方案</a></li>
+          </ul>
+        </li>
+        <li><a href="#中文文章跳转">中文文章跳转</a>
+          <ul>
+            <li><a href="#1-使用插件">1. 使用插件</a></li>
+            <li><a href="#2-对中文文稿预处理">2. 对中文文稿预处理</a></li>
+            <li><a href="#3-关键是快速移动">3. 关键是快速移动</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="vim-的中文支持及解决思路">Vim 的中文支持及解决思路</h1>
+<p>用 Vim 编辑中文时，有两个独有的小问题：输入法切换；中文文章中光标跳转。</p>
+<h2 id="输入法切换">输入法切换</h2>
+<p>在插入模式和普通模式之间切换时，应该分别对应中文输入法和英文输入法（或中文输入法的英文状态）。</p>
+<p>Vim 需要在两种模式之间频繁切换，每次都要切换输入法状态会产生干扰，打断心流。</p>
+<p>解决方案有两个思路：输入法级的方案，和 Vim 级的方案。</p>
+<h3 id="1-输入法级的方案">1. 输入法级的方案</h3>
+<p>一些输入法提供了在特定软件中使用特定输入法的设置，例如搜狗拼音。但是它似乎没办法识别当前是在 Vim 的哪一种模式下。</p>
+<p>开源输入法引擎中州韵（在 Mac 上叫&quot;鼠须管&quot;, 在 Windows 上叫&quot;小狼毫&quot;) 提供了更细的控制：它有个叫 <a href="https://einverne.github.io/post/2020/11/rime-auto-switch-language-in-vim-mode.html">vim_mode</a> 的开关，可以根据 Vim 的所在模式自动切换。在 squirrel.custom.yaml 中配置即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">app_options</span><span class="p">:</span><span class="w">
+</span><span class="w">	</span><span class="nt">org.vim.MacVim</span><span class="p">:</span><span class="w">
+</span><span class="w">	    </span><span class="nt">ascii_punct</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">		</span><span class="nt">vim_mode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">	</span><span class="nt">vim</span><span class="p">:</span><span class="w">
+</span><span class="w">	    </span><span class="nt">ascii_punct</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">		</span><span class="nt">vim_mode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>在这个配置里，除了打开 vim_mode 的开关外，还设置了在 Vim 或 MacVim 中使用英文标点。这在写代码时很好用，能避免用错标点导致的错误。在写中文文章时，可以用 <a href="https://github.com/hotoo/pangu.vim">Pangu</a> 之类的插件自动处理一下就好了。</p>
+<h3 id="2-vim-级的方案">2. Vim 级的方案</h3>
+<p>也可以完全不考虑输入法，让插件来改变输入法状态。有一个叫 <a href="https://github.com/ybian/smartim">smart-im</a> 的插件，可以很好地实现这一功能。</p>
+<h2 id="中文文章跳转">中文文章跳转</h2>
+<p>写英文或代码时，w 和 W 是常用的跳转方式。但是中文不用空格来分词，所以 w 会以逗号和句号为分隔符来跳转；如果使用的是中文标点，情况就更糟。</p>
+<p>这个问题难以解决；它是个自然语言处理问题，得让计算机稍微懂一点中文才行。</p>
+<p>要稍微迂回地解决这个问题，大概有三种思路。</p>
+<h3 id="1-使用插件">1. 使用插件</h3>
+<p>Vim 的中文分词插件不多，可能因为这是个有点奇怪的需求。</p>
+<p>在 Github 上有个叫 <a href="https://github.com/fannheyward/coc-ci">coc-ci</a> 的中文分词插件，以 <a href="https://github.com/neoclide/coc.nvim">coc.nvim</a> 为基础（顺便，coc.nvim 很强，建议安装）。但是 coc-ci 的速度太慢，按一下 w 要一秒多钟才会跳到下一个词。这显然是不可接受的。</p>
+<p>也许是我的机器有什么配置问题吧。但是实在不想折腾，所以换了种思路：预处理。</p>
+<h3 id="2-对中文文稿预处理">2. 对中文文稿预处理</h3>
+<p>预处理的思路是：找中文分词工具把中文文稿处理一遍，编辑完后再去掉分隔符。</p>
+<p>对比开源中文分词工具的过程略过，最后选择了 <a href="https://github.com/thunlp/THULAC-Python">thulac</a> 。只要三行 python 代码，就能让它预处理一下要编辑的文稿，在词之间加上空格。</p>
+<p>接下来正常编辑，完成后只需要再全局查找替换一下空格就可以了。</p>
+<p>这个方案的问题是，查找替换空格往往会误删掉有用的空格，例如 Markdown 标签后的空格、链接两侧的空格、英文单词间的空格等等。虽然可以写一些规则来避免，但是逐一添加白名单的方式有点笨。</p>
+<p>所以换一种思路：如果放弃中文分词的尝试呢？</p>
+<h3 id="3-关键是快速移动">3. 关键是快速移动</h3>
+<p>不要搞错了重点。我们的目的不是中文分词，而是在中文文稿中快速移动。</p>
+<p>快速移动无非两种思路：机枪乱扫和精准点射。</p>
+<p>使用 w 命令的移动是前者，按住键不放就可以了，视线会自动跟随光标移动。修改一下 Mac 默认的击键重复速度，速度还是挺快的。它的好处在于减少认知负担，就算跑过了头，再按 b 往回跳就行了。</p>
+<p>即使是在 Mac 的系统设置面板中将击键重复速度调到最快，对使用 Vim 来说还是有些慢。可以在终端直接设置来让它变得更快：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># normal minimum is 15 (225 ms)</span>
+defaults write -g InitialKeyRepeat -int <span class="m">10</span>
+<span class="c1"># normal minimum is 2 (30 ms)</span>
+defaults write -g KeyRepeat -int <span class="m">1</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>当然，这样的调整对英文和代码很有用，但对于中文用处不大。</p>
+<p>精准点射的思路是，先看好要跳去哪里，然后再用命令组合跳转。这不免会涉及到计算，是难以自动化的。</p>
+<p>不过有一个插件，能够减少计算的难度：<a href="https://github.com/easymotion/vim-easymotion">vim-easymotion</a> 插件。它和 Chrome 上的 <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?utm_source=chrome-ntp-icon">Vimium</a> 有些相似。使用快捷键激活后，可以输入对应内容直接跳到相应位置。无论是以词为单位，还是在当前行或者当前列，都很方便。</p>
+<p>我的 vimrc 是这样配置的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
+&#34; 查找一个字符
+map  &lt;Leader&gt;i &lt;Plug&gt;(easymotion-bd-f)
+nmap &lt;Leader&gt;i &lt;Plug&gt;(easymotion-overwin-f)
+
+&#34; 查找任意长度字符串
+&#34; 好像比默认的&#34;/&#34;还方便
+nmap &lt;leader&gt;s &lt;Plug&gt;(easymotion-sn)
+
+&#34; 跳到任意行
+omap &lt;C-L&gt; &lt;Plug&gt;(easymotion-bd-jk)
+nmap &lt;C-L&gt; &lt;Plug&gt;(easymotion-overwin-line)
+
+&#34; 跳到任意单词
+omap &lt;Leader&gt;w &lt;Plug&gt;(easymotion-bd-w)
+nmap &lt;Leader&gt;w &lt;Plug&gt;(easymotion-overwin-w)
+
+&#34; 单方向标记可以跳转的位置
+map &lt;Leader&gt;l &lt;Plug&gt;(easymotion-lineforward)
+map &lt;Leader&gt;j &lt;Plug&gt;(easymotion-j)
+map &lt;Leader&gt;k &lt;Plug&gt;(easymotion-k)
+map &lt;Leader&gt;h &lt;Plug&gt;(easymotion-linebackward)
+
+&#34; 以当前光标所在列为标记基准
+let g:EasyMotion_startofline = 0
+
+&#34; 更聪明的大小写判断
+&#34; 小写字母会匹配小写和大写
+&#34; 大写字母只匹配大写
+let g:EasyMotion_smartcase = 1
+
+</code></pre></td></tr></table>
+</div>
+</div><p>这样，算是基本解决了 Vim 中文编辑的问题。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">猛犸</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        0001-01-01
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/21w39-read/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">2021 Week 39 读书小结</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:mengma@vip.163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.facebook.com/mengma2008/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://github.com/mammoth2008" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/ilifeplayer" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/mengma" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/mammoth2008" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.tumblr.com/blog/mammoth2008" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="https://www.instagram.com/mengma2008/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="/slides/index.html" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://yemengma.cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>LifePlayer</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
