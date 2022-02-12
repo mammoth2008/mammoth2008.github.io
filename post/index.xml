@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Tue, 08 Feb 2022 15:35:49 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Feb 2022 01:12:56 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 Week 06 回顾</title>
+      <link>https://yemengma.cn/post/22w06-review/</link>
+      <pubDate>Sun, 13 Feb 2022 01:12:56 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/22w06-review/</guid>
+      <description>思绪的重力 人是社会性动物,但是社会性程度有极大不同.融入人群或离群索居的原因都有许多,其间的平衡并不好掌握. 在手机已经变成人体器官的时代,融</description>
+    </item>
+    
     <item>
       <title>Vim 的中文支持及解决思路</title>
       <link>https://yemengma.cn/post/220208-vim-chinese/</link>
