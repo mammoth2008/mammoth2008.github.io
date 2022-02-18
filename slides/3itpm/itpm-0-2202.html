@@ -12,8 +12,19 @@
         <meta name="description" content="IT项目管理课程使用，为哈尔滨理工大学经济管理学院信息管理与信息系统系设计。" />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
         <link href="../css/impress-course.css" rel="stylesheet" />
         <link href="../css/impress-common.css" rel="stylesheet" />
+
         <link rel="shortcut icon" href="../hustlogo72.png" />
         <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
 
@@ -21,6 +32,7 @@
 
     <body class="impress-not-supported">
 
+    <!-- 左上角加上logo -->
     <div class="logo"></div>
 
     <div class="fallback-message">
@@ -29,95 +41,96 @@
 
     </div>
 
-    <div id="impress" 
-    data-transition-duration="1000" 
-    data-width="1024" 
-    data-height="768" 
-    data-max-scale="3" 
-    data-min-scale="0" 
-    data-perspective="1000" 
-    data-autoplay="0"> 
+    <div
+    id                       = "impress"
+    data-transition-duration = "1000"
+    data-width               = "1024"
+    data-height              = "768"
+    data-max-scale           = "3"
+    data-min-scale           = "0"
+    data-perspective         = "1000"
+    data-autoplay            = "0">
 
     <!-- 每一节slide的标题是"cxyt",表示章节标题.如第一章第一节标题就是c11t,第三章第二节标题就是c32t -->
     <!-- 每一节slide的标题页class应该是step,不是step markdown -->
     <!-- 类似地,需要HTML排版的slide,class都是step;可以使用markdown的,class才是step markdown -->
 
-    <div 
-    id="overview" 
-    data-x="0"
-    data-y="0" 
-    class="step" 
-    data-scale="15">
+    <div
+    id         = "overview"
+    data-x     = "0"
+    data-y     = "0"
+    class      = "step"
+    data-scale = "15">
 
     </div>
 
-    <!-- What,Why,and How -->
-    <div 
-    id="what"
-    class="step"
-    data-x="-1500" 
-    data-y="-6000" 
-    data-scale="1">
+<!-- What,Why,and How -->
+    <div
+    id         = "what"
+    class      = "step"
+    data-x     = "-1500"
+    data-y     = "-6000"
+    data-scale = "1">
 
         <ul>
             <li><h3>IT 项目管理: WHAT？</h3>
                 <ul>
-                    <li class="substep">通用的做事方法；</li>
-                    <li class="substep">企业全过程流程；</li>
-                    <li class="substep">管理理念、方法、技术、工具；</li>
+                    <li class="substep">通用的做事方法</li>
+                    <li class="substep">企业全过程流程</li>
+                    <li class="substep">管理理念、方法、技术、工具</li>
                 </ul>
             </li>
         </ul>
 
     </div>
 
-    <div 
-    id="why" 
-    class="step" 
-    data-rel-to="what" 
-    data-rel-x="1500" 
-    data-scale="1"> 
+    <div
+    id          = "why"
+    class       = "step"
+    data-rel-to = "what"
+    data-rel-x  = "1500"
+    data-scale  = "1">
 
         <ul>
             <li><h3>IT 项目管理: WHY？</h3>
                 <ul>
-                    <li class="substep">任职资格的要求；</li>
-                    <li class="substep">重要核心竞争力；</li>
-                    <li class="substep">自我管理与提升；</li>
+                    <li class="substep">任职资格的要求</li>
+                    <li class="substep">重要核心竞争力</li>
+                    <li class="substep">自我管理与提升</li>
                 </ul>
             </li>
         </ul>
 
     </div>
 
-    <div 
-    id="how" 
-    class="step" 
-    data-rel-to="why"
-    data-rel-x="1500" 
-    data-scale="1">
+    <div
+    id          = "how"
+    class       = "step"
+    data-rel-to = "why"
+    data-rel-x  = "1500"
+    data-scale  = "1">
 
         <ul>
             <li><h3>IT 项目管理: HOW？</h3>
                 <ul>
-                    <li class="substep">系统观点与系统思维；</li>
-                    <li class="substep">结合实践思考与验证；</li>
-                    <li class="substep">方法练习与工具练习；</li>
+                    <li class="substep">系统观点与系统思维</li>
+                    <li class="substep">结合实践思考与验证</li>
+                    <li class="substep">方法练习与工具练习</li>
                 </ul>
             </li>
         </ul>
 
     </div>
 
-    <!-- 标题 -->
+<!-- 标题 -->
     <div 
-    id="title" 
-    class="step" 
-    data-x="0" 
-    data-y="0" 
-    data-scale="5" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="overview c1 how processgroup"> 
+    id                  = "title"
+    class               = "step"
+    data-x              = "0"
+    data-y              = "0"
+    data-scale          = "5"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overview c1 how processgroup">
 
         <h5 style="text-align: center">IT项目计划、进度和控制的系统方法</h5>
         <h1 style="text-align: center">IT 项目管理</h1>
@@ -131,25 +144,22 @@
                 </a>
                 <span><img class="icon" src="../favicon.png" style="width:16px;height:16px;vertical-align: 8px;"></span>
                 <br/>
-                    Ver.2202&nbsp;&nbsp;&nbsp;
-                <a href="itpm-chglog.html" target=_blank style="text-shadow: 0 0 0 rgb(0, 0, 0, 0);">
-                    ChangeLog
-                </a>
+                    Ver.2202
             </inlinecode>
         </p>
 
     </div>
 
-    <!-- 概述 -->
-    <div 
-    id="processgroup" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="1280" 
-    data-rel-y="2000" 
-    data-z="-10" 
-    data-rotate-z="90" 
-    data-scale="4">
+<!-- 概述 -->
+    <div
+    id            = "processgroup"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "1280"
+    data-rel-y    = "2000"
+    data-z        = "-10"
+    data-rotate-z = "90"
+    data-scale    = "4">
 
 ### 5 个过程组 Process Group
 
@@ -161,15 +171,15 @@
 
     </div>
 
-    <div 
-    id="area" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-400" 
-    data-rel-y="1700" 
-    data-z="-10" 
-    data-rotate-z="0" 
-    data-scale="4">
+    <div
+    id            = "area"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "-400"
+    data-rel-y    = "1700"
+    data-z        = "-10"
+    data-rotate-z = "0"
+    data-scale    = "4">
 
 ### 10 个知识领域
 
@@ -186,15 +196,15 @@
 
     </div>
 
-    <div 
-    id="process" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-1890" 
-    data-rel-y="-1600" 
-    data-z="-10" 
-    data-rotate-z="180" 
-    data-scale="3">
+    <div
+    id            = "process"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "-1890"
+    data-rel-y    = "-1600"
+    data-z        = "-10"
+    data-rotate-z = "180"
+    data-scale    = "3">
 
 ### 49 个过程
 
@@ -206,55 +216,55 @@
 
     </div>
 
-    <div 
-    id="big" 
-    data-rel-to="title" 
-    class="step" 
-    data-rel-x="2380" 
-    data-rotate-z="-90" 
-    data-scale="5">
+    <div
+    id            = "big"
+    data-rel-to   = "title"
+    class         = "step"
+    data-rel-x    = "2380"
+    data-rotate-z = "-90"
+    data-scale    = "5">
 
         <p>Information Technology</p>
         <p><b>PROJECT</b> <span class="thoughts">Management</span></p>
 
     </div>
 
-    <div 
-    id="tiny" 
-    class="step markdown" 
-    data-rel-to="big" 
-    class="step" 
-    data-z="-3000" 
-    data-rotate-z="360" 
-    data-scale="0.5">
+    <div
+    id            = "tiny"
+    class         = "step markdown"
+    data-rel-to   = "big"
+    class         = "step"
+    data-z        = "-3000"
+    data-rotate-z = "360"
+    data-scale    = "0.5">
 
 什么是项目(Project)？
 
     </div>
 
-    <div 
-    id="pro" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-2500" 
-    data-rel-y="0"s
-    data-z="0" 
-    data-rotate="270" 
-    data-scale="6">
+    <div
+    id          = "pro"
+    class       = "step"
+    data-rel-to = "title"
+    data-rel-x  = "-2500"
+    data-rel-y  = "0"s
+    data-z      = "0"
+    data-rotate = "270"
+    data-scale  = "6">
 
         <p>项目是为了<span class="point">创造</span>一个特定的产品、服务或成果而采取的<b class="point">临时性</b>的努力。</p>
        
     </div>
 
-    <div 
-    id="itpro" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-400" 
-    data-rel-y="-1800"
-    data-z="0" 
-    data-rotate="180" 
-    data-scale="5">
+    <div
+    id          = "itpro"
+    class       = "step"
+    data-rel-to = "title"
+    data-rel-x  = "-400"
+    data-rel-y  = "-1800"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
 
         <p>IT 项目是为解决<span class="point">信息化需求</span></p>
         <p>而产生的软件、硬件、网络</p>
@@ -264,62 +274,62 @@
 
     </div>
 
-    <div 
-    id="noway" 
-    class="step markdown" 
-    data-rel-to="title"
-    data-rel-x="800" 
-    data-rel-y="-2400"
-    data-rotate-z="180"
-    data-scale="4">
-
+    <div
+    id            = "noway"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "800"
+    data-rel-y    = "-2400"
+    data-rotate-z = "180"
+    data-scale    = "4">
 
 ![不可能三角](img/c00/1noway.svg)
 
     </div>
 
-    <div 
-    id="oper" 
-    class="step"
-    data-rel-to="title" 
-    data-rel-x="-1000" 
-    data-rel-y="-2600" 
-    data-rotate="180" 
-    data-scale="2"> 
+    <div
+    id          = "oper"
+    class       = "step"
+    data-rel-to = "title"
+    data-rel-x  = "-1000"
+    data-rel-y  = "-2600"
+    data-rotate = "180"
+    data-scale  = "2">
 
         <h3>项目 vs. 运营(Operation)</h3>
         <p>运营是组织为了维持业务而进行的工作。<br/><br/>
-            项目面向活动的过程管理，注重效果；<br/>
-            运营面向职能的专业管理，注重效率；
+            项目面向活动的过程管理，注重效果<br/>
+            运营面向职能的专业管理，注重效率
         </p>
 
     </div>
 
     <div
-    id="overviewmiddle" 
-    class="step" 
-    data-rel-to="title"
-    data-x="0"
-    data-y="0"
-    data-z="0"
-    data-scale="15">
-        
+    id          = "overviewmiddle"
+    class       = "step"
+    data-rel-to = "title"
+    data-x      = "0"
+    data-y      = "0"
+    data-z      = "-1000"
+    data-scale  = "15">
+
     </div>
 
-    <!-- 学习目标,共13章 -->
-    <!-- 课程框架应该再细化一下,也许画个图 -->
-    <div 
-    id="c1" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-1420" 
-    data-rel-y="-3740" 
-    data-rotate-y="-15.96" 
-    data-rotate-x="42.08" 
-    data-rotate="-200.77" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c1m overview c2">
+<!-- 学习目标,共13章 -->
+<!-- 课程框架应该再细化一下,也许画个图 -->
+
+    <div
+    id                  = "c1"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-1420"
+    data-rel-y          = "-3740"
+    data-rotate-y       = "-15.96"
+    data-rotate-x       = "42.08"
+    data-rotate         = "-200.77"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c1m overviewmiddle c2">
 
 ### 1. 项目管理概述
 
@@ -332,18 +342,18 @@
 
     </div>
 
-    <div 
-    id="c2" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-2990" 
-    data-rel-y="-2650" 
-    data-rotate-y="-33.68" 
-    data-rotate-x="29.84" 
-    data-rotate="-228.46" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c2m c1 c3"> 
+    <div
+    id                  = "c2"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-2990"
+    data-rel-y          = "-2650"
+    data-rotate-y       = "-33.68"
+    data-rotate-x       = "29.84"
+    data-rotate         = "-228.46"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c2m c1 c3">
 
 ### 2. 项目管理的知识体系
 
@@ -355,18 +365,18 @@
 
     </div>
 
-    <div 
-    id="c3" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-3880" 
-    data-rel-y="-960" 
-    data-rotate-y="-43.69" 
-    data-rotate-x="10.77" 
-    data-rotate="-256.15" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c3m c2 c4"> 
+    <div
+    id                  = "c3"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-3880"
+    data-rel-y          = "-960"
+    data-rotate-y       = "-43.69"
+    data-rotate-x       = "10.77"
+    data-rotate         = "-256.15"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c3m c2 c4">
 
 ### 3. 项目生命周期及管理过程
 
@@ -377,18 +387,18 @@
 
     </div>
 
-    <div 
-    id="c4" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-3880" 
-    data-rel-y="960" 
-    data-rotate-y="-43.69" 
-    data-rotate-x="-10.77" 
-    data-rotate="-283.85" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c4m c3 c5"> 
+    <div
+    id                  = "c4"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-3880"
+    data-rel-y          = "960"
+    data-rotate-y       = "-43.69"
+    data-rotate-x       = "-10.77"
+    data-rotate         = "-283.85"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c4m c3 c5">
 
 ### 4. IT 项目启动与项目管理计划
 
@@ -405,18 +415,18 @@
 
     </div>
 
-    <div 
-    id="c5" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-2990" 
-    data-rel-y="2650" 
-    data-rotate-y="-33.68" 
-    data-rotate-x="-29.84" 
-    data-rotate="-311.54" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c5m c4 c6"> 
+    <div
+    id                  = "c5"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-2990"
+    data-rel-y          = "2650"
+    data-rotate-y       = "-33.68"
+    data-rotate-x       = "-29.84"
+    data-rotate         = "-311.54"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c5m c4 c6">
 
 ### 5. IT 项目范围计划
 
@@ -427,18 +437,18 @@
 
     </div>
 
-    <div 
-    id="c6" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="-1420" 
-    data-rel-y="3740" 
-    data-rotate-y="-15.96" 
-    data-rotate-x="-42.08" 
-    data-rotate="-339.23" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c6m c5 c7"> 
+    <div
+    id                  = "c6"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-1420"
+    data-rel-y          = "3740"
+    data-rotate-y       = "-15.96"
+    data-rotate-x       = "-42.08"
+    data-rotate         = "-339.23"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c6m c5 c7">
 
 ### 6. IT 项目进度计划
 
@@ -451,18 +461,18 @@
 
     </div>
 
-    <div 
-    id="c7" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="480" 
-    data-rel-y="3970" 
-    data-rotate-y="5.42" 
-    data-rotate-x="-44.67" 
-    data-rotate="-366.92" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c7m c6 c8"> 
+    <div
+    id                  = "c7"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "480"
+    data-rel-y          = "3970"
+    data-rotate-y       = "5.42"
+    data-rotate-x       = "-44.67"
+    data-rotate         = "-366.92"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c7m c6 c8">
 
 ### 7. IT 项目成本计划
 
@@ -473,18 +483,18 @@
 
     </div>
 
-    <div 
-    id="c8" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="2270" 
-    data-rel-y="3290" 
-    data-rotate-y="25.56" 
-    data-rotate-x="-37.03" 
-    data-rotate="-394.62" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c8m c7 c9"> 
+    <div
+    id                  = "c8"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "2270"
+    data-rel-y          = "3290"
+    data-rotate-y       = "25.56"
+    data-rotate-x       = "-37.03"
+    data-rotate         = "-394.62"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c8m c7 c9">
 
 ### 8. IT 项目质量计划
 
@@ -497,17 +507,17 @@
     </div>
 
     <div 
-    id="c9" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="3540" 
-    data-rel-y="1860" 
-    data-rotate-y="39.85" 
-    data-rotate-x="-20.91" 
-    data-rotate="-422.31" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c9m c8 c10"> 
+    id                  = "c9"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "3540"
+    data-rel-y          = "1860"
+    data-rotate-y       = "39.85"
+    data-rotate-x       = "-20.91"
+    data-rotate         = "-422.31"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c9m c8 c10">
 
 ### 9. IT 项目人力及沟通计划
 
@@ -520,17 +530,17 @@
     </div>
 
     <div 
-    id="c10" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="4000" 
-    data-rel-y="0"
-    data-rotate-y="45" 
-    data-rotate-x="0" 
-    data-rotate="-450" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c10m c9 c11"> 
+    id                  = "c10"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "4000"
+    data-rel-y          = "0"
+    data-rotate-y       = "45"
+    data-rotate-x       = "0"
+    data-rotate         = "-450"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c10m c9 c11">
 
 ### 10. IT 项目风险管理计划
 
@@ -543,17 +553,17 @@
     </div>
 
     <div 
-    id="c11" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="3540" 
-    data-rel-y="-1860"
-    data-rotate-y="39.85" 
-    data-rotate-x="20.91" 
-    data-rotate="-477.69" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c11m c10 c12"> 
+    id                  = "c11"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "3540"
+    data-rel-y          = "-1860"
+    data-rotate-y       = "39.85"
+    data-rotate-x       = "20.91"
+    data-rotate         = "-477.69"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c11m c10 c12">
 
 ### 11. IT 项目采购计划
 
@@ -564,17 +574,17 @@
     </div>
 
     <div 
-    id="c12" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="2270" 
-    data-rel-y="-3290"
-    data-rotate-y="25.56" 
-    data-rotate-x="37.03" 
-    data-rotate="-505.38" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c12m c11 c13"> 
+    id                  = "c12"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "2270"
+    data-rel-y          = "-3290"
+    data-rotate-y       = "25.56"
+    data-rotate-x       = "37.03"
+    data-rotate         = "-505.38"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c12m c11 c13">
 
 ### 12. IT 项目执行与控制
 
@@ -590,18 +600,18 @@
 
     </div>
 
-    <div 
-    id="c13" 
-    class="step markdown" 
-    data-rel-to="title" 
-    data-rel-x="480" 
-    data-rel-y="-3970" 
-    data-rotate-y="5.42" 
-    data-rotate-x="44.67" 
-    data-rotate="-533.08" 
-    data-scale="3" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="title c13m c12 overview"> 
+    <div
+    id                  = "c13"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "480"
+    data-rel-y          = "-3970"
+    data-rotate-y       = "5.42"
+    data-rotate-x       = "44.67"
+    data-rotate         = "-533.08"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c13m c12 overviewmiddle">
 
 ### 13. IT 项目收尾
 
@@ -614,20 +624,21 @@
 
     </div>
 
-    <!-- 目录,共13章 -->
-    <div 
-    id="c1m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-1770" 
-    data-rel-y="-4680"
-    data-rotate-y="-15.96" 
-    data-rotate-x="42.08" 
-    data-rotate="-200.77" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c1 overview overview c2m">
+<!-- 目录,共13章 -->
+
+    <div
+    id                  = "c1m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-1770"
+    data-rel-y          = "-4680"
+    data-rotate-y       = "-15.96"
+    data-rotate-x       = "42.08"
+    data-rotate         = "-200.77"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c1 overviewmiddle overviewmiddle c2m">
 
         <h3>1. 项目管理概述</h3>
         <p>
@@ -643,18 +654,18 @@
     </div>
 
     <div 
-    id="c2m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-3740" 
-    data-rel-y="-3320" 
-    data-rotate-y="-33.68" 
-    data-rotate-x="29.84" 
-    data-rotate="-228.46" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c2 overview c1m c3m"> 
+    id                  = "c2m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3740"
+    data-rel-y          = "-3320"
+    data-rotate-y       = "-33.68"
+    data-rotate-x       = "29.84"
+    data-rotate         = "-228.46"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c2 overviewmiddle c1m c3m">
 
     <h3>2. 项目管理的知识体系</h3>
         <p>
@@ -673,18 +684,18 @@
     </div>
 
     <div 
-    id="c3m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-4850" 
-    data-rel-y="-1200" 
-    data-rotate-y="-43.69" 
-    data-rotate-x="10.77" 
-    data-rotate="-256.15" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c3 overview c2m c4m"> 
+    id                  = "c3m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-4850"
+    data-rel-y          = "-1200"
+    data-rotate-y       = "-43.69"
+    data-rotate-x       = "10.77"
+    data-rotate         = "-256.15"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c3 overviewmiddle c2m c4m">
 
     <h3>3. 项目生命周期及管理过程</h3>
         <p>
@@ -698,18 +709,18 @@
     </div>
 
     <div 
-    id="c4m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-4850" 
-    data-rel-y="1200" 
-    data-rotate-y="-43.69" 
-    data-rotate-x="-10.77" 
-    data-rotate="-283.85" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c4 overview c3m c5m"> 
+    id                  = "c4m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-4850"
+    data-rel-y          = "1200"
+    data-rotate-y       = "-43.69"
+    data-rotate-x       = "-10.77"
+    data-rotate         = "-283.85"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c4 overviewmiddle c3m c5m">
 
     <h3>4. IT 项目启动与项目管理计划</h3>
         <p>
@@ -721,18 +732,18 @@
     </div>
 
     <div 
-    id="c5m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-3740" 
-    data-rel-y="3320" 
-    data-rotate-y="-33.68" 
-    data-rotate-x="-29.84" 
-    data-rotate="-311.54" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c5 overview c4m c6m"> 
+    id                  = "c5m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3740"
+    data-rel-y          = "3320"
+    data-rotate-y       = "-33.68"
+    data-rotate-x       = "-29.84"
+    data-rotate         = "-311.54"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c5 overviewmiddle c4m c6m">
 
     <h3>5. IT 项目范围计划</h3>
         <p>
@@ -743,18 +754,18 @@
     </div>
 
     <div 
-    id="c6m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="-1770" 
-    data-rel-y="4680" 
-    data-rotate-y="-15.96" 
-    data-rotate-x="-42.08" 
-    data-rotate="-339.23" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c6 overview c5m c7m"> 
+    id                  = "c6m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-1770"
+    data-rel-y          = "4680"
+    data-rotate-y       = "-15.96"
+    data-rotate-x       = "-42.08"
+    data-rotate         = "-339.23"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c6 overviewmiddle c5m c7m">
 
     <h3>6. IT 项目进度计划</h3>
         <p>
@@ -769,18 +780,18 @@
     </div>
 
     <div 
-    id="c7m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="600" 
-    data-rel-y="4960" 
-    data-rotate-y="5.42" 
-    data-rotate-x="-44.67" 
-    data-rotate="-366.92" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c7 overview c6m c8m"> 
+    id                  = "c7m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "600"
+    data-rel-y          = "4960"
+    data-rotate-y       = "5.42"
+    data-rotate-x       = "-44.67"
+    data-rotate         = "-366.92"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c7 overviewmiddle c6m c8m">
 
     <h3>7. IT 项目成本计划</h3>
         <p>
@@ -792,18 +803,18 @@
     </div>
 
     <div 
-    id="c8m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="2840" 
-    data-rel-y="4110" 
-    data-rotate-y="25.56" 
-    data-rotate-x="-37.03" 
-    data-rotate="-394.62" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c8 overview c7m c9m"> 
+    id                  = "c8m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "2840"
+    data-rel-y          = "4110"
+    data-rotate-y       = "25.56"
+    data-rotate-x       = "-37.03"
+    data-rotate         = "-394.62"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c8 overviewmiddle c7m c9m">
 
     <h3>8. IT 项目质量计划</h3>
         <p>
@@ -815,18 +826,18 @@
     </div>
 
     <div 
-    id="c9m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="4430" 
-    data-rel-y="2320" 
-    data-rotate-y="39.85" 
-    data-rotate-x="-20.91" 
-    data-rotate="-422.31" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c9 overview c8m c10m"> 
+    id                  = "c9m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "4430"
+    data-rel-y          = "2320"
+    data-rotate-y       = "39.85"
+    data-rotate-x       = "-20.91"
+    data-rotate         = "-422.31"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c9 overviewmiddle c8m c10m">
 
     <h3>9. IT 项目人力及沟通计划</h3>
         <p>
@@ -838,18 +849,18 @@
     </div>
 
     <div 
-    id="c10m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="5000" 
-    data-rel-y="0" 
-    data-rotate-y="45" 
-    data-rotate-x="0" 
-    data-rotate="-450" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c10 overview c9m c11m"> 
+    id                  = "c10m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "5000"
+    data-rel-y          = "0"
+    data-rotate-y       = "45"
+    data-rotate-x       = "0"
+    data-rotate         = "-450"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c10 overviewmiddle c9m c11m">
 
     <h3>10. IT 项目风险管理计划</h3>
         <p>
@@ -861,18 +872,18 @@
     </div>
 
     <div 
-    id="c11m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="4430" 
-    data-rel-y="-2320" 
-    data-rotate-y="39.85" 
-    data-rotate-x="20.91" 
-    data-rotate="-477.69" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c11 overview c10m c12m"> 
+    id                  = "c11m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "4430"
+    data-rel-y          = "-2320"
+    data-rotate-y       = "39.85"
+    data-rotate-x       = "20.91"
+    data-rotate         = "-477.69"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c11 overviewmiddle c10m c12m">
 
     <h3>11. IT 项目采购计划</h3>
         <p>
@@ -887,18 +898,18 @@
     </div>
 
     <div 
-    id="c12m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="2840" 
-    data-rel-y="-4110" 
-    data-rotate-y="25.56" 
-    data-rotate-x="37.03" 
-    data-rotate="-505.38" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c12 overview c11m c13m"> 
+    id                  = "c12m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "2840"
+    data-rel-y          = "-4110"
+    data-rotate-y       = "25.56"
+    data-rotate-x       = "37.03"
+    data-rotate         = "-505.38"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c12 overviewmiddle c11m c13m">
 
     <h3>12. IT 项目执行与控制</h3>
         <p>
@@ -910,18 +921,18 @@
     </div>
 
     <div 
-    id="c13m" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="600" 
-    data-rel-y="-4960" 
-    data-rotate-y="5.42" 
-    data-rotate-x="44.67" 
-    data-rotate="-533.08" 
-    data-rel-z="-0.5w" 
-    data-scale="2" 
-    data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight" 
-    data-goto-next-list="c13 overview c12m overview"> 
+    id                  = "c13m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "600"
+    data-rel-y          = "-4960"
+    data-rotate-y       = "5.42"
+    data-rotate-x       = "44.67"
+    data-rotate         = "-533.08"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c13 overviewmiddle c12m overviewmiddle">
 
     <h3>13. IT 项目收尾</h3>
         <p>
@@ -934,29 +945,20 @@
     </div>
 
     <div 
-    id="resources" 
-    class="step" 
-    data-rel-to="title" 
-    data-rel-x="3500" 
-    data-rel-y="3500" 
-    data-rotate-y="0" 
-    data-rotate-x="0" 
-    data-rotate="0" 
-    data-rel-z="0" 
-    data-scale="5"> 
+    id            = "resources"
+    class         = "step"
+    data-rel-to   = "title"
+    data-rel-x    = "3500"
+    data-rel-y    = "3500"
+    data-rotate-y = "0"
+    data-rotate-x = "0"
+    data-rotate   = "0"
+    data-rel-z    = "0"
+    data-scale    = "5">
 
-    <h3 style="text-align:center">
+    <h3 style     = "text-align:center">
         <a href="itpm-src.html" target="_blank">课程资源</a>
     </h3>
-
-    </div>
-
-    <div
-    id="overviewend" 
-    data-x="0"
-    data-y="0" 
-    class="step" 
-    data-scale="15">
 
     </div>
 
@@ -970,6 +972,16 @@
     }
     </script>
     -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
 
     <!-- 页面下方显示进度条 -->
     <div class="impress-progressbar">
@@ -991,3 +1003,58 @@
     <script>impress().init();</script>
     </body>
     </html>
+
+<!--
+    DNNNNDDDD8888OOOOZOOOZZZZZZZZOOOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNNNN
+    DNNDDDDD888OOOOZZZZZZ$$$$$Z$ZZZZZOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNN
+    NNDDDDDD8OOOZZZ$$$$$$$$$$Z$$$$$ZZZZZOOOO888888888DD8DDDDDDNNNNNNNNNNNNNNNNNNNNNN
+    DDDDDDDDOOZZZ$$$$$$$$$?7$$$$$$$$ZZZ$ZOOO888888888888888DDDDDNNNNNNNNNNNNNNNNNNNN
+    DDDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$ZZZOOOOOOOOO88O88888DDDDDDDNNNNNNNNNNNNNNNNN
+    DDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$$ZZZZZZZOOOOOO88O888888DDDDDDNNNNNNNNNNNNNNNN
+    DDDDD88OZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$Z$ZZZZZOOOOOO8O88888888DDDDDNNNNNNNNNNNNNNN
+    DDDDD8OZZZZ$7$$$$$$$$$$$$$$$88N7DZ$$$$$$$ZZZZZZZOOOOOO88888O88DDDDDNNNNNNNNNNNNN
+    DDDDD8OZZZ$$$$$$$$$$$$$$$$$$D++=Z7777$$$$888$ZZZZZZOOOOOO8888888DDDDNDNNNNNNNNNN
+    DDDD8OOZ$Z$$$$$$$$$$$$$$$$$7?===$7777777$N=DNZZZZZZZOOOOO8O8888888DDDDNNNNNNNNNN
+    DDDD8OZZZZ$$$$$$$$$$$$$$$$$7?===$77777777DN?.8NZZZZZZZZOOOOO8888888DDDDNNNNNNNNN
+    DDD88OZZZZZZZ$$$$$$$$$$$$$$$:.==N$7$$$77$$$M=.8D$ZZZZZZZZOOOOO8888888DDDNNNNNNNN
+    DDD8ZO8OZZZOZZZZ$$$$$$$$$$$$8,..+NNM++++=NNM+=.N$$ZZZZZZZZOOO8OO888888DDDNNNNNNN
+    DDD8888888OOOZZZZZZ$$$$$$$$$$D,..+==========N=,N$$$ZZZZZZZZZOO8O888888DDDDNNNNNN
+    DDD8D88888888888ZOZZ$$$$$$$$$DNN.===+=MM====+=NN$$?$ZZZZZZZZZOOOOO888888DDNNNNNN
+    D8888O88O8O8OOOOOOO88ZZ$ZZ$$$D====+=NMMMM+==++MN77$$$$ZZZZZZZZZOO8OO8888DDDNNNNN
+    8O8OOOOOOOOOOOOOOZOOOO88ZZZZZN++====NMMMM+==NMMM7777$$$ZZZZZZZZZOOOOO888888DDNNN
+    8OOOOOOOOOOZZZZZZZZZZZZ888OOON++=====MMM?===NMMM77777$$$ZZZZZZZZZZOOOO878888DNNN
+    OOOOOOOOZZZ$$$$$$7$7$$ZZ888OONN=====+=========MM777777$$$ZZZZZZZZZZZOOOO8888DDNN
+    OOZZZ$$$$$7777777777$O8OOOOOOOON+==~~:,,,,,.~~=NI777777$$$ZZZZZZZZZZOOOOO8888DDD
+    ZZ$$77IIIII7IIIIII7$ZZOOOOOOOOOOD=,,.  ......,DNII777777$$$$ZZZZZZZZZOOOOO8888DD
+    Z$77777$ZO88DDO$$OOOZOOOOMMMZZZOOODNMMMMMDNNNNI7II77777777$$$$ZZZZZZZZOOOOO8888D
+    $ZOO8OOOOOOOOOOODD8OOOZO8ZZZZMMMZZMM88M8M8MMII7IIIIII777777$$$ZZZZZZZZZZOOOO8888
+    8OOOOOOOOOOOOOOOO8OO8OZZOZMMOZZZMMZZOM888M8DIIIIIIIII777I777$$$$ZZZ$ZZZZZOOOO888
+    OO7OOOOOOOOOOOOOOOOOOMM.7ZZ$$$ZZZZMMZZM8.M8DM?IIIIIII777III7$$$$$IZZZZZZZZOOO888
+    OOOOOOOOOOOOOOOOOOOOOO8DM...MMMMNZZ.8O.MMMDM8N+IIIIIII77I777$$$$$$$$ZZZZZOOOI888
+    OOOOZZZZ$$$$$$ZZZZZZZZZ$M$ZO.....MMM.MMMMMMDDMI,M7IIII7777777$$$$$$$ZZZZZZZZOOO8
+    ZZ88$:DD$8888??II$$$$$$NMMMMZ$$.,NMMMMMMMMMMDI.,,:MMIII7777777$$$$$$$ZZZZZZZOOOO
+    ODDD=:88~D88+,,8O?=+I777IZZ=OOO+MMMMMMMMMMMMD?..DMMMM$II7I77777$$$$$$ZZZZZZZZOOO
+    O888~,O8,888,D8OOOO=$+IIII$+,??,MMMM M==.MMMD?MMM7$::,MM7I777777$$$$$$$ZZZZZZZZZ
+    +D887,,8+,O+78OO~~~~7$+?II7,?O?OMM.M~==~~M.M8????+IMM..MMMII7777$$$$$$$$ZZZ$ZZZZ
+    ~?OOZ=,,ZZO=7+=.,,I?$77+II7ZOI?Z=8MDDDMMDDONI??????I777MD7::7777$$$$$$$$ZZZZZZZZ
+    Z,:=$OOZ7++O,.,$$$$$$$$$?DNONNM8$$NZZNN..MMM,,N??????????I77MI7777$$$$$$ZZZZZZZZ
+    $O$,IO~,~,:8++++,,,,,,$DMDIIOOOO77MZZN..ZMMMOM???????????IIII7777777$$$$$ZZZZZZZ
+    :++=::=Z7=+==,,Z$Z?ZMMMMI777NOO77IZZZO.8M,NNNMN+??????????IIII777777$$$$$ZZZZZZZ
+    ~:::I$~,=$?=~??ZOMNNZMMM7D$7NOOII8ZZZZ.M..MDD.MM++++++?????IIII77777$$$$$ZZZZZZ$
+    ZZZ7+~::=,OI:DDMD888ZMMMI7DIZZ7..8ZZI..M..M.M8M=====++++??????II777I7$$$$$ZZZZZZ
+    ===~,:O+:8DD?NOZZ888ZDMM7787Z7..Z88Z...M,MO.D8M~~~======++????IIII7777$$$$$$ZZZZ
+    OZZZO8+,7MMMNOOZZ888Z8MMOD.DZ...888D..MMD..ZDMM:~~~~~~~==+++????IIIII7777$$$ZZZ?
+    OOZMMMM.MD8MMMOZ7IDD78MO,OMD:.8N7I8N..MMM.NMDM,:~~~~~~~~===+++???IIIII7777$$ZZZI
+    M77NDDOZN8OZMMZZZI8.+M...O88,...Z$N=.NMM.OM.D,,:~~~~~~~~~=====++???III77777$ZZZZ
+    D8MD88ION8MMDMZZZIDO7M..ZNZO,..+ZZZ.M..M.MMN:,,:~~~~~~~:~~~~===++???IIII777$$ZZZ
+    DDM888IO88MODMOZOOO7IZ8DDOO8...$....D..MDM.M:.,:~~~~~~~~~~~~~~===++??+III777$ZZZ
+    DD8M88IZ8DMODI$8ZZMM$IID7OO:,.IZ....D..M8.8M..,:~~~~~~~::~~~~~~~==++?+?III77$$$$
+    D8888888888OOOD8OZDM$OOOOO..,7ODZ....MM.D.OM.,,:~~~~~~~~::::::::~~==+???III7$$$$
+    D88888888MMOZI88OZ8M8O.OO.,,ODDD:.,MMM..M.M..,,::~~~~~::::::::::~~~==++???I7$$$$
+    N888NN88DMMZZZ?8:IDO..O8,88DZ778,,,.M..M.M...,,:::::::::::::::::::~~==++???I$$$$
+    D88ZZM8ZMMM$$.?D.?M..N..$,,,,8IO,,O...NM.M...,,,::::::::::::::::::::~~===+??I$$$
+    DD8?ZMOMIM $.Z.Z?+MIO.O=?.??,O?D.OO..MM.O...,,,::::::::::::::::::::,:~~~==+??777
+    ND8I+..ZIM,$,..8$.+....=+I======M==M=MM==M==O==M=$:::::~~~~~~:::::::::~~~==+??II
+    NDDDDDDDD8D8DDDDD88DD8888NI8DN=MM==M==M=MM+=M=~O+NOOOOOOOOOOOOOOOOOZOZOOOO888DDD
+    ---mengma2008---------yemengma.cn-------------Signture Made by GlassGiant.com---
+-->
