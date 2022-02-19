@@ -5,18 +5,12 @@ set -e
 
 printf "Deploying SLIDES to GitHub..."
 
-cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
-
-rm -rf slides
-
-mkdir slides
-
-cd $HOME/Documents/2_hust/slides
-
 # 复制除了.git/之外的文件和文件夹
-cp -Rpf `ls $HOME/Documents/2_hust/slides |grep -v .git|xargs` $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public/slides
-
-cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
+cp -R -f -v $HOME/Documents/2_hust/slides $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
+cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public/slides
+rm -rf .git
+rm .gitignore
+cd ..
 
 git add -A
 
