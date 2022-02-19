@@ -9,6 +9,7 @@ printf "Deploying SLIDES to GitHub..."
 cp -R -f -v $HOME/Documents/2_hust/slides $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
 cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public/slides
 rm -rf .git
+rm .DS_Store
 rm .gitignore
 cd ..
 
