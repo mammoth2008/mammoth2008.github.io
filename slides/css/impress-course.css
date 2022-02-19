@@ -281,6 +281,14 @@ a:focus {
     background-image: url(../hustlogo72.png);
 }
 
+.menu{ 
+    display: block;
+    width:  138px; 
+    height: 24px;
+    margin-top: 16px;
+    margin-left: 16px;
+    background-attachment:  fixed; 
+}
 
 .slide {
     display: block;
@@ -556,7 +564,7 @@ img {
     发布时设为0
     注意Z轴取值,避免遮挡
 */
-    opacity: 1;
+    opacity: 0;
 }
 
 .icon {
