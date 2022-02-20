@@ -4,8 +4,8 @@
 import math
 
 n = input("几边形?\n")
-m = input("距原点距离？\n")
-l = input("Slide 相对于平面偏转角度是？\n")
+m = input("距原点距离?\n")
+l = input("Slide 相对于平面偏转角度是?\n")
 
 for i in range(n):
 

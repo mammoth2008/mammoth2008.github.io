@@ -6,8 +6,8 @@ set -e
 printf "Deploying SLIDES to GitHub..."
 
 # 复制除了.git/之外的文件和文件夹
-cp -R -f -v $HOME/Documents/2_hust/slides $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public
-cd $HOME/Documents/1_writing/3_blog/mammoth2008.github.io/public/slides
+cp -R -f -v $HOME/Documents/college/slides $HOME/Documents/work/blog/mammoth2008.github.io/public
+cd $HOME/Documents/work/blog/mammoth2008.github.io/public/slides
 rm -rf .git
 rm .DS_Store
 rm .gitignore
@@ -25,7 +25,7 @@ git commit -m "$msg"
 
 git push origin master
 
-cd $HOME/Documents/2_hust/slides
+cd $HOME/Documents/college/slides
 
 git add -A
 
