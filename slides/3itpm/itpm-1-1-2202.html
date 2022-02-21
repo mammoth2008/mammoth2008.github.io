@@ -8,8 +8,8 @@
     <!-- 修改页面标题 -->
         <title>ITPM | HUST</title>
 
-    <!-- 修改content -->
-        <meta name="description" content="IT项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+    <!-- 修改 content -->
+        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -32,7 +32,7 @@
 
     <body class="impress-not-supported">
 
-    <!-- 左上角加上logo -->
+    <!-- 左上角加上 logo -->
     <div class="logo"></div>
 
     <div class="fallback-message">
@@ -51,9 +51,9 @@
     data-perspective         = "1000" 
     data-autoplay            = "0">
 
-    <!-- 每一节slide的标题是"cxyt",表示章节标题.如第一章第一节标题就是c11t,第三章第二节标题就是c32t -->
-    <!-- 每一节slide的标题页class应该是step,不是step markdown -->
-    <!-- 类似地,需要HTML排版的slide,class都是step;可以使用markdown的,class才是step markdown -->
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
 
     <div 
     id         = "overview" 
@@ -83,7 +83,7 @@
 
     </div>
 
-    <!-- 修改id -->
+    <!-- 修改 id -->
     <div 
     id         = "c11t"
     class      = "step"
@@ -677,6 +677,20 @@
 
     </div>
 
+    <div
+    id            = "mm11"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![itpm 1.1 mindmap](img/c01/mindmap-1-1.png)
+
+    </div>
+
 <!-- 本节问题 -->
 
     <div
@@ -738,14 +752,14 @@
     <!-- 页面下方显示当前页/总页数 -->
     <div class="impress-progress"></div>
 
-    <!-- 使用markdown写简单页面 -->
+    <!-- 使用 markdown 写简单页面 -->
     <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
 
-    <!-- 语法高亮,配合<head>中的highlight css起作用 -->
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
     <script src="../extras/highlight/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
-    <!-- impress.js需要放在最下面,并且初始化 -->
+    <!-- impress.js 需要放在最下面,并且初始化 -->
     <script src="../js/impress.js"></script>
     <script>impress().init();</script>
     </body>

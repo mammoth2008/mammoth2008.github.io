@@ -8,8 +8,8 @@
     <!-- 修改页面标题 -->
         <title>ITPM | HUST</title>
 
-    <!-- 修改content -->
-        <meta name="description" content="IT项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+    <!-- 修改 content -->
+        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -32,7 +32,9 @@
 
     <body class="impress-not-supported">
 
-    <!-- 左上角加上logo -->
+    <!-- 左上角加上 logo     -->
+    <!-- logo 颜色是 #027cf7 -->
+    <!-- 链接也使用同样颜色  -->
     <div class="logo"></div>
 
     <div class="fallback-message">
@@ -51,9 +53,9 @@
     data-perspective         = "1000"
     data-autoplay            = "0">
 
-    <!-- 每一节slide的标题是"cxyt",表示章节标题.如第一章第一节标题就是c11t,第三章第二节标题就是c32t -->
-    <!-- 每一节slide的标题页class应该是step,不是step markdown -->
-    <!-- 类似地,需要HTML排版的slide,class都是step;可以使用markdown的,class才是step markdown -->
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
 
     <div
     id         = "overview"
@@ -65,6 +67,10 @@
     </div>
 
 <!-- What,Why,and How -->
+
+<!-- Lecture: 项目管理中有一些很好的套路,无论是工作中还是在自己的生活中都很好用.
+虽然日常生活中不太能用到挣值分析法,但是甘特图和关键路径分析还是可以用一用的.  -->
+
     <div
     id         = "what"
     class      = "step"
@@ -84,6 +90,8 @@
 
     </div>
 
+<!-- Lecture: 把生活看成是一串项目,比把生活看成是无尽的运营,会更有趣得多.更重要的是,这种视角会带来总结,回顾,以及持续改进. -->
+
     <div
     id          = "why"
     class       = "step"
@@ -102,6 +110,8 @@
         </ul>
 
     </div>
+
+<!-- Lecture: 重点是系统观点.子系统-系统-环境.理解了系统观点,就能跳出问题本身去看待问题,[第二序改变](https://openmindclub.blog.caixin.com/archives/186118)也就成为了可能. -->
 
     <div
     id          = "how"
@@ -132,7 +142,7 @@
     data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
     data-goto-next-list = "overview c1 how processgroup">
 
-        <h5 style="text-align: center">IT项目计划, 进度和控制的系统方法</h5>
+        <h5 style="text-align: center">IT 项目计划, 进度和控制的系统方法</h5>
         <h1 style="text-align: center">IT 项目管理</h1>
         <h5 style="text-align: center">Information  Technology  Project  Management</h5>
         <br/>
@@ -151,6 +161,12 @@
     </div>
 
 <!-- 概述 -->
+<!-- Lecture: 为什么启动这么重要?为什么大型项目动工时,往往要搞个启动仪式?
+真的只是为了场面,仪式感,或者上新闻吗?
+不仅仅如此.
+还是为了表示决心.就像管理信息系统课程中谈到过的:一个 MIS 项目要上马,首先要获得最高级别领导的支持.
+人性如此. -->
+
     <div
     id            = "processgroup"
     class         = "step markdown"
@@ -209,10 +225,10 @@
 ### 49 个过程
 
 - 启动过程组: 2 个过程
-- 规划过程组: 24个过程
-- 执行过程组: 10个过程
-- 监控过程组: 12个过程
-- 收尾过程组: 1个过程
+- 规划过程组: 24 个过程
+- 执行过程组: 10 个过程
+- 监控过程组: 12 个过程
+- 收尾过程组: 1 个过程
 
     </div>
 
@@ -315,7 +331,7 @@
 
     </div>
 
-<!-- 学习目标,共13章 -->
+<!-- 学习目标,共 13 章 -->
 <!-- 课程框架应该再细化一下,也许画个图 -->
 
     <div
@@ -624,7 +640,7 @@
 
     </div>
 
-<!-- 目录,共13章 -->
+<!-- 目录,共 13 章 -->
 
     <div
     id                  = "c1m"
@@ -991,14 +1007,14 @@
     <!-- 页面下方显示当前页/总页数 -->
     <div class="impress-progress"></div>
 
-    <!-- 使用markdown写简单页面 -->
+    <!-- 使用 markdown 写简单页面 -->
     <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
 
-    <!-- 语法高亮,配合<head>中的highlight css起作用 -->
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
     <script src="../extras/highlight/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
-    <!-- impress.js需要放在最下面,并且初始化 -->
+    <!-- impress.js 需要放在最下面,并且初始化 -->
     <script src="../js/impress.js"></script>
     <script>impress().init();</script>
     </body>

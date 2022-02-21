@@ -8,8 +8,8 @@
     <!-- 修改页面标题 -->
         <title>ITPM | HUST</title>
 
-    <!-- 修改content -->
-        <meta name="description" content="IT项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+    <!-- 修改 content -->
+        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -32,7 +32,7 @@
 
     <body class="impress-not-supported">
 
-    <!-- 左上角加上logo -->
+    <!-- 左上角加上 logo -->
     <div class="logo"></div>
 
     <div class="fallback-message">
@@ -51,9 +51,9 @@
     data-perspective         = "1000" 
     data-autoplay            = "0">
 
-    <!-- 每一节slide的标题是"cxyt",表示章节标题.如第一章第一节标题就是c11t,第三章第二节标题就是c32t -->
-    <!-- 每一节slide的标题页class应该是step,不是step markdown -->
-    <!-- 类似地,需要HTML排版的slide,class都是step;可以使用markdown的,class才是step markdown -->
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
 
     <div 
     id         = "overview" 
@@ -64,7 +64,7 @@
 
     </div>
 
-<!-- 修改id -->
+<!-- 修改 id -->
 
     <div
     id         = "c13t"
@@ -107,7 +107,7 @@
     data-rotate-z = "0"
     data-scale    = "2">
 
-### 1900年以前 (第一阶段)
+### 1900 年以前 (第一阶段)
 
 - 项目很伟大
 - 人力廉价, 甚至是可以牺牲的
@@ -131,7 +131,7 @@
     data-rotate-z = "0"
     data-scale    = "2">
 
-### 1900-1949年 (第二阶段)
+### 1900-1949 年 (第二阶段)
 
 - 管理科学家和工业工程师出现
 - 科学化的项目管理萌芽
@@ -153,7 +153,7 @@
     data-rotate-z = "0"
     data-scale    = "2">
 
-### 1950-1969年 (第三阶段)
+### 1950-1969 年 (第三阶段)
 
 - 美国国防项目开始应用关键路径网络分析
 - 项目管理软件出现
@@ -174,7 +174,7 @@
     data-rotate-z = "0"
     data-scale    = "2">
 
-### 1970-1979年 (第四阶段)
+### 1970-1979 年 (第四阶段)
 
 - 项目管理出现两个分支: 工业和 IT
 - 项目管理协会创建
@@ -196,7 +196,7 @@
     data-rotate-z = "0"
     data-scale    = "2">
 
-### 1980-1989年 (第五阶段)
+### 1980-1989 年 (第五阶段)
 
 - 在台式机上运行项目管理软件
 - 更好的图形和色彩
@@ -218,7 +218,7 @@
     data-rotate-z = "0"
     data-scale    = "2">
 
-### 1990至今 (第六阶段)
+### 1990 至今 (第六阶段)
 
 - PC 和笔记本能运行所有项目管理功能
 - 更关注项目的风险
@@ -335,7 +335,21 @@
 
     </div>
 
-<!-- 修改rel-to到本页id -->
+    <div
+    id            = "mm13"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![itpm 1.3 mindmap](img/c01/mindmap-1-3.png)
+
+    </div>
+
+<!-- 修改 rel-to 到本页 id -->
 
     <div 
     id            = "c13q"
@@ -396,14 +410,14 @@
     <!-- 页面下方显示当前页/总页数 -->
     <div class="impress-progress"></div>
 
-    <!-- 使用markdown写简单页面 -->
+    <!-- 使用 markdown 写简单页面 -->
     <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
 
-    <!-- 语法高亮,配合<head>中的highlight css起作用 -->
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
     <script src="../extras/highlight/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
-    <!-- impress.js需要放在最下面,并且初始化 -->
+    <!-- impress.js 需要放在最下面,并且初始化 -->
     <script src="../js/impress.js"></script>
     <script>impress().init();</script>
     </body>
