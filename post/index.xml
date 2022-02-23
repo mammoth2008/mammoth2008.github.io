@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sun, 20 Feb 2022 15:12:56 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 10:30:24 +0800</lastBuildDate><atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新年答问之二：如何获得高效率</title>
+      <link>https://yemengma.cn/post/220107-high-efficiency/</link>
+      <pubDate>Mon, 21 Feb 2022 10:30:24 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/220107-high-efficiency/</guid>
+      <description>问题 一直认为时间很重要，但是总感觉不能达到自己预期的效率，该怎么办？ 回答 这的确是个普遍困惑，普遍到已经有了一个细分类别，叫做“时间管理”或“</description>
+    </item>
+    
     <item>
       <title>2022 Week 07 回顾</title>
       <link>https://yemengma.cn/post/22w07-review/</link>
@@ -51,15 +60,6 @@
       
       <guid>https://yemengma.cn/post/220204-using-vim/</guid>
       <description>TL;DR 太长不看 Vim 是强大高效灵活优雅的文本编辑器； 使用 Vim 是复利投资，也是有趣的探索； 所有常见操作系统都有 Vim，你的电脑里可能已经预装了它； Vim 有无</description>
-    </item>
-    
-    <item>
-      <title>新年答问之二：如何获得高效率</title>
-      <link>https://yemengma.cn/post/220107-high-efficiency/</link>
-      <pubDate>Fri, 07 Jan 2022 10:30:24 +0800</pubDate>
-      
-      <guid>https://yemengma.cn/post/220107-high-efficiency/</guid>
-      <description>问题 一直认为时间很重要，但是总感觉不能达到自己预期的效率，该怎么办？ 回答 这的确是个普遍困惑，普遍到已经有了一个细分类别，叫做“时间管理”或“</description>
     </item>
     
     <item>
