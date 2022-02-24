@@ -200,7 +200,7 @@
 
 ### 后见之明偏误 Hindsight Bias
 
-![后见之明偏误](img/hindsight-bias.jpeg)
+![后见之明偏误](img/hindsight-bias.jpg)
 
 又称 “我早就知道了”、“马后炮”、“事后诸葛”。在事情发生或发展后，以为自己事前就能预测其发生与发展 [45]。
 
@@ -254,7 +254,7 @@
 
 ### 资讯偏差 Information Bias
 
-![资讯偏差](img/information-bias.jpeg)
+![资讯偏差](img/information-bias.png)
 
 倾向寻求更多资讯以做出决策，即使寻求的资讯对决策没有帮助 [52]。
 
@@ -278,13 +278,13 @@
 
 ### 少即是好效应 Less-is-better Effect
 
-![少即是好效应](img/less-is-better-effect.jpeg)
+![少即是好效应](img/less-is-better-effect.png)
 
 分开评估时倾向选择较小组的东西，一起评估时倾向选择较大组的东西。
 
 ### 损失趋避 Loss Aversion
 
-![损失趋避](img/loss-aversion.jpeg)
+![损失趋避](img/loss-aversion.png)
 
 认为放弃一件事物的效益损失大于得到一件事物的效益所得。（参见沉没成本与原赋效应）[53]
 
@@ -362,7 +362,7 @@
 
 ### 空想性错视 Pareidolia
 
-![空想性错视](Pareidolia)
+![空想性错视](img/pareidolia.jpeg)
 
 从模糊、随机的影像中看出有意义的东西，例如从云朵中看出脸孔。有时也延伸指听觉，如录音带倒播时听出特别的讯息。
 
@@ -404,25 +404,25 @@
 
 ### 对抗心理 Reactance
 
-![对抗心理](Reactance)
+![对抗心理](img/reactance.jpeg)
 
 他人要求做或不做某事时，有做相反事的冲动，尤其这要求对自由、[自主](img/x-Devonthink-Item://8525d56f-380e-4e67-A689-c682d7207384.jpeg)造成威胁时。（参见逆反心理 ）。
 
-### 反动贬低 Reactive Devaluation
+### 反应式贬低 Reactive Devaluation
 
-![反动贬低](img/reactive-devaluation.jpeg)
+![反应式贬低](img/reactive-devaluation.png)
 
 贬低敌对者的要求或方案，或当敌对者在某事让步时，觉得此时不再有吸引力。
 
-### 新词错觉 Recency Illusion
+### 近期偏好 Recency Illusion
 
-![新词错觉](img/recency-illusion.jpeg)
+![近期偏好](img/recency-illusion.jpeg)
 
-感觉某些字词或语句是新发明的，然而它实际上历史悠久。例如英语用 “They” 表达单数不确定性别对象、“You And I”（而非 You And Me）。
+
 
 ### 自制偏差 Restraint Bias
 
-![自制偏差](img/restraint-bias.jpeg)
+![自制偏差](img/restraint-bias.png)
 
 高估自己对诱惑的自制力。
 
@@ -434,7 +434,7 @@
 
 ### 风险代偿 Risk Compensation
 
-![风险代偿](img/risk-compensation.jpeg)
+![风险代偿](img/risk-compensation.webp)
 
 感觉情况安全时，会倾向冒更大的风险。
 
@@ -464,7 +464,7 @@
 
 ### 刻板印象 Stereotyping
 
-![刻板印象](Stereotyping)
+![刻板印象](img/stereotyping.png)
 
 根据事物的所属类别或群体判断其特质，而忽略其独特性。
 

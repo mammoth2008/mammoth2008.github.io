@@ -6,6 +6,6 @@ function rand(){
 }
 
 # 将最后一个数字改成题目数量
-rand_no=$(rand 1 22)
+rand_no=$(rand 1 217)
 
 open "/Users/Freeman/Documents/college/slides/4funny/funny$rand_no.html"
