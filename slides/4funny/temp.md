@@ -730,7 +730,7 @@
 
 ### 潜抑记忆 Cryptomnesia
 
-![潜抑记忆](Cryptomnesia)
+![潜抑记忆](img/cryptomnesia.jpeg)
 
 接触后记得某些影像或语句，却不记得是看来听来的，甚至会误以为是自己原创，造成剽窃的争议 [83]。
 
@@ -773,12 +773,6 @@
 
 人们倾向认为听过的是真的（即使没意识到听过），而不管该陈述实际上是否有效。换言之，人容易相信熟悉的话胜过陌生的。
 
-### 错觉相关 Illusory Correlation
-
-![错觉相关](img/illusory-correlation.jpeg)
-
-若认为两件事相关，回忆时就会觉得两者同时发生的频率较高 [28][50]。
-
 ### 延迟效应 Lag Effect
 
 ![延迟效应](img/lag-effect.jpeg)
@@ -797,9 +791,9 @@
 
 用不同方式 “编码” 的资讯，容易记忆的程度也不相同。例如视觉、听觉、触觉、嗅觉 [88]。
 
-### 列表清度效应 List-Length Effect
+### 列表长度效应 List-Length Effect
 
-![列表清度效应](img/list-length-effect.jpeg)
+![列表长度效应](img/list-length-effect.jpeg)
 
 列表中有越多东西，能记住的比例就越少，但能记住的项目总数会增加 [89]。
 
@@ -851,15 +845,9 @@
 
 以图片传达概念较以文字传达概念容易学习与回忆[93][94][95][96][97][98]。
 
-### 正面效应 Positivity Effect
-
-![正面效应](img/positivity-effect.jpeg)
-
-老年人回忆中的内容往往会往正面扭曲。
-
 ### 序位效应 Serial Position Effect
 
-![序位效应](img/serial-position-effect.jpeg)
+![序位效应](img/serial-position-effect.png)
 
 序列末尾的东西最容易回忆，其次是序列开头的，序列中间的讯息最不易记住 [99]。
 
@@ -913,7 +901,7 @@
 
 ### 可暗示性 Suggestibility
 
-![可暗示性](Suggestibility)
+![可暗示性](img/suggestibility.jpeg)
 
 回想事情时，如旁人暗示了某些想法，想到的内容会受扭曲。
 
@@ -967,13 +955,13 @@
 
 ### 赌徒谬误 Gambler'S Fallacy
 
-![赌徒谬误](Gambler'S Fallacy)
+![赌徒谬误](img/gambler-s-fallacy.jpeg)
 
 认为某事多次发生则未来发生的几率会较小，或多次未发生则未来发生的几率会较大。
 
 ### 逆赌徒谬误 Inverse Gambler'S Fallacy
 
-![逆赌徒谬误](img/inverse-gambler'S Fallacy)
+![逆赌徒谬误](img/inverse-gambler-s-fallacy.jpeg)
 
 认为几率很小的事发生了，一定是做了很多次。
 
@@ -991,13 +979,13 @@
 
 ### 检察官谬误 Prosecutor'S Fallacy
 
-![检察官谬误](Prosecutor'S Fallacy)
+![检察官谬误](img/prosecutor-s-fallacy.jpeg)
 
 泛指多种根据不相关资讯认定被告 “无辜的几率” 很小的情况。
 
 ### 辩护人谬误 Defendant'S Fallacy
 
-![辩护人谬误](Defendant'S Fallacy)
+![辩护人谬误](img/defendant-s-fallacy.jpeg)
 
 泛指多种根据不相关资讯认定被告 “犯罪的几率” 很小的情况。
 
@@ -1038,16 +1026,13 @@
 
 ### 取样偏差 Sampling Bias
 
-!亦作以偏概全，即以局部事例解释整体原因。（白马非马：局部不能代表整体。）
+![取样偏差](https://i-1256632535.cos.ap-beijing.myqcloud.com/img/sampling-bias.jpeg)
+
+亦作以偏概全，即以局部事例解释整体原因。（白马非马：局部不能代表整体。）
 
 ### 自我选择偏差 Self-Selection Bias
 
 ![自我选择偏差](img/self-selection-bias.jpeg)
-
-
-### 谱带偏差 Spectrum Bias
-
-![谱带偏差](img/spectrum-bias.jpeg)
 
 
 ### 预筛选偏差 Pre-Screening Bias
@@ -1098,14 +1083,10 @@
 
 实验者倾向相信、认可、发布符合他们期望的结果，而不信、贬低、弃置不符合的 [110]。
 
-### 循环分析 Circular Analysis
-
-![循环分析](img/circular-analysis.jpeg)
-
 
 ### 遗漏变数偏差 Omitted-Variable Bias
 
-![遗漏变数偏差](img/omitted-variable-bias.jpeg)
+![遗漏变数偏差](img/omitted-variable-bias.png)
 
 
 ### 经费偏差 Funding Bias
@@ -1114,33 +1095,14 @@
 
 选择研究方法或诠释研究结果时，倾向迎合经费提供者的立场。
 
-### 通报偏差 Reporting Bias
-
-![通报偏差](img/reporting-bias.jpeg)
-
 
 ### 社会期许偏差 Social Desirability Bias
 
-![社会期许偏差](img/social-desirability-bias.jpeg)
+![社会期许偏差](img/social-desirability-bias.png)
 
 说明自己的看法时，倾向于多报符合社会期许的意愿或实情，而少报不符合的。例如询及是否有不良嗜好、性伴侣数量时，会有意或无意地隐瞒或淡化实情[111]。
 
 ### 资料探勘偏差 Data-Snooping Bias
 
-![资料探勘偏差](img/data-snooping-bias.jpeg)
-
-
-### 前导时间偏差 Lead-Time Bias
-
-![前导时间偏差](img/lead-time-bias.jpeg)
-
-
-### 时距偏差 Length-Time Bias
-
-![时距偏差](img/length-time-bias.jpeg)
-
-
-### 过度诊断偏差 Overdiagnosis Bias
-
-![过度诊断偏差](img/overdiagnosis-bias.jpeg)
+![资料探勘偏差](img/data-snooping-bias.png)
 
