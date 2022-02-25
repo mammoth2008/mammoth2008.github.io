@@ -1,0 +1,92 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>ITPM | HUST</title>
+        
+    <!-- 修改 content -->
+        <meta name="description" content="IT 项目管理课程使用. 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+        
+        <link rel="shortcut icon" href="../hustlogo72.png" />    
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress"
+    data-transition-duration="1000"
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    data-autoplay="0">
+
+    <!-- 每一节 slide 的标题是"cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+    <div
+    id="overview" 
+    data-rel-to="title" 
+    class="step" 
+    data-rel-x="0" 
+    data-rel-y="0" 
+    data-rel-z="0" 
+    data-rotate-x="0"
+    data-rotate-y="0"
+    data-rotate-z="0"
+    data-scale="15">
+        
+    </div>
+
+    </div>
+
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+
+    </body>
+    </html>
