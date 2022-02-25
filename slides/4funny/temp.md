@@ -489,7 +489,7 @@
 
 ### 幸存者偏差 Survivorship Bias
 
-![幸存者偏差](img/survivorship-bias.jpeg)
+![幸存者偏差](img/survivorship-bias.png)
 
 专注于从某个过程中存活下来的人或事寻找弱点意欲补强，却忽略了最大的弱点更可能在未存活的人或事之中。
 
@@ -513,7 +513,7 @@
 
 ### 只看整体效应 Whole Only Effect
 
-![只看整体效应](img/whole-only-effect.jpeg)
+![只看整体效应](img/whole-only-effect.png)
 
 选项为整套方案时，忽略个别部分有协商的可能。
 
@@ -549,7 +549,7 @@
 
 ### 达克效应 Dunning-Kruger Effect
 
-![达克效应](img/dunning-kruger-effect.jpeg)
+![达克效应](img/dunning-kruger-effect.png)
 
 能力过差的人由于无法分辨能力好与能力差的不同，因而认为大家都一样 [72]。
 
@@ -585,7 +585,7 @@
 
 ### 团体迷思 Groupthink
 
-![团体迷思](Groupthink)
+![团体迷思](img/groupthink.jpeg)
 
 又称集体错觉。团体在决策过程中，由于成员倾向让自己的观点与团体一致，因而令整个团体缺乏不同的思考角度，不能进行客观分析。
 
@@ -609,13 +609,13 @@
 
 ### 透明度错觉 Illusion Of Transparency
 
-![透明度错觉](img/illusion-of-transparency.jpeg)
+![透明度错觉](img/illusion-of-transparency.png)
 
 认为自己很容易被他人看透，或认为自己很容易看透他人。
 
 ### 优于常人效应 Better-Than-Average Effect
 
-![优于常人效应](img/better-than-average-effect.jpeg)
+![优于常人效应](img/better-than-average-effect.png)
 
 高估自己的优点、低估自己的缺点 [77]。是差于常人效应（英语：Worse-Than-Average Effect）的反例。
 
@@ -633,13 +633,13 @@
 
 ### 素朴犬儒主义 Naïve Cynicism
 
-![素朴犬儒主义](Naïve Cynicism)
+![素朴犬儒主义](img/naive-cynicism.jpeg)
 
 认为其他人比自己更自我中心。
 
 ### 素朴实在论 Naïve Realism
 
-![素朴实在论](Naïve Realism)
+![素朴实在论](img/naive-realism.jpeg)
 
 相信自己所见所闻即是真相、是客观且不带偏见的，认为这是显而易见的事实，理性人一定会同意自己，不同意的人一定是资讯不足、懒惰、不理性或有偏见。（参见哲学实在论）
 
@@ -697,12 +697,6 @@
 
 怪异的事比寻常的事更容易记住。
 
-### 支持选择偏差 Choice-Supportive Bias
-
-![支持选择偏差](img/choice-supportive-bias.jpeg)
-
-回顾自己做过的选择时，倾向认为是明智的（参见支持选择偏差）。
-
 ### 改变偏差 Change Bias
 
 ![改变偏差](img/change-bias.jpeg)
@@ -715,11 +709,6 @@
 
 难以回忆四岁以前的事。
 
-### 退缩偏差 Regressive Bias
-
-![退缩偏差](img/regressive-bias.jpeg)
-
-记忆会倾向中庸不极端，把高价值高或然率的事记成比实际低，把低价值低或然率的事记成比实际高 [29][30]。
 
 ### 一致性偏差 Consistency Bias
 
@@ -745,9 +734,6 @@
 
 接触后记得某些影像或语句，却不记得是看来听来的，甚至会误以为是自己原创，造成剽窃的争议 [83]。
 
-### 自我中心偏差 Egocentric Bias
-
-![自我中心偏差](img/egocentric-bias.jpeg)
 
 回忆中的自己会美化，例如记忆中自己的考试成绩比实际更好。
 
