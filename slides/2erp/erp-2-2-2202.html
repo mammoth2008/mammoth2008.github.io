@@ -66,15 +66,15 @@
 
     <!-- 修改 id -->
     <div 
-    id         = "c13t"
+    id         = "c22t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
     <!-- 修改标题 -->
-        <h2>1. ERP 概述</h2>
-        <h4 style="text-align: center">1.3 ERP 的演变与发展</h4>
+        <h2>2. 生产管理</h2>
+        <h4 style="text-align: center">2.2 主生产计划</h4>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -95,462 +95,465 @@
     </div>
 
     <div
-    id            = "f0"
+    id            = "b0"
     class         = "step markdown"
-    data-rel-to   = "c13t"
+    data-rel-to   = "c22t"
     data-rel-x    = "-2000"
-    data-rel-y    = "-400"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### ERP 的由来
-
-- 1958, 标准生产管理方式, IBM
-- 1961, MRP, Material Requirements Planning
-- 1968, PICS, Production and Information Control System, IBM
-- 1970s, COPICS, Communication Oriented Production and Information Control System, IBM
-
-    </div>
-    
-    <div
-    id            = "f0a"
-    class         = "step markdown"
-    data-rel-to   = "f0"
-    data-rel-x    = "0"
-    data-rel-y    = "760"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-    
-- 1980s, MRP II, Manufacturing Resources Planning
-- 1990s, ERP, Enterprise Resource Planning, Gartner Group
-- 2000s, ERP II, Gartner Group
-
-    </div>
-
-    <div
-    id            = "f1"
-    class         = "step markdown"
-    data-rel-to   = "c13t"
-    data-rel-x    = "-2000"
-    data-rel-y    = "1400"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 订货点法 (Order Point Method , OPM)
-
-- 1930s
-- 最大库存量和安全库存量
-- 计算补充库存提前量
-- 当物料供应到货时, 物料消耗刚好到安全库存量
-- 两个参数: 订货点, 订货批量
-
-    </div>
-
-<!-- Lecture: Economic Lot Size 即经济批量 -->
-
-    <div
-    id            = "f1a"
-    class         = "step markdown"
-    data-rel-to   = "f1"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-![Order Point Method, OPM](img/c01/opm.jpeg)
-
-    </div>
-
-    <div
-    id            = "f2"
-    class         = "step markdown"
-    data-rel-to   = "f1"
-    data-rel-x    = "460"
-    data-rel-y    = "60"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "1">
-
-### 需要满足的条件
-
-- 物料消耗相对稳定
-- 物料供应比较稳定
-- 物料需求是独立的
-- 物料价格不是太高
-
-    </div>
-
-    <div
-    id            = "f3"
-    class         = "step markdown"
-    data-rel-to   = "c13t"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 物料需求计划 MRP
-
-- 1960s
-- 独立需求
-- 相关需求
-- 在需要的时候提供需要的数量
-- 需求应考虑产品结构
-- 产品结构与物料需求相关
-
-    </div>
-
-    <div
-    id            = "f4"
-    class         = "step markdown"
-    data-rel-to   = "f3"
-    data-rel-x    = "0"
-    data-rel-y    = "700"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-- 物料需求计划系统是一种能提供物料计划及控制库存, 依据产品的交货期推算出零部件的生产进度日程和原材料与外购件的需求日程的系统
-
-    </div>
-
-    <div
-    id            = "f4a"
-    class         = "step markdown"
-    data-rel-to   = "f4"
-    data-rel-x    = "0"
-    data-rel-y    = "430"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-- 物料需求计划将主生产计划 (Master Production Schedule, MPS) 转化成物料需求表, 并为需求计划提供信息
-
-    </div>
-
-    <div
-    id            = "f4b"
-    class         = "step markdown"
-    data-rel-to   = "f4a"
-    data-rel-x    = "0"
-    data-rel-y    = "440"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-- 应用物料需求计划系统必须要决定物料的毛需求量 (Gross Requirement, GR) 和净需求量 (Net Requirement, NR)
-
-    </div>
-
-    <div
-    id            = "f4c"
-    class         = "step markdown"
-    data-rel-to   = "f4b"
-    data-rel-x    = "0"
-    data-rel-y    = "380"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-- 物料需求计划不仅给出订单数量, 而且特别强调需要的时间
-
-    </div>
-
-    <div
-    id            = "f5"
-    class         = "step markdown"
-    data-rel-to   = "f4"
-    data-rel-x    = "0"
-    data-rel-y    = "1750"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 需要满足的条件
-
-- 主生产计划
-- 物料有独立物料代码
-- 通过物料代码表示的物料清单 (Bill of Materials, BOM)
-- 完整库存记录
-
-    </div>
-
-    <div
-    id            = "f6"
-    class         = "step markdown"
-    data-rel-to   = "c13t"
-    data-rel-x    = "2000"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 闭环物料需求计划 (Closed-loop MRP)
-
-- 实际生产中的条件是变化的
-- 采购计划可能受限, 无法保障供应
-- 生产计划需要考虑生产线能力
-- 1980s, 发展出闭环物料需求计划
-
-    </div>
-
-    <div
-    id            = "f7"
-    class         = "step markdown"
-    data-rel-to   = "f6"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 执行过程
-
-- 制定企业生产规划
-- 进行生产能力与负荷分析
-- 制订物料需求计划
-- 平衡能力需求及供应
-- 验证物料需求计划
-- 作业执行结果反馈到计划层
-
-    </div>
-
-    <div
-    id            = "f7a"
-    class         = "step markdown"
-    data-rel-to   = "f7"
-    data-rel-x    = "0"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-![closed-loop MRP](img/c01/closed-loop-mrp.png)
+### 主生产计划
+
+- 企业生产什么, 生产多少及什么时段完成
+- 把宏观作业计划转化为微观作业计划
+- 是企业物料需求计划的直接来源
+- 是粗略平衡企业生产负荷和生产能力的方法
+- 是联系市场销售和生产制造的纽带
+- 是指导企业生产管理和调度的权威性文件
 
     </div>
 
     <div
-    id            = "f8"
+    id            = "b1"
     class         = "step markdown"
-    data-rel-to   = "f7"
+    data-rel-to   = "b0"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 主生产计划的意义
+
+- 屏蔽了需求来源的多样性和复杂性
+- 降低不稳定性向物料需求计划的传播
+- 提高 ERP 系统的柔性和扩展性
+
+    </div>
+
+    <div
+    id            = "b2"
+    class         = "step markdown"
+    data-rel-to   = "b1"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 主生产计划的编制原则
+
+- 最少项目原则
+- 独立具体原则
+- 关键项目原则
+- 全面代表原则
+- 适当适量原则
+- 基本稳定原则
+
+    </div>
+
+    <div
+    id            = "b3"
+    class         = "step markdown"
+    data-rel-to   = "b2"
     data-rel-x    = "0"
     data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 需要满足的条件
+### 主生产计划的时间基准
 
-- 物料需求计划
-- 工作中心的定义
-- 工厂日历
-- 工艺路线和定义
+- 时段: 时间段落, 间隔或时间跨度
+- 典型的计划时段是周
+- 时区: 完成某项工作的时间区间
+- 计划时区, 下达时区, 执行时区
+- 时界: 时区之间的界限
+- 计划时界, 需求时界
 
     </div>
 
     <div
-    id            = "f9"
+    id            = "b4"
     class         = "step markdown"
-    data-rel-to   = "c13t"
+    data-rel-to   = "b3"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![时区与时界](img/c02/time-zone.svg)
+
+    </div>
+
+    <div
+    id            = "b5"
+    class         = "step markdown"
+    data-rel-to   = "b4"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![时区,时界与计划的关系](img/c02/time-plan.svg)
+
+    </div>
+
+    <div
+    id            = "b6"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 粗能力需求计划
+
+- 是判定主生产计划是否可行的工具
+- 把生产计划转变为工作中心的能力需求
+- 主生产计划中的生产计划是生产负荷
+- 关键工作中心能力是生产能力
+- 未经粗能力需求计划判定的主生产计划是不可靠的
+
+    </div>
+
+    <div
+    id            = "b7"
+    class         = "step markdown"
+    data-rel-to   = "b6"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 企业的关键资源
+
+- 瓶颈工作中心
+- 供应商
+- 自然资源
+- 专门技能
+- 不可外协的工作
+- 资金
+- 运输
+- 仓库
+
+    </div>
+
+    <div
+    id            = "b8"
+    class         = "step markdown"
+    data-rel-to   = "b7"
+    data-rel-x    = "600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 粗能力需求计划
+
+- 计算关键资源的能力和负荷
+- 简化能力平衡工作
+- 不涉及工艺路线等基础细节
+
+    </div>
+
+    <div
+    id            = "b9"
+    class         = "step markdown"
+    data-rel-to   = "b8"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 粗能力需求计划的缺点
+
+- 可信度差
+- 与实际生产有偏差
+- 无法应用于短期作业计划平衡
+
+    </div>
+
+    <div
+    id            = "b10"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "2300"
+    data-rel-y    = "840"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 编制粗能力需求计划
+
+- 资源清单法: 往往会过高估计负荷
+- 分时间周期的资源清单法: 较复杂
+
+    </div>
+
+    <div
+    id            = "b11"
+    class         = "step markdown"
+    data-rel-to   = "b10"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 资源清单法
+
+- 定义关键资源
+- 选出代表产品
+- 确定对关键资源的需求量
+- 确定计划产量
+- 计算产品总需求
+- 加总所有产品需要的能力
+
+    </div>
+
+    <div
+    id            = "b12"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 主生产计划的编制
+
+- 是一个不断循环反复, 动态调整的过程
+- 主生产计划经过粗能力需求计划之后, 才可以作为可行的主生产计划
+
+    </div>
+
+    <div
+    id            = "b13"
+    class         = "step markdown"
+    data-rel-to   = "b12"
     data-rel-x    = "2000"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 制造资源计划 (MRP II)
-
-- 闭环物料需求计划无法反映资金流
-- 1977, Oliver W, Wight 提出制造资源计划
-- 集成应收账款, 应付账款, 成本管理及总账
-- 根据采购单, 入库单产生生产成本信息
-- 掌握生产成本和资金运作过程
-- 调整企业生产经营规划和生产计划
-- 得到更可行可靠的生产计划
+![主生产计划的编制过程](img/c02/mps.svg)
 
     </div>
 
     <div
-    id            = "f10"
+    id            = "b14"
     class         = "step markdown"
-    data-rel-to   = "f9"
-    data-rel-x    = "700"
-    data-rel-y    = "340"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "1">
-
-### 制造资源计划的局限
-
-- 企业要求更高的信息化集成
-- 企业要求集成管理整体资源
-- 多集团多工厂协同
-- 供应链信息管理
-
-    </div>
-
-    <div
-    id            = "f11"
-    class         = "step markdown"
-    data-rel-to   = "c13t"
+    data-rel-to   = "b12"
     data-rel-x    = "2000"
-    data-rel-y    = "-1200"
+    data-rel-y    = "-1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 现代管理思想和方法
+### 基本数量概念
 
-- 准时制生产
-- 全面质量管理
-- 优化生产技术
-- 分销资源计划
-- 制造执行系统
-- 敏捷制造系统
+- 预测量
+- 订单量
+- 毛需求量
+- 计划接收量 Scheduled Receipts
+- 预计可用库存量 Projected Available Balance
+- 净需求量
+- 计划产出量 Planned Order Receipts
+- 计划投入量 Planned Order Releases
+- 可供销售量 Available To Promise
 
     </div>
 
     <div
-    id            = "f12"
+    id            = "b15"
     class         = "step markdown"
-    data-rel-to   = "c13t"
+    data-rel-to   = "b14"
+    data-rel-x    = "1200"
+    data-rel-y    = "-500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 预测量
+
+- 企业生产计划部门根据企业经营规划, 采用合适的预测方法预测的最终产品项目将要生产的数量
+
+    </div>
+
+    <div
+    id            = "b16"
+    class         = "step markdown"
+    data-rel-to   = "b15"
     data-rel-x    = "0"
-    data-rel-y    = "-2000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 企业资源计划 ERP
-
-- ERP 扩展了管理模块
-- ERP 整合企业物流, 制造和资金流
-- ERP 系统包括诸多模块
-
-    </div>
-
-    <div
-    id            = "f13"
-    class         = "step markdown"
-    data-rel-to   = "f12"
-    data-rel-x    = "700"
-    data-rel-y    = "-0"
+    data-rel-y    = "300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "1">
 
-### ERP 常见模块
-- 销售管理
-- 采购管理
-- 库存管理
-- 制造标准
-- 制造执行系统
-- 物料需求计划
-- 能力需求计划
+### 订单量
+
+- 企业已经明确得到的将要为客户提供的最终产品的数量, 是企业明确的生产目标
 
     </div>
 
     <div
-    id            = "f13a"
+    id            = "b17"
     class         = "step markdown"
-    data-rel-to   = "f13"
-    data-rel-x    = ""
-    data-rel-y    = "440"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "1">
-
-- 车间管理
-- 准时制生产管理
-- 质量管理
-- 财务管理
-- 成本管理
-- 应收账款管理
-- 应付账款管理
-
-    </div>
-
-    <div
-    id            = "f13b"
-    class         = "step markdown"
-    data-rel-to   = "f13a"
+    data-rel-to   = "b16"
     data-rel-x    = "0"
-    data-rel-y    = "400"
+    data-rel-y    = "300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "1">
 
-- 现金管理
-- 固定资产管理
-- 工资管理
-- 人力资源管理
-- 分销资源管理
-- 设备管理
-- 工作流管理
-- 系统管理
+### 毛需求量
+
+- 根据预测量和订单量计算得到的初步需求量
 
     </div>
 
     <div
-    id            = "f14"
+    id            = "b18"
     class         = "step markdown"
-    data-rel-to   = "c13t"
-    data-rel-x    = "-2000"
-    data-rel-y    = "-1300"
+    data-rel-to   = "b17"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### ERP II
+### 计划接收量
 
-- 电子商务与 ERP 集成
-- 客户端/服务器模式系统与 Web 应用集成
-- 1990, ERP II, Gartner Group
+- 正在执行的订单量
 
     </div>
 
     <div
-    id            = "f15"
+    id            = "b19"
     class         = "step markdown"
-    data-rel-to   = "c13t"
-    data-rel-x    = "-2000"
-    data-rel-y    = "-2000"
+    data-rel-to   = "b18"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### ERP 发展趋势
+### 预计可用库存量
 
-- 管理范围更加扩大
-- 支持与扩展企业的流程重组
-- 运用最先进的计算机技术
+- 现有库存中, 扣除了预留其他用途的已分配量之后可以用于需求计算的库存量
 
     </div>
 
     <div
-    id            = "mm13"
+    id            = "b20"
     class         = "step markdown"
-    data-rel-to   = "c13t"
+    data-rel-to   = "b14"
+    data-rel-x    = "2200"
+    data-rel-y    = "-500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 净需求量
+
+- 根据毛需求量, 安全库存量, 前一时段末的预计可用库存量, 本时段的计划接收量计算得到的一个数量
+
+    </div>
+
+    <div
+    id            = "b21"
+    class         = "step markdown"
+    data-rel-to   = "b20"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 计划产出量
+
+- 在计算预计可用库存量时, 如果出现负值, 表示需求不能被满足, 需要根据批量政策计算得到的供应数量
+
+    </div>
+
+    <div
+    id            = "b22"
+    class         = "step markdown"
+    data-rel-to   = "b21"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 计划投入量
+
+- 根据计划产出量, 提前期等数据计算得到的计划投入数量
+
+    </div>
+
+    <div
+    id            = "b23"
+    class         = "step markdown"
+    data-rel-to   = "b22"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 可供销售量
+
+- 指销售部门可以销售的产品数量
+
+    </div>
+
+    <div
+    id            = "b24"
+    class         = "step markdown"
+    data-rel-to   = "b23"
+    data-rel-x    = "-1000"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+![主生产计划计算过程示意图](img/c02/mps-cal.svg)
+
+    </div>
+
+
+    <div
+    id            = "mm22"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![erp 1.3 mindmap](img/c01/mindmap-1-3.png)
+![erp 2.2 mindmap](img/c02/mindmap-2-2.png)
 
     </div>
     
 <!-- 本节问题 -->
 
     <div
-    id            = "c13q"
+    id            = "c22q"
     class         = "step markdown"
-    data-rel-to   = "c13t"
+    data-rel-to   = "c22t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -559,18 +562,19 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 1.3 ERP 的演变与发展
+### 2.2 主生产计划
 
-- 简单描述计算机辅助管理的发展历程.
-- 订货点法, MRP, MRP II, ERP各有哪些局限?
-- 当今商业环境的改变为企业管理提出哪些挑战?
-- 你认为 ERP 未来的发展方向将会有哪些?为什么?
+- 什么是主生产计划?
+- 为什么主生产计划很重要?
+- 主生产计划的编制原则有哪些?
+- 如何编制粗能力计划?
+- 如何编制主生产计划?
 
 ----
 
-[ 1.2 ERP 与企业信息化 ](erp-1-2-2202.html#/overview)
+[ 2.1 基本概念 ](erp-2-1-2202.html#/overview)
 [| 练习 |](erp-exec.html)
-[ 2.1 生产管理 基本概念 ](erp-2-1-2202.html)
+[ 2.3 物料需求计划 ](erp-2-3-2202.html)
 
     </div>
 
