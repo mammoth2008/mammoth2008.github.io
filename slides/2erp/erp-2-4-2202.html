@@ -2,22 +2,618 @@
     <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
         <title>ERPPA | HUST</title>
-        <style type="text/css">
-            p {
-                font-family: FZFengYaSongS-GB;
-                src: url('../src/方正风雅宋简体.ttf');
-                font-size: 72px;
-                line-height: 2;
-                }
-        </style>
+
+    <!-- 修改 content -->
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
     </head>
 
-    <body style="text-align: center;">
+    <body class="impress-not-supported">
 
-        <p>2.4 能力需求计划</p>
-        <img src="../dev.gif" alt="IN PROGRESS..." />
-        <p>施工中......</p>
-            
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c24t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>2. 生产管理</h2>
+        <h4 style="text-align: center">2.4 能力需求计划</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2202
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div
+    id            = "d0"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 能力需求计划
+
+- CRP, Capacity Requirement Planning
+- 检验物料需求计划是否可行
+- 平衡生产作业过程中的能力和负荷
+
+    </div>
+
+    <div
+    id            = "d1"
+    class         = "step markdown"
+    data-rel-to   = "d0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基本概念
+
+- 是由物料需求计划输出的对物料的分时段需求计划转变成对企业各个工作中心的分时段需求计划的管理工具
+- 是协调能力需求与可用能力之间平衡的处理过程
+- 是协调物料需求计划的计划内容和确保物料需求计划在现有生产环境中可行有效的计划管理方法
+
+    </div>
+
+    <div
+    id            = "d2"
+    class         = "step markdown"
+    data-rel-to   = "d1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 计划内容
+
+- 工作中心加工能力
+- 员工工作时间
+- 设备加工效率
+- 员工出勤率
+- 劳动生产率
+
+    </div>
+
+    <div
+    id            = "d3"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作内容
+
+- 把物料计划管控向设备计划管控, 人力资源计划管控方面延伸
+- 使整个ERP系统将物料管理, 设备管理和人力资源管理等工作作为整体对待
+
+    </div>
+
+    <div
+    id            = "d4"
+    class         = "step markdown"
+    data-rel-to   = "d3"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 处理过程
+
+- 把对物料的需求计划转变成对工作中心的能力需求计划
+- 协调和处理能力需求与可用能力之间的矛盾
+
+    </div>
+
+    <div
+    id            = "d5"
+    class         = "step markdown"
+    data-rel-to   = "d4"
+    data-rel-x    = "500"
+    data-rel-y    = "-200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 能力需求大于可用能力时
+
+- 扩大企业现有的可用能力
+- 减少物料需求计划以降低能力需求
+- 临时性管理调度手段
+
+    </div>
+
+    <div
+    id            = "d5a"
+    class         = "step markdown"
+    data-rel-to   = "d5"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![能力需求计划的作用](img/c02/crp.svg)
+
+    </div>
+
+    <div
+    id            = "d6"
+    class         = "step markdown"
+    data-rel-to   = "d4"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 回答的问题
+
+- 生产什么? 生产多少? 何时生产?
+- 使用什么工艺路线? 包括哪些工作中心?
+- 工作中心的可用能力是多少?
+- 分时段的能力需求状况如何?
+
+    </div>
+
+    <div
+    id            = "d7"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "2000"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 能力需求计划和粗能力需求计划
+
+- 粗能力需求计划与主生产计划位于相同层次
+- 能力需求计划与物料需求计划位于相同层次
+- 粗能力需求计划用于校验主生产计划
+- 能力需求计划用于校验是物料需求计划
+
+    </div>
+
+    <div
+    id            = "d7a"
+    class         = "step markdown"
+    data-rel-to   = "d7"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![粗能力需求计划和能力需求计划的比较](img/c02/rcrp.svg)
+
+    </div>
+
+    <div
+    id            = "d8"
+    class         = "step markdown"
+    data-rel-to   = "d7"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 编制方式
+
+- 无限能力计划: 不考虑能力限制
+- 有限能力计划: 考虑能力限制
+
+    </div>
+
+    <div
+    id            = "d9"
+    class         = "step markdown"
+    data-rel-to   = "d8"
+    data-rel-x    = "-400"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 无限能力计划
+
+- 当工作中心的负荷工时超过能力工时时, 该工作中心处于超负荷状态
+- 增加能力工时
+- 采取调度手段
+- 延长订单交货期或取消订单
+
+    </div>
+
+    <div
+    id            = "d10"
+    class         = "step markdown"
+    data-rel-to   = "d9"
+    data-rel-x    = "900"
+    data-rel-y    = "-50"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 有限能力计划
+
+- 负荷工时不能超过能力工时
+- 优先级计划
+- 有限顺排计划
+
+    </div>
+
+    <div
+    id            = "d11"
+    class         = "step markdown"
+    data-rel-to   = "d8"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 输入数据
+
+- 加工订单数据
+- 工艺路线数据
+- 工作中心数据
+- 工作中心日历
+
+    </div>
+
+    <div
+    id            = "d12"
+    class         = "step markdown"
+    data-rel-to   = "d11"
+    data-rel-x    = "100"
+    data-rel-y    = "-200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 加工订单
+
+- 计划订单
+- 确认订单
+- 已下达订单
+
+    </div>
+
+    <div
+    id            = "d13"
+    class         = "step markdown"
+    data-rel-to   = "d12"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 工艺路线数据
+
+- 零件, 组件及最终产品等物料加工和装配所需要的工序步骤
+- 每一个步骤所需要的工作中心, 加工工具及加工定额工时
+- 某些特殊工序步骤的可替换工序
+- 把来自加工订单的负荷转变成对加工中心的能力需求
+
+    </div>
+
+    <div
+    id            = "d14"
+    class         = "step markdown"
+    data-rel-to   = "d12"
+    data-rel-x    = "500"
+    data-rel-y    = "80"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 工作中心数据
+
+- 每天班次
+- 每班工作小时数
+- 每班人数
+- 每班设备数
+- 加工效率
+- 设备利用率
+
+    </div>
+
+    <div
+    id            = "d15"
+    class         = "step markdown"
+    data-rel-to   = "d14"
+    data-rel-x    = "500"
+    data-rel-y    = "-50"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 工作中心日历
+
+- 日历编码
+- 对应日期
+- 根据不同工作中心的特点安排更加切合实际的工作日历
+
+    </div>
+
+    <div
+    id            = "d16"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-1800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 处理过程
+
+- 计算工作中心可用能力
+- 计算工作中心上的工序负荷
+- 计算工作中心的分时段能力需求
+
+    </div>
+
+    <div
+    id            = "d17"
+    class         = "step markdown"
+    data-rel-to   = "d16"
+    data-rel-x    = "-400"
+    data-rel-y    = "550"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 工作中心可用能力
+
+- 额定能力: 正常情况下工作中心的可用能力
+- 额定能力 = 单个设备每日可用工时数 ×可用设备数 ×利用率 ×效率
+- 额定能力 = 每人每日可用工时数 ×有效人数 ×利用率 ×效率
+- 实际能力: 某个工作中心的生产加工能力
+
+    </div>
+
+    <div
+    id            = "d18"
+    class         = "step markdown"
+    data-rel-to   = "d17"
+    data-rel-x    = "0"
+    data-rel-y    = "450"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 工作中心上的工序负荷
+
+- 逐个计算工序与某个工作中心相关联的生产负荷
+- 加工的物料数量
+- 加工单个物料需要的额定工时
+- 工序负荷 = 准备时间 + 加工物料数量 ×加工时间
+
+    </div>
+
+    <div
+    id            = "d19"
+    class         = "step markdown"
+    data-rel-to   = "d18"
+    data-rel-x    = "0"
+    data-rel-y    = "350"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 工作中心的分时段能力需求
+
+- 每个工序在每个工作中心上的开始和结束时间
+- 以工作中心为基础按照时段汇总所有工序的能力需求
+
+    </div>
+
+    <div
+    id            = "d20"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "-800"
+    data-rel-y    = "-1580"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 编制过程
+
+- 读入基础数据
+- 计算工作中心可用能力
+- 计算工作中心上的工序负荷或能力需求
+- 逐个计算工序的开工时间和完工时间
+- 确定加工的作业时段
+- 汇总工作中心各工序的能力需求
+- 输岀能力需求计划报表和报告
+
+    </div>
+
+    <div
+    id            = "d21"
+    class         = "step markdown"
+    data-rel-to   = "d20"
+    data-rel-x    = "1400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 评价
+
+- 前提条件: 无限能力
+- 作业交叉: 优化问题
+- 时段粒度: 越小越复杂
+
+    </div>
+
+    <div
+    id            = "mm24"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![erp 2.4 mindmap](img/c02/mindmap-2-4.png)
+
+    </div>
+    
+<!-- 本节问题 -->
+
+    <div
+    id            = "c24q"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.4 能力需求计划
+
+- 什么是能力需求计划?
+- 能力需求计划在生产过程中处于什么位置?
+- 能力需求计划和粗能力需求计划有哪些区别?
+- 能力需求计划的编制过程是怎样的?
+
+----
+
+[ 2.3 物料需求计划 ](erp-2-3-2202.html#/overview)
+[| 练习 |](erp-exec.html)
+[ 2.5 车间管理与准时生产 ](erp-2-5-2202.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
     </body>
     </html>
+
