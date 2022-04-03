@@ -2,22 +2,828 @@
     <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
         <title>ITPM | HUST</title>
-        <style type="text/css">
-            p {
-                font-family: FZFengYaSongS-GB;
-                src: url('../src/方正风雅宋简体.ttf');
-                font-size: 72px;
-                line-height: 2;
-                }
-        </style>
+
+    <!-- 修改 content -->
+        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
     </head>
 
-    <body style="text-align: center;">
+    <body class="impress-not-supported">
 
-        <p>第二章 项目管理的知识体系</p>
-        <img src="../dev.gif" alt="IN PROGRESS..." />
-        <p>施工中......</p>
-            
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000"
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "15">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div
+    id         = "c21t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+<!-- 修改标题 -->
+        <h2>2. 项目管理的知识体系</h2>
+        <h4 style="text-align: center">2.1 项目范围管理</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2202
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div 
+    id            = "a0"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-1500"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+### 本章学习目标
+
+- 掌握项目管理 10 大知识体系的具体内容
+- 掌握项目活动及与 5 大过程组的关系
+- 掌握活动的输入, 工具, 方法, 输出
+- 掌握活动之间的逻辑关系
+
+    </div>
+
+    <div
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目管理知识体系分类
+
+- 项目目标或考核指标的管理和控制
+- 项目资源和条件的管理和控制
+- 项目决策管理和控制
+
+    </div>
+
+    <div
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目目标管理
+
+- 涉及项目成败
+- 项目成本管理
+- 项目时间管理
+- 项目质量管理
+
+    </div>
+
+    <div
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目资源管理
+
+- 保障项目进行
+- 项目沟通管理
+- 项目采购管理
+- 项目人力资源管理
+- 干系人管理
+
+    </div>
+
+    <div
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目决策管理
+
+- 项目综合管理
+- 项目范围管理
+- 项目风险管理
+
+    </div>
+
+    <div
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![知识领域之间的关系](img/c01/knowledge-areas.svg)
+
+    </div>
+
+    <div
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-800"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目整合管理
+
+- 制定项目章程
+- 制定项目管理计划
+- 指导与管理项目工作
+- 管理项目知识
+- 监控项目工作
+- 实施整体变更控制
+- 结束项目或阶段
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目范围管理
+
+- 规划范围管理
+- 收集需求
+- 定义范围
+- 创建 WBS
+- 确认范围
+- 控制范围
+
+    </div>
+
+    <div
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目进度管理
+
+- 规划进度管理
+- 定义活动
+- 排列活动顺序
+- 估算活动持续时间
+- 制定进度计划
+- 控制进度
+
+    </div>
+
+    <div
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "200"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目成本管理
+
+- 规划成本管理
+- 估算成本
+- 制定预算
+- 控制成本
+
+    </div>
+
+    <div
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目质量管理
+
+- 规划质量管理
+- 管理质量
+- 控制质量
+
+    </div>
+
+    <div
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目资源管理
+
+- 规划资源管理
+- 估算活动资源
+- 获取资源
+- 建设团队
+- 管理团队
+- 控制资源
+
+    </div>
+
+    <div
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "1200"
+    data-rel-y    = "940"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目沟通管理
+
+- 规划沟通管理
+- 管理沟通
+- 监督沟通
+
+    </div>
+
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目风险管理
+
+- 规划风险管理
+- 识别风险
+- 实施定性风险分析
+- 实施定量风险分析
+- 规划风险应对
+- 实施风险应对
+- 监督风险
+
+    </div>
+
+    <div
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目采购管理
+
+- 规划采购管理
+- 实施采购
+- 控制采购
+
+    </div>
+
+    <div
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目干系人管理
+
+- 识别干系人
+- 规划干系人参与
+- 管理干系人参与
+- 监督干系人参与
+
+    </div>
+
+    <div
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![知识领域与项目过程组](img/c01/10-knowledge-areas.png)
+
+    </div>
+
+    <div
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目范围管理
+
+- 项目范围管理就是对项目内容的定义和控制过程
+- 范围管理的原则是边界明确, 分而治之
+
+    </div>
+
+    <div
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目范围管理过程
+
+- 规划范围管理
+- 收集需求
+- 定义范围
+- 创建 WBS
+- 确认范围
+- 控制范围
+
+    </div>
+
+    <div
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目范围管理](img/c02/scope.png)
+
+    </div>
+
+    <div
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 范围
+
+- 产品范围: 某项产品、服务或成果所具有的特征和功能
+- 项目范围: 为交付具有规定特性与功能的产品、服务或成果而必须完成的工作
+
+    </div>
+
+    <div
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-2800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 收集需求
+
+- 总结将要完成的所有工作
+- 详细描述项目要交付的内容
+- 制订出项目管理计划
+
+    </div>
+
+    <div
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![收集需求](img/c02/scope-requirements.png)
+
+    </div>
+
+    <div
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![收集需求的数据流](img/c02/scope-requirements-data.png)
+
+    </div>
+
+    <div
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 收集需求的输入
+
+- 项目章程
+- 项目管理计划
+- 项目文件
+- 商业文件
+- 协议
+- 事业环境因素
+- 组织过程资产
+
+    </div>
+
+    <div
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![收集需求](img/c02/scope-requirements.png)
+
+    </div>
+
+    <div
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-1000"
+    data-rel-y    = "-2800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工具与技术: 专家判断
+
+- 商业分析
+- 需求获取
+- 需求分析
+- 需求文件
+- 以往类似项目的项目需求
+- 图解技术
+- 引导
+- 冲突管理
+
+    </div>
+
+    <div
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "1200"
+    data-rel-y    = "-220"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工具与技术: 数据收集
+
+- 头脑风暴
+- 访谈
+- 焦点小组
+- 问卷调查
+
+    </div>
+
+    <div
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "1200"
+    data-rel-y    = "370"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工具与技术: 数据分析
+
+- 协议
+- 商业计划
+- 业务流程或接口文档
+- 业务规则库
+- 现行流程
+- 市场文献
+- 问题日志
+- 政策和程序
+- 法规文件，如法律、准则、法令等
+- 建议邀请书
+- 用例
+
+    </div>
+
+    <div
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工具与技术: 其它
+
+- 决策
+- 数据表现
+- 人际关系与团队技能
+- 原型法
+
+    </div>
+
+    <div
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![收集需求](img/c02/scope-requirements.png)
+
+    </div>
+
+    <div
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "3000"
+    data-rel-y    = "-2980"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 输出: 需求文件
+
+- 业务需求
+- 相关方需求
+- 功能需求
+- 过渡和就绪需求
+- 质量需求
+
+    </div>
+
+    <div
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 输出: 需求跟踪矩阵
+
+- 业务需要、机会、目的和目标
+- 项目目标
+- 项目范围和 WBS 可交付成果
+- 产品设计
+- 产品开发
+- 测试策略和测试场景
+- 高层级需求到详细需求
+
+    </div>
+
+    <div
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![收集需求](img/c02/scope-requirements.png)
+
+    </div>
+
+    <div
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![收集需求的数据流](img/c02/scope-requirements-data.png)
+
+    </div>
+
+    <div
+    id            = "mm21"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![itpm 2.1 mindmap](img/c02/mindmap-2-1.png)
+
+    </div>
+
+<!-- 修改 rel-to 到本页 id -->
+
+    <div 
+    id            = "c21q"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rotate-y = "0"
+    data-z        = "500"
+    data-rotate-z = "180"
+    data-rotate-x = "77"
+    data-scale    = "2">
+
+### 2.1 项目范围管理
+
+- 项目管理的十个知识领域分别是什么?
+- 列举项目范围管理的主要活动.
+- 项目范围管理的收集需求活动涉及哪些输入和输出?
+- 收集需求活动有哪些工具和方法?
+- 尝试对自己的项目创建 WBS.
+
+----
+
+[1.7 项目管理使用的主要工具 ](itpm-1-7-2202.html#/overview)
+[| 练习 |](itpm-exec.html)
+[ 2.2 项目进度管理 ](itpm-2-2-2202.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
     </body>
     </html>
