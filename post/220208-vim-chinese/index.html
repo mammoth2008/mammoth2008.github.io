@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.96.0 with theme even" />
 
 
 <link rel="canonical" href="https://yemengma.cn/post/220208-vim-chinese/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Vim 的中文支持及解决思路">
 <meta itemprop="description" content="使用 Vim 编辑中文时的问题"><meta itemprop="datePublished" content="2022-02-08T15:35:49+08:00" />
 <meta itemprop="dateModified" content="2022-02-08T17:28:49+08:00" />
-<meta itemprop="wordCount" content="1576">
+<meta itemprop="wordCount" content="1575">
 <meta itemprop="keywords" content="Vim,生产力,工具,生活," />
 
 
@@ -184,14 +184,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">app_options</span><span class="p">:</span><span class="w">
-</span><span class="w">	</span><span class="nt">org.vim.MacVim</span><span class="p">:</span><span class="w">
-</span><span class="w">	    </span><span class="nt">ascii_punct</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">		</span><span class="nt">vim_mode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">	</span><span class="nt">vim</span><span class="p">:</span><span class="w">
-</span><span class="w">	    </span><span class="nt">ascii_punct</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">		</span><span class="nt">vim_mode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">app_options</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">org.vim.MacVim</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	    </span><span class="nt">ascii_punct</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="nt">vim_mode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="nt">vim</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	    </span><span class="nt">ascii_punct</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="nt">vim_mode</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>在这个配置里，除了打开 vim_mode 的开关外，还设置了在 Vim 或 MacVim 中使用英文标点。这在写代码时很好用，能避免用错标点导致的错误。在写中文文章时，可以用 <a href="https://github.com/hotoo/pangu.vim">Pangu</a> 之类的插件自动处理一下就好了。</p>
 <h3 id="2-vim-级的方案">2. Vim 级的方案</h3>
@@ -223,11 +223,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># normal minimum is 15 (225 ms)</span>
-defaults write -g InitialKeyRepeat -int <span class="m">10</span>
-<span class="c1"># normal minimum is 2 (30 ms)</span>
-defaults write -g KeyRepeat -int <span class="m">1</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># normal minimum is 15 (225 ms)</span>
+</span></span><span class="line"><span class="cl">defaults write -g InitialKeyRepeat -int <span class="m">10</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># normal minimum is 2 (30 ms)</span>
+</span></span><span class="line"><span class="cl">defaults write -g KeyRepeat -int <span class="m">1</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>当然，这样的调整对英文和代码很有用，但对于中文用处不大。</p>
 <p>精准点射的思路是，先看好要跳去哪里，然后再用命令组合跳转。这不免会涉及到计算，是难以自动化的。</p>
@@ -265,41 +265,39 @@ defaults write -g KeyRepeat -int <span class="m">1</span>
 </span><span class="lnt">28
 </span><span class="lnt">29
 </span><span class="lnt">30
-</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">
-&#34; 查找一个字符
-map  &lt;Leader&gt;i &lt;Plug&gt;(easymotion-bd-f)
-nmap &lt;Leader&gt;i &lt;Plug&gt;(easymotion-overwin-f)
-
-&#34; 查找任意长度字符串
-&#34; 好像比默认的&#34;/&#34;还方便
-nmap &lt;leader&gt;s &lt;Plug&gt;(easymotion-sn)
-
-&#34; 跳到任意行
-omap &lt;C-L&gt; &lt;Plug&gt;(easymotion-bd-jk)
-nmap &lt;C-L&gt; &lt;Plug&gt;(easymotion-overwin-line)
-
-&#34; 跳到任意单词
-omap &lt;Leader&gt;w &lt;Plug&gt;(easymotion-bd-w)
-nmap &lt;Leader&gt;w &lt;Plug&gt;(easymotion-overwin-w)
-
-&#34; 单方向标记可以跳转的位置
-map &lt;Leader&gt;l &lt;Plug&gt;(easymotion-lineforward)
-map &lt;Leader&gt;j &lt;Plug&gt;(easymotion-j)
-map &lt;Leader&gt;k &lt;Plug&gt;(easymotion-k)
-map &lt;Leader&gt;h &lt;Plug&gt;(easymotion-linebackward)
-
-&#34; 以当前光标所在列为标记基准
-let g:EasyMotion_startofline = 0
-
-&#34; 更聪明的大小写判断
-&#34; 小写字母会匹配小写和大写
-&#34; 大写字母只匹配大写
-let g:EasyMotion_smartcase = 1
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 查找一个字符
+</span></span><span class="line"><span class="cl">map  &lt;Leader&gt;i &lt;Plug&gt;(easymotion-bd-f)
+</span></span><span class="line"><span class="cl">nmap &lt;Leader&gt;i &lt;Plug&gt;(easymotion-overwin-f)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 查找任意长度字符串
+</span></span><span class="line"><span class="cl">&#34; 好像比默认的&#34;/&#34;还方便
+</span></span><span class="line"><span class="cl">nmap &lt;leader&gt;s &lt;Plug&gt;(easymotion-sn)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 跳到任意行
+</span></span><span class="line"><span class="cl">omap &lt;C-L&gt; &lt;Plug&gt;(easymotion-bd-jk)
+</span></span><span class="line"><span class="cl">nmap &lt;C-L&gt; &lt;Plug&gt;(easymotion-overwin-line)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 跳到任意单词
+</span></span><span class="line"><span class="cl">omap &lt;Leader&gt;w &lt;Plug&gt;(easymotion-bd-w)
+</span></span><span class="line"><span class="cl">nmap &lt;Leader&gt;w &lt;Plug&gt;(easymotion-overwin-w)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 单方向标记可以跳转的位置
+</span></span><span class="line"><span class="cl">map &lt;Leader&gt;l &lt;Plug&gt;(easymotion-lineforward)
+</span></span><span class="line"><span class="cl">map &lt;Leader&gt;j &lt;Plug&gt;(easymotion-j)
+</span></span><span class="line"><span class="cl">map &lt;Leader&gt;k &lt;Plug&gt;(easymotion-k)
+</span></span><span class="line"><span class="cl">map &lt;Leader&gt;h &lt;Plug&gt;(easymotion-linebackward)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 以当前光标所在列为标记基准
+</span></span><span class="line"><span class="cl">let g:EasyMotion_startofline = 0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">&#34; 更聪明的大小写判断
+</span></span><span class="line"><span class="cl">&#34; 小写字母会匹配小写和大写
+</span></span><span class="line"><span class="cl">&#34; 大写字母只匹配大写
+</span></span><span class="line"><span class="cl">let g:EasyMotion_smartcase = 1
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这样，算是基本解决了 Vim 中文编辑的问题。</p>
 
@@ -400,7 +398,7 @@ let g:EasyMotion_smartcase = 1
 
 
 
-<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 
