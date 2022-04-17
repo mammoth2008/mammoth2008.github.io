@@ -1,0 +1,480 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>ERPPA | HUST</title>
+
+    <!-- 修改 content -->
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c32t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>3. 财务管理</h2>
+        <h4 style="text-align: center">3.2 总账管理</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2202
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div
+    id            = "b1"
+    class         = "step markdown"
+    data-rel-to   = "c32t"
+    data-rel-x    = "-1200"
+    data-rel-y    = "-400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 总账
+
+- 总账是企业所有业务交易的完整记录
+- 包括其他各模块的交易明细资料
+- 输入和审核记账凭证
+- 输出日记账, 明细分类账, 总分类账
+- 编制主要会计报表
+
+    </div>
+
+    <div
+    id            = "b2"
+    class         = "step markdown"
+    data-rel-to   = "b1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 账户
+
+- 在会计账簿中, 为每个核算对象设立一个专门账户, 用来登记其日常增减变动结存的资料
+
+    </div>
+
+    <div
+    id            = "b3"
+    class         = "step markdown"
+    data-rel-to   = "b2"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 核算对象
+
+- 资产
+- 负债
+- 资金
+- 费用
+- 收入
+
+    </div>
+
+    <div
+    id            = "b4"
+    class         = "step markdown"
+    data-rel-to   = "b3"
+    data-rel-x    = "200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 会计科目
+
+- 因核算对象的不同性质与内容, 规定的专门账户名称
+
+    </div>
+
+    <div
+    id            = "b5"
+    class         = "step markdown"
+    data-rel-to   = "b4"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 会计科目表
+
+- 按一定顺序分类排列的账户名称表, 称为会计科目表
+- 会计科目表规定了各类企业应当设立哪些账户, 还规定了财务报表中必须包括的内容项目
+
+    </div>
+
+    <div
+    id            = "b6"
+    class         = "step markdown"
+    data-rel-to   = "b5"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 会计凭证
+
+- 原始凭证
+- 记账凭证
+- 记账凭证分为收款凭证, 付款凭证和转账凭证
+
+    </div>
+
+    <div
+    id            = "b7"
+    class         = "step markdown"
+    data-rel-to   = "b6"
+    data-rel-x    = "-400"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 原始凭证
+
+- 又称原始单据, 是经济业务发生或完成时取得或填制的, 用以记录和证明经济业务已经发生或完成的, 进行会计核算的原始资料, 记载的是经济信息
+- 分为外来原始凭证和自制原始凭证
+
+    </div>
+
+    <div
+    id            = "b8"
+    class         = "step markdown"
+    data-rel-to   = "b7"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 记账凭证
+
+- 会计人员根据审核后的原始凭证归类, 整理, 并确定会计分录而编制的凭证, 是记录账目的依据, 记载的是会计信息
+
+    </div>
+
+    <div
+    id            = "b9"
+    class         = "step markdown"
+    data-rel-to   = "c32t"
+    data-rel-x    = "700"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 记账
+
+- 从原始凭证到记账凭证, 按照一定会计科目和复式记账法, 把经济信息转化为会计信息记录在记账凭证上
+- 登记日记账
+- 登记明细分类账
+- 登记总账
+- 对账
+- 结账
+
+    </div>
+
+    <div
+    id            = "b10"
+    class         = "step markdown"
+    data-rel-to   = "b9"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 财务报表
+
+- 财务报表: 主表, 附表和会计报表. 主表包括资产负债表, 损益表和现金流量表. 附表根据各行业的特点编制. 会计报表附注是为了帮助理解而做的解释
+- 财务情况说明书: 说明企业的生产经营状况, 利润实现和分配状况, 资金增减和周转情况, 纳税情况及主要的会计处理方法
+
+    </div>
+
+    <div
+    id            = "b11"
+    class         = "step markdown"
+    data-rel-to   = "b10"
+    data-rel-x    = "2000"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 财务报表的主表
+
+- 资产负债表: 反映企业在某一个特定日期的资产, 负债和所有者权益构成情况的财务报表
+- 损益表: 反映企业一定会计期间经营成果的会计报表
+- 现金流量表: 反映企业一定会计期间经营活动, 投资活动与筹资活动的现金流入和流出的会计报表
+
+    </div>
+
+    <div
+    id            = "b12"
+    class         = "step markdown"
+    data-rel-to   = "b11"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 财务分析
+
+- 从资产负债表和损益表中分析企业的收益性, 安全性, 成长性和周转性
+- 企业的获利能力
+- 企业的偿还能力
+- 企业扩展经营的能力
+- 企业的经营效率
+
+    </div>
+
+    <div
+    id            = "b13"
+    class         = "step markdown"
+    data-rel-to   = "c32t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 账务处理程序
+
+- 又称会计核算组织程序或会计核算形式, 是指在会计循环中, 会计单位釆用的会计凭证, 会计账簿, 会计报表的种类和格式与记账程序有机结合的方法和步骤
+
+    </div>
+
+    <div
+    id            = "b14"
+    class         = "step markdown"
+    data-rel-to   = "b13"
+    data-rel-x    = "2000"
+    data-rel-y    = "-400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 记账程序
+
+- 取得原始凭证
+- 编制原始凭证汇总表 (可选)
+- 编制记账凭证
+- 逐日逐笔登记现金日记账和银行存款日记账
+- 逐笔登记明细分类账
+- 逐笔登记总账
+- 期末核对日记账, 明细分类账, 总账
+- 期末编制会计报表
+
+    </div>
+
+    <div
+    id            = "b15"
+    class         = "step markdown"
+    data-rel-to   = "b14"
+    data-rel-x    = "2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 总账与其他系统
+
+- 应收账款
+- 应付账款
+- 固定资产
+- 工资管理
+- 存货核算
+- 成本管理
+- 记账凭证审核
+- 凭证记账
+- 期末结账
+- 财务分析
+- 生成会计报表
+- 决策支持
+
+    </div>
+
+    <div
+    id            = "b16"
+    class         = "step markdown"
+    data-rel-to   = "b15"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ![总账系统与其他系统的关系](img/c03/accounting-systems.svg)
+
+    </div>
+
+    <div
+    id            = "mm32"
+    class         = "step markdown"
+    data-rel-to   = "c32t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![erp 3.2 mindmap](img/c03/mindmap-3-2.png)
+
+    </div>
+    
+<!-- 本节问题 -->
+
+    <div
+    id            = "c32q"
+    class         = "step markdown"
+    data-rel-to   = "c32t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 3.2 总账管理
+
+- 什么是总账?
+- 什么是账户? 什么是会计科目? 
+- 什么是会计凭证? 分成哪些类型?
+- 记账的流程分成哪些步骤?
+- 企业的帐务处理程序是怎样的?
+
+----
+
+[ 3.1 财务管理基本业务 ](erp-3-1-2202.html#/overview)
+[| 练习 |](erp-exec.html)
+[ 3.3 应收账款管理 ](erp-3-3-2202.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
+
