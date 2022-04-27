@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- 修改页面标题 -->
-        <title>ERPPA | HUST</title>
+        <title>ITPM | HUST</title>
 
     <!-- 修改 content -->
-        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -48,33 +48,34 @@
     data-height              = "768" 
     data-max-scale           = "3" 
     data-min-scale           = "0" 
-    data-perspective         = "1000" 
+    data-perspective         = "1000"
     data-autoplay            = "0">
 
     <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
     <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
-    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的,class 才是 step markdown -->
 
     <div 
     id         = "overview" 
     data-x     = "0" 
     data-y     = "0" 
     class      = "step" 
-    data-scale = "10">
-        
+    data-scale = "15">
+
     </div>
 
-    <!-- 修改 id -->
-    <div 
-    id         = "c33t"
+<!-- 修改 id -->
+
+    <div
+    id         = "c23t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
-    <!-- 修改标题 -->
-        <h2>3. 财务管理</h2>
-        <h4 style="text-align: center">3.3 应收账款管理</h4>
+<!-- 修改标题 -->
+        <h2>2. 项目管理的知识体系</h2>
+        <h4 style="text-align: center">2.3 项目成本管理</h4>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -94,42 +95,35 @@
 
     </div>
 
-    <div
+    <div 
     id            = "c0"
     class         = "step markdown"
-    data-rel-to   = "c33t"
+    data-rel-to   = "c23t"
     data-rel-x    = "-2000"
-    data-rel-y    = "1000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
+    data-rotate-x = "0"
     data-rotate-y = "0"
+    data-rotate-z = "0"
     data-scale    = "2">
 
-### 应收账款
+### 项目成本管理
 
-- 企业销售商品, 材料, 物资或提供劳务等应向客户收取的账款
-- 根据发票来处理客户付款
-- 应收账款是销售管理的一部分
-- 应收账款的所有交易也进入总账系统
+在批准的预算范围内完成项目, 努力减少和控制成本, 满足利益相关者的期望
 
     </div>
 
     <div
     id            = "c1"
     class         = "step markdown"
-    data-rel-to   = "c33t"
+    data-rel-to   = "c0"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 模块作用
-
-- 改善发票和付款处理的精度
-- 及时提供客户对账单
-- 改善客户查询响应
-- 减少处理应收账的时间
-- 改进现金收入的控制
+![项目成本管理](img/c02/cost.png)
 
     </div>
 
@@ -137,20 +131,21 @@
     id            = "c2"
     class         = "step markdown"
     data-rel-to   = "c1"
-    data-rel-x    = "1000"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 模块功能
+### 项目资源
 
-- 发票管理
-- 客户管理
-- 付款管理
-- 账龄分析
-- 借贷通知单
-- 生成会计分录
+- 资金 Money
+- 材料 Material
+- 商品 Merchandise
+- 机器 Machinery
+- 人力 Manpower
+- 管理人员等 Management, Professionals and Specialists
+- 行动 Movement
 
     </div>
 
@@ -158,21 +153,23 @@
     id            = "c3"
     class         = "step markdown"
     data-rel-to   = "c2"
-    data-rel-x    = "1000"
-    data-rel-y    = "0"
+    data-rel-x    = "2000"
+    data-rel-y    = "200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 主要账务处理
+### 项目经理的资源分配职能
 
-- 1. 根据销售发票生成的记账凭证
-- 借: 应收账款
-- 贷: 主营业务收入
-- 贷: 应交税费 - 应交增值税 - 销项税
-- 2. 收到应收账款生成的记账凭证
-- 借: 库存现金 / 银行存款
-- 贷: 应收账款
+- 确定资源需求类型, 数量和需要交付的日期
+- 定义和确认技术及质量规格
+- 确定最佳供应源, 方法和购买条款
+- 签订合同和协议, 确定价格和条款
+- 安排运输及储存
+- 确认交付内容
+- 付款授权
+- 对使用, 材料账目及安全的控制
+- 盈余处理和不需要的过期条款的处理
 
     </div>
 
@@ -186,52 +183,203 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-![与其他系统的关系](img/c03/receivable.svg)
+### 项目成本估算
 
+- 对完成各项项目活动所需资源的成本提出某种近似估算的过程
+- 根据需要在整个项目期间定期开展
 
     </div>
 
     <div
-    id            = "mm33"
+    id            = "c5"
     class         = "step markdown"
-    data-rel-to   = "c33t"
+    data-rel-to   = "c4"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目成本估算](img/c02/cost-estimate.png)
+
+    </div>
+
+    <div
+    id            = "c6"
+    class         = "step markdown"
+    data-rel-to   = "c5"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目成本估算的数据流](img/c02/cost-estimate-data.png)
+
+    </div>
+
+    <div
+    id            = "c7"
+    class         = "step markdown"
+    data-rel-to   = "c6"
+    data-rel-x    = "2000"
+    data-rel-y    = "-1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目成本估算的输入
+
+- 成本管理计划
+- 质量管理计划
+- 范围基准
+- 项目范围说明书
+- 经验教训登记册
+- 项目进度计划
+- 资源需求
+- 事业环境因素
+- 组织过程资产
+
+    </div>
+
+    <div
+    id            = "c8"
+    class         = "step markdown"
+    data-rel-to   = "c7"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目成本估算](img/c02/cost-estimate.png)
+
+    </div>
+
+    <div
+    id            = "c9"
+    class         = "step markdown"
+    data-rel-to   = "c8"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工具与技术
+
+- 专家判断
+- 类比估算
+- 参数估算
+- 自下而上估算
+- 三点估算
+- 备选方案分析
+- 储备分析
+- 质量成本
+
+    </div>
+
+    <div
+    id            = "c10"
+    class         = "step markdown"
+    data-rel-to   = "c9"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目成本估算](img/c02/cost-estimate.png)
+
+    </div>
+
+    <div
+    id            = "c11"
+    class         = "step markdown"
+    data-rel-to   = "c10"
+    data-rel-x    = "500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 输出
+- 成本估算
+- 估算依据
+- 假设日志
+- 风险登记册
+
+    </div>
+
+    <div
+    id            = "c12"
+    class         = "step markdown"
+    data-rel-to   = "c11"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目成本估算](img/c02/cost-estimate.png)
+
+    </div>
+
+    <div
+    id            = "c13"
+    class         = "step markdown"
+    data-rel-to   = "c12"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![项目成本估算的数据流](img/c02/cost-estimate-data.png)
+
+    </div>
+
+    <div
+    id            = "mm23"
+    class         = "step markdown"
+    data-rel-to   = "c23t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![erp 3.3 mindmap](img/c03/mindmap-3-3.png)
+![itpm 2.3 mindmap](img/c02/mindmap-2-3.png)
 
     </div>
-    
-<!-- 本节问题 -->
 
-    <div
-    id            = "c33q"
+<!-- 修改 rel-to 到本页 id -->
+
+    <div 
+    id            = "c23q"
     class         = "step markdown"
-    data-rel-to   = "c33t"
+    data-rel-to   = "c23t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
-    data-z        = "500"
-    data-rotate-x = "77"
     data-rotate-y = "0"
+    data-z        = "500"
     data-rotate-z = "180"
+    data-rotate-x = "77"
     data-scale    = "2">
 
-### 3.3 应收账款管理
+### 2.3 项目成本管理
 
-- 什么是应收账款?
-- ERP 系统中应收账款模块有哪些作用?
-- ERP 系统中应收账款模块有哪些功能?
-- 应收账款涉及到哪些会计科目?
-- 应收账款模块与其他哪些系统有关?
+- 什么是项目成本管理?
+- 列举项目成本管理的主要活动.
+- 项目成本估算活动涉及哪些输入和输出?
+- 项目成本估算有哪些工具和方法?
+- 尝试对小组项目做成本估算.
 
 ----
 
-[ 3.2 总账管理 ](erp-3-2-2202.html#/overview)
-[| 练习 |](erp-exec.html)
-[ 3.4 应付账款管理 ](erp-3-4-2202.html)
+[2.2 项目进度管理 ](itpm-2-2-2202.html#/overview)
+[| 练习 |](itpm-exec.html)
+[ 2.4 项目质量管理 ](itpm-2-4-2202.html)
 
     </div>
 
@@ -278,3 +426,4 @@
     <script>impress().init();</script>
     </body>
     </html>
+
