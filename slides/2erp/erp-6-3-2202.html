@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- 修改页面标题 -->
-        <title>ITPM | HUST</title>
+        <title>ERPPA | HUST</title>
 
     <!-- 修改 content -->
-        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -48,34 +48,33 @@
     data-height              = "768" 
     data-max-scale           = "3" 
     data-min-scale           = "0" 
-    data-perspective         = "1000"
+    data-perspective         = "1000" 
     data-autoplay            = "0">
 
     <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
     <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
-    <!-- 类似地,需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的,class 才是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
 
     <div 
     id         = "overview" 
     data-x     = "0" 
     data-y     = "0" 
     class      = "step" 
-    data-scale = "15">
+    data-scale = "10">
 
     </div>
 
-<!-- 修改 id -->
-
-    <div
+    <!-- 修改 id -->
+    <div 
     id         = "c63t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
-<!-- 修改标题 -->
-        <h2>6. IT 项目进度计划</h2>
-        <h4 style="text-align: center">6.3 活动的排序</h4>
+    <!-- 修改标题 -->
+        <h2>6. ERP 系统运行管理和评估</h2>
+        <h4 style="text-align: center">6.3 ERP 系统对企业管理的促进</h4>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -95,22 +94,21 @@
 
     </div>
 
-    <div 
+    <div
     id            = "c0"
     class         = "step markdown"
     data-rel-to   = "c63t"
-    data-rel-x    = "-800"
-    data-rel-y    = "100"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-200"
     data-rel-z    = "0"
-    data-rotate-x = "0"
     data-rotate-y = "0"
-    data-rotate-z = "0"
     data-scale    = "2">
 
-### 活动的依赖关系
-- 强制性依赖关系
-- 可斟酌处理的依赖关系
-- 外部依赖关系
+### 对生产管理的促进
+
+- 协调产能平衡, 科学制订生产计划
+- 满足企业混合型生产要求, 控制生产进度与生产作业
+- 依靠信息共享, 推行全面质量管理
 
     </div>
 
@@ -119,16 +117,16 @@
     class         = "step markdown"
     data-rel-to   = "c0"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 活动排序的主要程序
+### 对企业财务管理的促进
 
-- 确定各项工作的强制性逻辑关系
-- 确定没有逻辑关系的活动的顺序
-- 分析和预测可能产生的外部约束
+- 及时高效的财务管理
+- 建立全面成本管理系统
+- 管理固定资产, 维护企业资源
 
     </div>
 
@@ -136,17 +134,16 @@
     id            = "c2"
     class         = "step markdown"
     data-rel-to   = "c1"
-    data-rel-x    = "1200"
-    data-rel-y    = "300"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 活动排序的输入
+### 对企业营销管理的促进
 
-- 项目活动清单及相关支持信息
-- 项目范围说明书
-- 里程碑清单
+- 指导企业生产经营活动, 提高客户服务水平
+- 动态控制营销网络
 
     </div>
 
@@ -154,37 +151,70 @@
     id            = "c3"
     class         = "step markdown"
     data-rel-to   = "c2"
-    data-rel-x    = "1200"
-    data-rel-y    = "30"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 项目活动排序的工具与方法
+### 对企业釆购管理的促进
 
-- 紧前关系绘图法
-- 箭线绘图法
-- 计划网络样板
-- 利用时间提前与滞后量
+- 降低采购成本
+- 规范业务流程, 提高采购效率
 
     </div>
 
     <div
     id            = "c4"
     class         = "step markdown"
-    data-rel-to   = "c3"
+    data-rel-to   = "c1"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 项目活动排序的输出
+### 对客户关系管理的促进
 
-- 项目进度网络图
-- 活动清单 (更新)
-- 活动属性 (更新)
-- 请求的变更
+- 及时深刻地了解客户
+- 保持与客户的动态双向信息交流
+- 快速回应客户服务
+
+    </div>
+
+    <div
+    id            = "c5"
+    class         = "step markdown"
+    data-rel-to   = "c4"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 对业务流程的促进
+
+- 使企业组织扁平化
+- 减少了审核和监督
+- 同步工程
+
+    </div>
+
+    <div
+    id            = "c6"
+    class         = "step markdown"
+    data-rel-to   = "c5"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP 系统对绩效监控的促进
+
+- 企业内部的绩效监控
+- 外部供应链企业的绩效监控
+- 整个供应链的绩效监控
 
     </div>
 
@@ -198,36 +228,37 @@
     data-rotate   = "0"
     data-scale    = "1">
 
-![itpm 6.3 mindmap](img/c06/mindmap-6-3.png)
+![erp 6.3 mindmap](img/c06/mindmap-6-3.png)
 
     </div>
 
-<!-- 修改 rel-to 到本页 id -->
+<!-- 本节问题 -->
 
-    <div 
+    <div
     id            = "c63q"
     class         = "step markdown"
     data-rel-to   = "c63t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
-    data-rotate-y = "0"
     data-z        = "500"
-    data-rotate-z = "180"
     data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
     data-scale    = "2">
 
-### 6.3 活动的排序
+### 6.3 ERP 对企业管理的促进
 
-- 为什么要要做活动排序?
-- 活动排序包括哪些输入?
-- 活动排序包括哪些工具和技术?
-- 活动排序包括哪些输出?
+- ERP 对生产管理的促进表现在哪些方面?
+- ERP 对企业财务管理的促进表现在哪些方面?
+- ERP 对企业营销管理的促进表现在哪些方面?
+- ERP 对企业业务流程的促进表现在哪些方面?
+- ERP 对企业采购管理的促进表现在哪些方面?
 
 ----
 
-[6.2 活动定义 ](itpm-6-2-2202.html#/overview)
-[| 练习 |](itpm-exec.html)
-[ 6.4 活动资源估算 ](itpm-6-4-2202.html)
+[ 6.2 ERP 系统应用评估及价值分析 ](erp-6-2-2202.html)
+[| 练习 |](erp-exec.html)
+[ 7 ERP 项目实施关键因素 ](erp-7-1-2202.html)
 
     </div>
 

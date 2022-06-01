@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- 修改页面标题 -->
-        <title>ITPM | HUST</title>
+        <title>ERPPA | HUST</title>
 
     <!-- 修改 content -->
-        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -48,34 +48,33 @@
     data-height              = "768" 
     data-max-scale           = "3" 
     data-min-scale           = "0" 
-    data-perspective         = "1000"
+    data-perspective         = "1000" 
     data-autoplay            = "0">
 
     <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
     <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
-    <!-- 类似地,需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的,class 才是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
 
     <div 
     id         = "overview" 
     data-x     = "0" 
     data-y     = "0" 
     class      = "step" 
-    data-scale = "15">
+    data-scale = "10">
 
     </div>
 
-<!-- 修改 id -->
-
-    <div
-    id         = "c63t"
+    <!-- 修改 id -->
+    <div 
+    id         = "c82t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
-<!-- 修改标题 -->
-        <h2>6. IT 项目进度计划</h2>
-        <h4 style="text-align: center">6.3 活动的排序</h4>
+    <!-- 修改标题 -->
+        <h2>8. ERP 系统与新技术</h2>
+        <h4 style="text-align: center">8.2 ERP 系统与物联网</h4>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -95,139 +94,158 @@
 
     </div>
 
-    <div 
-    id            = "c0"
+    <div
+    id            = "b0"
     class         = "step markdown"
-    data-rel-to   = "c63t"
-    data-rel-x    = "-800"
-    data-rel-y    = "100"
+    data-rel-to   = "c82t"
+    data-rel-x    = "-1500"
+    data-rel-y    = "0"
     data-rel-z    = "0"
-    data-rotate-x = "0"
     data-rotate-y = "0"
-    data-rotate-z = "0"
     data-scale    = "2">
 
-### 活动的依赖关系
-- 强制性依赖关系
-- 可斟酌处理的依赖关系
-- 外部依赖关系
+### 物联网
+- Internet of Things
+- 物物相连的互联网
+- 物联网的核心和基础仍然是互联网
+- 用户端是物品
 
     </div>
 
     <div
-    id            = "c1"
+    id            = "b1"
     class         = "step markdown"
-    data-rel-to   = "c0"
+    data-rel-to   = "b0"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 活动排序的主要程序
+### 物联网的特点
 
-- 确定各项工作的强制性逻辑关系
-- 确定没有逻辑关系的活动的顺序
-- 分析和预测可能产生的外部约束
+- 业务实现方式多样
+- 载体多样
+- 网络内的物联网业务需要一定的管理
+- 业务应用可能需要多个基础网络
+- 物联网的物要能传输数据, 有存储功能, 有计算能力
 
     </div>
 
     <div
-    id            = "c2"
+    id            = "b2"
     class         = "step markdown"
-    data-rel-to   = "c1"
-    data-rel-x    = "1200"
-    data-rel-y    = "300"
+    data-rel-to   = "c82t"
+    data-rel-x    = "200"
+    data-rel-y    = "900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 活动排序的输入
+### 物联网关键技术
 
-- 项目活动清单及相关支持信息
-- 项目范围说明书
-- 里程碑清单
+- 传感器技术
+- 网络技术
+- 嵌入式系统技术
 
     </div>
 
     <div
-    id            = "c3"
+    id            = "b3"
     class         = "step markdown"
-    data-rel-to   = "c2"
-    data-rel-x    = "1200"
-    data-rel-y    = "30"
+    data-rel-to   = "b2"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 项目活动排序的工具与方法
+### 物联网的特征
 
-- 紧前关系绘图法
-- 箭线绘图法
-- 计划网络样板
-- 利用时间提前与滞后量
+- 全面感知
+- 可靠传输
+- 智能处理
 
     </div>
 
     <div
-    id            = "c4"
+    id            = "b4"
     class         = "step markdown"
-    data-rel-to   = "c3"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "b3"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 项目活动排序的输出
+### 物联网 ERP 系统
 
-- 项目进度网络图
-- 活动清单 (更新)
-- 活动属性 (更新)
-- 请求的变更
+- 将物联网技术应用于传统 ERP 系统中
+- 将功能扩展为具有物联网特征
+- 管理范围扩展
 
     </div>
 
     <div
-    id            = "mm63"
+    id            = "b5"
     class         = "step markdown"
-    data-rel-to   = "c63t"
+    data-rel-to   = "b4"
+    data-rel-x    = "300"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网 ERP 的应用
+
+- 射频识别供应链
+- 出入库管理
+- 盘点管理
+- 物料管理
+- 采购管理
+
+    </div>
+
+    <div
+    id            = "mm82"
+    class         = "step markdown"
+    data-rel-to   = "c82t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![itpm 6.3 mindmap](img/c06/mindmap-6-3.png)
+![erp 8.2 mindmap](img/c08/mindmap-8-2.png)
 
     </div>
 
-<!-- 修改 rel-to 到本页 id -->
+<!-- 本节问题 -->
 
-    <div 
-    id            = "c63q"
+    <div
+    id            = "c82q"
     class         = "step markdown"
-    data-rel-to   = "c63t"
+    data-rel-to   = "c82t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
-    data-rotate-y = "0"
     data-z        = "500"
-    data-rotate-z = "180"
     data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
     data-scale    = "2">
 
-### 6.3 活动的排序
+### 8.2 ERP 系统与物联网
 
-- 为什么要要做活动排序?
-- 活动排序包括哪些输入?
-- 活动排序包括哪些工具和技术?
-- 活动排序包括哪些输出?
+- 什么是物联网?
+- 物联网的关键技术有哪些?
+- 物联网与 ERP 如何结合?
+- 物联网 ERP 有哪些应用?
 
 ----
 
-[6.2 活动定义 ](itpm-6-2-2202.html#/overview)
-[| 练习 |](itpm-exec.html)
-[ 6.4 活动资源估算 ](itpm-6-4-2202.html)
+[ 8.1 ERP 系统与云计算 ](erp-8-1-2202.html)
+[| 练习 |](erp-exec.html)
+[ 8.3 ERP 系统与商务智能 ](erp-8-3-2202.html)
 
     </div>
 

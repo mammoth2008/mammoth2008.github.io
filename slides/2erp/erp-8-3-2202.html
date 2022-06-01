@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- 修改页面标题 -->
-        <title>ITPM | HUST</title>
+        <title>ERPPA | HUST</title>
 
     <!-- 修改 content -->
-        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
     <!-- 引入数学公式 -->
@@ -48,34 +48,33 @@
     data-height              = "768" 
     data-max-scale           = "3" 
     data-min-scale           = "0" 
-    data-perspective         = "1000"
+    data-perspective         = "1000" 
     data-autoplay            = "0">
 
     <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
     <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
-    <!-- 类似地,需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的,class 才是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
 
     <div 
     id         = "overview" 
     data-x     = "0" 
     data-y     = "0" 
     class      = "step" 
-    data-scale = "15">
+    data-scale = "10">
 
     </div>
 
-<!-- 修改 id -->
-
-    <div
-    id         = "c63t"
+    <!-- 修改 id -->
+    <div 
+    id         = "c83t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
-<!-- 修改标题 -->
-        <h2>6. IT 项目进度计划</h2>
-        <h4 style="text-align: center">6.3 活动的排序</h4>
+    <!-- 修改标题 -->
+        <h2>8. ERP 系统与新技术</h2>
+        <h4 style="text-align: center">8.3 ERP 系统与商务智能</h4>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -95,22 +94,25 @@
 
     </div>
 
-    <div 
+    <div
     id            = "c0"
     class         = "step markdown"
-    data-rel-to   = "c63t"
-    data-rel-x    = "-800"
-    data-rel-y    = "100"
+    data-rel-to   = "c83t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
-    data-rotate-x = "0"
     data-rotate-y = "0"
-    data-rotate-z = "0"
     data-scale    = "2">
 
-### 活动的依赖关系
-- 强制性依赖关系
-- 可斟酌处理的依赖关系
-- 外部依赖关系
+### ERP 报表分析方面
+- 无法实现不同管理角色的分析要求
+- 报表计算速度慢
+- 需要大量的手工处理
+- 无法实现多维度分析
+- 无法灵活地实现跨年度分析
+- 报表二次开发难度大
+- 无法按照决策思维方式去了解信息
+- 无法直观地以图表方式呈现
 
     </div>
 
@@ -119,16 +121,24 @@
     class         = "step markdown"
     data-rel-to   = "c0"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 活动排序的主要程序
+### 管理应用方面
 
-- 确定各项工作的强制性逻辑关系
-- 确定没有逻辑关系的活动的顺序
-- 分析和预测可能产生的外部约束
+- 哪些客户为潜在流失客户?
+- 这些客户是核心客户吗?
+- 为什么会出现客户流失?
+- 哪些产品为潜在淘汰产品?
+- 哪些员工的销售业绩持续下降?
+- 哪些物料有呆滞的风险?
+- 库龄分布情况是怎么样的?
+- 这些物料是何时, 因何事, 何人经手入库的?
+- 主要物料的价格波动情况是怎样的?
+- 有哪些物料的价格波动较大?
+- 如何快速部署预算管理与分析?
 
     </div>
 
@@ -136,17 +146,15 @@
     id            = "c2"
     class         = "step markdown"
     data-rel-to   = "c1"
-    data-rel-x    = "1200"
-    data-rel-y    = "300"
+    data-rel-x    = "1400"
+    data-rel-y    = "-430"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 活动排序的输入
+### 商务智能的概念
 
-- 项目活动清单及相关支持信息
-- 项目范围说明书
-- 里程碑清单
+- 商务智能是一套完整的解决方案, 用来将企业中现有的数据进行有效的整合, 快速准确地提供报表并提出决策依据, 帮助企业做出明智的业务经营决策
 
     </div>
 
@@ -154,80 +162,82 @@
     id            = "c3"
     class         = "step markdown"
     data-rel-to   = "c2"
-    data-rel-x    = "1200"
-    data-rel-y    = "30"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 项目活动排序的工具与方法
+### 商务智能的构成
 
-- 紧前关系绘图法
-- 箭线绘图法
-- 计划网络样板
-- 利用时间提前与滞后量
+- 数据仓库
+- 数据分析
+- 数据挖掘
+- 在线分析
+- 数据备份和恢复
 
     </div>
 
     <div
     id            = "c4"
     class         = "step markdown"
-    data-rel-to   = "c3"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c2"
+    data-rel-x    = "1800"
+    data-rel-y    = "150"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 项目活动排序的输出
+### 商务智能在 ERP 系统中的应用
 
-- 项目进度网络图
-- 活动清单 (更新)
-- 活动属性 (更新)
-- 请求的变更
+- 客户分类和特点分析
+- 产品销售管理
+- 产品创新和推广
+- 市场营销策略分析
+- 经营成本与收入分析
+- 欺诈行为分析和预防
 
     </div>
 
     <div
-    id            = "mm63"
+    id            = "mm83"
     class         = "step markdown"
-    data-rel-to   = "c63t"
+    data-rel-to   = "c83t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![itpm 6.3 mindmap](img/c06/mindmap-6-3.png)
+![erp 8.3 mindmap](img/c08/mindmap-8-3.png)
 
     </div>
 
-<!-- 修改 rel-to 到本页 id -->
+<!-- 本节问题 -->
 
-    <div 
-    id            = "c63q"
+    <div
+    id            = "c83q"
     class         = "step markdown"
-    data-rel-to   = "c63t"
+    data-rel-to   = "c83t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
-    data-rotate-y = "0"
     data-z        = "500"
-    data-rotate-z = "180"
     data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
     data-scale    = "2">
 
-### 6.3 活动的排序
+### 8.3 ERP 系统与商务智能
 
-- 为什么要要做活动排序?
-- 活动排序包括哪些输入?
-- 活动排序包括哪些工具和技术?
-- 活动排序包括哪些输出?
+- 为什么 ERP 要与商务智能结合?
+- 什么是商务智能?
+- 商务智能在 ERP 中有哪些应用?
 
 ----
 
-[6.2 活动定义 ](itpm-6-2-2202.html#/overview)
-[| 练习 |](itpm-exec.html)
-[ 6.4 活动资源估算 ](itpm-6-4-2202.html)
+[ 8.2 ERP 系统与物联网 ](erp-8-2-2202.html)
+[| 练习 |](erp-exec.html)
+[ 1.1 ERP 概念及特点 ](erp-1-1-2202.html)
 
     </div>
 
@@ -274,3 +284,4 @@
     <script>impress().init();</script>
     </body>
     </html>
+
