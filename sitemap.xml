@@ -2,63 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yemengma.cn/post/2022-06-28-tue/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <loc>https://yemengma.cn/post/2022-06-30-thu/</loc>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/categories/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/newsletter/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/post/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-06-28T10:23:15+08:00</lastmod>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2022-06-30T14:01:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/post/2022-06-28-tue/</loc>
     <lastmod>2022-06-28T10:23:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
