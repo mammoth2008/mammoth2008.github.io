@@ -2,22 +2,797 @@
     <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>DB&DS | HUST</title>
-        <style type="text/css">
-            p {
-                font-family: FZFengYaSongS-GB;
-                src: url('../src/方正风雅宋简体.ttf');
-                font-size: 72px;
-                line-height: 2;
-                }
-        </style>
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+    <!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
     </head>
 
-    <body style="text-align: center;">
+    <body class="impress-not-supported">
 
-        <p>数据库与数据结构</p>
-        <img src="../dev.gif" alt="IN PROGRESS..." />
-        <p>施工中......</p>
-            
+    <!-- 左上角加上 logo     -->
+    <!-- logo 颜色是 #027cf7 -->
+    <!-- 链接也使用同样颜色  -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div
+    id                       = "impress"
+    data-transition-duration = "1000"
+    data-width               = "1024"
+    data-height              = "768"
+    data-max-scale           = "3"
+    data-min-scale           = "0"
+    data-perspective         = "1000"
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div
+    id         = "overview"
+    data-x     = "0"
+    data-y     = "0"
+    class      = "step"
+    data-scale = "15">
+
+    </div>
+
+<!-- What,Why,and How -->
+
+    <div
+    id         = "what"
+    class      = "step"
+    data-x     = "-1500"
+    data-y     = "-6000"
+    data-scale = "1">
+
+        <ul>
+            <li><h3>数据库与数据结构: WHAT?</h3>
+                <ul>
+                    <li class="substep">数据的存储与使用方法</li>
+                    <li class="substep">计算机专业的核心课程</li>
+                    <li class="substep">与语言无关的编程思想</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div
+    id          = "why"
+    class       = "step"
+    data-rel-to = "what"
+    data-rel-x  = "1500"
+    data-scale  = "1">
+
+        <ul>
+            <li><h3>数据库与数据结构: WHY?</h3>
+                <ul>
+                    <li class="substep">编写程序的底层能力</li>
+                    <li class="substep">计算思维的有效训练</li>
+                    <li class="substep">相关工作面试的必选</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div
+    id          = "how"
+    class       = "step"
+    data-rel-to = "why"
+    data-rel-x  = "1500"
+    data-scale  = "1">
+
+        <ul>
+            <li><h3>数据库与数据结构: HOW?</h3>
+                <ul>
+                    <li class="substep">多阅读, 多练习</li>
+                    <li class="substep">先归纳, 再演绎</li>
+                    <li class="substep">做项目, 刷真题</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+<!-- 标题 -->
+    <div 
+    id                  = "title"
+    class               = "step"
+    data-x              = "0"
+    data-y              = "0"
+    data-scale          = "5"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overview c1m how processgroup">
+
+		<h5 style="text-align: center">数据存储和使用的最佳实践</h5><br/>
+        <h1 style="text-align: center; font-size: 84pt">数据库与数据结构</h1><br/>
+        <h5 style="text-align: center">Database, Data Structure and Algorithms</h5>
+        <br/>
+        <p class="footnote">
+            <inlinecode style="font-size: 24px">
+                    Powered by 
+                <a href="https://github.com/impress/impress.js/" style="text-shadow: 0 0 0 rgb(0, 0, 0, 0);">
+                    impress.js
+                </a>
+                <span><img class="icon" src="../favicon.png" style="width:16px;height:16px;vertical-align: 8px;"></span>
+                <br/>
+                    Ver.2206
+            </inlinecode>
+        </p>
+
+    </div>
+
+<!-- 概述 -->
+
+    <div
+    id            = "t1"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "1280"
+    data-rel-y    = "2400"
+    data-z        = "-10"
+    data-rotate-z = "90"
+    data-scale    = "4">
+
+### 程序 = 数据结构 + 算法
+### 软件 = 程序 + 数据(库)
+
+    </div>
+
+    <div
+    id            = "t2"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "-400"
+    data-rel-y    = "2100"
+    data-z        = "-10"
+    data-rotate-z = "0"
+    data-scale    = "4">
+
+### 数据结构与算法
+
+- 表 List
+- 串 String
+- 树 Tree
+- 图 Graph
+- 搜索 Search
+- 排序 Sort
+
+    </div>
+
+    <div
+    id            = "t3"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "400"
+    data-rel-y    = "2380"
+    data-z        = "-10"
+    data-rotate-z = "0"
+    data-scale    = "3">
+
+### 数据库
+
+- 关系型数据库 Relation
+- 关系理论 Theory
+- 数据库操作 Operation
+- 数据库设计 Design
+- 数据库安全 Security
+
+    </div>
+
+    <div
+    id            = "big"
+    data-rel-to   = "title"
+    class         = "step"
+    data-rel-x    = "3200"
+    data-rotate-z = "-90"
+    data-scale    = "5">
+
+        <h2 style="font-size:54pt"><span class="point">DATA</span>base</h2>
+        <h2 style="font-size:54pt"><span class="point">DATA</span> Structure</h2>
+
+    </div>
+
+    <div
+    id            = "tiny"
+    class         = "step markdown"
+    data-rel-to   = "big"
+    class         = "step"
+    data-z        = "-3000"
+    data-rotate-z = "360"
+    data-scale    = "0.5">
+
+什么是数据 (Data)?
+
+    </div>
+
+    <div
+    id          = "pro"
+    class       = "step"
+    data-rel-to = "title"
+    data-rel-x  = "-3000"
+    data-rel-y  = "1000"
+    data-z      = "0"
+    data-rotate = "90"
+    data-scale  = "6">
+
+        <p>数据是<span class="point">描述事物</span>的<b class="point">符号</b>记录</p>
+
+    </div>
+
+    <div
+    id          = "d1"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-1800"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+- 数据库是长期存储在计算机中的, 有组织的, 可共享的大量数据的集合
+
+    </div>
+
+    <div
+    id          = "d1p"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-1800"
+    data-z      = "10"
+    data-rotate = "180"
+    data-scale  = "5">
+
+![database](img/c01/database.jpg)
+
+    </div>
+
+    <div
+    id          = "d2"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-2600"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+- 数据结构是指互相之间存在一种或多种关系的数据元素的集合
+
+    </div>
+
+    <div
+    id          = "d2p"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-2600"
+    data-z      = "10"
+    data-rotate = "180"
+    data-scale  = "5">
+
+![data structure](img/c01/data-structure.jpg)
+
+    </div>
+
+    <div
+    id          = "d3"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-3400"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+- 算法是是指基于特定的计算模型, 旨在解决某一信息处理问题而设计的一个指令序列
+
+    </div>
+
+    <div
+    id          = "d3p"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-3400"
+    data-z      = "10"
+    data-rotate = "180"
+    data-scale  = "5">
+
+![algorithm](img/c01/algorithm.jpg)
+
+    </div>
+
+    <div
+    id          = "overviewmiddle"
+    class       = "step"
+    data-rel-to = "title"
+    data-x      = "0"
+    data-y      = "0"
+    data-z      = "-1000"
+    data-scale  = "15">
+
+    </div>
+
+<!-- 目录,共 13 章 -->
+
+    <div
+    id                  = "c1m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-1770"
+    data-rel-y          = "-4680"
+    data-rotate-y       = "-15.96"
+    data-rotate-x       = "42.08"
+    data-rotate         = "-200.77"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle overviewmiddle c2m">
+
+        <h3>1. 数据库系统概论</h3>
+        <p>
+            <a href="dbds-1-1-2206.html" target="_blank">1. 数据库系统概述</a><br/>
+            <a href="dbds-1-2-2206.html" target="_blank">2. 数据模型</a><br/>
+            <a href="dbds-1-3-2206.html" target="_blank">3. 数据库系统的结构</a><br/>
+            <a href="dbds-1-4-2206.html" target="_blank">4. 数据库系统的组成</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c2m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3740"
+    data-rel-y          = "-3320"
+    data-rotate-y       = "-33.68"
+    data-rotate-x       = "29.84"
+    data-rotate         = "-228.46"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c1m c3m">
+
+        <h3>2. 关系数据库</h3>
+        <p>
+            <a href="dbds-2-1-2206.html" target="_blank">1. 关系数据结构及形式化定义</a><br/>
+            <a href="dbds-2-2-2206.html" target="_blank">2. 关系操作</a><br/>
+            <a href="dbds-2-3-2206.html" target="_blank">3. 关系的完整性</a><br/>
+            <a href="dbds-2-4-2206.html" target="_blank">4. 关系代数</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c3m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-4850"
+    data-rel-y          = "-1200"
+    data-rotate-y       = "-43.69"
+    data-rotate-x       = "10.77"
+    data-rotate         = "-256.15"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c2m c4m">
+
+        <h3>3. 关系数据库标准语言SQL</h3>
+        <p>
+            <a href="dbds-3-1-2206.html" target="_blank">1. SQL 概述</a><br/>
+            <a href="dbds-3-2-2206.html" target="_blank">2. 王者荣耀英雄数据库</a><br/>
+            <a href="dbds-3-3-2206.html" target="_blank">3. 数据定义</a><br/>
+            <a href="dbds-3-4-2206.html" target="_blank">4. 数据查询</a><br/>
+            <a href="dbds-3-5-2206.html" target="_blank">5. 数据更新</a><br/>
+            <a href="dbds-3-6-2206.html" target="_blank">6. 视图</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c4m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-4850"
+    data-rel-y          = "1200"
+    data-rotate-y       = "-43.69"
+    data-rotate-x       = "-10.77"
+    data-rotate         = "-283.85"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c3m c5m">
+
+        <h3>4. 关系数据理论</h3>
+        <p>
+            <a href="dbds-4-1-2206.html" target="_blank">1. 问题的提出</a><br/>
+            <a href="dbds-4-2-2206.html" target="_blank">2. 规范化</a><br/>
+            <a href="dbds-4-3-2206.html" target="_blank">3. 数据依赖的公理系统</a><br/>
+            <a href="dbds-4-4-2206.html" target="_blank">4. 模式的分解</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c5m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3740"
+    data-rel-y          = "3320"
+    data-rotate-y       = "-33.68"
+    data-rotate-x       = "-29.84"
+    data-rotate         = "-311.54"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c4m c6m">
+
+        <h3>5. 数据库设计</h3>
+        <p>
+            <a href="dbds-5-1-2206.html" target="_blank">1. 数据库设计概述</a><br/>
+            <a href="dbds-5-2-2206.html" target="_blank">2. 需求分析</a><br/>
+            <a href="dbds-5-3-2206.html" target="_blank">3. 概念结构设计</a><br/>
+            <a href="dbds-5-4-2206.html" target="_blank">4. 逻辑结构设计</a><br/>
+            <a href="dbds-5-5-2206.html" target="_blank">5. 物理结构设计</a><br/>
+            <a href="dbds-5-6-2206.html" target="_blank">6. 数据库的实施和维护</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c6m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-1770"
+    data-rel-y          = "4680"
+    data-rotate-y       = "-15.96"
+    data-rotate-x       = "-42.08"
+    data-rotate         = "-339.23"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c5m c7m">
+
+        <h3>6. 数据库保护</h3>
+        <p>
+            <a href="dbds-6-1-2206.html" target="_blank">1. 数据库安全性</a><br/>
+            <a href="dbds-6-2-2206.html" target="_blank">2. 数据库完整性</a><br/>
+            <a href="dbds-6-3-2206.html" target="_blank">3. 数据库恢复</a><br/>
+            <a href="dbds-6-4-2206.html" target="_blank">4. 数据库并发控制</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c7m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "600"
+    data-rel-y          = "4960"
+    data-rotate-y       = "5.42"
+    data-rotate-x       = "-44.67"
+    data-rotate         = "-366.92"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c6m c8m">
+
+        <h3>7. 数据库技术进展</h3>
+        <p>
+            <a href="dbds-7-1-2206.html" target="_blank">1. 数据库的发展阶段</a><br/>
+            <a href="dbds-7-2-2206.html" target="_blank">2. 数据库的发展特点</a><br/>
+            <a href="dbds-7-3-2206.html" target="_blank">3. 数据库的发展趋势</a><br/>
+            <a href="dbds-7-4-2206.html" target="_blank">4. 大数据</a><br/>
+            <a href="dbds-7-5-2206.html" target="_blank">5. 非关系数据库</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c8m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "2840"
+    data-rel-y          = "4110"
+    data-rotate-y       = "25.56"
+    data-rotate-x       = "-37.03"
+    data-rotate         = "-394.62"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c7m c9m">
+
+        <h3>8. 数据结构与算法概论</h3>
+        <p>
+            <a href="dbds-8-1-2206.html" target="_blank">1. 计算和数据结构</a><br/>
+            <a href="dbds-8-2-2206.html" target="_blank">2. 算法和算法分析</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c9m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "4430"
+    data-rel-y          = "2320"
+    data-rotate-y       = "39.85"
+    data-rotate-x       = "-20.91"
+    data-rotate         = "-422.31"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c8m c10m">
+
+        <h3>9. 线性表</h3>
+        <p>
+            <a href="dbds-9-1-2206.html" target="_blank">1. 线性表的定义</a><br/>
+            <a href="dbds-9-2-2206.html" target="_blank">2. 顺序存储结构</a><br/>
+            <a href="dbds-9-3-2206.html" target="_blank">3. 链式存储结构</a><br/>
+            <a href="dbds-9-4-2206.html" target="_blank">4. 顺序表和链表的比较</a><br/>
+            <a href="dbds-9-5-2206.html" target="_blank">5. 线性表的应用</a><br/>
+            <a href="dbds-9-6-2206.html" target="_blank">6. 栈</a><br/>
+            <a href="dbds-9-7-2206.html" target="_blank">7. 队列</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c10m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "5000"
+    data-rel-y          = "0"
+    data-rotate-y       = "45"
+    data-rotate-x       = "0"
+    data-rotate         = "-450"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c9m c11m">
+
+        <h3>10. 树和二叉树</h3>
+        <p>
+            <a href="dbds-10-1-2206.html" target="_blank">1. 树的基本概念</a><br/>
+            <a href="dbds-10-2-2206.html" target="_blank">2. 二叉树的基本概念</a><br/>
+            <a href="dbds-10-3-2206.html" target="_blank">3. 二叉树的存储结构</a><br/>
+            <a href="dbds-10-4-2206.html" target="_blank">4. 二叉树的基本运算及其实现</a><br/>
+            <a href="dbds-10-5-2206.html" target="_blank">5. 二叉树的遍历</a><br/>
+            <a href="dbds-10-6-2206.html" target="_blank">6. 二叉树的构造</a><br/>
+            <a href="dbds-10-7-2206.html" target="_blank">7. 线索二叉树</a><br/>
+            <a href="dbds-10-8-2206.html" target="_blank">8. 哈夫曼树</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c11m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "4430"
+    data-rel-y          = "-2320"
+    data-rotate-y       = "39.85"
+    data-rotate-x       = "20.91"
+    data-rotate         = "-477.69"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c10m c12m">
+
+        <h3>11. 图</h3>
+        <p>
+            <a href="dbds-11-1-2206.html" target="_blank">1. 图的基本概念</a><br/>
+            <a href="dbds-11-2-2206.html" target="_blank">2. 图的存储结构</a><br/>
+            <a href="dbds-11-3-2206.html" target="_blank">3. 图的遍历</a><br/>
+            <a href="dbds-11-4-2206.html" target="_blank">4. 生成树和小生成树</a><br/>
+            <a href="dbds-11-5-2206.html" target="_blank">5. 短路径</a><br/>
+            <a href="dbds-11-6-2206.html" target="_blank">6. 拓扑排序</a><br/>
+            <a href="dbds-11-7-2206.html" target="_blank">7. AOE网与关键路径</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c12m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "2840"
+    data-rel-y          = "-4110"
+    data-rotate-y       = "25.56"
+    data-rotate-x       = "37.03"
+    data-rotate         = "-505.38"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c11m c13m">
+
+        <h3>12. 查找</h3>
+        <p>
+            <a href="dbds-12-1-2206.html" target="_blank">1. 查找的基本概念</a><br/>
+            <a href="dbds-12-2-2206.html" target="_blank">2. 线性表的查找</a><br/>
+            <a href="dbds-12-3-2206.html" target="_blank">3. 半查找</a><br/>
+            <a href="dbds-12-4-2206.html" target="_blank">4. 树表的查找</a><br/>
+            <a href="dbds-12-5-2206.html" target="_blank">5. 哈希表查找</a>
+        </p>
+
+    </div>
+
+    <div 
+    id                  = "c13m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "600"
+    data-rel-y          = "-4960"
+    data-rotate-y       = "5.42"
+    data-rotate-x       = "44.67"
+    data-rotate         = "-533.08"
+    data-rel-z          = "-0.5w"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c12m overviewmiddle">
+
+        <h3>13. 排序</h3>
+        <p>
+            <a href="dbds-13-1-2206.html" target="_blank">1. 排序的基本概念</a><br/>
+            <a href="dbds-13-2-2206.html" target="_blank">2. 插入排序</a><br/>
+            <a href="dbds-13-3-2206.html" target="_blank">3. 半插入排序</a><br/>
+            <a href="dbds-13-4-2206.html" target="_blank">4. 交换排序</a><br/>
+            <a href="dbds-13-5-2206.html" target="_blank">5. 选择排序</a><br/>
+            <a href="dbds-13-6-2206.html" target="_blank">6. 归并排序</a><br/>
+            <a href="dbds-13-7-2206.html" target="_blank">7. 基数排序</a><br/>
+            <a href="dbds-13-8-2206.html" target="_blank">8. 外排序概述</a><br/>
+            <a href="dbds-13-9-2206.html" target="_blank">9. 磁盘排序</a><br/>
+            <a href="dbds-13-10-2206.html" target="_blank">10. 磁带排序</a>
+        </p>
+
+    </div>
+
+    <div
+    id            = "resources"
+    class         = "step"
+    data-rel-to   = "title"
+    data-rel-x    = "3500"
+    data-rel-y    = "3500"
+    data-rotate-y = "0"
+    data-rotate-x = "0"
+    data-rotate   = "0"
+    data-rel-z    = "0"
+    data-scale    = "5">
+
+    <h3 style     = "text-align:center">
+        <a href="dbds-src.html" target="_blank">课程资源</a>
+    </h3>
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
     </body>
     </html>
+
+<!--
+    DNNNNDDDD8888OOOOZOOOZZZZZZZZOOOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNNNN
+    DNNDDDDD888OOOOZZZZZZ$$$$$Z$ZZZZZOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNN
+    NNDDDDDD8OOOZZZ$$$$$$$$$$Z$$$$$ZZZZZOOOO888888888DD8DDDDDDNNNNNNNNNNNNNNNNNNNNNN
+    DDDDDDDDOOZZZ$$$$$$$$$?7$$$$$$$$ZZZ$ZOOO888888888888888DDDDDNNNNNNNNNNNNNNNNNNNN
+    DDDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$ZZZOOOOOOOOO88O88888DDDDDDDNNNNNNNNNNNNNNNNN
+    DDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$$ZZZZZZZOOOOOO88O888888DDDDDDNNNNNNNNNNNNNNNN
+    DDDDD88OZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$Z$ZZZZZOOOOOO8O88888888DDDDDNNNNNNNNNNNNNNN
+    DDDDD8OZZZZ$7$$$$$$$$$$$$$$$88N7DZ$$$$$$$ZZZZZZZOOOOOO88888O88DDDDDNNNNNNNNNNNNN
+    DDDDD8OZZZ$$$$$$$$$$$$$$$$$$D++=Z7777$$$$888$ZZZZZZOOOOOO8888888DDDDNDNNNNNNNNNN
+    DDDD8OOZ$Z$$$$$$$$$$$$$$$$$7?===$7777777$N=DNZZZZZZZOOOOO8O8888888DDDDNNNNNNNNNN
+    DDDD8OZZZZ$$$$$$$$$$$$$$$$$7?===$77777777DN?.8NZZZZZZZZOOOOO8888888DDDDNNNNNNNNN
+    DDD88OZZZZZZZ$$$$$$$$$$$$$$$:.==N$7$$$77$$$M=.8D$ZZZZZZZZOOOOO8888888DDDNNNNNNNN
+    DDD8ZO8OZZZOZZZZ$$$$$$$$$$$$8,..+NNM++++=NNM+=.N$$ZZZZZZZZOOO8OO888888DDDNNNNNNN
+    DDD8888888OOOZZZZZZ$$$$$$$$$$D,..+==========N=,N$$$ZZZZZZZZZOO8O888888DDDDNNNNNN
+    DDD8D88888888888ZOZZ$$$$$$$$$DNN.===+=MM====+=NN$$?$ZZZZZZZZZOOOOO888888DDNNNNNN
+    D8888O88O8O8OOOOOOO88ZZ$ZZ$$$D====+=NMMMM+==++MN77$$$$ZZZZZZZZZOO8OO8888DDDNNNNN
+    8O8OOOOOOOOOOOOOOZOOOO88ZZZZZN++====NMMMM+==NMMM7777$$$ZZZZZZZZZOOOOO888888DDNNN
+    8OOOOOOOOOOZZZZZZZZZZZZ888OOON++=====MMM?===NMMM77777$$$ZZZZZZZZZZOOOO878888DNNN
+    OOOOOOOOZZZ$$$$$$7$7$$ZZ888OONN=====+=========MM777777$$$ZZZZZZZZZZZOOOO8888DDNN
+    OOZZZ$$$$$7777777777$O8OOOOOOOON+==~~:,,,,,.~~=NI777777$$$ZZZZZZZZZZOOOOO8888DDD
+    ZZ$$77IIIII7IIIIII7$ZZOOOOOOOOOOD=,,.  ......,DNII777777$$$$ZZZZZZZZZOOOOO8888DD
+    Z$77777$ZO88DDO$$OOOZOOOOMMMZZZOOODNMMMMMDNNNNI7II77777777$$$$ZZZZZZZZOOOOO8888D
+    $ZOO8OOOOOOOOOOODD8OOOZO8ZZZZMMMZZMM88M8M8MMII7IIIIII777777$$$ZZZZZZZZZZOOOO8888
+    8OOOOOOOOOOOOOOOO8OO8OZZOZMMOZZZMMZZOM888M8DIIIIIIIII777I777$$$$ZZZ$ZZZZZOOOO888
+    OO7OOOOOOOOOOOOOOOOOOMM.7ZZ$$$ZZZZMMZZM8.M8DM?IIIIIII777III7$$$$$IZZZZZZZZOOO888
+    OOOOOOOOOOOOOOOOOOOOOO8DM...MMMMNZZ.8O.MMMDM8N+IIIIIII77I777$$$$$$$$ZZZZZOOOI888
+    OOOOZZZZ$$$$$$ZZZZZZZZZ$M$ZO.....MMM.MMMMMMDDMI,M7IIII7777777$$$$$$$ZZZZZZZZOOO8
+    ZZ88$:DD$8888??II$$$$$$NMMMMZ$$.,NMMMMMMMMMMDI.,,:MMIII7777777$$$$$$$ZZZZZZZOOOO
+    ODDD=:88~D88+,,8O?=+I777IZZ=OOO+MMMMMMMMMMMMD?..DMMMM$II7I77777$$$$$$ZZZZZZZZOOO
+    O888~,O8,888,D8OOOO=$+IIII$+,??,MMMM M==.MMMD?MMM7$::,MM7I777777$$$$$$$ZZZZZZZZZ
+    +D887,,8+,O+78OO~~~~7$+?II7,?O?OMM.M~==~~M.M8????+IMM..MMMII7777$$$$$$$$ZZZ$ZZZZ
+    ~?OOZ=,,ZZO=7+=.,,I?$77+II7ZOI?Z=8MDDDMMDDONI??????I777MD7::7777$$$$$$$$ZZZZZZZZ
+    Z,:=$OOZ7++O,.,$$$$$$$$$?DNONNM8$$NZZNN..MMM,,N??????????I77MI7777$$$$$$ZZZZZZZZ
+    $O$,IO~,~,:8++++,,,,,,$DMDIIOOOO77MZZN..ZMMMOM???????????IIII7777777$$$$$ZZZZZZZ
+    :++=::=Z7=+==,,Z$Z?ZMMMMI777NOO77IZZZO.8M,NNNMN+??????????IIII777777$$$$$ZZZZZZZ
+    ~:::I$~,=$?=~??ZOMNNZMMM7D$7NOOII8ZZZZ.M..MDD.MM++++++?????IIII77777$$$$$ZZZZZZ$
+    ZZZ7+~::=,OI:DDMD888ZMMMI7DIZZ7..8ZZI..M..M.M8M=====++++??????II777I7$$$$$ZZZZZZ
+    ===~,:O+:8DD?NOZZ888ZDMM7787Z7..Z88Z...M,MO.D8M~~~======++????IIII7777$$$$$$ZZZZ
+    OZZZO8+,7MMMNOOZZ888Z8MMOD.DZ...888D..MMD..ZDMM:~~~~~~~==+++????IIIII7777$$$ZZZ?
+    OOZMMMM.MD8MMMOZ7IDD78MO,OMD:.8N7I8N..MMM.NMDM,:~~~~~~~~===+++???IIIII7777$$ZZZI
+    M77NDDOZN8OZMMZZZI8.+M...O88,...Z$N=.NMM.OM.D,,:~~~~~~~~~=====++???III77777$ZZZZ
+    D8MD88ION8MMDMZZZIDO7M..ZNZO,..+ZZZ.M..M.MMN:,,:~~~~~~~:~~~~===++???IIII777$$ZZZ
+    DDM888IO88MODMOZOOO7IZ8DDOO8...$....D..MDM.M:.,:~~~~~~~~~~~~~~===++??+III777$ZZZ
+    DD8M88IZ8DMODI$8ZZMM$IID7OO:,.IZ....D..M8.8M..,:~~~~~~~::~~~~~~~==++?+?III77$$$$
+    D8888888888OOOD8OZDM$OOOOO..,7ODZ....MM.D.OM.,,:~~~~~~~~::::::::~~==+???III7$$$$
+    D88888888MMOZI88OZ8M8O.OO.,,ODDD:.,MMM..M.M..,,::~~~~~::::::::::~~~==++???I7$$$$
+    N888NN88DMMZZZ?8:IDO..O8,88DZ778,,,.M..M.M...,,:::::::::::::::::::~~==++???I$$$$
+    D88ZZM8ZMMM$$.?D.?M..N..$,,,,8IO,,O...NM.M...,,,::::::::::::::::::::~~===+??I$$$
+    DD8?ZMOMIM $.Z.Z?+MIO.O=?.??,O?D.OO..MM.O...,,,::::::::::::::::::::,:~~~==+??777
+    ND8I+..ZIM,$,..8$.+....=+I======M==M=MM==M==O==M=$:::::~~~~~~:::::::::~~~==+??II
+    NDDDDDDDD8D8DDDDD88DD8888NI8DN=MM==M==M=MM+=M=~O+NOOOOOOOOOOOOOOOOOZOZOOOO888DDD
+    ---mengma2008---------yemengma.cn-------------Signture Made by GlassGiant.com---
+-->
