@@ -715,4 +715,10 @@
     <priority>0.5</priority>
   </url>
   
+  <url>
+    <loc>https://yemengma.cn/post/22w45-review/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>
