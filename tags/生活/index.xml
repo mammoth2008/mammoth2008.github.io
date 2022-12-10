@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 05 Nov 2022 06:39:40 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Dec 2022 08:33:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 Week 49 回顾</title>
+      <link>https://yemengma.cn/post/22w49-review/</link>
+      <pubDate>Sat, 10 Dec 2022 08:33:07 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/22w49-review/</guid>
+      <description>Stable Diffusion 和 ChatGPT 临近年末，被 AI 连番轰炸。用 Stable Diffusion 实现了微信头像自由，又用 ChatGPT 实现了废话报告自由。本来两周前就打算写写这个题目来着，但是一直不知道该怎么写</description>
+    </item>
+    
+    <item>
+      <title>2022 Week 45 回顾</title>
+      <link>https://yemengma.cn/post/22w45-review/</link>
+      <pubDate>Sat, 12 Nov 2022 06:39:40 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/22w45-review/</guid>
+      <description>软件掌控世界 前两天，我的 MagSafe 充电器出问题了。每次充电时只能充几分钟，屏幕熄灭后充电就停止了。 我只有一部 iPhone,也没有想到可以用支持无线充</description>
+    </item>
+    
     <item>
       <title>2022 Week 44 回顾</title>
       <link>https://yemengma.cn/post/22w44-review/</link>
@@ -330,15 +348,6 @@
       
       <guid>https://yemengma.cn/post/22w05-review/</guid>
       <description>平衡的生活 「平衡」这个词隐含的假设，是不可兼得，或者对抗。 当我们说「保持工作和生活的平衡」时，把工作和生活放在跷跷板的两边，一边多了另一边就</description>
-    </item>
-    
-    <item>
-      <title>2022 Week 45 回顾</title>
-      <link>https://yemengma.cn/post/22w45-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yemengma.cn/post/22w45-review/</guid>
-      <description>软件掌控世界 前两天，我的 MagSafe 充电器出问题了。每次充电时只能充几分钟，屏幕熄灭后充电就停止了。 我只有一部 iPhone,也没有想到可以用支持无线充</description>
     </item>
     
   </channel>
