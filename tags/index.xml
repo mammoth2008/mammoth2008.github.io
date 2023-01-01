@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 31 Dec 2022 13:33:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 08:25:09 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>newsletter</title>
+      <link>https://yemengma.cn/tags/newsletter/</link>
+      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/tags/newsletter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>想法</title>
+      <link>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</link>
+      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>记录</title>
+      <link>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>回顾</title>
       <link>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/</link>
@@ -23,33 +50,6 @@
       <pubDate>Sat, 31 Dec 2022 13:33:07 +0800</pubDate>
       
       <guid>https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>记录</title>
-      <link>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sat, 31 Dec 2022 13:33:07 +0800</pubDate>
-      
-      <guid>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>newsletter</title>
-      <link>https://yemengma.cn/tags/newsletter/</link>
-      <pubDate>Sun, 09 Oct 2022 08:25:09 +0800</pubDate>
-      
-      <guid>https://yemengma.cn/tags/newsletter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>想法</title>
-      <link>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</link>
-      <pubDate>Sun, 09 Oct 2022 08:25:09 +0800</pubDate>
-      
-      <guid>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</guid>
       <description></description>
     </item>
     
