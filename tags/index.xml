@@ -7,20 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sun, 01 Jan 2023 08:25:09 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>newsletter</title>
-      <link>https://yemengma.cn/tags/newsletter/</link>
-      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
-      
-      <guid>https://yemengma.cn/tags/newsletter/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 05 Jan 2023 18:25:09 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>想法</title>
       <link>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</link>
-      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
+      <pubDate>Thu, 05 Jan 2023 18:25:09 +0800</pubDate>
       
       <guid>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</guid>
       <description></description>
@@ -29,9 +20,27 @@
     <item>
       <title>记录</title>
       <link>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
+      <pubDate>Thu, 05 Jan 2023 18:25:09 +0800</pubDate>
       
       <guid>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读书</title>
+      <link>https://yemengma.cn/tags/%E8%AF%BB%E4%B9%A6/</link>
+      <pubDate>Thu, 05 Jan 2023 18:25:09 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/tags/%E8%AF%BB%E4%B9%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>newsletter</title>
+      <link>https://yemengma.cn/tags/newsletter/</link>
+      <pubDate>Sun, 01 Jan 2023 08:25:09 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/tags/newsletter/</guid>
       <description></description>
     </item>
     
@@ -68,15 +77,6 @@
       <pubDate>Sat, 21 May 2022 21:22:19 +1200</pubDate>
       
       <guid>https://yemengma.cn/tags/%E7%AC%94%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>读书</title>
-      <link>https://yemengma.cn/tags/%E8%AF%BB%E4%B9%A6/</link>
-      <pubDate>Sat, 21 May 2022 21:22:19 +1200</pubDate>
-      
-      <guid>https://yemengma.cn/tags/%E8%AF%BB%E4%B9%A6/</guid>
       <description></description>
     </item>
     
