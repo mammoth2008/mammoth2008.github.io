@@ -1,0 +1,619 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>ERPPA | HUST</title>
+
+    <!-- 修改 content -->
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c13t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>1. ERP 概述</h2>
+        <h4 style="text-align: center">1.3 ERP 的演变与发展</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div
+    id            = "f0"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP 的由来
+
+- 1958, 标准生产管理方式, IBM
+- 1961, MRP, Material Requirements Planning
+- 1968, PICS, Production and Information Control System, IBM
+- 1970s, COPICS, Communication Oriented Production and Information Control System, IBM
+
+    </div>
+    
+    <div
+    id            = "f0a"
+    class         = "step markdown"
+    data-rel-to   = "f0"
+    data-rel-x    = "0"
+    data-rel-y    = "760"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+    
+- 1980s, MRP II, Manufacturing Resources Planning
+- 1990s, ERP, Enterprise Resource Planning, Gartner Group
+- 2000s, ERP II, Gartner Group
+
+    </div>
+
+    <div
+    id            = "f1"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 订货点法 (Order Point Method , OPM)
+
+- 1930s
+- 最大库存量和安全库存量
+- 计算补充库存提前量
+- 当物料供应到货时, 物料消耗刚好到安全库存量
+- 两个参数: 订货点, 订货批量
+
+    </div>
+
+<!-- Lecture: Economic Lot Size 即经济批量 -->
+
+    <div
+    id            = "f1a"
+    class         = "step markdown"
+    data-rel-to   = "f1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Order Point Method, OPM](img/c01/opm.jpeg)
+
+    </div>
+
+    <div
+    id            = "f2"
+    class         = "step markdown"
+    data-rel-to   = "f1"
+    data-rel-x    = "460"
+    data-rel-y    = "60"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 需要满足的条件
+
+- 物料消耗相对稳定
+- 物料供应比较稳定
+- 物料需求是独立的
+- 物料价格不是太高
+
+    </div>
+
+    <div
+    id            = "f3"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物料需求计划 MRP
+
+- 1960s
+- 独立需求
+- 相关需求
+- 在需要的时候提供需要的数量
+- 需求应考虑产品结构
+- 产品结构与物料需求相关
+
+    </div>
+
+    <div
+    id            = "f4"
+    class         = "step markdown"
+    data-rel-to   = "f3"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+- 物料需求计划系统是一种能提供物料计划及控制库存, 依据产品的交货期推算出零部件的生产进度日程和原材料与外购件的需求日程的系统
+
+    </div>
+
+    <div
+    id            = "f4a"
+    class         = "step markdown"
+    data-rel-to   = "f4"
+    data-rel-x    = "0"
+    data-rel-y    = "430"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+- 物料需求计划将主生产计划 (Master Production Schedule, MPS) 转化成物料需求表, 并为需求计划提供信息
+
+    </div>
+
+    <div
+    id            = "f4b"
+    class         = "step markdown"
+    data-rel-to   = "f4a"
+    data-rel-x    = "0"
+    data-rel-y    = "440"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+- 应用物料需求计划系统必须要决定物料的毛需求量 (Gross Requirement, GR) 和净需求量 (Net Requirement, NR)
+
+    </div>
+
+    <div
+    id            = "f4c"
+    class         = "step markdown"
+    data-rel-to   = "f4b"
+    data-rel-x    = "0"
+    data-rel-y    = "380"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+- 物料需求计划不仅给出订单数量, 而且特别强调需要的时间
+
+    </div>
+
+    <div
+    id            = "f5"
+    class         = "step markdown"
+    data-rel-to   = "f4"
+    data-rel-x    = "0"
+    data-rel-y    = "1750"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 需要满足的条件
+
+- 主生产计划
+- 物料有独立物料代码
+- 通过物料代码表示的物料清单 (Bill of Materials, BOM)
+- 完整库存记录
+
+    </div>
+
+    <div
+    id            = "f6"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "2000"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 闭环物料需求计划 (Closed-loop MRP)
+
+- 实际生产中的条件是变化的
+- 采购计划可能受限, 无法保障供应
+- 生产计划需要考虑生产线能力
+- 1980s, 发展出闭环物料需求计划
+
+    </div>
+
+    <div
+    id            = "f7"
+    class         = "step markdown"
+    data-rel-to   = "f6"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 执行过程
+
+- 制定企业生产规划
+- 进行生产能力与负荷分析
+- 制订物料需求计划
+- 平衡能力需求及供应
+- 验证物料需求计划
+- 作业执行结果反馈到计划层
+
+    </div>
+
+    <div
+    id            = "f7a"
+    class         = "step markdown"
+    data-rel-to   = "f7"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![closed-loop MRP](img/c01/closed-loop-mrp.png)
+
+    </div>
+
+    <div
+    id            = "f8"
+    class         = "step markdown"
+    data-rel-to   = "f7"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 需要满足的条件
+
+- 物料需求计划
+- 工作中心的定义
+- 工厂日历
+- 工艺路线和定义
+
+    </div>
+
+    <div
+    id            = "f9"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 制造资源计划 (MRP II)
+
+- 闭环物料需求计划无法反映资金流
+- 1977, Oliver W, Wight 提出制造资源计划
+- 集成应收账款, 应付账款, 成本管理及总账
+- 根据采购单, 入库单产生生产成本信息
+- 掌握生产成本和资金运作过程
+- 调整企业生产经营规划和生产计划
+- 得到更可行可靠的生产计划
+
+    </div>
+
+    <div
+    id            = "f10"
+    class         = "step markdown"
+    data-rel-to   = "f9"
+    data-rel-x    = "700"
+    data-rel-y    = "340"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 制造资源计划的局限
+
+- 企业要求更高的信息化集成
+- 企业要求集成管理整体资源
+- 多集团多工厂协同
+- 供应链信息管理
+
+    </div>
+
+    <div
+    id            = "f11"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "2000"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 现代管理思想和方法
+
+- 准时制生产
+- 全面质量管理
+- 优化生产技术
+- 分销资源计划
+- 制造执行系统
+- 敏捷制造系统
+
+    </div>
+
+    <div
+    id            = "f12"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 企业资源计划 ERP
+
+- ERP 扩展了管理模块
+- ERP 整合企业物流, 制造和资金流
+- ERP 系统包括诸多模块
+
+    </div>
+
+    <div
+    id            = "f13"
+    class         = "step markdown"
+    data-rel-to   = "f12"
+    data-rel-x    = "700"
+    data-rel-y    = "-0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### ERP 常见模块
+- 销售管理
+- 采购管理
+- 库存管理
+- 制造标准
+- 制造执行系统
+- 物料需求计划
+- 能力需求计划
+
+    </div>
+
+    <div
+    id            = "f13a"
+    class         = "step markdown"
+    data-rel-to   = "f13"
+    data-rel-x    = ""
+    data-rel-y    = "440"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+- 车间管理
+- 准时制生产管理
+- 质量管理
+- 财务管理
+- 成本管理
+- 应收账款管理
+- 应付账款管理
+
+    </div>
+
+    <div
+    id            = "f13b"
+    class         = "step markdown"
+    data-rel-to   = "f13a"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+- 现金管理
+- 固定资产管理
+- 工资管理
+- 人力资源管理
+- 分销资源管理
+- 设备管理
+- 工作流管理
+- 系统管理
+
+    </div>
+
+    <div
+    id            = "f14"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-1300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP II
+
+- 电子商务与 ERP 集成
+- 客户端/服务器模式系统与 Web 应用集成
+- 1990, ERP II, Gartner Group
+
+    </div>
+
+    <div
+    id            = "f15"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP 发展趋势
+
+- 管理范围更加扩大
+- 支持与扩展企业的流程重组
+- 运用最先进的计算机技术
+
+    </div>
+
+    <div
+    id            = "mm13"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![erp 1.3 mindmap](img/c01/mindmap-1-3.png)
+
+    </div>
+    
+<!-- 本节问题 -->
+
+    <div
+    id            = "c13q"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 1.3 ERP 的演变与发展
+
+- 简单描述计算机辅助管理的发展历程.
+- 订货点法, MRP, MRP II, ERP各有哪些局限?
+- 当今商业环境的改变为企业管理提出哪些挑战?
+- 你认为 ERP 未来的发展方向将会有哪些?为什么?
+
+----
+
+[ 1.2 ERP 与企业信息化 ](erp-1-2.html#/overview)
+[| 练习 |](erp-exec.html)
+[ 2.1 生产管理 基本概念 ](erp-2-1.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

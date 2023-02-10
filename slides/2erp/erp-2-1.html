@@ -1,0 +1,1155 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>ERPPA | HUST</title>
+
+    <!-- 修改 content -->
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c21t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>2. 生产管理</h2>
+        <h4 style="text-align: center">2.1 基本概念</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-1500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 学习目标
+
+- 掌握ERP相关基本概念
+- 掌握主生产计划的主要内容
+- 掌握物料需求计划的主要内容
+- 掌握能力需求计划的主要内容
+- 掌握车间管理的主要内容
+- 了解准时制生产的基本内容
+- 对各计划之间的关系有明确认识
+
+    </div>
+
+    <div
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![生产系统的基本构成](img/c02/pro-sys.svg)
+
+    </div>
+
+    <div
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基本概念
+
+- 物料编码 Item Number
+- 物料清单 Bill of Materials
+- 工作中心 Work Center
+- 提前期 Lead Time
+- 计划展望期 Plan Horizon
+- 工艺路线 Routing
+- 工作日历 Manufacturing Calendar
+
+    </div>
+
+    <div
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物料编码
+
+- 信息系统对物料的唯一识别代码
+- 同一种物料只能有一个编码
+- 使用物料编码文件描述
+
+    </div>
+
+    <div
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![物料编码](img/c02/item-number.png)
+
+    </div>
+
+    <div
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物料编码原则
+
+- 唯一性
+- 完整性
+- 可读性
+- 可使用性
+- 可扩展性
+- 效率性
+- 兼容性
+- 综合性
+
+    </div>
+
+<!-- Lecture: 唯一性
+同一种物料只能对应一个编码, 同一编码只能代表一个物料
+只要物料的物理或化学性质有变化, 只要物料要在仓库中存储, 就必须为其指定一个编码
+例如, 某零件经过冲压成型, 钻孔, 喷漆三道工序才能完成. 如果该物料的三道工序都在同一车间完成, 即冲压成型后立即进行钻孔, 紧接着进行喷漆, 中间没有入库, 出库处理, 则该物料可取一个编码
+如果该物料的三道工序不在同一个车间完成, 其顺序是冲压, 入库, 领料, 钻孔, 入库, 领料, 喷漆, 入库, 则在库存管理中为了区分该物料的三种状态, 必须取不同的编码
+
+完整性
+同一编码原则应能涵盖所有物料, 新增加的品种也能够适应
+因此每当有新物料产生, 即应赋予新的物料编码
+如果新的物料没有编码, 采购部门不得从事采购
+即使没物料编码的新物料采购进来了, 应请采购部门补填物料编码, 否则不予入库, 不予付款
+
+可读性
+物料编码不一定要求一看就知道是哪种物料, 但需尽可能反映物料大类
+可以考虑采用前段用分类码, 后段用顺序码的方式进行编码
+大类的划分原则往往是: 第一码: 产成品, 半成品, 原材料, 辅料, 低值易耗, 主要供财务使用；第二码: 真正的类别, 依据企业不同的情况具体制定
+
+可使用性
+编码需要长短适中, 编码的长度应在6-20之间
+按照人的记忆习惯, 7-13位的编码是比较合理的
+
+可扩展性
+编码原则的制定应能考虑公司5-10年内物料的变化趋势, 并且要对不同的情况留有一定的余地
+
+效率性
+编码原则不仅要考虑使用者是否可以较容易地解读, 方便记忆和识别, 还应当考虑是否有助于提高日常操作的效率
+在中国, 尽可能多采用数字编码, 纯数字编码也便于用小键盘输入
+
+兼容性
+本公司的物料编码应当考虑与主要客户, 重要供应商的编码的兼容, 这要求要建立一个物料编码对照表, 把客户, 主要供应商的编码, 本公司编码放在一张表内可以自由查询
+
+综合性
+编码原则也应考虑与产品BOM单, 生产, 采购, 货仓运作, 物料控制, 财务, 使用软件系统等相关方面的配合使用
+-->
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "-500"
+    data-rel-y    = "60"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物料编码文件
+
+- 技术资料信息
+- 物料库存信息
+- 计划管理信息
+- 采购管理信息
+- 销售管理信息
+- 财务有关信息
+- 质量管理信息
+
+    </div>
+
+    <div
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "-1000"
+    data-rel-y    = "-500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 技术资料信息
+
+- 提供设计资料及工艺等技术资料
+- 物料名称
+- 品种规格
+- 型号
+- 图号
+- 配方
+- 计算单位
+
+    </div>
+
+    <div
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 物料库存信息
+
+- 提供物料库存管理相关信息
+- 物料来源
+- 库存单位
+- 物料库存类别
+- 批量规则
+- 批量周期
+- 年盘点次数
+
+    </div>
+
+    <div
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 计划管理信息
+
+- 提供物料与计划相关信息
+- 计划属性
+- 生产周期
+- 计算 MPS 与 MRP 时首先读取
+
+    </div>
+
+    <div
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 采购管理信息
+
+- 用于物料采购管理
+- 上次订货日期
+- 物品日耗费量
+- 订货点数量
+
+    </div>
+
+    <div
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 销售管理信息
+
+- 用于物料销售相关管理
+- 物品销售类型
+- 销售收入科目
+- 销售成本科目
+
+    </div>
+
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 财务有关信息
+
+- 提供与财务相关信息
+- 物品财务类别
+- 增值税代码
+- 实际成本
+- 标准成本
+- 计划价
+- 计划价币种
+
+    </div>
+
+    <div
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 质量管理信息
+
+- 提供质量相关信息
+- 检测标志
+- 检验标准文件
+- 存储期
+- 存储期限
+
+    </div>
+
+    <div
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-800"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物料清单 BOM
+
+- BOM 是 ERP 中最重要的基础数据
+- BOM 设计直接影响系统性能
+- BOM 把产品结构转换成特定数据格式
+- BOM 说明各种物料需求数量
+- BOM 说明物料之间结构关系
+
+    </div>
+
+    <div
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![产品](img/c02/bom1.jpeg)
+
+    </div>
+
+    <div
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![产品结构图](img/c02/bom2.jpeg)
+
+    </div>
+
+    <div
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![产品物料清单](img/c02/bom3.webp)
+
+    </div>
+
+    <div
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![手推车产品物料清单](img/c02/bom4.png)
+
+    </div>
+
+    <div
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### BOM 的特性
+
+- BOM 上的每一种物料均有物料编码
+- BOM 不能由某个部门单独编制
+- BOM 中包含材料消耗定额
+- BOM 把一个部件的不同状态视为不同物料
+- BOM 中可以包含无库存余额项目
+- BOM 中包含装配时间因素
+- BOM 中的产品无关联性
+
+    </div>
+
+    <div
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 虚拟件
+
+- 虚拟件表示一种并不存在的物品
+- 在图纸上与加工过程中均不出现
+- 虚拟件是对常用组合的抽象
+
+    </div>
+
+    <div
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 虚拟件的作用
+
+- 一般业务管理使用
+- 简化产品结构
+- 方便修改产品结构
+
+    </div>
+
+    <div
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### BOM 的种类
+
+- 普通 BOM
+- 计划 BOM
+- 模块化 BOM
+- 成本 BOM
+
+    </div>
+
+<!-- Lecture: 模块化 BOM, 可用于由许多通用零件制成的并有多种组合的复杂产品, 按照装配最终产品的要求来组建模块, 通过不同的模块选择就可以组合成不同的最终产品 -->
+
+    <div
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "-400"
+    data-rel-y    = "40"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### BOM 输出形式
+
+- 缩排式
+- 顺汇总式
+- 单层反查式
+- 多层反查式
+- 汇总反查式
+- 矩阵式
+- 对比式
+
+    </div>
+
+    <div
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![缩排式物料清单](img/c02/bom5.png)
+
+    </div>
+
+<!-- Lecture:
+正查是对 BOM 单展开到的下级, 实现 BOM 的浏览, 查找, 引出, 打印, 过滤等
+
+反查指从 BOM 的底层物料向上查看产品结构, 查看一个物料都用到哪些产品上, 把产品结构的最底层与最终产品连接起来
+
+单层反查是指自底向上扫描一级产品结构, 列出使用一个零件的每个父项, 常用于确定一个组件的变化时, 哪些物料受到影响
+
+多级反查是指自底向上扫描所有级次的产品结构, 列出使用一个零件的每个父项以及父项的父项直至最终产品, 常用于确定一个组件的变化时, 哪些物料或产品受到影响
+
+汇总反查常用于快速估算完成一定数量装配的总需求, 或者用于估计一个组件用于几个装配件时它的变化对成本的影响
+
+替代方案查询用于查询物料已存在的替代方案
+
+矩阵式是对具有大量通用零件的产品系列进行数据合并后得到的一种 BOM , 可用来识别和组合一个产品系列中的通用型零件
+
+对比式是以标准产品为基准, 并规定还可增加哪些零件或去掉哪些零件, 能有效地描述不同产品之间的差异
+-->
+
+    <div
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "-1500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### BOM 的作用
+
+- 生成物料需求计划的基本信息
+- 根据 BOM 生成产品工艺路线
+- 为采购外协加工提供依据
+- 为生产配料提供依据
+- 成本数据根据 BOM 计算
+- 提供制定销售价格的依据
+- 维护 JIT 的反冲 (Back Flush) 物料信息
+
+    </div>
+
+<!-- Lecture: JIT 操作环境中, 成本核算被延迟到商品完成为止. 反冲法将成本的记录延迟到事件发生后, 然后再使用标准成本反算以冲销制造成本. 结果是省去了对成本的详细跟踪. 库存帐户的日记帐分录可能会延迟到产品完成甚至销售时为止 -->
+
+    <div
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "800"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心
+
+- 工作中心是 ERP 系统组织生产的基本单元
+- 是作业安排的基本依据
+- 是执行能力需求计划的基本依据
+- 是成本核算的基本依据
+- ERP 数据核算的前提是有正确的工作中心能力数据
+
+    </div>
+
+    <div
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![工作中心](img/c02/work-center.jpeg)
+
+    </div>
+
+    <div
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心的定义
+
+- 工作中心是生产加工单元的统称
+- 完成加工任务, 产生加工成本
+- 由设备, 人员, 成组加工单元或装配场地等组成
+
+    </div>
+
+    <div
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心的作用
+
+- 平衡负荷能力的基本单元
+- 是定义物料工艺路线的依据
+- 是车间作业安排的基本单元
+- 是加工信息与成本核算信息的采集点
+
+    </div>
+
+    <div
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![工作中心](img/c02/work-center.jpeg)
+
+    </div>
+
+    <div
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 关键工作中心
+
+- 是运行粗能力需求计划的计算对象
+- 设备经常满负荷
+- 工人经常加班加点
+- 不能随意换人
+- 不能随意换设备
+- 没有替代方案
+
+    </div>
+
+    <div
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心数据
+
+- 工作中心基本数据
+- 工作中心能力数据
+- 工作中心成本数据
+
+    </div>
+
+    <div
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "1000"
+    data-rel-y    = "260"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心基本数据
+
+- 工作中心代码, 名称, 简称
+- 工作中心说明
+- 替换工作中心
+- 车间代码
+- 人员每日班次
+- 人员每班工作时数
+- 工作中心每班平均人数
+- 设备数
+
+    </div>
+
+    <div
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "-1000"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心能力数据
+
+- 每日可以提供工时
+- 机台时
+- 可加工完成的产品数量
+
+    </div>
+
+    <div
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 能力数据的计算
+
+- 能力 = 每日班次 ×每班时数 ×效率 ×利用率
+- 效率 = 完成的标准定额时数 ÷实际直接工作时数
+- 效率 = 实际完成产量 ÷完成的标准定额产量
+- 利用率 = 实际直接工作小时数 ÷计划工作小时数
+
+    </div>
+
+    <div
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作中心成本数据
+
+- 每小时发生的费用称为工作中心费率
+- 人员工资
+- 直接能源
+- 辅助材料
+- 设备维修费
+- 资产折旧
+
+    </div>
+
+    <div
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 成本数据的计算
+
+- 直接费率 = 日所有发生费用 ÷日工作时数
+- 间接费率 = 车间间接费用 ×分摊系数 ÷日工作时数
+
+    </div>
+
+    <div
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "2400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 提前期
+
+- 某一工作的时间周期
+- 即从工作开始到工作结束的时间
+
+    </div>
+
+    <div
+    id            = "a39a"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![提前期 Lead Time](img/c02/lead-time.jpeg)
+
+    </div>
+
+    <div
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39a"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 提前期的分类
+
+- 生产准备提前期
+- 采购提前期
+- 生产加工提前期
+- 装配提前期
+- 累计提前期
+- 总提前期
+
+    </div>
+
+    <div
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 计划展望期
+
+- 主生产计划所覆盖的时间范围
+- 即计划的时间跨度
+- 通常不短于主生产计划对象的总提前期
+
+    </div>
+
+    <div
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "4000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工艺路线
+
+- 说明物料实际加工和装配的工序顺序
+- 每道工序使用的工作中心
+- 各项时间定额
+- 外协工序的时间和费用
+
+    </div>
+
+    <div
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![福特的汽车流水线](img/c02/routing.jpeg)
+
+    </div>
+
+    <div
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "a43"
+    data-rel-x    = "0"
+    data-rel-y    = "1100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工艺路线的作用
+
+- 能力需求计划的分析计算
+- 工作中心的能力运算
+- 计算物料清单相关物料提前期
+- 计算生产提前期
+- 下达车间作业计划
+- 车间作业安排
+- 用于加工成本的计算
+- 计算标准成本
+- 生成各工序加工进度整体情况
+- 跟踪和监控以在制品生产过程
+
+    </div>
+
+    <div
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作日历
+
+- 也称为工厂生产日历
+- 标明生产日期
+- 休息日期
+- 设备检修日
+- 便于物料需求计划生成合理计划
+
+    </div>
+
+    <div
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "a45"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![工作日历](img/c02/manu-canlendar.jpeg)
+
+    </div>
+
+    <div
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作日历的作用
+
+- 是确定开工日期, 完工日期的依据
+- 计算工作中心产能负荷的日期基础
+- 车间根据工作日历进行车间排产
+- 根据工作日历调整采购和接收日期
+
+    </div>
+
+    <div
+    id            = "a48"
+    class         = "step markdown"
+    data-rel-to   = "a47"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工作日历的结构
+
+- 车间代码
+- 工作中心代码
+- 日期
+- 年度
+- 日期状态
+- 年有效工作天数
+- 累计有效工作天数
+
+    </div>
+
+    <div
+    id            = "mm21"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![erp 2.1 mindmap](img/c02/mindmap-2-1.png)
+
+    </div>
+    
+<!-- 本节问题 -->
+
+    <div
+    id            = "c21q"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.1 生产管理 基本概念
+
+- ERP 系统中有哪些基本概念?
+- 为什么物料清单很重要?
+- 生产提前期都包括哪些工作阶段?
+- 把自己视为一个工作中心, 计算能力和成本数据.
+- 工作日历和我们平时使用的日历有什么区别?
+
+----
+
+[ 1.3 ERP 的演变与发展 ](erp-1-3.html#/overview)
+[| 练习 |](erp-exec.html)
+[ 2.2 主生产计划 ](erp-2-2.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
+

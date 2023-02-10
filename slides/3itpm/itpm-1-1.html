@@ -1,0 +1,766 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>ITPM | HUST</title>
+
+    <!-- 修改 content -->
+        <meta name="description" content="IT 项目管理课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+<!-- 本章目标 -->
+    <div
+    id         = "c11target"
+    class      = "step markdown"
+    data-x     = "270"
+    data-y     = "-1800"
+    data-z     = "0"
+    data-scale = "2">
+
+### 本章学习目标
+
+- 理解项目的定义及其特点
+- 理解项目生命周期及生命周期中的重要角色
+- 理解项目管理及管理的五个基本过程
+- 理解项目管理的发展历史及发展趋势
+- 理解项目管理的背景, 管理方法与工具
+
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c11t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>1. 项目管理概述</h2>
+        <h4 style="text-align: center">1.1 项目</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+<!-- 项目和运营 -->
+
+    <div
+    id          = "shen"
+    class       = "step markdown"
+    data-rel-to = "c11t"
+    data-rel-x  = "0"
+    data-rel-y  = "800"
+    data-z      = "-10"
+    data-scale  = "2">
+
+### 项目
+- 沈括《梦溪笔谈》记载:
+- 祥符中, 禁火. 时丁晋公主营复宫室, 患取土远, 公乃令凿通衢取土, 不日皆成巨堑. 乃决汴水入堑中, 引诸道竹木排筏及船运杂材, 尽自堑中入至宫门. 事毕, 却以斥弃瓦砾灰尘壤实于堑中, 复为街衢. 一举而三役济, 计省费以亿万计. 
+
+    </div>
+
+    <div
+    id            = "wall"
+    class         = "step"
+    data-rel-to   = "shen"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
+    data-rel-z    = "-1000"
+    data-rotate-y = "90"
+    data-scale    = "2">
+
+        <h3>项目</h3>
+        <p class="substep">建造金字塔</p>
+        <p class="substep">修建长城</p>
+        <p class="substep">考一次研</p>
+        <p class="substep">学习一门课</p>
+        <p class="substep">做一顿饭</p>
+        <p class="substep">结一次婚</p>
+        <p class="substep">写一个软件</p>
+        <p class="substep">旅游一次</p>
+        <p class="substep">写一篇文章</p>
+        <p class="substep">装修一次房子</p>
+
+    </div>
+
+    <div
+    id            = "machine"
+    class         = "step"
+    data-rel-to   = "shen"
+    data-rel-x    = "-1000"
+    data-rel-y    = "0"
+    data-rel-z    = "-2000"
+    data-rotate-y = "180"
+    data-scale    = "2">
+
+        <h3>运营</h3>
+        <p class="substep">维护机器</p>
+        <p class="substep">打扫卫生</p>
+        <p class="substep">日常工作</p>
+        <p class="substep">洗澡</p>
+        <p class="substep">运动健身</p>
+        <p class="substep">睡觉</p>
+        <p class="substep">通勤</p>
+        <p class="substep">清点库存</p>
+        <p class="substep">安排生产计划</p>
+        <p class="substep">按时存钱</p>
+
+    </div>
+
+    <div
+    id            = "fig1"
+    class         = "step markdown"
+    data-rel-to   = "shen"
+    data-rel-x    = "-1000"
+    data-rel-y    = "0"
+    data-rel-z    = "-1000"
+    data-rotate-y = "270"
+    data-scale    = "2">
+
+### 项目 VS. 运营
+
+![项目与运营的比较](img/c01/1pro-oper.svg)  
+
+    </div>
+
+    <div
+    id            = "pvso"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "2200"
+    data-rel-y    = "-1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 项目
+
+- 相对开放和不确定的环境
+- 临时性, 独特性, 一次性的活动
+
+    </div>
+
+    <div
+    id            = "pvso1"
+    class         = "step markdown"
+    data-rel-to   = "pvso"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 运营
+
+- 相对封闭和确定的环境
+- 重复性, 持续性, 周而复始的活动
+
+    </div>
+
+    <div
+    id            = "pvso2"
+    class         = "step markdown"
+    data-rel-to   = "pvso"
+    data-rel-x    = "500"
+    data-rel-y    = "250"
+    data-rel-z    = "-1000"
+    data-rotate-y = "0"
+    data-scale    = "1.5">
+
+### 项目与运营
+
+- 都需要由人来完成
+- 都要受资源限制
+- 都需要规划, 执行和控制
+
+    </div>
+
+    <div
+    id            = "pvso3"
+    class         = "step markdown"
+    data-rel-to   = "pvso"
+    data-rel-x    = "1200"
+    data-rel-y    = "50"
+    data-rel-z    = "-2000"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 运营
+
+- 工业时代的管理方式
+- 面向职能的专业化管理模式
+- 注重管理的效率
+- 管理目的是从周而复始的工作中获得相应回报
+
+    </div>
+
+    <div
+    id            = "pvso4"
+    class         = "step markdown"
+    data-rel-to   = "pvso"
+    data-rel-x    = "2000"
+    data-rel-y    = "50"
+    data-rel-z    = "-2000"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 项目
+
+- 知识经济时代的管理方式
+- 面向活动的过程管理模式
+- 注重的是做事的效果
+- 管理的目的是获得项目成果
+
+    </div>
+
+<!-- 项目定义解析 -->
+
+    <div
+    id            = "pmi"
+    class         = "step"
+    data-rel-to   = "c11t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-1200"
+    data-rel-z    = "-1000"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+        <h3>课本给出的项目定义</h3>
+        <p>用来满足<b class="point">项目利益相关者</b>特定需求的<b class="point">独特性, 临时性</b>的努力</p>
+        <br/>
+        <h3>《PMBOK&reg;指南》给出的定义</h3>
+        <p>项目是为创造<b class="point">独特的</b>产品, 服务或成果而进行的<b class="point">临时性</b>工作</p>
+        <br/>
+        <p class="footnote" style="text-align: left">* 2017 年, PMI 发布了《PMBOK&reg;指南》 (A Guide to the Project Management Body of Knowledge) 第六版. 第七版于 2021 年末发布, 内容有重大改动. </p>
+
+    </div>
+
+    <div
+    id            = "pmip"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-1200"
+    data-rel-z    = "-2400"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![什么是项目](img/c01/what-is-project.svg)
+
+    </div>
+
+    <div
+    id            = "pmi1"
+    class         = "step markdown"
+    data-rel-to   = "pmi"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
+    data-rel-z    = "-1000"
+    data-rotate-y = "90"
+    data-rotate   = "0"
+    data-scale    = "2">
+
+### 项目利益相关者 (Stakeholder, 即干系人)
+
+- 对某个项目有特定兴趣的实体, 包括项目团队成员, 项目发起者, 利益相关者, 雇员和社区等
+
+    </div>
+
+    <div
+    id            = "pmi2"
+    class         = "step markdown"
+    data-rel-to   = "pmi"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "-2000"
+    data-rotate-y = "180"
+    data-rotate   = "0"
+    data-scale    = "2">
+
+### 独特性
+
+- 项目所形成的产品, 服务, 成果, 活动, 在关键特性上不同于其他的产品, 服务, 成果或活动
+
+    </div>
+
+    <div
+    id            = "pmi3"
+    class         = "step markdown"
+    data-rel-to   = "pmi"
+    data-rel-x    = "-1000"
+    data-rel-y    = "0"
+    data-rel-z    = "-1000"
+    data-rotate-y = "270"
+    data-rotate   = "0"
+    data-scale    = "2">
+
+### 临时性
+
+- 项目有明确的起点和终点
+- “临时性”不一定意味着项目持续的时间短
+
+    </div>
+
+    <div
+    id            = "pmi4"
+    class         = "step"
+    data-rel-to   = "c11t"
+    data-rel-x    = "-1600"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "2">
+
+        <p>项目团队常常是在项目开始的时候形成, 在完成的时候解散</p>
+        <br/>
+        <p>项目是由相关活动组成的, 有计划, 有目标的任务</p>
+        <br/>
+        <p>开展项目是为了通过可交付成果达成目标</p>
+
+    </div>
+
+    <div
+    id            = "pfeature"
+    class         = "step markdown"
+    data-rel-to   = "pmi4"
+    data-rel-x    = "-280"
+    data-rel-y    = "-60"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "2">
+
+### 项目的特点
+
+- 目的性
+- 有一个主要的发起人或用户
+- 一次性
+- 制约性
+- 风险性
+- 过程性
+
+    </div>
+
+<!-- 项目的基本分类 -->
+
+    <div
+    id            = "pclass"
+    class         = "step markdown"
+    data-rel-to   = "pfeature"
+    data-rel-x    = "-350"
+    data-rel-y    = "0"
+    data-rotate-y = "0"
+    data-rotate   = "90"
+    data-scale    = "2">
+
+### 项目的分类
+
+- 土木工程类
+- 制造业
+- 管理类
+- 研究型
+
+    </div>
+
+    <div
+    id            = "pbuilding"
+    class         = "step markdown"
+    data-rel-to   = "pclass"
+    data-rel-x    = "-300"
+    data-rel-y    = "-1000"
+    data-rel-z    = "-1000"
+    data-rotate-y = "0"
+    data-rotate   = "90"
+    data-scale    = "1">
+
+### 土木, 建筑, 石化, 采矿
+
+- 施工阶段有固定地点
+- 有特定风险
+- 设计组织问题
+- 需要大量资金
+- 对进度, 资金, 质量管理严格
+- 大型项目往往涉及多个行业多家企业
+- 利益相关者较多, 沟通困难
+
+    </div>
+
+    <div
+    id            = "pprod"
+    class         = "step markdown"
+    data-rel-to   = "pclass"
+    data-rel-x    = "-300"
+    data-rel-y    = "-300"
+    data-rel-z    = "-1000"
+    data-rotate-y = "0"
+    data-rotate   = "90"
+    data-scale    = "1">
+
+### 制造业
+
+- 生产专门的产品
+- 通常在企业内部实施
+- 大型项目需要跨国界
+- 大型项目风险较大
+- 涉及合同的签订
+- 需要协调控制
+- 严格控制成本, 质量
+
+    </div>
+
+    <div
+    id            = "pmana"
+    class         = "step markdown"
+    data-rel-to   = "pclass"
+    data-rel-x    = "-800"
+    data-rel-y    = "-300"
+    data-rel-z    = "-1000"
+    data-rotate-y = "0"
+    data-rotate   = "90"
+    data-scale    = "1">
+
+### 管理类
+
+- 通常是一项活动, 没有实体产品
+- 很难定义外部特征
+- 不一定是盈利项目
+- 可能存在于其他项目之中
+
+    </div>
+
+    <div
+    id            = "pres"
+    class         = "step markdown"
+    data-rel-to   = "pclass"
+    data-rel-x    = "-800"
+    data-rel-y    = "-1000"
+    data-rel-z    = "-1000"
+    data-rotate-y = "0"
+    data-rotate   = "90"
+    data-scale    = "1">
+
+### 研究型
+
+- 高风险
+- 高投资
+- 可能没有准确的目标
+- 成果不可预料
+- 不必遵循常规的项目管理流程
+
+    </div>
+
+<!-- 项目的生命周期 -->
+
+    <div
+    id            = "plife"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "1400"
+    data-rel-y    = "300"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "2">
+
+### 项目生命周期
+
+- 概念阶段 (Conceptual)
+- 设计阶段 (Development)
+- 实施阶段 (Implementation)
+- 终止阶段 (Termination)
+
+    </div>
+
+    <div
+    id            = "pcon"
+    class         = "step markdown"
+    data-rel-to   = "plife"
+    data-rel-x    = "600"
+    data-rel-y    = "-600"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+### 概念阶段
+
+#### 识别需求, 确认需求, 提出解决方案
+
+- 需求识别
+- 项目论证
+- 可行性分析
+- 准备解决方案建议书
+- 组建项目团队
+
+    </div>
+
+    <div
+    id            = "pdev"
+    class         = "step markdown"
+    data-rel-to   = "plife"
+    data-rel-x    = "600"
+    data-rel-y    = "0"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+### 设计阶段
+
+#### 提出可行方案, 评估资源, 时间, 成本
+
+- 确定目标
+- 界定范围
+- 分解工作
+- 工作排序
+- 成本估计
+- 人员安排
+- 资源计划
+- 风险识别
+- 质量保证
+
+    </div>
+
+    <div
+    id            = "pimp"
+    class         = "step markdown"
+    data-rel-to   = "plife"
+    data-rel-x    = "600"
+    data-rel-y    = "650"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+### 实施阶段
+
+#### 执行项目计划
+
+- 实施计划
+- 招标采购
+- 跟踪进展
+- 控制变更
+- 解决问题
+- 履行合同
+
+    </div>
+
+    <div
+    id            = "pterm"
+    class         = "step markdown"
+    data-rel-to   = "plife"
+    data-rel-x    = "600"
+    data-rel-y    = "1200"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+### 终止阶段
+
+#### 移交项目结果, 评估项目绩效
+
+- 范围确认
+- 质量验收
+- 费用决算, 审计
+- 资料整理, 归档
+- 成果移交, 评价
+
+    </div>
+
+<!-- 项目管理涉及到的内容 -->
+
+    <div
+    id            = "pelements"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "600"
+    data-rel-y    = "-1000"
+    data-rotate-y = "0"
+    data-rotate   = "360"
+    data-scale    = "2">
+
+### 典型项目所包含的元素
+
+- 组织元素
+- 工作元素
+- 成本元素
+- 时间元素
+- 资源元素
+
+    </div>
+
+    <div
+    id            = "pprocess"
+    class         = "step markdown"
+    data-rel-to   = "pelements"
+    data-rel-x    = "-500"
+    data-rel-y    = "-500"
+    data-rotate-y = "0"
+    data-rotate   = "540"
+    data-scale    = "3">
+
+### 典型项目的过程
+
+- 明确目标
+- 制订计划
+- 过程控制
+- 变更控制
+
+    </div>
+
+    <div
+    id            = "mm11"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![itpm 1.1 mindmap](img/c01/mindmap-1-1.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c11q"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 1.1 项目
+
+- 什么是项目?
+- 项目有哪些特点?
+- 项目如何分类?
+- 项目周期分成哪几个阶段, 为什么?
+- 和项目相对的概念是什么?这两个概念之间有什么区别?
+
+----
+
+[ 全景图 ](itpm-0.html#/overview)
+[| 练习 |](itpm-exec.html)
+[ 1.2 项目管理 ](itpm-1-2.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

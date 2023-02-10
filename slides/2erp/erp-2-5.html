@@ -1,0 +1,605 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- 修改页面标题 -->
+        <title>ERPPA | HUST</title>
+
+    <!-- 修改 content -->
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+    <!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+    <!-- 每一节 slide 的标题是 cxyt",表示章节标题.如第一章第一节标题就是 c11t,第三章第二节标题就是 c32t -->
+    <!-- 每一节 slide 的标题页 class 应该是 step,不是 step markdown -->
+    <!-- 类似地,需要 HTML 排版的 slide,class 都是 step;可以使用 markdown 的,class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c25t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>2. 生产管理</h2>
+        <h4 style="text-align: center">2.5 车间管理与准时生产</h4>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div
+    id            = "e0"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "-2400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 概述
+
+- 车间管理处于ERP的计划执行与控制层, 其管理目标是按物料需求计划的要求, 按时, 按质, 按量, 低成本地完成加工制造任务
+- 车间管理的过程主要是依据物料需求计划, 制造工艺路线与各工序的能力编排工序加工计划, 下达车间生产任务单, 并控制计划进度, 最终使产品完工入库
+
+    </div>
+
+    <div
+    id            = "e1"
+    class         = "step markdown"
+    data-rel-to   = "e0"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 车间管理工作
+
+- 按物料需求计划生成车间任务
+- 生成各工作中心的加工任务与进行作业排序
+- 下达生产指令, 生产进度控制与生产作业控制
+- 能力的投入, 产出控制
+- 登记加工信息
+- 在制品管理
+- 统计分析
+
+    </div>
+
+    <div
+    id            = "e2"
+    class         = "step markdown"
+    data-rel-to   = "e1"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 车间管理的类型
+
+- 单件小批生产
+- 大批量流水生产
+
+    </div>
+
+    <div
+    id            = "e3"
+    class         = "step markdown"
+    data-rel-to   = "e2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![车间管理业务流程](img/c02/wm-flow.svg)
+
+    </div>
+
+    <div
+    id            = "e4"
+    class         = "step markdown"
+    data-rel-to   = "e3"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![车间管理子系统与其他子系统的关系](img/c02/wm-system.svg)
+
+    </div>
+
+    <div
+    id            = "e5"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "-800"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 车间工作任务
+
+- 把物料需求计划中的物料制造任务下达给车间
+
+    </div>
+
+    <div
+    id            = "e6"
+    class         = "step markdown"
+    data-rel-to   = "e5"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![车间任务下达流程](img/c02/wm-task.svg)
+
+    </div>
+
+    <div
+    id            = "e7"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "800"
+    data-rel-y    = "950"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 加工单
+- 建立车间任务后, 系统生成该任务的工序作业计划, 即面向物料的加工说明文件
+- 说明了某任务的加工工序, 工作中心, 工作进度及使用工装设备等
+
+    </div>
+
+    <div
+    id            = "e8"
+    class         = "step markdown"
+    data-rel-to   = "e7"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![加工单生成流程](img/c02/wo-flow.svg)
+
+    </div>
+
+    <div
+    id            = "e9"
+    class         = "step markdown"
+    data-rel-to   = "e8"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 派工单
+- 派工单是说明某时段工作中心的加工任务与各任务优先级别的文件
+- 作用是安排加工任务
+
+    </div>
+
+    <div
+    id            = "e10"
+    class         = "step markdown"
+    data-rel-to   = "e9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 作业排序
+- 按优先级别编排作业任务
+- 按能力分配任务
+- 保证任务如期完成
+- 完成任务时间最短
+- 往往使用甘特图
+
+    </div>
+
+    <div
+    id            = "e11"
+    class         = "step markdown"
+    data-rel-to   = "e10"
+    data-rel-x    = "400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 作业排序方案的评价
+- 工件流程时间
+- 全部完工时间
+- 延迟
+- 在制品库存
+- 总库存
+- 有效工作效率
+
+    </div>
+
+    <div
+    id            = "e12"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "2400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 投入/产出控制
+- 投入/产出控制是衡量能力执行情况的一种方法
+- 投入/产出报告是一个计划与实际投入及计划与实际产出的控制报告
+
+    </div>
+
+    <div
+    id            = "e13"
+    class         = "step markdown"
+    data-rel-to   = "e12"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据
+- 计划投入
+- 实际投入
+- 计划产出
+- 实际产出
+- 计划排队时间
+- 实际排队时间
+- 偏差
+
+    </div>
+
+    <div
+    id            = "e14"
+    class         = "step markdown"
+    data-rel-to   = "e13"
+    data-rel-x    = "0"
+    data-rel-y    = "1300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 成组技术
+- 小批量的产品制造成本比大批量的制造成本要高出许多
+- 识别加工产品的相似性, 按照工艺特点分类与分组, 生产时按照相似的一组加工件安排加工
+- 利用成组技术可以加快工艺设计的速度, 并提高工艺设计水平
+- 在组织生产时组成成组单元, 可以加大制造批量, 降低生产准备时间, 传送时间, 甚至加工时间, 从而提高生产效率
+
+    </div>
+
+    <div
+    id            = "e15"
+    class         = "step markdown"
+    data-rel-to   = "e14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物品分类编码
+- 按工艺特点分类
+- 按物品结构分类
+
+    </div>
+
+    <div
+    id            = "e16"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "-2400"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 重复制造的特点
+- 生产过程和生产管理简单
+- 工艺路线固定
+- 生产线的生产能力固定
+- 产品的生产周期性重复
+- 物料流动性大
+
+    </div>
+
+    <div
+    id            = "e17"
+    class         = "step markdown"
+    data-rel-to   = "e16"
+    data-rel-x    = "1200"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 准时制生产
+- 是先进管理思想, 管理方法及管理工具
+- 是在重复制造的生产环境下发展起来的
+
+    </div>
+
+    <div
+    id            = "e18"
+    class         = "step markdown"
+    data-rel-to   = "e17"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 准时制生产的本质
+- 缩短提前期
+- 减少准备时间
+- 减少批量
+- 依靠员工参与
+
+    </div>
+
+    <div
+    id            = "e19"
+    class         = "step markdown"
+    data-rel-to   = "e17"
+    data-rel-x    = "1400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 精益生产方式
+- Lean Production
+- 设计
+- 制造
+- 管理
+- 营销
+- 完整体系
+
+    </div>
+
+    <div
+    id            = "e20"
+    class         = "step markdown"
+    data-rel-to   = "e19"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 准时制生产的条件
+- 物料清单准确率100%
+- 库存数据准确率100%
+- 工艺路线稳定
+- 生产能力稳定
+- 生产质量稳定
+- 物料供应稳定
+
+    </div>
+
+    <div
+    id            = "e21"
+    class         = "step markdown"
+    data-rel-to   = "e20"
+    data-rel-x    = "1200"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP 的准时制生产管理方式
+- 更短的时间周期
+- 由生产率制订计划
+- 在线更替
+- 组件自动发送
+- 多个仓位的库存余额
+- 不需车间订单的能力
+- 每日或更频繁地重定计划能力
+- 每日或每周的销售计划
+- 通过模拟能力, 改变能力计划
+- 与供应商的联结
+- 生成看板卡的能力
+
+    </div>
+
+    <div
+    id            = "e22"
+    class         = "step markdown"
+    data-rel-to   = "e21"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 准时制生产工作特点
+- 拉式作业与推式作业有不同的物料移动指令
+- 反冲法核销成本
+- 按生产率安排生产计划
+
+    </div>
+
+    <div
+    id            = "e23"
+    class         = "step markdown"
+    data-rel-to   = "e22"
+    data-rel-x    = "1500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 准时制生产系统的实现
+- 离散型车间作业管理方式
+- 准时制生产作业管理方式
+- 混合方式
+
+    </div>
+
+    <div
+    id            = "mm25"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![erp 2.5 mindmap](img/c02/mindmap-2-5.png)
+
+    </div>
+    
+<!-- 本节问题 -->
+
+    <div
+    id            = "c25q"
+    class         = "step markdown"
+    data-rel-to   = "c25t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.5 车间管理与准时生产
+
+- 什么是车间管理?
+- 车间管理的基本流程是怎样的?
+- 通过哪些指标实现投入/产出控制?
+- 什么是成组技术? 它有什么好处?
+- 什么是准时制生产? 它有哪些特点?
+
+----
+
+[ 2.4 能力需求计划 ](erp-2-4.html#/overview)
+[| 练习 |](erp-exec.html)
+[ 3.1 财务管理 基本业务概述 ](erp-3-1.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+    <!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
