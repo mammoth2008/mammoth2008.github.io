@@ -72,15 +72,29 @@
   </url>
   
   <url>
-    <loc>https://yemengma.cn/post/23w01-review/</loc>
-    <lastmod>2023-01-07T08:45:07+08:00</lastmod>
+    <loc>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2023-01-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2023-01-05T18:25:09+08:00</lastmod>
+    <loc>https://yemengma.cn/categories/%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2023-01-10T18:25:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/post/2023-01-10-tue/</loc>
+    <lastmod>2023-01-10T18:25:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/post/23w01-review/</loc>
+    <lastmod>2023-01-07T08:45:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -108,13 +122,6 @@
   
   <url>
     <loc>https://yemengma.cn/tags/newsletter/</loc>
-    <lastmod>2023-01-01T08:25:09+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yemengma.cn/categories/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2023-01-01T08:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
