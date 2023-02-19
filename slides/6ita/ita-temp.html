@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- 修改页面标题 -->
-        <title>ERPPA | HUST</title>
+        <title>ITA | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院专业学位全日制硕士研究生设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -51,9 +51,9 @@
     data-perspective         = "1000" 
     data-autoplay            = "0">
 
-<!-- 每一节 slide 的标题是 "cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
 <!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
-<!-- 类似地, 需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
 
     <div 
     id         = "overview" 
@@ -64,17 +64,35 @@
         
     </div>
 
-    <!-- 修改 id -->
+<!-- 本章目标 -->
+
+    <div
+    id         = "c11target"
+    class      = "step markdown"
+    data-x     = "0"
+    data-y     = "-1200"
+    data-z     = "0"
+    data-scale = "2">
+
+### 本章学习目标
+
+
+
+    </div>
+
+<!-- 修改 id -->
+
     <div 
-    id         = "c34t"
+    id         = "c11t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
-    <!-- 修改标题 -->
-        <h2>3. 财务管理</h2>
-        <h4 style="text-align: center">3.4 应付账款管理</h4>
+
+<!-- 修改标题 -->
+        <h2>1. </h2>
+        <h4 style="text-align: center">1.1 </h4>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -94,119 +112,47 @@
 
     </div>
 
+<!--  -->
+
     <div
-    id            = "d0"
-    class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-2000"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
+    id          = "a0"
+    class       = "step markdown"
+    data-rel-to = "c11t"
+    data-rel-x  = "0"
+    data-rel-y  = "1200"
+    data-z      = "-10"
+    data-scale  = "2">
 
-### 应付帐款
+### 
 
-- 企业应付的购货账款, 是企业赊购商品的会计处理
-- 应付账款是采购管理和委外管理的一部分
-- 应付账款的所有交易进入总账系统
+- 
 
     </div>
 
-    <div
-    id            = "d1"
-    class         = "step markdown"
-    data-rel-to   = "d0"
-    data-rel-x    = "2000"
-    data-rel-y    = "0"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
 
-### 模块作用
+	<div 
+	id            = "a1" 
+	class         = "step markdown" 
+	data-rel-to   = "ed4" 
+	data-rel-x    = "0" 
+	data-rel-y    = "-100" 
+	data-rel-z    = "0" 
+	data-rotate-x = "0" 
+	data-rotate-y = "0" 
+	data-rotate-z = "0" 
+	data-scale    = "2">
 
-- 减少处理应付账款的时间
-- 改进现金支付的控制
-- 提高商业信用
+![](img/c01/)
 
-    </div>
+	</div>
 
-    <div
-    id            = "d2"
-    class         = "step markdown"
-    data-rel-to   = "d1"
-    data-rel-x    = "1000"
-    data-rel-y    = "0"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 模块功能
-
-- 发票管理
-- 供应商管理
-- 付款管理
-- 重新编号
-- 账龄分析
-
-    </div>
-
-    <div
-    id            = "d3"
-    class         = "step markdown"
-    data-rel-to   = "d2"
-    data-rel-x    = "1000"
-    data-rel-y    = "0"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 主要账务处理
-
-- 1. 根据采购发票生成的记账凭证
-- 借: 材料采购
-- 借: 应交税费 - 应交增值税 - 进项税
-- 贷: 应付账款
-- 2. 发生付款业务生成的记账凭证
-- 借: 应付账款
-- 贷: 库存现金 / 银行存款
-
-    </div>
-
-    <div
-    id            = "d4"
-    class         = "step markdown"
-    data-rel-to   = "d3"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-![与其他系统的关系](img/c03/payable.svg)
-
-
-    </div>
-
-    <div
-    id            = "mm34"
-    class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "0"
-    data-rel-y    = "-2000"
-    data-rotate-y = "0"
-    data-rotate   = "0"
-    data-scale    = "1">
-
-![erp 3.4 mindmap](img/c03/mindmap-3-4.png)
-
-    </div>
     
 <!-- 本节问题 -->
 
     <div
-    id            = "c34q"
+    id            = "c11q"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "c11t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -215,19 +161,15 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 3.4 应付账款管理
+### 1.1 
 
-- 什么是应付账款?
-- ERP 系统中应付账款模块有哪些作用?
-- ERP 系统中应付账款模块有哪些功能?
-- 应付账款涉及到哪些会计科目?
-付账款模块与其他哪些系统有关?
+- 
 
 ----
 
-[ 3.3 应收账款管理 ](erp-3-3.html#/overview)
-[| 练习 |](erp-exec.html)
-[ 3.5 工资管理 ](erp-3-5.html)
+[ 全景图 ](ita-0.html#/overview)
+[| 练习 |](ita-exec.html)
+[ 1.2  ](ita-1-2.html)
 
     </div>
 
@@ -274,7 +216,3 @@
     <script>impress().init();</script>
     </body>
     </html>
-
-
-
-
