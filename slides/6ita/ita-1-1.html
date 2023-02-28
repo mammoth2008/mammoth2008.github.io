@@ -1,0 +1,1172 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>ITA | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院专业学位全日制硕士研究生设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c11t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+<!-- 修改标题 -->
+
+        <h2>1. 人工智能技术概述</h2>
+        <h3 style="text-align: center; font-size: 36px" >1.1 人工智能的概念与基础</h3>
+        <br/>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div 
+    id            = "a1" 
+    class         = "step markdown" 
+    data-rel-to   = "c11t" 
+    data-rel-x    = "-1000" 
+    data-rel-y    = "-2100" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### AI, 人工智能
+
+- The study of agents that receive percepts from the environment and perform actions
+- 对从环境中感知信息并执行行动的 Agents 的研究
+- —— Stuart J. Russell, Artificial Intelligence: A Modern Approach
+
+    </div>
+
+    <div 
+    id            = "a2" 
+    class         = "step markdown" 
+    data-rel-to   = "a1" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Artificial Intelligence: A Modern Approach](img/c01/ai-textbook.jpg)
+#### 第一章所用课本
+
+    </div>
+
+    <div 
+    id            = "a3" 
+    class         = "step markdown" 
+    data-rel-to   = "a2" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Artificial Intelligence: A Modern Approach](img/c01/ai-concept.png)
+#### 人工智能的几类概念
+
+    </div>
+
+    <div 
+    id            = "a4" 
+    class         = "step markdown" 
+    data-rel-to   = "a3" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 像人一样思考
+### Thinking Humanly
+
+- Haugeland, 1985: 使计算机思考的令人激动的新成就 ... 按照完整的字面意思就是: 有头脑的机器
+- Bellman, 1978: 与人类思维相关的活动, 诸如决策, 问题求解, 学习等活动[的自动化]
+
+    </div>
+
+    <div 
+    id            = "a5" 
+    class         = "step markdown" 
+    data-rel-to   = "a4" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Skinner Box](img/c01/skinner-box.jpg)
+#### 斯金纳箱: 刺激与反应, Burrhus Frederic Skinner
+
+<!-- Lecture: 斯金纳, 新行为主义心理学代表人物. 他通过实验发现, 动物的学习行为是随着一个起强化作用的刺激而发生的. 斯金纳把动物的学习行为推而广之到人类的学习行为上, 他认为虽然人类学习行为的性质比动物复杂得多, 但也要通过操作性条件反射. 操作性条件反射的特点是：强化刺激既不与反应同时发生, 也不先于反应, 而是随着反应发生. 有机体必须先作出所希望的反应, 然后得到“报酬”, 即强化刺激, 使这种反应得到强化. 学习的本质不是刺激的替代, 而是反应的改变. 斯金纳认为, 人的一切行为几乎都是操作性强化的结果. -->
+
+<!-- Lecture: 斯金纳与内在动机: 奖励的惩罚  -->
+
+    </div>
+
+    <div 
+    id            = "a6" 
+    class         = "step markdown" 
+    data-rel-to   = "a5" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Stanford Prison Experiment](img/c01/stanford-prison-experiment.webp)
+#### 斯坦福监狱实验, 豆瓣评分 7.3
+
+    </div>
+
+    <div 
+    id            = "a7" 
+    class         = "step markdown" 
+    data-rel-to   = "a6" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![MRI Brain Scan](img/c01/mri-brain.jpg)
+#### MRI 脑部扫描
+
+    </div>
+
+    <div 
+    id            = "a8" 
+    class         = "step markdown" 
+    data-rel-to   = "a7" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Human Brain](img/c01/brain-lobes.jpg)
+#### 人类脑叶划分
+
+    </div>
+
+    <div 
+    id            = "a9" 
+    class         = "step markdown" 
+    data-rel-to   = "a8" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1200" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 像人一样行动
+### Acting Humanly
+
+- Kurzweil, 1990: 创造能执行一些功能的机器的技艺, 当人来执行这些功能时需要智能
+- Rich and Knight, 1991: 研究如何使计算机能做那些目前人比计算机更擅长的事情
+
+    </div>
+
+    <div 
+    id            = "a10" 
+    class         = "step markdown" 
+    data-rel-to   = "a9" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Alan Turing](img/c01/Alan-Turing.webp)
+#### 阿兰·图灵 Alan Turing (1912.06.23 - 1954.06.07)
+
+    </div>
+
+    <div 
+    id            = "a11" 
+    class         = "step markdown" 
+    data-rel-to   = "a10" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![The Imitation Game](img/c01/imitation-game.jpg)
+#### 模仿游戏, 豆瓣评分 8.8
+
+    </div>
+
+    <div 
+    id            = "a12" 
+    class         = "step markdown" 
+    data-rel-to   = "a11" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Turing Test](img/c01/turing-test.png)
+#### 图灵测试
+
+    </div>
+
+    <div 
+    id            = "a13" 
+    class         = "step markdown" 
+    data-rel-to   = "a12" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![The Loebner Prize](img/c01/loebner-prize.png)
+#### 勒布纳奖
+
+    </div>
+
+    <div 
+    id            = "a14" 
+    class         = "step markdown" 
+    data-rel-to   = "a13" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Terminator 2]](img/c01/terminator1.jpg)
+#### 终结者 2: 审判日, 豆瓣评分 8.8
+
+    </div>
+
+    <div 
+    id            = "a15" 
+    class         = "step markdown" 
+    data-rel-to   = "a14" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Terminator 2](img/c01/terminator2.jpg)
+#### 终结者 2: 审判日, 豆瓣评分 8.8
+
+    </div>
+
+    <div 
+    id            = "a16" 
+    class         = "step markdown" 
+    data-rel-to   = "a15" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Artificial Intelligence](img/c01/ai-movie.jpg)
+#### 人工智能, 豆瓣评分 9.7
+
+    </div>
+
+    <div 
+    id            = "a17" 
+    class         = "step markdown" 
+    data-rel-to   = "a16" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1100" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 理性思考
+### Thinking Rationally
+
+- Charniak and McDermott, 1985: 通过使用计算模型来研究智力
+- Winston, 1992: 对计算的研究, 这些研究使感知, 推理和行动成为可能
+
+    </div>
+
+    <div 
+    id            = "a18" 
+    class         = "step markdown" 
+    data-rel-to   = "a17" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Allen Newell and Herbert Simon](img/c01/newell-simon.jpeg)
+#### Allen Newell and Herbert Simon
+
+    </div>
+
+    <div 
+    id            = "a19" 
+    class         = "step markdown" 
+    data-rel-to   = "a18" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Computer at 1955](img/c01/1955-computer.jpg)
+#### 1955 年左右的计算机
+
+    </div>
+
+    <div 
+    id            = "a20" 
+    class         = "step markdown" 
+    data-rel-to   = "a19" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Knowledge Graph](img/c01/knowledge-graph.png)
+#### 知识图谱 Knowledge Graph
+
+    </div>
+
+    <div 
+    id            = "a21" 
+    class         = "step markdown" 
+    data-rel-to   = "a20" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Knowledge Graph](img/c01/knowledge-graph.webp)
+#### 知识图谱 Knowledge Graph
+
+    </div>
+
+    <div 
+    id            = "a22" 
+    class         = "step markdown" 
+    data-rel-to   = "a21" 
+    data-rel-x    = "0" 
+    data-rel-y    = "900" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 理性行动
+### Acting Rationally
+
+- Poole et al., 1998: 计算智能是对智能 Agent 设计的研究
+- Nilsson, 1998: AI ... 关心人工制品中的智能行为
+
+    </div>
+
+    <div 
+    id            = "a23" 
+    class         = "step markdown" 
+    data-rel-to   = "a22" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![HAL 9000 in 2001: A Space Odyssey](img/c01/hal9000.jpg)
+#### 2001: 太空漫游, 豆瓣评分 8.9
+
+    </div>
+
+    <div 
+    id            = "a24" 
+    class         = "step markdown" 
+    data-rel-to   = "a23" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Matrix the movie](img/c01/matrix.webp)
+#### 黑客帝国, 豆瓣评分 9.1
+
+    </div>
+
+    <div 
+    id            = "a25" 
+    class         = "step markdown" 
+    data-rel-to   = "a24" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Ex Machina](img/c01/ex-machina.jpg)
+#### 机械姬, 豆瓣评分 7.6
+
+    </div>
+
+    <div 
+    id            = "a26" 
+    class         = "step markdown" 
+    data-rel-to   = "a25" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Blade Runner 2049](img/c01/blade-runner-2049.jpg)
+#### 银翼杀手 2049, 豆瓣评分 8.3
+
+    </div>
+
+    <div 
+    id            = "a27" 
+    class         = "step markdown" 
+    data-rel-to   = "a26" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 一个通俗定义
+
+- intelligent machines that are capable of performing tasks that typically require human intelligence.
+- 让机器去做传统上人类才能做到的事情
+
+    </div>
+
+    <div 
+    id            = "a28" 
+    class         = "step markdown" 
+    data-rel-to   = "a27" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![What human do?](img/c01/chess.jpg)
+
+    </div>
+
+    <div 
+    id            = "a29" 
+    class         = "step markdown" 
+    data-rel-to   = "c11t" 
+    data-rel-x    = "800" 
+    data-rel-y    = "-1200" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 像人一样思考
+### Thinking Humanly
+
+- 对认知建模
+- 符号主义, Symbolicism / 逻辑主义, Logicism
+- Allen Newell, Herbert Simon
+- John McCarthy, Marvin Minsky
+- 认知科学, Cognitive Science / 联结主义, Connectionism
+
+    </div>
+
+    <div 
+    id            = "a30" 
+    class         = "step markdown" 
+    data-rel-to   = "a29" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![John McCarthy](img/c01/john_mccarthy.jpeg)
+#### John McCarthy
+
+    </div>
+
+    <div 
+    id            = "a31" 
+    class         = "step markdown" 
+    data-rel-to   = "a30" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Marvin Minsky](img/c01/marvin-minsky.jpg)
+#### Marvin Minsky
+
+    </div>
+
+    <div 
+    id            = "a32" 
+    class         = "step markdown" 
+    data-rel-to   = "a31" 
+    data-rel-x    = "0" 
+    data-rel-y    = "2500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 像人一样行动
+### Acting Humanly
+
+- 图灵测试, Turing Test
+- 自然语言处理, Natural Language Processing
+- 知识表示, Knowledge Representation
+- 自动推理, Automated Reasoning
+- 机器学习, Machine Learning
+- 计算机视觉, Computer Vision
+- 机器人学, Robotics
+
+    </div>
+
+    <div 
+    id            = "a33" 
+    class         = "step markdown" 
+    data-rel-to   = "a32" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1200" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 理性思考
+### Thinking Rationally
+
+- KPR, Knowledge Representation and Reasoning
+- Logic Theorist - The First AI Program
+- 命题逻辑
+- 一阶逻辑
+- 非形式知识问题
+
+    </div>
+
+    <div 
+    id            = "a34" 
+    class         = "step markdown" 
+    data-rel-to   = "a33" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1100" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 理性行动
+### Acting Rationally
+
+- 机器学习, Machine Learning
+- 自动推理, Automated Reasoning
+- 行为主义, Actionism
+- "学习可以提高生成有效行为的能力"
+- 有限理性, Bounded Rationality
+
+    </div>
+
+    <div 
+    id            = "a35" 
+    class         = "step markdown" 
+    data-rel-to   = "c11t" 
+    data-rel-x    = "2500" 
+    data-rel-y    = "-1200" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 人工智能的基础
+
+- 哲学, Philosophy
+- 数学, Mathematics
+- 经济学, Economics
+- 神经科学, Neuroscience
+- 心理学, Psychology
+- 计算机工程, Computer Engineering
+- 控制论, Cybernetics
+- 语言学, Linguistics
+
+    </div>
+
+    <div 
+    id            = "a36" 
+    class         = "step markdown" 
+    data-rel-to   = "a35" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 哲学
+
+- 形式规则可以推出有效结论吗? 机械主义
+- 思想如何从物理的大脑中产生? 理性主义
+- 知识从何而来? 逻辑实证主义
+- 知识如何导致行动? 功利主义
+
+    </div>
+
+    <div 
+    id            = "a37" 
+    class         = "step markdown" 
+    data-rel-to   = "a36" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Watch Macro Photography](img/c01/watch.jpeg)
+#### 机械主义
+
+    </div>
+
+    <div 
+    id            = "a38" 
+    class         = "step markdown" 
+    data-rel-to   = "a37" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Jeremy Bentham](img/c01/Jeremy-Bentham.webp)
+#### Jeremy Bentham (1747.02.04 - 1832.06.06)
+
+    </div>
+
+    <div 
+    id            = "a39" 
+    class         = "step markdown" 
+    data-rel-to   = "a38" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 数学
+
+- 什么是能导出有效结论的形式化规则? 形式逻辑
+- 什么是可以被计算的? 可计算性
+- 我们如何用不确定的信息来做出决策? 概率论
+
+    </div>
+
+    <div 
+    id            = "a40" 
+    class         = "step markdown" 
+    data-rel-to   = "a39" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Computation](img/c01/computation.png)
+#### 可计算性
+
+    </div>
+
+    <div 
+    id            = "a41" 
+    class         = "step markdown" 
+    data-rel-to   = "a40" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Dice](img/c01/dice.jpg)
+#### 概率论
+
+    </div>
+
+    <div 
+    id            = "a42" 
+    class         = "step markdown" 
+    data-rel-to   = "a41" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 经济学
+
+- 我们该如何决策才能获得最大收益? 决策理论
+- 当其他人不合作时, 我们如何决策以获得最大收益? 博弈论
+- 当收益遥遥无期时, 我们如何决策以获得最大收益? 有限理性
+
+    </div>
+
+    <div 
+    id            = "a43" 
+    class         = "step markdown" 
+    data-rel-to   = "a42" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Prison's Dilemma](img/c01/game-theory.jpg)
+#### 博弈论
+
+    </div>
+
+    <div 
+    id            = "a44" 
+    class         = "step markdown" 
+    data-rel-to   = "a43" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![A Beautiful Mind](img/c01/beautiful-mind.jpg)
+#### 美丽心灵, 豆瓣评分 9.1
+
+    </div>
+
+    <div 
+    id            = "a45" 
+    class         = "step markdown" 
+    data-rel-to   = "a44" 
+    data-rel-x    = "0" 
+    data-rel-y    = "700" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 神经科学
+
+- 大脑如何工作? 神经网络
+
+    </div>
+
+    <div 
+    id            = "a46" 
+    class         = "step markdown" 
+    data-rel-to   = "a45" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neuron Network](img/c01/nn.jpg)
+
+    </div>
+
+    <div 
+    id            = "a47" 
+    class         = "step markdown" 
+    data-rel-to   = "a46" 
+    data-rel-x    = "0" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 心理学
+
+- 人类和动物如何思考与行动? 认知心理学
+
+    </div>
+
+    <div 
+    id            = "a48" 
+    class         = "step markdown" 
+    data-rel-to   = "a47" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Cognitive Psychology](img/c01/cognitive-psychology.jpg)
+#### Cognitive Psychology
+
+    </div>
+
+    <div 
+    id            = "a49" 
+    class         = "step markdown" 
+    data-rel-to   = "a48" 
+    data-rel-x    = "0" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 计算机工程
+
+- 我们如何才能建造高效的计算机? 摩尔定律
+
+    </div>
+
+    <div 
+    id            = "a50" 
+    class         = "step markdown" 
+    data-rel-to   = "a49" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Moore's Law](img/c01/Moore's_Law.png)
+#### Moore's Law
+
+    </div>
+
+    <div 
+    id            = "a51" 
+    class         = "step markdown" 
+    data-rel-to   = "a50" 
+    data-rel-x    = "0" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 控制论
+
+- 人工制品如何在其自身控制下运转? 反馈回路
+
+    </div>
+
+    <div 
+    id            = "a51a" 
+    class         = "step markdown" 
+    data-rel-to   = "a51" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Feedback Loop](img/c01/cooker.jpeg)
+#### Feedback Loop
+
+    </div>
+
+    <div 
+    id            = "a52" 
+    class         = "step markdown" 
+    data-rel-to   = "a51" 
+    data-rel-x    = "0" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 语言学
+
+- 语言与思维有何关联? 知识表示
+
+    </div>
+
+    <div 
+    id            = "a52a" 
+    class         = "step markdown" 
+    data-rel-to   = "a52" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Knowledge Representation](img/c01/knowledge.webp)
+#### 知识的分类
+
+    </div>
+
+    <div
+    id            = "mm11"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![ita 1.1 mindmap](img/c01/mindmap-1-1.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c11q"
+    class         = "step markdown"
+    data-rel-to   = "c11t"
+    data-rel-x    = "-300"
+    data-rel-y    = "-300"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 1.1 人工智能的概念与基础
+
+- AI 的定义可以分成哪些类型?
+- AI 可以通过哪些方法来实现?
+- AI 和哪些学科有关?
+- 你认为, AI 发展的最终目标是什么?
+
+----
+
+[ 全景图 ](ita-0.html#/overview)
+[| 练习 |](ita-exec.html)
+[ 1.2 人工智能的发展历史 ](ita-1-2.html)
+
+    </div>
+    
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
