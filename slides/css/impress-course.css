@@ -730,6 +730,7 @@ div .chglog a {
 
 /*
     在 1-334 上课时需要调整到 30%
+    在 1-536 上课时需要调整到 50%
 */
 .impress-enabled .hint { display: block }
 .impress-enabled .step { opacity: 10% }
