@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 25 Feb 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Mar 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Week 09 回顾</title>
+      <link>https://yemengma.cn/post/23w09-review/</link>
+      <pubDate>Sat, 04 Mar 2023 08:45:07 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/23w09-review/</guid>
+      <description>可以在哪里用 ChatGPT 上周四，OpenAI 开放了 ChatGPT 的 API，允许用户调用 ChatGPT 的强大能力。和以前 GPT-3 的 Davinci 相比，ChatGPT 性能更好，而价格只有十分之一。</description>
+    </item>
+    
     <item>
       <title>2023 Week 08 回顾</title>
       <link>https://yemengma.cn/post/23w08-review/</link>
