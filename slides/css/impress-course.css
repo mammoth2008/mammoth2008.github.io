@@ -64,7 +64,7 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font: inherit;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 
@@ -220,11 +220,11 @@ a:focus {
     transition: 0.7s;
 }
 
+/*
 #math span{
     vertical-align: baseline;
 }
 
-/*
 .future {
     display: none;
 }
