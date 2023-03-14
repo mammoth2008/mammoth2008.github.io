@@ -1,7 +1,7 @@
 1. 人工智能技术概述
 1.2 人工智能的发展历史
 
-### ![AI Timeline](img/c01/ai-history.jpg)
+![AI Timeline](img/c01/ai-history.jpg)
 #### Timeline
 
 ### 计算简史
@@ -17,25 +17,25 @@
 - 古中国, 水动机械
 - 古土耳其, Al-Jazari
 
-### ![Antikythera Mechanism](img/c01/Antikythera.webp)
+![Antikythera Mechanism](img/c01/Antikythera.webp)
 #### Antikythera Mechanism
 
-### ![Antikythera Mechanism](img/c01/Antikythera-Mechanism.png)
+![Antikythera Mechanism](img/c01/Antikythera-Mechanism.png)
 #### Antikythera Mechanism
 
-### ![Antikythera Mechanism](img/c01/Antikythera-Mechanism1.jpeg)
+![Antikythera Mechanism](img/c01/Antikythera-Mechanism1.jpeg)
 #### Antikythera Mechanism
 
-### ![列子·汤问 偃师造人](img/c01/yanshi.png)
+![列子·汤问 偃师造人](img/c01/yanshi.png)
 #### 列子·汤问 偃师造人
 
-### ![Water Clock](img/c01/clocktower.jpg)
+![Water Clock](img/c01/clocktower.jpg)
 #### 中国古代的水力机械
 
-### ![Water Clock](img/c01/clocktower1.webp)
+![Water Clock](img/c01/clocktower1.webp)
 #### 中国古代的水力机械
 
-### ![Al-Jazari](img/c01/al-jazari.webp)
+![Al-Jazari](img/c01/al-jazari.webp)
 #### Ismail Al-Jazari (1136 - 1206)
 
 ### 近代与近现代
@@ -45,28 +45,28 @@
 - 法国, Joseph Marie Jacquard 提花织布机
 - 英国, Charles Babbage & Ada Lovelace 分析机和差分机
 
-### ![Pascal Calculator](img/c01/pascal-calculator.jpg)
+![Pascal Calculator](img/c01/pascal-calculator.jpg)
 #### Blasise Pascal Calculator
 
-### ![Jaquet-Croz](img/c01/jaquet-droz.jpg)
+![Jaquet-Croz](img/c01/jaquet-droz.jpg)
 #### Pierre Jaquet-Droz Automata
 
-### ![Jaquet-Croz](img/c01/jaquet-droz1.jpeg)
+![Jaquet-Croz](img/c01/jaquet-droz1.jpeg)
 #### Pierre Jaquet-Droz Automata
 
-### ![Joseph Maie Jacquard](img/c01/jacquard-loom.jpg)
+![Joseph Maie Jacquard](img/c01/jacquard-loom.jpg)
 #### Jacquard Loom
 
-### ![Joseph Maie Jacquard](img/c01/jacquard-loom1.jpg)
+![Joseph Maie Jacquard](img/c01/jacquard-loom1.jpg)
 #### Jacquard Loom
 
-### ![Babbage Difference Engine](img/c01/difference-engine.jpeg)
+![Babbage Difference Engine](img/c01/difference-engine.jpeg)
 #### Babbage Difference Engine
 
-### ![Babbage Analytical Engine](img/c01/analytical-engine.jpg)
+![Babbage Analytical Engine](img/c01/analytical-engine.jpg)
 #### Babbage Analytical Engine
 
-### ![Ada Lovelace](img/c01/ada-lovelace.jpg)
+![Ada Lovelace](img/c01/ada-lovelace.jpg)
 #### Ada Lovelace
 
 ### 现代和当代
@@ -79,37 +79,37 @@
 - 英国, AlphaGo
 - 美国, ChatGPT
 
-### ![Alan Turing](img/c01/turing-book.jpg)
+![Alan Turing](img/c01/turing-book.jpg)
 #### Alan Turing
 
-### ![Turing Machine](img/c01/turing-machine.jpg)
+![Turing Machine](img/c01/turing-machine.jpg)
 #### Turing Machine
 
-### ![Turing Test](img/c01/turing-test-game.jpg)
+![Turing Test](img/c01/turing-test-game.jpg)
 #### Turing Test
 
-### ![ENIAC](img/c01/eniac.png)
+![ENIAC](img/c01/eniac.png)
 #### Electronic Numerical Integrator And Computer
 
-### ![UNIVAC 1](img/c01/univac1.jpeg)
+![UNIVAC 1](img/c01/univac1.jpeg)
 #### UNIVersal Automatic Computer 1
 
-### ![IBM PC](img/c01/ibm-pc.webp)
+![IBM PC](img/c01/ibm-pc.webp)
 #### IBM Personal Computer
 
-### ![Tim Berners-Lee](img/c01/Tim_Berners-Lee.jpg)
+![Tim Berners-Lee](img/c01/Tim_Berners-Lee.jpg)
 #### Tim Berners-Lee
 
-### ![The First WWW Server](img/c01/First_Web_Server.jpg)
+![The First WWW Server](img/c01/First_Web_Server.jpg)
 #### The First World Wide Web Server
 
-### ![Deep Blue](img/c01/deep-blue.jpg)
+![Deep Blue](img/c01/deep-blue.jpg)
 #### Deep Blue from IBM
 
-### ![AlphaGo](img/c01/alphago.webp)
+![AlphaGo](img/c01/alphago.webp)
 #### AlphaGo from DeepMind
 
-### ![Sam Altman](img/c01/sam-altman.webp)
+![Sam Altman](img/c01/sam-altman.webp)
 #### Sam Altman from OpenAI
 
 ### AI 英雄榜
@@ -119,10 +119,10 @@
 #### Edward Feigenbaum, Raj Reddy, 专家系统 (1994)$
 #### Geoffrey Hinton, Yann LeCun, Yoshua Bengio 深度学习 (2018)
 
-### ![A.M Turing Award](img/c01/Turing_Bowl.jpg)
+![A.M Turing Award](img/c01/Turing_Bowl.jpg)
 #### ACM A.M Turing Award (Turing Bowl)
 
-### ![DL3](img/c01/dl3.jpeg)
+![DL3](img/c01/dl3.jpeg)
 #### Geoffrey Hinton, Yann LeCun and Yoshua Bengio
 
 ### AI 的诞生与发展
@@ -146,26 +146,26 @@
 - Dartmouth Summer Research Project on Artificial Intelligence
 - Logic Theorist
 
-### ![Warren McCulloch and Walter Pitts](img/c01/McCulloch-Pitts.png)
+![Warren McCulloch and Walter Pitts](img/c01/McCulloch-Pitts.png)
 #### Warren McCulloch and Walter Pitts
 
-### ![Neuron](img/c01/neuron.gif)
+![Neuron](img/c01/neuron.gif)
 #### Neuron
 
-### ![M-P model](img/c01/m-p-model.png)
+![M-P model](img/c01/m-p-model.png)
 #### McCulloch-Pitts Model
 
-### ![Donald Hebb](img/c01/hebb.jpg)
+![Donald Hebb](img/c01/hebb.jpg)
 #### Donald Hebb
 
 <!-- Lecture: Hebb 学习规则是 Donald Hebb 在 1949 年提出的一种学习规则, 用来描述神经元的行为是如何影响神经元之间的连接的: 如果相链接的两个神经元同时被激活, 我们可以认为这两个神经元之间的关系应该比较近, 因此将这两个神经元之间连接的权值增加; 而一个被激活一个被抑制, 显然两者间的权值应该减小. Hebb 还有一句非常著名的话, "neurons that fire together, wire together." 它是一个无监督学习规则, 使网络能够提取训练集的统计特性, 从而把输入信息按照相似程度划分为若干类.-->
 
-### ![SNARC](img/c01/snarc.png)
+![SNARC](img/c01/snarc.png)
 #### SNARC by Marvin Minsky and Dean Edmonds
 
 <!-- Lecture: Marvin Minsky 根据自己的数学模型, 创造了世界上第一台具有学习功能的机器, 即由真空管组成的人工神经网络 SNARC, 意为 "随机神经网络模拟加固计算器".  -->
 
-### ![Arthur Samuel](img/c01/samuel.webp)
+![Arthur Samuel](img/c01/samuel.webp)
 #### Arthur Samuel and Checkers
 
 <!-- Lecture: 1956 年, Arthur Samuel 发明了一种能够通过自我学习攻克国际跳棋 (Checkers) 游戏的算法, 现在该算法被称为强化学习 (Reinforcement Learning). -->
@@ -175,10 +175,10 @@
 ![Alan Turing](img/c01/Alan-Turing.webp)$
 #### Alan Turing
 
-### ![Dartmouth Summer Research Project on Artificial Intelligence](img/c01/dartmouth-workshop.webp)
+![Dartmouth Summer Research Project on Artificial Intelligence](img/c01/dartmouth-workshop.webp)
 #### Dartmouth Summer Research Project on Artificial Intelligence
 
-### ![Logic Theorist](img/c01/newell-simon.jpeg)
+![Logic Theorist](img/c01/newell-simon.jpeg)
 #### Newell and Simon and Logic Theorist
 
 <!-- Lecture: 逻辑理论家引出了几个对人工智能研究至关重要的概念: Reasoning as search, Heuristic search, and list processing. 推理即搜索, 启发式方法, 以及列表处理.-->
@@ -196,7 +196,7 @@
 - 未能帮助工业发展
 - Lighthill Report, 1973
 
-### ![James Lighthill](img/c01/james-lighthill.webp)
+![James Lighthill](img/c01/james-lighthill.webp)
 #### James Lighthill, Author of Lighthill Report
 
 <!-- Lecture: Imagine that you are teaching a very smart robot how to do a task, like cleaning your room. You can tell it exactly what to do step by step, and it will follow your instructions perfectly. But if you ask the robot to do something that it has never seen before, like picking up a new toy that you just bought, it might not know what to do.
@@ -233,7 +233,7 @@
 - 流畅而不精确
 - 从样本中学习
 
-### ![Back-propagation](img/c01/back-propagation.png)
+![Back-propagation](img/c01/back-propagation.png)
 #### Back-propagation
 
 ### 概率推理和机器学习 (1987-)
@@ -244,7 +244,7 @@
 
 <!-- Lecture: HMM 有两个相关的方面. 首先, 它们基于严格的数学理论. 这使得语音研究人员能够在其他领域数十年数学成果的基础上进行开发. 其次, 它们是在大量真实语音数据的语料库上训练而产生的. 这确保了健壮性, 并且在严格的盲测中, HMM的分数稳步提高. 因此, 语音技术和手写体字符识别的相关领域向广泛的工业和消费级应用过渡.  -->
 
-### ![ViaVoice from IBM](img/c01/ViaVoice.jpg)
+![ViaVoice from IBM](img/c01/ViaVoice.jpg)
 #### ViaVoice from IBM
 
 ### 大数据 (2001- )
@@ -258,10 +258,10 @@
 
 <!-- Lecture: 类似的现象似乎也发生在计算机视觉任务中, 例如填补照片中的破洞. Hays and Efros, (2007) 开发了一种巧妙的方法, 从类似的图像中混合像素. 他们发现, 该技术在仅包含数千幅图像的数据库中效果不佳, 但在拥有数百万幅图像的数据库中, 该技术超过了质量阈值. 不久之后, ImageNet 数据库 (Deng et al., 2009) 中可用的数千万幅图像引发了计算机视觉领域的一场革命.  -->
 
-### ![IBM Watson](img/c01/ibm-watson.webp)
+![IBM Watson](img/c01/ibm-watson.webp)
 #### IBM Watson Defeats Humans in "Jeopardy!"
 
-### ![Dataset of GPT-3](img/c01/dataset.png)
+![Dataset of GPT-3](img/c01/dataset.png)
 #### Dataset of GPT-3
 
 ### 深度学习狂潮 (2011- )
@@ -273,10 +273,10 @@
 
 <!-- Lecture: 一个标准的计算机 CPU 每秒可以进行 10^9 或 10^10 次运算. 运行在特定硬件 (例如GPU, TPU 或 FPGA) 上的深度学习算法, 每秒可能进行 10^14 - 10^17 次运算, 主要是高度并行化的矩阵和向量运算. -->
 
-### ![Deep Learning](img/c01/deep.png)
+![Deep Learning](img/c01/deep.png)
 #### Deep Learning
 
-### ![GPU Server](img/c01/compute-power.png)
+![GPU Server](img/c01/compute-power.png)
 #### GPU Server
 
 ### 大语言模型 (2020-)
@@ -286,10 +286,10 @@
 
 <!-- Lecture: 参数是可以根据模型自身的算法, 通过数据迭代自动学习出的变量. -->
 
-### ![Parameter War](img/c01/parameter-war.jpg)
+![Parameter War](img/c01/parameter-war.jpg)
 #### Parameter War
 
-### ![Parameter War](img/c01/war3.png)
+![Parameter War](img/c01/war3.png)
 #### Parameter War
 
 ### 今天
@@ -301,5 +301,5 @@
 - Artificial Superintelligence, ASI
 - 我们该如何看待 AI?
 
-### ![AI Revolution](img/c01/ai-revolution.jpg)
+![AI Revolution](img/c01/ai-revolution.jpg)
 #### AI Revolution
