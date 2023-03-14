@@ -1,0 +1,624 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>ERPPA | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="ERP 原理及应用课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 "cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+        
+    </div>
+
+    <!-- 修改 id -->
+    <div 
+    id         = "c37t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+    <!-- 修改标题 -->
+        <h2>3. 财务管理</h2>
+        <h3 style="text-align: center">3.7 成本管理</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div
+    id            = "g0"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 产品成本
+
+- 生产过程中各种资源利用情况的货币表示, 是衡量企业技术和管理水平的重要指标
+
+    </div>
+
+    <div
+    id            = "g1"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基本概念
+
+- 会计是以货币作为反映方式, 采用专门方法, 经济业务进行核算和监督的一种管理活动或经济信息系统
+- 财务会计: 主要为企业外部提供财务信息的会计事务
+- 管理会计: 主要为企业内部提供财务信息的会计事务
+- ERP 系统的成本管理是按照管理会计的原理, 对企业的生产成本进行预测, 计划, 决策控制, 分析与考核
+
+    </div>
+
+    <div
+    id            = "g2"
+    class         = "step markdown"
+    data-rel-to   = "g1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 标准成本体系
+
+- 事前计划
+- 事中控制
+- 事后分析
+- 将成本的计划, 控制, 核算, 分析和改进有机结合
+
+    </div>
+
+    <div
+    id            = "g3"
+    class         = "step markdown"
+    data-rel-to   = "g2"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 责任会计制
+
+- 责任中心: 企业内负有特定管理责任的部门或单位
+- 成本中心
+- 利润中心
+- 投资中心
+- 成本中心和利润中心是制造业的主要责任中心
+
+    </div>
+
+    <div
+    id            = "g4"
+    class         = "step markdown"
+    data-rel-to   = "g3"
+    data-rel-x    = "0"
+    data-rel-y    = "40"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 成本中心
+
+- 以达到最低成本为经营目标的组织单位
+
+    </div>
+
+    <div
+    id            = "g5"
+    class         = "step markdown"
+    data-rel-to   = "g3"
+    data-rel-x    = "0"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 利润中心
+
+- 以获得最大利润为经营目标的组织单位
+
+    </div>
+
+    <div
+    id            = "g6"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "0"
+    data-rel-y    = "1800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 成本计算方法
+
+- 完全成本法
+- 变动成本法
+- 制造成本法
+
+    </div>
+
+    <div
+    id            = "g7"
+    class         = "step markdown"
+    data-rel-to   = "g6"
+    data-rel-x    = "0"
+    data-rel-y    = "100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 完全成本法
+
+- 亦称吸收成本法
+- 在计算产品成本和存货成本时把所消耗的直接材料, 直接工资, 制造费用, 管理费用等全部包括在内
+
+    </div>
+
+    <div
+    id            = "g8"
+    class         = "step markdown"
+    data-rel-to   = "g7"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 变动成本法
+
+- 亦称直接成本法, 是指在计算产品成本和存货成本时, 只包括产品在生产经营过程中的变动费用
+- 固定制造费用以期间成本计入本期损益, 作为产品销售利润的减除项目
+
+    </div>
+
+    <div
+    id            = "g9"
+    class         = "step markdown"
+    data-rel-to   = "g8"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 制造成本法
+
+- 计算产品成本和存货成本时, 只包括直接材料, 直接工资和制造费用
+- 将管理费用, 销售费用, 财务费用作为期间费用处理
+
+    </div>
+
+    <div
+    id            = "g9a"
+    class         = "step markdown"
+    data-rel-to   = "g9"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![企业成本构成](img/c03/total-cost.svg)
+
+    </div>
+
+    <div
+    id            = "g10"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 成本项目的分类
+
+- 直接材料费
+- 直接人工费
+- 制造费用
+
+    </div>
+
+    <div
+    id            = "g11"
+    class         = "step markdown"
+    data-rel-to   = "g10"
+    data-rel-x    = "0"
+    data-rel-y    = "100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 直接材料费
+
+- 直接用于产品生产, 构成产品实体的原料, 主要材料, 外购半成品, 以及有助于产品形成的辅助材料和其他直接材料所产生的费用直接人工费
+
+    </div>
+
+    <div
+    id            = "g12"
+    class         = "step markdown"
+    data-rel-to   = "g11"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 直接人工费
+
+- 直接参加生产的工人工资, 以及按参加生产的工人工资总额和规定的比例计算提取的职工福利费
+
+    </div>
+
+    <div
+    id            = "g13"
+    class         = "step markdown"
+    data-rel-to   = "g12"
+    data-rel-x    = "0"
+    data-rel-y    = "340"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 制造费用
+
+- 指企业各生产单位为组织和管理生产而发生的各项间接费用, 包括管理人员的工资和福利费, 车间房屋建筑设备的折旧费, 租赁费, 修理费, 办公费, 水电费, 燃料费, 动力费, 机物料消耗, 劳动保护费等
+
+    </div>
+
+    <div
+    id            = "g14"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP 系统中的四种基本成本
+
+- 标准成本
+- 现行标准成本
+- 模拟成本
+- 实际成本
+
+    </div>
+
+    <div
+    id            = "g15"
+    class         = "step markdown"
+    data-rel-to   = "g14"
+    data-rel-x    = "100"
+    data-rel-y    = "100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 标准成本
+
+- 成本管理中的计划成本
+- 应充分考虑在有效作业状态下所需要的材料和人工数量, 预期支付的材料和人工费用, 以及在正常生产情况下应分摊的制造费用等因素
+- 标准成本的制定, 应由销售, 生产, 计划, 采购, 物料, 劳动工资, 工艺, 车间, 会计等有关部门人员共同商定
+
+    </div>
+
+    <div
+    id            = "g16"
+    class         = "step markdown"
+    data-rel-to   = "g15"
+    data-rel-x    = "1000"
+    data-rel-y    = "-300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 现行标准成本
+
+- 也称现行成本, 是当前使用的标准成本, 或标准成本的执行成本
+- 反映的是生产计划期内某一时期的成本标准
+
+    </div>
+
+    <div
+    id            = "g17"
+    class         = "step markdown"
+    data-rel-to   = "g16"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 模拟成本
+
+- 运用其模拟功能, 回答 If... Then...问题
+- 制定方式与标准成本类似
+
+    </div>
+
+    <div
+    id            = "g18"
+    class         = "step markdown"
+    data-rel-to   = "g17"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 实际成本
+
+- 在生产过程中实际发生的成本, 主要来自各部门的反馈信息
+
+    </div>
+
+    <div
+    id            = "g19"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "400"
+    data-rel-y    = "-1260"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ERP系统中的成本计算
+
+- 数量性数据
+- 价格性数据
+- 累加法
+
+    </div>
+
+    <div
+    id            = "g20"
+    class         = "step markdown"
+    data-rel-to   = "g19"
+    data-rel-x    = "1400"
+    data-rel-y    = "110"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 成本差异分析
+
+- 实际成本与标准成本之间的差额
+- 实际成本低于标准成本, 称为有利差异, 用负值表示, 记在贷方
+- 实际成本高于标准成本, 称为不利差异, 用正值表示, 记在借方
+
+    </div>
+
+    <div
+    id            = "g21"
+    class         = "step markdown"
+    data-rel-to   = "g20"
+    data-rel-x    = "400"
+    data-rel-y    = "-300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 成本差异
+
+- 直接材料成本差异
+- 直接人工成本差异
+- 制造费用差异
+
+    </div>
+
+    <div
+    id            = "g22"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "3500"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 降低成本的常见误区
+
+- 减少直接人工成本
+- 减少对新工厂或减少改善工作效率方面的投资
+- 会计策略变为早收晚付
+- 减少对工厂设备预防性维修的投资
+- 减少对产品或工艺过程设计的研究开发资金
+- 减少新产品开发方面的投资
+- 以低价压榨供应商
+- 降低员工的工资水平
+- 减少对员工教育培训投资
+
+    </div>
+
+    <div
+    id            = "g23"
+    class         = "step markdown"
+    data-rel-to   = "g22"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 如何成为低成本企业
+
+- 以基于市场的成本核算作为产品设计活动的基础
+- 关注成本和质量的关系
+- 建立准确的成本核算系统
+- 通过减少不必要的业务活动来减少制造费用
+
+    </div>
+
+    <div
+    id            = "mm37"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![erp 3.7 mindmap](img/c03/mindmap-3-7.png)
+
+    </div>
+    
+<!-- 本节问题 -->
+
+    <div
+    id            = "c37q"
+    class         = "step markdown"
+    data-rel-to   = "c37t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 3.7 成本管理
+
+- 什么是成本?什么是标准成本体系?
+- 成本项目可以分成哪些类型?
+- ERP 系统中包括哪些基本成本类型?
+- 什么是成本差异?为什么要做成本差异分析?
+- 企业该如何降低成本?
+
+----
+
+[ 3.6 固定资产管理 ](erp-3-6.html#/overview)
+[| 练习 |](erp-exec.html)
+[ 3.8 财务分析与财务决策 ](erp-3-8.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
+
+

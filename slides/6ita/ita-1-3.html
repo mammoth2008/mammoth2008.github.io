@@ -1,0 +1,1793 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>ITA | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院专业学位全日制硕士研究生设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c13t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+<!-- 修改标题 -->
+
+        <h2>1. 人工智能技术概述</h2>
+        <h3 style="text-align: center; font-size: 36px" >1.3 人工智能的技术流派</h3>
+        <br/>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2302
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+
+    <div 
+    id            = "c0" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "300" 
+    data-rel-y    = "-1000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 人工智能技术的三大流派
+
+- 符号主义: 强调理性
+- 行为主义: 强调反应
+- 联结主义: 强调连接
+
+    </div>
+
+    <div 
+    id            = "c1" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "-1500" 
+    data-rel-y    = "-2700" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 符号主义 Symbolism
+
+- 基于物理符号系统假设
+- 逻辑主义 Logicism
+- 心理学派 Psychologism
+- 计算机学派 Computerism
+
+    </div>
+
+    <div 
+    id            = "c2" 
+    class         = "step markdown" 
+    data-rel-to   = "c1" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 核心假设
+
+- Knowledge Representation and Reasoning
+- 智能的基础是知识
+- 智能即知识表示和知识推理
+- 知识表示和知识推理的基础是逻辑
+- 知识表示和知识推理的核心是符号
+
+    </div>
+
+    <div 
+    id            = "c3" 
+    class         = "step markdown" 
+    data-rel-to   = "c2" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 基本内容
+
+- AI 的目标是制造智能机器
+- AI 不需局限于生物学
+- 物理符号系统假说
+- 关注逻辑与推理
+
+    </div>
+
+    <div 
+    id            = "c4" 
+    class         = "step markdown" 
+    data-rel-to   = "c3" 
+    data-rel-x    = "500" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 物理符号系统假说
+
+- 由物理符号组成的系统
+- 符号即模式
+- 输入
+- 输出
+- 存储
+- 复制
+- 建立符号结构
+- 条件性迁移
+
+    </div>
+
+    <div 
+    id            = "c5" 
+    class         = "step markdown" 
+    data-rel-to   = "c3" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 代表成果
+
+- 逻辑门 Logic Gates
+- 机器人手臂 Robot Arm
+- 逻辑理论家 Logic Theorist
+- 专家系统 Expert System
+
+    </div>
+
+    <div 
+    id            = "c6" 
+    class         = "step markdown" 
+    data-rel-to   = "c5" 
+    data-rel-x    = "-400" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 逻辑门
+
+- 建立在符号操作基础上
+- 用于处理信息
+- 二进制输入
+- 布尔运算
+
+    </div>
+
+<!-- Lecture: Symbolic AI represents knowledge in a structured form, making it easier for humans to understand and manipulate. However, it has limitations in dealing with uncertainty and complexity. -->
+
+    <div 
+    id            = "c7" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Logic Gates](img/c01/Logic_Gates.svg)
+#### Logic Gates
+
+    </div>
+
+    <div 
+    id            = "c7a" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Logic Gates](img/c01/logic-gates.png)
+#### Logic Gates
+
+    </div>
+
+    <div 
+    id            = "c8" 
+    class         = "step markdown" 
+    data-rel-to   = "c6" 
+    data-rel-x    = "600" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 机器人手臂
+
+- 斯坦福手臂
+- 编程来控制目标, 行动和约束
+- 能够执行复杂任务
+
+    </div>
+
+<!-- Lecture: The success of the Stanford Arm showed the potential of symbolic AI for robotics. However, the limitations of symbolic AI became apparent as tasks became more complex and uncertain. -->
+
+    <div 
+    id            = "c9" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Stanford Arm](img/c01/stanford-arm.jpeg)
+#### Stanford Arm
+
+    </div>
+
+    <div 
+    id            = "c10" 
+    class         = "step markdown" 
+    data-rel-to   = "c6" 
+    data-rel-x    = "0" 
+    data-rel-y    = "400" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 逻辑理论家
+
+- 第一个证明数学定理的 AI 程序
+- 使用符号逻辑来证明数学定理
+- 能证明一些以前未知的定理
+- 展示了符号主义自动推理的潜力
+
+    </div>
+
+<!-- Lecture: The Logic Theorist was a major breakthrough in AI research and showed the potential of symbolic AI for automated reasoning. However, it also highlighted the limitations of symbolic AI in dealing with uncertainty and incomplete information. -->
+
+    <div 
+    id            = "c11" 
+    class         = "step markdown" 
+    data-rel-to   = "c10" 
+    data-rel-x    = "600" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 专家系统
+
+- 20 世纪后期符号主义的应用
+- 模仿人类专家在特定领域的决策过程
+- 决策来自规则和事实组成的知识库
+- 困难在于获取和表示专家知识
+
+    </div>
+
+<!-- Lecture: Expert systems were a popular application of symbolic AI in the 1980s, but they were limited by the difficulty of acquiring and representing expert knowledge. The rise of machine learning and neural networks in the 21st century led to a renewed interest in AI and the development of more powerful and flexible AI systems. -->
+
+    <div 
+    id            = "c12" 
+    class         = "step markdown" 
+    data-rel-to   = "c5" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1400" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 结论
+
+- 在处理不确定性和复杂性方面存在局限
+- 在机器人和自动推理方面显示出潜力
+
+    </div>
+
+    <div 
+    id            = "c13" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "0" 
+    data-rel-y    = "426" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 行为主义 Actionism
+
+- 基于控制论假设
+- 进化主义 Evolutionism
+- 控制论学派 Cyberneticsism
+- 智能来自于与环境的交互
+
+    </div>
+
+    <div 
+    id            = "c14" 
+    class         = "step markdown" 
+    data-rel-to   = "c13" 
+    data-rel-x    = "0" 
+    data-rel-y    = "700" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 核心假设
+
+- Intelligent Behavior
+- 智能的基础是感知和行为
+
+    </div>
+
+<!-- Lecture: 行为主义 (actionism), 又称为进化主义 (evolutionism) 或控制论学派 (cyberneticsism), 其原理为控制论及感知 - 动作型控制系统. 行为主义产生于20世纪初的美国. 代表人物是华生和斯金纳. 这是针对冯特学派理论的不足而在美国进行的一场心理学革命. 它一反传统心理学, 而主张对人的行为进行研究的观点, 主张心理学不应只是研究人脑中的那种无形的像 "鬼火" 一样不可捉摸的东西--意识, 而应去研究那种从人的意识中折射出来的看得见, 摸得着的客观东西, 即人的行为 . 凯恩斯也说过, "经济学家与政治哲学家的思想, 不论其正确与否, 其力量之大, 往往出于常人意料……许多实干家自以为不受任何理论之影响, 往往恰恰沦为某个已故经济学家最坏学说之不自觉的奴隶." 这段话也可以用来预见未来企业家和企业对社会的影响.控制论思想早在 20 世纪 40~50 年代就成为时代思潮的重要部分, 影响了早期的 AI 工作者. 维纳 (Wiener) 和麦克洛克 (McCulloch) 等人提出的控制论和自组织系统以及钱学森等人提出的工程控制论和生物控制论, 影响了许多领域. 控制论把神经系统的工作原理与信息理论, 控制理论, 逻辑以及计算机联系起来. 早期的研究工作重点是模拟人在控制过程中的智能行为和作用, 如对自寻优, 自适应, 自镇定, 自组织和自学习等控制论系统的研究, 并进行 "控制论动物" 的研制. 到 20 世纪 60~70 年代, 上述这些控制论系统的研究取得一定进展, 播下智能控制和智能机器人的种子, 并在 20 世纪 80 年代诞生了智能控制和智能机器人系统. 行为主义是 20 世纪末才以 AI 新学派的面孔出现的, 引起许多人的兴趣. 这一学派的代表作者首推布鲁克斯 (Brooks) 的六足行走机器人, 它被看作是新一代的 "控制论动物", 是一个基于感知 - 动作模式模拟昆虫行为的控制系统. -->
+
+    <div 
+    id            = "c15" 
+    class         = "step markdown" 
+    data-rel-to   = "c14" 
+    data-rel-x    = "0" 
+    data-rel-y    = "700" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 基本内容
+
+- 自适应
+- 自组织
+- 自学习
+- 自寻优
+- 自镇定
+
+    </div>
+
+<!-- Lecture: 维纳和麦克洛克等人提出的控制论和自组织系统以及钱学森等人提出的工程控制论和生物控制论等也影响了许多相关领域. 控制论把神经系统的工作原理与信息理论, 控制理论, 逻辑以及计算机联系起来. 早期的研究工作重点是模拟人在控制过程中的智能行为和作用, 如对自寻优, 自适应, 自镇定, 自组织和自学习等控制论系统的研究, 并进行 "控制论动物" 的研制 (比如机器蜘蛛, 机器蝴蝶和机器鱼等) . 到了20世纪60~70年代, 上述这些控制论系统的研究取得一定进展, 也为智能机器人的发展奠定了基础, 并在20世纪80年代诞生了智能控制和智能机器人系统. 行为主义是20世纪末才以 AI 新学派的面孔出现的 -->
+
+<!-- Lecture: "Actionism" is a term used to describe a shift in the field of artificial intelligence (AI) towards systems that are capable of taking action in the physical world, rather than simply processing and analyzing data. In other words, actionism refers to the focus on creating intelligent systems that can interact with the world in a more embodied and situated way. -->
+
+    <div 
+    id            = "c16" 
+    class         = "step markdown" 
+    data-rel-to   = "c15" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 代表成果
+
+- 机器人学 Robotics
+- 自主车辆 Autonomous Vehicles
+- 外骨骼 Exoskeletons
+- 无人机 Drones
+
+    </div>
+
+    <div 
+    id            = "c17" 
+    class         = "step markdown" 
+    data-rel-to   = "c16" 
+    data-rel-x    = "-400" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 机器人学
+
+- 机器人的设计, 建造和操作
+- 使用传感器, 执行器和算法
+- 机器人能够感知并与环境互动
+- 新进展有软体机器人, 蜂群机器人和自主无人机等
+
+    </div>
+
+<!-- Lecture: Robotics is an example of actionism in AI, as it involves physical actions in the real world. Robotics is a challenging field that requires expertise in mechanics, electronics, and software engineering. -->
+
+    <div 
+    id            = "c18" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![I, Robot (2004)](img/c01/irobot-movie.png)
+#### I, Robot (2004), 豆瓣评分 8.2
+
+    </div>
+
+    <div 
+    id            = "c19" 
+    class         = "step markdown" 
+    data-rel-to   = "c18" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Detroit: Become Human](img/c01/become-human.jpg)
+#### Detroit: Become Human (2018), 豆瓣评分 9.3
+
+    </div>
+
+    <div 
+    id            = "c20" 
+    class         = "step markdown" 
+    data-rel-to   = "c19" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Robotic Insect](img/c01/walkman-robot.jpg)
+#### Robotic Insect
+
+    </div>
+
+    <div 
+    id            = "c21" 
+    class         = "step markdown" 
+    data-rel-to   = "c20" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Hexa Robot](img/c01/hexa-robot.webp)
+#### Hexa Robot
+
+    </div>
+
+    <div 
+    id            = "c22" 
+    class         = "step markdown" 
+    data-rel-to   = "c21" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Hexa Robot](img/c01/hexa-robot1.webp)
+#### Hexa Robot
+
+    </div>
+
+    <div 
+    id            = "c23" 
+    class         = "step markdown" 
+    data-rel-to   = "c22" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Hexa Robot](img/c01/hexa-robot2.gif)
+#### Hexa Robot
+
+    </div>
+
+    <div 
+    id            = "c24" 
+    class         = "step" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "-4000" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+    <video width="800" controls>
+      <source src="img/c01/irobot-roomba.mp4" type="video/mp4">
+    </video>
+    <h4>iRobot Roomba</h4>
+
+    </div>
+
+    <div 
+    id            = "c25" 
+    class         = "step" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "-4000" 
+    data-rel-y    = "-1000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+    <video width="800" controls>
+      <source src="img/c01/boston-dynamics-atlas.mp4" type="video/mp4">
+    </video>
+    <h4>Atlas from Boston Dynamics</h4>
+
+    </div>
+
+    <div 
+    id            = "c26" 
+    class         = "step markdown" 
+    data-rel-to   = "c17" 
+    data-rel-x    = "600" 
+    data-rel-y    = "-100" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 自主车辆
+
+- 基于 AI 的自动驾驶车辆
+- 使用传感器, 摄像头和机器学习算法
+- 有助于减少事故, 交通拥堵和碳排放
+- 带来新的伦理和法律问题
+
+    </div>
+
+<!-- Lecture: Autonomous vehicles are another example of actionism in AI, as they involve physical actions in the real world. The development of autonomous vehicles requires expertise in computer vision, sensor fusion, and decision making. -->
+
+    <div 
+    id            = "c27" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Autonomous Vehicles](img/c01/autonomous-vehicle.webp)
+#### Autonomous Vehicles
+
+    </div>
+
+    <div 
+    id            = "c28" 
+    class         = "step markdown" 
+    data-rel-to   = "c27" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Autonomous Vehicles](img/c01/ai-drive.png)
+#### Autonomous Vehicles
+
+    </div>
+
+    <div 
+    id            = "c29" 
+    class         = "step markdown" 
+    data-rel-to   = "c17" 
+    data-rel-x    = "0" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 动力外骨骼
+
+- 感知人的动作, 并加以助力
+- 增加残疾人, 病人或老人的活动能力
+- 主要伦理和社会问题包括医疗费用和就业影响
+
+    </div>
+
+<!-- Lecture: Robotics in healthcare is an important area of actionism in AI, as it has the potential to improve the quality of life for patients and reduce the burden on healthcare workers. Robotics in healthcare requires expertise in biomechanics, control theory, and medical knowledge. -->
+
+    <div 
+    id            = "c30" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Exoskeletons](img/c01/exoskeleton.jpeg)
+#### Exoskeletons
+
+    </div>
+
+    <div 
+    id            = "c31" 
+    class         = "step markdown" 
+    data-rel-to   = "c30" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Exoskeletons](img/c01/exoskeletons.jpeg)
+#### Exoskeletons
+
+    </div>
+
+    <div 
+    id            = "c32" 
+    class         = "step markdown" 
+    data-rel-to   = "c31" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Exoskeletons in Japan](img/c01/exoskeletons-in-japan.webp)
+#### Exoskeletons in Japan
+
+    </div>
+
+    <div 
+    id            = "c33" 
+    class         = "step markdown" 
+    data-rel-to   = "c32" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Ironman ](img/c01/Ironman.webp)
+#### Iron Man (2008), 豆瓣评分 9.0
+
+    </div>
+
+    <div 
+    id            = "c34" 
+    class         = "step markdown" 
+    data-rel-to   = "c29" 
+    data-rel-x    = "600" 
+    data-rel-y    = "-100" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 无人机
+
+- 远程控制或自主控制的飞行器
+- 广泛应用于农业, 运输和安全方面
+- 使用传感器, GPS 和机器学习算法
+- 带来隐私和安全问题, 以及事故风险
+
+    </div>
+
+<!-- Lecture: Drones are an example of actionism in AI, as they involve physical actions in the real world. The development of drones requires expertise in computer vision, control theory, and aviation knowledge. -->
+
+    <div 
+    id            = "c35" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![DJI Mini 2](img/c01/dji-mini2.webp)
+#### DJI Mini 2
+
+    </div>
+
+    <div 
+    id            = "c36" 
+    class         = "step markdown" 
+    data-rel-to   = "c35" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![DJI Drones for Agriculture](img/c01/dji-drones.jpg)
+#### DJI Drones for Agriculture
+
+    </div>
+
+    <div 
+    id            = "c37" 
+    class         = "step markdown" 
+    data-rel-to   = "c36" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Drones Attack](img/c01/drones-war.webp)
+#### Angel Has Fallen (2019), 豆瓣评分 6.0
+
+    </div>
+
+    <div 
+    id            = "c38" 
+    class         = "step markdown" 
+    data-rel-to   = "c16" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 结论
+
+- 控制物理系统并在现实世界中执行行动
+- 可能在许多领域改善效率, 安全和生活质量
+- 带来一些伦理, 法律和社会问题
+
+    </div>
+
+    <div 
+    id            = "c39" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "1400" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 联结主义 Connectionism
+
+- 将大脑建模为相互连接的神经元网络
+- 可以从实例中学习
+- 可以将学到的知识泛化到新的情况
+
+    </div>
+
+    <div 
+    id            = "c40" 
+    class         = "step markdown" 
+    data-rel-to   = "c39" 
+    data-rel-x    = "0" 
+    data-rel-y    = "700" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 核心假设
+
+- 神经元连接 Neurons Connections
+- 机器学习 Machine Learning
+- 泛化 Generalization
+- 并行处理 Parallel Processing
+
+    </div>
+
+    <div 
+    id            = "c41" 
+    class         = "step markdown" 
+    data-rel-to   = "c40" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 神经元连接
+
+- 神经元可以被建模为网络中的节点
+- 神经元接受来自其他神经元的输入
+- 神经元向其他神经元产生输出
+- 神经元的连接强度可通过学习调整
+
+    </div>
+
+<!-- Lecture: The neurons in connectionist models are analogous to the neurons in the brain, and can receive and produce information through connections with other neurons. -->
+
+    <div 
+    id            = "c42" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neuron](img/c01/neuron.png)
+#### Neuron
+
+    </div>
+
+    <div 
+    id            = "c43" 
+    class         = "step markdown" 
+    data-rel-to   = "c42" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neurons](img/c01/neuron-1.jpg)
+#### Neurons
+
+    </div>
+
+    <div 
+    id            = "c44" 
+    class         = "step markdown" 
+    data-rel-to   = "c43" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neuron](img/c01/neuron.gif)
+#### Neuron
+
+    </div>
+
+    <div 
+    id            = "c45" 
+    class         = "step markdown" 
+    data-rel-to   = "c44" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neurons Connected](img/c01/neurons_connected.png)
+#### Neurons Connected
+
+    </div>
+
+    <div 
+    id            = "c46" 
+    class         = "step markdown" 
+    data-rel-to   = "c45" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neurons Connections](img/c01/neurons-connection.jpg)
+#### Neurons Connection
+
+    </div>
+
+    <div 
+    id            = "c48" 
+    class         = "step markdown" 
+    data-rel-to   = "c41" 
+    data-rel-x    = "-400" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 机器学习
+
+- 学习通过调整神经元的连接强度进行
+- 可以分成有监督学习，无监督学习，强化学习
+- 学习可以通过反向传播算法或其他方法发生
+
+    </div>
+
+<!-- Lecture: The core of connectionist models is the learning algorithm, which adjusts the strengths of the connections between neurons. Backpropagation is a popular learning algorithm that enables connectionist models to learn from labeled data. -->
+
+    <div 
+    id            = "c49" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Machine Learning](img/c01/machine-learning.jpg)
+#### Machine Learning
+
+    </div>
+
+    <div 
+    id            = "c50" 
+    class         = "step markdown" 
+    data-rel-to   = "c48" 
+    data-rel-x    = "800" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 泛化
+
+- 模型可以从实例中概括出新的情况
+- 泛化可以通过使用分布式表征来实现
+- 泛化可以在新的任务中获得更好的表现
+- 泛化可以更有效地利用资源
+
+    </div>
+
+    <div 
+    id            = "c51" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Generalization](img/c01/ai-generalization.png)
+#### Generalization
+
+    </div>
+
+    <div 
+    id            = "c52" 
+    class         = "step markdown" 
+    data-rel-to   = "c51" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Generalization](img/c01/ai-generalization.webp)
+#### Generalization
+
+    </div>
+
+    <div 
+    id            = "c53" 
+    class         = "step markdown" 
+    data-rel-to   = "c50" 
+    data-rel-x    = "-800" 
+    data-rel-y    = "300" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 并行处理
+
+- 通过同时激活多个神经元来并行处理
+- 可以带来更快和更有效的计算
+- 需要高效的硬件和软件实现
+
+    </div>
+
+<!-- Lecture: Parallel processing is a strength of connectionist models, as they can perform multiple computations in parallel through the activation of multiple neurons. Efficient hardware and software implementations are crucial for achieving effective parallel processing in connectionist models. -->
+
+    <div 
+    id            = "c54" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Parallel Processing](img/c01/parallel-processing.jpg)
+#### Parallel Processing
+
+    </div>
+
+    <div 
+    id            = "c55" 
+    class         = "step markdown" 
+    data-rel-to   = "c54" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![GPU Server](img/c01/a100-gpu-server.jpg)
+#### GPU Server
+
+    </div>
+
+    <div 
+    id            = "c56" 
+    class         = "step markdown" 
+    data-rel-to   = "c41" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1300" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 基本内容
+
+- 对大脑建模
+- 从实例中学习
+- 可在多领域应用
+
+    </div>
+
+    <div 
+    id            = "c57" 
+    class         = "step markdown" 
+    data-rel-to   = "c56" 
+    data-rel-x    = "800" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 挑战
+
+- 过拟合问题
+- 需要大量数据和算力
+- 在处理特定数据时有局限
+
+    </div>
+
+<!-- Lecture: Connectionism has several challenges that need to be addressed in order to create more effective and efficient AI systems. Overfitting is a common problem in connectionist models that can be addressed through regularization and other techniques. Large amounts of data and computational resources are required to train and run connectionist models, which can be a limitation in some applications. Connectionism also has limitations in dealing with sequential data and temporal dependencies, which need to be addressed through recurrent neural networks and other techniques. -->
+
+    <div 
+    id            = "c58" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Overfitting](img/c01/overfitting.jpg)
+#### Overfitting
+
+    </div>
+
+    <div 
+    id            = "c59" 
+    class         = "step markdown" 
+    data-rel-to   = "c58" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Overfitting](img/c01/overfitting1.jpg)
+#### Overfitting
+
+    </div>
+
+    <div 
+    id            = "c60" 
+    class         = "step markdown" 
+    data-rel-to   = "c59" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Overfitting](img/c01/overfitting.png)
+#### Overfitting
+
+    </div>
+
+    <div 
+    id            = "c61" 
+    class         = "step markdown" 
+    data-rel-to   = "c40" 
+    data-rel-x    = "1600" 
+    data-rel-y    = "-3000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 代表成果
+
+- 神经网络 Neural Networks
+- 深度学习 Deep Learning
+- 强化学习 Reinforcement Learning
+- 递归神经网络 Recurrent Neural Networks
+- 大语言模型 Large Language Models
+
+    </div>
+
+    <div 
+    id            = "c62" 
+    class         = "step markdown" 
+    data-rel-to   = "c61" 
+    data-rel-x    = "0" 
+    data-rel-y    = "900" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 神经网络
+
+- 是一种机器学习算法
+- 由多层相互连接的节点组成
+- 可以从实例中学习
+- 可以根据输入数据做出预测或决策
+- 应用于图像识别, 自然语言处理等诸多领域
+
+    </div>
+
+<!-- Lecture: Neural networks are an example of connectionism in AI, as they simulate the structure and function of the brain's neurons and synapses. Neural networks require expertise in mathematics, statistics, and computer science. -->
+
+    <div 
+    id            = "c63" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neural Networks](img/c01/neural-networks.webp)
+#### Neural Networks
+
+    </div>
+
+    <div 
+    id            = "c64" 
+    class         = "step markdown" 
+    data-rel-to   = "c63" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neural Networks](img/c01/neural-network.svg)
+#### Neural Networks
+
+    </div>
+
+    <div 
+    id            = "c65" 
+    class         = "step markdown" 
+    data-rel-to   = "c64" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neural Networks](img/c01/neural-network-1.jpeg)
+#### Neural Networks
+
+    </div>
+
+    <div 
+    id            = "c66" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neural Networks](img/c01/neural-network-3.webp)
+#### Neural Networks
+
+    </div>
+
+    <div 
+    id            = "c67" 
+    class         = "step markdown" 
+    data-rel-to   = "c66" 
+    data-rel-x    = "0" 
+    data-rel-y    = "0" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Neural Networks](img/c01/neural-network-2.png)
+#### Neural Networks
+
+    </div>
+
+    <div 
+    id            = "c68" 
+    class         = "step markdown" 
+    data-rel-to   = "c62" 
+    data-rel-x    = "0" 
+    data-rel-y    = "900" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 深度学习
+
+- 是机器学习的一个子领域
+- 它使用具有许多层的神经网络
+- 可以从数据中自动学习复杂的特征和模式
+- 在许多任务中取得了最先进的性能
+- 深度学习需要大量标记数据和算力
+
+    </div>
+
+<!-- Lecture: Deep learning is an example of connectionism in AI, as it uses neural networks with many layers to simulate the brain's hierarchical structure. Deep learning has revolutionized AI in recent years and has led to breakthroughs in many fields. However, deep learning also raises concerns about data privacy and bias. -->
+
+    <div 
+    id            = "c69" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Deep Learning](img/c01/deep.png)
+#### Deep Learning
+
+    </div>
+
+    <div 
+    id            = "c70" 
+    class         = "step markdown" 
+    data-rel-to   = "c68" 
+    data-rel-x    = "0" 
+    data-rel-y    = "900" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 强化学习
+
+- 是机器学习的一种类型
+- 到通过试验和错误来学习
+- 与环境互动, 并为其行动获得奖励或惩罚
+- 应用于游戏, 机器人等领域
+- 需要仔细调整奖励函数
+
+    </div>
+
+<!-- Lecture: Reinforcement learning is an example of connectionism in AI, as it involves learning through interactions with the environment. Reinforcement learning requires expertise in control theory, optimization, and decision making. -->
+
+    <div 
+    id            = "c71" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "400" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+![Reinforcement Learning](img/c01/reinforcement-learning.png)
+#### Reinforcement Learning
+
+    </div>
+
+    <div 
+    id            = "c72" 
+    class         = "step markdown" 
+    data-rel-to   = "c70" 
+    data-rel-x    = "0" 
+    data-rel-y    = "900" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 递归神经网络
+
+- 一种可以处理连续数据的神经网络类型
+- 有反馈连接, 使其能够保持状态信息
+- 应用于自然语言处理, 语音识别等诸多领域
+- 很难训练, 且容易出现梯度消失或爆炸的情况
+
+    </div>
+
+<!-- Lecture: Recurrent neural networks are an example of connectionism in AI, as they can simulate the brain's ability to process and store temporal information. Recurrent neural networks require expertise in signal processing, time-series analysis, and optimization. -->
+
+    <div 
+    id            = "c73" 
+    class         = "step markdown" 
+    data-rel-to   = "c72" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 大语言模型
+
+- 可以生成类似人类的文本
+- 已变得越来越复杂和强大
+
+    </div>
+
+    <div 
+    id            = "c74" 
+    class         = "step markdown" 
+    data-rel-to   = "c73" 
+    data-rel-x    = "-400" 
+    data-rel-y    = "500" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### Transformer模型
+
+- 2017 年由 Google 提出
+- 在许多语言任务上取得成果
+- 使用注意力机制
+- 已被用于创建强大的语言模型
+
+    </div>
+
+<!-- Lecture: The transformer model is a key breakthrough in LLMs, as it enables sophisticated natural language processing and generation. The transformer model uses attention mechanisms to capture dependencies between words and phrases, which has led to significant improvements in language tasks. -->
+
+    <div 
+    id            = "c75" 
+    class         = "step markdown" 
+    data-rel-to   = "c74" 
+    data-rel-x    = "600" 
+    data-rel-y    = "55" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "1">
+
+### 人类反馈强化学习
+
+- Reinforcement Learning from Human Feedback
+- 从人类反馈中学习
+- 应用于语言学习, 游戏和机器人领域
+- 需要仔细考虑道德和安全问题
+- 是近期的活跃研究领域
+
+    </div>
+
+    <div 
+    id            = "c76" 
+    class         = "step markdown" 
+    data-rel-to   = "c73" 
+    data-rel-x    = "0" 
+    data-rel-y    = "1000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 结论
+
+- 使用神经网络来模拟大脑的结构和功能
+- 带来了许多领域的突破
+- 引起人们对数据隐私, AI 偏见和道德的关注
+
+    </div>
+
+    <div 
+    id            = "c77" 
+    class         = "step markdown" 
+    data-rel-to   = "c13t" 
+    data-rel-x    = "4500" 
+    data-rel-y    = "-2000" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 三个流派的联系
+
+- 每种方法都有自己的技术, 算法和应用
+- 了解的区别和联系对于开发有效的 AI 非常重要
+
+    </div>
+
+    <div 
+    id            = "c78" 
+    class         = "step markdown" 
+    data-rel-to   = "c77" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 符号主义
+
+- 使用符号表示和逻辑来表示知识并对其进行推理
+- 在专家系统, 自然语言理解和自动推理方面有应用
+- 在处理不确定性和复杂性方面有局限性
+- 需要逻辑, 知识表示和推理方面的专业知识
+
+    </div>
+
+<!-- Lecture: Symbolism emphasizes representation and reasoning, and can be seen as a top-down approach to AI. Symbolism is connected to philosophy and cognitive science, as it deals with concepts and knowledge representation. -->
+
+    <div 
+    id            = "c79" 
+    class         = "step markdown" 
+    data-rel-to   = "c78" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 行为主义
+
+- 使用 AI 来控制物理系统并行动
+- 在机器人相关领域广泛应用
+- 提出了一些伦理, 法律和社会问题
+- 需要控制论, 电子学和软件工程等方面知识
+
+    </div>
+
+<!-- Lecture: Actionism emphasizes physical action in the real world, and can be seen as a middle-out approach to AI. Actionism is connected to engineering and robotics, as it deals with the design and control of physical systems. -->
+
+    <div 
+    id            = "c80" 
+    class         = "step markdown" 
+    data-rel-to   = "c79" 
+    data-rel-x    = "0" 
+    data-rel-y    = "800" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 联结主义
+
+- 将大脑建模为相互连接神经元网络
+- 可以从实例中学习, 并泛化到新的数据中
+- 在自然语言处理和许多其他领域都有应用
+- 需要大量数据和计算资源
+
+    </div>
+
+<!-- Lecture: Connectionism emphasizes learning from examples and generalization, and can be seen as a bottom-up approach to AI. Connectionism is connected to neuroscience and cognitive science, as it models the brain's structure and function. -->
+
+    <div 
+    id            = "c81" 
+    class         = "step markdown" 
+    data-rel-to   = "c80" 
+    data-rel-x    = "0" 
+    data-rel-y    = "900" 
+    data-rel-z    = "0" 
+    data-rotate-x = "0" 
+    data-rotate-y = "0" 
+    data-rotate-z = "0" 
+    data-scale    = "2">
+
+### 联系
+
+- 三大流派并不相互排斥
+- 每种方法都可以补充和加强其他方法
+- 联结主义模型可以用来学习符号推理的表示
+- 符号模型可以为联结主义模型提供约束和先验知识
+- 行为主义可以将联结主义和符号模型整合到物理系统中
+
+    </div>
+
+<!-- Lecture: Connectionism, symbolism, and actionism are not mutually exclusive approaches to AI, and can be combined and integrated to create more powerful and flexible AI systems. Understanding the connections between these approaches is important for developing effective AI solutions in complex and dynamic environments. -->
+
+    <div
+    id            = "mm13"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![ita 1.3 mindmap](img/c01/mindmap-1-3.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c13q"
+    class         = "step markdown"
+    data-rel-to   = "c13t"
+    data-rel-x    = "-200"
+    data-rel-y    = "-300"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 1.3 人工智能的技术流派
+
+- 人工智能有哪些主要技术流派?
+- 这些流派的关键假设是什么?
+- 这些流派分别有哪些优缺点?
+- 这些流派分别有哪些应用?
+- 你认为, 这些流派该如何融合?
+
+----
+
+[ 1.2 人工智能的发展历史 ](ita-1-2.html)
+[| 练习 |](ita-exec.html)
+[ 1.4 人工智能的发展现状与应用 ](ita-1-4.html)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

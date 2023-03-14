@@ -1,0 +1,808 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>IPIT | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="信息技术创新实践课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 "cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "15">
+
+    </div>
+
+<!-- what,why,and how -->
+
+    <div 
+    id         = "what"
+    class      = "step"
+    data-x     = "-1500"
+    data-y     = "-6000"
+    data-scale = "1">
+
+        <ul>
+            <li><h3>信息技术创新实践: WHAT?</h3>
+                <ul>
+                    <li class="substep">了解 IT 领域宏观图景</li>
+                    <li class="substep">使用 IT 相关解决问题</li>
+                    <li class="substep">运用 IT 思维预测未来</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div
+    id          = "why"
+    class       = "step"
+    data-rel-to = "what"
+    data-rel-x  = "1500"
+    data-scale  = "1">
+
+        <ul>
+            <li><h3>信息技术创新实践:WHY?</h3>
+                <ul>
+                    <li class="substep">实践是检验能力的唯一标准</li>
+                    <li class="substep">职业路径在试错中探索而来</li>
+                    <li class="substep">真实世界与学校环境大不同</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div
+    id          = "how"
+    class       = "step"
+    data-rel-to = "why"
+    data-rel-x  = "1500"
+    data-scale  = "1">
+
+        <ul>
+            <li><h3>信息技术创新实践: HOW?</h3>
+                <ul>
+                    <li class="substep">了解市场与行业技术</li>
+                    <li class="substep">比较并选择技术方向</li>
+                    <li class="substep">尝试解决真正的问题</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+<!-- 标题 -->
+    <div
+    id                  = "title"
+    class               = "step"
+    data-x              = "0"
+    data-y              = "0"
+    data-scale          = "5"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overview c1m how enterprise">
+
+        <h5 style="text-align: center">信息与通信技术的历史, 现在和未来</h5>
+        <br/>
+        <h1 style="text-align: center; font-size: 108px">信息技术创新实践</h1>
+        <br/>
+        <h5 style="text-align: center; font-size: 32px">Innovation and Practice of Information Technology</h5>
+        <br/>
+        <p class="footnote">
+            <inlinecode style="font-size: 24px">
+                    Powered by 
+                <a href="https://github.com/impress/impress.js/" style="text-shadow: 0 0 0 rgb(0, 0, 0, 0);">
+                    impress.js
+                </a>
+                <span><img class="icon" src="../favicon.png" style="width:16px;height:16px;vertical-align: 8px;"></span>
+                <br/>
+                    Ver. 2206
+            </inlinecode>
+        </p>
+
+    </div>
+
+<!-- 概述 -->
+
+    <div
+    id            = "t1"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "1280"
+    data-rel-y    = "2400"
+    data-z        = "-10"
+    data-rotate-z = "90"
+    data-scale    = "4">
+
+- 技术是制造一种产品的系统知识, 所采用的一种工艺或提供的一项服务
+- 技术的存在取决于人们的需要, 并满足其需要
+- 技术是人类肢体, 器官, 能力的延伸
+
+    </div>
+
+    <div
+    id            = "t2"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "-400"
+    data-rel-y    = "2100"
+    data-z        = "-10"
+    data-rotate-z = "0"
+    data-scale    = "4">
+
+### 信息技术的过去和现在
+
+- 巴贝奇差分机
+- 电子计算机
+- 智能手机
+- 移动通信
+- 机器人
+- 人工智能
+
+    </div>
+
+    <div
+    id            = "t2p"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![difference engine](img/c01/difference.jpg)
+
+    </div>
+
+    <div
+    id            = "t2p1"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![ENIAC](img/c01/eniac.png)
+
+    </div>
+
+    <div
+    id            = "t2p2"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![IBM PC](img/c01/ibm-pc.webp)
+
+    </div>
+
+    <div
+    id            = "t2p3"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![smart phone](img/c01/smart-phone.jpg)
+
+    </div>
+
+    <div
+    id            = "t2p6"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![mobile communication](img/c01/mobile-communication.jpeg)
+
+    </div>
+
+    <div
+    id            = "t2p4"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![robots](img/c01/robots.jpg)
+
+    </div>
+
+    <div
+    id            = "t2p5"
+    class         = "step markdown"
+    data-rel-to   = "t2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![NLP AI](img/c01/ai-nlp.png)
+
+    </div>
+
+    <div
+    id            = "t3"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "400"
+    data-rel-y    = "2380"
+    data-z        = "-10"
+    data-rotate-z = "0"
+    data-scale    = "3">
+
+### 信息技术的未来
+
+- 虚拟生活
+- 类人智能
+- 意识上传
+- 塞博战争
+
+    </div>
+
+    <div
+    id            = "t3p1"
+    class         = "step markdown"
+    data-rel-to   = "t3"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![virtual life](img/c01/virtual-life.jpeg)
+
+    </div>
+
+    <div
+    id            = "t3p2"
+    class         = "step markdown"
+    data-rel-to   = "t3"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![terminator](img/c01/terminator.jpg)
+
+    </div>
+
+    <div
+    id            = "t3p3"
+    class         = "step markdown"
+    data-rel-to   = "t3"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-z        = "10"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+![mind upload](img/c01/mind-upload.jpg)
+
+    </div>
+
+    <div
+    id            = "t3p"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "400"
+    data-rel-y    = "2380"
+    data-z        = "0"
+    data-rotate-z = "0"
+    data-scale    = "3">
+
+![matrix](img/c01/matrix.jpeg)
+
+    </div>
+
+    <div
+    id            = "big"
+    data-rel-to   = "title"
+    class         = "step"
+    data-rel-x    = "2800"
+    data-rotate-z = "-90"
+    data-scale    = "5">
+
+        <p>Innovation and Practice</p>
+        <p>of</p>
+        <h2 style="font-size:36pt"><span class="point">Information</span> <span class="point">Technology</span></h2>
+
+    </div>
+
+    <div
+    id            = "tiny"
+    class         = "step markdown"
+    data-rel-to   = "big"
+    class         = "step"
+    data-z        = "-3000"
+    data-rotate-z = "360"
+    data-scale    = "0.5">
+
+什么是信息技术 (IT)?
+
+    </div>
+
+    <div
+    id          = "pro"
+    class       = "step"
+    data-rel-to = "title"
+    data-rel-x  = "-3000"
+    data-rel-y  = "1000"
+    data-z      = "0"
+    data-rotate = "90"
+    data-scale  = "6">
+
+        <p>信息技术是对<span class="point">人脑</span>的<b class="point">辅助, 增强, 和替代</b></p>
+
+    </div>
+
+    <div
+    id          = "d1"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-1800"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+- 辅助: 记忆, 运算
+
+    </div>
+
+    <div
+    id          = "d1p"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-1800"
+    data-z      = "10"
+    data-rotate = "180"
+    data-scale  = "5">
+
+![storage](img/c01/storage.webp)
+
+    </div>
+
+    <div
+    id          = "d2"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-2600"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+- 增强: 虚拟现实, 增强现实, 通信, 决策支持
+
+    </div>
+
+    <div
+    id          = "d2p"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-2600"
+    data-z      = "10"
+    data-rotate = "180"
+    data-scale  = "5">
+
+![virtual](img/c01/virtual.webp)
+
+    </div>
+
+    <div
+    id          = "d3"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-3400"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+- 取代: 自动决策, 人工智能
+
+    </div>
+
+    <div
+    id          = "d3p"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "0"
+    data-rel-y  = "-3400"
+    data-z      = "10"
+    data-rotate = "180"
+    data-scale  = "5">
+
+![artifical intelligence](img/c01/ai.jpg)
+
+    </div>
+
+    <div
+    id          = "overviewmiddle"
+    class       = "step"
+    data-rel-to = "title"
+    data-x      = "0"
+    data-y      = "0"
+    data-z      = "-1000"
+    data-scale  = "15">
+
+    </div>
+
+<!-- 目录,共 8 章 -->
+
+    <div
+    id                  = "c1m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "5000"
+    data-rel-y          = "0"
+    data-rotate-y       = "45"
+    data-rotate-x       = "0"
+    data-rotate         = "270"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle overviewmiddle c2m">
+
+        <h3>1. 信息技术概述</h3>
+        <p>
+            <a href="ipit-1-1-2206.html" target="_blank">1. 信息技术</a><br/>
+            <a href="ipit-1-1-2206.html#/a12" target="_blank">2. 信息技术的历史与现状</a><br/>
+            <a href="ipit-1-1-2206.html#/a22" target="_blank">3. 新信息技术的种类</a><br/>
+            <a href="ipit-1-1-2206.html#/a24" target="_blank">4. 信息技术发展趋势</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c2m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "3535"
+    data-rel-y          = "-3535"
+    data-rotate-y       = "31.82"
+    data-rotate-x       = "31.82"
+    data-rotate         = "225"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c1m c3m">
+
+        <h3>2. 移动互联网</h3>
+        <p>
+            <a href="ipit-2-1-2206.html" target="_blank">1. 移动互联网的发展历史</a><br/>
+            <a href="ipit-2-2-2206.html" target="_blank">2. 5G 技术</a><br/>
+            <a href="ipit-2-3-2206.html" target="_blank">3. 定位技术</a><br/>
+            <a href="ipit-2-4-2206.html" target="_blank">4. 身份认证技术</a><br/>
+            <a href="ipit-2-5-2206.html" target="_blank">5. 移动互联网应用</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c3m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "0"
+    data-rel-y          = "-5000"
+    data-rotate-y       = "0"
+    data-rotate-x       = "45"
+    data-rotate         = "180"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c2m c4m">
+
+        <h3>3. 数据安全区块链</h3>
+        <p>
+            <a href="ipit-3-1-2206.html" target="_blank">1. 区块链概述</a><br/>
+            <a href="ipit-3-2-2206.html" target="_blank">2. 区块链的应用场景</a><br/>
+            <a href="ipit-3-3-2206.html" target="_blank">3. 数据安全区块链</a><br/>
+            <a href="ipit-3-4-2206.html" target="_blank">4. 区块链的非金融行业应用</a><br/>
+            <a href="ipit-3-5-2206.html" target="_blank">5. 区块链的法律监管</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c4m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3535"
+    data-rel-y          = "-3535"
+    data-rotate-y       = "-31.82"
+    data-rotate-x       = "31.82"
+    data-rotate         = "135"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c3m c5m">
+
+        <h3>4. 知识图谱</h3>
+        <p>
+            <a href="ipit-4-1-2206.html" target="_blank">1. 知识图谱概述</a><br/>
+            <a href="ipit-4-2-2206.html" target="_blank">2. 知识图谱的知识表达系统</a><br/>
+            <a href="ipit-4-3-2206.html" target="_blank">3. 知识图谱模式构建</a><br/>
+            <a href="ipit-4-4-2206.html" target="_blank">4. 知识图谱的应用</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c5m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-5000"
+    data-rel-y          = "0"
+    data-rotate-y       = "-45"
+    data-rotate-x       = "0"
+    data-rotate         = "90"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c4m c6m">
+
+        <h3>5. 大数据</h3>
+        <p>
+            <a href="ipit-5-1-2206.html" target="_blank">1. 大数据的概念</a><br/>
+            <a href="ipit-5-2-2206.html" target="_blank">2. 大数据的采集与预处理</a><br/>
+            <a href="ipit-5-3-2206.html" target="_blank">3. 大数据的挖掘与可视化</a><br/>
+            <a href="ipit-5-4-2206.html" target="_blank">4. 大数据的综合应用</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c6m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3535"
+    data-rel-y          = "3535"
+    data-rotate-y       = "-31.82"
+    data-rotate-x       = "-31.82"
+    data-rotate         = "45"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c5m c7m">
+
+        <h3>6. 扭曲现实</h3>
+        <p>
+            <a href="ipit-6-1-2206.html" target="_blank">1. 虚拟现实技术</a><br/>
+            <a href="ipit-6-2-2206.html" target="_blank">2. 增强现实技术</a><br/>
+            <a href="ipit-6-3-2206.html" target="_blank">3. 混合现实技术</a><br/>
+            <a href="ipit-6-4-2206.html" target="_blank">4. 下一代人机交互</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c7m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "0"
+    data-rel-y          = "5000"
+    data-rotate-y       = "0"
+    data-rotate-x       = "-45"
+    data-rotate         = "0"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c6m c8m">
+
+        <h3>7. 人工智能</h3>
+        <p>
+            <a href="ipit-7-1-2206.html" target="_blank">1. 人工智能概述</a><br/>
+            <a href="ipit-7-2-2206.html" target="_blank">2. 机器学习</a><br/>
+            <a href="ipit-7-3-2206.html" target="_blank">3. 深度学习</a><br/>
+            <a href="ipit-7-4-2206.html" target="_blank">4. 人工智能应用</a><br/>
+            <a href="ipit-7-5-2206.html" target="_blank">5. 人工智能学习路径</a>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c8m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "3535"
+    data-rel-y          = "3535"
+    data-rotate-y       = "31.82"
+    data-rotate-x       = "-31.82"
+    data-rotate         = "-45"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overviewmiddle overviewmiddle c7m overview">
+
+        <h3>8. 其他前沿信息技术</h3>
+        <p>
+            <a href="ipit-8-1-2206.html" target="_blank">1. 技术成熟度曲线</a><br/>
+            <a href="ipit-8-2-2206.html" target="_blank">2. 先进制造</a><br/>
+            <a href="ipit-8-3-2206.html" target="_blank">3. 元宇宙</a><br/>
+            <a href="ipit-8-4-2206.html" target="_blank">4. 动力外骨骼</a><br/>
+            <a href="ipit-8-5-2206.html" target="_blank">5. 脑机接口</a>
+        </p>
+
+    </div>
+
+    <div
+    id            = "resources"
+    class         = "step"
+    data-rel-to   = "title"
+    data-rel-x    = "4000"
+    data-rel-y    = "2000"
+    data-rotate-y = "0"
+    data-rotate-x = "0"
+    data-rotate   = "0"
+    data-rel-z    = "0"
+    data-scale    = "5">
+
+    <h3 style="text-align:center">
+        <a href="ipit-src.html" target="_blank">课程资源</a>
+    </h3>
+
+     </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
+<!--
+    DNNNNDDDD8888OOOOZOOOZZZZZZZZOOOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNNNN
+    DNNDDDDD888OOOOZZZZZZ$$$$$Z$ZZZZZOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNN
+    NNDDDDDD8OOOZZZ$$$$$$$$$$Z$$$$$ZZZZZOOOO888888888DD8DDDDDDNNNNNNNNNNNNNNNNNNNNNN
+    DDDDDDDDOOZZZ$$$$$$$$$?7$$$$$$$$ZZZ$ZOOO888888888888888DDDDDNNNNNNNNNNNNNNNNNNNN
+    DDDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$ZZZOOOOOOOOO88O88888DDDDDDDNNNNNNNNNNNNNNNNN
+    DDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$$ZZZZZZZOOOOOO88O888888DDDDDDNNNNNNNNNNNNNNNN
+    DDDDD88OZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$Z$ZZZZZOOOOOO8O88888888DDDDDNNNNNNNNNNNNNNN
+    DDDDD8OZZZZ$7$$$$$$$$$$$$$$$88N7DZ$$$$$$$ZZZZZZZOOOOOO88888O88DDDDDNNNNNNNNNNNNN
+    DDDDD8OZZZ$$$$$$$$$$$$$$$$$$D++=Z7777$$$$888$ZZZZZZOOOOOO8888888DDDDNDNNNNNNNNNN
+    DDDD8OOZ$Z$$$$$$$$$$$$$$$$$7?===$7777777$N=DNZZZZZZZOOOOO8O8888888DDDDNNNNNNNNNN
+    DDDD8OZZZZ$$$$$$$$$$$$$$$$$7?===$77777777DN?.8NZZZZZZZZOOOOO8888888DDDDNNNNNNNNN
+    DDD88OZZZZZZZ$$$$$$$$$$$$$$$:.==N$7$$$77$$$M=.8D$ZZZZZZZZOOOOO8888888DDDNNNNNNNN
+    DDD8ZO8OZZZOZZZZ$$$$$$$$$$$$8,..+NNM++++=NNM+=.N$$ZZZZZZZZOOO8OO888888DDDNNNNNNN
+    DDD8888888OOOZZZZZZ$$$$$$$$$$D,..+==========N=,N$$$ZZZZZZZZZOO8O888888DDDDNNNNNN
+    DDD8D88888888888ZOZZ$$$$$$$$$DNN.===+=MM====+=NN$$?$ZZZZZZZZZOOOOO888888DDNNNNNN
+    D8888O88O8O8OOOOOOO88ZZ$ZZ$$$D====+=NMMMM+==++MN77$$$$ZZZZZZZZZOO8OO8888DDDNNNNN
+    8O8OOOOOOOOOOOOOOZOOOO88ZZZZZN++====NMMMM+==NMMM7777$$$ZZZZZZZZZOOOOO888888DDNNN
+    8OOOOOOOOOOZZZZZZZZZZZZ888OOON++=====MMM?===NMMM77777$$$ZZZZZZZZZZOOOO878888DNNN
+    OOOOOOOOZZZ$$$$$$7$7$$ZZ888OONN=====+=========MM777777$$$ZZZZZZZZZZZOOOO8888DDNN
+    OOZZZ$$$$$7777777777$O8OOOOOOOON+==~~:,,,,,.~~=NI777777$$$ZZZZZZZZZZOOOOO8888DDD
+    ZZ$$77IIIII7IIIIII7$ZZOOOOOOOOOOD=,,.  ......,DNII777777$$$$ZZZZZZZZZOOOOO8888DD
+    Z$77777$ZO88DDO$$OOOZOOOOMMMZZZOOODNMMMMMDNNNNI7II77777777$$$$ZZZZZZZZOOOOO8888D
+    $ZOO8OOOOOOOOOOODD8OOOZO8ZZZZMMMZZMM88M8M8MMII7IIIIII777777$$$ZZZZZZZZZZOOOO8888
+    8OOOOOOOOOOOOOOOO8OO8OZZOZMMOZZZMMZZOM888M8DIIIIIIIII777I777$$$$ZZZ$ZZZZZOOOO888
+    OO7OOOOOOOOOOOOOOOOOOMM.7ZZ$$$ZZZZMMZZM8.M8DM?IIIIIII777III7$$$$$IZZZZZZZZOOO888
+    OOOOOOOOOOOOOOOOOOOOOO8DM...MMMMNZZ.8O.MMMDM8N+IIIIIII77I777$$$$$$$$ZZZZZOOOI888
+    OOOOZZZZ$$$$$$ZZZZZZZZZ$M$ZO.....MMM.MMMMMMDDMI,M7IIII7777777$$$$$$$ZZZZZZZZOOO8
+    ZZ88$:DD$8888??II$$$$$$NMMMMZ$$.,NMMMMMMMMMMDI.,,:MMIII7777777$$$$$$$ZZZZZZZOOOO
+    ODDD=:88~D88+,,8O?=+I777IZZ=OOO+MMMMMMMMMMMMD?..DMMMM$II7I77777$$$$$$ZZZZZZZZOOO
+    O888~,O8,888,D8OOOO=$+IIII$+,??,MMMM M==.MMMD?MMM7$::,MM7I777777$$$$$$$ZZZZZZZZZ
+    +D887,,8+,O+78OO~~~~7$+?II7,?O?OMM.M~==~~M.M8????+IMM..MMMII7777$$$$$$$$ZZZ$ZZZZ
+    ~?OOZ=,,ZZO=7+=.,,I?$77+II7ZOI?Z=8MDDDMMDDONI??????I777MD7::7777$$$$$$$$ZZZZZZZZ
+    Z,:=$OOZ7++O,.,$$$$$$$$$?DNONNM8$$NZZNN..MMM,,N??????????I77MI7777$$$$$$ZZZZZZZZ
+    $O$,IO~,~,:8++++,,,,,,$DMDIIOOOO77MZZN..ZMMMOM???????????IIII7777777$$$$$ZZZZZZZ
+    :++=::=Z7=+==,,Z$Z?ZMMMMI777NOO77IZZZO.8M,NNNMN+??????????IIII777777$$$$$ZZZZZZZ
+    ~:::I$~,=$?=~??ZOMNNZMMM7D$7NOOII8ZZZZ.M..MDD.MM++++++?????IIII77777$$$$$ZZZZZZ$
+    ZZZ7+~::=,OI:DDMD888ZMMMI7DIZZ7..8ZZI..M..M.M8M=====++++??????II777I7$$$$$ZZZZZZ
+    ===~,:O+:8DD?NOZZ888ZDMM7787Z7..Z88Z...M,MO.D8M~~~======++????IIII7777$$$$$$ZZZZ
+    OZZZO8+,7MMMNOOZZ888Z8MMOD.DZ...888D..MMD..ZDMM:~~~~~~~==+++????IIIII7777$$$ZZZ?
+    OOZMMMM.MD8MMMOZ7IDD78MO,OMD:.8N7I8N..MMM.NMDM,:~~~~~~~~===+++???IIIII7777$$ZZZI
+    M77NDDOZN8OZMMZZZI8.+M...O88,...Z$N=.NMM.OM.D,,:~~~~~~~~~=====++???III77777$ZZZZ
+    D8MD88ION8MMDMZZZIDO7M..ZNZO,..+ZZZ.M..M.MMN:,,:~~~~~~~:~~~~===++???IIII777$$ZZZ
+    DDM888IO88MODMOZOOO7IZ8DDOO8...$....D..MDM.M:.,:~~~~~~~~~~~~~~===++??+III777$ZZZ
+    DD8M88IZ8DMODI$8ZZMM$IID7OO:,.IZ....D..M8.8M..,:~~~~~~~::~~~~~~~==++?+?III77$$$$
+    D8888888888OOOD8OZDM$OOOOO..,7ODZ....MM.D.OM.,,:~~~~~~~~::::::::~~==+???III7$$$$
+    D88888888MMOZI88OZ8M8O.OO.,,ODDD:.,MMM..M.M..,,::~~~~~::::::::::~~~==++???I7$$$$
+    N888NN88DMMZZZ?8:IDO..O8,88DZ778,,,.M..M.M...,,:::::::::::::::::::~~==++???I$$$$
+    D88ZZM8ZMMM$$.?D.?M..N..$,,,,8IO,,O...NM.M...,,,::::::::::::::::::::~~===+??I$$$
+    DD8?ZMOMIM $.Z.Z?+MIO.O=?.??,O?D.OO..MM.O...,,,::::::::::::::::::::,:~~~==+??777
+    ND8I+..ZIM,$,..8$.+....=+I======M==M=MM==M==O==M=$:::::~~~~~~:::::::::~~~==+??II
+    NDDDDDDDD8D8DDDDD88DD8888NI8DN=MM==M==M=MM+=M=~O+NOOOOOOOOOOOOOOOOOZOZOOOO888DDD
+    ---mengma2008---------yemengma.cn-------------Signture Made by GlassGiant.com---
+-->
