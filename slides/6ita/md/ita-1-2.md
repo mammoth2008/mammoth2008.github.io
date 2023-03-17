@@ -237,7 +237,7 @@
 #### Back-propagation
 
 ### 概率推理和机器学习 (1987-)
-#### 研发的基准: 数据集和竞赛
+- 研发的基准: 数据集和竞赛
 - Hidden Markov Model, HMM
 - Bayesian Network
 - Reinforcement Learning & Markov Decision Processe
@@ -248,7 +248,7 @@
 #### ViaVoice from IBM
 
 ### 大数据 (2001- )
-#### 大力出奇迹
+- 大力出奇迹
 - 自然语言理解
 - 计算机视觉
 - IBM, Watson
@@ -265,7 +265,7 @@
 #### Dataset of GPT-3
 
 ### 深度学习狂潮 (2011- )
-#### 人多力量大
+- 人多力量大
 - 多层神经网络
 - 卷积神经网络, Convolution Neural Network
 - 循环神经网络, Recurrent Neural Network
@@ -280,7 +280,7 @@
 #### GPU Server
 
 ### 大语言模型 (2020-)
-#### Transformer Model
+- Transformer Model
 - RLHF, Reinforcement Learning from Human Feedback
 - Parameter War: 0.3B, 1.5B, 175B, 540B, 1200B
 
