@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 18 Mar 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Mar 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Week 12 回顾</title>
+      <link>https://yemengma.cn/post/23w12-review/</link>
+      <pubDate>Sat, 25 Mar 2023 08:45:07 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/23w12-review/</guid>
+      <description>没有想法 上周五凌晨，OpenAI 发布了 Plugins 系统。看到这条消息的时候，脑子真是嗡的一下。 这是要端掉人类的大本营啊。以 GPT-4 的能力，再加上能够访问网络</description>
+    </item>
+    
     <item>
       <title>2023 Week 11 回顾</title>
       <link>https://yemengma.cn/post/23w11-review/</link>
