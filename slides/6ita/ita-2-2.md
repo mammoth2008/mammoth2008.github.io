@@ -1,3 +1,6 @@
+2 Deep Learning
+2.1 Introduction
+
 ### The Birth and Development of Artificial Neural Networks
 
 - Early inspiration: Biological neural networks
@@ -12,7 +15,6 @@
 <!-- Lecture: The development of artificial neural networks (ANNs) was inspired by the structure and function of biological neural networks in living organisms. In 1943, McCulloch and Pitts presented the first mathematical model of a neuron, laying the foundation for future research. -->
 
 ![McCulloch and Pitts](https://chat.openai.com/img/c02/mcculloch-pitts.jpg)
-
 #### McCulloch and Pitts: Pioneers of Artificial Neural Networks
 
 ### Perceptron and Limitations
@@ -26,7 +28,6 @@
 <!-- Lecture: The Perceptron, developed by Rosenblatt in 1958, was an early attempt to create an artificial neuron capable of learning simple tasks. However, it had limitations, such as being able to solve only linearly separable problems. The XOR problem demonstrated this weakness, leading to Minsky and Papert's critique and a decline in ANN research funding. -->
 
 ![Perceptron](https://chat.openai.com/img/c02/perceptron.jpg)
-
 #### Rosenblatt's Perceptron
 
 ### Backpropagation and Resurgence of ANNs
