@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 15 Apr 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Apr 2023 18:25:09 +0800</lastBuildDate><atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>日贴230416 Sun Auto-Everything</title>
+      <link>https://yemengma.cn/post/2023-04-16-sun/</link>
+      <pubDate>Sun, 16 Apr 2023 18:25:09 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/2023-04-16-sun/</guid>
+      <description>昨天写了篇短文谈 Auto-GPT，今早就看到有人做了个 AutoSD。这里的「SD」，是 Stable Diffusion XL。 原理是 Auto-GPT 思路，不过又有点不一样。作者用 GPT 生成</description>
+    </item>
+    
     <item>
       <title>2023 Week 15 回顾</title>
       <link>https://yemengma.cn/post/23w15-review/</link>
