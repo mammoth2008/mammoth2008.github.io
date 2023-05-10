@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>日贴230508 Mon Deep Learning 1.1 - 人生玩家</title>
+  <title>日贴230510 Wed Deep Learning 1.2 - 人生玩家</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.111.3 with theme even" />
 
 
-<link rel="canonical" href="https://yemengma.cn/post/2023-05-08-mon/" />
+<link rel="canonical" href="https://yemengma.cn/post/2023-05-10-wed/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -135,10 +135,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">日贴230508 Mon Deep Learning 1.1</h1>
+      <h1 class="post-title">日贴230510 Wed Deep Learning 1.2</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2023-05-08 </span>
+        <span class="post-time"> 2023-05-10 </span>
         <div class="post-category">
             <a href="/categories/%E7%AC%94%E8%AE%B0/"> 笔记 </a>
             </div>
@@ -151,22 +151,30 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#ch1-引言">Ch1 引言</a></li>
+    <li><a href="#ch1-12-深度学习的历史趋势">Ch1 1.2 深度学习的历史趋势</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <h1 id="ch1-引言">Ch1 引言</h1>
-<p>人工智能的真正挑战，在于解决哪些对人来说很容易执行、但很难形式化描述的任务。</p>
-<p>……本书讨论一种解决方案。该方案可以让计算机从经验中学习，并根据层次化的概念体系来理解世界，而每个概念则通过与某些相对简单的概念之间的关系来定义……如果绘制出表示这些概念如何建立在彼此之上的图，我们将得到一张“深”（层次很多）的图。基于这个原因，我们称这种方法为 AI <strong>深度学习</strong>。</p>
-<p>人工智能的一个关键挑战，就是如何将这些非形式化的知识传达给计算机。</p>
-<p>AI 系统需要具备自己获取知识的能力，即从原始数据中提取模式的能力。这种能力称为机器学习。</p>
-<p>机器学习算法的性能在很大程度上依赖于给定数据的<strong>表示（representation）</strong>。表示的选择会对机器学习算法的性能产生巨大的影响。</p>
-<p>许多人工智能任务都可以通过以下方式解决：先提取一个合适的特征集，然后将这些特征提供给简单的机器学习算法。这种方法的关键在于设计特征，而不是设计机器学习算法。然而，对于许多任务来说，我们很难知道该提取哪些特征。</p>
-<p>解决这个问题的途径之一，是使用机器学习来发现表示本身，而不仅仅是把表示映射到输出。这种方法称为<strong>表示学习（representation learning）</strong>。表示学习的典型例子是自编码器（autoencoder），它由一个编码器和一个解码器组成，编码器将输入数据转换为不同的表示，解码器将这个新的表示转换为重建的输入。自动编码器的训练目标是使重建的输入尽可能接近原始输入，但同时也使表示有某些特定的好处。例如，我们可以限制表示中的元素数量，从而使编码器被迫学习一种压缩数据的表示。我们也可以在训练过程中向表示中添加噪声，从而使编码器被迫学习鲁棒性较强的表示。</p>
-<p>当设计特征或设计用于学习特征的算法时，我们的目标通常是分离出能解释观察数据的<strong>变差因素(factors of variation)</strong>，即数据中的统计结构。如果我们能够完美地分离出这些因素，那么我们就能够构建一个完美的表示，其中包含关于数据生成方式的所有信息。在实际应用中，我们通常只能分离出一部分变差因素，或者只能分离出我们感兴趣的变差因素。这些变差因素通常被称为<strong>因果因素</strong>（causal factors）或<strong>因果机制</strong>（causal mechanisms）。</p>
-<p>深度学习让计算机通过较简单的概念构建复杂的概念。深度学习模型的典型例子是前馈深度网络或<strong>多层感知机（multilayer perceptron, MLP）</strong>。多层感知机仅仅是一个将一组输入值映射到输出值的数学函数。这个函数由许多较简单的函数复合而成。每个较简单的函数只能对应于输入的一种简单模式，而复合函数则对应于输入的复杂模式。我们可以认为不同数学函数的每一次应用都为输入提供了新的表示。</p>
+      <h1 id="ch1-12-深度学习的历史趋势">Ch1 1.2 深度学习的历史趋势</h1>
+<p>一般认为,深度学习到目前已经经历了三次发展浪潮:20 世纪 40 年代到 60 年代的控制论(Cybernetics),20 世纪 80 年代到 90 年代的连接主义(connectionism)和 2006 年以来的深度学习.</p>
+<p>现代术语&quot;深度学习&quot;超越了目前机器学习模型的神经科学观点.它述诸于学习多层次组合这一更普遍的原理.</p>
+<p>现代深度学习最早的前身是从神经科学角度出发的简单线性模型.这些模型设计为使用一组$n$个输入$x_1,\dots,x_n$来预测一个输出$y$.这些模型希望学习一组权重$w_1,\dots,w_n$,并计算它们的输出$f(\bf{x,w})=x_1w_1+\dots+x_nw_n$.</p>
+<p>McCulloch-Pitts神经元是脑功能的早起模型.感知机成为第一个能根据每个类别的输入样本来学习权重的模型.自适应线性单元(ADALINE)简单地返回函数$f(\bf{x,w})$的值来预测一个实数.用于调节 ADALINE 权重的学习算法被称为随机梯度下降(SGD, Stochasitc Gradient Descent). 基于感知机和 ADALINE 的模型被称为线性模型. 线性模型有许多局限性,最著名的是,它们不能学习异或函数(XOR).</p>
+<p>在 20 世纪 80 年代,神经网络的研究者们开始研究如何训练多层神经网络.这些网络被称为多层感知机(MLP, Multilayer Perceptron).MLP 由许多神经元组成,每个神经元都是一个线性模型,但是使用非线性函数来激活.这些非线性函数被称为激活函数(activation function).MLP 可以学习异或函数,但是在 20 世纪 90 年代,研究者们发现,训练 MLP 是困难的.这些困难被称为梯度消失问题(gradient vanishing problem).在 20 世纪 90 年代,研究者们开始使用其他模型,如支持向量机(SVM, Support Vector Machine)和决策树(decision tree).</p>
+<p>20 世纪 80 年代,神经网络研究的第二次浪潮在很大程度上是伴随一个被称为联结主义(connectionism)或并行分布处理(parallel distributed processing)潮流而出现的,它的背景是认知科学.联结主义的中心思想是,当网络将大量简单的计算单元连接在一起时,可以实现智能行为.</p>
+<p>在 20 世纪 80 年代的联结主义期间,形成的几个关键概念,在今天的深度学习中仍然是非常重要的:</p>
+<ul>
+<li>分布式表示(distributed representation): 一个概念可以由许多不同的特征来表示,而不是由一个特定的特征来表示.例如,一个人可以被表示为年龄、性别、国籍、职业等特征的集合.这些特征可以以不同的方式组合来表示不同的人.这种分布式表示的好处是,它可以更容易地泛化到新的情况,并且可以更有效地利用统计信息.</li>
+<li>反向传播算法(backpropagation): 一种有效的训练多层神经网络的方法.它可以被看作是链式法则的应用,用于计算神经网络中每个参数的梯度.</li>
+<li>长短时记忆(LSTM, Long Short-Term Memory): 一种特殊的神经网络结构,可以有效地学习长期依赖关系.它是一种递归神经网络(RNN, Recurrent Neural Network),它的参数可以在时间上共享.</li>
+</ul>
+<p>神经网络的第三次浪潮始于 2006 年的突破.Geoffrey Hinton 表明名为&quot;深度信念网络&quot;的神经网络可以使用一种称为&quot;贪婪逐层预训练&quot;的策略来有效训练.这种策略是,首先训练一个模型的第一层,然后将其输出作为第二层的训练数据,以此类推.这种策略的好处是,它可以避免梯度消失问题,并且可以更有效地训练深度模型.这种策略的缺点是,它不能直接应用于所有类型的模型,并且它需要一个预训练阶段,这增加了训练时间.</p>
+<p>在 2006 年之后,研究者们发现,使用更好的优化算法,如 AdaGrad, RMSProp 和 Adam,可以更有效地训练深度模型.这些算法的一个关键特性是,它们可以自动调整每个参数的学习率.这些算法的另一个关键特性是,它们可以使用更复杂的模型,如卷积神经网络(CNN, Convolutional Neural Network)和递归神经网络(RNN, Recurrent Neural Network),而不需要预训练.</p>
+<p>在 2012 年, Alex Krizhevsky 等人使用卷积神经网络(CNN)赢得了 ImageNet 图像分类挑战赛.这是深度学习的一个重要里程碑,因为它表明,深度学习可以在实际应用中取得出色的结果.</p>
+<p>随着训练数据的增加,所需的技巧正在减少.截止 2016 年,一个简单的经验法则是:监督深度学习算法在每类给定 5000 个标记样本的情况下,可以很好地工作;当至少有 1000 万个标注样本的数据集用于训练时,它将达到或超过人类表现.</p>
+<p>深度学习的另一个重大成就,是在强化学习(reinforcement learning)中的扩展.在强化学习中,一个自主的智能体必须在没有人类操作者指导的情况下,通过试错来学习执行任务.</p>
 <p><a href="https://book.douban.com/subject/27087503/">《深度学习》</a></p>
 <p>原作名: Deep Learning: Adaptive Computation and Machine Learning series</p>
 <p>作者: [美] 伊恩·古德费洛 / [加] 约书亚·本吉奥 / [加] 亚伦·库维尔</p>
@@ -184,7 +192,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2023-05-08
+        2023-05-10
         
     </span>
   </p>
@@ -201,13 +209,9 @@
           <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/2023-05-10-wed/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">日贴230510 Wed Deep Learning 1.2</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/23w18-review/">
-            <span class="next-text nav-default">2023 Week 18 回顾</span>
+        
+        <a class="next" href="/post/2023-05-08-mon/">
+            <span class="next-text nav-default">日贴230508 Mon Deep Learning 1.1</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

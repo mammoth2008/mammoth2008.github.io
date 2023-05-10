@@ -3,62 +3,69 @@
   
   <url>
     <loc>https://yemengma.cn/tags/ai/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/categories/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/post/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yemengma.cn/post/2023-05-08-mon/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <loc>https://yemengma.cn/post/2023-05-10-wed/</loc>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-05-08T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/post/2023-05-08-mon/</loc>
     <lastmod>2023-05-08T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
