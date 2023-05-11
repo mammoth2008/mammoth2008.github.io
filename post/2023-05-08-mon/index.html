@@ -106,11 +106,15 @@
 </script>
 
 
-<script
-  id="MathJax-script"
-  async
-  src="lib/mathjax/config/TeX-AMS_CHTML.js"
->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]}
+    });
+</script>
+
+<script type="text/javascript" async  src="/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
 </script>
 
 
@@ -281,7 +285,14 @@
         }
     };
   </script>
-  <script type="text/javascript" async src="/lib/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "CommonHTML": {
+        scale: 100
+      }
+      });
+    </script>
+
 
 
 
