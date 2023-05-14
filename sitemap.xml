@@ -2,35 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yemengma.cn/tags/ai/</loc>
-    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
+    <loc>https://yemengma.cn/post/23w19-review/</loc>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/categories/</loc>
-    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/post/</loc>
-    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/tags/</loc>
-    <lastmod>2023-05-10T18:25:09+08:00</lastmod>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yemengma.cn/</loc>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE-%E8%AE%B0%E5%BD%95-%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2023-05-13T08:45:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yemengma.cn/tags/ai/</loc>
     <lastmod>2023-05-10T18:25:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -73,20 +94,6 @@
   
   <url>
     <loc>https://yemengma.cn/post/23w18-review/</loc>
-    <lastmod>2023-05-06T08:45:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE-%E8%AE%B0%E5%BD%95-%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-05-06T08:45:07+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yemengma.cn/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-05-06T08:45:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
