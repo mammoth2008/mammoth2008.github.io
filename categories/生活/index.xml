@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 17 Jun 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jun 2023 08:45:07 +0800</lastBuildDate><atom:link href="https://yemengma.cn/categories/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Week 25 回顾</title>
+      <link>https://yemengma.cn/post/23w25-review/</link>
+      <pubDate>Sat, 24 Jun 2023 08:45:07 +0800</pubDate>
+      
+      <guid>https://yemengma.cn/post/23w25-review/</guid>
+      <description>后知后觉与不知不觉 说来惭愧，这周才差不多学会了如何和 ChatGPT 协作写复杂一点的程序——并不是说不知道该如何将程序拆分成多个部分，而是不知道该如何让 ChatGPT</description>
+    </item>
+    
     <item>
       <title>2023 Week 24 回顾</title>
       <link>https://yemengma.cn/post/23w24-review/</link>
