@@ -109,7 +109,7 @@
                 </a>
                 <br/>
                 <inlinecode style="font-size: 16px">
-                    Ver. 2206
+                    Ver. 2307
                 </inlinecode>
             </inlinecode>
         </p>
@@ -121,7 +121,7 @@
     class         = "step markdown"
     data-rel-to   = "c11t"
     data-rel-x    = "-1000"
-    data-rel-y    = "-960"
+    data-rel-y    = "-1100"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
@@ -129,7 +129,7 @@
 ### 数据 (Data)
 
 - 数据是描述事物的符号记录
-- 数据描述的是事物的属性
+- 数据描述的是事物的**属性**
 - 所使用的符号可以是字符串, 文本, 数字, 图片, 声音, 视频, 日期, 逻辑值等
 - 数据与语义是不可分的
 - 语义是数据符号的含义, 以及这些含义之间的关系
@@ -280,7 +280,7 @@
     class         = "step markdown"
     data-rel-to   = "c11t"
     data-rel-x    = "800"
-    data-rel-y    = "900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
@@ -288,7 +288,7 @@
 ### 数据库
 
 - 数据库是长期存储在计算机中的有组织可共享的数据集合
-- 数据库中的数据按照特定数据模型组织, 描述和储存
+- 数据库中的数据按照特定**数据模型**组织, 描述和储存
 - 数据库具有较低冗余度, 较高数据独立性和易扩展性
 
     </div>
@@ -315,9 +315,30 @@
     </div>
 
     <div
-    id            = "a7p"
+    id            = "a7a"
     class         = "step markdown"
     data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### DBMS 的主要功能
+
+- 数据定义: Data Definition Language (DDL)
+- 数据组织, 存储和管理
+- 数据操纵: Data Manipulation Language (DML)
+- 数据库的事务管理和运行管理
+- 数据库的建立和维护
+- 通信, 数据转换, 数据库互访
+
+    </div>
+
+    <div
+    id            = "a7p"
+    class         = "step markdown"
+    data-rel-to   = "a7a"
     data-rel-x    = "0"
     data-rel-y    = "0"
     data-rel-z    = "10"
@@ -331,7 +352,7 @@
     <div
     id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "a7"
+    data-rel-to   = "a7a"
     data-rel-x    = "0"
     data-rel-y    = "900"
     data-rel-z    = "0"
@@ -341,7 +362,7 @@
 ### 数据库系统
 
 - Database System
-- 是指在计算机系统中引入数据库后构成的系统
+- 在计算机系统中引入数据库后构成的系统
 - 一般由数据库, 数据库管理系统, 应用程序, 数据库管理员和用户构成
 
     </div>
@@ -356,7 +377,7 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-![database system](img/c01/database-system.jpg)
+![database system](img/c01/database.svg)
 
     </div>
 
@@ -398,6 +419,12 @@
 
     </div>
 
+<!-- "逻辑" 和 "物理" 常常被用来区分两个级别的抽象.
+
+一般来说,  "逻辑" 是指某种事物的概念或抽象层面, 它与特定的物理实现无关. 例如, 我们谈论 "逻辑结构" 时, 我们指的是数据如何在概念上组织, 而不是数据在硬盘上如何实际存储. 另一个例子是 "逻辑独立性" , 指的是在数据库管理系统中, 应用程序能够无视底层的物理存储结构改变而维持其对数据的访问方式不变, 即改变物理结构不会影响到逻辑结构.
+
+相对地,  "物理" 则是指实际的、具体的实现. 例如,  "物理结构" 通常指的是数据在硬件上 (如硬盘) 的具体存储方式. 同样, "物理独立性"指的是在数据库管理系统中, 可以改变硬件或者存储方式 (例如从磁盘存储转移到云存储) 而不影响到逻辑结构和应用程序的运行. -->
+
 <!-- 本节思维导图 -->
 
     <div
@@ -438,9 +465,9 @@
 
 ----
 
-[ 全景图 ](dbds-0-2206.html)
+[ 全景图 ](dbds-0.html)
 [| 练习 |](dbds-exec.html)
-[ 1.2 数据模型 ](dbds-1-2-2206.html)
+[ 1.2 数据模型 ](dbds-1-2.html)
 
     </div>
 

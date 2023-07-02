@@ -89,7 +89,7 @@
                 </a>
                 <br/>
                 <inlinecode style="font-size: 16px">
-                    Ver. 2206
+                    Ver. 2307
                 </inlinecode>
             </inlinecode>
         </p>
@@ -101,7 +101,7 @@
     class         = "step markdown"
     data-rel-to   = "c12t"
     data-rel-x    = "-800"
-    data-rel-y    = "-200"
+    data-rel-y    = "-300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
@@ -112,6 +112,8 @@
 - 地图, 游戏, 手办, 乐高都是模型
 
     </div>
+
+<!-- 给定一组域 $D\_1, D\_2, \\cdots, D\_n$, 允许其中某些域是相同的, $D\_1, D\_2, \\cdots, D\_n$ 的笛卡尔积为 $D\_1 \\times D\_2 \\times \\cdots \\times D\_n = \{(d\_1, d\_2, \\cdots, d\_n) | \\\ d\_i \\in D\_i, i = 1, 2, \\cdots, n\}$ -->
 
     <div
     id            = "a1p"
@@ -124,6 +126,7 @@
     data-scale    = "2">
 
 ![model](img/c01/model0.jpg)
+#### 地图是一种模型
 
     </div>
 
@@ -139,6 +142,7 @@
     data-scale    = "2">
 
 ![model](img/c01/model1.jpeg)
+#### 乐高是一种模型
 
     </div>
 
@@ -153,6 +157,7 @@
     data-scale    = "2">
 
 ![model](img/c01/model2.jpg)
+#### 设计原型图是一种模型
 
     </div>
 
@@ -167,6 +172,7 @@
     data-scale    = "2">
 
 ![model](img/c01/model3.jpeg)
+#### 游戏也是一种模型
 
     </div>
 
@@ -231,79 +237,22 @@
 
 - 根据模型应用的目的分类
 - 概念模型 (信息模型): 按照用户的观点对数据和信息建模
-- 数据模型: 按照计算机系统的观点对数据和信息建模
+- 逻辑模型: 按照计算机系统的观点对数据和信息建模
 
     </div>
 
     <div
-    id            = "a4"
+    id            = "a3a"
     class         = "step markdown"
     data-rel-to   = "a3"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 模型的要素
-
-- 数据结构
-- 数据操作
-- 完整性约束
-
-    </div>
-
-    <div
-    id            = "a5"
-    class         = "step markdown"
-    data-rel-to   = "a4"
-    data-rel-x    = "0"
-    data-rel-y    = "100"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "1">
-
-### 数据结构
-
-- 描述系统的静态特性
-- 是所研究的对象类型的集合
-- 例: 层次模型, 网络模型, 关系模型
-
-    </div>
-
-    <div
-    id            = "a6"
-    class         = "step markdown"
-    data-rel-to   = "a5"
-    data-rel-x    = "0"
-    data-rel-y    = "400"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "1">
-
-### 数据操作
-
-- 描述系统的动态特性
-- 是对数据库中各种对象的实例允许执行的操作集合
-- 例: 增删查改 (CRUD, Create Retrieve Update Delete)
-
-    </div>
-
-    <div
-    id            = "a7"
-    class         = "step markdown"
-    data-rel-to   = "a6"
-    data-rel-x    = "0"
-    data-rel-y    = "400"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "1">
-
-### 完整性约束
-
-- 是一组完整性规则的集合
-- 给定的数据模型中数据及其联系所具有的制约和依存规则
-- 例: 姓名不能为空, 性别只能是男或女
+![数据模型](img/c01/data-model.png)
+#### 数据模型
 
     </div>
 
@@ -382,6 +331,93 @@
     </div>
 
     <div
+    id            = "a11a"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![ERD](img/c01/erd.png)
+#### E-R 图
+
+    </div>
+
+    <div
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模型的要素
+
+- 数据结构
+- 数据操作
+- 完整性约束
+
+    </div>
+
+    <div
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 数据结构
+
+- 描述系统的静态特性
+- 是所研究的对象类型的集合
+- 例: 层次模型, 网络模型, 关系模型
+
+    </div>
+
+    <div
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 数据操作
+
+- 描述系统的动态特性
+- 是对数据库中各种对象的实例允许执行的操作集合
+- 例: 增删查改 (CRUD, Create Retrieve Update Delete)
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 完整性约束
+
+- 是一组完整性规则的集合
+- 给定的数据模型中数据及其联系所具有的制约和依存规则
+- 例: 姓名不能为空, 性别只能是男或女
+
+    </div>
+
+    <div
     id            = "a12"
     class         = "step markdown"
     data-rel-to   = "c12t"
@@ -395,6 +431,36 @@
 
 - 只有一个节点没有父节点, 这个节点叫做根节点
 - 除根节点外, 每个节点都有且只有一个父节点
+
+    </div>
+
+    <div
+    id            = "a12a"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![层次模型](img/c01/hieratchical.png)
+#### 层次模型 (Hierarchical Model)
+
+    </div>
+
+    <div
+    id            = "a12b"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![树状结构](img/c01/tree.png)
+#### 树状结构
 
     </div>
 
@@ -469,6 +535,36 @@
     </div>
 
     <div
+    id            = "a16a"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![网状模型](img/c01/network.png)
+#### 网状模型 (Network Model)
+
+    </div>
+
+    <div
+    id            = "a16c"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![网状模型](img/c01/network.webp)
+#### 网络结构
+
+    </div>
+
+    <div
     id            = "a17"
     class         = "step markdown"
     data-rel-to   = "a16"
@@ -538,6 +634,36 @@
     </div>
 
     <div
+    id            = "a20a"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![关系模型](img/c01/relational.png)
+#### 关系模型 (Relational Model)
+
+    </div>
+
+    <div
+    id            = "a20b"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![关系模型](img/c01/relation.png)
+#### 关系表
+
+    </div>
+
+    <div
     id            = "a21"
     class         = "step markdown"
     data-rel-to   = "a20"
@@ -555,7 +681,7 @@
 - 主码: 可以唯一确定一个元组的属性组
 - 域: 属性的取值范围
 - 分量: 元组中的一个属性值
-- 关系模式: 对关系的描述, 通常表示为关系名 (属性 1, 属性 2, 属性 3 等等)
+- 关系模式: 对关系的描述, 通常表示为**关系名 (属性 1, 属性 2, 属性 3 等等)**
 
     </div>
 
@@ -651,9 +777,9 @@
 
 ----
 
-[ 1.1 概述 ](dbds-1-1-2206.html)
+[ 1.1 概述 ](dbds-1-1.html)
 [| 练习 |](dbds-exec.html)
-[ 1.3 数据库系统的结构 ](dbds-1-3-2206.html)
+[ 1.3 数据库系统的结构 ](dbds-1-3.html)
 
     </div>
 
@@ -678,6 +804,7 @@
         }
     });
     </script>   
+
 <!-- 引入完毕 -->
 
     <!-- 页面下方显示进度条 -->

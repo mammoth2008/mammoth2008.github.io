@@ -1,0 +1,1209 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>DBDS | HUST</title>
+
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />    
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+    </div>
+
+    <div
+    id                       = "impress"
+    data-transition-duration = "1000"
+    data-width               = "1024"
+    data-height              = "768"
+    data-max-scale           = "3"
+    data-min-scale           = "0"
+    data-perspective         = "1000"
+    data-autoplay            = "0">
+
+    <div
+    id            = "e"
+    class         = "step"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库是长期存储在计算机中的有组织可共享的数据集合，其中的数据按照特定数据模型组织、描述和储存，具有较低冗余度，较高数据独立性和易扩展性。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e0"
+    class         = "step"
+    data-rel-to   = "e"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库管理系统（DBMS）？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库管理系统（DBMS）是一种用于创建和管理数据库的软件。它提供了对数据的一致性、安全性和完整性的保护。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e1"
+    class         = "step"
+    data-rel-to   = "e0"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是关系型数据库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">关系型数据库是一种基于关系模型的数据库，数据以表格的形式存储，每行代表一个数据项，每列代表一个数据项的属性。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e2"
+    class         = "step"
+    data-rel-to   = "e1"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是非关系型数据库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">非关系型数据库，又称NoSQL数据库，是一种与传统关系型数据库相对的数据库类型，它们不需要固定的模式，不需要事先为要存储的数据创建表格，适合处理大规模数据。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e3"
+    class         = "step"
+    data-rel-to   = "e2"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据模型？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据模型是一种描述如何组织和操作数据的工具，它定义了数据的类型、结构和约束。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e4"
+    class         = "step"
+    data-rel-to   = "e3"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是SQL？</p>
+<br>
+<p class="substep" style="color: #027cf7;">SQL（结构化查询语言）是一种用于管理关系数据库的标准编程语言，可以用来创建、查询、更新和删除数据库中的数据。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e5"
+    class         = "step"
+    data-rel-to   = "e4"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库事务？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库事务是一个或多个SQL语句组成的一个执行单元。事务有四个重要的特性，被称为ACID特性：原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）和持久性（Durability）。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e6"
+    class         = "step"
+    data-rel-to   = "e5"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的ACID特性？</p>
+<br>
+<p class="substep" style="color: #027cf7;">ACID是事务必须满足的四个特性：原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）和持久性（Durability）。原子性保证事务作为一个整体执行，一致性确保事务将数据库从一种状态转换到另一种状态，隔离性确保事务并发执行时的正确性，持久性确保一旦事务完成，其结果就能永久保存。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e7"
+    class         = "step"
+    data-rel-to   = "e6"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库索引？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库索引是一种数据结构，能提高数据库查询速度。索引能快速指向存储在硬盘上的数据。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e8"
+    class         = "step"
+    data-rel-to   = "e7"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据仓库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据仓库是一种大型存储系统，用于存储、检索和分析大量数据。数据仓库可以来自一个或多个源，通常包括历史数据以及当前数据。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e9"
+    class         = "step"
+    data-rel-to   = "e8"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据挖掘？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据挖掘是从大量数据中提取或“挖掘”知识和模式的过程。这是一个多学科领域，涉及到统计学、人工智能和机器学习等技术。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e10"
+    class         = "step"
+    data-rel-to   = "e9"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据冗余？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据冗余是在数据库中存储相同数据的现象。这可能是因为设计不良，也可能是有意为之，以提高数据可用性和保护性。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e11"
+    class         = "step"
+    data-rel-to   = "e10"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库规范化？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库规范化是设计数据库结构的一种过程，目的是减少数据冗余，保证数据一致性。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e12"
+    class         = "step"
+    data-rel-to   = "e11"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库反规范化？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库反规范化是设计数据库结构的一种过程，有时候为了改善系统性能，会有意地增加一些数据冗余。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e13"
+    class         = "step"
+    data-rel-to   = "e12"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的逻辑模型？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的逻辑模型是描述数据如何在逻辑上（而非物理上）组织和关联的模型。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e14"
+    class         = "step"
+    data-rel-to   = "e13"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的物理模型？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的物理模型描述了数据在物理存储介质上如何存储和组织。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e15"
+    class         = "step"
+    data-rel-to   = "e14"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的实体-关系模型？</p>
+<br>
+<p class="substep" style="color: #027cf7;">实体-关系模型是一种数据模型，用于描述现实世界的实体以及它们之间的关系。这是设计数据库结构的一种常见方法。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e16"
+    class         = "step"
+    data-rel-to   = "e15"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是OLTP？</p>
+<br>
+<p class="substep" style="color: #027cf7;">OLTP（在线事务处理）是一种常见的处理方式，用于处理常规的、日常的事务。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e17"
+    class         = "step"
+    data-rel-to   = "e16"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是OLAP？</p>
+<br>
+<p class="substep" style="color: #027cf7;">OLAP（在线分析处理）是一种处理方式，用于处理复杂的查询和分析，常常用于数据仓库。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e18"
+    class         = "step"
+    data-rel-to   = "e17"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的并发控制？</p>
+<br>
+<p class="substep" style="color: #027cf7;">并发控制是数据库管理系统用来管理多个用户同时访问数据，以保证数据的一致性和完整性的技术。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e19"
+    class         = "step"
+    data-rel-to   = "e18"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是SQL中的DDL，DML，DCL和TCL？</p>
+<br>
+<p class="substep" style="color: #027cf7;">DDL是数据定义语言，包括CREATE，ALTER和DROP等语句，用于定义或更改表结构。DML是数据操纵语言，包括SELECT，INSERT，UPDATE和DELETE等语句，用于查询或更改表数据。DCL是数据控制语言，包括GRANT和REVOKE等语句，用于控制权限。TCL是事务控制语言，包括COMMIT和ROLLBACK等语句，用于控制事务。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e20"
+    class         = "step"
+    data-rel-to   = "e19"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的视图？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的视图是一个虚拟表，其内容由查询定义。与真实的表不同，视图不包含任何用户数据，它只是保存了一个SQL查询。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e21"
+    class         = "step"
+    data-rel-to   = "e20"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的主键？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的主键是一个或一组列，它的值能唯一标识数据库表中的每一行/记录。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e22"
+    class         = "step"
+    data-rel-to   = "e21"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的外键？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的外键是一个或一组列，它的值引用另一个表的主键。外键是实现表之间的逻辑连接或引用完整性的一种手段。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e23"
+    class         = "step"
+    data-rel-to   = "e22"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是触发器？</p>
+<br>
+<p class="substep" style="color: #027cf7;">触发器是数据库中的一种对象，它会在某种事件（例如，插入、删除或更新操作）发生时自动执行。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e24"
+    class         = "step"
+    data-rel-to   = "e23"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的存储过程？</p>
+<br>
+<p class="substep" style="color: #027cf7;">存储过程是一组为了完成特定功能的SQL语句集，存储在数据库中，可被应用程序调用。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e25"
+    class         = "step"
+    data-rel-to   = "e24"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是游标？</p>
+<br>
+<p class="substep" style="color: #027cf7;">游标是数据库中用于从包含多行的SQL查询结果中逐行提取或更改数据的数据库对象。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e26"
+    class         = "step"
+    data-rel-to   = "e25"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是分布式数据库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">分布式数据库是一个数据库，它的数据被存储在网络中的多个物理位置。分布式数据库通过分布式数据库管理系统（DDBMS）来管理。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e27"
+    class         = "step"
+    data-rel-to   = "e26"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的切片技术？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的切片是一种将数据分散到多个表或多个存储设备的技术，以提高性能和可扩展性。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e28"
+    class         = "step"
+    data-rel-to   = "e27"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的复制技术？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的复制是一种将数据从一个数据库复制到另一个数据库的技术，可以提高数据的可用性和性能。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e29"
+    class         = "step"
+    data-rel-to   = "e28"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的聚簇索引？</p>
+<br>
+<p class="substep" style="color: #027cf7;">聚簇索引决定了表中数据的物理存储顺序。数据库表只能有一个聚簇索引。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e30"
+    class         = "step"
+    data-rel-to   = "e29"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的非聚簇索引？</p>
+<br>
+<p class="substep" style="color: #027cf7;">非聚簇索引不影响表中数据的物理存储顺序，而是创建一个单独的数据结构（索引），用来指向表中的数据。一个表可以有多个非聚簇索引。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e31"
+    class         = "step"
+    data-rel-to   = "e30"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的锁定机制？</p>
+<br>
+<p class="substep" style="color: #027cf7;">锁定机制是数据库管理系统用来控制多个用户并发访问数据时的机制，可以防止数据不一致。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e32"
+    class         = "step"
+    data-rel-to   = "e31"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是死锁以及如何处理？</p>
+<br>
+<p class="substep" style="color: #027cf7;">死锁是指两个或更多的操作无限期地等待对方释放资源的情况。数据库管理系统通常通过死锁检测和死锁预防来处理死锁。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e33"
+    class         = "step"
+    data-rel-to   = "e32"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的备份和恢复？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的备份是将数据库的内容复制并保存到备份设备上，以防止数据丢失。恢复是在数据丢失或损坏后，使用备份数据来恢复数据库。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e34"
+    class         = "step"
+    data-rel-to   = "e33"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的优化？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的优化是一种提高数据库性能的过程，可以包括优化SQL查询、优化数据库结构、优化配置设置等。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e35"
+    class         = "step"
+    data-rel-to   = "e34"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的连接操作？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的连接操作是指将来自两个或更多表的行组合起来，基于这些表之间的共同字段。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e36"
+    class         = "step"
+    data-rel-to   = "e35"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的聚合函数？</p>
+<br>
+<p class="substep" style="color: #027cf7;">聚合函数是在一组值上进行操作，返回一个单一的值。例如，SUM，AVG，MAX，MIN，COUNT等。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e37"
+    class         = "step"
+    data-rel-to   = "e36"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的子查询？</p>
+<br>
+<p class="substep" style="color: #027cf7;">子查询是嵌入在其他SQL查询中的查询，子查询的结果会被用在外部的查询中。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e38"
+    class         = "step"
+    data-rel-to   = "e37"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的原子操作？</p>
+<br>
+<p class="substep" style="color: #027cf7;">原子操作是一个不可分割的工作单位，要么全部完成，要么全部不完成，不会结束在中间某个环节。它是实现数据库事务一致性的重要手段。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e39"
+    class         = "step"
+    data-rel-to   = "e38"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的嵌套事务？</p>
+<br>
+<p class="substep" style="color: #027cf7;">嵌套事务是一种事务中包含其他事务的模型。嵌套事务为并发控制和错误恢复提供了更多的灵活性。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e40"
+    class         = "step"
+    data-rel-to   = "e39"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是懒惰删除或懒惰写入？</p>
+<br>
+<p class="substep" style="color: #027cf7;">懒惰删除和懒惰写入是一种优化技术，允许延迟数据结构的更新操作，直到绝对必要时才执行。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e41"
+    class         = "step"
+    data-rel-to   = "e40"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的写前日志？</p>
+<br>
+<p class="substep" style="color: #027cf7;">写前日志是一种恢复技术，它保证了即使在系统崩溃的情况下，也能恢复到最近一次的一致性状态。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e42"
+    class         = "step"
+    data-rel-to   = "e41"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是关系型数据库的三级模式结构？</p>
+<br>
+<p class="substep" style="color: #027cf7;">三级模式结构包括物理模式（描述数据的物理存储方式），逻辑模式（描述数据库的整体逻辑视图）和外部模式（描述用户视图）。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e43"
+    class         = "step"
+    data-rel-to   = "e42"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的丢失更新问题？</p>
+<br>
+<p class="substep" style="color: #027cf7;">丢失更新是指在并发环境下，一个事务对数据的更新被另一个事务的更新覆盖，造成的数据一致性问题。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e44"
+    class         = "step"
+    data-rel-to   = "e43"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是时间戳？</p>
+<br>
+<p class="substep" style="color: #027cf7;">时间戳是一种并发控制技术，为每个事务分配一个唯一的标识符，表示事务的开始时间，以此决定事务的执行顺序。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e45"
+    class         = "step"
+    data-rel-to   = "e44"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据立方体？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据立方体是一种多维数据模型，用于数据仓库和OLAP应用，可以方便地进行数据切片和切块操作。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e46"
+    class         = "step"
+    data-rel-to   = "e45"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据挖掘的分类和聚类？</p>
+<br>
+<p class="substep" style="color: #027cf7;">分类是一种预测性数据挖掘技术，用于预测给定数据的类别。聚类是一种描述性数据挖掘技术，用于发现数据的自然分组。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e47"
+    class         = "step"
+    data-rel-to   = "e46"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据仓库的星型模型和雪花模型？</p>
+<br>
+<p class="substep" style="color: #027cf7;">星型模型是一种数据仓库的模式，中心是一个事实表，周围是维度表。雪花模型是星型模型的一种变体，其中维度表可以是多层次的。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e48"
+    class         = "step"
+    data-rel-to   = "e47"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据的清洗和转换？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据清洗是识别和修正数据中的错误和不一致的过程。数据转换是将数据从一种格式转换为另一种格式的过程。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e49"
+    class         = "step"
+    data-rel-to   = "e48"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据湖？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据湖是一个存储系统，可以存储大量的原始数据，数据的格式可以在使用时定义。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e50"
+    class         = "step"
+    data-rel-to   = "e49"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是图数据库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">图数据库是一种非关系型数据库，用于存储图形数据，可以高效处理复杂的关系查询。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e51"
+    class         = "step"
+    data-rel-to   = "e50"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的权限和角色？</p>
+<br>
+<p class="substep" style="color: #027cf7;">权限是用户对特定数据库对象（如表、视图、过程等）的访问权限。角色是一组权限，可以被授予给用户。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e52"
+    class         = "step"
+    data-rel-to   = "e51"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据字典？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据字典是一个中央存储区，用于存储关于数据库中数据的信息，如表的定义、列的定义、权限等。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e53"
+    class         = "step"
+    data-rel-to   = "e52"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的分区？</p>
+<br>
+<p class="substep" style="color: #027cf7;">数据库的分区是一种把大表或索引分成较小、更易于管理的部分的技术。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e54"
+    class         = "step"
+    data-rel-to   = "e53"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的联机备份和脱机备份？</p>
+<br>
+<p class="substep" style="color: #027cf7;">联机备份是指在数据库运行时进行备份，不影响数据库的正常操作。脱机备份是指在数据库停机时进行备份。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e55"
+    class         = "step"
+    data-rel-to   = "e54"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的完全备份、差异备份和增量备份？</p>
+<br>
+<p class="substep" style="color: #027cf7;">完全备份是备份所有数据。差异备份是备份自上次完全备份以来更改的数据。增量备份是备份自上次任何类型备份以来更改的数据。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e56"
+    class         = "step"
+    data-rel-to   = "e55"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的悲观并发控制和乐观并发控制？</p>
+<br>
+<p class="substep" style="color: #027cf7;">悲观并发控制假定会发生冲突，因此在事务开始时加锁。乐观并发控制假定冲突不常发生，因此在事务提交时才检查冲突。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e57"
+    class         = "step"
+    data-rel-to   = "e56"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是数据库的水平分片和垂直分片？</p>
+<br>
+<p class="substep" style="color: #027cf7;">水平分片是将表中的行分到不同的表中。垂直分片是将表中的列分到不同的表中。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    <div
+    id            = "e58"
+    class         = "step"
+    data-rel-to   = "e57"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-x = "0"
+    data-rotate-y = "0"
+    data-rotate-z = "0"
+    data-scale    = "2">
+
+<p>什么是NoSQL数据库？</p>
+<br>
+<p class="substep" style="color: #027cf7;">NoSQL数据库是一种设计用来超越传统的关系型数据库的持久化数据存储。NoSQL数据库可以处理大量分布式数据，并支持灵活的数据模型。</p>
+<p style="font-size: 14px"><a href="dbds-exec.html">BACK</a></p>
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+    <div class="impress-progressbar"><div></div></div>
+
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+
+    </body>
+    </html>

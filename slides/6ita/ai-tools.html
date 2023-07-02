@@ -1,0 +1,88 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>ITA | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院专业学位全日制硕士研究生设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress"
+    data-transition-duration = "1000"
+    data-width               = "1024"
+    data-height              = "768"
+    data-max-scale           = "3"
+    data-min-scale           = "0"
+    data-perspective         = "1000"
+    data-autoplay            = "0">
+
+    <div 
+    id          ="p1" 
+    class       ="step markdown chglog">
+
+- [ChatGPT](https://chat.openai.com) 大名鼎鼎的 ChatGPT
+- [Claude](https://www.anthropic.com/index/introducing-claude) 据称性能略弱于 GPT-4
+- [Claude in Slack](https://slack.com/apps/A04KGS7N9A8-claude?tab=more_info) Slack 上的 Claude
+- [Midjourney](https://midjourney.com) 最著名的 AIGC 绘图工具
+- [New Bing](https://www.bing.com/new) 新版 Bing, 集成了 GPT-4 的能力,能出图还能读 PDF
+- [Stable Diffusion Web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 开源的 AIGC 绘图工具, 可以部署在本地或云端
+- 
+
+
+    </div>
+    <div 
+    id          ="p2" 
+    class       ="step markdown chglog"
+    data-rel-to ="p1" 
+    data-rel-y  ="610" >
+
+
+
+    </div>
+
+    </div>
+
+    <!-- 使用 markdown 写简单页面 data-height="768"-->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+
+    </body>
+    </html>

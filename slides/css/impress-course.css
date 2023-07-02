@@ -117,7 +117,8 @@ body {
     Now let's bring some text styles back ...
 */
 b, strong { 
-    vertical-align:middle;
+    vertical-align:baseline;
+	color: #FF0000;
 }
 
 i, em { font-style: italic }
@@ -625,7 +626,7 @@ inlinecode {
 
 div .chglog {
     font-family: "CONSOLA", consolas, "Inconsolata-Regular", Inconsolata, "Cutive mono", "Courier New", monospace;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 div .chglog a {
@@ -733,4 +734,4 @@ div .chglog a {
     在 1-536 上课时需要调整到 50%
 */
 .impress-enabled .hint { display: block }
-.impress-enabled .step { opacity: 30% }
+.impress-enabled .step { opacity: 10% }
