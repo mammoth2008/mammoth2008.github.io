@@ -1,0 +1,498 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c21t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>2. 关系数据库</h2>
+        <h3 style="text-align: center">2.1 关系数据结构及形式化定义</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系数据库的发展历程
+
+- 1962, CODASYL, 信息代数方法
+- 1968, David Child, 实现集合论数据结构
+- 1970, E.F.Codd, 开创数据库系统新时代
+- 1981, IBM, SQL/DS
+- 1981, UC Berkeley, INGRES
+
+    </div>
+
+    <div
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![E.F.Codd](img/c02/e_f_codd.jpg)
+#### E.F.Codd
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系模型的数据结构
+
+- 简单二维: 用户视为二维表
+- 丰富语义: 描述实体和联系
+- 单一结构: 实体和联系都用关系表示
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 域 (Domain)
+
+- 具有相同数据类型的值的集合
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "200"
+    data-rel-y    = "1500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "3">
+
+### 笛卡儿积 Cartesian Product
+
+- 给定一组域 $D\_1, D\_2, \\cdots, D\_n$, 允许其中某些域是相同的
+- 其笛卡尔积为 $D\_1 \times D\_2 \times \cdots \times D\_n = \lbrace (d\_1, d\_2, \cdots, d\_n) | d\_i \in D\_i,$
+- $i = 1, 2, \cdots, n \rbrace$
+- $(d\_1, d\_2, \\cdots, d\_n)$ 叫做一个 $n$ 元组
+- 每个元素 $d\_i$ 叫做一个分量
+- 一个域允许的不同取值个数称为基数
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "3">
+
+### 关系 (Relation)
+
+- 在域 $D\_1, D\_2, \\cdots, D\_n$ 上的关系是其笛卡儿积的子集
+- 表示为 $R(D\_1, D\_2, \\cdots, D\_n)$
+- $R$ 为关系的名字, $n$ 表示关系的**目**或**度**
+- 关系中的每行是一个**元组**
+- 关系中的每列是一个**属性**
+- 能唯一标识一个元组的属性组, 称为**候选码**
+- 从多个候选码中选定其中一个为**主码**
+- 候选码的属性称为主属性
+- 不包含在任何候选码中的属性称为非主属性
+- 所有属性都是候选码时称为全码
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Relation](img/c02/relation_model.png)
+#### Relation
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "2500"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系数据模型中的关系特点
+
+- 关系数据模型中的关系必须是有限集合
+- 为每列加一个属性名, 使关系属性无序
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基本关系的性质
+
+- 每一列中的分量来自同一个域
+- 不同的列可出自同一个域
+- 列的次序可以任意交换
+- 任意两个元组的候选码不能相同
+- 行的次序可以任意交换
+- 分量必须是不可分的数据项
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系模式的描述
+
+- 属性集合
+- 域集合
+- 属性与域的映射关系
+- 完整性约束条件
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系模式的表示
+
+- 表示为 $R(U, D, DOM, F)$
+- $R$, 关系名
+- $U$, 属性名集合, 描述组成关系的属性
+- $D$, 属性所来自的域集合
+- $DOM$, 属性向域的映射集合
+- $F$, 属性间数据的依赖关系集合
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系模式的表示
+
+- 可以简记为 $R(U)$
+- 或 $R(A\_1, A\_2, \\cdots, A\_n)$
+
+    </div>
+
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "-600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Relation](img/c02/relation_model.png)
+#### Relation
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "1200"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系与关系模式
+
+- 关系是关系模式在某一时刻的状态或内容
+- 关系模式是静态的, 稳定的
+- 关系是动态的, 随时间不断变化的
+- 关系操作会导致关系的变化
+- 人们常常将关系模式和关系统称为关系
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系模型中的实体和联系
+
+- 实体和实体间的联系都用关系来表示
+- 所有关系的集合构成一个关系数据库
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系数据库的型和值
+
+- 型称为关系数据库模式
+- 包括域定义和关系模式定义
+- 值是关系模式在某一时刻对应的关系的集合
+- 通常称为关系数据库
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关系模型的存储结构
+
+- 文件系统管理
+- 自主存储管理
+
+    </div>
+
+    <div
+    id            = "mm21"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 2.1 mindmap](img/c02/mindmap-2-1.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c21q"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.1 关系数据结构及形式化定义
+
+- 域, 笛卡尔积, 关系在关系数据库中分别起什么作用?
+- 什么是候选码, 主码, 全码?
+- 为什么说关系是动态的而关系模式是静态的?
+- 实体和联系是如何通过关系来表示的?
+- 描述关系模型时, $R, U, D, DOM, F$ 分别有什么含义?
+
+----
+
+[ 1.4 数据库系统的组成](dbds-1-4.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 2.2 关系操作](dbds-2-2.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
