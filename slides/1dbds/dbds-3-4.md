@@ -22,19 +22,19 @@
 - 若有 ORDER BY 子句则对结果表排序
 
 查询指定列
-SELECT Sno, Sname FROM Student;
+    SELECT Sno, Sname FROM Student;
 
 查询全部列
-SELECT * FROM Student;
+    SELECT * FROM Student;
 
 查询经过计算的值
-SELECT Sname, 2014 - Sage FROM Student;
+    SELECT Sname, 2014 - Sage FROM Student;
 
 指定列别名
-SELECT Sname AS NAME, 2014 - Sage AS BIRTHDAY FROM Student;
+    SELECT Sname AS NAME, 2014 - Sage AS BIRTHDAY FROM Student;
 
 消除取值重复的行
-SELECT DISTINCT Sno FROM SC;
+    SELECT DISTINCT Sno FROM SC;
 
 査询满足条件的元组
 - 使用 WHERE 子句
@@ -43,142 +43,138 @@ SELECT DISTINCT Sno FROM SC;
 - 集合: IN, NOT IN
 
 比较
-SELECT Sname FROM Student WHERE Sdept = 'CS';
+    SELECT Sname FROM Student WHERE Sdept = 'CS';
 
 范围
-SELECT Sname, Sdept, Sage FROM Student WHERE Sage BETWEEN 20 AND 23;
+    SELECT Sname, Sdept, Sage FROM Student WHERE Sage BETWEEN 20 AND 23;
 
 集合
-SELECT Sname, Ssex FROM Student WHERE Sdept IN ('CS', 'MA', 'IS');
+    SELECT Sname, Ssex FROM Student WHERE Sdept IN ('CS', 'MA', 'IS');
 
 字符匹配
 - 使用 LIKE 进行字符串匹配
 - 可以使用通配符
 - "%" 代表任意长度的字符串
-- "_" 代表任意单个字符.
+- "_" 代表任意单个字符
 
 字符匹配
-SELECT * FROM Student WHERE Sno LIKE '201215121';
-SELECT Sname, Sno, Ssex FROM Student WHERE Sname LIKE '刘%';
-SELECT Sname FROM Student WHERE Sname LIKE '欧阳_';
-SELECT Sname, Sno FROM Student WHERE Sname LIKE '_阳%';
-SELECT Sname, Sno, Ssex FROM Student WHERE Sname NOT LIKE '刘%';
+    SELECT * FROM Student WHERE Sno LIKE '201215121';
+    SELECT Sname, Sno, Ssex FROM Student WHERE Sname LIKE '刘%';
+    SELECT Sname FROM Student WHERE Sname LIKE '欧阳_';
+    SELECT Sname, Sno FROM Student WHERE Sname LIKE '_阳%';
+    SELECT Sname, Sno, Ssex FROM Student WHERE Sname NOT LIKE '刘%';
 
 涉及空值的查询
 使用 IS NULL 谓词查询空值
-SELECT Sno, Cno FROM SC WHERE Grade IS NULL;
+    SELECT Sno, Cno FROM SC WHERE Grade IS NULL;
 使用 IS NOT NULL 谓词查询非空值
-SELECT Sno, Cno FROM SC WHERE Grade IS NOT NULL;
+    SELECT Sno, Cno FROM SC WHERE Grade IS NOT NULL;
 
 多重条件查询
 - 使用逻辑运算符 AND 和 OR 连接多个查询条件.
--  AND 的优先级高于 OR
+- AND 的优先级高于 OR
 - 可以使用括号改变优先级
-SELECT Sname FROM Student WHERE Sdept = 'CS' AND Sage < 20;
-SELECT Sname, Ssex FROM Student WHERE Sdept = 'CS' OR Sdept = 'MA' OR Sdept = 'IS';
+    SELECT Sname FROM Student
+    WHERE Sdept = 'CS' AND Sage < 20;
+    SELECT Sname, Ssex
+    FROM Student
+    WHERE Sdept = 'CS' OR Sdept = 'MA' OR Sdept = 'IS';
 
 ORDER BY子句
 - 对查询结果按照属性列排序
 - 可以对一个或多个属性列排序
 - 默认按升序排列
-SELECT Sno, Grade FROM SC WHERE Cno = '3' ORDER BY Grade DESC;
-SELECT * FROM Student ORDER BY Sdept, Sage DESC;
+    SELECT Sno, Grade FROM SC WHERE Cno = '3' ORDER BY Grade DESC;
+    SELECT * FROM Student ORDER BY Sdept, Sage DESC;
 
 聚集函数
+- COUNT 函数
+- SUM 函数
+- AVG 函数
+- MAX 函数
+- MIN 函数
 
-#### COUNT函数
-#### SUM函数
-#### AVG函数
-#### MAX函数
-#### MIN函数
-#### COUNT函数
+COUNT 函数
+- 用于统计元组个数或某一列中值的个数
+- 查询学生总人数
+    SELECT COUNT(*) FROM Student;
+- 查询选修了课程的学生人数
+    SELECT COUNT(DISTINCT Sno) FROM SC;
 
-- 用于统计元组个数或某一列中值的个数.
-- 示例: 
-  - 查询学生总人数: `SELECT COUNT(*) FROM Student;`
-  - 查询选修了课程的学生人数: `SELECT COUNT(DISTINCT Sno) FROM SC;`
+SUM 函数
+- 用于计算某一列值的总和 (此列必须是数值型) .
+- 计算选修 1 号课程的学生平均成绩
+    SELECT AVG(Grade) FROM SC WHERE Cno = '1';
 
-#### SUM函数
+AVG 函数
+- 用于计算某一列值的平均值 (此列必须是数值型) 
+- 计算选修 1 号课程的学生平均成绩
+    SELECT AVG(Grade) FROM SC WHERE Cno = '1';
 
-- 用于计算某一列值的总和（此列必须是数值型）.
-- 示例: 
-  - 计算选修1号课程的学生平均成绩: `SELECT AVG(Grade) FROM SC WHERE Cno = '1';`
+MAX 函数
+- 用于求一列值中的最大值
+- 查询选修 1 号课程的学生最高分数
+    SELECT MAX(Grade) FROM SC WHERE Cno = '1';
 
-
-#### AVG函数
-- 用于计算某一列值的平均值（此列必须是数值型）.
-- 示例: 
-  - 计算选修1号课程的学生平均成绩: `SELECT AVG(Grade) FROM SC WHERE Cno = '1';`
-
-
-#### MAX函数
-- 用于求一列值中的最大值.
-- 示例: 
-  - 查询选修1号课程的学生最高分数: `SELECT MAX(Grade) FROM SC WHERE Cno = '1';`
-
-
-#### MIN函数
+MIN 函数
 - 用于求一列值中的最小值.
-- 示例: 
-  - 查询选修1号课程的学生最低分数: `SELECT MIN(Grade) FROM SC WHERE Cno = '1';`
+- 查询选修1号课程的学生最低分数
+    SELECT MIN(Grade) FROM SC WHERE Cno = '1';
 
-#### 使用聚集函数的注意事项
+使用聚集函数的注意事项
+- 遇到空值时除 COUNT(*) 外都只处理非空值
+- WHERE 子句中不能使用聚集函数作为条件表达式
+- 聚集函数只能用于 SELECT 子句和 GROUP BY 中的 HAVING 子句
 
-- 当聚集函数遇到空值时, 除`COUNT(*)`外, 会跳过空值而只处理非空值.
-- 注意, `WHERE`子句中不能使用聚集函数作为条件表达式, 聚集函数只能用于`SELECT`子句和`GROUP BY`中的`HAVING`子句.
+GROUP BY 子句
+- 将查询结果按某一列或多列的值分组
+- 为了细化聚集函数的作用对象
+- 求各个课程号及相应的选课人数
+    SELECT Cno, COUNT(Sno) FROM SC GROUP BY Cno;
+- 查询选修了三门以上课程的学生学号
+   SELECT Sno FROM SC GROUP BY Sno HAVING COUNT(*) > 3;
 
-### GROUP BY子句
+WHERE 与 HAVING 的区别
+-  WHERE 子句与 HAVING 短语的区别在于作用对象不同
+-  WHERE 子句作用于基本表或视图
+-  HAVING 短语作用于组
 
-- 使用`GROUP BY`子句将查询结果按某一列或多列的值分组, 值相等的为一组.
-- 目的是为了细化聚集函数的作用对象.
-- 示例: 
-  - 求各个课程号及相应的选课人数: `SELECT Cno, COUNT(Sno) FROM SC GROUP BY Cno;`
-  - 查询选修了三门以上课程的学生学号: `SELECT Sno FROM SC GROUP BY Sno HAVING COUNT(*) > 3;`
+查询示例
+- 平均成绩大于等于90分的学生学号和平均成绩
+    SELECT Sno, AVG(Grade)
+    FROM SC
+    GROUP BY Sno
+    HAVING AVG(Grade) >= 90;
 
-- `WHERE`子句与`HAVING`短语的区别在于作用对象不同.
-- `WHERE`子句作用于基本表或视图, 从中选择满足条件的元组.
-- `HAVING`短语作用于组, 从中选择满足条件的组.
+连接查询
+- 同时涉及两个以上的表的查询操作
+- 等值连接查询
+- 自然连接查询
+- 非等值连接查询
+- 自身连接查询
+- 外连接查询
+- 复合条件连接查询
 
-#### 查询平均成绩大于等于90分的学生学号和平均成绩
+等值连接查询
+- 用于连接两个表的条件称为连接条件
+- <表名1>.<列名1> <比较运算符> <表名2>.<列名2>
+- 比较运算符主要有=, >, <, >=, <=, != (或<>)  等
+- 连接条件中的列名称为连接字段
+- 当连接运算符为 = 时称为等值连接
 
-- 此例中, `WHERE`子句中不能使用聚集函数作为条件表达式.
-- 正确的查询语句应为: 
-  ```
-  SELECT Sno, AVG(Grade)
-  FROM SC
-  GROUP BY Sno
-  HAVING AVG(Grade) >= 90;
-  ```
-
-### 连接查询
-
-- 连接查询指同时涉及两个以上
-
-的表的查询操作.
-- 包括等值连接查询, 自然连接查询, 非等值连接查询, 自身连接查询, 外连接查询和复合条件连接查询等.
-
-#### 等值与非等值连接查询
-
-- 连接查询中, 用于连接两个表的条件称为连接条件或连接谓词.
-- 连接条件的一般格式为: `<表名1>.<列名1> <比较运算符> <表名2>.<列名2>`
-- 比较运算符主要有`=, >, <, >=, <=, !=（或<>）`等.
-- 连接条件中的列名称为连接字段.
-- 当连接运算符为`=时`, 称为等值连接；使用其他运算符则称为非等值连接.
-
-#### 自身连接
-
-- 连接操作不仅可以在两个表之间进行, 也可以是一个表与自身进行连接, 称为表的自身连接.
+自身连接
+- 一个表与自身进行连接
 
 #### 查询每门课的间接先修课
 
-- 为了得到每门课的间接先修课（即先修课的先修课）, 需要将Course表与自身进行连接.
+- 为了得到每门课的间接先修课 (即先修课的先修课) , 需要将Course表与自身进行连接.
 - 需要为Course表取两个别名, 一个是FIRST, 另一个是SECOND.
 - SQL语句示例: 
-  ```
+     
   SELECT FIRST.Cno, SECOND.Cpno
   FROM Course FIRST, Course SECOND
   WHERE FIRST.Cpno = SECOND.Cno;
-  ```
+     
 
 3.4.3嵌套查询
 在SQL语言中,一个SELECT-FROM-WHERE语句称为一个查询块。将一个查询块嵌 套在另一个查询块的WHERE子句或HAVING短语的条件中的查询称为嵌套查询(nested query)o 例如：
@@ -288,14 +284,14 @@ WHERE Grade ＞=88;
 <=ALL	小于等于子查询结果中的所有值
 =ANY	等于子查询结果中的某个值
 =ALL	等于子查询结果中的所有值(通常没有实际意义)
-!=（或v>） ANY	不等于子査询结果中的某个值
-!=（或v>） ALL	不等于子査询结果中的任何一个值
+!= (或v>)  ANY	不等于子査询结果中的某个值
+!= (或v>)  ALL	不等于子査询结果中的任何一个值
 ［例3.58］查询非计算机科学系中比计算机科学系任意一个学生年龄小的学生姓名和 年龄。
 SELECT Sname,Sage
 FROM Student
-WHERE Sage<ANY （SELECT Sage
+WHERE Sage<ANY  (SELECT Sage
 FROM Student
-WHERE Sdept=' CS *）
+WHERE Sdept=' CS *) 
 AND Sdept o' CS	/*注意这是父查询块中的条件•/
 结果如下：
 Sname	Sage
@@ -332,7 +328,7 @@ WHERE Sdept='CS‘)
 AND Sdept o*CS*;
 事实上，用聚集函数实现子査询通常比直接用ANY或ALL査询效率要高。ANY、ALL 
 与聚集函数的对应关系如表3.7所示。
-表3.7 ANY （或SOME）、ALL谓词与聚集函数、IN谓词的等价转换关系
+表3.7 ANY  (或SOME) 、ALL谓词与聚集函数、IN谓词的等价转换关系
 	=	o或!=	<	<=	>	>=
 ANY	IN	―	<MAX	<=MAX	>MIN	>=MIN
 ALL	—	NOT IN	<MIN	<=M!N	>MAX	>=MAX
@@ -346,12 +342,12 @@ EXISTS代表存在量词带有EXISTS谓词的子査询不返回任何数据，�
 SELECT Sname
 FROM Student
 WHERE EXISTS
-（SELECT *
+ (SELECT *
 FROM SC
-WHERE Sno=Student.Sno AND Cno=T）;
+WHERE Sno=Student.Sno AND Cno=T) ;
 使用存在量词EXISTS后，若内层査询结果非空，则外层的WHERE子句返回真值， 否则返回假值。
 由EXISTS引出的子查询，其目标列表达式通常都用*,因为带EXISTS的子查询只 返回真值或假值，给出列名无实际意义。
-本例中子查询的査询条件依赖于外层父查询的某个属性值（Student的Sno值），因此 也是相关子查询。这个相关子查询的处理过程是：首先取外层査询中Student表的第一个 元组，根据它与内层査询相关的属性值（Sno值）处理内层查询，若WHERE子句返回值 为真，则取外层查询中该元组的Sname放入结果表；然后再取Student表的下一个元组； 重复这一•过程，直至外层Student表全部检查完为止。
+本例中子查询的査询条件依赖于外层父查询的某个属性值 (Student的Sno值) ，因此 也是相关子查询。这个相关子查询的处理过程是：首先取外层査询中Student表的第一个 元组，根据它与内层査询相关的属性值 (Sno值) 处理内层查询，若WHERE子句返回值 为真，则取外层查询中该元组的Sname放入结果表；然后再取Student表的下一个元组； 重复这一•过程，直至外层Student表全部检查完为止。
 本例中的查询也可以用连接运算来实现，读者可以参照有关的例子自己给出相应的 SQL语句。
 与EXISTS谓词相对应的是NOT EXISTS谓词。使用存在量词NOT EXISTS后，若内 
 
@@ -511,15 +507,15 @@ MIN
 (2)
 	R属性列名〉、		'〈属性列名〉'
 〈属性列名〉[NOT] BETWEEN ＜	V常量〉	» ANDY	〈常量〉
-	{SELECT 语句）_		（SELECT 语句）-
-（3）
-'（v值 1＞ [,〈值 2＞] ••■）
+	{SELECT 语句) _		 (SELECT 语句) -
+ (3) 
+' (v值 1＞ [,〈值 2＞] ••■) 
 〈属性列名〉[NOT] IN «
-（SELECT 语句）
-（4）	＜属性列名＞ [NOT] LIKE＜匹配串〉
-（5）	〈属性列名＞ IS [NOT] NULL
-（6）	[NOT] EXISTS （SELECT 语句）
-（7）
+ (SELECT 语句) 
+ (4) 	＜属性列名＞ [NOT] LIKE＜匹配串〉
+ (5) 	〈属性列名＞ IS [NOT] NULL
+ (6) 	[NOT] EXISTS  (SELECT 语句) 
+ (7) 
 	AND			AND	
 〈条件表达式〉-		•〈条件表达式〉	V		卜〈条件表达式〉…
 	OR			QR	丿

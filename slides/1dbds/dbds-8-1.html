@@ -1,4 +1,3 @@
-
     <!doctype html>
     <html lang="en">
     <head>
@@ -10,7 +9,7 @@
         <title>DB & DS | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -21,7 +20,6 @@
         </script>
 
         <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
-
 <!-- 引入完毕 -->
 
         <link href="../css/impress-course.css" rel="stylesheet" />
@@ -53,9 +51,9 @@
     data-perspective         = "1000" 
     data-autoplay            = "0">
 
-<!-- 每一节 slide 的标题是 "cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
 <!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
-<!-- 类似地, 需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
 
     <div 
     id         = "overview" 
@@ -66,38 +64,19 @@
 
     </div>
 
-<!-- 本章目标 -->
-
-    <div
-    id         = "c11target"
-    class      = "step markdown"
-    data-x     = "270"
-    data-y     = "-1800"
-    data-z     = "0"
-    data-scale = "2">
-
-### 本章学习目标
-
-- 理解数据库的相关概念
-- 了解数据库技术的产生和发展过程
-- 理解概念模型和数据模型
-- 理解数据库系统的模式和体系结构
-- 了解数据库系统的组成
-
-    </div>
-
 <!-- 修改 id -->
 
     <div 
-    id         = "c11t"
+    id         = "c81t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
     data-z     = "0"
     data-scale = "5">
+
     <!-- 修改标题 -->
-        <h2>1. 数据库系统概论</h2>
-        <h3 style="text-align: center">1.1 概述</h3>
+        <h2>8. 数据结构与算法概论</h2>
+        <h3 style="text-align: center">8.1 什么是数据结构</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -116,33 +95,1233 @@
         </p>
 
     </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "270"
+    data-rel-y    = "-1800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
 
+### 本章学习目标
 
+- 数据结构的定义
+- 逻辑结构, 存储结构, 运算的相互关系
+- 各种逻辑结构之间的差别
+- 各种存储结构之间的差别
+- 数据结构和数据类型的区别和联系
+- 抽象数据类型的概念和描述方式
+- 算法的定义和特性
+- 算法的时间复杂度和空间复杂度分析
 
+    </div>
 
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "-1800"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
 
-<!-- 本节思维导图 -->
+### 用计算机解决问题
+
+- 完成对现实世界问题的抽象
+- 了解待处理对象的特性及其之间的关系
+- 将现实世界的问题转化为**数学问题**
+
+    </div>
 
     <div
-    id            = "mm11"
+    id            = "a3"
     class         = "step markdown"
-    data-rel-to   = "c11t"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "-600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Abstract](img/c08/abstract.png)
+#### Abstract - Picasso
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 为什么是数学
+
+- 因为数学有严密的符号表述体系
+- 有严密确定的推理系统
+
+    </div>
+
+    <div
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "-400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Mathematics](img/c08/galileo.png)
+#### Mathematics
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 有穷观点的能行方法
+
+- 大卫·希尔伯特 (David Hilbert)
+- 由有限数量的明确有限指令构成
+- 指令执行在有限步骤后终止
+- 指令每次执行都总能得到唯一结果
+- 原则上可以由人单独采用纸笔完成
+- 每条指令可以机械地被精确执行
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "-300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![David Hilbert](img/c08/David-Hilbert.jpg)
+#### David Hilbert
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 图灵机 (Turing Machine)
+
+- 一条无限长的纸带
+- 一个读写头
+- 一套控制规则数量有限的命令表
+- 一个状态寄存器
+
+    </div>
+
+    <div
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Alan Turing](img/c08/Alan-Turing.jpeg)
+#### Alan Turing
+
+    </div>
+
+    <div
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Turing Machine](img/c08/TuringMachine.png)
+#### Turing Machine
+
+    </div>
+
+    <div
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Turing Machine Model](img/c08/Turing_Machine_Model.jpeg)
+#### Turing Machine Model
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 人类面临的问题
+
+- 是什么? 通过树状分类解决
+- 为什么? 通过推理规则解决
+- 怎么做? 通过**特定流程**解决
+
+    </div>
+
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "-200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![What](img/c08/what.png)
+#### What
+
+    </div>
+
+    <div
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Why](img/c08/why.webp)
+#### Why
+
+    </div>
+
+    <div
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![How](img/c08/how.webp)
+#### How
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 程序设计的实质
+
+- 对确定的问题选择一种好的**数据结构**
+- 设计一种好的**算法**
+- 数据结构即一组拥有特定关系的数据
+- 算法即一个有限长的操作序列
+
+    </div>
+
+    <div
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Data Structure](img/c08/data-structure.svg)
+#### Data Structure
+
+    </div>
+
+    <div
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Algorithm](img/c08/bubblesort_1.gif)
+#### Algorithm - Bubble Sort
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 计算机解决问题的基本流程
+
+- 分析问题, 确定数据模型
+- 设计相应算法
+- 编写, 运行, 调试程序
+- 得到正确的结果
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "1600"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据 (Data)
+
+- 是描述客观事物的数和字符的集合
+- 计算机操作的对象的总称
+- 计算机所处理信息的某种特定的符号表示形式
+
+    </div>
+
+    <div
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Data](img/c01/data.png)
+#### Data
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据元素 (Data Element)
+
+- 数据的基本单位
+- 有时数据元素也称为元素, 结点, 顶点或记录
+- 可以由若干个数据项组成
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据项 (Data Item)
+
+- 具有独立含义的数据最小单位
+- 也称为字段或域
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据对象 (Data Object)
+
+- 性质相同的数据元素的集合
+- 数据的一个子集
+- 本课程中讨论的数据通常是指数据对象
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据结构 (Data Structure)
+
+- 所有数据元素以及数据元素之同的关系
+- 带结构的数据元素的集合
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-2050"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据结构的组成
+
+- 逻辑结构 (Logical Structure)
+- 数据的存储结构 (Storage Structure)
+- 运算 (Operation)
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 逻辑结构
+
+- 从逻辑关系上描述数据
+- 问题的抽象模型
+- 与计算机无关
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 存储结构
+
+- 在计算机中的实现
+- 数据元素之间的关系在计算机中的表示
+- 依赖于计算机语言
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 运算
+
+- 对数据的基本操作
+- 定义在逻辑结构上
+- 依赖于存储结构
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "-300"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "4">
+
+### 数据结构
+
+- 描述现实世界实体的数学模型 (通常为非数值计算) 及其之上的运算在计算机中如何表示和实现
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 逻辑结构的表示
+
+- 图表
+- 二元组
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "-500"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 图表
+
+- 用表格或者图形直接描述数据的逻辑关系
+- 表格
+- 线性表
+- 树
+- 图
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "-700"
+    data-rel-y    = "-900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 二元组
+
+- $B = (D, R)$
+- $B$是一种数据逻辑结构
+- $D$是数据元素的集合
+- $R$是$D$上二元关系的集合
+- $D = \lbrace d\_i, | 0 \leq i \leq n-1, n \geq 0 \rbrace $
+- $R = \lbrace r\_j, | 1 \leq j \leq m, m \geq 0 \rbrace $
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "-800"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 逻辑结构中的数据
+
+- 关系 $r\_j (1 \leq j \leq m)$ 是 $D$ 上是序偶的集合
+- 对 $r\_j$ 中的任意序偶 $<x, y>(x, y \in D)$
+- $x$ 叫做第一元素或 $y$ 的前驱元素
+- $y$ 叫做第二元素或 $x$ 的后继元素
+- 若某元素没有前驱, 则称为开始元素
+- 若某元素没有后继, 则称为终端元素
+- 对称序偶用圆括号表示, 如 $(x, y) \in r$
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 逻辑结构的类型
+
+- 集合
+- 线性结构
+- 树形结构
+- 图形结构
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 集合
+
+- 只有 "同属于一个集合" 的关系
+
+    </div>
+
+    <div
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Set](img/c08/set.jpeg)
+#### Set
+
+    </div>
+
+    <div 
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 线性结构
+
+- 若非空，则只有一个开始元素和一个终端元素
+- 除终端元素外，每个元素都有一个后继元素
+- 除开始元素外，每个元素都有一个前驱元素
+
+    </div>
+
+    <div
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Linear](img/c08/list.jpeg)
+#### Linear
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "350"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 树形结构
+
+- 若非空，则只有一个开始元素
+- 每个元素有零个或多个后继元素
+- 除开始元素外, 每个元素都有一个前驱元素
+
+    </div>
+
+    <div
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Tree](img/c08/tree.jpeg)
+#### Tree
+
+    </div>
+
+    <div 
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 图形结构
+
+- 每个元素可以有多个后继元素
+- 每个元素可以有多个前驱元素
+
+    </div>
+
+    <div
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Graph](img/c08/graph.png)
+#### Graph
+
+    </div>
+
+    <div 
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据的存储结构
+
+- 存储数据元素
+- 存储逻辑关系
+
+    </div>
+
+    <div 
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "a44"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 常见存储结构
+
+- 顺序存储结构
+- 链式存储结构
+- 索引存储结构
+- 散列存储结构
+
+    </div>
+
+    <div 
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "a45"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 顺序存储
+
+- 使用一片地址连续的存储单元
+- 数据元素的存储位置相邻
+
+    </div>
+
+    <div 
+    id            = "a46a"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+    class Stud1
+    {
+        int no;
+        String name;
+        int score; 
+        public Stud1(int no1,String name1,int score1)
+        {
+            no=no1; name=name1; score=score1;
+        }
+        public void disp()
+        {
+           System.out.println(no+" "+name+" "+score);
+        }
+    }
+
+    </div>
+
+    <div
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46a"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Sequential Storage](img/c08/sequential-storage.jpeg)
+#### Sequential Storage
+
+    </div>
+
+    <div 
+    id            = "a48"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "3200"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 链式存储
+
+- 使用任意存储单元
+- 数据元素的存储位置不一定相邻
+- 通过指针存储数据元素之间的逻辑关系
+
+    </div>
+
+    <div
+    id            = "a49"
+    class         = "step markdown"
+    data-rel-to   = "a48"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Linked Storage](img/c08/linked-storage.jpeg)
+#### Linked Storage
+
+    </div>
+
+    <div 
+    id            = "a50"
+    class         = "step markdown"
+    data-rel-to   = "a49"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 索引存储
+
+- 使用两个表: 数据表, 索引表
+- 索引表中每个元素都包含一个指针
+- 指针指向数据表中的某个元素
+
+    </div>
+
+    <div
+    id            = "a51"
+    class         = "step markdown"
+    data-rel-to   = "a50"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Index Storage](img/c08/indexed-storage.jpeg)
+#### Indexed Storage
+
+    </div>
+
+    <div 
+    id            = "a52"
+    class         = "step markdown"
+    data-rel-to   = "a51"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 散列存储 (hash)
+
+- 用哈希函数将数据元素关键字映射到地址上
+- 地址称为散列 (哈希) 地址
+- 散列地址与数据元素的逻辑关系无关
+
+    </div>
+
+    <div
+    id            = "a53"
+    class         = "step markdown"
+    data-rel-to   = "a52"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Hash Storage](img/c08/hash-storage.jpeg)
+#### Hash Storage
+
+    </div>
+
+    <div 
+    id            = "a54"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
+    data-rel-x    = "-3000"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据的运算
+
+- 运算是指对数据实施的操作
+- 功能描述
+- 功能实现
+
+    </div>
+
+    <div 
+    id            = "a55"
+    class         = "step markdown"
+    data-rel-to   = "a54"
+    data-rel-x    = "900"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 功能描述
+
+- 基于逻辑结构
+- 用户定义的
+- 抽象的
+
+    </div>
+
+    <div 
+    id            = "a56"
+    class         = "step markdown"
+    data-rel-to   = "a55"
+    data-rel-x    = "500"
+    data-rel-y    = "50"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 功能实现
+
+- 基于存储结构
+- 程序员实现的
+- 具体的
+- 等同于算法设计
+
+    </div>
+
+    <div 
+    id            = "a57"
+    class         = "step markdown"
+    data-rel-to   = "a56"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据类型
+
+- 一组性质相同的值的集合
+- 定义在此集合上的一些操作
+
+    </div>
+
+    <div 
+    id            = "a58"
+    class         = "step markdown"
+    data-rel-to   = "a57"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 抽象数据类型 (Abstract Data Type, ADT)
+
+- 逻辑数据结构的描述
+- 逻辑数据结构上的运算
+
+    </div>
+
+    <div 
+    id            = "a59"
+    class         = "step markdown"
+    data-rel-to   = "a58"
+    data-rel-x    = "2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 抽象数据类型的描述
+
+- 数据对象
+- 数据关系
+- 基本操作
+- $ADT = (D, S, P)$
+
+    </div>
+
+    <div 
+    id            = "a60"
+    class         = "step markdown"
+    data-rel-to   = "a59"
+    data-rel-x    = "2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 抽象数据类型
+
+- Set
+- TwoSet
+
+    </div>
+
+    <div 
+    id            = "a61"
+    class         = "step markdown"
+    data-rel-to   = "a60"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Set
+
+- $E$ 类型
+- 遵循标准数学定义
+- 求集合长度
+- 求第 $i$ 个元素
+- 判断一个元素是否在集合中
+- 向集合中添加一个元素
+- 从集合中删除一个元素
+- 输出集合中的所有元素
+
+    </div>
+
+    <div 
+    id            = "a62"
+    class         = "step markdown"
+    data-rel-to   = "a61"
+    data-rel-x    = "0"
+    data-rel-y    = "1500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Set
+
+    ADT Set
+    {数据对象:
+
+$data = \lbrace d\_i | 0 \leq i \leq n-1, d\_i \in E \rbrace$
+
+    int size;
+    数据关系:
+        无
+    基本运算:
+        int getSize();
+        E get(int i);     boolean IsIn(E e);
+        boolean add(E e); boolean delete(E e);
+        void display();
+    } ADT Set
+
+    </div>
+
+    <div 
+    id            = "a63"
+    class         = "step markdown"
+    data-rel-to   = "a62"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### TwoSet
+
+- 集合并
+- 集合交
+- 集合差
+
+    </div>
+
+    <div 
+    id            = "a64"
+    class         = "step markdown"
+    data-rel-to   = "a63"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### TwoSet
+
+    ADT TwoSet
+    {数据对象:
+
+$data = \lbrace s\_i | 1 \leq i \leq n, s\_i \in Set \rbrace;$
+
+    数据关系:
+      无
+    基本运算:
+      Union(Set s1, Set s2);
+      Intersect(Set s1, Set s2);
+      Difference(Set s1, Set s2);
+    }
+
+    </div>
+
+    <div 
+    id            = "a65"
+    class         = "step markdown"
+    data-rel-to   = "a64"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 抽象数据类型的特征
+
+- 数据抽象
+- 数据封装
+
+    </div>
+
+    <div 
+    id            = "a66"
+    class         = "step markdown"
+    data-rel-to   = "a65"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据抽象
+
+- 本质特征
+- 能完成的功能
+- 用户接口
+
+    </div>
+
+    <div 
+    id            = "a67"
+    class         = "step markdown"
+    data-rel-to   = "a66"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据封装
+
+- 将外部特征与内部实现分离
+- 对用户隐藏实现细节
+
+    </div>
+
+    <div
+    id            = "mm81"
+    class         = "step markdown"
+    data-rel-to   = "c81t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![DBDS 1.1 mindmap](img/c01/mindmap-1-1.png)
+![course 8.1 mindmap](img/c08/mindmap-8-1.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c11q"
+    id            = "c81q"
     class         = "step markdown"
-    data-rel-to   = "c11t"
+    data-rel-to   = "c81t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -151,19 +1330,20 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 1.1 概述
+### 8.1 什么是数据结构
 
-- 什么是数据?
-- 什么是数据库?
-- 为什么要用数据库来管理数据?
-- 数据库系统由哪些部分构成, 为什么?
-- 数据库管理系统有哪些功能?
+- 数据的基本单位是什么? 如何定义?
+- 什么是数据项? 有什么特点?
+- 逻辑结构和存储结构分别是什么? 有什么区别?
+- 描述集合, 线性结构, 树形结构和图形结构的特点.
+- 顺序存储和链式存储的特点和区别是什么?
+- 抽象数据类型是什么? 它包含哪些方面的描述?
 
 ----
 
-[ 全景图 ](dbds-0-2206.html)
+[ 7.5 非关系数据库](dbds-7-5.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 1.2 数据模型 ](dbds-1-2-2206.html)
+[ 8.2 算法及其描述](dbds-8-2.html#/overview)
 
     </div>
 

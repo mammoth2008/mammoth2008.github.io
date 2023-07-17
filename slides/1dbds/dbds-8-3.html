@@ -1,0 +1,467 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c83t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>8. 数据结构与算法概论</h2>
+        <h3 style="text-align: center">8.3 算法分析</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "0"
+    data-rel-y    = "-1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 算法设计的要求
+
+- 正确性
+- 可使用性
+- 可读性
+- 健壮性
+- 高效率与低存储量
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "-800"
+    data-rel-y    = "300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 正确性
+
+- 能够正确地执行预先规定的功能和性能要求
+- 是最重要也是最基本的标准
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 可使用性
+
+- 能够很方便地使用
+- 也叫用户友好性
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 可读性
+
+- 应该易于使人理解
+- 逻辑清晰, 简单和结构化
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 健壮性
+
+- 具有好的容错性
+- 提供异常处理
+- 能够对不合理的数据进行检查
+- 不经常出现异常中断或死机
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 高效率与低存储量
+
+- 算法的效率主要指算法执行时间
+- 执行时间短的算法效率高
+- 存储量指执行过程中所需最大存储空间
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "400"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 算法时间性能分析
+
+- 事后统计法
+- 事前估算法
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 事后统计法
+
+- 统计程序执行时间
+- 与很多因素有关
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 事前估算法
+
+- 顺序结构
+- 分支结构
+- 循环结构
+- 原操作
+- 执行时间由原操作的执行次数来计量
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "1800"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 算法频度
+
+- 所有原操作的执行次数之和
+- 用 $T(n)$ 表示
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 方阵相加
+
+    void matrixadd(int[][] A, int[][] B, int[][] C, int n) {
+        for (i = 0; i < n; i++)
+            for (j = 0; j < n; j++)
+                C[i][j] = A[i][j] + B[i][j];
+    }
+$T(n) = n+1+n(n+1)+n^2$ 
+$T(n) = 2n^2+2n+1 = O(n^2)$
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 算法时间复杂度
+
+- $T(n)$ 的数量级,即 $T(n) = O(f(n))$
+- 存在正常量 $C$ 和 $n\_0$
+- 使得当 $\lim\limits_{n \to n\_0} \frac{\lvert T(n) \rvert}{\lvert f(n) \rvert} \leq C \ne 0$
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 算法复杂度
+
+    void fun(int n){
+      int s = 0;
+      for (i = 0; i < n; i++)
+          for (j = 0; j < i; j++)
+              for (int k = 0; k < j; k++)
+                  s++;
+      return s;
+    }
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step"
+    data-rel-to   = "a13"
+    data-rel-x    = "1000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+$$
+\begin{eqnarray*}
+T(n) &=& \sum\limits_{i=0}^n \sum\limits_{j=0}^i \sum\limits_{k=0}^{j-1} 1 \\\
+&=& \sum\limits_{i=0}^n \sum\limits_{j=0}^i (j-1-0+1) = \sum\limits_{i=0}^n \sum\limits_{j=0}^i j \\\
+&=& \sum\limits_{i=0}^n \frac{i(i+1)}{2} = \frac{1}{2}(\sum\limits_{i=0}^n i^2 + \sum\limits_{i=0}^n i) \\\
+&=& \frac{2n^3 + 6n^2 + 4n}{12} = O(n^3)
+\end{eqnarray*}
+$$
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 算法的空间复杂度
+
+- 算法的空间复杂度是指算法需要消耗的内存空间
+- $S(n) = O(g(n))$
+
+    </div>
+
+    <div
+    id            = "mm83"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 8.3 mindmap](img/c08/mindmap-8-3.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c83q"
+    class         = "step markdown"
+    data-rel-to   = "c83t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 8.3 算法分析
+
+- 算法设计的要求有哪些?
+- 为什么在算法设计中可读性很重要?
+- 健壮性在算法设计中的作用是什么?
+- 请解释高效率与低存储量的含义.
+- 算法时间性能分析有哪两种方法?
+- 事前估算法中, 如何计量算法执行时间?
+- 什么是算法空间复杂度?
+
+----
+
+[ 8.3 算法及其描述](dbds-8-2.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 8.4 数据结构的目标](dbds-8-4.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
