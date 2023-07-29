@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c84t"
+    id         = "c35t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>8. 数据结构与算法概论</h2>
-        <h3 style="text-align: center">8.4 数据结构的目标</h3>
+        <h2>3. 关系数据库标准语言 SQL</h2>
+        <h3 style="text-align: center">3.5 数据更新</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,18 +99,18 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c84t"
+    data-rel-to   = "c35t"
     data-rel-x    = "-1000"
-    data-rel-y    = "-900"
+    data-rel-y    = "200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 算法的评价标准
+### 数据更新操作
 
-- 占用资源越少就越好
-- 时间复杂度分析
-- 空间复杂度分析
+- 向表中添加数据
+- 修改表中的数据
+- 删除表中的数据
 
     </div>
 
@@ -119,15 +119,15 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存储结构对算法的影响
+### 插入数据
 
-- 存储能力
-- 与算法的适应性
+- 插入一个元组
+- 插入子查询结果
 
     </div>
 
@@ -135,16 +135,17 @@
     id            = "a3"
     class         = "step markdown"
     data-rel-to   = "a2"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-x    = "-1600"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 抽象数据类型的实现
+### 插入元组
 
-- Set
-- TwoSet
+    INSERT
+    INTO <表名> [(<属性列 1> [,<属性列 2>]...)]
+    VALUES (<常量 1> [,<常量 2>]...);
 
     </div>
 
@@ -152,24 +153,19 @@
     id            = "a4"
     class         = "step markdown"
     data-rel-to   = "a3"
-    data-rel-x    = "600"
-    data-rel-y    = "700"
+    data-rel-x    = "1600"
+    data-rel-y    = "900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set
+### 插入功能
 
-    class Set<E>
-    {
-        final int MaxSize=100;
-        E[] data;
-        int size;
-        public Set() 
-        {    data = (E[])new Object[MaxSize];
-            size=0;
-        }
-    }
+- 将新元组插入到指定表中
+- 新元组的属性列 1 的值为常量 1
+- 新元组在 INTO 子句中没出现的属性列上取空值
+- 表定义时 NOT NULL 的属性列不能取空值
+- 如果 INTO 子句中没有指明任何属性列名, 则新插入的元组必须在每个属性列上都有值
 
     </div>
 
@@ -177,18 +173,19 @@
     id            = "a5"
     class         = "step markdown"
     data-rel-to   = "a4"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-x    = "-1600"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set.getsize()
+### 例 69
 
-    public int getsize()
-    {
-        return size;
-    }
+    INSERT
+    INTO Student (Sno, Sname, Ssex, Sdept, Sage)
+    VALUES ('2012151281', '陈冬', '男', 'IS', 18);
+- 将一个新元组插入到 Student 表中
+- 属性顺序可以与 CREATE TABLE 中的顺序不一样
 
     </div>
 
@@ -197,39 +194,38 @@
     class         = "step markdown"
     data-rel-to   = "a5"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set.get()
+### 例 70
 
-    public E get(int i)
-    {
-        return (E)data[i];
-    }
+    INSERT
+    INTO Student
+    VALUES ('201215126', '张成民', '男', 18, 'CS');
+- 将学生信息插入到 Student 表中
+- 新元组在表的所有属性列上都指定值
+- 属性列的次序与 CREATE TABLE 中的次序相同
 
     </div>
 
     <div 
     id            = "a7"
     class         = "step markdown"
-    data-rel-to   = "a4"
-    data-rel-x    = "1800"
+    data-rel-to   = "a6"
+    data-rel-x    = "1600"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set.IsIn()
+### 插入子查询结果
 
-    public boolean IsIn(E e)
-    {
-        for (int i=0;i&lt;size;i++)
-            if (data[i]==e)
-                return true;
-        return false;
-    }
+    INSERT
+    INTO <表名> [(<属性列 1> [, <属性列 2>... )]
+    子查询;
+- 子査询可以嵌套在 INSERT 语句中, 生成要插入的批量数据
 
     </div>
 
@@ -238,49 +234,39 @@
     class         = "step markdown"
     data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set.add()
+### 例 72
 
-    public boolean add(E e)
-    {
-        if (IsIn(e))
-            return false;
-        else
-        {
-            data[size]=e;
-            size++;
-            return true;
-        }
-    }
+    INSERT
+    INTO Dept_age(Sdept, Avg_age)
+    SELECT Sdept, AVG(Sage) FROM Student
+    GROUP BY Sdept;
+- 对每一个系求学生的平均年龄并存入数据库
 
     </div>
 
     <div 
     id            = "a9"
     class         = "step markdown"
-    data-rel-to   = "a8"
-    data-rel-x    = "0"
+    data-rel-to   = "c35t"
+    data-rel-x    = "800"
     data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set.delete()
+### 修改数据
 
-    public boolean delete(E e)
-    {
-        int i=0;
-        while (i&lt;size && data[i]!=e) i++;
-        if (i&gt;=size) return false;
-        for (int j=i+1;j&lt;size;j++)
-            data[j-1]=data[j];
-        size--;
-        return true;
-    }
+    UPDATE <表名>
+    SET <列名> = <表达式> [,<列名> = <表达式>]...
+    [WHERE <条件>];
+- 又称为更新操作
+- 修改指定表中满足 WHERE 子句条件的元组
+- SET 子句给出 <表达式> 的值
 
     </div>
 
@@ -289,50 +275,35 @@
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Set.display()
+### 修改某一元组
 
-    public void display()
-    {
-        for (int i=0;i&lt;size;i++)
-        {
-            if (i==0)
-                System.out.print(data[i]);
-            else
-                System.out.print(" "+data[i]);
-        }
-        System.out.println();
-    }
+    UPDATE Student
+    SET Sage = 22
+    WHERE Sno = '201215121';
+- 将学生 201215121 的年龄改为22岁
 
     </div>
 
     <div 
     id            = "a11"
     class         = "step markdown"
-    data-rel-to   = "a7"
-    data-rel-x    = "1500"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### TwoSet.Union()
+### 修改多个元组
 
-    {
-        public Set&lt;E&gt; Union(Set&lt;E> s1,Set&lt;E> s2)
-        {
-            Set&lt;E> s3=new Set&lt;E>();
-            for (int i=0;i&lt;s1.getsize();i++)
-                s3.add(s1.get(i));
-            for (int i=0;i&lt;s2.getsize();i++)
-                if (!s1.IsIn(s2.get(i)))
-                    s3.add(s2.get(i));
-            return s3;
-        }
+    UPDATE Student
+    SET Sage = Sage + 1;
+- 将所有学生年龄增加 1 岁
 
     </div>
 
@@ -341,67 +312,122 @@
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### TwoSet.Intersection()
+### 带子查询的修改语句
 
-    public Set&lt;E> Intersection(Set&lt;E> s1,Set&lt;E> s2)
-    {
-        Set&lt;E> s3=new Set&lt;E>();
-        for (int i=0;i&lt;s1.getsize();i++)
-            if (s2.IsIn(s1.get(i)))
-                s3.add(s1.get(i));
-        return s3;
-    }
+    UPDATE SC
+    SET Grade = 0
+    WHERE Sno IN
+    (SELETE Sno
+    FROM Student
+    WHERE Sdept = 'CS');
+- 将计算机科学系全体学生的成绩置零
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "a12"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "c35t"
+    data-rel-x    = "2400"
+    data-rel-y    = "200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### TwoSet.Difference()
+### 删除数据
 
-    public Set&lt;E> Difference(Set&lt;E> s1,Set&lt;E> s2)
-    {
-        Set&lt;E> s3=new Set&lt;E>();
-        for (int i=0;i&lt;s1.getsize();i++)
-            if (!s2.IsIn(s1.get(i)))
-                s3.add(s1.get(i));
-        return s3;
-    }
+    DELETE
+    FROM <表名>
+    [WHERE <条件>];
+- 从指定表中删除满足 WHERE 子句条件的所有元组
+- DELETE 删除的是表中数据, 而不是表定义
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 删除某一个元组
+
+    DELETE
+    FROM Student
+    WHERE Sno ='201215128';
+- 删除学生记录
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 删除多个元组
+
+    DELETE
+    FROM SC;
+- 删除所有的学生选课记录
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 带子查询的删除语句
+
+    DELETE
+    FROM SC
+    WHERE Sno IN
+    (SELECT Sno
+    FROM Student
+    WHERE Sdept = 'CS');
+- 删除计算机科学系所有学生的选课记录
 
     </div>
 
     <div
-    id            = "mm84"
+    id            = "mm35"
     class         = "step markdown"
-    data-rel-to   = "c84t"
+    data-rel-to   = "c35t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 8.4 mindmap](img/c08/mindmap-8-4.png)
+![course 3.5 mindmap](img/c03/mindmap-3-5.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c84q"
+    id            = "c35q"
     class         = "step markdown"
-    data-rel-to   = "c84t"
+    data-rel-to   = "c35t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -410,19 +436,19 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 8.4 数据结构的目标
+### 3.5 数据更新
 
-- 什么是算法的评价标准?
-- 存储结构对算法有哪些影响?
-- Set 类是什么抽象数据类型?
-- Set 类中的 add() 方法的作用是什么?
-- Set 类中的 display() 方法的作用是什么?
+- 如何向特定表中添加新的数据元组?
+- 如果未在 INTO 子句中指定某个属性列, 那么这个属性列的值是什么?
+- 如何将子查询结果插入到表中?
+- 如何使用 UPDATE 语句修改特定表中的数据?
+- 如何在 SQL 中删除指定表中的某一元组?
 
 ----
 
-[ 8.3 算法分析](dbds-8-3.html#/overview)
+[ 3.4 数据查询](dbds-3-4.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 9.1 线性表的定义](dbds-9-1.html#/overview)
+[ 3.6 视图](dbds-3-6.html#/overview)
 
     </div>
 

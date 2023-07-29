@@ -305,9 +305,9 @@ class HTMLGenerator:
 
 ----
 
-[ {self.section}](dbds-{self.chapter_number}-{self.section_number}.html#/overview)
-[| 练习 |](dbds-exec.html)
-[ {self.section}](dbds-{self.chapter_number}-{self.section_number}.html#/overview)
+[ {self.section}](cciot-{self.chapter_number}-{self.section_number}.html#/overview)
+[| 练习 |](cciot-exec.html)
+[ {self.section}](cciot-{self.chapter_number}-{self.section_number}.html#/overview)
 
     </div>
 '''

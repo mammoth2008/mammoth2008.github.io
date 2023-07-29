@@ -1,0 +1,642 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c36t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>3. 关系数据库标准语言 SQL</h2>
+        <h3 style="text-align: center">3.6 视图</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c36t"
+    data-rel-x    = "-1000"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 视图
+
+- 从一个或几个基本表导出的表
+- 从一个或几个视图导出的表
+- 是虚表
+- 数据库中只存放视图的定义
+- 对视图的更新操作有一定限制
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 建立视图
+
+    CREATE VIEW <视图名> [(<列名>[, <列名>]...)]
+    AS <子査询>
+    [WITH CHECK OPTION];
+- 子查询可以是任意的 SELECT 语句
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### WITH CHECK OPTION
+
+- 对视图进行更新, 插入或删除时
+- 行需要满足视图定义中子查询的条件表达式
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 需要明确指定列名的情况
+
+- 某个目标列是聚集函数或列表达式
+- 多表连接时有同名列
+- 为某个列启用新的名字
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "-1600"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 84
+
+    CREATE VIEW IS_Student
+    AS
+    SELECT Sno,Sname,Sage
+    FROM Student
+    WHERE Sdept = 'IS';
+- 列名为 SELECT 子句中的三个列名
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 视图定义的执行
+
+- 只是把视图的定义存入数据库
+- 并不执行 SELECT 语句
+- 查询视图时才按视图定义查找数据
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 85
+
+    CREATE VIEW IS_Student
+    AS
+    SELECT Sno,Sname,Sage
+    FROM Student
+    WHERE Sdept = 'IS'
+    WITH CHECK OPTION;
+- 对该视图操作时会自动加上 Sdept ='IS' 条件
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "1600"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 行列子集视图
+
+- 若一个视图是从单个基本表导出
+- 只去掉了基本表的某些行和列
+- 但保留了主码
+- 则称为行列子集视图
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 86
+
+    CREATE VIEW IS_S1(Sno,Sname,Grade)
+    AS
+    SELECT Student.Sno, Sname, Grade
+    FROM Student, SC
+    WHERE Sdept = 'IS' AND Student.Sno=SC.Sno
+          AND SC.Cno='1';
+- 视图可以建立在多个基本表上
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 87
+
+    CREATE VIEW IS_S2
+    AS
+    SELECT Sno,Sname.Grade FROM IS_S1
+    WHERE Grade >= 90;
+- 视图可以建立在一个或多个己定义好的视图上
+- 或建立在基本表与视图上
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 带表达式的视图
+
+- 为了减少冗余数据, 基本表中只存放基本数据
+- 定义视图时可以根据需要设置一些派生属性列
+- 这些派生属性叫做虚拟列
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "1600"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 88
+
+    CREATE VIEW BT_S(Sno,Sname,Sbirth)
+    AS
+    SELECT Sno, Sname, 2014-Sage
+    FROM Student;
+- 这是一个带表达式的视图
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分组视图
+
+- 带有聚集函数和 GROUP BY 子句查询定义的视图
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 89
+
+    CREATE VIEW S_G(Sno,Gavg)
+    AS
+    SELECT Sno, AVG(Grade) FROM SC
+    GROUP BY Sno;
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 删除视图
+
+    DROP VIEW <视图名> [CASCADE];
+- CASCADE 级联删除语句
+- 删除基本表并不会删除由该基本表导出的视图定义
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 91
+
+    DROP VIEW BT_S;  /*成功执行*/
+    DROP VIEW IS_S1; /*拒绝执行*/
+- IS\_S1 视图上还导出了 IS\_S2 视图
+- 所以该语句被拒绝执行
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 92
+
+    SELECT Sno.Sage
+    FROM IS_Student
+    WHERE Sage < 20;
+- 视图查询和基本表查询一样
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "200"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 视图查询
+
+- 进行有效性检查
+- 从数据字典中取出视图的定义
+- 结合定义中的子査询和用户查询
+- 转换成等价基本表査询
+- 执行修正后的查询
+- 这一过程称为视图消解 (View Resolution)
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 92 转换后
+
+    SELECT Sno.Sage
+    FROM Student
+    WHERE Sdept = 'IS' AND Sage < 20;
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 更新视图
+
+- 通过视图来 INSERT, DELETE, UPDATE 数据
+- 对视图的更新操作也通过视图消解
+- 为防止操作出错, 可加 WITH CHECK OPTION
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "-700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 95
+
+    UPDATE IS_Student
+    SET Sname = '刘辰'
+    WHERE Sno = '201215122';
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 95 转换后
+
+    UPDATE Student
+    SET Sname = '刘辰'
+    WHERE Sno = '201215122' AND Sdept = 'IS';
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 不是所有视图都可更新
+
+- 有些视图的更新不能唯一地有意义地转换成对相应基本表的更新
+- 一般行列子集视图是可更新的
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "-1800"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 视图的作用
+
+- 视图能够简化用户的操作
+- 视图使用户能以多种角度看待同一数据
+- 视图对重构数据库提供了一定程度的逻辑独立性
+- 视图能够对机密数据提供安全保护
+- 适当利用视图可以更清晰地表达查询
+
+    </div>
+
+    <div
+    id            = "mm36"
+    class         = "step markdown"
+    data-rel-to   = "c36t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 3.6 mindmap](img/c03/mindmap-3-6.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c36q"
+    class         = "step markdown"
+    data-rel-to   = "c36t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 3.6 视图
+
+- 解释视图的基本概念.
+- 在什么情况下需要明确指定列名?
+- 视图在数据库中是如何存储的?
+- WITH CHECK OPTION 有什么作用?
+- 什么是行列子集视图?
+- 解释视图的主要作用和优点.
+
+----
+
+[ 3.5 数据更新](dbds-3-5.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 4.1 问题的提出](dbds-4-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

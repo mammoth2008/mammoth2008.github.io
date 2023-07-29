@@ -1,0 +1,1016 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>CC & IoT | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="云计算与物联网课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c21t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>2. 云计算基础</h2>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-1300"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2.1 分布式计算
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分布式
+
+- 去中心架构
+- P2P
+- 区块链
+- CDN
+
+    </div>
+
+    <div
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![P2P](img/c02/p2p.png)
+#### Peer to Peer
+
+    </div>
+
+    <div
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![blockchain](img/c02/blockchain.webp)
+#### Blockchain
+
+    </div>
+
+    <div
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![CDN](img/c02/cdn.png)
+#### Content Delivery Network
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "1200"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分布式计算
+
+- 将一个计算任务分解成多个子任务
+- 分配给多台计算机处理
+- 合并各个子任务的结果
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![distributed computing](img/c02/distributed-computing.png)
+#### Distributed Computing
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "1200"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 节点通信
+
+- RPC 调用
+- 消息队列
+- Web Service
+
+    </div>
+
+    <div
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Message Queue](img/c02/message-queue.webp)
+#### Message Queue
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "1200"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Web Service
+
+- 平台独立
+- 语言无关
+- 基于 HTTP 协议
+- 基于 XML 数据格式
+- 低耦合
+
+    </div>
+
+    <div
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Web Service](img/c02/web-services.jpeg)
+#### Web Service
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2.2 分布式计算与云计算
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云计算
+
+- 概念更抽象
+- 用户需求封装成服务
+- 提供统一窗口
+- 解决人与 IT 资源的关系问题
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 概念更抽象
+
+- 将复杂的计算任务抽象成服务
+- 将底层计算资源抽象成服务
+- 用户只需关心输入输出
+- 无需关心服务细节
+
+    </div>
+
+    <div
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Cloud Computing](img/c02/cloud-computing.webp)
+#### Cloud Computing
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "2200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用户需求封装成服务
+
+- 存储服务
+- 计算服务
+- 数据库服务
+- 人工智能服务
+- 用户根据需求选择服务
+- 灵活调整服务规模和性能
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 提供统一服务窗口
+
+- 在一个平台上管理和使用所有的云服务
+- 简化用户操作
+
+    </div>
+
+    <div
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Aliyun](img/c02/aliyun.png)
+#### Aliyun
+
+    </div>
+
+    <div
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Aliyun](img/c02/aliyun1.png)
+#### Aliyun
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 解决人与 IT 资源的关系问题
+
+- 用户无需了解硬件和软件
+- 用户无需配置和管理
+- 简化人与 IT 资源的关系
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "1600"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2.3 云计算关键技术
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分布式海量数据存储
+
+- 大数据技术
+- 对象存储技术
+- 块存储技术
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 传统存储的问题
+
+- 数据库容量有限
+- 并行取数困难
+- 数据库接口访问效率低
+- 并发访问多
+- 扩容成本高
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据存储技术
+
+- 分布式文件系统
+- Google File System
+- Hadoop Distributed File System
+
+    </div>
+
+    <div
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Google File System](img/c02/gfs.png)
+#### Google File System
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分布式对象存储
+
+- 云盘
+- Amazon S3
+- OpenStack Swift
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分布式块存储
+
+- Ceph
+- GlusterFS
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 虚拟化技术
+
+- 硬件, 软件, 数据隔离
+- 资源, 网络,应用虚拟化
+- IT 架构动态化
+- 资源集中管理
+- 资源动态分配
+- 提升适应需求和环境的能力
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 虚拟化技术的特点
+
+- 资源分享
+- 资源定制
+- 细粒度资源管理
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "2600"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云管理平台技术
+
+- 大量服务器协同
+- 方便部署
+- 故障快速发现和恢复
+- 自动化
+- 智能化
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "770"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 并行编程技术
+
+- 数据并行
+- 消息传递
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据并行模型
+
+- 层次较高
+- 数据分布在不同的节点
+- 每个节点处理自己的数据
+- 节点之间通信
+- 提供全局地址空间
+- 用户列出并行操作和对象
+
+    </div>
+
+    <div
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Data Parallelism](img/c02/data-parallelism.png)
+#### Data Parallelism
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 消息传递模型
+
+- 面向分布式内存或共享内存
+- 控制更灵活
+- 通信更细粒度
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据管理技术
+
+- 分布式数据库
+- BigTable
+- HBase
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-3800"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2.4 云计算的优势与挑战
+
+    </div>
+
+    <div 
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云计算的优势
+
+- 超大规模
+- 虚拟化
+- 高可靠性
+- 通用性
+- 高可扩展性
+- 按需服务
+- 便利性
+
+    </div>
+
+    <div 
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "1100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云计算的挑战
+
+- 服务的持续可用性
+- 服务的安全性
+- 服务的迁移
+- 服务的性能
+
+    </div>
+
+    <div 
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "-2700"
+    data-rel-y    = "-1280"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2.5 典型的云应用
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云存储
+
+- 云盘
+- 云备份
+- 云归档
+
+    </div>
+
+    <div
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Cloud Storage](img/c02/cloud-services.jpeg)
+#### Cloud Storage
+
+    </div>
+
+    <div 
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "a41"
+    data-rel-x    = "600"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云服务
+
+- 备份
+- 同步
+- 分享
+
+    </div>
+
+    <div
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![iCloud](img/c02/icloud.png)
+#### iCloud
+
+    </div>
+
+    <div 
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "a43"
+    data-rel-x    = "600"
+    data-rel-y    = "1140"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云物联
+
+- MAI, M2M Application Integration
+- MaaS, M2M as a Service
+
+    </div>
+
+    <div
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "a44"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![M2M](img/c02/m2m.png)
+#### Machine to Machine
+
+    </div>
+
+    <div 
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-1280"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2.6 云计算与大数据
+
+    </div>
+
+    <div 
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云计算是大数据的 IT 基础
+
+- 大数据的存储
+- 大数据的计算
+- 大数据的分析
+
+    </div>
+
+    <div 
+    id            = "a48"
+    class         = "step markdown"
+    data-rel-to   = "a47"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云计算是大数据成长的驱动力
+
+- 计算资源
+- 存储资源
+- 分析资源
+
+    </div>
+
+    <div
+    id            = "a49"
+    class         = "step markdown"
+    data-rel-to   = "a48"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Big Data and Cloud](img/c02/cloud-and-big-data.jpeg)
+#### Big Data and Cloud
+
+    </div>
+
+    <div
+    id            = "mm21"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 2.1 mindmap](img/c02/mindmap-2-1.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c21q"
+    class         = "step markdown"
+    data-rel-to   = "c21t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2 云计算基础
+
+- 请简述分布式计算的基本概念.
+- 为什么说云计算的概念更抽象?
+- 云计算的抽象对用户有什么好处?
+- 为什么需要虚拟化技术?
+- 云计算面临哪些挑战? 请举例说明.
+
+----
+
+[ 1.6 云计算面临的挑战](cciot-1-1.html#/a26)
+[| 练习 |](cciot-exec.html)
+[ 3.1 云计算机制](cciot-3-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

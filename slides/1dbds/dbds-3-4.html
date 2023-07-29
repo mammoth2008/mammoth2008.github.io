@@ -1,0 +1,1154 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c34t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>3. 关系数据库标准语言 SQL</h2>
+        <h3 style="text-align: center">3.4 数据查询</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "-1600"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据查询
+
+    SELECT [ALL | DISTINCT] <目标列表达式>, <目标列表达式>, ...
+    FROM <表名或视图名> [AS <别名>]
+    [WHERE <条件表达式>]
+    [GROUP BY <列名1> [HAVING <条件表达式>]]
+    [ORDER BY <列名2> [ASC|DESC]];
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询过程
+
+- 根据 WHERE 子句中的条件表达式
+- 从 FROM 子句指定的表中选出满足条件的元组
+- 根据 SELECT 子句中的目标列表达式
+- 选取元组中的属性
+- 形成结果表
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询子句
+
+- GROUP BY子句按照指定的列进行分组
+- 可在每个组上应用聚集函数
+- 若有 HAVING 条件则只输出满足条件的组
+- 若有 ORDER BY 子句则对结果表排序
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询指定列
+
+    SELECT Sno, Sname FROM Student;
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询全部列
+
+    SELECT * FROM Student;
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询经过计算的值
+
+    SELECT Sname, 2014 - Sage FROM Student;
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 指定列别名
+
+    SELECT Sname AS NAME, 2014 - Sage AS BIRTHDAY
+    FROM Student;
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 消除取值重复的行
+
+    SELECT DISTINCT Sno FROM SC;
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 査询满足条件的元组
+
+- 使用 WHERE 子句
+- 比较: <, >, <=, >=, =, !=
+- 范围: BETWEEN AND, NOT BETWEEN AND
+- 集合: IN, NOT IN
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 比较
+
+    SELECT Sname
+	FROM Student
+	WHERE Sdept = 'CS';
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 范围
+
+    SELECT Sname, Sdept, Sage
+	FROM Student
+	WHERE Sage BETWEEN 20 AND 23;
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 集合
+
+    SELECT Sname, Ssex
+	FROM Student
+	WHERE Sdept IN ('CS', 'MA', 'IS');
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "1800"
+    data-rel-y    = "00"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 字符匹配
+
+- 使用 LIKE 进行字符串匹配
+- 可以使用通配符
+- "%" 代表任意长度的字符串
+- "_" 代表任意单个字符
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "1100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 字符匹配
+
+    SELECT * FROM Student
+	WHERE Sno LIKE '201215121';
+    SELECT Sname, Sno, Ssex FROM Student
+	WHERE Sname LIKE '刘%';
+    SELECT Sname FROM Student
+	WHERE Sname LIKE '欧阳_';
+    SELECT Sname, Sno FROM Student
+	WHERE Sname LIKE '_阳%';
+    SELECT Sname, Sno, Ssex FROM Student
+	WHERE Sname NOT LIKE '刘%';
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 涉及空值的查询
+
+    SELECT Sno, Cno FROM SC
+    WHERE Grade IS NULL;
+    SELECT Sno, Cno FROM SC
+    WHERE Grade IS NOT NULL;
+
+- 使用 IS NULL 谓词查询空值
+- 使用 IS NOT NULL 谓词查询非空值
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 多重条件查询
+
+    SELECT Sname FROM Student
+    WHERE Sdept = 'CS' AND Sage &lt; 20;
+    SELECT Sname, Ssex
+    FROM Student
+    WHERE Sdept = 'CS' OR Sdept = 'MA' OR Sdept = 'IS';
+
+- 使用逻辑运算符 AND 和 OR 连接多个查询条件
+- AND 的优先级高于 OR
+- 可以使用括号改变优先级
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "3000"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ORDER BY子句
+
+    SELECT Sno, Grade FROM SC WHERE Cno = '3'
+	ORDER BY Grade DESC;
+    SELECT * FROM Student ORDER BY Sdept, Sage DESC;
+
+- 对查询结果按照属性列排序
+- 可以对一个或多个属性列排序
+- 默认按升序排列
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 聚集函数
+
+- COUNT 函数
+- SUM 函数
+- AVG 函数
+- MAX 函数
+- MIN 函数
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### COUNT 函数
+
+    SELECT COUNT(*) FROM Student;
+    SELECT COUNT(DISTINCT Sno) FROM SC;
+
+- 用于统计元组个数或某一列中值的个数
+- 查询学生总人数
+- 查询选修了课程的学生人数
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### SUM 函数
+
+    SELECT AVG(Grade) FROM SC WHERE Cno = '1';
+
+- 用于计算某一列值的总和 (此列必须是数值型) .
+- 计算选修 1 号课程的学生平均成绩
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### AVG 函数
+
+    SELECT AVG(Grade) FROM SC WHERE Cno = '1';
+
+- 用于计算某一列值的平均值 (此列必须是数值型) 
+- 计算选修 1 号课程的学生平均成绩
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### MAX 函数
+
+    SELECT MAX(Grade) FROM SC WHERE Cno = '1';
+
+- 用于求一列值中的最大值
+- 查询选修 1 号课程的学生最高分数
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### MIN 函数
+
+    SELECT MIN(Grade) FROM SC WHERE Cno = '1';
+
+- 用于求一列值中的最小值
+- 查询选修1号课程的学生最低分数
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 使用聚集函数的注意事项
+
+- 遇到空值时除 COUNT(*) 外都只处理非空值
+- WHERE 子句中不能使用聚集函数作为条件表达式
+- 聚集函数只能用于 SELECT 子句和 GROUP BY 中的 HAVING 子句
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "-1600"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### GROUP BY 子句
+
+    SELECT Cno, COUNT(Sno) FROM SC GROUP BY Cno;
+    SELECT Sno FROM SC
+	GROUP BY Sno
+	HAVING COUNT(*) &gt; 3;
+
+- 将查询结果按某一列或多列的值分组
+- 为了细化聚集函数的作用对象
+- 求各个课程号及相应的选课人数
+- 查询选修了三门以上课程的学生学号
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### WHERE 与 HAVING 的区别
+
+-  WHERE 子句与 HAVING 短语的区别在于作用对象不同
+-  WHERE 子句作用于基本表或视图
+-  HAVING 短语作用于组
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "1700"
+    data-rel-y    = "-100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询示例
+
+    SELECT Sno, AVG(Grade)
+    FROM SC
+    GROUP BY Sno
+    HAVING AVG(Grade) >= 90;
+
+- 平均成绩大于等于90分的学生学号和平均成绩
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "-5000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 连接查询
+
+- 同时涉及两个以上的表的查询操作
+- 等值连接查询
+- 自然连接查询
+- 非等值连接查询
+- 自身连接查询
+- 外连接查询
+- 复合条件连接查询
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 等值连接查询
+
+- 用于连接两个表的条件称为连接条件
+- &lt;表名1&gt;.&lt;列名1&gt;&lt;比较运算符&gt;&lt;表名2&gt;.&lt;列名2&gt;
+- 比较运算符主要有=, &gt;, &lt;, &lt;=, &gt;=, != (或&lt;&gt;) 等
+- 连接条件中的列名称为连接字段
+- 当连接运算符为 = 时称为等值连接
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 连接查询
+
+    SELECT Student.*, SC.*
+    FROM Student, SC
+    WHERE Student.Sno = SC.Sno;
+
+- 查询学生及其选修课程
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 自身连接
+
+- 一个表与自身进行连接
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 查询每门课的间接先修课
+
+    SELECT FIRST.Cno, SECOND.Cpno
+    FROM Course FIRST, Course SECOND
+    WHERE FIRST.Cpno = SECOND.Cno;
+
+- 为了得到每门课的间接先修课 (即先修课的先修课), 需要将 Course 表与自身进行连接
+- 为 Course 表取别名为 FIRST 和 SECOND
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 嵌套查询
+
+    SELECT Sname
+    FROM Student
+    WHERE Sno IN
+        (SELECT Sno
+        FROM SC
+        WHERE Cno='2');
+
+- 一个 SELECT-FROM-WHERE 语句是一个查询块
+- 查询块可以嵌套
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 嵌套查询
+
+- 上层的査询块称为外层查询或父查询
+- 下层查询块称为内层查询或子查询
+- SQL 语言允许多层嵌套査询
+- 子査询的 SELECT 语句不能用 ORDER BY 子句
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "-3300"
+    data-rel-y    = "-3400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 带 IN 的子查询
+
+    SELECT Sno,Sname,Sdept
+    FROM Student
+    WHERE Sdept IN
+        (SELECT Sdept
+        FROM Student
+        WHERE Sname='刘晨')；
+
+- 子查询的结果往往是一个集合
+- IN 在嵌套査询中最常使用
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 相关与不相关子查询
+
+- 查询条件是否依赖于父查询
+
+    </div>
+
+    <div 
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 带比较运算符的子查询
+
+    SELECT Sno,Sname,Sdept
+    FROM Student
+    WHERE Sdept =
+        (SELECT Sdept
+        FROM Student
+        WHERE Sname='刘晨')；
+
+- 内层查询返回单个值时
+- 可以用比较运算符
+
+    </div>
+
+    <div 
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "3200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 带 ANY 或 ALL 的子查询
+
+- 返回多值时要用 ANY 或 ALL 修饰符
+- 必须同时使用比较运算符
+- &gt; ANY 大于子查询结果中的某个值 MIN
+- &gt; ALL 大于子查询结果中的所有值 MAX
+- &lt; ANY 小于子査询结果中的某个值 MAX
+- &lt; ALL 小于子查询结果中的所有值 MIN
+- &gt;= ANY 大于等于子查询结果中的某个值 MIN
+- &gt;= ALL 大于等于子査询结果中的所有值 MAX
+
+    </div>
+
+    <div 
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "870"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+- &lt;= ANY 小于等于子査询结果中的某个值 MAX
+- &lt;= ALL 小于等于子查询结果中的所有值 MIN
+- = ANY 等于子查询结果中的某值 IN
+- = ALL 等于子查询结果中的所有值 (无意义)
+- != ANY 不等于子査询结果中的某个值 (无意义)
+- != ALL 不等于子査询结果中的任何一个值 NOT IN
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "1800"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 集合查询
+
+- 査询结果是元组集合
+- 多个 SELECT 语句的结果可集合操作
+- 并操作 UNION
+- 交操作 INTERSECT
+- 差操作 EXCEPT
+- 各查询结果的列数必须相同
+- 对应项的数据类型也必须相同
+
+    </div>
+
+    <div 
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 64
+
+    SELECT *
+    FROM Student
+    WHERE Sdept = 'CS'
+    UNION
+    SELECT *
+    FROM Student
+    WHERE Sage &lt;= 19;
+
+- UNION 合并多个查询结果时会自动去重
+
+    </div>
+
+    <div 
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "a41"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 66
+
+    SELECT *
+    FROM Student
+    WHERE Sdept = 'CS'
+    INTERSECT
+    SELECT *
+    FROM Student
+    WHERE Sage &lt;= 19;
+
+    </div>
+
+    <div 
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 68
+
+    SELECT *
+    FROM Student
+    WHERE Sdept = 'CS'
+    EXCEPT
+    SELECT *
+    FROM Student
+    WHERE Sage &lt;= 19;
+
+    </div>
+
+    <div 
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "a43"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基于派生表的查询
+
+    SELECT Sno, Cno
+    FROM SC, (SELECT Sno, Avg(Grade)
+              FROM SC GROUP BY Sno)
+              AS Avg_sc(avg_sno,avg_grade)
+    WHERE SC.Sno = Avg_sc.avg_sno
+        and SC.Grade &gt;= Avg_sc.avg grade
+
+- 子查询可以出现在 FROM 子句中
+- 子查询生成临时派生表
+
+    </div>
+
+    <div 
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "a44"
+    data-rel-x    = "0"
+    data-rel-y    = "1300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### SELECT 语句
+
+    SELECT [ALL | DISTINCT] &lt;目标列表达式&gt; [别名]
+			[, &lt;目标列表达式&gt; [别名] ]...
+    FROM &lt;表名或视图名&gt; [别名]
+			[， &lt;表名或视图名&gt; [别名] ] ... |
+			( &lt;SELECT语句&gt; ) [AS] &lt;别名&gt;
+    [WHERE &lt;条件表达式&gt; ]
+    [GROUP BY &lt;列名 1&gt; [HAVING &lt;条件表达式&gt; ] ]
+    [ORDER BY &lt;列名 2&gt; [ASC|DESC] ];
+
+    </div>
+
+    <div 
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "a45"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 目标列表达式的可选格式
+
+- *
+- &lt;表名&gt;.*
+- COUNT( [DISTINCT | ALL] *)
+- [ &lt;表名&gt; .] &lt;属性列名表达式&gt; [, [ &lt;表名&gt; .] &lt;属性列名表达式&gt; ] ...
+
+    </div>
+
+    <div 
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 聚集函数的一般格式
+
+- COUNT
+- SUM
+- AVG
+- MAX
+- MIN
+- 后接 ( [DISTINCT | ALL] <列名&gt; )
+
+    </div>
+
+    <div 
+    id            = "a48"
+    class         = "step markdown"
+    data-rel-to   = "a47"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### WHERE 子句的条件表达式
+
+- 比较运算符θ
+- BETWEEN
+- IN
+- LIKE
+- IS NULL
+- EXISTS
+- 条件表达式 1 [AND | OR] 条件表达式 2
+
+    </div>
+
+    <div
+    id            = "mm34"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 3.4 mindmap](img/c03/mindmap-3-4.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c34q"
+    class         = "step markdown"
+    data-rel-to   = "c34t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 3.4 数据查询
+
+- 在 SQL 中, 如何使用 SELECT 语句检索数据?
+- 如何使用 WHERE 子句过滤 SELECT 语句的结果?
+- 如何使用 ORDER BY 子句对查询结果进行排序？
+- 在 SQL 中，常见的聚合函数有哪些?
+- 如何使用 GROUP BY 子句分组操作？
+
+----
+
+[ 3.3 数据定义](dbds-3-3.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 3.5 数据更新](dbds-3-5.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
