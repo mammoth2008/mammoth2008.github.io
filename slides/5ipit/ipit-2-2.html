@@ -1,0 +1,1304 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>IPIT | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="信息技术创新实践课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c22t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>2. 数据科学与人工智能</h2>
+        <h3 style="text-align: center">2.2 机器学习</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 机器学习的历史和发展
+
+- 机器学习的起源和早期发展
+- 神经网络的崛起
+- 深度学习的发展
+
+    </div>
+
+    <div
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![AI, ML, DL](img/c02/machine-learning.png)
+#### Artificial Intelligence, Machine Learning, Deep Learning
+
+    </div>
+
+    <div
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![AI, ML, DL](img/c02/machine-learning.jpeg)
+#### Artificial Intelligence, Machine Learning, Deep Learning
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 机器学习的定义
+
+- 通过经验改善性能
+- 自动识别模式
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 初期的学习机器
+
+- 感知机 (Perceptron)
+- 适应性线性元素 (Adaline)
+
+    </div>
+
+    <div
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Perceptron](img/c02/perceptron.png)
+#### Perceptron
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 感知机
+
+- 由 Frank Rosenblatt 于 1957 年提出
+- 是二分类的线性分类模型
+- 输入是实例的特征向量
+- 输出是实例的类别
+- 可以被看作一个单层神经网络
+
+    </div>
+
+    <div
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Perceptron](img/c02/perceptron.jpeg)
+#### Perceptron
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "1800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 适应性线性元素
+
+- 由 Bernard Widrow 和 Marcian Hoff 于 1960 年提出
+- 是感知机的改进版本
+- 使用线性激活函数
+- 最小化预测值与真实值之间的均方误差
+
+    </div>
+
+    <div
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Adaline](img/c02/adaline.png)
+#### Adaline
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "-2600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 初期算法
+
+- 决策树
+- 线性回归
+- 支持向量机
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 决策树
+
+- 一种基于树结构进行决策的方法
+- 通过创建决策规则来预测目标变量
+- ID3, C4.5 和 CART 是知名决策树算法
+
+    </div>
+
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Decision Tree](img/c02/decision-tree.png)
+#### Decision Tree
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 线性回归
+
+- 一种预测回归问题的模型
+- 试图建立自变量 X 和因变量 Y 之间的线性关系
+- 最小化预测值与真实值之间的均方误差
+
+    </div>
+
+    <div
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Linear Regression](img/c02/linear-regression.jpeg)
+#### Linear Regression
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 支持向量机
+
+- 由 Vladimir N. Vapnik 于 1995 年提出
+- 一种二分类模型
+- 基于结构风险最小化原则
+- 核函数可以将数据映射到高维空间
+
+    </div>
+
+    <div
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Support Vector Machine](img/c02/support-vector-machine.jpeg)
+#### Support Vector Machine, SVM
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 初期应用
+
+- 邮件过滤
+- 语音识别
+- 计算机视觉
+
+    </div>
+
+    <div
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Email Filter](img/c02/mail-filter.jpeg)
+#### Email Filter
+
+    </div>
+
+    <div
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Speech Recognition](img/c02/viavoice.jpeg)
+#### Speech Recognition
+
+    </div>
+
+    <div
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Computer Vision](img/c02/computer-vision.png)
+#### Computer Vision
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "200"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 神经网络定义
+
+- 模拟人脑神经元网络
+- 有大量神经元并行工作
+
+    </div>
+
+    <div
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Neural Network](img/c02/neural-network-1.jpeg)
+#### Neural Network
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "1500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模拟人脑神经元网络
+
+- 由多个神经元 (节点) 组成
+- 每个神经元处理单个输入并产生输出
+- 神经元之间通过连接 (权重) 进行信息传递
+
+    </div>
+
+    <div
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Neuron](img/c02/neuron.gif)
+#### Neuron
+
+    </div>
+
+    <div
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Neuron](img/c02/neuron.png)
+#### Neuron
+
+    </div>
+
+    <div
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Neuron](img/c02/neuron-1.jpg)
+#### Neuron
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "1500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 有大量神经元并行工作
+
+- 神经网络的力量来自并行处理能力
+- 可以同时处理大量信息
+
+    </div>
+
+    <div
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Neural Network](img/c02/neural-network.svg)
+#### Neural Network
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 计算并优化神经元权重
+
+- 使用梯度下降方法优化权重
+- 通过调整权重最小化误差
+
+    </div>
+
+    <div
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Gradient Descent](img/c02/gradient-descent.png)
+#### Gradient Descent
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 反向传播算法
+
+- 用于训练神经网络
+- 计算并优化神经元权重
+
+    </div>
+
+    <div
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Back Propagation](img/c02/back-propagation.png)
+#### Back Propagation
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "1600"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用于训练神经网络
+
+- 是一种监督学习方法
+- 根据实际输出和预期输出的误差进行学习
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 卷积神经网络 (CNN)
+
+- 用于图像和视频处理
+- 局部感知和权重共享
+
+    </div>
+
+    <div
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Convolutional Neural Network](img/c02/convolutional-neural-network.png)
+#### Convolutional Neural Network
+
+    </div>
+
+    <div 
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用于图像和视频处理
+
+- 输入为多维矩阵 (如像素矩阵)
+- 通过卷积层提取图像的局部特征
+
+    </div>
+
+    <div
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Convolutional Neural Network](img/c02/convolutional-neural-networks.png)
+#### Convolutional Neural Network
+
+    </div>
+
+    <div 
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 局部感知和权重共享
+
+- 每个卷积核都有一组固定的权重
+- 这些权重在整个输入图像上共享
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 递归神经网络 (RNN)
+
+- 用于序列数据处理
+- 记录历史信息
+
+    </div>
+
+    <div
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Recurrent Neural Network](img/c02/recurrent-neural-network.gif)
+#### Recurrent Neural Network
+
+    </div>
+
+    <div 
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "a41"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用于序列数据处理
+
+- 对于每个序列元素都有一个输入和一个输出
+- 可以处理不同长度的序列
+
+    </div>
+
+    <div
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Recurrent Neural Network](img/c02/Fully_connected_Recurrent_Neural_Network.gif)
+#### Fully Connected Recurrent Neural Network
+
+    </div>
+
+    <div 
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "a43"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 记录历史信息
+
+- 使用内部状态保存过去的信息
+- 内部状态影响网络的当前和未来决策
+
+    </div>
+
+    <div 
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "3200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度神经网络
+
+- 多层神经网络结构
+- 深度学习与神经网络的关系
+
+    </div>
+
+    <div
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "a45"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Deep Neural Network](img/c02/deep-neural-network.png)
+#### Deep Neural Network
+
+    </div>
+
+    <div 
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 多层神经网络结构
+
+- 拥有多个隐藏层的神经网络
+- 可以学习更复杂的特征和模式
+
+    </div>
+
+    <div
+    id            = "a48"
+    class         = "step markdown"
+    data-rel-to   = "a47"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Deep Neural Network](img/c02/deep-neural-network.webp)
+#### Deep Neural Network
+
+    </div>
+
+    <div 
+    id            = "a49"
+    class         = "step markdown"
+    data-rel-to   = "a48"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习与神经网络的关系
+
+- 深度学习是神经网络的一个子集
+- 利用深层神经网络结构进行学习
+
+    </div>
+
+    <div 
+    id            = "a50"
+    class         = "step markdown"
+    data-rel-to   = "a49"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 卷积神经网络的深化
+
+- AlexNet, VGG, ResNet
+- 提升图像处理性能
+
+    </div>
+
+    <div 
+    id            = "a51"
+    class         = "step markdown"
+    data-rel-to   = "a50"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### AlexNet
+
+- 2012年 Imagenet 比赛冠军
+- 8 层网络
+
+    </div>
+
+    <div 
+    id            = "a52"
+    class         = "step markdown"
+    data-rel-to   = "a51"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### VGG
+
+- 使用重复的网络结构
+- 最深达到19层
+
+    </div>
+
+    <div 
+    id            = "a53"
+    class         = "step markdown"
+    data-rel-to   = "a52"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### ResNet
+
+- 通过残差连接训练超深网络
+- 最深达到 152 层
+
+    </div>
+
+    <div 
+    id            = "a54"
+    class         = "step markdown"
+    data-rel-to   = "a53"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 提升图像处理性能
+
+- 通过更深的网络学习更复杂的特征
+- 在图像识别和目标检测等任务上取得突破
+
+    </div>
+
+    <div 
+    id            = "a55"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "-2600"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 自然语言处理的深度学习
+
+- Word2Vec, LSTM, Transformer 模型
+- 提升语言理解性能
+
+    </div>
+
+    <div 
+    id            = "a56"
+    class         = "step markdown"
+    data-rel-to   = "a55"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Word2Vec
+
+- 训练神经网络
+- 学习词的向量表示
+
+    </div>
+
+    <div 
+    id            = "a57"
+    class         = "step markdown"
+    data-rel-to   = "a55"
+    data-rel-x    = "1500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### LSTM
+
+- 一种 RNN
+- 通过门控机制解决长期依赖问题
+
+    </div>
+
+    <div 
+    id            = "a58"
+    class         = "step markdown"
+    data-rel-to   = "a56"
+    data-rel-x    = "1500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Transformer 模型
+
+- 不需要循环和卷积
+- 通过自注意力机制处理序列数据
+
+    </div>
+
+    <div
+    id            = "a59"
+    class         = "step markdown"
+    data-rel-to   = "a58"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Transformer](img/c02/transformer.png)
+#### Transformer
+
+    </div>
+
+    <div 
+    id            = "a60"
+    class         = "step markdown"
+    data-rel-to   = "a59"
+    data-rel-x    = "1400"
+    data-rel-y    = "-600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 提升语言理解性能
+
+- 通过学习词的语义关系和语句结构
+- 在机器翻译和情感分析等任务上取得突破
+
+    </div>
+
+    <div 
+    id            = "a61"
+    class         = "step markdown"
+    data-rel-to   = "a60"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 生成模型的发展
+
+- 自编码器 (AutoEncoder)
+- 生成对抗网络 (GAN)
+
+    </div>
+
+    <div 
+    id            = "a62"
+    class         = "step markdown"
+    data-rel-to   = "a61"
+    data-rel-x    = "1500"
+    data-rel-y    = "-550"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 自编码器 (AutoEncoder)
+
+- 一种神经网络
+- 可以学习输入数据的压缩表示
+- 主要用于降维和去噪等任务
+
+    </div>
+
+    <div 
+    id            = "a63"
+    class         = "step markdown"
+    data-rel-to   = "a62"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 生成对抗网络 (GAN)
+
+- 由两个神经网络 (生成器和判别器) 组成
+- 生成器生成假样本
+- 判别器尝试区分真假样本
+
+    </div>
+
+    <div
+    id            = "a64"
+    class         = "step markdown"
+    data-rel-to   = "a63"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![GAN](img/c02/image-gan.jpeg)
+#### Generative Adversarial Networks
+
+    </div>
+
+    <div 
+    id            = "a65"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "3200"
+    data-rel-y    = "-1840"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 机器学习的基本概念和技术
+
+- 监督学习, 无监督学习, 半监督学习和强化学习
+- 回归, 分类, 聚类和降维
+- 模型评估和验证
+- 机器学习库 Scikit-learn, Tensorflow, PyTorch 等
+
+    </div>
+
+    <div 
+    id            = "a66"
+    class         = "step markdown"
+    data-rel-to   = "a65"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 机器学习的应用
+
+- 自动驾驶
+- 推荐系统
+- 金融风险评估
+- 图像和声音识别
+
+    </div>
+
+    <div
+    id            = "a67"
+    class         = "step markdown"
+    data-rel-to   = "a66"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Auto Driving](img/c02/ai-driver.png)
+#### Auto Driving
+
+    </div>
+
+    <div
+    id            = "a68"
+    class         = "step markdown"
+    data-rel-to   = "a67"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![AI Assistants](img/c02/ai-assistants.jpeg)
+#### AI Assistants
+
+    </div>
+
+    <div
+    id            = "mm22"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 2.2 mindmap](img/c02/mindmap-2-2.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c22q"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.2 机器学习
+
+- 描述机器学习早期发展的关键事件.
+- 解释深度神经网络的特点和优势.
+- 对比监督学习, 无监督学习, 半监督学习和强化学习的特点和应用场景.
+- 描述推荐系统中常用的机器学习方法.
+- 解释如何应用机器学习进行图像和声音识别.
+
+----
+
+[ 2.1 数据科学](ipit-2-1.html#/overview)
+[| 练习 |](ipit-exec.html)
+[ 2.3 人工智能](ipit-2-3.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
