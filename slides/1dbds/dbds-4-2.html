@@ -1,0 +1,599 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c42t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>4. 关系数据理论</h2>
+        <h3 style="text-align: center">4.2 规范化</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "-1700"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 函数依赖
+
+- 设 $R$ 是属性集 $U$ 上的关系模式,  $X, Y$ 是 $U$ 的子集. 若对于 $R$ 中的任何一个可能的关系 $r$ ,  $r$ 中不可能存在两个元组在 $X$ 上的属性值相等, 而在 $Y$ 上的属性值不等, 则称** $X$ 函数确定 $Y$ 或 $Y$ 函数依赖于 $X$ , 记作 $X \to Y$ **
+- 若 $X \to Y$, 但 $Y \subseteq X$, 则称 $X \to Y$ 是平凡的函数依赖
+- 若 $X \to Y$, 但 $Y \nsubseteq X$, 则称 $X \to Y$ 是非平凡的函数依赖
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "1100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 函数依赖
+
+- 若 $X \to Y$, 则 $X$ 是这个函数依赖的决定属性组
+- 若 $X \to Y$, $Y \to X$, 则记作 $X \gets \to Y$
+- 若 $Y$ 不函数依赖于 $X$, 则记作 $X \nrightarrow Y$
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 函数依赖
+
+- 函数依赖是语义范畴的概念
+- 设计者也可以对现实世界作强制性规定
+- 函数依赖是指 $R$ 的一切关系均要满足的约束条件
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 完全 / 部分函数依赖
+
+- 设 $R$ 是属性集 $U$ 上的关系模式, $X, Y$ 是 $U$ 的子集. 若 $X \to Y$, 且对于 $X$ 的任何一个真子集 $X'$, $X' \nrightarrow Y$, 则称** $Y$ 对 $X$ 完全函数依赖**, 记为 $X \xrightarrow{F} Y$
+- 若 $X \to Y$, 但 $Y$ 不完全函数依赖于 $X$, 则称** $Y$ 对 $X$ 部分函数依赖**, 记为 $X \xrightarrow{P} Y$
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 传递函数依赖
+
+- 在 $R(U)$ 中, 若 $X \to Y$ 且 $Y \nsubseteq X$, $Y \nrightarrow X$, $Y \to Z$, $Z \nsubseteq Y$, 则称** $Z$ 对 $X$ 传递函数依赖**, 记为 $X \xrightarrow{传递} Z$
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 码
+
+- 设 $K$ 为关系模式 $R(U)$ 中的属性或属性组合, 若 $K \xrightarrow{F} U$, 则称 $K$ 为 $R$ 的**候选码**
+- 若 $U$ 部分函数依赖于 $K$, $K \xrightarrow{P} U$, 则 $K$ 称为**超码**
+- 若候选码多于一个, 则选定其中的一个为**主码**
+- 包含在任何一个候选码中的属性称为**主属性**
+- 不包含在任何候选码中的属性称为**非主属性**
+- 整个属性组是码则称为**全码**
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "1100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 外码
+
+- 设关系模式 $R$ 中的属性或属性组 $X$ 并非 $R$ 的码, 但 $X$ 是另一个关系模式的码, 则称 $X$ 是 $R$ 的**外码**
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "1800"
+    data-rel-y    = "200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 范式
+
+- 范式是关系数据库中的一种标准化级别
+- 关系数据库中的关系满足不同程度的要求
+- 不同程度的要求叫作不同的范式
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 规范化
+
+- 一个低一级范式的关系模式可以通过模式分解转换为若干个高一级范式的关系模式集合
+- 这个过程就是规范化
+- 规范化将不符合特定范式的关系模式转换为满足特定范式要求的模式
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2NF
+
+- 若关系模式 $R \in 1NF$, 并且每一个非主属性完全函数依赖于任何一个候选码, 则 $R \in 2NF$
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 4
+
+- 关系模式 S-L-C (Sno, Sdept, Sloe, Cno, Grade), 码为 (Sno, Cno)
+- 存在函数依赖:
+- $(Sno, Cno) \xrightarrow{F} Grade$
+- $Sno \to Sdept$
+- $(Sno, Cno) \xrightarrow{P} Sdept$
+- $Sno \to Sloc$
+- $(Sno, Cno) \xrightarrow{P} Sloc$
+- $Sdept \to Sloc$
+
+    </div>
+
+    <div
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Example 4](img/c04/ex-6-4.svg)
+#### Example 4
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "3500"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 2NF
+
+- 若关系模式 $R \in 1NF$, 并且每一个非主属性完全函数依赖于任何一个候选码, 则 $R \in 2NF$
+- 非主属性 $Sdept, Sloc$ 不完全函数依赖于码
+- 例 4 不属于 2NF
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 该关系模式的问题
+
+- 数据冗余: 住处和系名重复存储
+- 插入异常: 学生未选课
+- 删除异常: 删除只选择一门课的学生
+- 修改复杂: 学生转系
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 4 改善
+
+- 将 S-L-C 分解
+- SC (Sno, Cno, Grade)
+- S-L (Sno, Sdept, Sloe)
+- 非主属性对候选码都是完全函数依赖
+
+    </div>
+
+    <div
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Example 4](img/c04/ex-6-4-1.svg)
+#### Example 4
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 3NF
+
+- 若关系模式 $R(U, F) \in 1NF$, 并且 $R$ 中不存在这样的码 $X$, 属性组 $Y$ 及非主属性 $Z (Z \nsubseteq Y)$, 使得$ X \to Y$, $Y \to Z$ 成立, 且 $Y \nrightarrow X$, 则 $R(U, F) \in 3NF$
+- 若关系模式 $R \in 2NF$, 并且每一个非主属性都不传递函数依赖于任何一个候选码, 则 $R \in 3NF$
+- 例 4 中关系模式 S-L 不属于 3NF
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 该关系模式的问题
+
+- 数据冗余: 住处和系名重复存储
+- 插入异常: 某系无学生
+- 删除异常: 删除系
+- 修改复杂: 调整住处
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 4 改善
+
+- 将 S-L 分解
+- S-D (Sno, Sdept)
+- D-L (SDept, Sloc)
+- 没有非主属性对码的传递依赖
+
+    </div>
+
+    <div
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Example 4](img/c04/ex-6-4-2.svg)
+#### Example 4
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### BCNF
+
+- 若关系模式 $R(U, F) \in 1NF$, 若$ X \to Y$ 且 $Y \nsubseteq X$  时 $X$ 必含有码, 则 $R(U, F) \in 3NF$
+- 所有非主属性对每一个码都是完全函数依赖
+- 所有主属性对于每一个不包含它的码也是完全函数依赖
+- 没有任何属性完全函数依赖于非码的任何一组属性
+
+    </div>
+
+<!-- 若一个关系达到了第三范式, 并且它只有一个候选码, 或者它的每个候选码都是单属性, 则该关系自然达到BC范式. -->
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "-1800"
+    data-rel-y    = "-1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 总结
+
+- 1NF: 属性不可分
+- 2NF: 非主属性完全函数依赖于码
+- 3NF: 非主属性不传递函数依赖于码
+- BCNF: 主属性完全函数依赖于码
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "4800"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 总结
+
+- 1NF 消除非主属性对码的部分函数依赖得到 2NF
+- 2NF 消除非主属性对码的传递函数依赖得到 3NF
+- 3NF 消除主属性对码的部分和传递函数依赖得到 BCNF
+
+    </div>
+
+    <div
+    id            = "mm42"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 4.2 mindmap](img/c04/mindmap-4-2.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c42q"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 4.2 规范化
+
+- 什么是函数依赖?
+- 完全函数依赖和部分函数依赖有何区别?
+- 什么是传递函数依赖?
+- 描述规范化的过程.
+- 请描述2NF, 3NF, BCNF 的要求和效果.
+
+----
+
+[ 4.1 问题的提出](dbds-4-1.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 5.1 数据库设计概述](dbds-5-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
