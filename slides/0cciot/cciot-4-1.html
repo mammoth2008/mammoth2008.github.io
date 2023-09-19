@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- 修改页面标题 -->
-        <title>DB & DS | HUST</title>
+        <title>CC & IoT | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="description" content="云计算与物联网课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c33t"
+    id         = "c41t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>3. 关系数据库标准语言 SQL</h2>
-        <h3 style="text-align: center">3.3 数据定义</h3>
+        <h2>4. 分布式文件系统</h2>
+        <h3 style="text-align: center">4.1 概述</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,20 +99,14 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c33t"
-    data-rel-x    = "-1000"
-    data-rel-y    = "300"
+    data-rel-to   = "c41t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MySQL 简介
-
-- 关系型数据库管理系统
-- 瑞典 MySQL AB 开发, 被 Oracle 收购
-- 最流行的开源数据库之一
-- 主要用于 Web 应用环境
-- 使用标准的 SQL
+## 4.1 概述
 
     </div>
 
@@ -121,17 +115,18 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "850"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MySQL 下载
+### 文件系统
 
-- [https://dev.mysql.com/downloads/](https://dev.mysql.com/downloads/)
-- MySQL Enterprise Edition
-- MySQL Cluster CGE
-- MySQL Community Edition
+- 是操作系统用来组织磁盘文件的方法和数据结构
+- UFS
+- NTFS
+- EXT3
+- FAT32
 
     </div>
 
@@ -145,41 +140,42 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-![MySQL Download](img/c03/mysql-download.png)
-#### MySQL Download
+![File System](img/c04/file-system.png)
+#### File System
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 本地文件系统
+
+- 超级块
+- inode
+- 目录项
+- 数据块
 
     </div>
 
     <div
-    id            = "a4"
+    id            = "a5"
     class         = "step markdown"
-    data-rel-to   = "a3"
+    data-rel-to   = "a4"
     data-rel-x    = "0"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-![MySQL Community Edition](img/c03/mysql-community-download.png)
-#### MySQL Community Edition
-
-    </div>
-
-    <div 
-    id            = "a5"
-    class         = "step markdown"
-    data-rel-to   = "a4"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### MySQL 常用客户端
-
-- MySQL Workbench
-- phpMyAdmin
-- Navicat for MySQL
+![SuperBlock](img/c04/superblock.png)
+#### SuperBlock
 
     </div>
 
@@ -187,87 +183,83 @@
     id            = "a6"
     class         = "step markdown"
     data-rel-to   = "a5"
-    data-rel-x    = "-300"
+    data-rel-x    = "0"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-![MySQL Workbench](img/c03/mysql-workbench.png)
-#### MySQL Workbench
+![Inode](img/c04/inode.png)
+#### Inode
 
     </div>
 
     <div 
     id            = "a7"
     class         = "step markdown"
-    data-rel-to   = "a5"
+    data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "700"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### MySQL 安装
-
-- 安装 MySQL Server
-- 安装 MySQL Workbench
-
-    </div>
-
-    <div 
-    id            = "a8"
-    class         = "step markdown"
-    data-rel-to   = "c33t"
-    data-rel-x    = "800"
     data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MySQL 数据类型
+### 分布式文件系统
 
-- 数值类型
-- 日期和时间类型
-- 字符串类型
+- 多台计算机通过网络对外提供统一文件系统服务
+- 是对文件系统的扩展和增强
+- 与网络拓扑有关
 
     </div>
 
     <div
-    id            = "a9"
+    id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "a8"
-    data-rel-x    = "-400"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-![MySQL Data Types](img/c03/mysql-data-type.png)
-#### MySQL Data Types
+![Disturbed File System](img/c04/moosefs.png)
+#### Disturbed File System
 
     </div>
 
     <div 
-    id            = "a10"
+    id            = "a9"
     class         = "step markdown"
-    data-rel-to   = "a9"
+    data-rel-to   = "a8"
     data-rel-x    = "0"
     data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数值类型
+### 早期的文件系统
 
-- INT: 整数, 4 Byte
-- TINYINT: 很小整数, 1 Byte
-- SMALLINT: 小整数, 2 Byte
-- MEDIUMINT: 中等大小整数, 3 Byte
-- BIGINT: 大整数, 8 Byte
-- FLOAT: 单精度浮点数, 4 Byte
-- DOUBLE: 双精度浮点数, 8 Byte
-- DECIMAL: 依赖于用户定义的精度和标度
+- NFS
+- CIFS
+- AFS
+- XFS
+- GFS
+- GPFS
+
+    </div>
+
+    <div
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![GFS](img/c04/gfs.png)
+#### GFS
 
     </div>
 
@@ -276,96 +268,80 @@
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 日期和时间
+### 现在的文件系统
 
-- YEAR: 年份, 格式为 'YYYY', 1 Byte
-- DATE: 日期, 格式为 'YYYY-MM-DD', 3 Byte
-- TIME: 时间, 格式为 'HH:MM:SS', 3 Byte
-- DATETIME: 日期和时间, 格式为 'YYYY-MM-DD HH:MM:SS', 8 Byte
-- TIMESTAMP: 时间戳, 从 '1970-01-01 00:00:01' UTC 到 '2038-01-19 03:14:07' UTC, 4 Byte
-
-    </div>
-
-    <div 
-    id            = "a12"
-    class         = "step markdown"
-    data-rel-to   = "a11"
-    data-rel-x    = "0"
-    data-rel-y    = "1100"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 字符串类型
-
-- CHAR: 定长字符串, 最大 255 字符
-- VARCHAR: 变长字符串, 最大 65535 字符
-- TEXT: 长文本字符串, 最大 65535 字符
-- BLOB: 二进制对象, 最大为 65535 字节
-- ENUM: 枚举类型, 最多 65535 个对象
-- SET: 集合类型, 最多 64 个成员
-
-    </div>
-
-    <div 
-    id            = "a13"
-    class         = "step markdown"
-    data-rel-to   = "a12"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 选择数据类型
-
-- BIGINT: 存储超大整数, 如科学数据
-- DOUBLE: 存储双精度小数据, 如科学数据
-- DECIMAL: 以高精度存储小数据, 如货币数额
-- TEXT: 存储大型文本数据, 如产品描述
-- BLOB: 存储二进制数据, 如图片或声音
-- TIMESTAMP: 存储即时时间, 如当前时间
-- ENUM: 存储单选属性, 如性别
-- SET: 存储多选属性, 如业余爱好和兴趣
-
-    </div>
-
-    <div 
-    id            = "a14"
-    class         = "step markdown"
-    data-rel-to   = "c33t"
-    data-rel-x    = "2200"
-    data-rel-y    = "200"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 数据定义
-
-- 模式 (Schema)
-- 表 (Table)
-- 视图 (View)
-- 索引 (Index)
+- SAN 和 NAS 的成熟
+- Lustre
+- PanFS
+- BWFS
+- HDFS
 
     </div>
 
     <div
-    id            = "a15"
+    id            = "a12"
     class         = "step markdown"
-    data-rel-to   = "a14"
-    data-rel-x    = "-400"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-![Database Schemas](img/c03/database_schemas.jpeg)
-#### Database Schemas
+![Storage Area Network](img/c04/san-vs-nas.png)
+#### SAN vs NAS
+
+    </div>
+
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Network Attached Storage](img/c04/nas.jpeg)
+#### Network Attached Storage
+
+    </div>
+
+    <div
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![HDFS](img/c04/hdfs.png)
+#### HDFS
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 实现方法
+
+- 共享文件系统
+- 共享磁盘
 
     </div>
 
@@ -379,25 +355,27 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-![Database Schema](img/c03/database_schema.jpeg)
-#### Database Schema
+![Disturbed File System](img/c04/dfs.png)
+#### Disturbed File System
 
     </div>
 
     <div 
     id            = "a17"
     class         = "step markdown"
-    data-rel-to   = "a14"
+    data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 模式 (Schema)
+### 发展历程
 
-- 创建模式: CREATE SCHEMA
-- 删除模式: DROP SCHEMA
+- 1980 - 1990 性能和可靠性
+- 1990 - 1995 并行和分布系统
+- 1995 - 2000 SAN 和 NAS
+- 2000 - 百花齐放
 
     </div>
 
@@ -406,33 +384,33 @@
     class         = "step markdown"
     data-rel-to   = "a17"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 创建模式
+### 应用的需求
 
-    CREATE SCHEMA "temp" AUTHORIZATION ROOT;
-    CREATE SCHEMA `temp`;
-    CREATE SCHEMA `heroes1` ;
+- 大容量
+- 高性能
+- 高可用性
+- 可扩展性
+- 可管理性
+- 按需服务
 
     </div>
 
     <div 
     id            = "a19"
     class         = "step markdown"
-    data-rel-to   = "a18"
+    data-rel-to   = "c41t"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 删除模式
-
-    DROP SCHEMA "temp" <RESTRICT | CASCADE>;
-    DROP DATABASE `temp`;
+## 4.2 基本架构
 
     </div>
 
@@ -440,17 +418,17 @@
     id            = "a20"
     class         = "step markdown"
     data-rel-to   = "a19"
-    data-rel-x    = "800"
-    data-rel-y    = "-20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 表 (Table)
+### 基本架构
 
-- 创建表: CREATE TABLE
-- 修改表: ALTER TABLE
-- 删除表: DROP TABLE
+- 主控服务器
+- 数据服务器
+- 客户端
 
     </div>
 
@@ -459,25 +437,17 @@
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 创建表
+### 主控服务器的功能
 
-    CREATE TABLE <表名> (
-        <列名> <数据类型> [列级完整性约束条件],
-        [<列名> <数据类型> [列级完整性约束条件]], ...
-        [, <表级完整性约束条件>]);
-
-    CREATE TABLE Heroes (
-        HeroID INT UNSIGNED AUTO_INCREMENT,
-        HeroName VARCHAR(50) NOT NULL,
-        HeroLife INT NOT NULL,
-        HeroDescription TEXT,
-        PRIMARY KEY (HeroID)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+- 维护命名空间
+- 管理数据服务器
+- 服务调度
+- 主备容灾
 
     </div>
 
@@ -486,19 +456,16 @@
     class         = "step markdown"
     data-rel-to   = "a21"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 修改表
+### 数据服务器的功能
 
-    ALTER TABLE <表名>
-    [ADD [COLUMN] <新列名> <数据类型> [完整性约束]]
-    [ADD <表级完整性约束>]
-    [DROP [COLUMN] <列名> [CASCADE | RESTRICT]]
-    [DROP CONSTRAINT <完整性约束名> [RESTRICT|CASCADE]]
-    [ALTER COLUMN <列名> <数据类型>];
+- 数据本地存储
+- 状态维护
+- 副本管理
 
     </div>
 
@@ -507,35 +474,29 @@
     class         = "step markdown"
     data-rel-to   = "a22"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 删除表
+### 客户端的功能
 
-    DROP TABLE <表名> <RESTRICT | CASCADE>;
-    DROP TABLE `hok`.`Users`;
+- 接口
+- 缓存
 
     </div>
 
     <div 
     id            = "a24"
     class         = "step markdown"
-    data-rel-to   = "a14"
-    data-rel-x    = "1300"
-    data-rel-y    = "-1200"
+    data-rel-to   = "c41t"
+    data-rel-x    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 索引 (Index)
-
-- 索引可以提高查询速度, 但会增加数据库负担
-- 索引的建立和删除由数据库管理员或表主完成
-- 不同数据库管理系统支持的索引类型有所差异
-- 数据库系统会根据查询自动选择合适的索引
-- 删除索引会同时从数据字典中删除相关信息
+## 4.3 GFS
 
     </div>
 
@@ -544,49 +505,47 @@
     class         = "step markdown"
     data-rel-to   = "a24"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 索引
+### GFS
 
-- 创建索引: CREATE INDEX
-- 删除索引: DROP INDEX
-- 修改索引: ALTER INDEX
+- 少量大文件
+- 减少 Client 和 Server 之间的交互次数
+- 追加数据而非覆盖数据
+- 使用心跳信息和 Chunk 服务器周期性交互
+- Client 直接读写 Chunk 服务器
 
     </div>
 
-    <div 
+    <div
     id            = "a26"
     class         = "step markdown"
     data-rel-to   = "a25"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 创建索引
-
-    CREATE [UNIQUE] [CLUSTER] INDEX <索引名>
-    ON <表名> (<列名> [次序], <列名> [次序], ...);
+![GFS](img/c04/gfs.webp)
+#### GFS
 
     </div>
 
     <div 
     id            = "a27"
     class         = "step markdown"
-    data-rel-to   = "a26"
-    data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-to   = "c41t"
+    data-rel-x    = "3000"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 修改索引
-
-    ALTER INDEX <旧索引名> RENAME TO <新索引名>;
+## 4.4 HDFS
 
     </div>
 
@@ -595,55 +554,56 @@
     class         = "step markdown"
     data-rel-to   = "a27"
     data-rel-x    = "0"
-    data-rel-y    = "500"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 删除索引
+### HDFS
 
-    DROP INDEX <索引名>;
-
-    </div>
-
-    <div 
-    id            = "a29"
-    class         = "step markdown"
-    data-rel-to   = "c33t"
-    data-rel-x    = "-1000"
-    data-rel-y    = "-1500"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 数据字典 (Data Dictionary)
-
-- 是关系数据库管理系统内部的一组系统表
-- 记录数据库中所有的定义信息
-- 在查询优化和查询处理中发挥重要作用
+- 每个 block 默认存储 3 份副本
+- 通过数据节点 Datanode 实现容错
+- 实现数据访问的高吞吐量
+- 通过 NameNode 实现元数据管理
+- 硬件需求低
 
     </div>
 
     <div
-    id            = "mm33"
+    id            = "a29"
     class         = "step markdown"
-    data-rel-to   = "c33t"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![HDFS](img/c04/hdfs.jpeg)
+#### HDFS
+
+    </div>
+
+    <div
+    id            = "mm41"
+    class         = "step markdown"
+    data-rel-to   = "c41t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 3.3 mindmap](img/c03/mindmap-3-3.png)
+![course 4.1 mindmap](img/c04/mindmap-4-1.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c33q"
+    id            = "c41q"
     class         = "step markdown"
-    data-rel-to   = "c33t"
+    data-rel-to   = "c41t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -652,19 +612,18 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 3.3 数据定义
+### 4. 分布式文件系统
 
-- 在 MySQL 中，VARCHAR 和 CHAR 有何不同?
-- 在 MySQL 中我们如何创建和删除模式?
-- 想要添加新列到现有的表时该使用哪个 SQL 命令?
-- 索引在数据库中的作用是什么?
-- 数据字典在关系数据库管理系统中有什么作用?
+- 列举几种常见的文件系统.
+- 分布式文件系统与本地文件系统有何不同?
+- SAN 和 NAS 分别有何特点?
+- 在分布式文件系统中, 主控服务器通常需要执行哪些功能?
 
 ----
 
-[ 3.2 王者荣耀数据库](dbds-3-2.html#/overview)
-[| 练习 |](dbds-exec.html)
-[ 3.4 数据查询](dbds-3-4.html#/overview)
+[ 3. 云计算机制](cciot-3-1.html#/overview)
+[| 练习 |](cciot-exec.html)
+[ 5. 数据处理与并行编程](cciot-5-1.html#/overview)
 
     </div>
 

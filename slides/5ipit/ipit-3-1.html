@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- 修改页面标题 -->
-        <title>DB & DS | HUST</title>
+        <title>IPIT | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="description" content="信息技术创新实践课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c34t"
+    id         = "c31t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,7 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>3. 关系数据库标准语言 SQL</h2>
-        <h3 style="text-align: center">3.4 数据查询</h3>
+        <h2>3.区块链</h2>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,20 +98,14 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-1600"
-    data-rel-y    = "-1000"
+    data-rel-to   = "c31t"
+    data-rel-x    = "-1800"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据查询
-
-    SELECT [ALL | DISTINCT] <目标列表达式>, <目标列表达式>, ...
-    FROM <表名或视图名> [AS <别名>]
-    [WHERE <条件表达式>]
-    [GROUP BY <列名1> [HAVING <条件表达式>]]
-    [ORDER BY <列名2> [ASC|DESC]];
+## 3.1 区块链概述
 
     </div>
 
@@ -121,18 +114,20 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询过程
+### 区块链概述
 
-- 根据 WHERE 子句中的条件表达式
-- 从 FROM 子句指定的表中选出满足条件的元组
-- 根据 SELECT 子句中的目标列表达式
-- 选取元组中的属性
-- 形成结果表
+- 区块链定义
+- 区块链的起源
+- 区块链与传统数据库的比较
+- 区块链的主要组成部分
+- 区块链类型
+- 跨链技术
+- 主要的区块链平台
 
     </div>
 
@@ -141,17 +136,17 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询子句
+### 区块链定义
 
-- GROUP BY子句按照指定的列进行分组
-- 可在每个组上应用聚集函数
-- 若有 HAVING 条件则只输出满足条件的组
-- 若有 ORDER BY 子句则对结果表排序
+- 分布式数据库
+- 链接交易
+- 加密技术
+- 共识机制
 
     </div>
 
@@ -160,14 +155,17 @@
     class         = "step markdown"
     data-rel-to   = "a3"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询指定列
+### 区块链的起源
 
-    SELECT Sno, Sname FROM Student;
+- 比特币
+- 中本聪
+- 第一个区块
+- 以太坊和智能合约
 
     </div>
 
@@ -176,14 +174,16 @@
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询全部列
+### 区块链与传统数据库的比较
 
-    SELECT * FROM Student;
+- 中心化 vs 分布式
+- 数据不可更改性
+- 透明度和可追溯性
 
     </div>
 
@@ -192,14 +192,17 @@
     class         = "step markdown"
     data-rel-to   = "a5"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询经过计算的值
+### 区块链的主要组成部分
 
-    SELECT Sname, 2014 - Sage FROM Student;
+- 区块
+- 链
+- 节点
+- 钱包
 
     </div>
 
@@ -208,31 +211,34 @@
     class         = "step markdown"
     data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 指定列别名
+### 区块链类型
 
-    SELECT Sname AS NAME, 2014 - Sage AS BIRTHDAY
-    FROM Student;
+- 公有链
+- 私有链
+- 联盟链
 
     </div>
 
     <div 
     id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 消除取值重复的行
+### 跨链技术
 
-    SELECT DISTINCT Sno FROM SC;
+- 原子互换
+- 跨链通信
+- 链间数据传输
 
     </div>
 
@@ -241,17 +247,17 @@
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 査询满足条件的元组
+### 主要的区块链平台
 
-- 使用 WHERE 子句
-- 比较: <, >, <=, >=, =, !=
-- 范围: BETWEEN AND, NOT BETWEEN AND
-- 集合: IN, NOT IN
+- 比特币
+- 以太坊
+- EOS
+- Cardano
 
     </div>
 
@@ -260,16 +266,16 @@
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 比较
+### 共识机制
 
-    SELECT Sname
-	FROM Student
-	WHERE Sdept = 'CS';
+- 工作量证明 (PoW)
+- 权益证明 (PoS)
+- 委托权益证明 (DPoS)
 
     </div>
 
@@ -278,53 +284,52 @@
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 范围
+### 实际应用和案例
 
-    SELECT Sname, Sdept, Sage
-	FROM Student
-	WHERE Sage BETWEEN 20 AND 23;
+- 金融
+- 供应链
+- 健康保健
+- 公证服务
 
     </div>
 
     <div 
     id            = "a12"
     class         = "step markdown"
-    data-rel-to   = "a11"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-to   = "c31t"
+    data-rel-x    = "-300"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 集合
-
-    SELECT Sname, Ssex
-	FROM Student
-	WHERE Sdept IN ('CS', 'MA', 'IS');
+## 3.2 区块链的工作原理
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "1800"
-    data-rel-y    = "00"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 字符匹配
+### 区块链的工作原理
 
-- 使用 LIKE 进行字符串匹配
-- 可以使用通配符
-- "%" 代表任意长度的字符串
-- "_" 代表任意单个字符
+- 数据块和链的结构
+- 哈希算法
+- 共识机制
+- 区块链类型
+- 智能合约
+- 区块链操作
 
     </div>
 
@@ -333,23 +338,18 @@
     class         = "step markdown"
     data-rel-to   = "a13"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 字符匹配
+### 数据块和链的结构
 
-    SELECT * FROM Student
-	WHERE Sno LIKE '201215121';
-    SELECT Sname, Sno, Ssex FROM Student
-	WHERE Sname LIKE '刘%';
-    SELECT Sname FROM Student
-	WHERE Sname LIKE '欧阳_';
-    SELECT Sname, Sno FROM Student
-	WHERE Sname LIKE '_阳%';
-    SELECT Sname, Sno, Ssex FROM Student
-	WHERE Sname NOT LIKE '刘%';
+- 数据块组成
+- 通过链连接
+- 时间戳
+- 区块标识符
+- 前一区块的哈希值
 
     </div>
 
@@ -358,20 +358,18 @@
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1100"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 涉及空值的查询
+### 哈希算法
 
-    SELECT Sno, Cno FROM SC
-    WHERE Grade IS NULL;
-    SELECT Sno, Cno FROM SC
-    WHERE Grade IS NOT NULL;
+- 数据的唯一标识
+- SHA-256 算法
+- 哈希函数的特点
+- 哈希值作为区块标识
 
-- 使用 IS NULL 谓词查询空值
-- 使用 IS NOT NULL 谓词查询非空值
     </div>
 
     <div 
@@ -379,44 +377,35 @@
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 多重条件查询
+### 共识机制
 
-    SELECT Sname FROM Student
-    WHERE Sdept = 'CS' AND Sage &lt; 20;
-    SELECT Sname, Ssex
-    FROM Student
-    WHERE Sdept = 'CS' OR Sdept = 'MA' OR Sdept = 'IS';
-
-- 使用逻辑运算符 AND 和 OR 连接多个查询条件
-- AND 的优先级高于 OR
-- 可以使用括号改变优先级
+- 工作量证明 (PoW)
+- 权益证明 (PoS)
+- 委托权益证明 (DPoS)
+- 共识算法的选择
 
     </div>
 
     <div 
     id            = "a17"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "3000"
-    data-rel-y    = "-1200"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### ORDER BY子句
+### 工作量证明 (PoW)
 
-    SELECT Sno, Grade FROM SC WHERE Cno = '3'
-	ORDER BY Grade DESC;
-    SELECT * FROM Student ORDER BY Sdept, Sage DESC;
-
-- 对查询结果按照属性列排序
-- 可以对一个或多个属性列排序
-- 默认按升序排列
+- 矿工解决复杂的数学问题
+- 资源和时间密集型
+- Bitcoin
 
     </div>
 
@@ -430,13 +419,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 聚集函数
+### 权益证明 (PoS)
 
-- COUNT 函数
-- SUM 函数
-- AVG 函数
-- MAX 函数
-- MIN 函数
+- 基于持币量和币龄
+- 更节能
+- Ethereum 的转变
 
     </div>
 
@@ -450,14 +437,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### COUNT 函数
+### 委托权益证明 (DPoS)
 
-    SELECT COUNT(*) FROM Student;
-    SELECT COUNT(DISTINCT Sno) FROM SC;
-
-- 用于统计元组个数或某一列中值的个数
-- 查询学生总人数
-- 查询选修了课程的学生人数
+- 选定的节点负责确认交易
+- 更快速
+- EOS
 
     </div>
 
@@ -471,12 +455,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SUM 函数
+### 共识算法的选择
 
-    SELECT SUM(Grade) FROM SC WHERE Cno = '1';
-
-- 用于计算某一列值的总和 (此列必须是数值型) .
-- 计算选修 1 号课程的学生平均成绩
+- 安全性
+- 效率
+- 可扩展性
 
     </div>
 
@@ -490,12 +473,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### AVG 函数
+### 区块链类型
 
-    SELECT AVG(Grade) FROM SC WHERE Cno = '1';
-
-- 用于计算某一列值的平均值 (此列必须是数值型) 
-- 计算选修 1 号课程的学生平均成绩
+- 公有链
+- 私有链
+- 联盟链
+- 侧链
 
     </div>
 
@@ -504,17 +487,16 @@
     class         = "step markdown"
     data-rel-to   = "a21"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MAX 函数
+### 公有链
 
-    SELECT MAX(Grade) FROM SC WHERE Cno = '1';
-
-- 用于求一列值中的最大值
-- 查询选修 1 号课程的学生最高分数
+- 任何人可参与
+- 无需许可
+- 全球分布
 
     </div>
 
@@ -528,12 +510,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MIN 函数
+### 私有链
 
-    SELECT MIN(Grade) FROM SC WHERE Cno = '1';
-
-- 用于求一列值中的最小值
-- 查询选修1号课程的学生最低分数
+- 访问受限
+- 一般用于企业内部
+- 更高的数据控制
 
     </div>
 
@@ -547,35 +528,29 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 使用聚集函数的注意事项
+### 联盟链
 
-- 遇到空值时除 COUNT(*) 外都只处理非空值
-- WHERE 子句中不能使用聚集函数作为条件表达式
-- 聚集函数只能用于 SELECT 子句和 GROUP BY 中的 HAVING 子句
+- 多个组织共同维护
+- 分布式但受限
+- 用于商业合作
 
     </div>
 
     <div 
     id            = "a25"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-1600"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GROUP BY 子句
+### 侧链
 
-    SELECT Cno, COUNT(Sno) FROM SC GROUP BY Cno;
-    SELECT Sno FROM SC
-	GROUP BY Sno
-	HAVING COUNT(*) &gt; 3;
-
-- 将查询结果按某一列或多列的值分组
-- 为了细化聚集函数的作用对象
-- 求各个课程号及相应的选课人数
-- 查询选修了三门以上课程的学生学号
+- 与主链相连
+- 用于特定应用
+- 可以与主链交互
 
     </div>
 
@@ -583,17 +558,18 @@
     id            = "a26"
     class         = "step markdown"
     data-rel-to   = "a25"
-    data-rel-x    = "1600"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### WHERE 与 HAVING 的区别
+### 智能合约
 
--  WHERE 子句与 HAVING 短语的区别在于作用对象不同
--  WHERE 子句作用于基本表或视图
--  HAVING 短语作用于组
+- 自动执行的代码
+- 合约触发条件
+- 合约部署和执行
+- Solidity 语言
 
     </div>
 
@@ -601,20 +577,17 @@
     id            = "a27"
     class         = "step markdown"
     data-rel-to   = "a26"
-    data-rel-x    = "1700"
-    data-rel-y    = "-100"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询示例
+### 自动执行的代码
 
-    SELECT Sno, AVG(Grade)
-    FROM SC
-    GROUP BY Sno
-    HAVING AVG(Grade) >= 90;
-
-- 平均成绩大于等于90分的学生学号和平均成绩
+- 触发条件满足后自动执行
+- 去中心化
+- 自动化交易
 
     </div>
 
@@ -622,21 +595,17 @@
     id            = "a28"
     class         = "step markdown"
     data-rel-to   = "a27"
-    data-rel-x    = "-5000"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 连接查询
+### 合约触发条件
 
-- 同时涉及两个以上的表的查询操作
-- 等值连接查询
-- 自然连接查询
-- 非等值连接查询
-- 自身连接查询
-- 外连接查询
-- 复合条件连接查询
+- 事件
+- 时间点
+- 数据输入
 
     </div>
 
@@ -650,13 +619,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 等值连接查询
+### 合约部署和执行
 
-- 用于连接两个表的条件称为连接条件
-- &lt;表名1&gt;.&lt;列名1&gt;&lt;比较运算符&gt;&lt;表名2&gt;.&lt;列名2&gt;
-- 比较运算符主要有=, &gt;, &lt;, &lt;=, &gt;=, != (或&lt;&gt;) 等
-- 连接条件中的列名称为连接字段
-- 当连接运算符为 = 时称为等值连接
+- 写入区块链
+- 不可更改
+- 执行成本 (Gas)
 
     </div>
 
@@ -665,18 +632,16 @@
     class         = "step markdown"
     data-rel-to   = "a29"
     data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 连接查询
+### Solidity 语言
 
-    SELECT Student.*, SC.*
-    FROM Student, SC
-    WHERE Student.Sno = SC.Sno;
-
-- 查询学生及其选修课程
+- 主要的智能合约编程语言
+- 类似于 JavaScript
+- Ethereum 平台
 
     </div>
 
@@ -685,14 +650,17 @@
     class         = "step markdown"
     data-rel-to   = "a30"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 自身连接
+### 区块链操作
 
-- 一个表与自身进行连接
+- 交易验证
+- 区块生成
+- 区块验证
+- 数据不可篡改性
 
     </div>
 
@@ -701,43 +669,31 @@
     class         = "step markdown"
     data-rel-to   = "a31"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询每门课的间接先修课
+### 交易过程
 
-    SELECT FIRST.Cno, SECOND.Cpno
-    FROM Course FIRST, Course SECOND
-    WHERE FIRST.Cpno = SECOND.Cno;
-
-- 为了得到每门课的间接先修课 (即先修课的先修课), 需要将 Course 表与自身进行连接
-- 为 Course 表取别名为 FIRST 和 SECOND
+- 交易发起
+- 交易广播
+- 交易打包
+- 交易确认
 
     </div>
 
     <div 
     id            = "a33"
     class         = "step markdown"
-    data-rel-to   = "a32"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "c31t"
+    data-rel-x    = "900"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 嵌套查询
-
-    SELECT Sname
-    FROM Student
-    WHERE Sno IN
-        (SELECT Sno
-        FROM SC
-        WHERE Cno='2');
-
-- 一个 SELECT-FROM-WHERE 语句是一个查询块
-- 查询块可以嵌套
+## 3.3 区块链与金融
 
     </div>
 
@@ -746,41 +702,37 @@
     class         = "step markdown"
     data-rel-to   = "a33"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 嵌套查询
+### 区块链与金融
 
-- 上层的査询块称为外层查询或父查询
-- 下层查询块称为内层查询或子查询
-- SQL 语言允许多层嵌套査询
-- 子査询的 SELECT 语句不能用 ORDER BY 子句
+- 区块链在金融行业的应用场景
+- 加密货币
+- 跨境支付
+- 金融合规与审计
+- 资产管理和转移
 
     </div>
 
     <div 
     id            = "a35"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-3300"
-    data-rel-y    = "-3400"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 带 IN 的子查询
+### 加密货币
 
-    SELECT Sno,Sname,Sdept
-    FROM Student
-    WHERE Sdept IN
-        (SELECT Sdept
-        FROM Student
-        WHERE Sname='刘晨')；
-
-- 子查询的结果往往是一个集合
-- IN 在嵌套査询中最常使用
+- 什么是加密货币
+- 比特币, 以太坊等主要加密货币
+- 加密货币的挖矿机制
+- 交易验证和共识算法
 
     </div>
 
@@ -788,15 +740,18 @@
     id            = "a36"
     class         = "step markdown"
     data-rel-to   = "a35"
-    data-rel-x    = "1600"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "2200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 相关与不相关子查询
+### 跨境支付
 
-- 查询条件是否依赖于父查询
+- 传统跨境支付的局限性
+- 如何利用区块链进行跨境支付
+- 安全性和效率比较
+- 案例分析
 
     </div>
 
@@ -804,23 +759,18 @@
     id            = "a37"
     class         = "step markdown"
     data-rel-to   = "a36"
-    data-rel-x    = "1600"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 带比较运算符的子查询
+### 金融合规与审计
 
-    SELECT Sno,Sname,Sdept
-    FROM Student
-    WHERE Sdept =
-        (SELECT Sdept
-        FROM Student
-        WHERE Sname='刘晨')；
-
-- 内层查询返回单个值时
-- 可以用比较运算符
+- 金融行业的合规问题
+- 区块链如何提高审计透明度
+- 智能合约在合规中的应用
+- 知识证明和隐私保护
 
     </div>
 
@@ -828,22 +778,18 @@
     id            = "a38"
     class         = "step markdown"
     data-rel-to   = "a37"
-    data-rel-x    = "3200"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 带 ANY 或 ALL 的子查询
+### 资产管理和转移
 
-- 返回多值时要用 ANY 或 ALL 修饰符
-- 必须同时使用比较运算符
-- &gt; ANY 大于子查询结果中的某个值 MIN
-- &gt; ALL 大于子查询结果中的所有值 MAX
-- &lt; ANY 小于子査询结果中的某个值 MAX
-- &lt; ALL 小于子查询结果中的所有值 MIN
-- &gt;= ANY 大于等于子查询结果中的某个值 MIN
-- &gt;= ALL 大于等于子査询结果中的所有值 MAX
+- 什么是数字资产
+- 资产所有权的确认和转移
+- 令牌化资产
+- 分布式账本在资产管理中的角色
 
     </div>
 
@@ -852,17 +798,17 @@
     class         = "step markdown"
     data-rel-to   = "a38"
     data-rel-x    = "0"
-    data-rel-y    = "870"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-- &lt;= ANY 小于等于子査询结果中的某个值 MAX
-- &lt;= ALL 小于等于子查询结果中的所有值 MIN
-- = ANY 等于子查询结果中的某值 IN
-- = ALL 等于子查询结果中的所有值 (无意义)
-- != ANY 不等于子査询结果中的某个值 (无意义)
-- != ALL 不等于子査询结果中的任何一个值 NOT IN
+### 智能合约
+
+- 什么是智能合约
+- 自动执行和自动验收
+- 编程语言和开发工具
+- 智能合约的局限性和挑战
 
     </div>
 
@@ -870,21 +816,18 @@
     id            = "a40"
     class         = "step markdown"
     data-rel-to   = "a39"
-    data-rel-x    = "1800"
-    data-rel-y    = "-800"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 集合查询
+### 区块链金融的风险与挑战
 
-- 査询结果是元组集合
-- 多个 SELECT 语句的结果可集合操作
-- 并操作 UNION
-- 交操作 INTERSECT
-- 差操作 EXCEPT
-- 各查询结果的列数必须相同
-- 对应项的数据类型也必须相同
+- 市场风险
+- 技术风险
+- 法律和监管问题
+- 社会和伦理问题
 
     </div>
 
@@ -893,44 +836,31 @@
     class         = "step markdown"
     data-rel-to   = "a40"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 64
+### 区块链金融的未来发展
 
-    SELECT *
-    FROM Student
-    WHERE Sdept = 'CS'
-    UNION
-    SELECT *
-    FROM Student
-    WHERE Sage &lt;= 19;
-
-- UNION 合并多个查询结果时会自动去重
+- 去中心化金融（DeFi）
+- 链下与链上的融合
+- 零知识证明和其它隐私解决方案
+- 拓展性和互操作性
 
     </div>
 
     <div 
     id            = "a42"
     class         = "step markdown"
-    data-rel-to   = "a41"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "c31t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 66
-
-    SELECT *
-    FROM Student
-    WHERE Sdept = 'CS'
-    INTERSECT
-    SELECT *
-    FROM Student
-    WHERE Sage &lt;= 19;
+## 3.4 区块链的非金融行业应用
 
     </div>
 
@@ -939,20 +869,20 @@
     class         = "step markdown"
     data-rel-to   = "a42"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 68
+### 区块链的非金融行业应用
 
-    SELECT *
-    FROM Student
-    WHERE Sdept = 'CS'
-    EXCEPT
-    SELECT *
-    FROM Student
-    WHERE Sage &lt;= 19;
+- 概述和重要性
+- 物流和供应链
+- 能源管理
+- 健康医疗
+- 文档认证
+- 智能合约在其他行业的应用
+- 区块链与数据管理
 
     </div>
 
@@ -961,22 +891,17 @@
     class         = "step markdown"
     data-rel-to   = "a43"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 基于派生表的查询
+### 物流和供应链
 
-    SELECT Sno, Cno
-    FROM SC, (SELECT Sno, Avg(Grade)
-              FROM SC GROUP BY Sno)
-              AS Avg_sc(avg_sno,avg_grade)
-    WHERE SC.Sno = Avg_sc.avg_sno
-        and SC.Grade &gt;= Avg_sc.avg grade
-
-- 子查询可以出现在 FROM 子句中
-- 子查询生成临时派生表
+- 实时追踪
+- 降低成本
+- 提高透明度
+- 抵制假冒产品
 
     </div>
 
@@ -985,21 +910,16 @@
     class         = "step markdown"
     data-rel-to   = "a44"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SELECT 语句
+### 能源管理
 
-    SELECT [ALL | DISTINCT] &lt;目标列表达式&gt; [别名]
-			[, &lt;目标列表达式&gt; [别名] ]...
-    FROM &lt;表名或视图名&gt; [别名]
-			[， &lt;表名或视图名&gt; [别名] ] ... |
-			( &lt;SELECT语句&gt; ) [AS] &lt;别名&gt;
-    [WHERE &lt;条件表达式&gt; ]
-    [GROUP BY &lt;列名 1&gt; [HAVING &lt;条件表达式&gt; ] ]
-    [ORDER BY &lt;列名 2&gt; [ASC|DESC] ];
+- 电网管理
+- 能源交易
+- 碳信用交易
 
     </div>
 
@@ -1013,12 +933,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 目标列表达式的可选格式
+### 健康医疗
 
-- *
-- &lt;表名&gt;.*
-- COUNT( [DISTINCT | ALL] *)
-- [ &lt;表名&gt; .] &lt;属性列名表达式&gt; [, [ &lt;表名&gt; .] &lt;属性列名表达式&gt; ] ...
+- 电子健康记录
+- 数据共享
+- 药品追溯
 
     </div>
 
@@ -1027,19 +946,16 @@
     class         = "step markdown"
     data-rel-to   = "a46"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 聚集函数的一般格式
+### 文档认证
 
-- COUNT
-- SUM
-- AVG
-- MAX
-- MIN
-- 后接 ( [DISTINCT | ALL] <列名&gt; )
+- 高度安全的文档存储
+- 去中心化认证
+- 不可篡改
 
     </div>
 
@@ -1048,43 +964,268 @@
     class         = "step markdown"
     data-rel-to   = "a47"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### WHERE 子句的条件表达式
+### 智能合约在其他行业的应用
 
-- 比较运算符θ
-- BETWEEN
-- IN
-- LIKE
-- IS NULL
-- EXISTS
-- 条件表达式 1 [AND | OR] 条件表达式 2
+- 自动执行
+- 去中心化
+- 不需第三方参与
+- 应用场景多样
+
+    </div>
+
+    <div 
+    id            = "a49"
+    class         = "step markdown"
+    data-rel-to   = "a48"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 区块链与数据管理
+
+- 数据完整性
+- 数据可用性
+- 数据安全性
+
+    </div>
+
+    <div 
+    id            = "a50"
+    class         = "step markdown"
+    data-rel-to   = "c31t"
+    data-rel-x    = "4000"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 3.5 区块链的未来发展
+
+    </div>
+
+    <div 
+    id            = "a51"
+    class         = "step markdown"
+    data-rel-to   = "a50"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 区块链的未来发展
+
+- 金融与非金融行业并行发展
+- 跨界应用与生态圈建设
+- 规模化应用的难点与瓶颈
+- 区块链与政府
+- 持续的技术迭代
+
+    </div>
+
+    <div 
+    id            = "a52"
+    class         = "step markdown"
+    data-rel-to   = "a51"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 金融与非金融行业并行发展
+
+- 各大银行逐渐接受
+- 供应链, 物联网, 能源等多领域应用
+- 创新型金融产品
+- 令牌经济
+
+    </div>
+
+    <div 
+    id            = "a53"
+    class         = "step markdown"
+    data-rel-to   = "a52"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 令牌经济
+
+- 通过数字代币激励参与者
+- 创建内部价值流通
+- 代币与实体价值挂钩
+- 稳定币与实用币
+- 令牌销售与分配
+
+    </div>
+
+    <div 
+    id            = "a54"
+    class         = "step markdown"
+    data-rel-to   = "a53"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 跨界应用与生态圈建设
+
+- 联盟链与公有链的结合
+- 多行业协同
+- 数据共享平台
+- 分布式应用 (dApps)
+
+    </div>
+
+    <div 
+    id            = "a55"
+    class         = "step markdown"
+    data-rel-to   = "a54"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 规模化应用的难点与瓶颈
+
+- 交易速度
+- 存储效率
+- 隐私问题
+- 节点中心化趋势
+
+    </div>
+
+    <div 
+    id            = "a56"
+    class         = "step markdown"
+    data-rel-to   = "a55"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 区块链与政府
+
+- 电子身份证
+- 投票系统
+- 公共服务
+- 审计与透明度
+
+    </div>
+
+    <div 
+    id            = "a57"
+    class         = "step markdown"
+    data-rel-to   = "a56"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 持续的技术迭代
+
+- 层二解决方案
+- 零知识证明
+- 分片技术
+- 新型共识算法
+
+    </div>
+
+    <div 
+    id            = "a58"
+    class         = "step markdown"
+    data-rel-to   = "a57"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 层二解决方案
+
+- 建立在基础区块链之上
+- 提高交易速度与吞吐量
+- Lightning Network
+- Raiden Network
+- 状态通道
+- 侧链与子链
+
+    </div>
+
+    <div 
+    id            = "a59"
+    class         = "step markdown"
+    data-rel-to   = "a58"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 零知识证明
+
+- 不泄露信息进行验证
+- Zcash
+- zk-SNARKs
+- 完成验证而无需交换具体信息
+- 提高交易隐私
+- 应用于身份验证, 审计等
+
+    </div>
+
+    <div 
+    id            = "a60"
+    class         = "step markdown"
+    data-rel-to   = "a59"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 区块链的道德与伦理问题
+
+- 数据去中心化与权力下放
+- 透明与隐私的平衡
+- 可信与可靠
+- 社会责任与合规性
 
     </div>
 
     <div
-    id            = "mm34"
+    id            = "mm31"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "c31t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 3.4 mindmap](img/c03/mindmap-3-4.png)
+![course 3.1 mindmap](img/c03/mindmap-3-1.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c34q"
+    id            = "c31q"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "c31t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -1093,19 +1234,19 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 3.4 数据查询
+### 3. 区块链
 
-- 在 SQL 中, 如何使用 SELECT 语句检索数据?
-- 如何使用 WHERE 子句过滤 SELECT 语句的结果?
-- 如何使用 ORDER BY 子句对查询结果进行排序？
-- 在 SQL 中，常见的聚合函数有哪些?
-- 如何使用 GROUP BY 子句分组操作？
+- 什么是区块链?
+- 区块链与传统数据库有何不同?
+- 哈希算法在区块链中有什么作用?
+- 工作量证明（PoW）是如何工作的
+- 什么是智能合约?
 
 ----
 
-[ 3.3 数据定义](dbds-3-3.html#/overview)
-[| 练习 |](dbds-exec.html)
-[ 3.5 数据更新](dbds-3-5.html#/overview)
+[ 2.4 自然语言处理](ipit-2-4.html#/overview)
+[| 练习 |](ipit-exec.html)
+[ 4. 5G 与未来通信技术](ipit-4-1.html#/overview)
 
     </div>
 

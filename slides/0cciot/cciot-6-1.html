@@ -1,0 +1,1909 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>CC & IoT | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="云计算与物联网课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c61t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>6. 物联网的概念与发展</h2>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "-3000"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 6.1 物联网的起源与发展
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的起源与发展
+
+- 起源于 RFID 技术
+- 早期应用
+- 从 M2M 到 IoT
+- IPv6 和物联网
+- 标准化组织
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 起源于 RFID 技术
+
+- 无线射频识别
+- 追踪和识别物品
+- 物联网的前身
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 早期应用
+
+- 智能家居
+- 工业自动化
+- 医疗保健
+- 智能交通
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 从 M2M 到 IoT
+
+- 机器到机器 (M2M)
+- 更广泛的连接性
+- 数据集成和分析
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### IPv6 和物联网
+
+- 增加地址空间
+- 更好的路由和安全性
+- 适应多种应用场景
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 标准化组织
+
+- IEEE
+- IETF
+- W3C
+- Zigbee Alliance
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的商业应用
+
+- 智能农业
+- 智能物流
+- 智能能源管理
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的社会影响
+
+- 数据隐私问题
+- 安全风险
+- 法律和伦理问题
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的未来
+
+- 边缘计算
+- AI 集成
+- 量子通信
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网平台
+
+- 开源和商业平台
+- 平台架构
+- 数据存储和处理
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网安全
+
+- 加密和认证
+- 安全传输
+- 设备级安全
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "-1600"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 6.2 物联网的基本概念
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的基本概念
+
+- 物联网定义
+- 物联网与传统网络的区别
+- 架构与组成元素
+- 主要技术和协议
+- 应用领域
+- 持续发展的驱动因素
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网定义
+
+- 网络的延伸
+- 智能物体的互联
+- 数据的实时交换
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网与传统网络的区别
+
+- 适用场景
+- 数据量和传输速率
+- 安全性和隐私问题
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 架构与组成元素
+
+- 数据收集层
+- 网络传输层
+- 数据处理和应用层
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 主要技术和协议
+
+- RFID, NFC
+- MQTT, CoAP
+- LPWAN, 5G
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### RFID (射频识别)
+
+- 无需直接接触或可视范围内
+- 使用无线电波传输数据
+- 标签, 读取器, 数据库组成
+- 跟踪和管理物品
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### NFC (近场通信)
+
+- 短距离无线通讯技术
+- 在几厘米内工作
+- 手机支付, 电子门禁
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### MQTT (消息队列遥测传输)
+
+- 轻量级消息协议
+- 发布/订阅模型
+- 低带宽, 低能耗, 高延迟容忍
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### CoAP (受限应用协议)
+
+- 适用于资源受限的网络环境
+- RESTful 设计
+- 异步通信, 简单的报文格式
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### LPWAN (低功耗广域网络)
+
+- 适用于低带宽, 低功耗情境
+- 长距离无线传输
+- 物联网设备连接
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 5G (第五代移动通信)
+
+- 高速率, 低延迟
+- 大量设备连接
+- 高可靠性和可用性
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 应用领域
+
+- 工业自动化
+- 智能家居
+- 医疗健康
+- 智能交通
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 持续发展的驱动因素
+
+- 大数据
+- 人工智能
+- 边缘计算
+- 信息安全
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 6.3 物联网的体系结构
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的体系结构
+
+- 物联网的组成部分
+- 硬件, 软件, 数据
+- 网络传输层
+- 应用层
+- 边缘计算和数据处理
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 硬件组成
+
+- 传感器和执行器
+- 嵌入式系统
+- 微控制器
+- 低功耗蓝牙设备
+- RFID 和 NFC 技术
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "2200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 软件组成
+
+- 物联网操作系统
+- 数据采集和处理
+- 数据分析和可视化
+- API 与 SDK 
+- 云端和边缘计算平台
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 网络传输层
+
+- 短距离无线通讯技术
+- 长距离无线通讯技术
+- 网络拓扑
+- IP 和非 IP 网络
+- 安全加密和认证
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 短距离无线通讯技术
+
+- 蓝牙和蓝牙低功耗 (BLE)
+- Zigbee
+- Wi-Fi Direct
+- NFC
+- RFID
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 长距离无线通讯技术
+
+- LoRaWAN
+- Sigfox
+- NB-IoT
+- LTE-M
+- 卫星通信
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### LoRaWAN
+
+- 低功耗
+- 长传输距离
+- 星型拓扑结构
+- 自组网
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Sigfox
+
+- 极低带宽
+- 高网络容量
+- 易于部署
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### NB-IoT
+
+- 使用蜂窝网络
+- 优良的墙内渗透性
+- 高可靠性
+
+    </div>
+
+    <div 
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### LTE-M
+
+- 对移动性的支持
+- 较高的数据速率
+- 兼容现有 LTE 网络
+
+    </div>
+
+    <div 
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 卫星通信
+
+- 地球覆盖
+- 高可靠性
+- 适用于偏远地区
+
+    </div>
+
+    <div 
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 网络拓扑
+
+- 星形拓扑
+- 环形拓扑
+- 总线形拓扑
+- 树形拓扑
+- 网状拓扑
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### IP 和非 IP 网络
+
+- IPv4 和 IPv6
+- CoAP
+- MQTT
+- 非 IP 基础的传输 (如 Zigbee)
+- 多协议适配
+
+    </div>
+
+    <div 
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### IPv4 和 IPv6
+
+- 地址长度
+- 安全性
+- 路由复杂性
+
+    </div>
+
+    <div 
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "a41"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### CoAP
+
+- 适用于低功耗设备
+- HTTP 兼容
+- 观察模式
+
+    </div>
+
+    <div 
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### MQTT
+
+- 发布/订阅模型
+- 适用于即时通讯
+- 负载均衡
+
+    </div>
+
+    <div 
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "a43"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 非 IP 基础的传输 (如 Zigbee)
+
+- 低成本
+- 低功耗
+- 自组织网络
+
+    </div>
+
+    <div 
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "a44"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 多协议适配
+
+- 协议转换
+- 网关设备
+- 数据整合
+
+    </div>
+
+    <div 
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "a45"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 安全加密和认证
+
+- WPA3 安全标准
+- TLS/SSL 加密
+- 设备和用户认证
+- API 安全
+- VPN 和专用线路
+
+    </div>
+
+    <div 
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### WPA3 安全标准
+
+- 增强加密
+- 前向机密性
+- 密码选择灵活性
+
+    </div>
+
+    <div 
+    id            = "a48"
+    class         = "step markdown"
+    data-rel-to   = "a47"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### TLS/SSL 加密
+
+- 端到端加密
+- 证书认证
+- 数据完整性
+
+    </div>
+
+    <div 
+    id            = "a49"
+    class         = "step markdown"
+    data-rel-to   = "a48"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 设备和用户认证
+
+- 双因素认证
+- 设备证书
+- 生物特征
+
+    </div>
+
+    <div 
+    id            = "a50"
+    class         = "step markdown"
+    data-rel-to   = "a49"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### API 安全
+
+- OAuth 授权
+- 签名机制
+- 速率限制
+
+    </div>
+
+    <div 
+    id            = "a51"
+    class         = "step markdown"
+    data-rel-to   = "a50"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### VPN 和专用线路
+
+- 数据加密
+- 隧道传输
+- 安全区域隔离
+
+    </div>
+
+    <div 
+    id            = "a52"
+    class         = "step markdown"
+    data-rel-to   = "a51"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 应用层
+
+- 用户界面和交互
+- 数据采集
+- 远程控制
+- 自动化和决策
+- 数据存储和分析
+
+    </div>
+
+    <div 
+    id            = "a53"
+    class         = "step markdown"
+    data-rel-to   = "a52"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 边缘计算和数据处理
+
+- 实时数据处理
+- 数据过滤和压缩
+- 数据聚合
+- 本地存储
+- 低延迟响应
+
+    </div>
+
+    <div 
+    id            = "a54"
+    class         = "step markdown"
+    data-rel-to   = "a53"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网安全
+
+- 数据加密
+- 身份认证
+- 权限控制
+- 网络隔离
+- 安全更新和维护
+
+    </div>
+
+    <div 
+    id            = "a55"
+    class         = "step markdown"
+    data-rel-to   = "a54"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的发展挑战
+
+- 标准化问题
+- 数据隐私和安全
+- 电源和能源效率
+- 成本和可用性
+- 网络覆盖和带宽
+
+    </div>
+
+    <div 
+    id            = "a56"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "1500"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 6.4 物联网的支撑技术
+
+    </div>
+
+    <div 
+    id            = "a57"
+    class         = "step markdown"
+    data-rel-to   = "a56"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的支撑技术
+
+- 关键组件
+- 网络协议与通信
+- 数据处理与分析
+- 安全性与隐私
+- 集成与互操作性
+- 能源管理
+- 高级应用与用例
+
+    </div>
+
+    <div 
+    id            = "a58"
+    class         = "step markdown"
+    data-rel-to   = "a57"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 关键组件
+
+- 传感器与执行器
+- 嵌入式系统
+- 边缘计算
+- 网关设备
+- 数据中心
+- 用户界面
+
+    </div>
+
+    <div 
+    id            = "a59"
+    class         = "step markdown"
+    data-rel-to   = "a58"
+    data-rel-x    = "0"
+    data-rel-y    = "2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 传感器与执行器
+
+- 温度, 湿度传感器
+- 摄像头
+- 马达
+
+    </div>
+
+    <div 
+    id            = "a60"
+    class         = "step markdown"
+    data-rel-to   = "a59"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 嵌入式系统
+
+- 微控制器
+- FPGA
+- 系统级芯片 (SoC)
+
+    </div>
+
+    <div 
+    id            = "a61"
+    class         = "step markdown"
+    data-rel-to   = "a60"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 边缘计算
+
+- 实时数据处理
+- 低延迟
+- 数据过滤
+
+    </div>
+
+    <div 
+    id            = "a62"
+    class         = "step markdown"
+    data-rel-to   = "a61"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 网关设备
+
+- 数据聚合
+- 协议转换
+- 安全加密
+
+    </div>
+
+    <div 
+    id            = "a63"
+    class         = "step markdown"
+    data-rel-to   = "a62"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据中心
+
+- 大规模存储
+- 数据分析
+- 虚拟化技术
+
+    </div>
+
+    <div 
+    id            = "a64"
+    class         = "step markdown"
+    data-rel-to   = "a63"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用户界面
+
+- 移动应用
+- 网页控制台
+- 语音界面
+
+    </div>
+
+    <div 
+    id            = "a65"
+    class         = "step markdown"
+    data-rel-to   = "a64"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 网络协议与通信
+
+- MQTT 与 MQTT-SN
+- CoAP
+- HTTP/HTTPS
+- Zigbee
+- LoRaWAN
+- Cellular IoT
+- Bluetooth 和 BLE
+
+    </div>
+
+    <div 
+    id            = "a66"
+    class         = "step markdown"
+    data-rel-to   = "a65"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### MQTT 与 MQTT-SN
+
+- 发布/订阅模型
+- 轻量级
+- 高可靠性
+
+    </div>
+
+    <div 
+    id            = "a67"
+    class         = "step markdown"
+    data-rel-to   = "a66"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### CoAP
+
+- 请求/响应模型
+- 适用于低功耗设备
+- 简单快速
+
+    </div>
+
+    <div 
+    id            = "a68"
+    class         = "step markdown"
+    data-rel-to   = "a67"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Zigbee
+
+- 低功耗
+- 星形, 网状网络
+- 安全性
+
+    </div>
+
+    <div 
+    id            = "a69"
+    class         = "step markdown"
+    data-rel-to   = "a68"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### LoRaWAN
+
+- 长距离
+- 低功耗
+- 大规模网络
+
+    </div>
+
+    <div 
+    id            = "a70"
+    class         = "step markdown"
+    data-rel-to   = "a69"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Cellular IoT
+
+- LTE-M
+- NB-IoT
+- 4G/5G 技术
+
+    </div>
+
+    <div 
+    id            = "a71"
+    class         = "step markdown"
+    data-rel-to   = "a70"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Bluetooth 和 BLE
+
+- 短距离
+- 低功耗 (BLE)
+- 点对点通信
+
+    </div>
+
+    <div 
+    id            = "a72"
+    class         = "step markdown"
+    data-rel-to   = "a71"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据处理与分析
+
+- 数据采集与预处理
+- 批量数据分析
+- 实时数据分析
+- 数据挖掘与机器学习
+- 数据可视化与报告
+- 云与雾计算
+
+    </div>
+
+    <div 
+    id            = "a73"
+    class         = "step markdown"
+    data-rel-to   = "a72"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据采集与预处理
+
+- 采样率
+- 数据清洗
+- 特征提取
+
+    </div>
+
+    <div 
+    id            = "a74"
+    class         = "step markdown"
+    data-rel-to   = "a73"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 批量数据分析
+
+- MapReduce
+- Spark
+- 批量查询
+
+    </div>
+
+    <div 
+    id            = "a75"
+    class         = "step markdown"
+    data-rel-to   = "a74"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 实时数据分析
+
+- Storm
+- Flink
+- 实时流处理
+
+    </div>
+
+    <div 
+    id            = "a76"
+    class         = "step markdown"
+    data-rel-to   = "a75"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据挖掘与机器学习
+
+- 聚类分析
+- 回归分析
+- 神经网络
+
+    </div>
+
+    <div 
+    id            = "a77"
+    class         = "step markdown"
+    data-rel-to   = "a76"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 云与雾计算
+
+- 云端分析
+- 边缘分析
+- 数据本地化
+
+    </div>
+
+    <div 
+    id            = "a78"
+    class         = "step markdown"
+    data-rel-to   = "a77"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 安全性与隐私
+
+- 加密与解密
+- 身份验证与授权
+- 数据完整性检查
+- 数据隐私政策
+- 法律和规定
+- 物理安全
+
+    </div>
+
+    <div 
+    id            = "a79"
+    class         = "step markdown"
+    data-rel-to   = "a78"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 集成与互操作性
+
+- 标准与协议
+- 协议转换与适配
+- 设备管理与注册
+- 系统与平台集成
+- 跨平台兼容性
+
+    </div>
+
+    <div 
+    id            = "a80"
+    class         = "step markdown"
+    data-rel-to   = "a79"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 能源管理
+
+- 低功耗网络
+- 能量采集
+- 电池管理
+- 优化算法
+
+    </div>
+
+    <div 
+    id            = "a81"
+    class         = "step markdown"
+    data-rel-to   = "a80"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 高级应用与用例
+
+- 智能家居
+- 工业物联网
+- 智能交通
+- 健康医疗
+- 农业物联网
+
+    </div>
+
+    <div 
+    id            = "a82"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "3000"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 6.5 物联网的应用案例
+
+    </div>
+
+    <div 
+    id            = "a83"
+    class         = "step markdown"
+    data-rel-to   = "a82"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物联网的应用案例
+
+- 概述
+- 智能家居
+- 工业物联网
+- 医疗健康
+- 交通与物流
+- 农业物联网
+- 都市生活
+
+    </div>
+
+    <div 
+    id            = "a84"
+    class         = "step markdown"
+    data-rel-to   = "a83"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 概述
+
+- 物联网在各领域的渗透
+- 传统与现代的结合
+- 多学科交叉
+
+    </div>
+
+    <div 
+    id            = "a85"
+    class         = "step markdown"
+    data-rel-to   = "a84"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 智能家居
+
+- 智能门锁
+- 智能照明
+- 温湿度控制
+- 家庭安全
+
+    </div>
+
+    <div 
+    id            = "a86"
+    class         = "step markdown"
+    data-rel-to   = "a85"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工业物联网
+
+- 实时监控
+- 数据分析
+- 预测性维护
+- 自动化流程
+
+    </div>
+
+    <div 
+    id            = "a87"
+    class         = "step markdown"
+    data-rel-to   = "a86"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 医疗健康
+
+- 远程监控
+- 病历跟踪
+- 医疗设备管理
+- 患者照护
+
+    </div>
+
+    <div 
+    id            = "a88"
+    class         = "step markdown"
+    data-rel-to   = "a87"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 交通与物流
+
+- 车联网
+- 实时追踪
+- 货物状态监测
+- 交通管理
+
+    </div>
+
+    <div 
+    id            = "a89"
+    class         = "step markdown"
+    data-rel-to   = "a88"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 农业物联网
+
+- 土壤湿度监测
+- 作物健康分析
+- 自动灌溉
+- 数据驱动决策
+
+    </div>
+
+    <div 
+    id            = "a90"
+    class         = "step markdown"
+    data-rel-to   = "a89"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 都市生活
+
+- 垃圾分类与回收
+- 公共交通
+- 能源管理
+- 智能停车
+
+    </div>
+
+    <div
+    id            = "mm61"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.1 mindmap](img/c06/mindmap-6-1.png)
+
+    </div>
+
+    <div
+    id            = "mm62"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.2 mindmap](img/c06/mindmap-6-2.png)
+
+    </div>
+
+    <div
+    id            = "mm63"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.3 mindmap](img/c06/mindmap-6-3.png)
+
+    </div>
+
+    <div
+    id            = "mm64"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.4 mindmap](img/c06/mindmap-6-4.png)
+
+    </div>
+
+    <div
+    id            = "mm65"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.5 mindmap](img/c06/mindmap-6-5.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c61q"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 6. 物联网的概念与发展
+
+- 请简述物联网的定义和它如何作为网络的延伸.
+- 列举物联网主要的组成元素和架构层次.
+- 请描述物联网硬件组成的主要元素.
+- 物联网长距离无线通讯技术通常有哪些?
+- 物联网如何确保数据的安全性和隐私性?
+
+----
+
+[ 5. 数据处理与并行编程](cciot-5-1.html#/overview)
+[| 练习 |](cciot-exec.html)
+[ 7. 自动识别技术](cciot-7-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

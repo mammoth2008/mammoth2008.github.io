@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- 修改页面标题 -->
-        <title>DB & DS | HUST</title>
+        <title>CC & IoT | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="description" content="云计算与物联网课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c34t"
+    id         = "c51t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,7 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>3. 关系数据库标准语言 SQL</h2>
-        <h3 style="text-align: center">3.4 数据查询</h3>
+        <h2>5. 数据处理与并行编程</h2>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,20 +98,14 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-1600"
-    data-rel-y    = "-1000"
+    data-rel-to   = "c51t"
+    data-rel-x    = "-1800"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据查询
-
-    SELECT [ALL | DISTINCT] <目标列表达式>, <目标列表达式>, ...
-    FROM <表名或视图名> [AS <别名>]
-    [WHERE <条件表达式>]
-    [GROUP BY <列名1> [HAVING <条件表达式>]]
-    [ORDER BY <列名2> [ASC|DESC]];
+## 5.1 数据密集型计算
 
     </div>
 
@@ -121,18 +114,18 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询过程
+### 数据密集型计算概述
 
-- 根据 WHERE 子句中的条件表达式
-- 从 FROM 子句指定的表中选出满足条件的元组
-- 根据 SELECT 子句中的目标列表达式
-- 选取元组中的属性
-- 形成结果表
+- 与传统计算的区别
+- 高度依赖数据
+- 需要大规模并行处理
+- 大数据与数据密集型计算
+- 应用领域
 
     </div>
 
@@ -141,17 +134,17 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询子句
+### 数据的来源
 
-- GROUP BY子句按照指定的列进行分组
-- 可在每个组上应用聚集函数
-- 若有 HAVING 条件则只输出满足条件的组
-- 若有 ORDER BY 子句则对结果表排序
+- 互联网数据
+- 传感器数据
+- 商业数据
+- 公共数据集
 
     </div>
 
@@ -160,14 +153,17 @@
     class         = "step markdown"
     data-rel-to   = "a3"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询指定列
+### 数据存储
 
-    SELECT Sno, Sname FROM Student;
+- 分布式文件系统
+- 数据库
+- 键值存储
+- 对象存储
 
     </div>
 
@@ -176,14 +172,18 @@
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询全部列
+### 数据处理流程
 
-    SELECT * FROM Student;
+- 数据预处理
+- 数据清洗
+- 数据转换
+- 数据分析
+- 数据可视化
 
     </div>
 
@@ -192,14 +192,17 @@
     class         = "step markdown"
     data-rel-to   = "a5"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询经过计算的值
+### 数据处理框架
 
-    SELECT Sname, 2014 - Sage FROM Student;
+- MapReduce
+- Spark
+- Flink
+- Hadoop
 
     </div>
 
@@ -208,31 +211,36 @@
     class         = "step markdown"
     data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 指定列别名
+### 计算模型
 
-    SELECT Sname AS NAME, 2014 - Sage AS BIRTHDAY
-    FROM Student;
+- 批量处理
+- 流处理
+- 实时处理
+- 混合模型
 
     </div>
 
     <div 
     id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 消除取值重复的行
+### 数据密集型计算的挑战
 
-    SELECT DISTINCT Sno FROM SC;
+- 数据倾斜
+- 数据一致性
+- 系统可用性
+- 数据安全
 
     </div>
 
@@ -241,17 +249,17 @@
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 査询满足条件的元组
+### 数据密集型计算的优势
 
-- 使用 WHERE 子句
-- 比较: <, >, <=, >=, =, !=
-- 范围: BETWEEN AND, NOT BETWEEN AND
-- 集合: IN, NOT IN
+- 可扩展性
+- 弹性
+- 高可用性
+- 成本效益
 
     </div>
 
@@ -260,34 +268,31 @@
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 比较
+### 适用场景
 
-    SELECT Sname
-	FROM Student
-	WHERE Sdept = 'CS';
+- 金融分析
+- 社交网络分析
+- 供应链优化
+- 个性化推荐
 
     </div>
 
     <div 
     id            = "a11"
     class         = "step markdown"
-    data-rel-to   = "a10"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-to   = "c51t"
+    data-rel-x    = "-400"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 范围
-
-    SELECT Sname, Sdept, Sage
-	FROM Student
-	WHERE Sage BETWEEN 20 AND 23;
+## 5.2 分布式数据处理
 
     </div>
 
@@ -296,35 +301,37 @@
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 集合
+### 分布式数据处理
 
-    SELECT Sname, Ssex
-	FROM Student
-	WHERE Sdept IN ('CS', 'MA', 'IS');
+- 数据分布的基础概念
+- 负载均衡
+- 数据冗余
+- 数据并行化
+- 数据处理模型
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "1800"
-    data-rel-y    = "00"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 字符匹配
+### 数据分布的基础概念
 
-- 使用 LIKE 进行字符串匹配
-- 可以使用通配符
-- "%" 代表任意长度的字符串
-- "_" 代表任意单个字符
+- 数据分片
+- 数据副本
+- 数据一致性
+- 数据可用性
 
     </div>
 
@@ -333,23 +340,17 @@
     class         = "step markdown"
     data-rel-to   = "a13"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "2000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 字符匹配
+### 负载均衡
 
-    SELECT * FROM Student
-	WHERE Sno LIKE '201215121';
-    SELECT Sname, Sno, Ssex FROM Student
-	WHERE Sname LIKE '刘%';
-    SELECT Sname FROM Student
-	WHERE Sname LIKE '欧阳_';
-    SELECT Sname, Sno FROM Student
-	WHERE Sname LIKE '_阳%';
-    SELECT Sname, Sno, Ssex FROM Student
-	WHERE Sname NOT LIKE '刘%';
+- 轮询算法
+- 加权轮询
+- 最少连接数
+- 源地址散列
 
     </div>
 
@@ -363,15 +364,13 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 涉及空值的查询
+### 数据冗余
 
-    SELECT Sno, Cno FROM SC
-    WHERE Grade IS NULL;
-    SELECT Sno, Cno FROM SC
-    WHERE Grade IS NOT NULL;
+- 数据备份
+- 数据副本数量
+- 数据恢复机制
+- 冗余的成本与效益
 
-- 使用 IS NULL 谓词查询空值
-- 使用 IS NOT NULL 谓词查询非空值
     </div>
 
     <div 
@@ -379,44 +378,36 @@
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 多重条件查询
+### 数据并行化
 
-    SELECT Sname FROM Student
-    WHERE Sdept = 'CS' AND Sage &lt; 20;
-    SELECT Sname, Ssex
-    FROM Student
-    WHERE Sdept = 'CS' OR Sdept = 'MA' OR Sdept = 'IS';
-
-- 使用逻辑运算符 AND 和 OR 连接多个查询条件
-- AND 的优先级高于 OR
-- 可以使用括号改变优先级
+- 数据分区
+- MapReduce
+- 数据流框架
+- 管道并行化
 
     </div>
 
     <div 
     id            = "a17"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "3000"
-    data-rel-y    = "-1200"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### ORDER BY子句
+### 数据处理模型
 
-    SELECT Sno, Grade FROM SC WHERE Cno = '3'
-	ORDER BY Grade DESC;
-    SELECT * FROM Student ORDER BY Sdept, Sage DESC;
-
-- 对查询结果按照属性列排序
-- 可以对一个或多个属性列排序
-- 默认按升序排列
+- 批处理
+- 流处理
+- Lambda 架构
+- Kappa 架构
 
     </div>
 
@@ -430,13 +421,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 聚集函数
+### MapReduce
 
-- COUNT 函数
-- SUM 函数
-- AVG 函数
-- MAX 函数
-- MIN 函数
+- 映射 (Map) 阶段
+- 规约 (Reduce) 阶段
+- 数据分片与任务分配
+- 容错与数据复制
 
     </div>
 
@@ -450,14 +440,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### COUNT 函数
+### Apache Storm
 
-    SELECT COUNT(*) FROM Student;
-    SELECT COUNT(DISTINCT Sno) FROM SC;
-
-- 用于统计元组个数或某一列中值的个数
-- 查询学生总人数
-- 查询选修了课程的学生人数
+- 实时数据流处理
+- 高可用
+- 容错
+- Trident API 支持
 
     </div>
 
@@ -471,12 +459,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SUM 函数
+### Apache Flink
 
-    SELECT SUM(Grade) FROM SC WHERE Cno = '1';
-
-- 用于计算某一列值的总和 (此列必须是数值型) .
-- 计算选修 1 号课程的学生平均成绩
+- 流处理与批处理统一
+- 低延迟
+- 高吞吐
+- Event Time 支持
 
     </div>
 
@@ -490,12 +478,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### AVG 函数
+### Apache Kafka
 
-    SELECT AVG(Grade) FROM SC WHERE Cno = '1';
-
-- 用于计算某一列值的平均值 (此列必须是数值型) 
-- 计算选修 1 号课程的学生平均成绩
+- 消息队列
+- 数据源与数据接收端
+- 可扩展
+- 高并发
 
     </div>
 
@@ -504,17 +492,16 @@
     class         = "step markdown"
     data-rel-to   = "a21"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MAX 函数
+### 时间窗口
 
-    SELECT MAX(Grade) FROM SC WHERE Cno = '1';
-
-- 用于求一列值中的最大值
-- 查询选修 1 号课程的学生最高分数
+- 固定时间窗口
+- 滑动时间窗口
+- 会话时间窗口
 
     </div>
 
@@ -528,12 +515,14 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### MIN 函数
+### 批处理的优缺点
 
-    SELECT MIN(Grade) FROM SC WHERE Cno = '1';
-
-- 用于求一列值中的最小值
-- 查询选修1号课程的学生最低分数
+- 高吞吐量
+- 成本低
+- 延迟高
+- 实时性差
+- 容易管理
+- 简化调度
 
     </div>
 
@@ -547,35 +536,30 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 使用聚集函数的注意事项
+### 流处理的优缺点
 
-- 遇到空值时除 COUNT(*) 外都只处理非空值
-- WHERE 子句中不能使用聚集函数作为条件表达式
-- 聚集函数只能用于 SELECT 子句和 GROUP BY 中的 HAVING 子句
+- 低延迟
+- 实时响应
+- 较高的资源需求
+- 需要复杂的状态管理
 
     </div>
 
     <div 
     id            = "a25"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-1600"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GROUP BY 子句
+### 实时性与延迟
 
-    SELECT Cno, COUNT(Sno) FROM SC GROUP BY Cno;
-    SELECT Sno FROM SC
-	GROUP BY Sno
-	HAVING COUNT(*) &gt; 3;
-
-- 将查询结果按某一列或多列的值分组
-- 为了细化聚集函数的作用对象
-- 求各个课程号及相应的选课人数
-- 查询选修了三门以上课程的学生学号
+- 理解实时性的重要性
+- 延迟的来源与减少方式
+- 实时性与资源的权衡
 
     </div>
 
@@ -583,17 +567,17 @@
     id            = "a26"
     class         = "step markdown"
     data-rel-to   = "a25"
-    data-rel-x    = "1600"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### WHERE 与 HAVING 的区别
+### Lambda 架构的三层
 
--  WHERE 子句与 HAVING 短语的区别在于作用对象不同
--  WHERE 子句作用于基本表或视图
--  HAVING 短语作用于组
+- 批处理层
+- 速度层
+- 服务层
 
     </div>
 
@@ -601,20 +585,17 @@
     id            = "a27"
     class         = "step markdown"
     data-rel-to   = "a26"
-    data-rel-x    = "1700"
-    data-rel-y    = "-100"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询示例
+### Kappa 架构的优势
 
-    SELECT Sno, AVG(Grade)
-    FROM SC
-    GROUP BY Sno
-    HAVING AVG(Grade) >= 90;
-
-- 平均成绩大于等于90分的学生学号和平均成绩
+- 去除批处理复杂性
+- 更容易维护
+- 适用于实时数据处理
 
     </div>
 
@@ -622,21 +603,16 @@
     id            = "a28"
     class         = "step markdown"
     data-rel-to   = "a27"
-    data-rel-x    = "-5000"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 连接查询
+### 实时处理与批处理的融合
 
-- 同时涉及两个以上的表的查询操作
-- 等值连接查询
-- 自然连接查询
-- 非等值连接查询
-- 自身连接查询
-- 外连接查询
-- 复合条件连接查询
+- 如何实现数据层次的统一
+- 如何选择适当的处理模型
 
     </div>
 
@@ -650,33 +626,25 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 等值连接查询
+### 架构选择的依据
 
-- 用于连接两个表的条件称为连接条件
-- &lt;表名1&gt;.&lt;列名1&gt;&lt;比较运算符&gt;&lt;表名2&gt;.&lt;列名2&gt;
-- 比较运算符主要有=, &gt;, &lt;, &lt;=, &gt;=, != (或&lt;&gt;) 等
-- 连接条件中的列名称为连接字段
-- 当连接运算符为 = 时称为等值连接
+- 数据量与数据类型
+- 实时需求
+- 资源与成本
 
     </div>
 
     <div 
     id            = "a30"
     class         = "step markdown"
-    data-rel-to   = "a29"
-    data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-to   = "c51t"
+    data-rel-x    = "1000"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 连接查询
-
-    SELECT Student.*, SC.*
-    FROM Student, SC
-    WHERE Student.Sno = SC.Sno;
-
-- 查询学生及其选修课程
+## 5.3 并行编程 MapReduce
 
     </div>
 
@@ -685,14 +653,17 @@
     class         = "step markdown"
     data-rel-to   = "a30"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 自身连接
+### MapReduce
 
-- 一个表与自身进行连接
+- 并行编程的重要性
+- MapReduce 的基本概念
+- 适用场景和局限性
+- MapReduce 与传统并行编程的对比
 
     </div>
 
@@ -701,19 +672,17 @@
     class         = "step markdown"
     data-rel-to   = "a31"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 查询每门课的间接先修课
+### 并行编程的重要性
 
-    SELECT FIRST.Cno, SECOND.Cpno
-    FROM Course FIRST, Course SECOND
-    WHERE FIRST.Cpno = SECOND.Cno;
-
-- 为了得到每门课的间接先修课 (即先修课的先修课), 需要将 Course 表与自身进行连接
-- 为 Course 表取别名为 FIRST 和 SECOND
+- 数据量大
+- 计算密集型任务
+- 实时数据处理需求
+- 分布式环境优势
 
     </div>
 
@@ -722,22 +691,18 @@
     class         = "step markdown"
     data-rel-to   = "a32"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "3040"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 嵌套查询
+### MapReduce 的基本概念
 
-    SELECT Sname
-    FROM Student
-    WHERE Sno IN
-        (SELECT Sno
-        FROM SC
-        WHERE Cno='2');
-
-- 一个 SELECT-FROM-WHERE 语句是一个查询块
-- 查询块可以嵌套
+- Map 函数
+- Reduce 函数
+- 键值对 (Key-Value)
+- 分区函数
+- Combiner
 
     </div>
 
@@ -751,36 +716,31 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 嵌套查询
+### Map 函数
 
-- 上层的査询块称为外层查询或父查询
-- 下层查询块称为内层查询或子查询
-- SQL 语言允许多层嵌套査询
-- 子査询的 SELECT 语句不能用 ORDER BY 子句
+- 输入为键值对
+- 输出也为键值对
+- 可以有多个输出
+- 无状态性
 
     </div>
 
     <div 
     id            = "a35"
     class         = "step markdown"
-    data-rel-to   = "c34t"
-    data-rel-x    = "-3300"
-    data-rel-y    = "-3400"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 带 IN 的子查询
+### Reduce 函数
 
-    SELECT Sno,Sname,Sdept
-    FROM Student
-    WHERE Sdept IN
-        (SELECT Sdept
-        FROM Student
-        WHERE Sname='刘晨')；
-
-- 子查询的结果往往是一个集合
-- IN 在嵌套査询中最常使用
+- 输入为 Map 函数输出的键值对
+- 合并操作
+- 输出最终结果
+- 也是无状态性
 
     </div>
 
@@ -788,15 +748,18 @@
     id            = "a36"
     class         = "step markdown"
     data-rel-to   = "a35"
-    data-rel-x    = "1600"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 相关与不相关子查询
+### 键值对 (Key-Value)
 
-- 查询条件是否依赖于父查询
+- 数据模型
+- 易于分布式存储
+- 易于并行计算
+- 易于数据交换
 
     </div>
 
@@ -804,23 +767,18 @@
     id            = "a37"
     class         = "step markdown"
     data-rel-to   = "a36"
-    data-rel-x    = "1600"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 带比较运算符的子查询
+### 分区函数
 
-    SELECT Sno,Sname,Sdept
-    FROM Student
-    WHERE Sdept =
-        (SELECT Sdept
-        FROM Student
-        WHERE Sname='刘晨')；
-
-- 内层查询返回单个值时
-- 可以用比较运算符
+- 数据分片
+- 任务分配
+- 负载均衡
+- 故障恢复
 
     </div>
 
@@ -828,22 +786,18 @@
     id            = "a38"
     class         = "step markdown"
     data-rel-to   = "a37"
-    data-rel-x    = "3200"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 带 ANY 或 ALL 的子查询
+### Combiner
 
-- 返回多值时要用 ANY 或 ALL 修饰符
-- 必须同时使用比较运算符
-- &gt; ANY 大于子查询结果中的某个值 MIN
-- &gt; ALL 大于子查询结果中的所有值 MAX
-- &lt; ANY 小于子査询结果中的某个值 MAX
-- &lt; ALL 小于子查询结果中的所有值 MIN
-- &gt;= ANY 大于等于子查询结果中的某个值 MIN
-- &gt;= ALL 大于等于子査询结果中的所有值 MAX
+- 局部 Reduce
+- 减少数据传输量
+- 提高效率
+- 可选组件
 
     </div>
 
@@ -852,17 +806,17 @@
     class         = "step markdown"
     data-rel-to   = "a38"
     data-rel-x    = "0"
-    data-rel-y    = "870"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-- &lt;= ANY 小于等于子査询结果中的某个值 MAX
-- &lt;= ALL 小于等于子查询结果中的所有值 MIN
-- = ANY 等于子查询结果中的某值 IN
-- = ALL 等于子查询结果中的所有值 (无意义)
-- != ANY 不等于子査询结果中的某个值 (无意义)
-- != ALL 不等于子査询结果中的任何一个值 NOT IN
+### 适用场景和局限性
+
+- 批量数据处理
+- 简单并行任务
+- 不适用于迭代任务
+- 不适用于实时处理
 
     </div>
 
@@ -870,45 +824,32 @@
     id            = "a40"
     class         = "step markdown"
     data-rel-to   = "a39"
-    data-rel-x    = "1800"
-    data-rel-y    = "-800"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 集合查询
+### MapReduce 与传统并行编程的对比
 
-- 査询结果是元组集合
-- 多个 SELECT 语句的结果可集合操作
-- 并操作 UNION
-- 交操作 INTERSECT
-- 差操作 EXCEPT
-- 各查询结果的列数必须相同
-- 对应项的数据类型也必须相同
+- 编程难度
+- 扩展性
+- 容错性
+- 数据局部性
 
     </div>
 
     <div 
     id            = "a41"
     class         = "step markdown"
-    data-rel-to   = "a40"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "c51t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 64
-
-    SELECT *
-    FROM Student
-    WHERE Sdept = 'CS'
-    UNION
-    SELECT *
-    FROM Student
-    WHERE Sage &lt;= 19;
-
-- UNION 合并多个查询结果时会自动去重
+## 5.4 云处理技术 Spark
 
     </div>
 
@@ -917,20 +858,19 @@
     class         = "step markdown"
     data-rel-to   = "a41"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 66
+### Spark
 
-    SELECT *
-    FROM Student
-    WHERE Sdept = 'CS'
-    INTERSECT
-    SELECT *
-    FROM Student
-    WHERE Sage &lt;= 19;
+- 什么是 Spark
+- Spark 的应用场景
+- Spark 架构
+- 核心组件
+- 与 Hadoop 的比较
+- 使用案例
 
     </div>
 
@@ -944,15 +884,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 68
+### 什么是 Spark
 
-    SELECT *
-    FROM Student
-    WHERE Sdept = 'CS'
-    EXCEPT
-    SELECT *
-    FROM Student
-    WHERE Sage &lt;= 19;
+- 内存计算框架
+- 用于批处理, 实时计算, 数据挖掘
+- 基于 Scala 编程语言
+- 与 Hadoop 集成
 
     </div>
 
@@ -961,22 +898,18 @@
     class         = "step markdown"
     data-rel-to   = "a43"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 基于派生表的查询
+### Spark 的应用场景
 
-    SELECT Sno, Cno
-    FROM SC, (SELECT Sno, Avg(Grade)
-              FROM SC GROUP BY Sno)
-              AS Avg_sc(avg_sno,avg_grade)
-    WHERE SC.Sno = Avg_sc.avg_sno
-        and SC.Grade &gt;= Avg_sc.avg grade
-
-- 子查询可以出现在 FROM 子句中
-- 子查询生成临时派生表
+- 实时数据分析
+- 数据挖掘
+- 机器学习
+- 图计算
+- 流处理
 
     </div>
 
@@ -985,21 +918,18 @@
     class         = "step markdown"
     data-rel-to   = "a44"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SELECT 语句
+### Spark 架构
 
-    SELECT [ALL | DISTINCT] &lt;目标列表达式&gt; [别名]
-			[, &lt;目标列表达式&gt; [别名] ]...
-    FROM &lt;表名或视图名&gt; [别名]
-			[， &lt;表名或视图名&gt; [别名] ] ... |
-			( &lt;SELECT语句&gt; ) [AS] &lt;别名&gt;
-    [WHERE &lt;条件表达式&gt; ]
-    [GROUP BY &lt;列名 1&gt; [HAVING &lt;条件表达式&gt; ] ]
-    [ORDER BY &lt;列名 2&gt; [ASC|DESC] ];
+- 驱动程序 (Driver)
+- 执行器 (Executor)
+- 集群管理器 (Cluster Manager)
+- 任务 (Task)
+- 分区 (Partition)
 
     </div>
 
@@ -1013,12 +943,13 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 目标列表达式的可选格式
+### 核心组件
 
-- *
-- &lt;表名&gt;.*
-- COUNT( [DISTINCT | ALL] *)
-- [ &lt;表名&gt; .] &lt;属性列名表达式&gt; [, [ &lt;表名&gt; .] &lt;属性列名表达式&gt; ] ...
+- Spark Core
+- Spark SQL
+- Spark Streaming
+- MLlib
+- GraphX
 
     </div>
 
@@ -1027,19 +958,18 @@
     class         = "step markdown"
     data-rel-to   = "a46"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 聚集函数的一般格式
+### 与 Hadoop 的比较
 
-- COUNT
-- SUM
-- AVG
-- MAX
-- MIN
-- 后接 ( [DISTINCT | ALL] <列名&gt; )
+- 内存利用率
+- 计算速度
+- 易用性
+- 数据处理模式
+- 集成性
 
     </div>
 
@@ -1048,43 +978,227 @@
     class         = "step markdown"
     data-rel-to   = "a47"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### WHERE 子句的条件表达式
+### 使用案例
 
-- 比较运算符θ
-- BETWEEN
-- IN
-- LIKE
-- IS NULL
-- EXISTS
-- 条件表达式 1 [AND | OR] 条件表达式 2
+- 实时日志处理
+- 推荐系统
+- 网络监控
+- 商业智能
+- 科学研究
+
+    </div>
+
+    <div 
+    id            = "a49"
+    class         = "step markdown"
+    data-rel-to   = "c51t"
+    data-rel-x    = "3600"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 5.5 开源实现 Hadoop
+
+    </div>
+
+    <div 
+    id            = "a50"
+    class         = "step markdown"
+    data-rel-to   = "a49"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hadoop
+
+- MapReduce 和 Hadoop 的关系
+- Hadoop 的核心组件
+- Hadoop 生态系统
+- 数据处理流程
+- Hadoop 应用案例
+- 开源和商业版本
+
+    </div>
+
+    <div 
+    id            = "a51"
+    class         = "step markdown"
+    data-rel-to   = "a50"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### MapReduce 和 Hadoop 
+
+- 两者的由来
+- 为何 MapReduce 适用于 Hadoop
+- MapReduce 在 Hadoop 中的角色
+
+    </div>
+
+    <div 
+    id            = "a52"
+    class         = "step markdown"
+    data-rel-to   = "a51"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hadoop 的核心组件
+
+- HDFS (Hadoop Distributed File System)
+- MapReduce
+- YARN (Yet Another Resource Negotiator)
+
+    </div>
+
+    <div 
+    id            = "a53"
+    class         = "step markdown"
+    data-rel-to   = "a52"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hadoop 生态系统
+
+- Hadoop Core
+- Hive
+- Pig
+- HBase
+- Spark
+- Zookeeper
+
+    </div>
+
+    <div 
+    id            = "a54"
+    class         = "step markdown"
+    data-rel-to   = "a53"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据处理流程
+
+- 数据输入
+- 数据存储
+- 数据处理
+- 数据输出
+
+    </div>
+
+    <div 
+    id            = "a55"
+    class         = "step markdown"
+    data-rel-to   = "a54"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hadoop 应用案例
+
+- 日志分析
+- 数据仓库
+- 数据挖掘
+- 推荐系统
+
+    </div>
+
+    <div 
+    id            = "a56"
+    class         = "step markdown"
+    data-rel-to   = "a55"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 开源和商业版本
+
+- Apache Hadoop
+- Cloudera
+- Hortonworks
+- MapR
+
+    </div>
+
+    <div 
+    id            = "a57"
+    class         = "step markdown"
+    data-rel-to   = "a56"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hadoop 安装与配置
+
+- 单机模式
+- 伪分布式模式
+- 完全分布式模式
+
+    </div>
+
+    <div 
+    id            = "a58"
+    class         = "step markdown"
+    data-rel-to   = "a57"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hadoop 优点和挑战
+
+- 可扩展性
+- 成本效益
+- 数据局部性
+- 安全性和隐私问题
 
     </div>
 
     <div
-    id            = "mm34"
+    id            = "mm51"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "c51t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 3.4 mindmap](img/c03/mindmap-3-4.png)
+![course 5.1 mindmap](img/c05/mindmap-5-1.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c34q"
+    id            = "c51q"
     class         = "step markdown"
-    data-rel-to   = "c34t"
+    data-rel-to   = "c51t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -1093,19 +1207,18 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 3.4 数据查询
+### 5. 数据处理与并行编程
 
-- 在 SQL 中, 如何使用 SELECT 语句检索数据?
-- 如何使用 WHERE 子句过滤 SELECT 语句的结果?
-- 如何使用 ORDER BY 子句对查询结果进行排序？
-- 在 SQL 中，常见的聚合函数有哪些?
-- 如何使用 GROUP BY 子句分组操作？
+- 简述数据密集型计算与传统计算的主要区别.
+- Spark 和 Flink 在数据处理框架中有哪些相似之处和不同之处?
+- Apache Kafka 在分布式数据处理中主要用于什么?
+- Lambda 架构和 Kappa 架构有哪些不同? 各自适用于什么样的场景?
 
 ----
 
-[ 3.3 数据定义](dbds-3-3.html#/overview)
-[| 练习 |](dbds-exec.html)
-[ 3.5 数据更新](dbds-3-5.html#/overview)
+[ 4. 分布式文件系统](cciot-4-1.html#/overview)
+[| 练习 |](cciot-exec.html)
+[ 6. 物联网的概念与发展](cciot-6-1.html#/overview)
 
     </div>
 
