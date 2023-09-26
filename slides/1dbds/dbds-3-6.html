@@ -381,6 +381,7 @@
     DROP VIEW <视图名> [CASCADE];
 - CASCADE 级联删除语句
 - 删除基本表并不会删除由该基本表导出的视图定义
+- MySQL 中会忽视 CASCADE 参数
 
     </div>
 
@@ -400,6 +401,7 @@
     DROP VIEW IS_S1; /*拒绝执行*/
 - IS\_S1 视图上还导出了 IS\_S2 视图
 - 所以该语句被拒绝执行
+- 注意 MySQL 中不会拒绝执行
 
     </div>
 
@@ -415,7 +417,7 @@
 
 ### 例 92
 
-    SELECT Sno.Sage
+    SELECT Sno,Sage
     FROM IS_Student
     WHERE Sage < 20;
 - 视图查询和基本表查询一样
@@ -455,7 +457,7 @@
 
 ### 例 92 转换后
 
-    SELECT Sno.Sage
+    SELECT Sno,Sage
     FROM Student
     WHERE Sdept = 'IS' AND Sage < 20;
 

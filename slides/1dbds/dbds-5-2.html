@@ -1,0 +1,1077 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c52t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>5. 数据库设计</h2>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "-3000"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 5.2 需求分析
+
+    </div>
+    
+    <div 
+    id            = "a1a"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 需求分析的任务
+
+- 详细调查要处理的对象
+- 充分了解原系统工作状况
+- 明确用户需求
+- 确定新系统功能
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1a"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 获得用户需求
+
+- 信息要求
+- 数据要求
+- 处理要求
+- 安全性要求
+- 完整性要求
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 需求分析的难点
+
+- 用户缺乏计算机知识
+- 设计人员缺乏业务知识
+- 用户无法描述需求
+- 用户隐藏真正需求
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用户需求调查
+
+- 调查组织机构情况
+- 调查各部门的业务活动情况
+- 协助用户明确对新系统的各种要求
+- 确定新系统的边界
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 常用调查方法
+
+- 跟班作业
+- 开调查会
+- 专人介绍
+- 询问
+- 调查表
+- 查阅记录
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 结构化分析
+
+- 从最上层的系统组织机构入手
+- 自顶向下
+- 逐层分解
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 提交需求报告
+
+- 提交给用户
+- 获得用户书面认可
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据字典
+
+- 是数据收集和数据分析的主要成果
+- 是数据库中数据的描述
+- 需求分析阶段建立
+- 在数据库设计过程中不断修改完善
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据字典的内容
+
+- 数据项: 不可再分的数据单位
+- 数据结构: 反映数据之间的组合关系
+- 数据流: 数据结构在系统内传输的路径
+- 数据存储: 数据结构停留或保存的地方
+- 处理过程: 数据的处理逻辑
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据项描述
+
+- 数据项名
+- 数据项含义说明
+- 别名
+- 数据类型
+- 长度
+- 取值范围
+- 取值含义
+- 与其他数据项的逻辑关系
+- 数据项之间的联系
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据结构描述
+
+- 数据结构名
+- 含义说明
+- 组成: 数据项或数据结构
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据流
+
+- 数据流名
+- 说明
+- 数据流来源
+- 数据流去向
+- 组成: 数据结构
+- 平均流量
+- 高峰期流量
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据存储
+
+- 数据存储名
+- 说明
+- 编号
+- 输入的数据流
+- 输出的数据流
+- 组成: 数据结构
+- 数据量
+- 存取频度
+- 存取方式
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 处理过程
+
+- 处理过程名
+- 说明
+- 输入: 数据流
+- 输出: 数据流
+- 处理: 简要说明
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 需求分析的要点
+
+- 收集将来应用所涉及的数据
+- 应考虑可能的扩充和改变
+- 强调用户的参与与配合
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 5.3 概念结构设计
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "540"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 概念结构设计
+
+- 将用户需求抽象为信息结构
+- 信息结构即概念模型
+- 是数据库设计的关键
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 概念模型
+
+- 信息世界的结构
+- 能真实充分地反映现实世界
+- 易于理解
+- 易于更改
+- 易于转换成各类数据模型
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### E-R 模型
+
+- 联系
+- E-R 图
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 联系
+
+- 一对一联系 (1:1)
+- 一对多联系 (1:n)
+- 多对多联系 (m:n)
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### E-R 图
+
+- 实体: 矩形
+- 联系: 菱形
+- 属性: 椭圆形
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据分类与组织
+
+- 确定实体
+- 确定实体属性
+- 确定实体之间的联系类型
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基本原则
+
+- 能作为属性的尽量作为属性
+- 作为属性的事物不能再具有需要描述的特性
+- 属性不能与其他实体有联系
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### E-R 图的集成
+
+- 首先设计各个子系统的 E-R 图
+- 集成形成整体 E-R 图
+- 合并: 解决各个分 E-R 图之间的冲突
+- 修改和重构: 消除不必要的冗余
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### E-R 图之间的冲突
+
+- 属性冲突
+- 命名冲突
+- 结构冲突
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 属性冲突
+
+- 属性域冲突
+- 属性取值单位冲突
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 命名冲突
+
+- 同名异义
+- 异名同义
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 结构冲突
+
+- 同一对象在具有不同的抽象
+- 同一实体在包含的属性个数和排列次序不同
+- 实体间的联系为不同类型
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 消除冗余
+
+- 冗余的数据
+- 冗余的联系
+- 通过数据项之间的逻辑关系消除
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "0"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 5.4 逻辑结构设计
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "570"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 逻辑结构设计
+
+- 将 E-R 图转换为逻辑结构
+- 如何转换
+- 如何确定属性与码
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 联系转换规则
+
+- 一个 1:1 联系转换成一个关系模式或与任意一端合并
+- 一个 1:n 联系转换成一个关系模式或与 n 端合并
+- 一个 m:n 联系转换成一个关系模式
+- 三个实体以上的联系转换成一个关系模式
+- 具有相同码的关系模式可以合并
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "2400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据模型的优化
+
+- 确定数据依赖
+- 极小化处理数据依赖
+- 逐一分析数据依赖
+- 根据处理要求注意分析模式
+- 对关系模式进行必要分解
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分解关系模式
+
+- 水平分解: 按元组分解
+- 垂直分解: 按属性分解
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 设计用户子模式
+
+- 使用符合用户习惯的别名
+- 为不同级别的用户定义不同的视图
+- 简化用户对系统的使用
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "1800"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 5.5 物理结构设计
+
+    </div>
+
+    <div 
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物理结构
+
+- 数据库在物理设备上的存储结构和存取方法
+- 依赖于所选的数据库管理系统
+
+    </div>
+
+    <div 
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 物理设计
+
+- 确定存取方法
+- 确定索引方法和聚簇方法
+- 评价物理结构进行评价
+- 考虑时间和空间效率
+
+    </div>
+
+    <div 
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 分析事务
+
+- 查询的关系
+- 查询条件所涉及的属性
+- 连接条件所涉及的属性
+- 查询的投影属性
+- 被更新的关系
+- 每个关系上的更新操作条件所涉及的属性
+- 修改操作要改变的属性值
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 确定存储结构
+
+- 确定数据的存放位置和存储结构
+- 存取时间
+- 存储空间利用率
+- 维护代价
+
+    </div>
+
+    <div 
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 确定数据存放位置
+
+- 易变部分
+- 稳定部分
+- 经常存取部分
+- 存取频率较低部分
+
+    </div>
+
+    <div 
+    id            = "a42"
+    class         = "step markdown"
+    data-rel-to   = "a41"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 确定系统配置
+
+- 同时使用数据库的用户数
+- 同时打开的数据库对象数
+- 内存分配参数
+- 缓冲区分配参数
+- 存储分配参数
+- 物理块的大小
+- 数据库大小
+- 锁的数目
+
+    </div>
+
+    <div 
+    id            = "a43"
+    class         = "step markdown"
+    data-rel-to   = "a42"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 评价物理结构
+
+- 定量估算
+- 时间效率
+- 空间效率
+- 维护代价
+- 各种用户要求
+
+    </div>
+
+    <div 
+    id            = "a44"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "3500"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 5.6 数据库的实施和维护
+
+    </div>
+
+    <div 
+    id            = "a45"
+    class         = "step markdown"
+    data-rel-to   = "a44"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据库实施
+
+- 描述逻辑设计
+- 描述物理设计
+- 产生目标模式
+- 组织数据入库
+- 应用程序编码和调试
+
+    </div>
+
+    <div 
+    id            = "a46"
+    class         = "step markdown"
+    data-rel-to   = "a45"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据库的试运行
+
+- 实际运行数据库应用程序
+- 执行对数据库的各种操作
+- 测试应用程序的功能
+- 测试系统的性能指标
+
+    </div>
+
+    <div 
+    id            = "a47"
+    class         = "step markdown"
+    data-rel-to   = "a46"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据库的维护
+
+- 数据库的转储和恢复
+- 数据库的安全性和完整性控制
+- 数据库性能的监督, 分析和改造
+- 数据库的重组织与重构造
+
+    </div>
+
+    <div
+    id            = "mm52"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 5.2 mindmap](img/c05/mindmap-5-2.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c52q"
+    class         = "step markdown"
+    data-rel-to   = "c52t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 5.2 需求分析
+
+- 需求分析阶段主要解决哪些问题?
+- 如何获得用户需求中的数据要求?
+- 结构化分析时, "自顶向下" 是什么意思?
+- 在概念结构设计中, 什么是 "信息结构"?
+- 物理结构设计阶段需要评价哪些方面?
+- 数据库维护中, 为什么需要关注数据库的性能监督?
+
+----
+
+[ 5.1 数据库设计概述](dbds-5-1.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 6.1 数据库安全性](dbds-6-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

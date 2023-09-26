@@ -1,0 +1,896 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c61t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>6. 数据库保护</h2>
+        <h3 style="text-align: center">6.1 数据库安全性</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据库安全性
+
+- 保护数据库
+- 防止不合法使用所造成的数据泄露, 更改或破坏
+- 数据库安全性
+- 数据库完整性
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 安全措施
+
+- 用户身份鉴别
+- 存取控制
+- 视图
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据库的不安全因素
+
+- 非授权用户恶意访问和破坏
+- 重要或敏感数据泄露
+- 脆弱的安全环境
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 非授权用户恶意访问和破坏
+
+- 用户身份鉴别
+- 存取控制
+- 视图
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 重要或敏感数据泄露
+
+- 强制存取控制
+- 数据加密存储
+- 加密存储
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 脆弱的安全环境
+
+- 安全标准
+- 安全性能指标
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "-400"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据库安全性控制
+
+- 用户: 用户标识和鉴别
+- 数据库管理系统: 数据库安全保护
+- 操作系统: 操作系统安全保护
+- 数据库: 数据库密码存储
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 用户身份鉴别
+
+- 静态口令鉴别
+- 动态口令鉴别
+- 生物特征鉴别
+- 智能卡鉴别
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 存取控制
+
+- 定义用户权限
+- 登记到数据字典中
+- 使用时合法权限检查
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 存取控制
+
+- 自主存取控制 (DAC)
+- 强制存取控制 (MAC)
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 自主存取控制
+
+- GRANT 语句
+- REVOKE 语句
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 存取控制的对象: 模式
+
+- 模式: CREATE SCHEMA
+- 基本表: CREATE TABLE, ALTER TABLE
+- 视图: CREATE VIEW
+- 索引: CREATE INDEX
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 存取控制的对象: 数据
+
+- 基本表和视图: SELECT, INSERT, UPDATE, DELETE, REFERENCES, ALL PRIVILEGES
+- 属性列: SELECT, INSERT, UPDATE, REFERENCES, ALL PRIVILEGES
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "1000"
+    data-rel-y    = "-1940"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 授权: GRANT
+
+    GRANT <权限> [, <权限> ...]
+    ON <对象类型> <对象名> [, <对象类型> <对象名> ...]
+    TO <用户> [, <用户> ...]
+    [WITH GRANT OPTION];
+- 将指定操作对象的指定操作权限授予指定的用户
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "900"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### GRANT 语句
+
+- 可以由已经拥有该权限的用户发出
+- 可以由 DBA 或属主发出
+- WITH GRANT OPTION 子句可以将该权限再授予其他用户
+- 不允许循环授权
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "2120"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 1
+
+    GRANT SELECT
+    ON TABLE Student
+    TO U1;
+- 将对表 Student 的查询权限授予用户 U1
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 2
+
+    GRANT ALL PRIVILEGES
+    ON TABLE Student, Course
+    TO U2, U3;
+- 将对表 Student 和 Course 的全部操作权限授予用户 U2 和 U3
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 3
+
+    GRANT SELECT
+    ON TABLE SC
+    TO PUBLIC;
+- 将对表 SC 的查询权限授予所有用户
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 4
+
+    GRANT UPDATE (Sno), SELECT
+    ON TABLE Student
+    TO U4;
+- 将对表 Student 的查询权限和修改学生学号的权限授予用户 U4
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 5
+
+    GRANT INSERT
+    ON TABLE SC
+    TO U5
+    WITH GRANT OPTION;
+- 将对表 SC 的插入权限授予用户 U5
+- 并允许用户 U5 将此权限再授予其他用户
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### GRANT 语句
+
+- 可以一次向一个用户授权
+- 可以一次向多个用户授权
+- 可以一次传播多个同类对象的权限
+- 可以一次完成对不同对象的授权
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "2500"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 取消授权: REVOKE
+
+    REVOKE <权限> [, <权限> ...]
+    ON <对象类型> <对象名> [, <对象类型> <对象名> ...]
+    FROM <用户> [, <用户> ...]
+    [CASCADE|RESTRICT];
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 8
+
+    REVOKE UPDATE (Sno)
+    ON TABLE Student
+    FROM U4;
+- 收回用户 U4 对修改学生学号的权限
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 9
+
+    REVOKE SELECT
+    ON TABLE SC
+    FROM PUBLIC;
+- 收回所有用户对表 SC 的查询权限
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 10
+
+    REVOKE INSERT
+    ON TABLE SC
+    FROM U5 CASCADE;
+- 收回用户 U5 对表 SC 的插入权限
+- 并级联收回 U5, U6 和 U7 的权限
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 视图机制
+
+- 限制不同用户对数据对象的访问范围
+- 可以将需要保密的数据隐藏起来
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 14
+
+    CREATE VIEW CS_Student AS
+    SELECT *
+    FROM Student
+    WHERE Sdept='CS';
+    GRANT SELECT ON CS_Student TO 王平;
+    GRANT ALL PRIVILEGES ON CS_Student TO 张明;
+
+- 创建视图 CS_Student
+- 王平只能检索计算机系学生的信息
+- 张明拥有检索和修改计算机系学生信息的所有权限
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "4200"
+    data-rel-y    = "-2040"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 审计
+
+- 将用户对数据库的所有操作自动记录到审计日志中
+- 审计员可以利用审计日志监控数据库中的各种行为
+- 通常比较耗费时间和空间
+- 主要用于安全性要求较高的部门
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 审计事件
+
+- 服务器事件
+- 系统权限
+- 语句事件
+- 模式对象事件
+- 用户鉴别
+- 自主访问控制
+- 强制访问控制
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 审计内容
+
+- 普通用户和特权用户的行为
+- 各种表操作
+- 身份鉴别
+- 自主和强制访问控制等操作
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 审计功能
+
+- 基本功能
+- 审计规则
+- 审计分析
+- 报表功能
+- 审计日志管理功能
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据加密
+
+- 利用特定的算法
+- 将原始数据 (明文)
+- 转换为不可直接识别的格式 (密文)
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据加密
+
+- 存储加密
+- 传输加密
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 存储加密
+
+- 透明存储加密
+- 非透明存储加密
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 透明存储加密
+
+- 在内核级别加密
+- 对用户完全透明
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 传输加密
+
+- 链路加密
+- 端到端加密
+
+    </div>
+
+    <div 
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 链路加密
+
+- 对传输数据在链路层加密
+- 同时加密报头和报文
+
+    </div>
+
+    <div 
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 端到端加密
+
+- 在发送端加密
+- 在接收端解密
+- 只加密报文
+- 不加密报头
+
+    </div>
+
+    <div
+    id            = "mm61"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.1 mindmap](img/c06/mindmap-6-1.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c61q"
+    class         = "step markdown"
+    data-rel-to   = "c61t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 6.1 数据库安全性
+
+- 什么是数据库安全性?
+- 列举三种用户身份鉴别的方式.
+- GRANT 语句和 REVOKE 语句分别用于什么?
+- 什么是 WITH GRANT OPTION, 它有什么用途?
+- 视图如何帮助实现数据的安全?
+- 审计日志中通常记录哪些类型的事件?
+
+----
+
+[ 5.6 数据库的实施和维护](dbds-5-2.html#/a44)
+[| 练习 |](dbds-exec.html)
+[ 6.2 数据库完整性](dbds-6-2.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
