@@ -360,8 +360,8 @@
 ### 例 4 改善
 
 - 将 S-L-C 分解
-- SC (Sno, Cno, Grade)
-- S-L (Sno, Sdept, Sloe)
+- S-C (Sno, Cno, Grade)
+- S-L (Sno, Sdept, Sloc)
 - 非主属性对候选码都是完全函数依赖
 
     </div>
@@ -464,7 +464,7 @@
 
 ### BCNF
 
-- 若关系模式 $R(U, F) \in 1NF$, 若$ X \to Y$ 且 $Y \nsubseteq X$  时 $X$ 必含有码, 则 $R(U, F) \in 3NF$
+- 若关系模式 $R(U, F) \in 1NF$, 若$ X \to Y$ 且 $Y \nsubseteq X$  时 $X$ 必含有码, 则 $R(U, F) \in BCNF$
 - 所有非主属性对每一个码都是完全函数依赖
 - 所有主属性对于每一个不包含它的码也是完全函数依赖
 - 没有任何属性完全函数依赖于非码的任何一组属性

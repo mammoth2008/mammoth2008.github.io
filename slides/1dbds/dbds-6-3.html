@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c82t"
+    id         = "c63t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>8. 数据结构与算法概论</h2>
-        <h3 style="text-align: center">8.2 算法及其描述</h3>
+        <h2>6. 数据库保护</h2>
+        <h3 style="text-align: center">6.3 数据库恢复技术</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,18 +99,19 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c82t"
-    data-rel-x    = "-1200"
-    data-rel-y    = "-1000"
+    data-rel-to   = "c63t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-2000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 算法
+### 事务
 
-- 算法 (Algorithm) 是对特定问题求解步骤的描述
-- 是指令的有限序列
-- 其中每条指令表示计算机的一个或多个操作
+- 用户定义的一个数据库操作序列
+- 是不可分割的工作单位
+- 以 BEGIN TRANSACTION 开始
+- 以 COMMIT 或 ROLLBACK 结束
 
     </div>
 
@@ -119,18 +120,17 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 算法的特性
+### 事务的 ACID 特性
 
-- 有穷性
-- 确定性
-- 可行性
-- 有输入
-- 有输出
+- 原子性: 是数据库工作的最小单位
+- 一致性: 从一个一致性状态变到另一个
+- 隔离性: 执行不能被其他事务干扰
+- 持久性: 对数据库的改变是永久的
 
     </div>
 
@@ -138,16 +138,16 @@
     id            = "a3"
     class         = "step markdown"
     data-rel-to   = "a2"
-    data-rel-x    = "-100"
-    data-rel-y    = "0"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "1">
+    data-scale    = "2">
 
-### 有穷性
+### 数据库恢复
 
-- 必须总是在执行有穷步之后结束
-- 每一步都可在有穷时间内完成
+- 将数据库从错误状态恢复到正确状态的功能
+- 数据库恢复的基本原理是冗余
 
     </div>
 
@@ -156,17 +156,17 @@
     class         = "step markdown"
     data-rel-to   = "a3"
     data-rel-x    = "0"
-    data-rel-y    = "400"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "1">
+    data-scale    = "2">
 
-### 确定性
+### 故障的种类
 
-- 每种情况下执行的操作在算法中都有确切的规定
-- 算法的执行者或阅读者都能明确其含义及如何执行
-- 并且在任何条件下算法都只有一条执行路径
-- 对于相同的输人只能得出相同的输出
+- 事务内部故障
+- 系统故障
+- 介质故障
+- 计算机病毒
 
     </div>
 
@@ -175,15 +175,23 @@
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "400"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "1">
+    data-scale    = "2">
 
-### 可行性
+### 事务内部故障
 
-- 所有操作都必须足够基本
-- 算法可以通过有限次基本操作来完成其功能
+    BEGIN TRANSACTION
+        BALANCE = BALANCE - AMOUNT;
+        IF (BALANCE < 0 ) THEN
+            {PRINT "INSUFFICIENT FUNDS";
+            ROLLBACK;}
+        ELSE
+            {BALANCE1 = BALANCE1 + AMOUNT;
+            COMMIT;}
+- 当事务没有到达 COMMIT 或 ROLLBACK 语句时
+- 意味着出现事务故障
 
     </div>
 
@@ -192,53 +200,56 @@
     class         = "step markdown"
     data-rel-to   = "a5"
     data-rel-x    = "0"
-    data-rel-y    = "300"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "1">
+    data-scale    = "2">
 
-### 有输入
+### 系统故障
 
-- 输入通常体现为算法中的一组变量
-- 一个算法有零个或者多个输入
+- 造成系统停止运转的事件
+- 如硬件错误, 操作系统故障, DBMS代码错误等
+- 影响所有正在运行的事务, 但不破坏数据库
+- 需要在系统重新启动后撤销未完成的事务并重做已提交的事务
 
     </div>
 
     <div 
     id            = "a7"
     class         = "step markdown"
-    data-rel-to   = "a6"
+    data-rel-to   = "c63t"
     data-rel-x    = "0"
-    data-rel-y    = "300"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "1">
+    data-scale    = "2">
 
-### 有输出
+### 介质故障
 
-- 输出是算法进行信息加工后得到的结果
-- 一个算法有一个或者多个输出
+- 指外存故障
+- 磁盘损坏, 磁头碰撞等
+- 会破坏数据库
+- 影响正在存取这部分数据的所有事务
+- 需要将数据库从备份或日志中重建
 
     </div>
 
     <div 
     id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "c82t"
+    data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 算法和程序的区别
+### 计算机病毒
 
-- 程序是使用计算机语言对算法的具体实现
-- 即具体要怎么做
-- 而算法侧重于对解决问题的方法描述
-- 即要做什么
-- 算法必须满足有穷性
-- 而程序不一定满足有穷性
+- 一种人为的故障或破坏
+- 可以繁殖和传播
+- 对计算机系统和数据库造成危害
+- 使用病毒防护软件诊断和消除
 
     </div>
 
@@ -247,43 +258,33 @@
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 算法描述
+### 总结
 
-- 自然语言
-- 流程图
-- 伪代码
-- 计算机语言
+- 有些故障会破坏数据库本身
+- 有些故障会导致数据不正确
+- 数据库恢复需要在不影响其他事务运行的情况下, 将数据库恢复到正确状态
 
     </div>
 
     <div 
     id            = "a10"
     class         = "step markdown"
-    data-rel-to   = "c82t"
-    data-rel-x    = "2100"
-    data-rel-y    = "400"
+    data-rel-to   = "c63t"
+    data-rel-x    = "2200"
+    data-rel-y    = "-2000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 基础
+### 恢复的实现技术
 
-- 基本数据类型
-- 输入输出
-- 引用类型
-- 类设计
-- 创建对象
-- 类变量和类方法
-- 方法的参数传递
-- 泛型
-- 继承
-- 接口
-- 迭代器
+- 如何建立冗余数据
+- 如何利用这些冗余数据实施数据库恢复
 
     </div>
 
@@ -291,18 +292,16 @@
     id            = "a11"
     class         = "step markdown"
     data-rel-to   = "a10"
-    data-rel-x    = "700"
-    data-rel-y    = "-3000"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的基本数据类型
+### 数据转储
 
-- 整型
-- 浮点型
-- 字符型
-- 布尔型
+- DBA 定期将整个数据库复制到其他存储介质上保存
+- 备用的数据称为后备副本 (backup) 或后援副本
 
     </div>
 
@@ -316,10 +315,10 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的输入输出
+### 静态转储
 
-- 输入类 System.in
-- 输出类 System.out
+- 在系统中无运行事务时进行的转储操作
+- 简单, 但会降低数据库可用性
 
     </div>
 
@@ -328,15 +327,16 @@
     class         = "step markdown"
     data-rel-to   = "a12"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的引用类型
+### 动态转储
 
-- 值类型
-- 引用类型
+- 转储期间允许对数据库进行存取或修改
+- 必须把转储期间各事务对数据库的修改登记下来
+- 建立日志文件 (logfile)
 
     </div>
 
@@ -350,12 +350,10 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的类设计
+### 海量转储
 
-- 创建类
-- 类成员变量的定义及修饰符
-- 方法的声明与实现
-- 构造方法
+- 每次转储全部数据库
+- 恢复会更方便
 
     </div>
 
@@ -369,10 +367,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的创建对象
+### 增量转储
 
-- 声明对象
-- 实例化
+- 每次只转储上一次转储后更新过的数据
+- 更节省空间
+- 通常更实用
 
     </div>
 
@@ -386,12 +385,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的类变量和类方法
+### 日志文件
 
-- 类变量
-- 实例变量
-- 类方法
-- 实例方法
+- 用来记录事务对数据库的更新操作的文件
+- 以记录为单位
+- 以数据块为单位
 
     </div>
 
@@ -405,30 +403,32 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的方法的参数传递
+### 以记录为单位
 
-- 形参
-- 实参
-- 值传递
-- 引用传递
+- 各个事务的开始 (BEGIN TRANSACTION) 标记
+- 各个事务的结束 (COMMIT 或 ROLLBACK) 标记
+- 各个事务的所有更新操作
+- 被称作日志记录 (log record)
 
     </div>
 
     <div 
     id            = "a18"
     class         = "step markdown"
-    data-rel-to   = "a17"
-    data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-to   = "c63t"
+    data-rel-x    = "3900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的泛型
+### 日志记录的内容
 
-- 泛型类
-- 参数化类型
-- Java 的伪泛型
+- 事务标识 (标明是哪个事务)
+- 操作的类型 (插入, 删除或修改)
+- 操作对象 (记录内部标识)
+- 更新前数据的旧值 (对插入操作而言, 此项为空值)
+- 更新后数据的新值 (对删除操作而言, 此项为空值)
 
     </div>
 
@@ -437,16 +437,15 @@
     class         = "step markdown"
     data-rel-to   = "a18"
     data-rel-x    = "0"
-    data-rel-y    = "700"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的继承
+### 以数据块为单位
 
-- 分层次的类
-- 父类
-- 子类
+- 事务标识
+- 被更新的数据块
 
     </div>
 
@@ -455,15 +454,16 @@
     class         = "step markdown"
     data-rel-to   = "a19"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的接口
+### 日志文件的作用
 
-- 抽象方法的集合
-- 接口包含类要实现的方法
+- 事务故障恢复和系统故障恢复必须用日志文件
+- 在动态转储方式中必须建立日志文件
+- 在静态转储方式中也可以建立日志文件
 
     </div>
 
@@ -472,38 +472,38 @@
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Java 的迭代器
+### 登记日志文件的原则
 
-- 遍历集合中的元素
-- iterator() 方法
+- 登记的次序严格按并发事务执行的时间次序
+- 先写日志文件, 后写数据库
 
     </div>
 
     <div
-    id            = "mm82"
+    id            = "mm63"
     class         = "step markdown"
-    data-rel-to   = "c82t"
+    data-rel-to   = "c63t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 8.2 mindmap](img/c08/mindmap-8-2.png)
+![course 6.3 mindmap](img/c06/mindmap-6-3.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c82q"
+    id            = "c63q"
     class         = "step markdown"
-    data-rel-to   = "c82t"
+    data-rel-to   = "c63t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -512,19 +512,20 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 8.2 算法及其描述
+### 6.3 数据库恢复技术
 
-- 算法的定义是什么? 它是由什么组成的?
-- 列举算法的特性, 并解释每个特性的含义.
-- Java 中的基本数据类型有哪些?
-- 解释 Java 中的值类型和引用类型.
-- 解释 Java 中的泛型.
+- 什么是事务?
+- 请解释事务的 ACID 特性.
+- 数据库恢复的基本原理是什么?
+- 系统故障和介质故障有何不同?
+- 什么是数据转储?
+- 什么是日志文件?
 
 ----
 
-[ 8.1 什么是数据结构](dbds-8-1.html#/overview)
+[ 6.2 数据库完整性](dbds-6-2.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 8.3 算法分析](dbds-8-3.html#/overview)
+[ 6.4 数据库并发控制](dbds-6-4.html#/overview)
 
     </div>
 

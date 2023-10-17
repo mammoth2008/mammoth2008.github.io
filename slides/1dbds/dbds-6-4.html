@@ -1,0 +1,813 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>DB & DS | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c64t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>6. 数据库保护</h2>
+        <h3 style="text-align: center">6.4 数据库并发控制</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2307
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c64t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 并发控制
+
+- 为保证事务的隔离性和一致性
+- 数据库管理系统需要正确调度并发操作
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 例 1
+
+- 考虑飞机订票系统中的一个活动序列:
+- 甲售票点 (事务 T1) 读出机票余额 A, 设 A=16
+- 乙售票点 (事务 T2) 读出机票余额 A, 也为 16
+- 甲卖出一张机票, 余额 A 为 15, 把 A 写回数据库
+- 乙卖出一张机票, 余额 A 为 15, 把 A 写回数据库
+- 导致数据库的不一致
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 并发导致的不一致性
+
+- 丢失修改
+- 不可重复读
+- 读 "脏" 数据
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "-1500"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 丢失修改 (lost update)
+
+- 两个事务 T1 和 T2 读入同一数据并修改
+- T2 提交的结果破坏了 T1 提交的结果
+- 导致 T1 的修改丢失
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 不可重复读 (non-repeatable read)
+
+- 事务 T1 读取数据后
+- 事务 T2 执行更新操作
+- 使 T1 无法再现前一次读取结果
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 不可重复读
+
+- 事务 T1 读取某一数据后, 事务 T2 修改了数据
+- 事务 T1 读取某些数据后, 事务 T2 删除了部分记录
+- 事务 T1 读取某些数据后, 事务 T2 插入了一些记录
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 读 "脏" 数据 (dirty read)
+
+- 事务 T1 修改某一数据并将其写回磁盘
+- 事务 T2 读取同一数据后
+- 该修改被撤销, 被修改过的数据恢复原值
+- T2 读到的数据与数据库中数据不一致
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 常用的并发控制技术
+
+- 封锁 (locking)
+- 时间戳 (timestamp)
+- 乐观控制法 (optimistic scheduler)
+- 多版本并发控制 (multi-version concurrency control, MVCC)
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 封锁协议
+
+- 事务 T 在操作某个数据对象之前
+- 向系统发出加锁请求
+- 事务 T 释放锁之前
+- 其他事务不能更新此数据对象
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 封锁类型有两种
+
+- 排他锁 (exclusive locks, 简称 X 锁)
+- 共享锁 (shared locks, 简称 S 锁)
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "-1500"
+    data-rel-y    = "-200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 排他锁
+
+- 写锁
+- 若事务 T 对数据对象 A 加上 X 锁
+- 则只允许 T 读取和修改 A
+- 其他任何事务都不能再对 A 加任何类型的锁
+- 直到 T 释放 A 上的锁为止
+- 保证其他事务在释放锁之前不能再读取和修改 A
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 共享锁
+
+- 读锁
+- 若事务 T 对数据对象 A 加上 S 锁
+- 则事务 T 可以读 A 但不能修改 A
+- 其他事务只能再对 A 加 S 锁而不能加 X 锁
+- 直到 T 释放 A 上的 S 锁为止
+- 保证其他事务可以读 A 但不能修改 A
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "c64t"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 封锁协议 (locking protocol)
+
+- 对封锁方式制定不同的规则
+- 三级封锁协议
+- 不同级别的封锁协议获得不同的系统一致性级别
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "-400"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 一级封锁协议
+
+- 事务 T 在修改数据 R 之前必须先对其加 X 锁
+- 直到事务结束才释放
+- 事务结束包括 COMMIT 和 ROLLBACK
+- 可防止丢失修改
+- 并保证事务T是可恢复的
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 二级封锁协议
+
+- 在一级封锁协议基础上
+- 增加事务 T 在读取数据 R 之前必须先对其加 S 锁
+- 读完后即可释放 S 锁
+- 二级封锁协议防止丢失修改
+- 进一步防止读 "脏" 数据
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 三级封锁协议
+
+- 在一级封锁协议的基础上
+- 增加事务 T 在读取数据 R 之前必须先对其加 S 锁
+- 直到事务结束才释放
+- 防止丢失修改和读 "脏" 数据
+- 进一步防止了不可重复读
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "c64t"
+    data-rel-x    = "2500"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 活锁
+
+- 当事务 T1 锁定了数据 R
+- 事务 T2 请求锁定 R, 导致 T2 等待
+- 事务 T3 请求锁定 R, 系统批准 T3 请求, T2 等待
+- 事务 T4 请求锁定 R, 系统批准 T4 请求, T2 等待
+- T2 可能永远等待下去
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "-400"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 避免活锁
+
+- 先来先服务策略
+- 封锁子系统按照请求锁的先后顺序对事务排队
+- 批准队列中的第一个事务获得锁
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "1500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 死锁
+
+- 事务 T1 锁定了数据 R1, 事务 T2 锁定了数据 R2
+- T1 请求锁定 R2, T1 等待 T2 释放 R2 上的锁
+- T2 申请锁定 R1, T2 等待 T1 释放 R1 上的锁
+- T1 和 T2 两个事务永远无法结束
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 解决死锁问题
+
+- 预防死锁
+- 允许死锁发生, 但定期诊断与解除
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 预防死锁
+
+- 一次封锁法
+- 顺序封锁法
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "300"
+    data-rel-y    = "-200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 一次封锁法
+
+- 每个事务一次性将所有要使用的数据全部加锁
+- 降低了系统的并发度
+- 难以事先确定事务需要封锁的数据对象
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 顺序封锁法
+
+- 预先对数据对象规定封锁顺序, 如逐级封锁
+- 维护封锁顺序非常困难
+- 难以事先确定每个事务需要封锁的对象
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 死锁的诊断与解除
+
+- 超时法
+- 事务等待图法
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "600"
+    data-rel-y    = "-100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 超时法
+
+- 如果事务等待时间超过规定时限就认为发生死锁
+- 有可能误判死锁
+- 如果设置的时限过长则无法及时发现死锁
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "500"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 事务等待图法
+
+- 有向图
+- 节点表示正运行的事务
+- 边表示事务之间的等待关系
+- 并发控制子系统周期性地生成事务等待图
+- 如果图中存在回路则表示发生了死锁
+- 选择撤销代价最小的事务
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "c64t"
+    data-rel-x    = "4400"
+    data-rel-y    = "-2100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 并发调度的可串行性
+
+- 可串行化调度
+- 执行结果与按照某一顺序串行执行这些事务的结果相同
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 可串行化调度的特性
+
+- 读-写约束
+- 写-写约束
+- 读-写依赖
+
+    </div>
+
+    <div 
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "100"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 读-写约束
+
+- 一个事务 T1 读取了一个数据项 X
+- 在 T1 写入 X 之前
+- 任何事务 T2 都不得对 X 进行写操作
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 写-写约束
+
+- 一个事务 T1 对一个数据项 X 进行了写操作
+- 在 T1 提交之前
+- 任何事务 T2 都不得对 X 进行写操作
+
+    </div>
+
+    <div 
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 读-写依赖
+
+- 如果事务 T1 在读取一个数据项 X 的同时
+- 事务 T2 对 X 进行了写操作
+- 并且 T1 在 T2 提交之前完成
+- 那么 T1 的读操作必须重新执行
+
+    </div>
+
+    <div 
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "2200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 二段锁协议
+
+- 扩展或生长阶段 (growing phase)
+- 收缩或缩减阶段 (shrinking phase)
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "-400"
+    data-rel-y    = "400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 扩展阶段
+
+- 事务在执行过程中逐渐获取所需的锁
+- 一旦释放了就不能再获取新的锁
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "800"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 收缩阶段
+
+- 在执行过程中释放已经持有的锁
+- 一旦释放了就不能再获取新的锁
+
+    </div>
+
+    <div
+    id            = "mm64"
+    class         = "step markdown"
+    data-rel-to   = "c64t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 6.4 mindmap](img/c06/mindmap-6-4.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c64q"
+    class         = "step markdown"
+    data-rel-to   = "c64t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 6.4 数据库并发控制
+
+- 为什么需要数据库并发控制?
+- 什么是“丢失修改”和“不可重复读"?
+- 什么是排他锁和共享锁?
+- 三级封锁协议与一级和二级封锁协议有什么区别?
+- 什么是活锁和死锁?
+
+----
+
+[ 6.3 数据库恢复技术](dbds-6-3.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 7.1 数据库的发展阶段](dbds-7-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
