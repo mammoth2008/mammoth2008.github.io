@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c61t"
+    id         = "c96t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>6. 数据库保护</h2>
-        <h3 style="text-align: center">6.1 数据库安全性</h3>
+        <h2>9. 线性表</h2>
+        <h3 style="text-align: center">9.6 队列</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,19 +99,20 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "-2000"
-    data-rel-y    = "-2000"
+    data-rel-to   = "c96t"
+    data-rel-x    = "-3000"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库安全性
+### 队列的定义
 
-- 保护数据库
-- 防止不合法使用所造成的数据泄露, 更改或破坏
-- 数据库安全性
-- 数据库完整性
+- 仅允许在一端插入而在另一端删除
+- 允许插入的一端称为队尾 (rear)
+- 允许删除的一端称为队头 (front)
+- 队列的插入操作称为入队 (push)
+- 删除操作称为出队 (pop)
 
     </div>
 
@@ -120,16 +121,16 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 安全措施
+### 队列的特点
 
-- 用户身份鉴别
-- 存取控制
-- 视图
+- 先进先出 (FIFO, First In First Out)
+- 删除只能在队头
+- 插入只能在队尾
 
     </div>
 
@@ -138,16 +139,25 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库的不安全因素
+### 队列的抽象数据类型
 
-- 非授权用户恶意访问和破坏
-- 重要或敏感数据泄露
-- 脆弱的安全环境
+    ADT Queue
+    {
+    数据对象
+$ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, A\_i 为 E 类型 \rbrace $
+
+    数据关系
+$ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $
+
+    基本运算
+    boolean empty(); void push(E e)
+    E pop(); E peek()
+    }
 
     </div>
 
@@ -161,11 +171,10 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 非授权用户恶意访问和破坏
+### 队列的顺序存储结构
 
-- 用户身份鉴别
-- 存取控制
-- 视图
+- 非循环队列
+- 循环队列
 
     </div>
 
@@ -174,16 +183,16 @@
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 重要或敏感数据泄露
+### 非循环队列
 
-- 强制存取控制
-- 数据加密存储
-- 加密存储
+- 队头指针 front 指向队头元素的前一个位置
+- 队尾指针 rear 指向队尾元素
+- 初始时 front == rear == -1
 
     </div>
 
@@ -192,34 +201,44 @@
     class         = "step markdown"
     data-rel-to   = "a5"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 脆弱的安全环境
+### 非循环队列的基本要素
 
-- 安全标准
-- 安全性能指标
+- 队空的条件是 front == rear
+- 队满的条件是 rear == MaxSize - 1
+- 进队操作是 rear = rear + 1; data[rear] = e;
+- 出队操作是 e = data[front]; front = front + 1;
 
     </div>
 
     <div 
     id            = "a7"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "-400"
-    data-rel-y    = "-2000"
+    data-rel-to   = "c96t"
+    data-rel-x    = "-1200"
+    data-rel-y    = "-2700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库安全性控制
+### SqQueueClass&lt;E&gt;
 
-- 用户: 用户标识和鉴别
-- 数据库管理系统: 数据库安全保护
-- 操作系统: 操作系统安全保护
-- 数据库: 数据库密码存储
+    class SqQueueClass&lt;E&gt;
+    {
+        final int MaxSize=100;
+        private E [] data;
+        private int front,rear;
+        public SqQueueClass()
+        {
+            data = (E[])new Object[MaxSize];
+            front=-1;
+            rear=-1;
+        }
+    }
 
     </div>
 
@@ -228,17 +247,17 @@
     class         = "step markdown"
     data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 用户身份鉴别
+### empty()
 
-- 静态口令鉴别
-- 动态口令鉴别
-- 生物特征鉴别
-- 智能卡鉴别
+    public boolean empty()
+    {
+        return front==rear;
+    }
 
     </div>
 
@@ -247,16 +266,20 @@
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "2000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制
+### push(E e)
 
-- 定义用户权限
-- 登记到数据字典中
-- 使用时合法权限检查
+    public void push(E e)
+    {
+        if (rear==MaxSize-1)
+            throw new IllegalArgumentException("队满");
+        rear++;
+        data[rear]=e;
+    }
 
     </div>
 
@@ -265,15 +288,20 @@
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制
+### pop()
 
-- 自主存取控制 (DAC)
-- 强制存取控制 (MAC)
+    public E pop()
+    {
+        if (empty())
+            throw new IllegalArgumentException("队空");
+        front++;
+        return (E)data[front];
+    }
 
     </div>
 
@@ -282,15 +310,19 @@
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 自主存取控制
+### peek()
 
-- GRANT 语句
-- REVOKE 语句
+    public E peek()
+    {
+        if (empty())
+            throw new IllegalArgumentException("队空");
+        return (E)data[front+1];
+    }
 
     </div>
 
@@ -299,54 +331,67 @@
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制的对象: 模式
+### toString()
 
-- 模式: CREATE SCHEMA
-- 基本表: CREATE TABLE, ALTER TABLE
-- 视图: CREATE VIEW
-- 索引: CREATE INDEX
+    public String toString()
+    {
+        String ans="";
+        if (!empty())
+        {
+            int p=front;
+            while (true)
+            {
+                p++;
+                ans+=data[p]+" ";
+                if (p==rear) break;
+            }
+        }
+        return ans;
+    }
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "a12"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c96t"
+    data-rel-x    = "1000"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制的对象: 数据
+### 非循环队列的假溢出
 
-- 基本表和视图: SELECT, INSERT, UPDATE, DELETE, REFERENCES, ALL PRIVILEGES
-- 属性列: SELECT, INSERT, UPDATE, REFERENCES, ALL PRIVILEGES
+- rear == MaxSize - 1 时
+- 再进队就会发生假溢出
+- 实际上队列中有空位置
+- 解决方法是使用循环队列
 
     </div>
 
     <div 
     id            = "a14"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "1200"
-    data-rel-y    = "-1940"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 授权: GRANT
+### 循环队列
 
-    GRANT <权限> [, <权限> ...]
-    ON <对象类型> <对象名> [, <对象类型> <对象名> ...]
-    TO <用户> [, <用户> ...]
-    [WITH GRANT OPTION];
-- 将指定操作对象的指定操作权限授予指定的用户
+- 连接 data 的前端和后端
+- 形成逻辑上的环状结构
+- 基于求余运算 (%, mod)
+- 队头指针循环进一 front = (front + 1) % MaxSize
+- 队尾指针循环进一 rear = (rear + 1) % MaxSize
 
     </div>
 
@@ -355,17 +400,17 @@
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GRANT 语句
+### 循环队列的问题
 
-- 可以由已经拥有该权限的用户发出
-- 可以由 DBA 或属主发出
-- WITH GRANT OPTION 子句可以将该权限再授予其他用户
-- 不允许循环授权
+- 如何分辨队空和队满?
+- 队空条件是 front == rear
+- 队满条件是 (rear + 1) % MaxSize == front
+- 即队中最大元素个数为 MaxSize - 1
 
     </div>
 
@@ -374,36 +419,44 @@
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "2120"
+    data-rel-y    = "2200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 1
+### 循环队列的基本要素
 
-    GRANT SELECT
-    ON TABLE Student
-    TO U1;
-- 将对表 Student 的查询权限授予用户 U1
+- 队空条件是 front == rear
+- 队满条件是 (rear + 1) % MaxSize == front
+- 进队操作是 rear = (rear + 1) % MaxSize; data[rear] = e;
+- 出队操作是 e = data[front]; front = (front + 1) % MaxSize;
 
     </div>
 
     <div 
     id            = "a17"
     class         = "step markdown"
-    data-rel-to   = "a16"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c96t"
+    data-rel-x    = "3000"
+    data-rel-y    = "-2700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 2
+### CSqQueueClass&lt;E&gt;
 
-    GRANT ALL PRIVILEGES
-    ON TABLE Student, Course
-    TO U2, U3;
-- 将对表 Student 和 Course 的全部操作权限授予用户 U2 和 U3
+    class CSqQueueClass&lt;E&gt;
+    {
+        final int MaxSize=100;
+        private E [] data;
+        private int front,rear;
+        public CSqQueueClass()
+        {
+            data = (E[])new Object[MaxSize];
+            front=0;
+            rear=0;
+        }
+    }
 
     </div>
 
@@ -412,17 +465,17 @@
     class         = "step markdown"
     data-rel-to   = "a17"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 3
+### empty()
 
-    GRANT SELECT
-    ON TABLE SC
-    TO PUBLIC;
-- 将对表 SC 的查询权限授予所有用户
+    public boolean empty()
+    {
+        return front==rear;
+    }
 
     </div>
 
@@ -431,17 +484,20 @@
     class         = "step markdown"
     data-rel-to   = "a18"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 4
+### push(E e)
 
-    GRANT UPDATE (Sno), SELECT
-    ON TABLE Student
-    TO U4;
-- 将对表 Student 的查询权限和修改学生学号的权限授予用户 U4
+    public void push(E e)
+    {
+        if ((rear+1)%MaxSize==front)
+            throw new IllegalArgumentException("队满");
+        rear=(rear+1)%MaxSize;
+        data[rear]=e;
+    }
 
     </div>
 
@@ -450,19 +506,20 @@
     class         = "step markdown"
     data-rel-to   = "a19"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 5
+### pop()
 
-    GRANT INSERT
-    ON TABLE SC
-    TO U5
-    WITH GRANT OPTION;
-- 将对表 SC 的插入权限授予用户 U5
-- 并允许用户 U5 将此权限再授予其他用户
+    public E pop()
+    {
+        if (empty())
+            throw new IllegalArgumentException("队空");
+        front=(front+1)%MaxSize;
+        return (E)data[front];
+    }
 
     </div>
 
@@ -471,36 +528,38 @@
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GRANT 语句
+### peek()
 
-- 可以一次向一个用户授权
-- 可以一次向多个用户授权
-- 可以一次传播多个同类对象的权限
-- 可以一次完成对不同对象的授权
+    public E peek()
+    {
+        if (empty())
+            throw new IllegalArgumentException("队空");
+        return (E)data[(front+1)%MaxSize];
+    }
 
     </div>
 
     <div 
     id            = "a22"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "2800"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 取消授权: REVOKE
+### size()
 
-    REVOKE <权限> [, <权限> ...]
-    ON <对象类型> <对象名> [, <对象类型> <对象名> ...]
-    FROM <用户> [, <用户> ...]
-    [CASCADE|RESTRICT];
+    public int size()
+    {
+        return ((rear-front+MaxSize)%MaxSize);
+    }
 
     </div>
 
@@ -509,36 +568,47 @@
     class         = "step markdown"
     data-rel-to   = "a22"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 8
+### toString()
 
-    REVOKE UPDATE (Sno)
-    ON TABLE Student
-    FROM U4;
-- 收回用户 U4 对修改学生学号的权限
+    public String toString()
+    {
+        String ans="";
+        if (!empty())
+        {
+            int p=front;
+            while (true)
+            {
+                p=(p+1)%MaxSize;
+                ans+=data[p]+" ";
+                if (p==rear) break;
+            }
+        }
+        return ans;
+    }
 
     </div>
 
     <div 
     id            = "a24"
     class         = "step markdown"
-    data-rel-to   = "a23"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c96t"
+    data-rel-x    = "4800"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 9
+### 队列的链式存储结构
 
-    REVOKE SELECT
-    ON TABLE SC
-    FROM PUBLIC;
-- 收回所有用户对表 SC 的查询权限
+- 无需头结点
+- 队头指针 front 指向队头元素
+- 队尾指针 rear 指向队尾元素
+- 称作链队
 
     </div>
 
@@ -552,13 +622,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 10
+### 链队的基本要素
 
-    REVOKE INSERT
-    ON TABLE SC
-    FROM U5 CASCADE;
-- 收回用户 U5 对表 SC 的插入权限
-- 并级联收回 U5, U6 和 U7 的权限
+- 队空条件是 front = rear == null
+- 通常不考虑队满
+- 进队操作是 rear.next = new Node(e); rear = rear.next;
+- 出队操作是 e = front.data; front = front.next;
 
     </div>
 
@@ -567,15 +636,27 @@
     class         = "step markdown"
     data-rel-to   = "a25"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 视图机制
+### LinkNode&lt;E&gt;
 
-- 限制不同用户对数据对象的访问范围
-- 可以将需要保密的数据隐藏起来
+    class LinkNode&lt;E&gt;
+    {
+        E data;
+        LinkNode&lt;E&gt; next;
+        public LinkNode()
+        {
+            next=null;
+        }
+        public LinkNode(E d)
+        {
+            data=d;
+            next=null;
+        }
+    }
 
     </div>
 
@@ -584,42 +665,42 @@
     class         = "step markdown"
     data-rel-to   = "a26"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 14
+### LinkQueueClass&lt;E&gt;
 
-    CREATE VIEW CS_Student AS
-    SELECT *
-    FROM Student
-    WHERE Sdept='CS';
-    GRANT SELECT ON CS_Student TO 王平;
-    GRANT ALL PRIVILEGES ON CS_Student TO 张明;
-
-- 创建视图 CS_Student
-- 王平只能检索计算机系学生的信息
-- 张明拥有检索和修改计算机系学生信息的所有权限
+    public class LinkQueueClass&lt;E&gt;
+    {
+        LinkNode&lt;E&gt; front;
+        LinkNode&lt;E&gt; rear;
+        public LinkQueueClass()
+        {
+            front=null;
+            rear=null;
+        }
+    }
 
     </div>
 
     <div 
     id            = "a28"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "4700"
-    data-rel-y    = "-2040"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计
+### empty()
 
-- 将用户对数据库的所有操作自动记录到审计日志中
-- 审计员可以利用审计日志监控数据库中的各种行为
-- 通常比较耗费时间和空间
-- 主要用于安全性要求较高的部门
+    public boolean empty()
+    {
+        return front==null;
+    }
 
     </div>
 
@@ -628,20 +709,24 @@
     class         = "step markdown"
     data-rel-to   = "a28"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计事件
+### push(E e)
 
-- 服务器事件
-- 系统权限
-- 语句事件
-- 模式对象事件
-- 用户鉴别
-- 自主访问控制
-- 强制访问控制
+    public void push(E e)
+    {
+        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
+        if (empty())
+            front=rear=s;
+        else
+        {
+            rear.next=s;
+            rear=s;
+        }
+    }
 
     </div>
 
@@ -650,17 +735,30 @@
     class         = "step markdown"
     data-rel-to   = "a29"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计内容
+### pop()
 
-- 普通用户和特权用户的行为
-- 各种表操作
-- 身份鉴别
-- 自主和强制访问控制等操作
+    public E pop()
+    {
+        E e;
+        if (empty())
+            throw new IllegalArgumentException("队空");
+        if (front==rear)
+        {
+            e=(E)front.data;
+            front=rear=null;
+        }
+        else
+        {
+            e=(E)front.data;
+            front=front.next;
+        }
+        return e;
+    }
 
     </div>
 
@@ -669,18 +767,20 @@
     class         = "step markdown"
     data-rel-to   = "a30"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计功能
+### peek()
 
-- 基本功能
-- 审计规则
-- 审计分析
-- 报表功能
-- 审计日志管理功能
+    public E peek()
+    {
+        if (empty())
+            throw new IllegalArgumentException("队空");
+        E e=(E)front.data;
+        return e;
+    }
 
     </div>
 
@@ -689,143 +789,50 @@
     class         = "step markdown"
     data-rel-to   = "a31"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据加密
+### toString()
 
-- 利用特定的算法
-- 将原始数据 (明文)
-- 转换为不可直接识别的格式 (密文)
-
-    </div>
-
-    <div 
-    id            = "a33"
-    class         = "step markdown"
-    data-rel-to   = "a32"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 数据加密
-
-- 存储加密
-- 传输加密
-
-    </div>
-
-    <div 
-    id            = "a34"
-    class         = "step markdown"
-    data-rel-to   = "a33"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 存储加密
-
-- 透明存储加密
-- 非透明存储加密
-
-    </div>
-
-    <div 
-    id            = "a35"
-    class         = "step markdown"
-    data-rel-to   = "a34"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 透明存储加密
-
-- 在内核级别加密
-- 对用户完全透明
-
-    </div>
-
-    <div 
-    id            = "a36"
-    class         = "step markdown"
-    data-rel-to   = "a35"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 传输加密
-
-- 链路加密
-- 端到端加密
-
-    </div>
-
-    <div 
-    id            = "a37"
-    class         = "step markdown"
-    data-rel-to   = "a36"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 链路加密
-
-- 对传输数据在链路层加密
-- 同时加密报头和报文
-
-    </div>
-
-    <div 
-    id            = "a38"
-    class         = "step markdown"
-    data-rel-to   = "a37"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 端到端加密
-
-- 在发送端加密
-- 在接收端解密
-- 只加密报文
-- 不加密报头
+    public String toString()
+    {
+        String ans="";
+        if (!empty())
+        {
+            LinkNode&lt;E&gt; p=front;
+            while (p!=null)
+            {
+                ans+=p.data.toString()+" ";
+                p=p.next;
+            }
+        }
+        return ans;
+    }
 
     </div>
 
     <div
-    id            = "mm61"
+    id            = "mm96"
     class         = "step markdown"
-    data-rel-to   = "c61t"
+    data-rel-to   = "c96t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 6.1 mindmap](img/c06/mindmap-6-1.png)
+![course 9.6 mindmap](img/c09/mindmap-9-6.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c61q"
+    id            = "c96q"
     class         = "step markdown"
-    data-rel-to   = "c61t"
+    data-rel-to   = "c96t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -834,20 +841,19 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 6.1 数据库安全性
+### 9.6 队列
 
-- 什么是数据库安全性?
-- 列举三种用户身份鉴别的方式.
-- GRANT 语句和 REVOKE 语句分别用于什么?
-- 什么是 WITH GRANT OPTION, 它有什么用途?
-- 视图如何帮助实现数据的安全?
-- 审计日志中通常记录哪些类型的事件?
+- 在非循环队列中 front 和 rear 的初始位置是什么?
+- 循环队列如何解决非循环队列的假溢出问题?
+- 循环队列中如何判断队列为空或者满?
+- 链队中队空的条件是什么?
+- 描述链队进队和出队的基本操作。
 
 ----
 
-[ 5.6 数据库的实施和维护](dbds-5-2.html#/a44)
+[ 9.5 栈](dbds-9-5.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 6.2 数据库完整性](dbds-6-2.html#/overview)
+[ 10.1 树的基本概念](dbds-10-1.html#/overview)
 
     </div>
 

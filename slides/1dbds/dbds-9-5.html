@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c71t"
+    id         = "c95t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,7 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>7. 数据库技术进展</h2>
+        <h2>9. 线性表</h2>
+        <h3 style="text-align: center">9.5 栈</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -98,14 +99,22 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c71t"
-    data-rel-x    = "-3000"
-    data-rel-y    = "-2000"
+    data-rel-to   = "c95t"
+    data-rel-x    = "-1200"
+    data-rel-y    = "-1900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-## 7.1 数据库的发展阶段
+### 栈的定义
+
+- 只能在一端进行插入和删除操作的线性表
+- 允许插入和删除的一端称为栈顶 (top)
+- 另一端称为栈底 (bottom)
+- 栈顶的位置是变化的
+- 栈底的位置是固定的
+- 栈的插入操作叫做进栈 (push)
+- 栈的删除操作叫做出栈 (pop)
 
     </div>
 
@@ -114,18 +123,15 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 历史回顾
+### 栈的特点
 
-- 产生于 20 世纪 60 年代中期
-- 发展了一门学科
-- 带动了一个软件产业
-- 使第一代智能应用成为可能
-- 为大数据管理和分析奠定了基础
+- 后进先出 (LIFO, Last In First Out)
+- 栈的插入和删除操作只能在栈顶进行
 
     </div>
 
@@ -134,16 +140,25 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据模型的进展
+### 栈的抽象数据类型
 
-- 网状和层次数据库
-- 关系数据库系统
-- 新一代数据库
+    ADT Stack
+    {
+    数据对象
+$ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, 元素 a\_i 为 E 类型 \rbrace $
+
+    数据关系
+$ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $
+
+    基本运算
+        boolean empty(); void push(E e)
+        E pop(); E peek()
+    }
 
     </div>
 
@@ -152,15 +167,17 @@
     class         = "step markdown"
     data-rel-to   = "a3"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 网状和层次数据库
+### 栈的顺序存储结构
 
-- IBM 的层次数据库 IMS
-- 数据库任务组 (DBTG) 提出的网状模型数据库
+- 使用 data&lt;E&gt; 存放栈中元素
+- 使用 top 指示栈顶元素在 data 中的位置
+- 顺序存储的栈称作顺序栈
+- 空栈时 top = -1
 
     </div>
 
@@ -174,31 +191,40 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 网状和层次数据库的特点
+### 顺序栈的基本要素
 
-- 支持三级模式
-- 用存取路径表示数据之间的联系
-- 独立的数据定义语言
-- 导航的数据操纵语言
+- 栈空的条件是 top == -1
+- 栈满的条件是 top == capacity - 1
+- 进栈操作是 top = top + 1; data[top] = e;
+- 出栈操作是 e = data[top]; top = top - 1;
 
     </div>
 
     <div 
     id            = "a6"
     class         = "step markdown"
-    data-rel-to   = "a5"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c95t"
+    data-rel-x    = "100"
+    data-rel-y    = "1500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 关系数据库系统的主要成果
+### SqStackClass&lt;E&gt;
 
-- 奠定了关系模型的理论基础
-- 研究了关系数据语言
-- 确立了 SQL 为关系数据库语言标准
-- 研制了大量关系数据库管理系统原型
+    public class SqStackClass&lt;E&gt;
+    {
+        final int initcapacity=10;
+        private int capacity;
+        private E[] data;
+        private int top;
+        public SqStackClass()
+        {
+            data = (E[])new Object[initcapacity];
+            capacity=initcapacity;
+            top=-1;
+        }
+    }
 
     </div>
 
@@ -207,30 +233,40 @@
     class         = "step markdown"
     data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 新一代数据库的基本特征
+### updatecapacity(int newcapacity)
 
-- 支持数据管理, 对象管理和知识管理
-- 保持或继承第二代数据库系统的技术
-- 对其他系统开放
+    private void updatecapacity(int newcapacity)
+    {
+        E[] newdata = (E[])new Object[newcapacity];
+        for (int i=0;i&lt;top;i++)
+            newdata[i]=data[i];
+        capacity=newcapacity;
+        data=newdata;
+    }
 
     </div>
 
     <div 
     id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "c71t"
-    data-rel-x    = "-1500"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-## 7.2 数据库的发展特点
+### empty()
+
+    public boolean empty()
+    {
+        return top==-1;
+    }
 
     </div>
 
@@ -239,16 +275,20 @@
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据模型的发展
+### push(E e)
 
-- 面向对象数据模型
-- XML 数据模型
-- RDF 数据模型
+    public void push(E e)
+    {
+        if (top==capacity-1)
+            updatecapacity(2*(top+1));
+        top++;
+        data[top]=e;
+    }
 
     </div>
 
@@ -257,18 +297,23 @@
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 面向对象数据模型的核心概念
+### pop()
 
-- 对象
-- 封装
-- 类
-- 继承和复合
-- 封装
+    public E pop()
+    {
+        if (empty())
+            throw new IllegalArgumentException("栈空");
+        E e=(E)data[top];
+        top--;
+        if (top+1&gt;initcapacity && top+1==capacity/4)
+            updatecapacity(capacity/2);
+        return e;
+    }
 
     </div>
 
@@ -277,16 +322,19 @@
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 面向对象数据库产品
+### peek()
 
-- Object Store
-- O2
-- ONTOS
+    public E peek()
+    {
+        if (empty())
+            throw new IllegalArgumentException("栈空");
+        return (E)data[top];
+    }
 
     </div>
 
@@ -295,35 +343,36 @@
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### XML 数据模型
+### toString()
 
-- 由节点标记树, 操作和语义约束组成
-- 纯 XML 数据库系统
-- 或扩展关系数据库
+    public String toString()
+    {
+        String ans="";
+        for (int i=0;i&lt;=top;i++)
+            ans+=data[i].toString()+" ";
+        return ans;
+    }
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "a12"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c95t"
+    data-rel-x    = "1800"
+    data-rel-y    = "-2200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### RDF 数据模型
+### 栈的链式存储结构
 
-- 资源描述框架
-- 描述和注解万维网中的资源
-- 采用主语, 谓语, 宾语的三元组结构
-- SPARQL 是一种 RDF 查询语言
+- 使用单链表存放栈中元素
 
     </div>
 
@@ -332,20 +381,17 @@
     class         = "step markdown"
     data-rel-to   = "a13"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库与相关技术相结合
+### 链栈的基本要素
 
-- 分布式数据库系统
-- 并行数据库系统
-- 演绎数据库, 知识库和主动数据库系统
-- 多媒体数据库系统
-- 模糊数据库系统
-- 移动数据库系统
-- Web 数据库
+- 栈空的条件是 head.next == null
+- 通常不考虑溢出
+- 进栈操作是将插入的结点作为首结点
+- 出栈操作是返回首结点值并删除首结点
 
     </div>
 
@@ -354,32 +400,51 @@
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 面向应用领域的数据库
+### LinkNode&lt;E&gt;
 
-- 数据仓库
-- 工程数据库
-- 统计数据库
-- 空间数据库
-- 科学数据库
+    class LinkNode&lt;E&gt;
+    {
+        E data;
+        LinkNode&lt;E&gt; next;
+        public LinkNode()
+        {
+            next=null;
+        }
+        public LinkNode(E d)
+        {
+            data=d;
+            next=null;
+        }
+    }
 
     </div>
 
     <div 
     id            = "a16"
     class         = "step markdown"
-    data-rel-to   = "c71t"
+    data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-## 7.3 数据库的发展趋势
+### LinkStackClass&lt;E&gt;
+
+    public class LinkStackClass&lt;E&gt;
+    {
+        LinkNode&lt;E&gt; head;
+        public LinkStackClass()
+        {
+            head=new LinkNode&lt;E&gt;();
+            head.next=null;
+        }
+    }
 
     </div>
 
@@ -388,17 +453,17 @@
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据管理技术面临的挑战
+### empty()
 
-- 海量异构数据
-- 数据形式的多样性
-- 快速增长的数据量
-- 数据的低价值密度
+    public boolean empty()
+    {
+        return head.next==null;
+    }
 
     </div>
 
@@ -407,31 +472,42 @@
     class         = "step markdown"
     data-rel-to   = "a17"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据管理技术的发展展望
+### push(E e)
 
-- 高可扩展性 (满足数据量增长的需求)
-- 高性能 (满足实时数据读写和查询处理的高性能)
-- 容错性 (保证分布式系统的可用性)
-- 可伸缩性 (根据需求分配资源)
+    public void push(E e)
+    {
+        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
+        s.next=head.next;
+        head.next=s;
+    }
 
     </div>
 
     <div 
     id            = "a19"
     class         = "step markdown"
-    data-rel-to   = "c71t"
-    data-rel-x    = "1500"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-## 7.4 大数据
+### pop()
+
+    public E pop()
+    {
+        if (empty())
+            throw new IllegalArgumentException("栈空");
+        E e=(E)head.next.data;
+        head.next=head.next.next;
+        return e;
+    }
 
     </div>
 
@@ -440,14 +516,20 @@
     class         = "step markdown"
     data-rel-to   = "a19"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 大数据
+### peek()
 
-- 无法在可容忍的时间内用现有 IT 技术和软硬件工具对其进行感知, 获取, 管理, 处理和服务的数据集合
+    public E peek()
+    {
+        if (empty())
+            throw new IllegalArgumentException("栈空");
+        E e=(E)head.next.data;
+        return e;
+    }
 
     </div>
 
@@ -456,127 +538,51 @@
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "2000"
+    data-rel-y    = "14
+    00"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 大数据的特征
+### toString()
 
-- 巨量 (Volume)
-- 多样 (Variety)
-- 快变 (Velocity)
-- 价值 (Value)
-
-    </div>
-
-    <div 
-    id            = "a22"
-    class         = "step markdown"
-    data-rel-to   = "a21"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 代表性技术
-
-- Key-Value 非关系数据模型
-- MapReduce 并行编程模型
-- NoSQL 数据库
-
-    </div>
-
-    <div 
-    id            = "a23"
-    class         = "step markdown"
-    data-rel-to   = "c71t"
-    data-rel-x    = "3200"
-    data-rel-y    = "-2000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-## 7.5 非关系数据库
-
-    </div>
-
-    <div 
-    id            = "a24"
-    class         = "step markdown"
-    data-rel-to   = "a23"
-    data-rel-x    = "0"
-    data-rel-y    = "600"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### NoSQL
-
-- 分布式数据管理系统
-- Non-Relational
-- Not Only SQL
-
-    </div>
-
-    <div 
-    id            = "a25"
-    class         = "step markdown"
-    data-rel-to   = "a24"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### NoSQL系统的数据模型
-
-- Key-Value
-- BigTable
-- Document
-- Graph
-
-    </div>
-
-    <div 
-    id            = "a26"
-    class         = "step markdown"
-    data-rel-to   = "a25"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### NoSQL 技术的特点
-
-- 大量节点并行处理实现高性能
-- 放松对数据的 ACID 一致性约束
-- 对各个数据分区备份
+    public String toString()
+    {
+        String ans="";
+        if (!empty())
+        {
+            LinkNode&lt;E&gt; p=head.next;
+            while (p!=null)
+            {
+                ans+=p.data+" ";
+                p=p.next;
+            }
+        }
+        return ans;
+    }
 
     </div>
 
     <div
-    id            = "mm71"
+    id            = "mm95"
     class         = "step markdown"
-    data-rel-to   = "c71t"
+    data-rel-to   = "c95t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 7.1 mindmap](img/c07/mindmap-7-1.png)
+![course 9.5 mindmap](img/c09/mindmap-9-5.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c71q"
+    id            = "c95q"
     class         = "step markdown"
-    data-rel-to   = "c71t"
+    data-rel-to   = "c95t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -585,19 +591,20 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 7. 数据库技术进展
+### 9.5 栈
 
-- 数据模型的发展经历了哪些阶段, 各有什么特点?
-- 关系数据库系统中, SQL 起到了什么作用?
-- 面向对象数据模型的核心概念包括哪些?
-- 数据管理技术面临哪些挑战, 以及有哪些发展展望?
-- 大数据的四个主要特征是什么?
+- 栈在数据结构中是如何定义的?
+- 描述栈的后进先出 (LIFO) 特性.
+- 进栈和出栈具体是指什么?
+- 顺序栈和链栈有什么区别?
+- 空栈时, 栈顶指针 top 应该指向什么位置?
+- 在链栈中, 栈空的条件是什么?
 
 ----
 
-[ 6.4 数据库并发控制](dbds-6-4.html#/overview)
+[ 9.3 线性表的链式存储结构](dbds-9-3.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 8.1 什么是数据结构](dbds-8-1.html#/overview)
+[ 9.6 队列](dbds-9-6.html#/overview)
 
     </div>
 

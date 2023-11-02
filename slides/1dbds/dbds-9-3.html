@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c61t"
+    id         = "c93t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>6. 数据库保护</h2>
-        <h3 style="text-align: center">6.1 数据库安全性</h3>
+        <h2>9. 线性表</h2>
+        <h3 style="text-align: center">9.3 线性表的链式存储结构</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,19 +99,17 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "-2000"
-    data-rel-y    = "-2000"
+    data-rel-to   = "c93t"
+    data-rel-x    = "-800"
+    data-rel-y    = "-400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库安全性
+### 链表的结点
 
-- 保护数据库
-- 防止不合法使用所造成的数据泄露, 更改或破坏
-- 数据库安全性
-- 数据库完整性
+- 数据成员
+- 指针成员
 
     </div>
 
@@ -125,11 +123,10 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 安全措施
+### 链表的类型
 
-- 用户身份鉴别
-- 存取控制
-- 视图
+- 线性单向链表
+- 线性双向链表
 
     </div>
 
@@ -138,34 +135,45 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库的不安全因素
+### 链表的结构
 
-- 非授权用户恶意访问和破坏
-- 重要或敏感数据泄露
-- 脆弱的安全环境
+- 头结点
+- 头指针
+- 开始节点
+- 终端节点
 
     </div>
 
     <div 
     id            = "a4"
     class         = "step markdown"
-    data-rel-to   = "a3"
+    data-rel-to   = "c93t"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 非授权用户恶意访问和破坏
+### LinkNode&lt;E&gt;
 
-- 用户身份鉴别
-- 存取控制
-- 视图
+    class LinkNode&lt;E&gt;
+    {
+        E data;
+        LinkNode&lt;E&gt; next;
+        public LinkNode() {
+            next=null;
+        }
+        public LinkNode(E d)
+        {
+            data=d;
+            next=null;
+        }
+    }
 
     </div>
 
@@ -174,16 +182,22 @@
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 重要或敏感数据泄露
+### LinkListClass&lt;E&gt;
 
-- 强制存取控制
-- 数据加密存储
-- 加密存储
+    public class LinkListClass&lt;E&gt;
+    {
+        LinkNode&lt;E&gt; head;
+        public LinkListClass()
+        {
+            head=new LinkNode&lt;E&gt;();
+            head.next=null;
+        }
+    }
 
     </div>
 
@@ -192,53 +206,71 @@
     class         = "step markdown"
     data-rel-to   = "a5"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 脆弱的安全环境
+### Insert(int i, E e)
 
-- 安全标准
-- 安全性能指标
+    public void Insert(int i, E e)
+    {
+        if (i&lt;0 || i&gt;size())
+            throw new IllegalArgumentException
+			("插入:位置i不在有效范围内");
+        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
+        LinkNode&lt;E&gt; p=head=geti(i-1);
+        s.next=p.next;
+        p.next=s;
+    }
 
     </div>
 
     <div 
     id            = "a7"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "-400"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据库安全性控制
+### Delete(int i)
 
-- 用户: 用户标识和鉴别
-- 数据库管理系统: 数据库安全保护
-- 操作系统: 操作系统安全保护
-- 数据库: 数据库密码存储
+    public void Delete(int i)
+    {
+        if (i&lt;0 || i&gt;size()-1)
+            throw new IllegalArgumentException
+			("删除:位置i不在有效范围内");
+        LinkNode&lt;E&gt; p=geti(i-1);
+        p.next=p.next.next;
+    }
 
     </div>
 
     <div 
     id            = "a8"
     class         = "step markdown"
-    data-rel-to   = "a7"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c93t"
+    data-rel-x    = "1500"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 用户身份鉴别
+### CreateListF(E[] a)
 
-- 静态口令鉴别
-- 动态口令鉴别
-- 生物特征鉴别
-- 智能卡鉴别
+    public void CreateListF(E[] a)
+    {
+        LinkNode&lt;E&gt; s;
+        for (int i=0;i&lt;a.length;i++)
+        {
+            s=new LinkNode&lt;E&gt;(a[i]);
+            s.next=head.next;
+            head.next=s;
+        }
+    }
 
     </div>
 
@@ -247,16 +279,25 @@
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "2000"
+    data-rel-y    = "1500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制
+### CreateListR(E[] a)
 
-- 定义用户权限
-- 登记到数据字典中
-- 使用时合法权限检查
+    public void CreateListR(E[] a)
+    {
+        LinkNode&lt;E&gt; s,t;
+        t=head;
+        for (int i=0;i&lt;a.length;i++)
+		{
+            s=new LinkNode&lt;E&gt;(a[i]);
+            t.next=s;
+            t=s;
+        }
+        t.next=null;
+    }
 
     </div>
 
@@ -265,15 +306,24 @@
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "2500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制
+### geti(int i)
 
-- 自主存取控制 (DAC)
-- 强制存取控制 (MAC)
+    private LinkNode&lt;E&gt; geti(int i)
+    {
+        LinkNode&lt;E&gt; p=head;
+        int j=-1;
+        while (j&lt;i)
+        {
+            j++;
+            p=p.next;
+        }
+        return p;
+    }
 
     </div>
 
@@ -282,15 +332,21 @@
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 自主存取控制
+### Add(E e)
 
-- GRANT 语句
-- REVOKE 语句
+    public void Add(E e)
+    {
+        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
+        LinkNode&lt;E&gt; p=head;
+        while (p.next!=null)
+            p=p.next;
+        p.next=s;
+    }
 
     </div>
 
@@ -299,17 +355,24 @@
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制的对象: 模式
+### size()
 
-- 模式: CREATE SCHEMA
-- 基本表: CREATE TABLE, ALTER TABLE
-- 视图: CREATE VIEW
-- 索引: CREATE INDEX
+    public int size()
+    {
+        LinkNode&lt;E&gt; p=head;
+        int cnt=0;
+        while (p.next!=null)
+        {
+            cnt++;
+            p=p.next;
+        }
+        return cnt;
+    }
 
     </div>
 
@@ -318,35 +381,47 @@
     class         = "step markdown"
     data-rel-to   = "a12"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存取控制的对象: 数据
+### Setsize(int nlen)
 
-- 基本表和视图: SELECT, INSERT, UPDATE, DELETE, REFERENCES, ALL PRIVILEGES
-- 属性列: SELECT, INSERT, UPDATE, REFERENCES, ALL PRIVILEGES
+    public void Setsize(int nlen)
+    {
+        int len=size();
+        if (nlen&lt;0 || nlen&gt;len)
+            throw new IllegalArgumentException
+			("设置长度:n不在有效范围内");
+        if (nlen==len) return;
+        LinkNode&lt;E&gt; p=geti(nlen-1);
+        p.next=null;
+    }
 
     </div>
 
     <div 
     id            = "a14"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "1200"
-    data-rel-y    = "-1940"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 授权: GRANT
+### GetElem(int i)
 
-    GRANT <权限> [, <权限> ...]
-    ON <对象类型> <对象名> [, <对象类型> <对象名> ...]
-    TO <用户> [, <用户> ...]
-    [WITH GRANT OPTION];
-- 将指定操作对象的指定操作权限授予指定的用户
+    public E GetElem(int i)
+    {
+        int len=size();
+        if (i&lt;0 || i&gt;len-1)
+            throw new IllegalArgumentException
+			("查找:位置i不在有效范围内");
+        LinkNode&lt;E&gt; p=geti(i);
+        return (E)p.data;
+    }
 
     </div>
 
@@ -355,17 +430,21 @@
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "900"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GRANT 语句
+### SetElem(int i,E e)
 
-- 可以由已经拥有该权限的用户发出
-- 可以由 DBA 或属主发出
-- WITH GRANT OPTION 子句可以将该权限再授予其他用户
-- 不允许循环授权
+    public void SetElem(int i,E e)
+    {
+        if (i&lt;0 || i&gt;size()-1)
+            throw new IllegalArgumentException
+			("设置:位置i不在有效范围内");
+        LinkNode&lt;E&gt; p=geti(i);
+        p.data=e;
+    }
 
     </div>
 
@@ -374,17 +453,27 @@
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "2120"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 1
+### GetNo(E e)
 
-    GRANT SELECT
-    ON TABLE Student
-    TO U1;
-- 将对表 Student 的查询权限授予用户 U1
+    public int GetNo(E e)
+    {
+        int j=0;
+        LinkNode&lt;E&gt; p=head.next;
+        while (p!=null && !p.data.equals(e))
+        {
+            j++;
+            p=p.next;
+        }
+        if (p==null)
+            return -1;
+        else
+            return j;
+    }
 
     </div>
 
@@ -393,17 +482,21 @@
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 2
+### swap(int i,int j)
 
-    GRANT ALL PRIVILEGES
-    ON TABLE Student, Course
-    TO U2, U3;
-- 将对表 Student 和 Course 的全部操作权限授予用户 U2 和 U3
+    public void swap(int i,int j)
+    {
+        LinkNode&lt;E&gt; p=geti(i);
+        LinkNode&lt;E&gt; q=geti(j);
+        E tmp=p.data;
+        p.data=q.data;
+        q.data=tmp;
+    }
 
     </div>
 
@@ -412,36 +505,41 @@
     class         = "step markdown"
     data-rel-to   = "a17"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 3
+### toString()
 
-    GRANT SELECT
-    ON TABLE SC
-    TO PUBLIC;
-- 将对表 SC 的查询权限授予所有用户
+    public String toString()
+    {
+        String ans="";
+        LinkNode&lt;E&gt; p=head.next;
+        while (p!=null)
+        {
+            ans+=p.data+" ";
+            p=p.next;
+        }
+        return ans;
+    }
 
     </div>
 
     <div 
     id            = "a19"
     class         = "step markdown"
-    data-rel-to   = "a18"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c93t"
+    data-rel-x    = "3000"
+    data-rel-y    = "-3400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 4
+### 双链表
 
-    GRANT UPDATE (Sno), SELECT
-    ON TABLE Student
-    TO U4;
-- 将对表 Student 的查询权限和修改学生学号的权限授予用户 U4
+- 访问后继结点
+- 访问前驱结点
 
     </div>
 
@@ -450,19 +548,26 @@
     class         = "step markdown"
     data-rel-to   = "a19"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 5
+### DLinkNode&lt;E&gt;
 
-    GRANT INSERT
-    ON TABLE SC
-    TO U5
-    WITH GRANT OPTION;
-- 将对表 SC 的插入权限授予用户 U5
-- 并允许用户 U5 将此权限再授予其他用户
+    class DLinkNode&lt;E&gt;
+    {
+        E data;
+        DLinkNode&lt;E&gt; prior;
+        DLinkNode&lt;E&gt; next;
+        public DLinkNode()
+        {   prior=null;
+            next=null;}
+        public DLinkNode(E d)
+        {   data=d;
+            prior=null;
+            next=null;}
+    }
 
     </div>
 
@@ -471,36 +576,50 @@
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GRANT 语句
+### DLinkListClass&lt;E&gt;
 
-- 可以一次向一个用户授权
-- 可以一次向多个用户授权
-- 可以一次传播多个同类对象的权限
-- 可以一次完成对不同对象的授权
+    public class DLinkListClass&lt;E&gt;
+    {
+        DLinkNode&lt;E&gt; dhead;
+        public DLinkListClass()
+        {
+            dhead=new DLinkNode&lt;E&gt;();
+            dhead.prior=null;
+            dhead.next=null;
+        }
 
     </div>
 
     <div 
     id            = "a22"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "2800"
-    data-rel-y    = "-2000"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 取消授权: REVOKE
+### Insert(int i, E e)
 
-    REVOKE <权限> [, <权限> ...]
-    ON <对象类型> <对象名> [, <对象类型> <对象名> ...]
-    FROM <用户> [, <用户> ...]
-    [CASCADE|RESTRICT];
+    public void Insert(int i, E e)
+    {
+        if (i&lt;0 || i&gt;size())
+            throw new IllegalArgumentException
+			("插入:位置i不在有效范围内");
+        DLinkNode&lt;E&gt; s=new DLinkNode&lt;E&gt;(e);
+        DLinkNode&lt;E&gt; p=dhead=geti(i-1);
+        s.next=p.next;
+        if (p.next!=null)
+            p.next.prior=s;
+        p.next=s;
+        s.prior=p;
+    }
 
     </div>
 
@@ -509,17 +628,23 @@
     class         = "step markdown"
     data-rel-to   = "a22"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 8
+### Delete(int i)
 
-    REVOKE UPDATE (Sno)
-    ON TABLE Student
-    FROM U4;
-- 收回用户 U4 对修改学生学号的权限
+    public void Delete(int i)
+    {
+        if (i&lt;0 || i&gt;size()-1)
+            throw new IllegalArgumentException
+			("删除:位置i不在有效范围内");
+        DLinkNode&lt;E&gt; p=geti(i);
+        p.prior.next=p.next;
+        if (p.next!=null)
+            p.next.prior=p.prior;
+    }
 
     </div>
 
@@ -528,17 +653,26 @@
     class         = "step markdown"
     data-rel-to   = "a23"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 9
+### CreateListF(E[] a)
 
-    REVOKE SELECT
-    ON TABLE SC
-    FROM PUBLIC;
-- 收回所有用户对表 SC 的查询权限
+    public void CreateListF(E[] a)
+    {
+        DLinkNode&lt;E&gt; s;
+        for (int i=0;i&lt;a.length;i++)
+        {
+            s=new DLinkNode&lt;E&gt;(a[i]);
+            s.next=dhead.next;
+            if (dhead.next!=null)
+                dhead.next.prior=s;
+            dhead.next=s;
+            s.prior=dhead;
+        }
+    }
 
     </div>
 
@@ -547,18 +681,24 @@
     class         = "step markdown"
     data-rel-to   = "a24"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 10
+### CreateListR(E[] a)
 
-    REVOKE INSERT
-    ON TABLE SC
-    FROM U5 CASCADE;
-- 收回用户 U5 对表 SC 的插入权限
-- 并级联收回 U5, U6 和 U7 的权限
+    public void CreateListR(E[] a)
+    {
+        DLinkNode&lt;E&gt; s,t;
+        t=dhead;
+        for (int i=0;i&lt;a.length;i++)
+        {    s=new DLinkNode&lt;E&gt;(a[i]);
+            t.next=s;
+            s.prior=t; t=s;
+        }
+        t.next=null;
+    }
 
     </div>
 
@@ -567,15 +707,24 @@
     class         = "step markdown"
     data-rel-to   = "a25"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 视图机制
+### geti(int i)
 
-- 限制不同用户对数据对象的访问范围
-- 可以将需要保密的数据隐藏起来
+    private DLinkNode&lt;E&gt; geti(int i)
+    {
+        DLinkNode&lt;E&gt; p=dhead;
+        int j=-1;
+        while (j&lt;i)
+        {
+            j++;
+            p=p.next;
+        }
+        return p;
+    }
 
     </div>
 
@@ -584,42 +733,48 @@
     class         = "step markdown"
     data-rel-to   = "a26"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 例 14
+### Add(E e)
 
-    CREATE VIEW CS_Student AS
-    SELECT *
-    FROM Student
-    WHERE Sdept='CS';
-    GRANT SELECT ON CS_Student TO 王平;
-    GRANT ALL PRIVILEGES ON CS_Student TO 张明;
-
-- 创建视图 CS_Student
-- 王平只能检索计算机系学生的信息
-- 张明拥有检索和修改计算机系学生信息的所有权限
+    public void Add(E e)
+    {
+        DLinkNode&lt;E&gt; s=new DLinkNode&lt;E&gt;(e);
+        DLinkNode&lt;E&gt; p=dhead;
+        while (p.next!=null)
+            p=p.next;
+        p.next=s;
+        s.prior=p;
+    }
 
     </div>
 
     <div 
     id            = "a28"
     class         = "step markdown"
-    data-rel-to   = "c61t"
-    data-rel-x    = "4700"
-    data-rel-y    = "-2040"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计
+### size()
 
-- 将用户对数据库的所有操作自动记录到审计日志中
-- 审计员可以利用审计日志监控数据库中的各种行为
-- 通常比较耗费时间和空间
-- 主要用于安全性要求较高的部门
+    public int size()
+    {
+        DLinkNode&lt;E&gt; p=dhead;
+        int cnt=0;
+        while (p.next!=null)
+        {
+            cnt++;
+            p=p.next;
+        }
+        return cnt;
+    }
 
     </div>
 
@@ -628,20 +783,23 @@
     class         = "step markdown"
     data-rel-to   = "a28"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计事件
+### Setsize(int nlen)
 
-- 服务器事件
-- 系统权限
-- 语句事件
-- 模式对象事件
-- 用户鉴别
-- 自主访问控制
-- 强制访问控制
+    public void Setsize(int nlen)
+    {
+        int len=size();
+        if (nlen&lt;0 || nlen&gt;len)
+            throw new IllegalArgumentException
+			("设置长度:n不在有效范围内");
+        if (nlen==len) return;
+        DLinkNode&lt;E&gt; p=geti(nlen-1);
+        p.next=null;
+    }
 
     </div>
 
@@ -650,17 +808,22 @@
     class         = "step markdown"
     data-rel-to   = "a29"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计内容
+### GetElem(int i)
 
-- 普通用户和特权用户的行为
-- 各种表操作
-- 身份鉴别
-- 自主和强制访问控制等操作
+    public E GetElem(int i)
+    {
+        int len=size();
+        if (i&lt;0 || i&gt;len-1)
+            throw new IllegalArgumentException
+			("查找:位置i不在有效范围内");
+        DLinkNode&lt;E&gt; p=geti(i);
+        return (E)p.data;
+    }
 
     </div>
 
@@ -669,18 +832,21 @@
     class         = "step markdown"
     data-rel-to   = "a30"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 审计功能
+### SetElem(int i,E e)
 
-- 基本功能
-- 审计规则
-- 审计分析
-- 报表功能
-- 审计日志管理功能
+    public void SetElem(int i,E e)
+    {
+        if (i&lt;0 || i&gt;size()-1)
+            throw new IllegalArgumentException
+			("设置:位置i不在有效范围内");
+        DLinkNode&lt;E&gt; p=geti(i);
+        p.data=e;
+    }
 
     </div>
 
@@ -689,16 +855,27 @@
     class         = "step markdown"
     data-rel-to   = "a31"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据加密
+### GetNo(E e)
 
-- 利用特定的算法
-- 将原始数据 (明文)
-- 转换为不可直接识别的格式 (密文)
+    public int GetNo(E e)
+    {
+        int j=0;
+        DLinkNode&lt;E&gt; p=dhead.next;
+        while (p!=null && !p.data.equals(e))
+        {
+            j++;
+            p=p.next;
+        }
+        if (p==null)
+            return -1;
+        else
+            return j;
+    }
 
     </div>
 
@@ -707,32 +884,40 @@
     class         = "step markdown"
     data-rel-to   = "a32"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数据加密
+### toString()
 
-- 存储加密
-- 传输加密
+    {
+        String ans="";
+        DLinkNode&lt;E&gt; p=dhead.next;
+        while (p!=null)
+        {
+            ans+=p.data+" ";
+            p=p.next;
+        }
+        return ans;
+    }
 
     </div>
 
     <div 
     id            = "a34"
     class         = "step markdown"
-    data-rel-to   = "a33"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-to   = "c93t"
+    data-rel-x    = "-800"
+    data-rel-y    = "2100"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 存储加密
+### 循环链表
 
-- 透明存储加密
-- 非透明存储加密
+- 循环单链表
+- 循环双链表
 
     </div>
 
@@ -741,15 +926,15 @@
     class         = "step markdown"
     data-rel-to   = "a34"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 透明存储加密
+### 循环单链表
 
-- 在内核级别加密
-- 对用户完全透明
+- head.next = head;
+- p.next == head;
 
     </div>
 
@@ -758,15 +943,15 @@
     class         = "step markdown"
     data-rel-to   = "a35"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 传输加密
+### 循环双链表
 
-- 链路加密
-- 端到端加密
+- dhead.prior = dhead;
+- dhead.next = dhead;
 
     </div>
 
@@ -775,57 +960,70 @@
     class         = "step markdown"
     data-rel-to   = "a36"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 链路加密
-
-- 对传输数据在链路层加密
-- 同时加密报头和报文
+## 9.4 顺序表和链表的比较
 
     </div>
+
 
     <div 
     id            = "a38"
     class         = "step markdown"
     data-rel-to   = "a37"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 端到端加密
+### 基于空间考虑
 
-- 在发送端加密
-- 在接收端解密
-- 只加密报文
-- 不加密报头
+- 顺序表存储密度高
+- 顺序表需要预先分配空间
+
+    </div>
+
+    <div 
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "700"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 基于时间考虑
+
+- 顺序表查找的时间复杂度为 $O(1)$
+- 链表插入和删除的时间复杂度为 $O(1)$
 
     </div>
 
     <div
-    id            = "mm61"
+    id            = "mm93"
     class         = "step markdown"
-    data-rel-to   = "c61t"
+    data-rel-to   = "c93t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 6.1 mindmap](img/c06/mindmap-6-1.png)
+![course 9.3 mindmap](img/c09/mindmap-9-3.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c61q"
+    id            = "c93q"
     class         = "step markdown"
-    data-rel-to   = "c61t"
+    data-rel-to   = "c93t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -834,20 +1032,19 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 6.1 数据库安全性
+### 9.3 线性表的链式存储结构
 
-- 什么是数据库安全性?
-- 列举三种用户身份鉴别的方式.
-- GRANT 语句和 REVOKE 语句分别用于什么?
-- 什么是 WITH GRANT OPTION, 它有什么用途?
-- 视图如何帮助实现数据的安全?
-- 审计日志中通常记录哪些类型的事件?
+- 数据成员用来存储什么类型的信息?
+- 指针成员在单向链表和双向链表中有什么不同?
+- 头结点和头指针有什么不同?
+- 在双链表中, 如何访问一个节点的后继结点?
+- 顺序表和链表在时间和空间复杂度上有什么区别?
 
 ----
 
-[ 5.6 数据库的实施和维护](dbds-5-2.html#/a44)
+[ 9.1 线性表的定义](dbds-9-1.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 6.2 数据库完整性](dbds-6-2.html#/overview)
+[ 9.5 栈](dbds-9-5.html#/overview)
 
     </div>
 
