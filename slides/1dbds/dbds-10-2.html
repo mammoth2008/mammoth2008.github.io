@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c95t"
+    id         = "c102t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>9. 线性表</h2>
-        <h3 style="text-align: center">9.5 栈</h3>
+        <h2>10. 树</h2>
+        <h3 style="text-align: center">10.2 二叉树</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,39 +99,34 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "-1200"
-    data-rel-y    = "-1900"
+    data-rel-to   = "c102t"
+    data-rel-x    = "-200"
+    data-rel-y    = "-450"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的定义
+### 二叉树 Binary Tree
 
-- 只能在一端进行插入和删除操作的线性表
-- 允许插入和删除的一端称为栈顶 (top)
-- 另一端称为栈底 (bottom)
-- 栈顶的位置是变化的
-- 栈底的位置是固定的
-- 栈的插入操作叫做进栈 (push)
-- 栈的删除操作叫做出栈 (pop)
+- 有限的结点集合
+- 或为空
+- 或由一个根结点和两棵二叉树组成
+- 这两个二叉树称为左子树和右子树
 
     </div>
 
-    <div 
+    <div
     id            = "a2"
     class         = "step markdown"
     data-rel-to   = "a1"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "-400"
+    data-rel-y    = "100"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的特点
-
-- 后进先出 (LIFO, Last In First Out)
-- 栈的插入和删除操作只能在栈顶进行
+![Binary Tree](img/c10/binary-tree.png)
+#### Binary Tree
 
     </div>
 
@@ -140,25 +135,15 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "900"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的抽象数据类型
+### 二叉树和树的区别
 
-    ADT Stack {
-    数据对象
-$ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, 元素 a\_i 为 E 类型 \rbrace $
-
-    数据关系
-$ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $
-
-    基本运算
-        boolean empty();
-        void push(E e)
-        E pop();
-        E peek() }
+- 度为 $ 2 $ 的树至少有一个结点的度为 $ 2 $
+- 度为 $ 2 $ 的数中度为 $ 1 $ 的结点不区分左右
 
     </div>
 
@@ -166,18 +151,26 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a4"
     class         = "step markdown"
     data-rel-to   = "a3"
-    data-rel-x    = "0"
+    data-rel-x    = "-1600"
     data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的顺序存储结构
+### 二叉树的抽象数据结构
 
-- 使用 `data&lt;E&gt;` 存放栈中元素
-- 使用 `top` 指示栈顶元素在 data 中的位置
-- 顺序存储的栈称作顺序栈
-- 空栈时 `top = -1`
+    ADT BTree {
+    数据对象
+$ D = \lbrace a\_i | 0 \leq i \leq n - 1, n \geq 0,  a\_i \in ElemSet \rbrace $
+
+    数据关系
+$ r = \lbrace &lt; a\_i, a\_j &gt; | a\_i, a\_j \in D, 0 \leq i, j \leq n - 1 \rbrace $
+
+    基本运算
+    void CreateBTree(string str)
+    String toString()
+    BTNode FindNode(x)
+    int Height() }
 
     </div>
 
@@ -185,110 +178,79 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a5"
     class         = "step markdown"
     data-rel-to   = "a4"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-x    = "2400"
+    data-rel-y    = "-400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 顺序栈的基本要素
+### 二叉树的类型
 
-- 栈空的条件是 `top == -1`
-- 栈满的条件是 `top == capacity - 1`
-- 进栈操作是 `top = top + 1; data[top] = e;`
-- 出栈操作是 `e = data[top]; top = top - 1;`
+- 完满二叉树 Full Binary Tree
+- 退化二叉树 Degenerate Binary Tree
+- 平衡二叉树 Balanced Binary Tree
+- 满二叉树 Perfect Binary Tree
+- 完全二叉树 Complete Binary Tree
 
     </div>
 
-    <div 
+    <div
     id            = "a6"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "100"
-    data-rel-y    = "1500"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "50"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SqStackClass&lt;E&gt;
-
-    public class SqStackClass&lt;E&gt;
-    {
-        final int initcapacity=10;
-        private int capacity;
-        private E[] data;
-        private int top;
-        public SqStackClass()
-        {
-            data = (E[])new Object[initcapacity];
-            capacity=initcapacity;
-            top=-1;
-        }
-    }
+![Full Binary Tree](img/c10/full-binary-tree.png)
+#### Full Binary Tree
 
     </div>
 
-    <div 
+    <div
     id            = "a7"
     class         = "step markdown"
     data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### updatecapacity(int newcapacity)
-
-    private void updatecapacity(int newcapacity)
-    {
-        E[] newdata = (E[])new Object[newcapacity];
-        for (int i=0;i&lt;top;i++)
-            newdata[i]=data[i];
-        capacity=newcapacity;
-        data=newdata;
-    }
+![Degenerate Binary Tree](img/c10/degenerate-binary-tree.png)
+#### Degenerate Binary Tree
 
     </div>
 
-    <div 
+    <div
     id            = "a8"
     class         = "step markdown"
     data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### empty()
-
-    public boolean empty()
-    {
-        return top==-1;
-    }
+![Balanced Binary Tree](img/c10/balanced-binary-tree.png)
+#### Balanced Binary Tree
 
     </div>
 
-    <div 
+    <div
     id            = "a9"
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### push(E e)
-
-    public void push(E e)
-    {
-        if (top==capacity-1)
-            updatecapacity(2*(top+1));
-        top++;
-        data[top]=e;
-    }
+![Perfect Binary Tree](img/c10/perfect-binary-tree.png)
+#### Perfect Binary Tree
 
     </div>
 
@@ -297,44 +259,34 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1050"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### pop()
+### 满二叉树
 
-    public E pop()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)data[top];
-        top--;
-        if (top+1&gt;initcapacity && top+1==capacity/4)
-            updatecapacity(capacity/2);
-        return e;
-    }
+- 叶子结点都在最下一层
+- 只有度为 $ 0 $ 和 $ 2 $ 的结点
+- 结点数 $ n = 2^h - 1 $, $ h $ 为高度
+- 结点数为 $ n $ 的满二叉树高度为 $ h = \lfloor log\_2(n + 1) \rfloor $
+- 结点数为 $ n $ 的满二叉树叶子结点个数为 $ \lfloor \frac{n}{2} \rfloor + 1 $
+- 结点数为 $ n $ 的满二叉树度为 $ 2 $ 的结点个数为 $ \lfloor \frac{n}{2} \rfloor $
 
     </div>
 
-    <div 
+    <div
     id            = "a11"
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "100"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### peek()
-
-    public E peek()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        return (E)data[top];
-    }
+![Complete Binary Tree](img/c10/complete-binary-tree.png)
+#### Complete Binary Tree
 
     </div>
 
@@ -343,36 +295,34 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1100"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### toString()
+### 完全二叉树
 
-    public String toString()
-    {
-        String ans="";
-        for (int i=0;i&lt;=top;i++)
-            ans+=data[i].toString()+" ";
-        return ans;
-    }
+- 叶子结点都在最下一层或倒数第二层
+- 叶子结点都向左靠拢
+- 最多有一个度为 $ 1 $ 的结点
+- 度为 $ 1 $ 的结点最多只有左孩子
+- 按层序编号后, 若出现某结点为叶子结点或只有左孩子, 则其后的结点都为叶子结点
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "1800"
-    data-rel-y    = "-2200"
+    data-rel-to   = "c102t"
+    data-rel-x    = "2100"
+    data-rel-y    = "-1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的链式存储结构
+### 二叉树的性质 1
 
-- 使用单链表存放栈中元素
+- 非空二叉树上叶子结点数等于双分支结点数加 $ 1 $
 
     </div>
 
@@ -381,17 +331,14 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a13"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 链栈的基本要素
+### 二叉树的性质 2
 
-- 栈空的条件是 `head.next == null`
-- 通常不考虑溢出
-- 进栈操作是将插入的结点作为首结点
-- 出栈操作是返回首结点值并删除首结点
+- 非空二叉树的第 $ i $ 层上至多有 $ 2^{i - 1} $ 个结点
 
     </div>
 
@@ -400,27 +347,14 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### LinkNode&lt;E&gt;
+### 二叉树的性质 3
 
-    class LinkNode&lt;E&gt;
-    {
-        E data;
-        LinkNode&lt;E&gt; next;
-        public LinkNode()
-        {
-            next=null;
-        }
-        public LinkNode(E d)
-        {
-            data=d;
-            next=null;
-        }
-    }
+- 高度为 $ h $ 的二叉树至多有 $ 2^h - 1 $ 个结点
 
     </div>
 
@@ -429,22 +363,20 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "840"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### LinkStackClass&lt;E&gt;
+### 二叉树的性质 4
 
-    public class LinkStackClass&lt;E&gt;
-    {
-        LinkNode&lt;E&gt; head;
-        public LinkStackClass()
-        {
-            head=new LinkNode&lt;E&gt;();
-            head.next=null;
-        }
-    }
+- 对完全二叉树中层序编号为 $ i $ 的结点, 有:
+- 若 $ i \leq \lfloor \frac{n}{2} \rfloor $, 则为分支结点, 否则为叶子结点
+- 若 $ n $ 为奇数则每个分支结点都是度为 $ 2 $ 的结点
+- 若 $ n $ 为偶数则编号为 $ \lfloor \frac{n}{2} \rfloor $ 的结点是度为 $ 1 $ 的结点
+- 若 $ i $ 结点有左孩子, 则其左孩子的编号为 $ 2i $
+- 若 $ i $ 结点有右孩子, 则其右孩子的编号为 $ 2i + 1 $
+- 若 $ i = 1 $, 则为根, 否则其双亲为 $ \lfloor \frac{i}{2} \rfloor $
 
     </div>
 
@@ -453,61 +385,60 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "850"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### empty()
+### 二叉树的性质 5
 
-    public boolean empty()
-    {
-        return head.next==null;
-    }
+- 具有 $ n $ 个结点的完全二叉树的高度为 $ \lceil log\_2(n + 1) \rceil $ 或 $ \lfloor log\_2(n) \rfloor + 1 $
+
+    </div>
+
+    <div 
+    id            = "a17a"
+    class         = "step markdown"
+    data-rel-to   = "c102t"
+    data-rel-x    = "-2200"
+    data-rel-y    = "-3000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+## 10.3 二叉树的存储结构
 
     </div>
 
     <div 
     id            = "a18"
     class         = "step markdown"
-    data-rel-to   = "a17"
+    data-rel-to   = "a17a"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### push(E e)
+### 二叉树的存储结构
 
-    public void push(E e)
-    {
-        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
-        s.next=head.next;
-        head.next=s;
-    }
+- 顺序存储结构
+- 链式存储结构
 
     </div>
 
-    <div 
+    <div
     id            = "a19"
     class         = "step markdown"
     data-rel-to   = "a18"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "-400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### pop()
-
-    public E pop()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)head.next.data;
-        head.next=head.next.next;
-        return e;
-    }
+![Sequential Storage](img/c10/btree-sequential.png)
+#### Sequential Storage
 
     </div>
 
@@ -521,67 +452,95 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     data-rotate-y = "0"
     data-scale    = "2">
 
-### peek()
+### 二叉树的顺序存储结构
 
-    public E peek()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)head.next.data;
-        return e;
-    }
+- 补全成完全二叉树
+- 按层序编号
+- 空结点用特殊值表示
+- 编号为 $ i $ 的结点的双亲编号为 $ \lfloor \frac{i}{2} \rfloor $
+- 编号为 $ i $ 的结点的层次为 $ \lceil log\_2(i + 1) \rceil $
 
     </div>
 
-    <div 
+    <div
     id            = "a21"
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### toString()
+![Linked Storage](img/c10/btree-linked.jpeg)
+#### Linked Storage
 
-    public String toString()
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 二叉树的链式存储结构
+
+- 数据元素
+- 左孩子结点指针
+- 右孩子结点指针
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### BTNode &lt;E&gt;
+
+    class BTNode &lt;E&gt;
     {
-        String ans="";
-        if (!empty())
-        {
-            LinkNode&lt;E&gt; p=head.next;
-            while (p!=null)
-            {
-                ans+=p.data+" ";
-                p=p.next;
-            }
-        }
-        return ans;
+        E data;
+        BTNode lchild;
+        BTNode rchild;
+        public BTNode()
+        {    lchild = rchild = null; }
+        public BTNode(E d)
+        {    data = d;
+             lchild = rchild = null; }
     }
 
     </div>
 
     <div
-    id            = "mm95"
+    id            = "mm102"
     class         = "step markdown"
-    data-rel-to   = "c95t"
+    data-rel-to   = "c102t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 9.5 mindmap](img/c09/mindmap-9-5.png)
+![course 10.2 mindmap](img/c10/mindmap-10-2.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c95q"
+    id            = "c102q"
     class         = "step markdown"
-    data-rel-to   = "c95t"
+    data-rel-to   = "c102t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -590,20 +549,19 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 9.5 栈
+### 10.2 二叉树
 
-- 栈在数据结构中是如何定义的?
-- 描述栈的后进先出 (LIFO) 特性.
-- 进栈和出栈具体是指什么?
-- 顺序栈和链栈有什么区别?
-- 空栈时, 栈顶指针 top 应该指向什么位置?
-- 在链栈中, 栈空的条件是什么?
+- 有三个结点的二叉树至少有几个叶子结点?
+- 满二叉树与完全二叉树有何区别?
+- 在完全二叉树中, 如何找到一个结点的父结点?
+- 在二叉树的顺序存储结构中, 如何标识空结点?
+- 二叉链中某结点的左孩子指针为空, 说明了什么?
 
 ----
 
-[ 9.3 线性表的链式存储结构](dbds-9-3.html#/overview)
+[ 10.1 树](dbds-10-1.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 9.6 队列](dbds-9-6.html#/overview)
+[ 10.4 二叉树的遍历](dbds-10-4.html#/overview)
 
     </div>
 

@@ -6,7 +6,7 @@
   Version: 2021.09.0
 */pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}
 .hljs{
-    font-family: "CONSOLA", consolas, "Inconsolata-Regular", Inconsolata, "Cutive mono", "Courier New", monospace;
+    font-family: "Inconsolata-Regular", Inconsolata, "CONSOLA", consolas, "Cutive mono", "Courier New", monospace;
     font-size: 28px;
 }
 /*.hljs{color:#586e75;

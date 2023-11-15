@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c95t"
+    id         = "c101t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -75,8 +75,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>9. 线性表</h2>
-        <h3 style="text-align: center">9.5 栈</h3>
+        <h2>10. 树和二叉树</h2>
+        <h3 style="text-align: center">10.1 树的基本概念</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,22 +99,20 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "-1200"
-    data-rel-y    = "-1900"
+    data-rel-to   = "c101t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的定义
+### 树的定义
 
-- 只能在一端进行插入和删除操作的线性表
-- 允许插入和删除的一端称为栈顶 (top)
-- 另一端称为栈底 (bottom)
-- 栈顶的位置是变化的
-- 栈底的位置是固定的
-- 栈的插入操作叫做进栈 (push)
-- 栈的删除操作叫做出栈 (pop)
+- 由 $ n(n \geq 0) $ 个结点组成的有限集合 $ T $
+- 当 $ n = 0 $ 时称为空树
+- 在非空树中有且仅有一个根 (Root) 结点
+- 其余结点可以分为 $ m(m \geq 0) $ 个互不相交的有限集 $ T\_1, T\_2, \cdots, T\_m $
+- 其中每个集合称为根的子树 (SubTree)
 
     </div>
 
@@ -128,10 +126,13 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的特点
+### 树的特点
 
-- 后进先出 (LIFO, Last In First Out)
-- 栈的插入和删除操作只能在栈顶进行
+- 每个结点有零个或多个后继结点
+- 每个结点有且只有一个前驱结点 (根节点例外)
+- 数据结点按分支关系组织
+- 反映数据元素的层次关系
+- 反映数据元素的一对多关系
 
     </div>
 
@@ -140,25 +141,26 @@
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的抽象数据类型
+### 树的抽象数据类型
 
-    ADT Stack {
+    ADT Tree
+    {
     数据对象
-$ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, 元素 a\_i 为 E 类型 \rbrace $
+$ D = \lbrace a\_i | 0 \leq i \leq n - 1, n \geq 0, a\_i 为 E 类型 \rbrace $
 
     数据关系
-$ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $
+$ r = \lbrace &lt; a\_i, a\_j &gt; | a\_i, a\_j \in D, 0 \leq i, j \leq n - 1 \rbrace $
 
     基本运算
-        boolean empty();
-        void push(E e)
-        E pop();
-        E peek() }
+        boolean CreateTree()
+        String toString()
+        E GetParent(int i)
+    }
 
     </div>
 
@@ -172,59 +174,46 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的顺序存储结构
+### 树的逻辑结构表示方法
 
-- 使用 `data&lt;E&gt;` 存放栈中元素
-- 使用 `top` 指示栈顶元素在 data 中的位置
-- 顺序存储的栈称作顺序栈
-- 空栈时 `top = -1`
+- 树形表示法
+- 文氏图表示法
+- 凹入表示法
+- 括号表示法
 
     </div>
 
-    <div 
+    <div
     id            = "a5"
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 顺序栈的基本要素
-
-- 栈空的条件是 `top == -1`
-- 栈满的条件是 `top == capacity - 1`
-- 进栈操作是 `top = top + 1; data[top] = e;`
-- 出栈操作是 `e = data[top]; top = top - 1;`
+![Tree](img/c10/tree.png)
+#### Tree
 
     </div>
 
     <div 
     id            = "a6"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "100"
-    data-rel-y    = "1500"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SqStackClass&lt;E&gt;
+### 树的基本术语
 
-    public class SqStackClass&lt;E&gt;
-    {
-        final int initcapacity=10;
-        private int capacity;
-        private E[] data;
-        private int top;
-        public SqStackClass()
-        {
-            data = (E[])new Object[initcapacity];
-            capacity=initcapacity;
-            top=-1;
-        }
-    }
+- 结点的度 Degree: 某个结点的子树的个数
+- 树的度: 数中结点度的最大值
+- 分支结点 Internal Nodes: 度不为零的结点
+- 终端结点 Leaf Nodes: 度为零的结点
 
     </div>
 
@@ -233,21 +222,13 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### updatecapacity(int newcapacity)
-
-    private void updatecapacity(int newcapacity)
-    {
-        E[] newdata = (E[])new Object[newcapacity];
-        for (int i=0;i&lt;top;i++)
-            newdata[i]=data[i];
-        capacity=newcapacity;
-        data=newdata;
-    }
+- 路径 Path: 从任意两个结点 $ a\_i $ 到 $ a\_j $ 的路径是一个结点序列 $ a\_i, a\_{i+1}, a\_{i+2}, \cdots, a\_j $
+- 路径的长度 Length: 路径上的结点数目 $ -1 $
 
     </div>
 
@@ -256,17 +237,14 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "500"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### empty()
-
-    public boolean empty()
-    {
-        return top==-1;
-    }
+- 孩子结点 Child: 结点 $ a\_i $ 的后继结点称为 $ a\_i $ 的孩子结点
+- 双亲结点 Parent: 结点 $ a\_i $ 是结点 $ a\_j $ 的孩子结点, 则称 $ a\_j $ 是 $ a\_i $ 的双亲结点
+- 兄弟结点 Siblings: 具有同一双亲结点的结点互称为兄弟结点
 
     </div>
 
@@ -275,20 +253,13 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a8"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "490"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### push(E e)
-
-    public void push(E e)
-    {
-        if (top==capacity-1)
-            updatecapacity(2*(top+1));
-        top++;
-        data[top]=e;
-    }
+- 结点的层次 Level: 根结点的层次为 $ 1 $, 其余结点的层次等于该结点的双亲结点的层次加 $ 1 $
+- 树的高度 Height: 结点的最大层次
 
     </div>
 
@@ -297,44 +268,30 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "420"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### pop()
-
-    public E pop()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)data[top];
-        top--;
-        if (top+1&gt;initcapacity && top+1==capacity/4)
-            updatecapacity(capacity/2);
-        return e;
-    }
+- 有序树 Ordered Tree: 树中结点的各子树从左到右是有次序的
+- 无序树 Unordered Tree: 树中结点的各子树从左到右是无次序的
+- 森林 Forest: $ m(m \geq 0) $ 棵互不相交的树的集合
 
     </div>
 
     <div 
     id            = "a11"
     class         = "step markdown"
-    data-rel-to   = "a10"
+    data-rel-to   = "c101t"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "-3250"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### peek()
+### 树的性质 1
 
-    public E peek()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        return (E)data[top];
-    }
+- 树中结点的个数等于所有结点的度数加 $ 1 $
 
     </div>
 
@@ -343,36 +300,30 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a11"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### toString()
+### 树的性质 2
 
-    public String toString()
-    {
-        String ans="";
-        for (int i=0;i&lt;=top;i++)
-            ans+=data[i].toString()+" ";
-        return ans;
-    }
+- 度为 $ m $ 的树中第 $ i $ 层上最多有 $ m^{i-1} $ 个结点 $ (i \geq 1) $
 
     </div>
 
     <div 
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "1800"
-    data-rel-y    = "-2200"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的链式存储结构
+### 树的性质 3
 
-- 使用单链表存放栈中元素
+- 高度为 $ h $ 的 $ m $ 次树最多有 $ \frac{m^h - 1}{m - 1} $ 个结点 $ (h \geq 1, m \geq 2) $
 
     </div>
 
@@ -381,17 +332,14 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a13"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 链栈的基本要素
+### 树的性质 4
 
-- 栈空的条件是 `head.next == null`
-- 通常不考虑溢出
-- 进栈操作是将插入的结点作为首结点
-- 出栈操作是返回首结点值并删除首结点
+- 具有 $ n $ 个结点的 $ m $ 次树的最小高度为 $ \lceil log_m(n(m - 1) + 1) \rceil $, 其中 $ \lceil x \rceil $ 表示不小于 $ x $ 的最小整数 (Ceiling)
 
     </div>
 
@@ -399,28 +347,17 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a15"
     class         = "step markdown"
     data-rel-to   = "a14"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "00"
+    data-rel-y    = "2000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### LinkNode&lt;E&gt;
+### 树的基本运算
 
-    class LinkNode&lt;E&gt;
-    {
-        E data;
-        LinkNode&lt;E&gt; next;
-        public LinkNode()
-        {
-            next=null;
-        }
-        public LinkNode(E d)
-        {
-            data=d;
-            next=null;
-        }
-    }
+- 查找
+- 插入或删除
+- 遍历
 
     </div>
 
@@ -429,62 +366,48 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### LinkStackClass&lt;E&gt;
+### 遍历
 
-    public class LinkStackClass&lt;E&gt;
-    {
-        LinkNode&lt;E&gt; head;
-        public LinkStackClass()
-        {
-            head=new LinkNode&lt;E&gt;();
-            head.next=null;
-        }
-    }
+- 深度优先, DFS, Depth First Search
+- 广度优先, BFS, Breath First Search
 
     </div>
 
-    <div 
+    <div
     id            = "a17"
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### empty()
-
-    public boolean empty()
-    {
-        return head.next==null;
-    }
+![DFS & BFS](img/c10/dfs-and-bfs.gif)
+#### DFS & BFS
 
     </div>
 
     <div 
     id            = "a18"
     class         = "step markdown"
-    data-rel-to   = "a17"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "c101t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-3140"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### push(E e)
+### 树的遍历
 
-    public void push(E e)
-    {
-        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
-        s.next=head.next;
-        head.next=s;
-    }
+- 先根遍历
+- 后根遍历
+- 层次遍历
 
     </div>
 
@@ -493,43 +416,30 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a18"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### pop()
+### 先根遍历
 
-    public E pop()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)head.next.data;
-        head.next=head.next.next;
-        return e;
-    }
+- 访问根结点
+- 按照从左到右的顺序先根遍历根的各棵子树
 
     </div>
 
-    <div 
+    <div
     id            = "a20"
     class         = "step markdown"
     data-rel-to   = "a19"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### peek()
-
-    public E peek()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)head.next.data;
-        return e;
-    }
+![PreOrder Traversal](img/c10/preorder.gif)
+#### PreOrder Traversal
 
     </div>
 
@@ -538,50 +448,157 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### toString()
+### 后根遍历
 
-    public String toString()
-    {
-        String ans="";
-        if (!empty())
-        {
-            LinkNode&lt;E&gt; p=head.next;
-            while (p!=null)
-            {
-                ans+=p.data+" ";
-                p=p.next;
-            }
-        }
-        return ans;
-    }
+- 按照从左到右的顺序后根遍历根的各棵子树
+- 访问根结点
 
     </div>
 
     <div
-    id            = "mm95"
+    id            = "a22"
     class         = "step markdown"
-    data-rel-to   = "c95t"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![PostOrder Traversal](img/c10/postorder.gif)
+#### PostOrder Traversal
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 层次遍历
+
+- 从根节点开始
+- 从上到下逐层遍历
+
+    </div>
+
+    <div
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![LevelOrder Traversal](img/c10/levelorder.gif)
+#### LevelOrder Traversal
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 树的存储结构
+
+- 双亲存储结构
+- 孩子链存储结构
+- 孩子兄弟链存储结构
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 双亲存储结构
+
+- 顺序存储结构
+- 每个结点都有一个伪指针
+- 指向其双亲结点在数组中的位置
+- 根节点指针为 $ -1 $
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 孩子链存储结构
+
+- 每个结点包含数据和指针
+- 指针指向所有孩子结点
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 孩子兄弟链存储结构
+
+- 每个结点包含数据和两个指针
+- 第一个指针指向第一个孩子结点
+- 第二个指针指向下一个兄弟结点
+
+    </div>
+
+    <div
+    id            = "mm101"
+    class         = "step markdown"
+    data-rel-to   = "c101t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 9.5 mindmap](img/c09/mindmap-9-5.png)
+![course 10.1 mindmap](img/c10/mindmap-10-1.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c95q"
+    id            = "c101q"
     class         = "step markdown"
-    data-rel-to   = "c95t"
+    data-rel-to   = "c101t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -590,20 +607,20 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 9.5 栈
+### 10.1 树的基本概念
 
-- 栈在数据结构中是如何定义的?
-- 描述栈的后进先出 (LIFO) 特性.
-- 进栈和出栈具体是指什么?
-- 顺序栈和链栈有什么区别?
-- 空栈时, 栈顶指针 top 应该指向什么位置?
-- 在链栈中, 栈空的条件是什么?
+- 某个结点的度是 3, 这个结点具有多少个子树?
+- 哪种遍历方法会先访问根结点再递归访问左右子树?
+- 如果一棵树有 7 个结点, 最多可能有几个分支结点?
+- 在树的双亲存储结构中, 根节点的伪指针值是多少?
+- 一棵树所有结点的度数和为 20, 树有多少个结点?
+- 描述孩子兄弟链存储结构中的指针分配.
 
 ----
 
-[ 9.3 线性表的链式存储结构](dbds-9-3.html#/overview)
+[ 9.7 递归](dbds-9-7.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 9.6 队列](dbds-9-6.html#/overview)
+[ 10.2 二叉树](dbds-10-2.html#/overview)
 
     </div>
 

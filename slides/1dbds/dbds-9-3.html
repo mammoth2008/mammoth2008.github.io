@@ -217,9 +217,9 @@
     {
         if (i&lt;0 || i&gt;size())
             throw new IllegalArgumentException
-			("插入:位置i不在有效范围内");
+            ("插入:位置i不在有效范围内");
         LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
-        LinkNode&lt;E&gt; p=head=geti(i-1);
+        LinkNode&lt;E&gt; p=geti(i-1);
         s.next=p.next;
         p.next=s;
     }
@@ -242,7 +242,7 @@
     {
         if (i&lt;0 || i&gt;size()-1)
             throw new IllegalArgumentException
-			("删除:位置i不在有效范围内");
+            ("删除:位置i不在有效范围内");
         LinkNode&lt;E&gt; p=geti(i-1);
         p.next=p.next.next;
     }
@@ -291,7 +291,7 @@
         LinkNode&lt;E&gt; s,t;
         t=head;
         for (int i=0;i&lt;a.length;i++)
-		{
+        {
             s=new LinkNode&lt;E&gt;(a[i]);
             t.next=s;
             t=s;
@@ -393,7 +393,7 @@
         int len=size();
         if (nlen&lt;0 || nlen&gt;len)
             throw new IllegalArgumentException
-			("设置长度:n不在有效范围内");
+            ("设置长度:n不在有效范围内");
         if (nlen==len) return;
         LinkNode&lt;E&gt; p=geti(nlen-1);
         p.next=null;
@@ -418,7 +418,7 @@
         int len=size();
         if (i&lt;0 || i&gt;len-1)
             throw new IllegalArgumentException
-			("查找:位置i不在有效范围内");
+            ("查找:位置i不在有效范围内");
         LinkNode&lt;E&gt; p=geti(i);
         return (E)p.data;
     }
@@ -441,7 +441,7 @@
     {
         if (i&lt;0 || i&gt;size()-1)
             throw new IllegalArgumentException
-			("设置:位置i不在有效范围内");
+            ("设置:位置i不在有效范围内");
         LinkNode&lt;E&gt; p=geti(i);
         p.data=e;
     }
@@ -611,7 +611,7 @@
     {
         if (i&lt;0 || i&gt;size())
             throw new IllegalArgumentException
-			("插入:位置i不在有效范围内");
+            ("插入:位置i不在有效范围内");
         DLinkNode&lt;E&gt; s=new DLinkNode&lt;E&gt;(e);
         DLinkNode&lt;E&gt; p=dhead=geti(i-1);
         s.next=p.next;
@@ -639,7 +639,7 @@
     {
         if (i&lt;0 || i&gt;size()-1)
             throw new IllegalArgumentException
-			("删除:位置i不在有效范围内");
+            ("删除:位置i不在有效范围内");
         DLinkNode&lt;E&gt; p=geti(i);
         p.prior.next=p.next;
         if (p.next!=null)
@@ -795,7 +795,7 @@
         int len=size();
         if (nlen&lt;0 || nlen&gt;len)
             throw new IllegalArgumentException
-			("设置长度:n不在有效范围内");
+            ("设置长度:n不在有效范围内");
         if (nlen==len) return;
         DLinkNode&lt;E&gt; p=geti(nlen-1);
         p.next=null;
@@ -820,7 +820,7 @@
         int len=size();
         if (i&lt;0 || i&gt;len-1)
             throw new IllegalArgumentException
-			("查找:位置i不在有效范围内");
+            ("查找:位置i不在有效范围内");
         DLinkNode&lt;E&gt; p=geti(i);
         return (E)p.data;
     }
@@ -843,7 +843,7 @@
     {
         if (i&lt;0 || i&gt;size()-1)
             throw new IllegalArgumentException
-			("设置:位置i不在有效范围内");
+            ("设置:位置i不在有效范围内");
         DLinkNode&lt;E&gt; p=geti(i);
         p.data=e;
     }
@@ -933,7 +933,7 @@
 
 ### 循环单链表
 
-- head.next = head;
+- head.next == head;
 - p.next == head;
 
     </div>
@@ -950,8 +950,8 @@
 
 ### 循环双链表
 
-- dhead.prior = dhead;
-- dhead.next = dhead;
+- dhead.prior == dhead;
+- dhead.next == dhead;
 
     </div>
 

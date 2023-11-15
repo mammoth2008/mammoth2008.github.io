@@ -67,7 +67,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c95t"
+    id         = "c97t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -76,7 +76,7 @@
 
     <!-- 修改标题 -->
         <h2>9. 线性表</h2>
-        <h3 style="text-align: center">9.5 栈</h3>
+        <h3 style="text-align: center">9.7 递归</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -99,22 +99,17 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "-1200"
-    data-rel-y    = "-1900"
+    data-rel-to   = "c97t"
+    data-rel-x    = "-1900"
+    data-rel-y    = "-200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的定义
+### 递归 Recursion
 
-- 只能在一端进行插入和删除操作的线性表
-- 允许插入和删除的一端称为栈顶 (top)
-- 另一端称为栈底 (bottom)
-- 栈顶的位置是变化的
-- 栈底的位置是固定的
-- 栈的插入操作叫做进栈 (push)
-- 栈的删除操作叫做出栈 (pop)
+- 一个过程或函数在其定义或说明中直接或间接调用自身的一种方法
+- 通常把一个大型复杂问题层层转化为一个与原问题相似的规模较小的问题来求解
 
     </div>
 
@@ -123,15 +118,17 @@
     class         = "step markdown"
     data-rel-to   = "a1"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的特点
+### 递归的数学原理
 
-- 后进先出 (LIFO, Last In First Out)
-- 栈的插入和删除操作只能在栈顶进行
+- 数学归纳法
+- 证明当 $ n = 1 $ 时命题成立
+- 假设当 $ n = k - 1 $ 时命题成立
+- 证明当 $ n = k $ 时命题成立
 
     </div>
 
@@ -145,20 +142,13 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的抽象数据类型
+### 例
 
-    ADT Stack {
-    数据对象
-$ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, 元素 a\_i 为 E 类型 \rbrace $
-
-    数据关系
-$ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $
-
-    基本运算
-        boolean empty();
-        void push(E e)
-        E pop();
-        E peek() }
+- $$ 1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2} $$
+- 证明:
+- 1. 当 $ n = 1 $ 时，左边 $ = 1 $，右边 $ = \frac{1(1+1)}{2} = 1 $
+- 2. 假设当 $ n = k - 1 $ 时命题成立，即 $ 1 + 2 + 3 + \dots + (k - 1) = \frac { k ( k - 1 ) }{ 2 } $ 成立
+- 3. 当 $ n = k $ 时，左边 $ = 1 + 2 + 3 + \dots + k = \frac { k ( k - 1 ) }{ 2 } + k = \frac { k ( k - 1 ) }{ 2 } $，右边 $ = \frac { k ( k + 1 ) }{ 2 } $
 
     </div>
 
@@ -167,64 +157,56 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a3"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1400"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 栈的顺序存储结构
+### 递归的实现
 
-- 使用 `data&lt;E&gt;` 存放栈中元素
-- 使用 `top` 指示栈顶元素在 data 中的位置
-- 顺序存储的栈称作顺序栈
-- 空栈时 `top = -1`
+    int Fact(int n)
+    {
+    if (n == 0)
+        return 1;
+    else
+        return n * Fact(n - 1);
+    }
+
+- $ n! $ 的递归实现
 
     </div>
 
-    <div 
+    <div
     id            = "a5"
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 顺序栈的基本要素
-
-- 栈空的条件是 `top == -1`
-- 栈满的条件是 `top == capacity - 1`
-- 进栈操作是 `top = top + 1; data[top] = e;`
-- 出栈操作是 `e = data[top]; top = top - 1;`
+![n Factorial](img/c09/factorial.png)
+#### n Factorial
 
     </div>
 
     <div 
     id            = "a6"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "100"
-    data-rel-y    = "1500"
+    data-rel-to   = "c97t"
+    data-rel-x    = "0"
+    data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SqStackClass&lt;E&gt;
+### 递归的条件
 
-    public class SqStackClass&lt;E&gt;
-    {
-        final int initcapacity=10;
-        private int capacity;
-        private E[] data;
-        private int top;
-        public SqStackClass()
-        {
-            data = (E[])new Object[initcapacity];
-            capacity=initcapacity;
-            top=-1;
-        }
-    }
+- 问题可以转化为规模较小的同类问题
+- 递归调用的次数要有穷
+- 每次递归调用后问题规模应减少
+- 必须有结束递归的条件
 
     </div>
 
@@ -233,21 +215,15 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a6"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### updatecapacity(int newcapacity)
+### 递归的复杂度
 
-    private void updatecapacity(int newcapacity)
-    {
-        E[] newdata = (E[])new Object[newcapacity];
-        for (int i=0;i&lt;top;i++)
-            newdata[i]=data[i];
-        capacity=newcapacity;
-        data=newdata;
-    }
+- 空间复杂度 $ = $ 递归深度 $ \times $ 每次递归所需的辅助空间
+- 时间复杂度 $ = $ 每次递归所需时间 $ \times $ 递归调用次数
 
     </div>
 
@@ -256,17 +232,16 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a7"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### empty()
+### 递归的应用
 
-    public boolean empty()
-    {
-        return top==-1;
-    }
+- 定义是递归的
+- 数据结构是递归的
+- 求解方法是递归的
 
     </div>
 
@@ -274,67 +249,62 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a9"
     class         = "step markdown"
     data-rel-to   = "a8"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "400"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### push(E e)
+### 定义是递归的
 
-    public void push(E e)
+    int fib(int n)
     {
-        if (top==capacity-1)
-            updatecapacity(2*(top+1));
-        top++;
-        data[top]=e;
+    if (n == 1 || n == 2)
+        return 1;
+    else
+        return fib(n - 1) + fib(n - 2);
     }
+
+- 斐波那契数列
 
     </div>
 
-    <div 
+    <div
     id            = "a10"
     class         = "step markdown"
     data-rel-to   = "a9"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### pop()
-
-    public E pop()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)data[top];
-        top--;
-        if (top+1&gt;initcapacity && top+1==capacity/4)
-            updatecapacity(capacity/2);
-        return e;
-    }
+![Fibnoacci](img/c09/fibonacci.png)
+#### Fibnoacci Sequence
 
     </div>
 
     <div 
     id            = "a11"
     class         = "step markdown"
-    data-rel-to   = "a10"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "a8"
+    data-rel-x    = "-400"
+    data-rel-y    = "600"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### peek()
+### 数据结构是递归的
 
-    public E peek()
+    public static int Sum(LinkNode &lt;integer&gt; p)
     {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        return (E)data[top];
+        if(p == null)
+            return 0;
+        else
+            return p.data + Sum(p.next);
     }
+
+- 无头结点的单链表数据成员之和
 
     </div>
 
@@ -342,37 +312,33 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a12"
     class         = "step markdown"
     data-rel-to   = "a11"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "800"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### toString()
+### 求解方法是递归的
 
-    public String toString()
-    {
-        String ans="";
-        for (int i=0;i&lt;=top;i++)
-            ans+=data[i].toString()+" ";
-        return ans;
-    }
+- 汉诺塔问题 Hanoi Tower
+- 每次只能移动一个盘片
+- 盘片可以放在任何一根柱上
+- 任何时候大盘在下小盘在上
 
     </div>
 
-    <div 
+    <div
     id            = "a13"
     class         = "step markdown"
-    data-rel-to   = "c95t"
-    data-rel-x    = "1800"
-    data-rel-y    = "-2200"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "-100"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### 栈的链式存储结构
-
-- 使用单链表存放栈中元素
+![Hanoi Tower](img/c09/hanoi-tower.jpeg)
+#### Hanoi Tower
 
     </div>
 
@@ -381,70 +347,63 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a13"
     data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### 链栈的基本要素
+### 汉诺塔问题的递归实现
 
-- 栈空的条件是 `head.next == null`
-- 通常不考虑溢出
-- 进栈操作是将插入的结点作为首结点
-- 出栈操作是返回首结点值并删除首结点
+    void Hanoi(int n, char x, char y, char z)
+    {
+        if (n == 1)
+            System.out.printf
+            ("Move disk %d from %c to %c\n", n, x, z);
+        else
+        {
+            Hanoi(n - 1, x, z, y);
+            System.out.printf
+            ("Move disk %d from %c to %c\n", n, x, z);
+            Hanoi(n - 1, y, x, z);
+        }
+    }
 
     </div>
 
     <div 
     id            = "a15"
     class         = "step markdown"
-    data-rel-to   = "a14"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-to   = "c97t"
+    data-rel-x    = "1500"
+    data-rel-y    = "-300"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### LinkNode&lt;E&gt;
+### 递归模型
 
-    class LinkNode&lt;E&gt;
-    {
-        E data;
-        LinkNode&lt;E&gt; next;
-        public LinkNode()
-        {
-            next=null;
-        }
-        public LinkNode(E d)
-        {
-            data=d;
-            next=null;
-        }
-    }
+- $ n! $ 的递归模型
+$$
+\begin{align}
+f(n) & = 1, & n & = 0 \\\
+f(n) & = n * f(n - 1), & n & > 0
+\end{align}
+$$
 
     </div>
 
-    <div 
+    <div
     id            = "a16"
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### LinkStackClass&lt;E&gt;
-
-    public class LinkStackClass&lt;E&gt;
-    {
-        LinkNode&lt;E&gt; head;
-        public LinkStackClass()
-        {
-            head=new LinkNode&lt;E&gt;();
-            head.next=null;
-        }
-    }
+![n Factorial](img/c09/factorial.png)
+#### n Factorial
 
     </div>
 
@@ -453,38 +412,34 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### empty()
+### 递归模型
 
-    public boolean empty()
-    {
-        return head.next==null;
-    }
-
+- 斐波那契数列的递归模型
+$$
+\begin{align}
+f(n) & = 1, & n & = 1, 2 \\\
+f(n) & = f(n - 1) + f(n - 2), & n & > 2
+\end{align}
+$$
     </div>
 
-    <div 
+    <div
     id            = "a18"
     class         = "step markdown"
     data-rel-to   = "a17"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### push(E e)
-
-    public void push(E e)
-    {
-        LinkNode&lt;E&gt; s=new LinkNode&lt;E&gt;(e);
-        s.next=head.next;
-        head.next=s;
-    }
+![Fibnoacci](img/c09/fibonacci.png)
+#### Fibnoacci Sequence
 
     </div>
 
@@ -493,21 +448,15 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     class         = "step markdown"
     data-rel-to   = "a18"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### pop()
+### 递归模型的构成
 
-    public E pop()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)head.next.data;
-        head.next=head.next.next;
-        return e;
-    }
+- 递归出口
+- 递归体
 
     </div>
 
@@ -515,21 +464,16 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a20"
     class         = "step markdown"
     data-rel-to   = "a19"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "100"
+    data-rel-y    = "100"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### peek()
+### 递归出口
 
-    public E peek()
-    {
-        if (empty())
-            throw new IllegalArgumentException("栈空");
-        E e=(E)head.next.data;
-        return e;
-    }
+- 递归的终止条件
+- $ f(s\_1) = m\_1 $
 
     </div>
 
@@ -537,51 +481,57 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     id            = "a21"
     class         = "step markdown"
     data-rel-to   = "a20"
+    data-rel-x    = "400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "1">
+
+### 递归体
+
+- 递归的计算过程
+- $ f(n) $ 与 $ f(n - 1) $ 的关系
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "700"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### toString()
+### 递归的优缺点
 
-    public String toString()
-    {
-        String ans="";
-        if (!empty())
-        {
-            LinkNode&lt;E&gt; p=head.next;
-            while (p!=null)
-            {
-                ans+=p.data+" ";
-                p=p.next;
-            }
-        }
-        return ans;
-    }
+- 逻辑简单
+- 效率不高
+- 空间复杂度高
 
     </div>
 
     <div
-    id            = "mm95"
+    id            = "mm97"
     class         = "step markdown"
-    data-rel-to   = "c95t"
+    data-rel-to   = "c97t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 9.5 mindmap](img/c09/mindmap-9-5.png)
+![course 9.7 mindmap](img/c09/mindmap-9-7.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c95q"
+    id            = "c97q"
     class         = "step markdown"
-    data-rel-to   = "c95t"
+    data-rel-to   = "c97t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -590,20 +540,19 @@ $ r = \lbrace &lt;a\_i, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 9.5 栈
+### 9.7 递归
 
-- 栈在数据结构中是如何定义的?
-- 描述栈的后进先出 (LIFO) 特性.
-- 进栈和出栈具体是指什么?
-- 顺序栈和链栈有什么区别?
-- 空栈时, 栈顶指针 top 应该指向什么位置?
-- 在链栈中, 栈空的条件是什么?
+- 递归是如何实现自我调用的?
+- 当递归深度非常大时可能会遇到哪些问题?
+- 数学归纳法与递归在逻辑上有何相似性?
+- 描述一种递归的数据结构.
+- 在递归算法中如何确保递归会终止?
 
 ----
 
-[ 9.3 线性表的链式存储结构](dbds-9-3.html#/overview)
-[| 练习 |](dbds-exec.html)
 [ 9.6 队列](dbds-9-6.html#/overview)
+[| 练习 |](dbds-exec.html)
+[ 10.1 树的基本概念](dbds-10-1.html#/overview)
 
     </div>
 

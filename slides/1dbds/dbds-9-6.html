@@ -146,8 +146,7 @@
 
 ### 队列的抽象数据类型
 
-    ADT Queue
-    {
+    ADT Queue {
     数据对象
 $ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, A\_i 为 E 类型 \rbrace $
 
@@ -155,9 +154,10 @@ $ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, A\_i 为 E 类型 \rbrace $
 $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $
 
     基本运算
-    boolean empty(); void push(E e)
-    E pop(); E peek()
-    }
+        boolean empty();
+        void push(E e)
+        E pop();
+        E peek() }
 
     </div>
 
@@ -190,9 +190,9 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 非循环队列
 
-- 队头指针 front 指向队头元素的前一个位置
-- 队尾指针 rear 指向队尾元素
-- 初始时 front == rear == -1
+- 队头指针 `front` 指向队头元素的前一个位置
+- 队尾指针 `rear` 指向队尾元素
+- 初始时 `front == rear == -1`
 
     </div>
 
@@ -208,10 +208,10 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 非循环队列的基本要素
 
-- 队空的条件是 front == rear
-- 队满的条件是 rear == MaxSize - 1
-- 进队操作是 rear = rear + 1; data[rear] = e;
-- 出队操作是 e = data[front]; front = front + 1;
+- 队空的条件是 `front == rear`
+- 队满的条件是 `rear == MaxSize - 1`
+- 进队操作是 `rear = rear + 1; data[rear] = e;`
+- 出队操作是 `e = data[front]; front = front + 1;`
 
     </div>
 
@@ -235,8 +235,8 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         public SqQueueClass()
         {
             data = (E[])new Object[MaxSize];
-            front=-1;
-            rear=-1;
+            front = -1;
+            rear = -1;
         }
     }
 
@@ -256,7 +256,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
     public boolean empty()
     {
-        return front==rear;
+        return front == rear;
     }
 
     </div>
@@ -275,7 +275,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
     public void push(E e)
     {
-        if (rear==MaxSize-1)
+        if (rear == MaxSize - 1)
             throw new IllegalArgumentException("队满");
         rear++;
         data[rear]=e;
@@ -321,7 +321,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
     {
         if (empty())
             throw new IllegalArgumentException("队空");
-        return (E)data[front+1];
+        return (E)data[front + 1];
     }
 
     </div>
@@ -343,12 +343,12 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         String ans="";
         if (!empty())
         {
-            int p=front;
+            int p = front;
             while (true)
             {
                 p++;
-                ans+=data[p]+" ";
-                if (p==rear) break;
+                ans += data[p] + " ";
+                if (p == rear) break;
             }
         }
         return ans;
@@ -368,7 +368,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 非循环队列的假溢出
 
-- rear == MaxSize - 1 时
+- `rear == MaxSize - 1` 时
 - 再进队就会发生假溢出
 - 实际上队列中有空位置
 - 解决方法是使用循环队列
@@ -387,11 +387,11 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 循环队列
 
-- 连接 data 的前端和后端
+- 连接 `data` 的前端和后端
 - 形成逻辑上的环状结构
 - 基于求余运算 (%, mod)
-- 队头指针循环进一 front = (front + 1) % MaxSize
-- 队尾指针循环进一 rear = (rear + 1) % MaxSize
+- 队头指针循环进一 `front = (front + 1) % MaxSize`
+- 队尾指针循环进一 `rear = (rear + 1) % MaxSize`
 
     </div>
 
@@ -408,9 +408,9 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 ### 循环队列的问题
 
 - 如何分辨队空和队满?
-- 队空条件是 front == rear
-- 队满条件是 (rear + 1) % MaxSize == front
-- 即队中最大元素个数为 MaxSize - 1
+- 队空条件是 `front == rear`
+- 队满条件是 `(rear + 1) % MaxSize == front`
+- 即队中最大元素个数为 `MaxSize - 1`
 
     </div>
 
@@ -426,10 +426,10 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 循环队列的基本要素
 
-- 队空条件是 front == rear
-- 队满条件是 (rear + 1) % MaxSize == front
-- 进队操作是 rear = (rear + 1) % MaxSize; data[rear] = e;
-- 出队操作是 e = data[front]; front = (front + 1) % MaxSize;
+- 队空条件是 `front == rear`
+- 队满条件是 `(rear + 1) % MaxSize == front`
+- 进队操作是 `rear = (rear + 1) % MaxSize; data[rear] = e;`
+- 出队操作是 `e = data[front]; front = (front + 1) % MaxSize;`
 
     </div>
 
@@ -453,8 +453,8 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         public CSqQueueClass()
         {
             data = (E[])new Object[MaxSize];
-            front=0;
-            rear=0;
+            front = 0;
+            rear = 0;
         }
     }
 
@@ -474,7 +474,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
     public boolean empty()
     {
-        return front==rear;
+        return front == rear;
     }
 
     </div>
@@ -495,7 +495,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
     {
         if ((rear+1)%MaxSize==front)
             throw new IllegalArgumentException("队满");
-        rear=(rear+1)%MaxSize;
+        rear = ( rear + 1 ) % MaxSize;
         data[rear]=e;
     }
 
@@ -517,7 +517,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
     {
         if (empty())
             throw new IllegalArgumentException("队空");
-        front=(front+1)%MaxSize;
+        front = ( front + 1 ) % MaxSize;
         return (E)data[front];
     }
 
@@ -539,7 +539,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
     {
         if (empty())
             throw new IllegalArgumentException("队空");
-        return (E)data[(front+1)%MaxSize];
+        return (E)data[( front + 1 ) % MaxSize];
     }
 
     </div>
@@ -577,15 +577,15 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
     public String toString()
     {
-        String ans="";
+        String ans = "";
         if (!empty())
         {
-            int p=front;
+            int p = front;
             while (true)
             {
-                p=(p+1)%MaxSize;
-                ans+=data[p]+" ";
-                if (p==rear) break;
+                p = ( p + 1 ) % MaxSize;
+                ans += data[p] + " ";
+                if (p == rear) break;
             }
         }
         return ans;
@@ -606,8 +606,8 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 ### 队列的链式存储结构
 
 - 无需头结点
-- 队头指针 front 指向队头元素
-- 队尾指针 rear 指向队尾元素
+- 队头指针 `front` 指向队头元素
+- 队尾指针 `rear` 指向队尾元素
 - 称作链队
 
     </div>
@@ -624,10 +624,10 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 链队的基本要素
 
-- 队空条件是 front = rear == null
+- 队空条件是 `front = rear == null`
 - 通常不考虑队满
-- 进队操作是 rear.next = new Node(e); rear = rear.next;
-- 出队操作是 e = front.data; front = front.next;
+- 进队操作是 `rear.next = new Node(e); rear = rear.next;`
+- 出队操作是 `e = front.data; front = front.next;`
 
     </div>
 
@@ -853,7 +853,7 @@ $ r = \lbrace &lt; a\_i, a\_{i+1} &gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 [ 9.5 栈](dbds-9-5.html#/overview)
 [| 练习 |](dbds-exec.html)
-[ 10.1 树的基本概念](dbds-10-1.html#/overview)
+[ 9.7 递归](dbds-9-7.html#/overview)
 
     </div>
 
