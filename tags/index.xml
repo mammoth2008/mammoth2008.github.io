@@ -7,13 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 02 Dec 2023 08:45:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 Dec 2023 08:45:07 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>回顾， 记录， 生活</title>
-      <link>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE-%E8%AE%B0%E5%BD%95-%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Sat, 02 Dec 2023 08:45:07 +0800</pubDate>
-      <guid>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE-%E8%AE%B0%E5%BD%95-%E7%94%9F%E6%B4%BB/</guid>
+      <title>回顾</title>
+      <link>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/</link>
+      <pubDate>Sat, 09 Dec 2023 08:45:07 +0800</pubDate>
+      <guid>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>生活</title>
+      <link>https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Sat, 09 Dec 2023 08:45:07 +0800</pubDate>
+      <guid>https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>记录</title>
+      <link>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sat, 09 Dec 2023 08:45:07 +0800</pubDate>
+      <guid>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</guid>
       <description></description>
     </item>
     <item>
@@ -21,13 +35,6 @@
       <link>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</link>
       <pubDate>Mon, 21 Aug 2023 08:00:00 +0800</pubDate>
       <guid>https://yemengma.cn/tags/%E6%83%B3%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>生活</title>
-      <link>https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Mon, 21 Aug 2023 08:00:00 +0800</pubDate>
-      <guid>https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     <item>
@@ -49,20 +56,6 @@
       <link>https://yemengma.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Wed, 10 May 2023 18:25:09 +0800</pubDate>
       <guid>https://yemengma.cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>记录</title>
-      <link>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sun, 16 Apr 2023 18:25:09 +0800</pubDate>
-      <guid>https://yemengma.cn/tags/%E8%AE%B0%E5%BD%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>回顾</title>
-      <link>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/</link>
-      <pubDate>Sat, 08 Apr 2023 08:45:07 +0800</pubDate>
-      <guid>https://yemengma.cn/tags/%E5%9B%9E%E9%A1%BE/</guid>
       <description></description>
     </item>
     <item>

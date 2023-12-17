@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 02 Dec 2023 08:45:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 Dec 2023 08:45:07 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Week 49 回顾</title>
+      <link>https://yemengma.cn/post/23w49-review/</link>
+      <pubDate>Sat, 09 Dec 2023 08:45:07 +0800</pubDate>
+      <guid>https://yemengma.cn/post/23w49-review/</guid>
+      <description>提示词工程还会继续存在吗 我觉得还会继续存在一段时间。 具体原因以后写一篇长文来讲吧。 本文由ChatGPT, Github Copilot 协助完成。图片由 Stable Diffusion 生成。 本周的</description>
+    </item>
     <item>
       <title>2023 Week 48 回顾</title>
       <link>https://yemengma.cn/post/23w48-review/</link>
