@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 09 Dec 2023 08:45:07 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Dec 2023 08:45:07 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 Week 50 回顾</title>
+      <link>https://yemengma.cn/post/23w50-review/</link>
+      <pubDate>Sat, 16 Dec 2023 08:45:07 +0800</pubDate>
+      <guid>https://yemengma.cn/post/23w50-review/</guid>
+      <description>提示词工程还会继续存在，但是会换个方式 几天前，OpenAI 发布了一份提示词工程指南，列出了几项和大语言模型助手沟通的基本原则，包括指令要清晰</description>
+    </item>
     <item>
       <title>2023 Week 49 回顾</title>
       <link>https://yemengma.cn/post/23w49-review/</link>
