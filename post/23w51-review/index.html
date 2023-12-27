@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>2023 Week 50 回顾 - 人生玩家</title>
+  <title>2023 Week 51 回顾 - 人生玩家</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="猛犸" /><meta name="description" content="等到算力极大丰富的时候" /><meta name="keywords" content="回顾, 想法, 生活" />
+<meta name="author" content="猛犸" /><meta name="description" content="关键是分解问题" /><meta name="keywords" content="回顾, 想法, 生活" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.121.1 with theme even" />
 
 
-<link rel="canonical" href="https://yemengma.cn/post/23w50-review/" />
+<link rel="canonical" href="https://yemengma.cn/post/23w51-review/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -114,10 +114,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">2023 Week 50 回顾</h1>
+      <h1 class="post-title">2023 Week 51 回顾</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2023-12-16 </span>
+        <span class="post-time"> 2023-12-23 </span>
         <div class="post-category">
             <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
             </div>
@@ -134,7 +134,7 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#提示词工程还会继续存在但是会换个方式">提示词工程还会继续存在，但是会换个方式</a></li>
+            <li><a href="#提示词工程的正确打开方式">提示词工程的正确打开方式</a></li>
             <li><a href="#本周的成果">本周的成果</a></li>
             <li><a href="#本周的改变">本周的改变</a></li>
             <li><a href="#做得还不错">做得还不错</a></li>
@@ -149,45 +149,41 @@
   </div>
 </div>
     <div class="post-content">
-      <h3 id="提示词工程还会继续存在但是会换个方式">提示词工程还会继续存在，但是会换个方式</h3>
-<p>几天前，OpenAI 发布了一份<a href="https://platform.openai.com/docs/guides/prompt-engineering">提示词工程指南</a>，列出了几项和大语言模型助手沟通的基本原则，包括指令要清晰、复杂任务要拆分、最好给出示例和操作流程等等。</p>
-<p>2022 年 9 月 13 日，OpenAI 的 Sam Altman 和 LinkedIn 的 Reid Hoffman 有一场<a href="https://www.youtube.com/watch?v=WHoWGNQRXb0&amp;t=1523s">对谈</a>。Sam Altman 认为提示词工程是个短期需求：</p>
-<blockquote>
-<p>“5 年后我们将不再需要提示词工程，或者只需在这方面做少量工作。将来的 AI 系统不会因为增补了某个特定词就会产生截然不同的输出，而是可以较好地理解自然语言，用户只需以文本和语音形式输入指令，即可让计算机完成图像生成、资料研究、心理咨询等复杂任务。”</p>
-<p>“总的来说，用户只须使用自然语言就可以与计算机交互，当然，如果艺术家能想出更有创造性的描述，也自然就可以生成更好的图像。”</p>
-</blockquote>
-<p>2023 年2 月 21 日，Sam Altman 发了一条 twitter：“写出好提示词是一项高杠杆技能。”</p>
-<p>事实上，今年上半年，提示词工程一直是一个很火热的话题。</p>
-<p>2023 年 5 月 25 日，李彦宏在中关村论坛做了一场主题演讲：《大模型将改变世界》。他说，“ 10 年后，全世界有 50% 的工作会是提示词工程”。</p>
-<p>这个观点似乎和今年上半年的许多人相同。一些企业开始招聘“提示词工程师”，各种各样的课程开始大量出现，各种割韭菜的牛鬼蛇神也蜂拥而至。</p>
-<p>当然，提示词工程有一点门槛。不高，但是的确需要去稍微学习一下。而不是可以直觉地和大语言模型对话，把对方当成人看待。</p>
-<p>当然，大语言模型显然不是人。他可能是一场梦境。</p>
+      <h3 id="提示词工程的正确打开方式">提示词工程的正确打开方式</h3>
+<p>膜拜提示词工程技巧，背下提示词模板意义不大。这东西会快速更新，但是规则不变。</p>
+<p>构建提示词工程的视角其实是问题构建。</p>
+<p>第一步，识别问题。问题的发生一定会伴随着一些明显的特征，让我们能够感受到问题的存在。此时的问题可能非常具体且易于确定，也可能很宽泛或带有创造性。例如，我要查询某天发生了什么事情，这个问题非常具体。但如果是要让AI帮我们撰写一份符合公司实际需要的市场活动方案，则是更加宽泛、更需要创造力的。</p>
+<p>第二步，定义问题。在此步骤中，需要澄清问题的本质和范围，并将问题拆分成更小的可管理的子问题，尤其是当问题涉及多方面因素时。因为如果问题过于复杂，往往很难产生有效的解决方案。与此同时，需要收集与问题相关的信息，并对信息进行处理分析。收集信息一般可以通过数据分析、专家访谈或用户研究等方式获取。例如，“撰写一份符合公司实际需要的市场活动方案”这一问题，非常宽泛，且需要创造力。我们需要对该问题进行拆解，如“活动的执行目的是什么”、“执行该活动有哪些资源可用”等。其次，我们可以获取更多关于策划该活动的关键信息，例如，对目标群体进行采访调研获取客户期望、收集竞争对手的类似做法、询问市场活动专家了解活动注意事项等。</p>
+<p>问题拆分的结果与收集分析的信息，将成为构建问题的关键。</p>
+<p>第三步，问题重构。问题重构意味着改变看待问题的角度，也被称作替代解释（Alternative Interpretation）。基于我们对问题的定义以及对问题相关信息的收集，原始的问题可能会发生变化，我们可能发现，真正的问题并不是一开始所认为的问题，而是另有内涵。例如，当用户给你反馈说“为什么页面上没有某个按钮”时，其问题本身可能并不在于“按钮是否存在”，甚至可能也不在于“功能是否存在”，而是用户“需要的某项服务没被找到”。或许该服务的相关功能在产品内是有提供的，只是用户在操作过程中没遇到或忽视了。</p>
+<p>问题的准确重构，能够指导AI有效地拓宽解决方案的范围，从而帮助我们找到更好的解决方案，并克服创造性的障碍。</p>
+<p>第四步，约束设计。最后，我们需要通过定义解决方案的输入、过程和输出来限制问题的边界，这主要是为了解决AI返回信息的要求问题。通常我们可以通过提示词来进行约束设计。提示词工程中的“Few-Shot Prompting”方法就是一种典型的约束设计方式。它通过举例的方式，让AI理解任务本身的要求，从而输出让提问者满意的输出信息。</p>
 <hr>
 <p>本文由 ChatGPT 协助完成。图片由 DALL·E 3 生成。</p>
 <h3 id="本周的成果">本周的成果</h3>
 <ul>
 <li>完成了基本工作</li>
-<li>使用 Vimac 和 Homerow 提升效率</li>
+<li>和朋友们吃了几次饭</li>
 </ul>
 <h3 id="本周的改变">本周的改变</h3>
 <ul>
-<li>开始更多使用 Timing 来记录工作时间</li>
-<li>开始更多使用 Hookmark 来增强文件链接</li>
+<li>放松一些了</li>
+<li>作息逐渐稳定</li>
 </ul>
 <h3 id="做得还不错">做得还不错</h3>
 <ul>
-<li>基本上没有头痛</li>
-<li>运动量还可以</li>
+<li>看了一点书</li>
+<li>有一点运动</li>
 </ul>
 <h3 id="做得不太好">做得不太好</h3>
 <ul>
-<li>作息还是比较混乱</li>
 <li>有些可选工作没有完成</li>
+<li>一篇长文还没写完</li>
 </ul>
 <h3 id="下周的目标">下周的目标</h3>
 <ul>
-<li>继续努力早睡早起</li>
-<li>充分运动</li>
+<li>努力早睡早起</li>
+<li>增加一些运动量</li>
 <li>开始几个长期工作</li>
 </ul>
 
@@ -201,7 +197,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2023-12-16
+        2023-12-23
         
     </span>
   </p>
@@ -218,13 +214,9 @@
           <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/23w51-review/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">2023 Week 51 回顾</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/23w49-review/">
-            <span class="next-text nav-default">2023 Week 49 回顾</span>
+        
+        <a class="next" href="/post/23w50-review/">
+            <span class="next-text nav-default">2023 Week 50 回顾</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
