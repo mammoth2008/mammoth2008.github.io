@@ -1,0 +1,817 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>IL | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="信息素养课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统系设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 "cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide, class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "15">
+
+    </div>
+
+<!-- what,why,and how -->
+    <div 
+    id         = "what"
+    class      = "step"
+    data-x     = "-1500"
+    data-y     = "-6000"
+    data-scale = "1">
+
+        <ul>
+            <li><h3>信息素养: 是什么</h3>
+                <ul>
+                    <li class="substep">一种个人素养</li>
+                    <li class="substep">一种必备能力</li>
+                    <li class="substep">一种竞争优势</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div
+    id          = "why"
+    class       = "step"
+    data-rel-to = "what"
+    data-rel-x  = "1500"
+    data-scale  = "1">
+
+        <ul>
+            <li><h3>信息素养: 为什么</h3>
+                <ul>
+                    <li class="substep">信息繁杂</li>
+                    <li class="substep">决策困难</li>
+                    <li class="substep">未来不明</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div
+    id          = "how"
+    class       = "step"
+    data-rel-to = "why"
+    data-rel-x  = "1500"
+    data-scale  = "1">
+
+        <ul>
+            <li><h3>信息素养: 怎么做</h3>
+                <ul>
+                    <li class="substep">理解信息素养思想</li>
+                    <li class="substep">掌握信息素养方法</li>
+                    <li class="substep">刻意练习持续迭代</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+<!-- 标题 -->
+
+    <div
+    id                  = "title"
+    class               = "step"
+    data-x              = "0"
+    data-y              = "0"
+    data-scale          = "5"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "overview c1 how enterprise">
+
+        <h5 style="text-align: center">数字和智能时代的基本能力</h5>
+        <h1 style="text-align: center; font-size: 122px">信息素养</h1>
+        <h5 style="text-align: center">Information Literacy</h5>
+        <br/>
+        <p class="footnote">
+            <inlinecode style="font-size: 24px">
+                    Powered by 
+                <a href="https://github.com/impress/impress.js/" style="text-shadow: 0 0 0 rgb(0, 0, 0, 0);">
+                    impress.js
+                </a>
+                <span><img class="icon" src="../favicon.png" style="width:16px;height:16px;vertical-align: 8px;"></span>
+                <br/>
+                    Ver. 2402
+            </inlinecode>
+        </p>
+
+    </div>
+
+<!-- 概述 -->
+
+    <div 
+    id            = "Information"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "1180"
+    data-rel-y    = "2600"
+    data-z        = "-10"
+    data-rotate-z = "90"
+    data-scale    = "4">
+
+### 信息 Information
+
+- 由数据加工转化而来
+- 辅助决策
+- 解决问题
+- 创造价值
+
+    </div>
+
+    <div 
+    id            = "literacy"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "-200"
+    data-rel-y    = "1700"
+    data-z        = "-10"
+    data-rotate-z = "0"
+    data-scale    = "4">
+
+### 素养 Literacy
+
+- 有学识, 有文化, 跟学者有关
+- 能够阅读, 书写, 针对一般公众
+- 获得有用知识
+- 使用符号系统
+- 能够做某事的能力
+
+    </div>
+
+    <div 
+    id            = "il"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "-1290"
+    data-rel-y    = "-1900"
+    data-z        = "-10"
+    data-rotate-z = "180"
+    data-scale    = "3">
+
+### 信息素养 Information Literacy
+
+- 与信息有关的知识, 技能与态度
+- 确认信息缺口
+- 寻找合适的信息
+- 评估信息的价值
+- 应用信息解决问题
+- 评估与反思整个流程
+
+    </div>
+
+    <div 
+    id                                      = "big"
+    data-rel-to                             = "title"
+    class                                   = "step"
+    data-rel-x                              = "2350"
+    data-rotate-z                           = "-90"
+    data-scale                              = "5">
+
+        <p>Information <b>Literacy</b></p>
+
+    </div>
+
+    <div 
+    id            = "tiny"
+    class         = "step markdown"
+    data-rel-to   = "big"
+    class         = "step"
+    data-z        = "-3000"
+    data-rotate-z = "360"
+    data-scale    = "0.5">
+
+为什么要拥有信息素养?
+
+    </div>
+
+    <div 
+    id          = "il1"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "-2500"
+    data-rel-y  = "-200"
+    data-z      = "0"
+    data-rotate = "270"
+    data-scale  = "6">
+
+- 个体所面临的信息实践活动日益复杂, 掌握信息素养能力比任何时代都迫切和紧要
+- 良好的信息素养对于大学生学业及此后的职业表现都具有积极影响
+
+    </div>
+
+<!-- Lecture: 在教学实践中, 也发现信息管理与信息系统专业学生信息素养严重不足. 有些学生认为百度百科和微信朋友圈是可靠信源, 大部分学生无法判断信息真实性, 无法分清事实与观点, 几乎所有学生都无法就开放性问题收集较为全面的信息, 也无法有效搜索和规范引用学术论文. 这些问题在学生选择自学方向, 制订个人发展计划, 撰写课程论文和毕业论文时尤为突出. -->
+
+    <div 
+    id          = "erpitem"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "-400"
+    data-rel-y  = "-2100"
+    data-z      = "0"
+    data-rotate = "180"
+    data-scale  = "5">
+
+### 信息素养的七柱模型
+
+- 识别信息需求
+- 辨别信息差距
+- 制定信息检索策略
+- 定位并获取信息
+- 比较和评价信息
+- 整理, 使用与交流信息
+- 综合信息并创新
+
+    </div>
+
+<!-- Lecture: 英国学院、国家与大学图书馆协会 (SCONUL) 信息素养工作组在《SCONUL 意见书 : 高等教育中的信息技能》提出了该模型.
+
+模型注重对学生批判性的使用信息的能力, 有效进行信息建构和探索信息知识等综合技能的考查;
+具有建构主义理论支持下 "明确任务-搜索策略-获取及评级-利用及创造" 的评价模式, 认为评估是个连续发展的过程;
+强调 "学习" 的重要性, 涉及如何学习, 整合信息等技能;
+重点评估学生的信息创新能力; 
+-->
+
+    <div 
+    id            = "7pillars"
+    class         = "step markdown"
+    data-rel-to   = "title"
+    data-rel-x    = "800"
+    data-rel-y    = "-2400"
+    data-rotate-z = "180"
+    data-scale    = "4">
+
+![SCONUL's Seven Pillars Model](img/c00/7pillars.png)
+#### SCONUL's Seven Pillars Model
+
+    </div>
+
+    <div 
+    id          = "oper"
+    class       = "step markdown"
+    data-rel-to = "title"
+    data-rel-x  = "-1200"
+    data-rel-y  = "-3000"
+    data-rotate = "180"
+    data-scale  = "2">
+
+### 其他信息素养模型
+
+- BIG6: 任务定义, 搜索策略, 搜索信息, 运用信息, 整合信息, 学习评价
+- PLUS: 明确任务目的, 定位并查找信息, 选择和使用信息, 自我评价
+- 六框架: 内容框架, 能力框架, 学会学习框架, 个体相关框架, 社会影响框架, 关系框架
+
+    </div>
+
+    <div
+    id          = "overviewmiddle"
+    class       = "step"
+    data-rel-to = "title"
+    data-x      = "0"
+    data-y      = "0"
+    data-z      = "-1000"
+    data-scale  = "15">
+
+    </div>
+
+<!-- 学习目标,共 8 章 -->
+
+    <div
+    id                  = "c1"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "4000"
+    data-rel-y          = "0"
+    data-rotate-y       = "45"
+    data-rotate-x       = "0"
+    data-rotate         = "270"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c1m overviewmiddle c2">
+
+### 1. 信息素养概论
+
+- 理解信息工具的发展历程和特点
+- 理解信息的概念与意义
+- 掌握信息素养的基本能力框架
+- 了解基于信息做出决策的基本流程
+
+    </div>
+
+    <div
+    id                  = "c2"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "2828"
+    data-rel-y          = "-2828"
+    data-rotate-y       = "31.82"
+    data-rotate-x       = "31.82"
+    data-rotate         = "225"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c2m c1 c3">
+
+### 2. 获取信息
+
+- 掌握判断信息差距的方法
+- 掌握搜索引擎使用技术
+- 了解专利相关知识
+- 掌握计算机文件管理与组织方法
+- 掌握中外学术文献数据库使用方法
+- 了解学术论文的引用规则
+
+    </div>
+
+    <div
+    id                  = "c3"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "0"
+    data-rel-y          = "-4000"
+    data-rotate-y       = "0"
+    data-rotate-x       = "45"
+    data-rotate         = "180"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c3m c2 c4">
+
+### 3. 评估信息
+
+- 理解信息的属性与特点
+- 理解可信信源的概念
+- 掌握使用信息工具筛选可信信源的方法
+- 掌握信息可信性判断的基本规则
+- 理解常见逻辑错误
+- 掌握证据的效力分析
+- 理解数据处理的欺骗性
+
+    </div>
+
+    <div
+    id                  = "c4"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-2828"
+    data-rel-y          = "-2828"
+    data-rotate-y       = "-31.82"
+    data-rotate-x       = "31.82"
+    data-rotate         = "135"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c4m c3 c5">
+
+### 4. 整理信息
+
+- 理解知识的创造过程
+- 理解知识网络与框架的概念特点
+- 了解知识图谱及其构建方法
+- 理解知识管理的概念与方法
+- 理解知识库的构建思路
+- 掌握常见个人知识库工具使用方法
+
+    </div>
+
+    <div
+    id                  = "c5"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-4000"
+    data-rel-y          = "0"
+    data-rotate-y       = "-45"
+    data-rotate-x       = "0"
+    data-rotate         = "90"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c5m c4 c6">
+
+### 5. 决策过程
+
+- 了解常见的个人与团体决策方法
+- 了解常见决策框架
+- 掌握审视决策合理性的方法
+
+    </div>
+
+    <div
+    id                  = "c6"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "-2828"
+    data-rel-y          = "2828"
+    data-rotate-y       = "-31.82"
+    data-rotate-x       = "-31.82"
+    data-rotate         = "45"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c6m c5 c7">
+
+### 6. 报告与演示
+
+- 理解金字塔原理
+- 掌握报告类文档的通用结构与逻辑
+- 了解版式设计的基本原则
+- 了解汇报的基本规则
+
+    </div>
+
+    <div
+    id                  = "c7"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "0"
+    data-rel-y          = "4000"
+    data-rotate-y       = "0"
+    data-rotate-x       = "-45"
+    data-rotate         = "0"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c7m c6 c8">
+
+### 7. 学术论文基础
+
+- 了解学术论文的基本构成
+- 了解本科毕业论文的通用结构
+- 掌握排版技巧与常见数据分析方法
+- 了解常见文献管理软件的使用方法
+
+    </div>
+
+    <div
+    id                  = "c8"
+    class               = "step markdown"
+    data-rel-to         = "title"
+    data-rel-x          = "2828"
+    data-rel-y          = "2828"
+    data-rotate-y       = "31.82"
+    data-rotate-x       = "-31.82"
+    data-rotate         = "-45"
+    data-scale          = "3"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "title c8m c7 c9">
+
+### 8. 信息伦理与安全
+
+- 理解信息伦理的概念与内容
+- 理解信息安全的概念与内容
+- 掌握常见个人信息保护方法
+
+    </div>
+
+<!-- 目录,共 8 章 -->
+
+    <div
+    id                  = "c1m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "5000"
+    data-rel-y          = "0"
+    data-rotate-y       = "45"
+    data-rotate-x       = "0"
+    data-rotate         = "270"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c1 overviewmiddle overviewmiddle c2m">
+
+        <h3>1. 信息素养概论</h3>
+        <p>
+            <a href="il-1-1.html" target="_blank">1. 信息工具的发展历程和特点</a><br/>
+            <a href="il-1-2.html" target="_blank">2. 信息的概念与意义</a><br/>
+            <a href="il-1-3.html" target="_blank">3. 信息素养的基本能力框架</a><br/>
+            <a href="il-1-4.html" target="_blank">4. 基于信息作出决策的基本流程</a><br/>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c2m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "3535"
+    data-rel-y          = "-3535"
+    data-rotate-y       = "31.82"
+    data-rotate-x       = "31.82"
+    data-rotate         = "225"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c2 overviewmiddle c1m c3m">
+
+        <h3>2. 获取信息</h3>
+        <p>
+            <a href="il-2-1.html" target="_blank">1. 判断信息差距</a><br/>
+            <a href="il-2-2.html" target="_blank">2. 使用搜索引擎</a><br/>
+            <a href="il-2-3.html" target="_blank">3. 专利与专利数据库</a><br/>
+            <a href="il-2-4.html" target="_blank">4. 文件管理与组织</a><br/>
+            <a href="il-2-5.html" target="_blank">5. 学术文献数据库</a><br/>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c3m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "0"
+    data-rel-y          = "-5000"
+    data-rotate-y       = "0"
+    data-rotate-x       = "45"
+    data-rotate         = "180"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c3 overviewmiddle c2m c4m">
+
+        <h3>3. 评估信息</h3>
+        <p>
+            <a href="il-3-1.html" target="_blank">1. 信息的属性与特点</a><br/>
+            <a href="il-3-2.html" target="_blank">2. 可信信源</a><br/>
+            <a href="il-3-3.html" target="_blank">3. 信息的可信性判断</a><br/>
+            <a href="il-3-4.html" target="_blank">4. 常见逻辑错误</a><br/>
+            <a href="il-3-5.html" target="_blank">5. 证据的效力分析</a><br/>
+            <a href="il-3-6.html" target="_blank">6. 统计学会骗人</a><br/>
+        </p>
+    </div>
+
+    <div
+    id                  = "c4m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3535"
+    data-rel-y          = "-3535"
+    data-rotate-y       = "-31.82"
+    data-rotate-x       = "31.82"
+    data-rotate         = "135"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c4 overviewmiddle c3m c5m">
+
+    <h3>4. 整理信息</h3>
+        <p>
+            <a href="il-4-1.html" target="_blank">1. 知识的创造过程</a><br/>
+            <a href="il-4-2.html" target="_blank">2. 知识图谱</a><br/>
+            <a href="il-4-3.html" target="_blank">3. 知识管理</a><br/>
+            <a href="il-4-4.html" target="_blank">4. 个人知识库工具</a><br/>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c5m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-5000"
+    data-rel-y          = "0"
+    data-rotate-y       = "-45"
+    data-rotate-x       = "0"
+    data-rotate         = "90"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c5 overviewmiddle c4m c6m">
+
+    <h3>5. 决策过程</h3>
+        <p>
+            <a href="il-5-1.html" target="_blank">1. 常见决策方法</a><br/>
+            <a href="il-5-2.html" target="_blank">2. 常见决策框架</a><br/>
+            <a href="il-5-3.html" target="_blank">3. 审视决策合理性</a><br/>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c6m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "-3535"
+    data-rel-y          = "3535"
+    data-rotate-y       = "-31.82"
+    data-rotate-x       = "-31.82"
+    data-rotate         = "45"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c6 overviewmiddle c5m c7m">
+
+    <h3>6. 报告与演示</h3>
+        <p>
+
+            <a href="il-6-1.html" target="_blank">1. 金字塔原理</a><br/>
+            <a href="il-6-2.html" target="_blank">2. 报告的通用结构</a><br/>
+            <a href="il-6-3.html" target="_blank">3. 演示的版式设计</a><br/>
+            <a href="il-6-4.html" target="_blank">4. 汇报的基本原则</a><br/>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c7m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "0"
+    data-rel-y          = "5000"
+    data-rotate-y       = "0"
+    data-rotate-x       = "-45"
+    data-rotate         = "0"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c7 overviewmiddle c6m c8m">
+
+    <h3>7. 学术论文基础</h3>
+        <p>
+
+            <a href="il-7-1.html" target="_blank">1. 学术论文的基本构成</a><br/>
+            <a href="il-7-2.html" target="_blank">2. 本科毕业论文的基本结构</a><br/>
+            <a href="il-7-3.html" target="_blank">3. 快速排版技巧</a><br/>
+            <a href="il-7-4.html" target="_blank">4. 基本数据处理</a><br/>
+            <a href="il-7-5.html" target="_blank">5. 常见文献管理软件</a><br/>
+        </p>
+
+    </div>
+
+    <div
+    id                  = "c8m"
+    class               = "step"
+    data-rel-to         = "title"
+    data-rel-x          = "3535"
+    data-rel-y          = "3535"
+    data-rotate-y       = "31.82"
+    data-rotate-x       = "-31.82"
+    data-rotate         = "-45"
+    data-scale          = "2"
+    data-goto-key-list  = "ArrowUp ArrowDown ArrowLeft ArrowRight"
+    data-goto-next-list = "c8 overviewmiddle c7m overview">
+
+    <h3>8. 信息伦理与安全</h3>
+        <p>
+
+            <a href="il-8-1.html" target="_blank">1. 信息伦理</a><br/>
+            <a href="il-8-2.html" target="_blank">2. 信息安全</a><br/>
+            <a href="il-8-3.html" target="_blank">3. 个人信息保护</a><br/>
+        </p>
+
+    </div>
+<!--
+    <div
+    id            = "resources"
+    class         = "step"
+    data-rel-to   = "title"
+    data-rel-x    = "4000"
+    data-rel-y    = "2000"
+    data-rotate-y = "0"
+    data-rotate-x = "0"
+    data-rotate   = "0"
+    data-rel-z    = "0"
+    data-scale    = "5">
+
+    <h3 style="text-align:center">
+        <a href="il-src.html" target="_blank">课程资源</a>
+    </h3>
+-->
+     </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
+<!--
+    DNNNNDDDD8888OOOOZOOOZZZZZZZZOOOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNNNN
+    DNNDDDDD888OOOOZZZZZZ$$$$$Z$ZZZZZOOOOOO8888888888DDDDDDDNNNNNNNNNNNNNNNNNNNNNNNN
+    NNDDDDDD8OOOZZZ$$$$$$$$$$Z$$$$$ZZZZZOOOO888888888DD8DDDDDDNNNNNNNNNNNNNNNNNNNNNN
+    DDDDDDDDOOZZZ$$$$$$$$$?7$$$$$$$$ZZZ$ZOOO888888888888888DDDDDNNNNNNNNNNNNNNNNNNNN
+    DDDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$ZZZOOOOOOOOO88O88888DDDDDDDNNNNNNNNNNNNNNNNN
+    DDDDDD8OZZZ$$$$$$$$$$$$$$$$$$$$$$$$$ZZZZZZZOOOOOO88O888888DDDDDDNNNNNNNNNNNNNNNN
+    DDDDD88OZZ$$$$$$$$$$$$$$$$$$$$$$$$$$$Z$ZZZZZOOOOOO8O88888888DDDDDNNNNNNNNNNNNNNN
+    DDDDD8OZZZZ$7$$$$$$$$$$$$$$$88N7DZ$$$$$$$ZZZZZZZOOOOOO88888O88DDDDDNNNNNNNNNNNNN
+    DDDDD8OZZZ$$$$$$$$$$$$$$$$$$D++=Z7777$$$$888$ZZZZZZOOOOOO8888888DDDDNDNNNNNNNNNN
+    DDDD8OOZ$Z$$$$$$$$$$$$$$$$$7?===$7777777$N=DNZZZZZZZOOOOO8O8888888DDDDNNNNNNNNNN
+    DDDD8OZZZZ$$$$$$$$$$$$$$$$$7?===$77777777DN?.8NZZZZZZZZOOOOO8888888DDDDNNNNNNNNN
+    DDD88OZZZZZZZ$$$$$$$$$$$$$$$:.==N$7$$$77$$$M=.8D$ZZZZZZZZOOOOO8888888DDDNNNNNNNN
+    DDD8ZO8OZZZOZZZZ$$$$$$$$$$$$8,..+NNM++++=NNM+=.N$$ZZZZZZZZOOO8OO888888DDDNNNNNNN
+    DDD8888888OOOZZZZZZ$$$$$$$$$$D,..+==========N=,N$$$ZZZZZZZZZOO8O888888DDDDNNNNNN
+    DDD8D88888888888ZOZZ$$$$$$$$$DNN.===+=MM====+=NN$$?$ZZZZZZZZZOOOOO888888DDNNNNNN
+    D8888O88O8O8OOOOOOO88ZZ$ZZ$$$D====+=NMMMM+==++MN77$$$$ZZZZZZZZZOO8OO8888DDDNNNNN
+    8O8OOOOOOOOOOOOOOZOOOO88ZZZZZN++====NMMMM+==NMMM7777$$$ZZZZZZZZZOOOOO888888DDNNN
+    8OOOOOOOOOOZZZZZZZZZZZZ888OOON++=====MMM?===NMMM77777$$$ZZZZZZZZZZOOOO878888DNNN
+    OOOOOOOOZZZ$$$$$$7$7$$ZZ888OONN=====+=========MM777777$$$ZZZZZZZZZZZOOOO8888DDNN
+    OOZZZ$$$$$7777777777$O8OOOOOOOON+==~~:,,,,,.~~=NI777777$$$ZZZZZZZZZZOOOOO8888DDD
+    ZZ$$77IIIII7IIIIII7$ZZOOOOOOOOOOD=,,.  ......,DNII777777$$$$ZZZZZZZZZOOOOO8888DD
+    Z$77777$ZO88DDO$$OOOZOOOOMMMZZZOOODNMMMMMDNNNNI7II77777777$$$$ZZZZZZZZOOOOO8888D
+    $ZOO8OOOOOOOOOOODD8OOOZO8ZZZZMMMZZMM88M8M8MMII7IIIIII777777$$$ZZZZZZZZZZOOOO8888
+    8OOOOOOOOOOOOOOOO8OO8OZZOZMMOZZZMMZZOM888M8DIIIIIIIII777I777$$$$ZZZ$ZZZZZOOOO888
+    OO7OOOOOOOOOOOOOOOOOOMM.7ZZ$$$ZZZZMMZZM8.M8DM?IIIIIII777III7$$$$$IZZZZZZZZOOO888
+    OOOOOOOOOOOOOOOOOOOOOO8DM...MMMMNZZ.8O.MMMDM8N+IIIIIII77I777$$$$$$$$ZZZZZOOOI888
+    OOOOZZZZ$$$$$$ZZZZZZZZZ$M$ZO.....MMM.MMMMMMDDMI,M7IIII7777777$$$$$$$ZZZZZZZZOOO8
+    ZZ88$:DD$8888??II$$$$$$NMMMMZ$$.,NMMMMMMMMMMDI.,,:MMIII7777777$$$$$$$ZZZZZZZOOOO
+    ODDD=:88~D88+,,8O?=+I777IZZ=OOO+MMMMMMMMMMMMD?..DMMMM$II7I77777$$$$$$ZZZZZZZZOOO
+    O888~,O8,888,D8OOOO=$+IIII$+,??,MMMM M==.MMMD?MMM7$::,MM7I777777$$$$$$$ZZZZZZZZZ
+    +D887,,8+,O+78OO~~~~7$+?II7,?O?OMM.M~==~~M.M8????+IMM..MMMII7777$$$$$$$$ZZZ$ZZZZ
+    ~?OOZ=,,ZZO=7+=.,,I?$77+II7ZOI?Z=8MDDDMMDDONI??????I777MD7::7777$$$$$$$$ZZZZZZZZ
+    Z,:=$OOZ7++O,.,$$$$$$$$$?DNONNM8$$NZZNN..MMM,,N??????????I77MI7777$$$$$$ZZZZZZZZ
+    $O$,IO~,~,:8++++,,,,,,$DMDIIOOOO77MZZN..ZMMMOM???????????IIII7777777$$$$$ZZZZZZZ
+    :++=::=Z7=+==,,Z$Z?ZMMMMI777NOO77IZZZO.8M,NNNMN+??????????IIII777777$$$$$ZZZZZZZ
+    ~:::I$~,=$?=~??ZOMNNZMMM7D$7NOOII8ZZZZ.M..MDD.MM++++++?????IIII77777$$$$$ZZZZZZ$
+    ZZZ7+~::=,OI:DDMD888ZMMMI7DIZZ7..8ZZI..M..M.M8M=====++++??????II777I7$$$$$ZZZZZZ
+    ===~,:O+:8DD?NOZZ888ZDMM7787Z7..Z88Z...M,MO.D8M~~~======++????IIII7777$$$$$$ZZZZ
+    OZZZO8+,7MMMNOOZZ888Z8MMOD.DZ...888D..MMD..ZDMM:~~~~~~~==+++????IIIII7777$$$ZZZ?
+    OOZMMMM.MD8MMMOZ7IDD78MO,OMD:.8N7I8N..MMM.NMDM,:~~~~~~~~===+++???IIIII7777$$ZZZI
+    M77NDDOZN8OZMMZZZI8.+M...O88,...Z$N=.NMM.OM.D,,:~~~~~~~~~=====++???III77777$ZZZZ
+    D8MD88ION8MMDMZZZIDO7M..ZNZO,..+ZZZ.M..M.MMN:,,:~~~~~~~:~~~~===++???IIII777$$ZZZ
+    DDM888IO88MODMOZOOO7IZ8DDOO8...$....D..MDM.M:.,:~~~~~~~~~~~~~~===++??+III777$ZZZ
+    DD8M88IZ8DMODI$8ZZMM$IID7OO:,.IZ....D..M8.8M..,:~~~~~~~::~~~~~~~==++?+?III77$$$$
+    D8888888888OOOD8OZDM$OOOOO..,7ODZ....MM.D.OM.,,:~~~~~~~~::::::::~~==+???III7$$$$
+    D88888888MMOZI88OZ8M8O.OO.,,ODDD:.,MMM..M.M..,,::~~~~~::::::::::~~~==++???I7$$$$
+    N888NN88DMMZZZ?8:IDO..O8,88DZ778,,,.M..M.M...,,:::::::::::::::::::~~==++???I$$$$
+    D88ZZM8ZMMM$$.?D.?M..N..$,,,,8IO,,O...NM.M...,,,::::::::::::::::::::~~===+??I$$$
+    DD8?ZMOMIM $.Z.Z?+MIO.O=?.??,O?D.OO..MM.O...,,,::::::::::::::::::::,:~~~==+??777
+    ND8I+..ZIM,$,..8$.+....=+I======M==M=MM==M==O==M=$:::::~~~~~~:::::::::~~~==+??II
+    NDDDDDDDD8D8DDDDD88DD8888NI8DN=MM==M==M=MM+=M=~O+NOOOOOOOOOOOOOOOOOZOZOOOO888DDD
+    ---mengma2008---------yemengma.cn-------------Signture Made by GlassGiant.com---
+-->

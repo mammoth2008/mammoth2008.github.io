@@ -370,7 +370,7 @@ h2 {
 }*/
 
 h3 {
-    font-size: 60px;
+    font-size: 48px;
     line-height: 1.2;
     margin-bottom: 0.7em;
 }
@@ -632,6 +632,12 @@ code {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
+/* Inline code, no Highlight.js */
+inlinecode {
+    font-family: consolas, "Cutive mono", "CONSOLA", "Inconsolata-Regular", Inconsolata, "Courier New", monospace;
+    font-size: 36px;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
 div .chglog {
     font-family: "Inconsolata-Regular", Inconsolata, "Cutive mono", "CONSOLA", consolas, "Courier New", monospace;
     font-size: 16px;
@@ -742,4 +748,4 @@ div .chglog a {
     在 1-536 上课时需要调整到 50%
 */
 .impress-enabled .hint { display: block }
-.impress-enabled .step { opacity: 20% }
+.impress-enabled .step { opacity: 30% }

@@ -104,7 +104,7 @@ class HTMLGenerator:
                 </a>
                 <br/>
                 <inlinecode style="font-size: 16px">
-                    Ver. 2307
+                    Ver. 2402
                 </inlinecode>
             </inlinecode>
         </p>
