@@ -7,8 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 02 Mar 2024 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Mar 2024 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Week 11 回顾</title>
+      <link>https://yemengma.cn/post/24w11-review/</link>
+      <pubDate>Sat, 16 Mar 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/24w11-review/</guid>
+      <description>Figure 01 和机器人的未来 本周，Figure 发布了一段视频。两周前，这家硅谷创业公司刚刚宣布和 OpenAI 的合作。 在这段视频里，Figure 01 以 OpenAI 的模型为大脑</description>
+    </item>
+    <item>
+      <title>2024 Week 10 回顾</title>
+      <link>https://yemengma.cn/post/24w10-review/</link>
+      <pubDate>Sat, 09 Mar 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/24w10-review/</guid>
+      <description>Claude 3 和 AIGC 对 Claude 3 做了一些简单测试。 免费版的能力，与 ChatGPT-4 相仿。收费版的，还没有尝试。 对于要求不高的日常文本摘要、代码编写工作，免费版 Claude 3 比免费版 ChatGPT-3</description>
+    </item>
     <item>
       <title>2024 Week 09 回顾</title>
       <link>https://yemengma.cn/post/24w09-reivew/</link>
