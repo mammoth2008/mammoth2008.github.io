@@ -1,0 +1,592 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>ITA | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院全日制硕士研究生设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c24t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>2. 机器学习与深度学习</h2>
+        <h3 style="text-align: center">2.4 深度学习的现状与不足</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2402
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的成功应用
+
+- 计算机视觉: 图像识别, 对象检测
+- 自然语言处理: 机器翻译, 文本生成
+- 游戏与策略: AlphaGo, 游戏 AI
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习在行业中的应用
+
+- 医疗领域: 疾病预测, 医学图像分析
+- 金融科技: 算法交易, 风险评估
+- 制造业: 预测维护, 自动化控制系统
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的技术演进
+
+- 网络架构的发展: 从 CNN, RNN 到 Transformer
+- 训练技术的改进: 批量处理, 正则化, 优化算法
+- 模型效率的提升: 量化, 剪枝, 蒸馏
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 训练技术的改进
+
+- 批量处理: 加速模型收敛
+- 正则化方法: 防止过拟合, 提高模型泛化能力
+- 优化算法: 学习速率的自适应调整机制
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模型效率的提升
+
+- 量化: 实现模型的低比特表示
+- 剪枝: 删除不重要的参数或神经元
+- 模型蒸馏: 训练小型模型来模仿大型模型的行为
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的数据依赖性
+
+- 大数据需求: 深度学习需要大量数据
+- 数据收集与处理的挑战
+- 数据偏见及其对模型性能的影响
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 大数据需求
+
+- 依赖大量数据以学习复杂的特征和模式
+- 数据的多样和数量影响模型的有效和准确
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据收集与处理的挑战
+
+- 收集高质量, 标注准确的数据成本高昂
+- 数据预处理和清洗的复杂性, 如去噪, 标准化
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 数据偏见及其对模型性能的影响
+
+- 训练数据的偏见可能导致模型决策的偏见
+- 识别和减轻训练数据中的偏见
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 计算资源的挑战
+
+- 高性能计算需求: GPU, TPU
+- 训练成本与能耗问题
+- 资源限制下的模型优化策略
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "2000"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模型复杂性与管理
+
+- 复杂模型的可解释性问题
+- 模型管理与维护的挑战
+- 模型的通用性与迁移学习问题
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 复杂模型的可解释性问题
+
+- 深度学习模型常被视为 "黑盒"
+- 探索可解释 AI , 提高模型的透明度
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模型管理与维护的挑战
+
+- 模型的持续维护和更新策略
+- 模型版本控制和更新带来的技术挑战
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模型的通用性与迁移学习问题
+
+- 迁移学习的概念和方法
+- 利用预训练模型
+- 模型在不同领域的迁移能力和限制
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "3600"
+    data-rel-y    = "-1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 泛化能力的局限性
+
+- 模型过拟合的原因与影响
+- 泛化能力的测试方法
+- 提高模型泛化能力的技术
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的安全性问题
+
+- 对抗性攻击
+- 模型鲁棒性的测试与提升
+- 安全应用中的深度学习策略
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 对抗性攻击
+
+- 以样本欺骗深度学习模型
+- 具体的攻击案例和防御策略
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 模型鲁棒性的测试与提升
+
+- 测试模型鲁棒性的方法
+- 增强模型安全性的技术
+- 对抗性训练
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 安全应用中的深度学习策略
+
+- 在网络安全和系统监控中的应用
+- 安全关键应用中的挑战和对策
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的伦理问题
+
+- AI 决策的透明度与公平性
+- 隐私问题与数据保护
+- 伦理指南与法规遵守
+
+    </div>
+
+    <div 
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 未来技术的研究方向
+
+- 半监督学习与无监督学习
+- 小数据学习: 少样本学习与元学习
+- 深度学习的自动化: AutoML
+
+    </div>
+
+    <div 
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-1600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的环境影响
+
+- AI 的能源消耗问题
+- 绿色计算与环境友好的 AI 研究
+- 可持续性在 AI 研究中的重要性
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "2000"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 解决深度学习不足的创新策略
+
+- 模型简化与优化技术
+- 新算法与框架的开发
+- 跨领域应用与创新解决方案
+
+    </div>
+
+    <div
+    id            = "mm24"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 2.4 mindmap](img/c02/mindmap-2-4.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c24q"
+    class         = "step markdown"
+    data-rel-to   = "c24t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.4 深度学习的现状与不足
+
+- 比较量化与剪枝在提升模型效率方面的不同作用.
+- 为什么深度学习模型需要大量的数据?
+- 数据偏见可能如何影响深度学习模型的决策过程?
+- 描述对抗性攻击的例子.
+- 设计一个简单的实验, 测试深度学习模型在新数据上的表现.
+
+----
+
+[ 2.3 深度学习的原理与应用](ita-2-3.html#/overview)
+[| 练习 |](ita-exec.html)
+[ 3.1 线性代数](ita-3-1.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

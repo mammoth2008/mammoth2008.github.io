@@ -1,0 +1,806 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>ITA | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院全日制硕士研究生设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c22t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>2. 机器学习与深度学习</h2>
+        <h3 style="text-align: center">2.2 多层神经网络的诞生与发展</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2402
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 多层神经网络的概念
+
+- 激活函数
+- 网络架构
+- 前馈神经网络与反向传播算法
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "1400"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 激活函数
+
+- 生物神经元的基础工作原理
+- 人工神经元模型: 输入, 加权, 偏置与输出
+- 激活函数的非线性映射
+- 常见激活函数: Sigmoid, ReLU, Tanh
+
+    </div>
+
+    <div
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Neuron](img/c02/neuron.webp)
+#### Neuron
+
+    </div>
+
+    <div
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Activition Functions](img/c02/activation-functions.jpeg)
+#### Activition Functions
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "1200"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 网络架构
+
+- 单层网络结构与功能限制
+- 隐藏层的概念
+- 多层网络能解决的问题类型
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 前馈神经网络与反向传播算法
+
+- 前馈神经网络的工作流程
+- 误差计算与优化目标
+- 误差的反向传播
+- 学习率与优化算法
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "-1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![backpropatation](img/c02/backpropatation.webp)
+#### Backpropatation Algorithm
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "300"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 多层神经网络的历史背景
+
+- 早期的感知机模型
+- XOR 问题和感知机的局限性
+- 多层网络的理论基础: 从 Rosenblatt 到 Rumelhart
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 早期的感知机模型
+
+- 感知机模型的提出与工作原理
+- 单层网络的限制
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### XOR 问题和感知机的局限性
+
+- XOR 问题描述与对感知机的挑战
+- 感知机无法解决 XOR 问题的数学解释
+- 对多层神经网络研究的启示
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 多层网络的理论基础
+
+- Frank Rosenblatt 的感知机与多层概念的初步
+- David E. Rumelhart 对反向传播算法的贡献
+- 多层网络研究的里程碑事件
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "2000"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 反向传播算法的诞生
+
+- 梯度下降法基础
+- 反向传播算法
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 梯度下降法基础
+
+- 梯度下降法的定义与数学原理
+- $$ \theta\_\{next\} = \theta\_\{current\} - \eta \cdot \nabla\_\theta J(\theta) $$
+- $ \theta $ 是参数, $ \eta $ 是学习率, $ J(\theta) $ 是损失函数
+- $ \nabla_\theta J(\theta) $ 是损失函数相对于 $ \theta $ 的梯度
+- 批量梯度下降与随机梯度下降
+- 梯度消失与梯度爆炸问题
+
+    </div>
+
+    <div
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "-200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Gradient Descent](img/c02/gradient-descent.png)
+#### Gradient Descent
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "200"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 反向传播算法
+
+- 链式法则与复合函数的导数
+- 反向传播算法的步骤与计算流程
+- 算法的效率与实践中的应用
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "3600"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的崛起
+
+- 从浅层学习到深度学习
+- Hinton 等人的贡献
+- ImageNet 挑战赛与深度学习的关键突破
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 从浅层学习到深度学习
+
+- 深度学习与浅层学习的区别
+- 深度学习能解决的新问题
+- 关键技术与算法的进步
+
+    </div>
+
+    <div 
+    id            = "a18"
+    class         = "step markdown"
+    data-rel-to   = "a17"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### Hinton等人的贡献
+
+- Geoffrey Hinton 的影响力与贡献
+- 深度信念网络与无监督预训练
+- 开创性工作对后续研究的启发
+
+    </div>
+
+    <div 
+    id            = "a19"
+    class         = "step markdown"
+    data-rel-to   = "a18"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的关键突破
+
+- ImageNet 竞赛
+- AlexNet 的胜利
+- 深度学习在视觉识别领域的里程碑
+
+    </div>
+
+    <div 
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 卷积神经网络 (CNN)
+
+- CNN 的基本结构
+- 从 LeNet 到 AlexNet
+- 在图像处理中的应用
+
+    </div>
+
+    <div
+    id            = "a21"
+    class         = "step markdown"
+    data-rel-to   = "a20"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Convolutional Neural Network](img/c02/cnn1.gif)
+#### Convolutional Neural Network
+
+    </div>
+
+    <div
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Convolutional Neural Network](img/c02/cnn2.gif)
+#### Convolutional Neural Network
+
+    </div>
+
+    <div
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Convolutional Neural Network](img/c02/cnn3.png)
+#### Convolutional Neural Network
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "-1200"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### CNN的基本结构
+
+- 卷积层, 池化层与全连接层的功能
+- 特征提取与学习的过程
+- 卷积神经网络的优势
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 从 LeNet 到 AlexNet
+
+- LeNet 的历史背景与结构
+- AlexNet 的创新与影响
+- CNN 发展的关键节点
+
+    </div>
+
+    <div 
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 在图像处理中的应用
+
+- 图像分类与对象识别
+- 图像分割与目标跟踪
+- CNN 的广泛应用案例
+
+    </div>
+
+    <div 
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-2000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### RNN 与LSTM
+
+- RNN 的基本概念
+- LSTM 与 GRU 的诞生
+- 在序列数据处理中的应用
+
+    </div>
+
+    <div 
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### RNN 的基本概念
+
+- RNN 的结构与工作原理
+- 序列数据处理的挑战
+- RNN 的局限性: 梯度消失与梯度爆炸
+
+    </div>
+
+    <div
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Recurrent Neural Network](img/c02/rnn.png)
+#### Recurrent Neural Network
+
+    </div>
+
+    <div 
+    id            = "a30"
+    class         = "step markdown"
+    data-rel-to   = "a29"
+    data-rel-x    = "1400"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### LSTM 与 GRU 的诞生
+
+- LSTM 的结构与解决问题的能力
+- GRU 的简化版本与效率
+- LSTM 与 GRU 在实际应用中的比较
+
+    </div>
+
+    <div
+    id            = "a31"
+    class         = "step markdown"
+    data-rel-to   = "a30"
+    data-rel-x    = "0"
+    data-rel-y    = "-1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Long Short-Term Memory](img/c02/lstm.png)
+#### Long Short-Term Memory
+
+    </div>
+
+    <div
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Gated Recurrent Unit](img/c02/gru.png)
+#### Gated Recurrent Unit
+
+    </div>
+
+    <div 
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "1400"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 在序列数据处理中的应用
+
+- 自然语言处理: 文本生成与情感分析
+- 语音识别与机器翻译
+- 时间序列预测与分析
+
+    </div>
+
+    <div 
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "600"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 深度学习的挑战
+
+- 过拟合与正则化技术
+- 神经网络的解释性问题
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "-1400"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 过拟合与正则化技术
+
+- 过拟合的定义与表现
+- 常见的正则化技术: Dropout, L1/L2 正则化
+- 数据增强与早停技术
+
+    </div>
+
+    <div 
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "-2600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 神经网络的解释性问题
+
+- 深度学习模型的黑箱问题
+- 解释性研究的意义与方法
+- 可解释 AI 的前沿研究与挑战
+
+    </div>
+
+    <div
+    id            = "mm22"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 2.2 mindmap](img/c02/mindmap-2-2.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c22q"
+    class         = "step markdown"
+    data-rel-to   = "c22t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.2 多层神经网络的诞生与发展
+
+- 激活函数的作用是什么?
+- 解释单层网络和多层网络在解决问题上的主要区别.
+- 反向传播算法在训练神经网络中扮演什么角色?
+- 描述梯度下降法的基本原理.
+- CNN 与 RNN 在结构上的主要区别是什么?
+- 为什么深度学习模型被认为是黑箱?
+
+----
+
+[ 2.1 机器学习的概念与原理](ita-2-1.html#/overview)
+[| 练习 |](ita-exec.html)
+[ 2.3 深度学习的原理与应用](ita-2-3.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>

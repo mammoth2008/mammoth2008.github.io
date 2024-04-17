@@ -1,0 +1,516 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- 修改页面标题 -->
+        <title>IL | HUST</title>
+
+<!-- 修改 content -->
+        <meta name="description" content="信息素养课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="author" content="xinjiang@hrbust.edu.cn" />
+
+<!-- 引入数学公式 -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$','$']]}
+            });
+        </script>
+
+        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- 引入完毕 -->
+
+        <link href="../css/impress-course.css" rel="stylesheet" />
+        <link href="../css/impress-common.css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../hustlogo72.png" />
+        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+
+    </head>
+
+    <body class="impress-not-supported">
+
+<!-- 左上角加上 logo -->
+    <div class="logo"></div>
+
+    <div class="fallback-message">
+        <p>你的浏览器不支持本网站所要求的功能, 现在看到的是本网站简化版本.</p>
+        <p>为了获得最佳体验, 请使用最新的Chrome, Safari, Firefox 或 Edge 浏览器.</p>
+
+    </div>
+
+    <div 
+    id                       = "impress" 
+    data-transition-duration = "1000" 
+    data-width               = "1024" 
+    data-height              = "768" 
+    data-max-scale           = "3" 
+    data-min-scale           = "0" 
+    data-perspective         = "1000" 
+    data-autoplay            = "0">
+
+<!-- 每一节 slide 的标题是 cxyt", 表示章节标题. 如第一章第一节标题就是 c11t, 第三章第二节标题就是 c32t -->
+<!-- 每一节 slide 的标题页 class 应该是 step, 不是 step markdown -->
+<!-- 类似地, 需要 HTML 排版的 slide,class 都是 step; 可以使用 markdown 的, class 才是 step markdown -->
+
+    <div 
+    id         = "overview" 
+    data-x     = "0" 
+    data-y     = "0" 
+    class      = "step" 
+    data-scale = "10">
+
+    </div>
+
+<!-- 修改 id -->
+
+    <div 
+    id         = "c23t"
+    class      = "step"
+    data-x     = "0"
+    data-y     = "0"
+    data-z     = "0"
+    data-scale = "5">
+
+    <!-- 修改标题 -->
+        <h2>2. 获取信息</h2>
+        <h3 style="text-align: center">2.3 专利和专利数据库</h3>
+        <p class="footnote">
+            <inlinecode style="font-size: 16px">
+            Powered by 
+            </inlinecode>
+                <a href="https://github.com/impress/impress.js/">
+                    <inlinecode style="font-size: 16px">
+                    impress.js
+                    </inlinecode>
+                    <img class="icon" src="../favicon.png" style="width:10px;height:10px;">
+                </a>
+                <br/>
+                <inlinecode style="font-size: 16px">
+                    Ver. 2402
+                </inlinecode>
+            </inlinecode>
+        </p>
+
+    </div>
+        
+    <div 
+    id            = "a1"
+    class         = "step markdown"
+    data-rel-to   = "c23t"
+    data-rel-x    = "-1400"
+    data-rel-y    = "-300"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 专利概念
+
+- 为发明创造提供法律保护的一种权利
+- 发明专利
+- 实用新型专利
+- 外观设计专利
+- 一般发明专利有效期为 20 年
+
+    </div>
+
+    <div 
+    id            = "a2"
+    class         = "step markdown"
+    data-rel-to   = "a1"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 专利的起源
+
+- 1421 年, 意大利佛罗伦萨
+- 早期专利用于鼓励发明和促进技术进步
+- 保护发明者权益并促进公共知识共享
+
+    </div>
+
+    <div 
+    id            = "a2a"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "-1600"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![The First Patent](img/c02/1421-patent.jpeg)
+#### The First Patent (1421)
+
+    </div>
+
+    <div 
+    id            = "a3"
+    class         = "step markdown"
+    data-rel-to   = "a2"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 英国的专利法变革
+
+- "Statute of Monopolies" (1624)
+- 要求创新, 非显而易见性和实用性
+- 奠定了后来许多国家专利法的基础
+
+    </div>
+
+    <div 
+    id            = "a4"
+    class         = "step markdown"
+    data-rel-to   = "a3"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 美国专利系统的建立
+
+- 1790 年美国通过第一部专利法
+- 1802 年建立美国专利商标局 (USPTO)
+- 1836 年美国增设专利审查系统
+
+    </div>
+
+    <div 
+    id            = "a5"
+    class         = "step markdown"
+    data-rel-to   = "a4"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 专利在全球的扩散
+
+- 巴黎公约 (1883) 为国际专利保护奠定了基础
+- 世界贸易组织: TRIPS 协议 (1994)
+- 国际专利系统: PCT (专利合作条约)
+
+    </div>
+
+    <div 
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "c23t"
+    data-rel-x    = "300"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 为什么要使用专利数据库
+
+- 研究和验证新想法是否已被专利
+- 避免侵犯他人的知识产权
+- 获取技术发展的最新动向
+
+    </div>
+
+    <div 
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 常见的专利数据库介绍
+
+- 主要功能: 检索, 查看, 分析专利
+- 使用对象: 研究人员, 企业, 学者等
+
+    </div>
+
+    <div 
+    id            = "a8"
+    class         = "step markdown"
+    data-rel-to   = "a7"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 使用专利数据库的优势
+
+- 详细的专利文档和历史记录
+- 辅助研发决策和市场定位
+- 促进知识共享和技术创新
+
+    </div>
+
+    <div 
+    id            = "a9"
+    class         = "step markdown"
+    data-rel-to   = "a8"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 美国专利商标局 (USPTO)
+
+- 网址: [USPTO Database](https://www.uspto.gov)
+- 包含美国所有专利和商标信息
+- 提供详细的搜索指南和教程
+
+    </div>
+
+    <div 
+    id            = "a10"
+    class         = "step markdown"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 欧洲专利局 (EPO)
+
+- 网址: [Espacenet](https://worldwide.espacenet.com)
+- 覆盖全球超过100个国家的专利信息
+- 高级搜索和智能翻译功能
+
+    </div>
+
+    <div 
+    id            = "a11"
+    class         = "step markdown"
+    data-rel-to   = "a10"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 日本专利局 (JPO)
+
+- 网址: [J-PlatPat](https://www.j-platpat.inpit.go.jp)
+- 提供日本国内外的专利信息查询
+- 多语言支持和图片搜索
+
+    </div>
+
+    <div 
+    id            = "a12"
+    class         = "step markdown"
+    data-rel-to   = "a11"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 中国国家知识产权局 (CNIPA)
+
+- 网址: [CNIPA Database](http://www.cnipa.gov.cn)
+- 包含中国的专利申请和授权信息
+- 提供中英文版本和在线申请功能
+
+    </div>
+
+    <div 
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "c23t"
+    data-rel-x    = "2400"
+    data-rel-y    = "-800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 如何进行专利搜索
+
+- 选择合适的数据库
+- 使用关键字, 发明人名, 公司名或专利号搜索
+- 利用高级搜索功能细化搜索结果
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 实际操作: CNIPA
+
+- 登录网站和界面导航
+- 查找特定技术领域的专利
+- 使用过滤器和分析工具优化搜索结果
+
+    </div>
+
+    <div 
+    id            = "a15"
+    class         = "step markdown"
+    data-rel-to   = "a14"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 专利文件的结构
+
+- 标题
+- 摘要
+- 背景技术
+- 发明内容
+- 附图说明
+- 具体实施方式
+
+    </div>
+
+    <div 
+    id            = "a16"
+    class         = "step markdown"
+    data-rel-to   = "a15"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 解读专利文件
+
+- 基本概念
+- 发明的应用背景和创新点
+- 发明的具体应用
+- 分析附图
+- 注意发明的保护范围
+- 阅读权利要求
+
+    </div>
+
+    <div 
+    id            = "a17"
+    class         = "step markdown"
+    data-rel-to   = "a16"
+    data-rel-x    = "0"
+    data-rel-y    = "1000"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 撰写专利文件
+
+- 从背景开始引入具体问题
+- 清晰描述解决方案
+- 使用详细的技术描述
+- 包含具体实施例, 展示适用性
+- 撰写详尽的权利要求, 明确保护范围
+- 确保技术术语的准确性和一致性
+
+    </div>
+
+    <div
+    id            = "mm23"
+    class         = "step markdown"
+    data-rel-to   = "c23t"
+    data-rel-x    = "0"
+    data-rel-y    = "-2000"
+    data-rotate-y = "0"
+    data-rotate   = "0"
+    data-scale    = "1">
+
+![course 2.3 mindmap](img/c02/mindmap-2-3.png)
+
+    </div>
+
+<!-- 本节问题 -->
+
+    <div
+    id            = "c23q"
+    class         = "step markdown"
+    data-rel-to   = "c23t"
+    data-rel-x    = "0"
+    data-rel-y    = "-800"
+    data-z        = "500"
+    data-rotate-x = "77"
+    data-rotate-y = "0"
+    data-rotate-z = "180"
+    data-scale    = "2">
+
+### 2.3 专利和专利数据库
+
+- 发明专利的有效期一般为多少年?
+- 请列出至少三个专利数据库名称.
+- 专利文件中 "权利要求" 部分的主要目的是什么?
+- 设计一个简单的 CNIPA 数据库专利搜索案例.
+- 如何避免侵犯他人的知识产权?
+
+----
+
+[ 2.2 使用搜索引擎](il-2-2.html#/overview)
+[| 练习 |](il-exec.html)
+[ 2.4 文件管理与组织](il-2-4.html#/overview)
+
+    </div>
+
+    </div>
+
+    <!--
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+    }
+    </script>
+    -->
+
+<!-- 引入数学公式 -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": {
+            scale: 100
+        }
+    });
+    </script>   
+<!-- 引入完毕 -->
+
+    <!-- 页面下方显示进度条 -->
+    <div class="impress-progressbar">
+        <div></div>
+    </div>
+
+    <!-- 页面下方显示当前页/总页数 -->
+    <div class="impress-progress"></div>
+
+    <!-- 使用 markdown 写简单页面 -->
+    <script type="text/javascript" src="../extras/markdown/markdown.js"></script>
+
+    <!-- 语法高亮,配合<head>中的 highlight css 起作用 -->
+    <script src="../extras/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- impress.js 需要放在最下面,并且初始化 -->
+    <script src="../js/impress.js"></script>
+    <script>impress().init();</script>
+    </body>
+    </html>
