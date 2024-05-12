@@ -192,7 +192,7 @@ class HTMLGenerator:
     class         = "step markdown"
     data-rel-to   = "{last_div_id}"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
