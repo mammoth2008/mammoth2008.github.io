@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Sat, 11 May 2024 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2024 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Week 20 回顾</title>
+      <link>https://yemengma.cn/post/24w20-review/</link>
+      <pubDate>Sat, 18 May 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/24w20-review/</guid>
+      <description>Zotero 和 DEVONThink Zotero 是最受欢迎的文献管理工具，DEVONThink 是 Mac 上最强大的文档管理工具。 Zotero 可以管理文献、引用、笔记等，DEVONThink 则管理文</description>
+    </item>
     <item>
       <title>2024 Week 19 回顾</title>
       <link>https://yemengma.cn/post/24w19-review/</link>
