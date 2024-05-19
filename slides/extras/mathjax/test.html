@@ -11,6 +11,11 @@
       $$\begin{align} B'&=-\nabla \times E,\\E'&=\nabla \times B - 4\pi j,\end{align} $$
       $$ A=\left[\begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {a_{21}} & {a_{22}} & {\cdots} & {a_{2 n}} \\ {\vdots} & {\vdots} & {\ddots} & {\vdots} \\ {a_{m 1}} & {a_{m 2}} & {\cdots} & {a_{m n}}\end{array}\right] $$
       $$\begin{equation}x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}\end{equation} $$
+
+算法 $\mathfrak{L}\_a$ 的泛化误差 $E\_{ote}(\mathfrak{L}\_a|X,f)$ 可以通过下列公式计算：
+
+$$ E_{ote}(\mathfrak{L}_a|X,f) = \sum_{h \in \mathcal{H}} P(h|X, \mathfrak{L}_a) \sum_{x \in \mathcal{X}} P(x) \mathbb{I}(h(x) \neq f(x)) $$
+
     </div>
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
