@@ -26,7 +26,7 @@
         <link href="../css/impress-common.css" rel="stylesheet" />
 
         <link rel="shortcut icon" href="../hustlogo72.png" />
-        <link rel="stylesheet" href="../extras/highlight/styles/base16/solarized-light.min.css">
+        <link rel="stylesheet" href="../extras/highlight/styles/github.css">
 
     </head>
 
@@ -230,10 +230,10 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
 
 ### 动态分配
 
-- 使用数组存储 data
-- 定义数组大小 capacity
-- 随时记录 size
-- size $\leq$ capacity
+- 使用数组存储 `data`
+- 定义数组大小 `capacity`
+- 随时记录 `size`
+- $ size \leq capacity $
 
     </div>
 
@@ -311,7 +311,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         size = k;
     }
 
-- 时间复杂度 $ O(n) $
+- 时间复杂度 $ \mathcal{O}(n) $
 
     </div>
 
@@ -335,7 +335,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         size++;
     }
 
-- 时间复杂度 $ O(1) $
+- 时间复杂度 $ \mathcal{O}(1) $
 
     </div>
 
@@ -356,7 +356,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         return size;
     }
 
-- 时间复杂度 $ O(1) $
+- 时间复杂度 $ \mathcal{O}(1) $
 
     </div>
 
@@ -380,7 +380,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         size = nlen;
     }
 
-- 时间复杂度 $ O(1) $
+- 时间复杂度 $ \mathcal{O}(1) $
 
     </div>
 
@@ -404,7 +404,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         return (E)data[i];
     }
 
-- 时间复杂度 $ O(1) $
+- 时间复杂度 $ \mathcal{O}(1) $
 
     </div>
 
@@ -428,7 +428,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         data[i] = e;
     }
 
-- 时间复杂度 $ O(1) $
+- 时间复杂度 $ \mathcal{O}(1) $
 
     </div>
 
@@ -455,7 +455,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
             return i;
     }
 
-- 时间复杂度 $ O(n) $
+- 时间复杂度 $ \mathcal{O}(n) $
 
     </div>
 
@@ -478,7 +478,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         data[j] = temp;
     }
 
-- 时间复杂度 $ O(1) $
+- 时间复杂度 $ \mathcal{O}(1) $
 
     </div>
 
@@ -507,7 +507,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         size++;
     }
 
-- 时间复杂度 $ O(n) $
+- 时间复杂度 $ \mathcal{O}(n) $
 
     </div>
 
@@ -536,7 +536,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
             updatecapacity(capacity / 2);
     }
 
-- 时间复杂度 $ O(n) $
+- 时间复杂度 $ \mathcal{O}(n) $
 
     </div>
 
@@ -560,7 +560,7 @@ $ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2
         return ans;
     }
 
-- 时间复杂度 $ O(n) $
+- 时间复杂度 $ \mathcal{O}(n) $
 
     </div>
 

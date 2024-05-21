@@ -520,7 +520,7 @@
       jsonml[ i ] = code;
       break;
     case "inlinecode":
-      jsonml[ 0 ] = "code";
+      jsonml[ 0 ] = "inlinecode";
       break;
     case "img":
       jsonml[ 1 ].src = jsonml[ 1 ].href;
