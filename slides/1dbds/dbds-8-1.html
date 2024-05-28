@@ -13,13 +13,18 @@
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-                tex2jax: {inlineMath: [['$','$']]}
-            });
+        <script type="text/javascript">
+            window.MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+              },
+              chtml: {
+                scale: 0.95
+              }
+            };
         </script>
-
-        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+        <script src="../extras/mathjax/tex-chtml-full.js"></script>
 <!-- 引入完毕 -->
 
         <link href="../css/impress-course.css" rel="stylesheet" />
@@ -658,9 +663,9 @@
 ### 二元组
 
 - $B = (D, R)$
-- $B$是一种数据逻辑结构
-- $D$是数据元素的集合
-- $R$是$D$上二元关系的集合
+- $B$ 是一种数据逻辑结构
+- $D$ 是数据元素的集合
+- $R$ 是$D$上二元关系的集合
 - $D = \lbrace d\_i, | 0 \leq i \leq n-1, n \geq 0 \rbrace $
 - $R = \lbrace r\_j, | 1 \leq j \leq m, m \geq 0 \rbrace $
 
@@ -1194,7 +1199,7 @@
     {
     数据对象:
 
-$data = \lbrace d\_i | 0 \leq i \leq n-1, d\_i \in E \rbrace$
+$$ data = \lbrace d\_i | 0 \leq i \leq n-1, d\_i \in E \rbrace $$
 
     int size;
     数据关系:
@@ -1242,7 +1247,7 @@ $data = \lbrace d\_i | 0 \leq i \leq n-1, d\_i \in E \rbrace$
     {
     数据对象:
 
-$data = \lbrace s\_i | 1 \leq i \leq n, s\_i \in Set \rbrace;$
+$$ data = \lbrace s\_i | 1 \leq i \leq n, s\_i \in Set \rbrace; $$
 
     数据关系:
       无
@@ -1363,16 +1368,6 @@ $data = \lbrace s\_i | 1 \leq i \leq n, s\_i \in Set \rbrace;$
     }
     </script>
     -->
-
-<!-- 引入数学公式 -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "CommonHTML": {
-            scale: 100
-        }
-    });
-    </script>   
-<!-- 引入完毕 -->
 
     <!-- 页面下方显示进度条 -->
     <div class="impress-progressbar">

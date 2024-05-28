@@ -13,13 +13,18 @@
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-                tex2jax: {inlineMath: [['$','$']], }
-        });
+        <script type="text/javascript">
+            window.MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+              },
+              chtml: {
+                scale: 0.95
+              }
+            };
         </script>
-
-        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+        <script src="../extras/mathjax/tex-chtml-full.js"></script>
 <!-- 引入完毕 -->
 
         <link href="../css/impress-course.css" rel="stylesheet" />
@@ -128,8 +133,8 @@
 ### 自注意力机制
 
 - 自注意力 (Self-Attention) 允许输入序列中的每个元素对其他所有元素进行加权
-- $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d\_k}}\right) V $$
-- $ Q, K, V $ 分别是查询 (Query) , 键 (Key) , 值 (Value) 矩阵, $ d\_k $ 是键向量的维度
+- $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V $$
+- $Q, K, V$ 分别是查询 (Query) , 键 (Key) , 值 (Value) 矩阵, $d_k$ 是键向量的维度
 - $ QK^T $ 是查询矩阵和键矩阵的点积操作, 用于计算查询与所有键之间的相似度或匹配程度
 
     </div>
@@ -208,8 +213,8 @@
 - 缺乏对序列顺序的内在理解
 - 位置编码向模型注入关于元素位置的信息
 - 使用正弦和余弦函数的组合进行编码
-- $ PE\_{(pos, 2i)} = \sin(pos/10000^{2i/d\_{\text{model}}}) $
-- $ PE\_{(pos, 2i+1)} = \cos(pos/10000^{2i/d\_{\text{model}}}) $
+- $$ PE\_{(pos, 2i)} = \sin(pos/10000^{2i/d\_{\text{model}}}) $$
+- $$ PE\_{(pos, 2i+1)} = \cos(pos/10000^{2i/d\_{\text{model}}}) $$
 
     </div>
 
@@ -726,16 +731,6 @@
     }
     </script>
     -->
-
-<!-- 引入数学公式 -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "CommonHTML": {
-            scale: 95
-        }
-    });
-    </script>   
-<!-- 引入完毕 -->
 
     <!-- 页面下方显示进度条 -->
     <div class="impress-progressbar">

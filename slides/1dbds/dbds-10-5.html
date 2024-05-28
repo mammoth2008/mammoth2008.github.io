@@ -13,13 +13,18 @@
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-                tex2jax: {inlineMath: [['$','$']]}
-            });
+        <script type="text/javascript">
+            window.MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+              },
+              chtml: {
+                scale: 0.95
+              }
+            };
         </script>
-
-        <script type="text/javascript" async  src="../extras/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+        <script src="../extras/mathjax/tex-chtml-full.js"></script>
 <!-- 引入完毕 -->
 
         <link href="../css/impress-course.css" rel="stylesheet" />
@@ -334,16 +339,6 @@
     }
     </script>
     -->
-
-<!-- 引入数学公式 -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        "CommonHTML": {
-            scale: 100
-        }
-    });
-    </script>   
-<!-- 引入完毕 -->
 
     <!-- 页面下方显示进度条 -->
     <div class="impress-progressbar">
