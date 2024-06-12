@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- 修改页面标题 -->
-        <title>ITA | HUST</title>
+        <title>IL | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="智能技术及应用课程使用, 为哈尔滨理工大学经济管理学院全日制硕士研究生设计. " />
+        <meta name="description" content="信息素养课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -72,7 +72,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c23t"
+    id         = "c43t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -80,8 +80,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>2. 机器学习与深度学习</h2>
-        <h3 style="text-align: center">2.3 深度学习的原理与应用</h3>
+        <h2>4. 整理信息</h2>
+        <h3 style="text-align: center">4.3 知识管理</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -104,58 +104,49 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c23t"
-    data-rel-x    = "-2500"
-    data-rel-y    = "-1600"
+    data-rel-to   = "c43t"
+    data-rel-x    = "-2000"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Transformer 模型
+### 知识管理
 
-- Transformer 是首个完全基于注意力机制的模型
-- 用于处理序列数据
-- 由 Vaswani 等人提出, 最初用于机器翻译任务
-- 引领了 NLP 领域的一系列创新, 包括 BERT, GPT 等
+- 系统管理知识资源的过程
+- 提高效率, 促进创新, 分享洞见
+- 在组织中支持决策和运营
+- 助力个人职业发展和学习
 
     </div>
 
-    <div 
+    <div
     id            = "a2"
     class         = "step markdown"
     data-rel-to   = "a1"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "-1800"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 自注意力机制
-
-- 自注意力 (Self-Attention) 允许输入序列中的每个元素对其他所有元素进行加权
-- $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V $$
-- $Q, K, V$ 分别是查询 (Query) , 键 (Key) , 值 (Value) 矩阵, $d_k$ 是键向量的维度
-- $ QK^T $ 是查询矩阵和键矩阵的点积操作, 用于计算查询与所有键之间的相似度或匹配程度
+![Knowledge Management](img/c04/km1.jpeg)
+#### Knowledge Management
 
     </div>
 
-    <div 
+    <div
     id            = "a3"
     class         = "step markdown"
     data-rel-to   = "a2"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 自注意力机制
-
-- $ \frac{1}{\sqrt{d\_k}} $ 缩放点积得分, 避免梯度消失问题
-- $ d\_k $ 是键向量的维度, 根据维度的根号来缩放
-- $ \text{softmax} $ 函数将点积得分转换为概率分布形式
-- 将 softmax 输出的注意力权重矩阵与值矩阵 $ V $ 相乘, 得到加权求和后的输出
-- 输出被视为输入查询的加权表示
+![Knowledge Management](img/c04/km2.png)
+#### Knowledge Management
 
     </div>
 
@@ -163,19 +154,17 @@
     id            = "a4"
     class         = "step markdown"
     data-rel-to   = "a3"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "1800"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 多头注意力机制
+### 定义
 
-- 多头注意力是自注意力的一种扩展
-- 将注意力机制并行化
-- 每个 "头" 独立学习输入序列的不同方面
-- $$ \text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}\_1, \dots, \text{head}\_h)W^O $$
-- 其中, 每个 $ head\_i = Attention(QW\_i^Q, KW\_i^K, VW\_i^V) $
+- 创建, 获取, 共享, 使用和保存知识的系统化过程
+- 处理显性和隐性知识的技术和策略
+- 涵盖从数据到信息再到知识的转化
 
     </div>
 
@@ -184,37 +173,36 @@
     class         = "step markdown"
     data-rel-to   = "a4"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 编码器与解码器
+### 目的
 
-- Transformer 模型包含编码器和解码器各 N 层
-- 编码器层包括多头注意力和前馈神经网络
-- 解码器层在此基础上增加了掩码多头注意力, 以防止未来信息的泄露
+- 促进知识的流动和共享
+- 支持组织的持续学习和改进
+- 提高组织响应市场变化的能力
+- 增强创新能力
 
     </div>
 
     <div 
     id            = "a6"
     class         = "step markdown"
-    data-rel-to   = "c23t"
-    data-rel-x    = "-200"
-    data-rel-y    = "1200"
+    data-rel-to   = "a5"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 位置编码
+### 对组织和个人的作用
 
-- Transformer 完全基于注意力机制
-- 缺乏对序列顺序的内在理解
-- 位置编码向模型注入关于元素位置的信息
-- 使用正弦和余弦函数的组合进行编码
-- $$ PE\_{(pos, 2i)} = \sin(pos/10000^{2i/d\_{\text{model}}}) $$
-- $$ PE\_{(pos, 2i+1)} = \cos(pos/10000^{2i/d\_{\text{model}}}) $$
+- 形成共享的知识库
+- 提升团队合作
+- 管理和增强个人的技能和专业知识
+- 强化个人与组织的竞争力
 
     </div>
 
@@ -228,11 +216,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 使用正弦和余弦函数
+### 重要性
 
-- 周期性 (Periodicity)
-- 不同频率
-- 可推广性
+- 内部运营和战略决策
+- 持续改进和创新
+- 影响组织的生存和竞争力
 
     </div>
 
@@ -246,10 +234,11 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 数学解释
+### 提升决策质量
 
-- 使用 $ \frac{pos}{10000^{2i/d\_{\text{model}}}} $ 是让不同维度上的位置编码具有不同的频率
-- $ 10000^{2i/d_{\text{model}}} $ 的底数是个大常数, 使得频率随维度 $ i $ 而显著变化
+- 提供全面和及时的信息
+- 避免重复错误
+- 使决策过程更加数据驱动和信息化
 
     </div>
 
@@ -263,66 +252,63 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 层归一化与残差连接
+### 促进创新
 
-- 残差连接帮助缓解深层网络中的梯度消失问题
-- 层归一化 (Layer Normalization) 加快收敛速度
-- 残差连接公式: $ \text{Output} = \text{LayerNorm}(x + \text{Sublayer}(x)) $
+- 为产生新想法提供土壤和营养
+- 通过跨部门和跨学科分享促进创新
+- 支持快速试错和迭代
 
     </div>
 
     <div 
     id            = "a10"
     class         = "step markdown"
-    data-rel-to   = "c23t"
-    data-rel-x    = "1600"
-    data-rel-y    = "1200"
+    data-rel-to   = "a9"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 训练策略与挑战
+### 增强竞争力
 
-- Transformer 需要大量数据来有效训练
-- 使用大量的 GPU/TPU 资源以及高效数据并行处理
-- 主要挑战包括梯度消失, 过拟合以及训练成本
+- 快速适应市场变化和技术进步
+- 优化资源配置和知识利用
+- 有效管理和利用知识资产
 
     </div>
 
     <div 
     id            = "a11"
     class         = "step markdown"
-    data-rel-to   = "a10"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-to   = "c43t"
+    data-rel-x    = "2800"
+    data-rel-y    = "-3000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Transformer 实际应用
+### 知识管理过程
 
-- 广泛应用于语言理解, 文本生成, 摘要以及翻译等
-- 在处理大规模数据集时表现卓越
-- 引领了自然语言处理技术的新方向
+- 识别
+- 获取
+- 分享
+- 应用
 
     </div>
 
-    <div 
+    <div
     id            = "a12"
     class         = "step markdown"
     data-rel-to   = "a11"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-x    = "1600"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Diffusion 模型
-
-- 传统生成模型: GAN 和 VAE
-- Diffusion 模型基于过程生成
-- 生成质量
-- 多样性
+![Knowledge Management](img/c04/km3.png)
+#### Knowledge Management
 
     </div>
 
@@ -330,40 +316,36 @@
     id            = "a13"
     class         = "step markdown"
     data-rel-to   = "a12"
-    data-rel-x    = "0"
+    data-rel-x    = "-1600"
     data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Diffusion 模型基本原理
+### 识别
 
-- 正向过程: 逐步加入噪声
-- 反向过程: 逐步从噪声中恢复数据
-- 正向过程: $ p(\mathbf{x}\_{t-1} | \mathbf{x}\_t) $
-- 反向过程: $ q(\mathbf{x}\_t | \mathbf{x}\_{t-1}) $
+- 识别已有和缺失的关键知识
+- 包括技能, 文件, 数据和对象
+- 确定知识管理的范围和重点
 
     </div>
 
     <div 
     id            = "a14"
     class         = "step markdown"
-    data-rel-to   = "c23t"
-    data-rel-x    = "3000"
-    data-rel-y    = "-1600"
+    data-rel-to   = "a13"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 正向过程
+### 获取
 
-- 逐渐向数据中添加噪声的过程
-- 从原始数据 $ \mathbf{x}\_0 $ 开始, 逐步引入噪声
-- 最终生成近似噪声的数据 $ \mathbf{x}\_T $
-- 条件概率分布, 其中 $ \mathbf{x}\_t $ 是在给定 $ \mathbf{x}\_{t-1} $ 的情况下生成
-- $$ q(\mathbf{x}\_t | \mathbf{x}\_{t-1}) = \mathcal{N}(\mathbf{x}\_t; \sqrt{1-\beta\_t} \mathbf{x}\_{t-1}, \beta\_t \mathbf{I}) $$
-- $ \beta\_t $ 决定了每一步加入的噪声量
-- $ \mathcal{N} $ 表示高斯分布
+- 学习新技能, 研究, 购买和合作
+- 外部资源和内部知识创造相结合
+- 扩展现有知识库
+- 填补知识空白
 
     </div>
 
@@ -372,18 +354,17 @@
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 反向过程
+### 分享
 
-- 从噪声数据重构原始数据的过程
-- 从噪声状态重建出干净的数据状态
-- $$ p(\mathbf{x}\_{t-1} | \mathbf{x}\_t) = \mathcal{N}(\mathbf{x}\_{t-1}; \mu\_{\theta}(\mathbf{x}\_t, t), \sigma\_t^2 \mathbf{I}) $$
-- $ \mu\_{\theta}(\mathbf{x}\_t, t) $ 是由神经网络参数化的函数, 预测给定 $ \mathbf{x}\_t $ 下 $ \mathbf{x}\_{t-1} $ 的最可能状态
-- $ \sigma\_t^2 $ 是噪声的方差, 是固定值或者由模型动态预测
+- 讲座, 研讨会
+- 网络和社交平台
+- 增加可见性和易达性
+- 鼓励分享经验和教训
 
     </div>
 
@@ -392,16 +373,17 @@
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 核心组件: 噪声添加与去除
+### 应用
 
-- 添加噪声的策略和效果
-- 去除噪声的机制
-- 噪声模型对生成质量的影响
+- 应用于实际工作中
+- 产生价值
+- 提升质量, 创新服务
+- 需要相应的支持和激励机制
 
     </div>
 
@@ -410,15 +392,17 @@
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "1100"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Diffusion 模型的训练数据要求
+### 个人知识管理
 
-- 数据类型与质量要求
-- 大量数据的处理与优化
+- 个人处理和利用个人知识的过程
+- 提高个人效率
+- 提升解决问题能力
+- 提升创新能力
 
     </div>
 
@@ -432,11 +416,12 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 训练 Diffusion 模型的损失函数
+### 知识管理系统
 
-- 损失函数: $ \mathcal{L} = \mathbb{E}[\|\mathbf{x}\_0 - \hat{\mathbf{x}}\_0(\mathbf{x}\_t)\|^2] $
-- 如何优化模型以最小化重建误差
-- 损失函数的影响: 模型稳定性与生成质量
+- 存储
+- 组织
+- 检索
+- 共享
 
     </div>
 
@@ -450,29 +435,29 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 训练中的挑战与解决方案
+### 知识管理的挑战
 
-- 训练资源需求: 计算力与时间
-- 优化策略: 如何提高效率与减少资源消耗
-- 技术进展: 利用新算法与硬件优化模型性能
+- 文化障碍
+- 技术障碍
+- 结构障碍
 
     </div>
 
     <div 
     id            = "a20"
     class         = "step markdown"
-    data-rel-to   = "c23t"
-    data-rel-x    = "4800"
-    data-rel-y    = "-1600"
+    data-rel-to   = "a19"
+    data-rel-x    = "-1000"
+    data-rel-y    = "-200"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### 时间步的调整方法与重要性
+### 文化障碍
 
-- 时间步数量的选择如何影响模型性能
-- 时间步的细微调整对结果的具体影响
-- 实践中的最佳实践与常见误区
+- 组织文化对知识分享的影响
+- 开放和信任
+- 榜样作用和奖励机制
 
     </div>
 
@@ -481,15 +466,16 @@
     class         = "step markdown"
     data-rel-to   = "a20"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "300"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### 条件生成
+### 技术障碍
 
-- 条件生成的概念与应用
-- 如何在 Diffusion 模型中实施条件生成
+- 系统集成和数据迁移
+- 技术平台选择和员工培训
+- 技术更新和组织适应之间的矛盾
 
     </div>
 
@@ -498,34 +484,34 @@
     class         = "step markdown"
     data-rel-to   = "a21"
     data-rel-x    = "0"
-    data-rel-y    = "600"
+    data-rel-y    = "300"
     data-rel-z    = "0"
     data-rotate-y = "0"
-    data-scale    = "2">
+    data-scale    = "1">
 
-### Diffusion 模型的技术创新
+### 结构障碍
 
-- Denoising Diffusion Probabilistic Models
-- DDPM 的工作原理与技术优势
-- DDPM 与其他 Diffusion 模型的比较
+- 组织结构限制知识流动
+- 重组和流程优化
 
     </div>
 
     <div 
     id            = "a23"
     class         = "step markdown"
-    data-rel-to   = "a22"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
+    data-rel-to   = "c43t"
+    data-rel-x    = "-400"
+    data-rel-y    = "1000"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### DDPM
+### 个人知识管理工具
 
-- DDPM 是一种基于随机过程的生成模型
-- 模拟物理世界中的扩散过程
-- 在高质量图像生成, 音频合成等领域表现出色
+- 数字化笔记
+- 思维导图
+- 个人数据库
+- 个人维基
 
     </div>
 
@@ -539,102 +525,88 @@
     data-rotate-y = "0"
     data-scale    = "2">
 
-### DDPM 的工作原理
+### 数字笔记应用
 
-- 噪声模型: $ q(\mathbf{x}\_{t} | \mathbf{x}\_{t-1}) = \mathcal{N}(\mathbf{x}\_t; \sqrt{1-\beta\_t} \mathbf{x}\_{t-1}, \beta\_t \mathbf{I}) $
-- 反向过程: $ p\_\theta(\mathbf{x}\_{t-1} | \mathbf{x}\_t) = \mathcal{N}(\mathbf{x}\_{t-1}; \mu\_\theta(\mathbf{x}\_t, t), \sigma\_t^2 \mathbf{I}) $
-- 使用神经网络预测去噪过程中每一步的参数, 如均值 $ \mu\_\theta $ 和方差 $ \sigma\_t^2 $
+- [Evernote](https://evernote.com)
+- [OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app)
+- [Obsidian](https://obsidian.md)
+- [Roam Research](https://roamresearch.com)
+- [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
 
     </div>
 
-    <div 
+    <div
     id            = "a25"
     class         = "step markdown"
     data-rel-to   = "a24"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### DDPM 的技术优势
-
-- 高质量生成
-- 稳定性
-- 可控性
-
-    </div>
-
-    <div 
-    id            = "a26"
-    class         = "step markdown"
-    data-rel-to   = "a25"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### DDPM 与其他 Diffusion 模型的比较
-
-- DDPM 通过预测噪声来优化反向过程, 效率更高
-- 生成高保真度图像时更稳定, 避免 GAN 的训练困难
-- 提供了一种不同于 VAE 的视角
-
-    </div>
-
-    <div 
-    id            = "a27"
-    class         = "step markdown"
-    data-rel-to   = "a26"
-    data-rel-x    = "0"
-    data-rel-y    = "800"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### Improved Diffusion
-
-- Improved Diffusion 的关键改进点
-- 性能提升的具体实例
-- 如何实现更高效的 Diffusion 模型
-
-    </div>
-
-    <div 
-    id            = "a28"
-    class         = "step markdown"
-    data-rel-to   = "c23t"
-    data-rel-x    = "-2400"
-    data-rel-y    = "-2800"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 性能与效率
-
-- 针对传统模型的性能瓶颈提出的改进版本
-- 减少所需的采样步骤, 提高生成速度和质量
-- 使用更复杂的网络结构
-- 改进训练技巧如使用残差连接和注意力机制
-
-    </div>
-
-    <div 
-    id            = "a29"
-    class         = "step markdown"
-    data-rel-to   = "a28"
-    data-rel-x    = "2000"
+    data-rel-x    = "800"
     data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 性能提升
+![Evernote](img/c04/km-evernote.jpeg)
+#### Evernote
 
-- 通过减少采样步骤, 从数千步降低到数百步
-- 更细致的图像细节和更高的图像分辨率
-- 在任务如超分辨率和条件图像生成中展现显著改进
+    </div>
+
+    <div
+    id            = "a26"
+    class         = "step markdown"
+    data-rel-to   = "a25"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![OneNote](img/c04/km-onenote.png)
+#### OneNote
+
+    </div>
+
+    <div
+    id            = "a27"
+    class         = "step markdown"
+    data-rel-to   = "a26"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Obsidian](img/c04/km-obsidian.png)
+#### Obsidian
+
+    </div>
+
+    <div
+    id            = "a28"
+    class         = "step markdown"
+    data-rel-to   = "a27"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Roam Research](img/c04/km-roam-research.jpeg)
+#### Roam Research
+
+    </div>
+
+    <div
+    id            = "a29"
+    class         = "step markdown"
+    data-rel-to   = "a28"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![DEVONthink](img/c04/km-devonthink.jpeg)
+#### DEVONthink
 
     </div>
 
@@ -642,58 +614,216 @@
     id            = "a30"
     class         = "step markdown"
     data-rel-to   = "a29"
-    data-rel-x    = "2000"
-    data-rel-y    = "0"
+    data-rel-x    = "-800"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 实现更高效的 Diffusion 模型
+### 思维导图软件
 
-- 采用分层训练方法, 逐层优化网络性能
-- 引入高效网络设计, 如深度可分卷积和多尺度结构
-- 使用先进的算法加速如 FFT 加速的卷积运算, 优化内存和计算资源的使用
-
-    </div>
-
-    <div 
-    id            = "a31"
-    class         = "step markdown"
-    data-rel-to   = "a30"
-    data-rel-x    = "2000"
-    data-rel-y    = "0"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 最新进展与未来方向
-
-- Diffusion 模型在各领域的新应用
-- 技术发展的趋势与挑战
-- 未来研究方向与潜在的突破
+- [XMind](https://www.xmind.net)
+- [MindManager](https://www.mindmanager.com)
+- [theBrain](https://www.thebrain.com)
+- [FreeMind](http://freemind.sourceforge.net/wiki/index.php/Main_Page)
 
     </div>
 
     <div
-    id            = "mm23"
+    id            = "a31"
     class         = "step markdown"
-    data-rel-to   = "c23t"
+    data-rel-to   = "a30"
+    data-rel-x    = "800"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![XMind](img/c04/km-xmind.png)
+#### XMind
+
+    </div>
+
+    <div
+    id            = "a32"
+    class         = "step markdown"
+    data-rel-to   = "a31"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![MindManager](img/c04/km-mindmanager.png)
+#### MindManager
+
+    </div>
+
+    <div
+    id            = "a33"
+    class         = "step markdown"
+    data-rel-to   = "a32"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![theBrain](img/c04/km-thebrain.jpg)
+#### theBrain
+
+    </div>
+
+    <div
+    id            = "a34"
+    class         = "step markdown"
+    data-rel-to   = "a33"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![FreeMind](img/c04/km-freemind.png)
+#### FreeMind
+
+    </div>
+
+    <div 
+    id            = "a35"
+    class         = "step markdown"
+    data-rel-to   = "a34"
+    data-rel-x    = "-800"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 个人数据库
+
+- [Airtable](https://airtable.com)
+- [Notion](https://notion.so)
+- [Craft](https://www.craft.do)
+- [Coda](https://coda.io)
+
+    </div>
+
+    <div
+    id            = "a36"
+    class         = "step markdown"
+    data-rel-to   = "a35"
+    data-rel-x    = "800"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Airtable](img/c04/km-airtable.png)
+#### Airtable
+
+    </div>
+
+    <div
+    id            = "a37"
+    class         = "step markdown"
+    data-rel-to   = "a36"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Notion](img/c04/km-notion.jpeg)
+#### Notion
+
+    </div>
+
+    <div
+    id            = "a38"
+    class         = "step markdown"
+    data-rel-to   = "a37"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Craft](img/c04/km-craft.webp)
+#### Craft
+
+    </div>
+
+    <div
+    id            = "a39"
+    class         = "step markdown"
+    data-rel-to   = "a38"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Coda](img/c04/km-coda.jpeg)
+#### Coda
+
+    </div>
+
+    <div 
+    id            = "a40"
+    class         = "step markdown"
+    data-rel-to   = "a39"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 实践步骤
+
+- 知识的审计
+- 知识的分类和编目
+- 知识的维护和更新
+
+    </div>
+
+    <div 
+    id            = "a41"
+    class         = "step markdown"
+    data-rel-to   = "a40"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 未来趋势
+
+- 人工智能在知识管理中的应用
+- 知识管理的全球化和网络化
+- 持续学习和自适应系统
+
+    </div>
+
+    <div
+    id            = "mm43"
+    class         = "step markdown"
+    data-rel-to   = "c43t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 2.3 mindmap](img/c02/mindmap-2-3.png)
+![course 4.3 mindmap](img/c04/mindmap-4-3.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c23q"
+    id            = "c43q"
     class         = "step markdown"
-    data-rel-to   = "c23t"
+    data-rel-to   = "c43t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -702,20 +832,20 @@
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 2.3 深度学习的原理与应用
+### 4.3 知识管理
 
-- 解释什么是自注意力机制.
-- 讨论自注意力在 Transformer 模型中的重要性.
-- 为什么 Diffusion 模型生成过程具有高稳定性?
-- 尝试做一个实验, 使用 DDPM 生成特定风格的图像.
-- 讨论使用注意力机制的优势, 特别在处理大数据时.
-- 思考一种可能的场景, 将 Transformer 和 Diffusion 模型结合使用, 以解决现实世界中的问题.
+- 什么是知识管理? 简述其在组织中的作用.
+- 知识管理的主要目的是什么?
+- 知识管理系统通常包括哪些功能?
+- 分享在知识管理中扮演什么角色? 解释其重要性.
+- 使用数字笔记工具对个人知识管理有什么好处?
+- 思维导图软件在知识管理中如何发挥作用?
 
 ----
 
-[ 2.2 多层神经网络的诞生与发展](ita-2-2.html#/overview)
-[| 练习 |](ita-exec.html)
-[ 2.4 深度学习的现状与不足](ita-2-4.html#/overview)
+[ 4.2 知识图谱](il-4-2.html#/overview)
+[| 练习 |](il-exec.html)
+[ 5.1 常见决策方法](il-5-1.html#/overview)
 
     </div>
 

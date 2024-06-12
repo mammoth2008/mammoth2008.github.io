@@ -6,10 +6,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!-- 修改页面标题 -->
-        <title>DB & DS | HUST</title>
+        <title>IL | HUST</title>
 
 <!-- 修改 content -->
-        <meta name="description" content="数据库与数据结构课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
+        <meta name="description" content="信息素养课程使用, 为哈尔滨理工大学经济管理学院信息管理与信息系统专业设计. " />
         <meta name="author" content="xinjiang@hrbust.edu.cn" />
 
 <!-- 引入数学公式 -->
@@ -72,7 +72,7 @@
 <!-- 修改 id -->
 
     <div 
-    id         = "c91t"
+    id         = "c42t"
     class      = "step"
     data-x     = "0"
     data-y     = "0"
@@ -80,8 +80,8 @@
     data-scale = "5">
 
     <!-- 修改标题 -->
-        <h2>9. 线性表</h2>
-        <h3 style="text-align: center">9.1 线性表的定义</h3>
+        <h2>4. 知识管理</h2>
+        <h3 style="text-align: center">4.2 知识图谱</h3>
         <p class="footnote">
             <inlinecode style="font-size: 16px">
             Powered by 
@@ -104,35 +104,33 @@
     <div 
     id            = "a1"
     class         = "step markdown"
-    data-rel-to   = "c91t"
-    data-rel-x    = "-700"
-    data-rel-y    = "-500"
+    data-rel-to   = "c42t"
+    data-rel-x    = "-1600"
+    data-rel-y    = "-800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 线性表 List
+### 定义
 
-- 数据元素排列像一条线
-- 所有数据元素类型相同
-- 由有限个数据元素组成
-- 每个数据元素有唯一序号
+- 结合实体, 概念, 分类
+- 强调知识间关系
+- 由实体, 关系, 属性组成
 
     </div>
 
-    <div 
+    <div
     id            = "a2"
     class         = "step markdown"
     data-rel-to   = "a1"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
+    data-rel-x    = "-1700"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 线性表的逻辑结构
-
-- $ L = (a\_0, a\_1, a\_2, \dots, a\_i, \dots, a\_{n-1}) $
+![Knowledge Graph](img/c04/knowledge-graph-1.jpeg)
+#### Knowledge Graph
 
     </div>
 
@@ -140,40 +138,32 @@
     id            = "a3"
     class         = "step markdown"
     data-rel-to   = "a2"
-    data-rel-x    = "0"
+    data-rel-x    = "1500"
     data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 线性表的构成
+### 知识图谱与数据库的区别
 
-- 开始元素 (首元素)
-- 终端元素 (尾元素)
-- 前驱元素
-- 后继元素
+- 知识图谱注重实体间关系和语义
+- 提供更多知识探索方式
+- 数据库侧重数据存储和查询效率
 
     </div>
 
-    <div 
+    <div
     id            = "a4"
     class         = "step markdown"
-    data-rel-to   = "c91t"
-    data-rel-x    = "200"
-    data-rel-y    = "1500"
+    data-rel-to   = "a3"
+    data-rel-x    = "-1700"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 线性表的抽象数据类型
-
-    ADT List
-        {
-        数据对象:
-$$ D = \lbrace a\_i | 0 \leq i \leq n-1, n \geq 0, a\_i 为 E 类型 \rbrace $$
-
-        数据关系:
-$$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-2 \rbrace $$
+![Knowledge Graph vs. Database](img/c04/kg-database.png)
+#### Knowledge Graph vs. Database
 
     </div>
 
@@ -181,64 +171,47 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     id            = "a5"
     class         = "step markdown"
     data-rel-to   = "a4"
-    data-rel-x    = "0"
-    data-rel-y    = "1300"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-    ADT List
-        基本运算:
-            void CreateList(E[] a)
-            void Add(E e)
-            int size()
-            void Setsize(int nlen)
-            E GetElem(int i)
-            void SetElem(int i, E e)
-            int GetNo(E e)
-            void swap(int i, int j)
-            void Insert(int i, E e)
-            void Delete(int i)
-            String toString()
-        } ADT List
-
-    </div>
-
-    <div 
-    id            = "a6"
-    class         = "step markdown"
-    data-rel-to   = "c91t"
-    data-rel-x    = "2000"
-    data-rel-y    = "-3000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### 顺序存储结构
-
-- 把元素按照逻辑顺序依次存放在一组地址连续的存储单元里
-- 顺序表
-- 静态分配
-- 动态分配
-
-    </div>
-
-    <div 
-    id            = "a7"
-    class         = "step markdown"
-    data-rel-to   = "a6"
-    data-rel-x    = "0"
+    data-rel-x    = "1700"
     data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### 动态分配
+### 知识图谱的基本元素
 
-- 使用数组存储 `data`
-- 定义数组大小 `capacity`
-- 随时记录 `size`
-- $ size \leq capacity $
+- 实体: 节点, 如人或地点
+- 关系: 连接节点, 表示实体间关系
+- 属性: 描述实体和关系的信息
+
+    </div>
+
+    <div
+    id            = "a6"
+    class         = "step markdown"
+    data-rel-to   = "a5"
+    data-rel-x    = "-1700"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Entities of Knowledge Graph](img/c04/kg-entities.png)
+#### Entities of Knowledge Graph
+
+    </div>
+
+    <div
+    id            = "a7"
+    class         = "step markdown"
+    data-rel-to   = "a6"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Relationships of Knowledge Graph](img/c04/kg-relationships.png)
+#### Relationships of Knowledge Graph
 
     </div>
 
@@ -246,49 +219,33 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     id            = "a8"
     class         = "step markdown"
     data-rel-to   = "a7"
-    data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-x    = "1700"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SqlistClass&lt;E&gt;
+### 基础
 
-    public class SqlistClass&lt;E&gt;
-    {
-        final int initcapacity = 10;
-        public E[] data;
-        public int size;
-        private int capacity;
-        public SqlistClass()
-        {
-            data = (E[]) new Object[init capacity];
-            capacity = initcapacity;
-            size = 0;
-        }
+- 语义网络 (Semantic Network)
+- 和本体论 (Ontology)
+- 图数据库技术
+- 语义查询和推理算法
 
     </div>
 
-    <div 
+    <div
     id            = "a9"
     class         = "step markdown"
     data-rel-to   = "a8"
-    data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-x    = "-1700"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### updatecapacity(int newcapacity)
-
-    private void updatecapacity(int newcapacity)
-    {
-        E[] newdata = (E[]) new Object[newcapacity];
-        for (int i = 0; i < size; i++)
-            newdata[i] = data[i];
-        capacity = newcapacity;
-        data = newdata;
-    }
+![Semantic Network](img/c04/kg-semantic-network.png)
+#### Semantic Network
 
     </div>
 
@@ -296,27 +253,17 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     id            = "a10"
     class         = "step markdown"
     data-rel-to   = "a9"
-    data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-x    = "1700"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### CreateList(E[] a)
+### 构建方法
 
-    public void CreateList(E[] a)
-    {
-        int i,k = 0;
-        for(i = 0; i < a.length; i++)
-           {if (size == capacity)
-                updatecapacity(2 * size);
-           data[k] = a[i];
-           k++;
-           }
-        size = k;
-    }
-
-- 时间复杂度 $ \mathcal{O}(n) $
+- 数据源的选择和处理
+- 实体识别和关系抽取
+- 知识提取和整合技术
 
     </div>
 
@@ -325,91 +272,64 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     class         = "step markdown"
     data-rel-to   = "a10"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Add(E e)
+### 实际应用
 
-    public void Add[E e]
-    {
-        if (size == capacity)
-            updatecapacity(2 * size);
-        data[size] = e;
-        size++;
-    }
-
-- 时间复杂度 $ \mathcal{O}(1) $
+- 搜索引擎
+- 推荐系统
+- 健康医疗
 
     </div>
 
-    <div 
+    <div
     id            = "a12"
     class         = "step markdown"
-    data-rel-to   = "a6"
-    data-rel-x    = "2000"
-    data-rel-y    = "0"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-### size()
-
-    public int size()
-    {
-        return size;
-    }
-
-- 时间复杂度 $ \mathcal{O}(1) $
-
-    </div>
-
-    <div 
-    id            = "a13"
-    class         = "step markdown"
-    data-rel-to   = "a12"
-    data-rel-x    = "0"
-    data-rel-y    = "1000"
-    data-rel-z    = "0"
-    data-rotate-y = "0"
-    data-scale    = "2">
-
-###Setsize(int nlen)
-
-    public void Setsize(int nlen)
-    {
-        if (nlen < 0 || nlen > size)
-            throw new IllegalArgumentException(
-            "设置长度: n 不在有效范围内");
-        size = nlen;
-    }
-
-- 时间复杂度 $ \mathcal{O}(1) $
-
-    </div>
-
-    <div 
-    id            = "a14"
-    class         = "step markdown"
-    data-rel-to   = "a13"
+    data-rel-to   = "a11"
     data-rel-x    = "0"
     data-rel-y    = "1200"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GetElem(int i)
+![Knowledge Graph & Search Engine](img/c04/kg-search-engine.png)
+#### Knowledge Graph & Search Engine
 
-    public E GetElem(int i)
-    {
-        if (i < 0 || i > size - 1)
-            throw new IllegalArgumentException(
-            "取元素: i 不在有效范围内");
-        return (E)data[i];
-    }
+    </div>
 
-- 时间复杂度 $ \mathcal{O}(1) $
+    <div
+    id            = "a13"
+    class         = "step markdown"
+    data-rel-to   = "a12"
+    data-rel-x    = "0"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Knowledge Graph & Recommendation System](img/c04/kg-recommendation.png)
+#### Knowledge Graph & Recommendation System
+
+    </div>
+
+    <div 
+    id            = "a14"
+    class         = "step markdown"
+    data-rel-to   = "c42t"
+    data-rel-x    = "500"
+    data-rel-y    = "1200"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 在学习中的应用
+
+- 优化学习过程
+- 优化个人学习路径
+- 复习和考试准备
 
     </div>
 
@@ -418,22 +338,16 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     class         = "step markdown"
     data-rel-to   = "a14"
     data-rel-x    = "0"
-    data-rel-y    = "1200"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### SetElem(int i, E e)
+### 优化学习过程
 
-    public void SetElem(int i, E e)
-    {
-        if (i < 0 || i > size - 1)
-            throw new IllegalArgumentException(
-            "设置元素: i 不在有效范围内");
-        data[i] = e;
-    }
-
-- 时间复杂度 $ \mathcal{O}(1) $
+- 连接相关知识点, 构建知识体系
+- 整合信息, 形成连贯的知识网络
+- 建立跨学科链接, 拓宽知识视野
 
     </div>
 
@@ -442,25 +356,16 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     class         = "step markdown"
     data-rel-to   = "a15"
     data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### GetNo(E e)
+### 优化个人学习路径
 
-    public int GetNo(E e)
-    {
-        int i = 0;
-        while(i < size && !data[i].equals(e))
-            i++;
-        if(i >= size)
-            return -1;
-        else
-            return i;
-    }
-
-- 时间复杂度 $ \mathcal{O}(n) $
+- 个性化知识图谱
+- 识别和关联关键概念
+- 理解知识点间复杂关系
 
     </div>
 
@@ -469,127 +374,173 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     class         = "step markdown"
     data-rel-to   = "a16"
     data-rel-x    = "0"
-    data-rel-y    = "1300"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### swap(int i, int j)
+### 复习和考试准备
 
-    public void swap(int i, int j)
-    {
-        E temp = data[i];
-        data[i] = data[j];
-        data[j] = temp;
-    }
-
-- 时间复杂度 $ \mathcal{O}(1) $
+- 加速复习过程
+- 快速回顾关键知识点
+- 模拟考试和自测
 
     </div>
 
-    <div 
+    <div
     id            = "a18"
     class         = "step markdown"
-    data-rel-to   = "a12"
-    data-rel-x    = "1600"
-    data-rel-y    = "300"
+    data-rel-to   = "a17"
+    data-rel-x    = "-100"
+    data-rel-y    = "0"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Insert(int i, E e)
-
-    public void Insert(int i, E e)
-    {
-        if (i < 0 || i > size)
-            throw new IllegalArgumentException(
-            "插入元素: i 不在有效范围内");
-        if (size == capacity)
-            updatecapacity(2 * size);
-        for (int j = size ; j >= i; j--)
-            data[j] = data[j -1];
-        data[i] = e;
-        size++;
-    }
-
-- 时间复杂度 $ \mathcal{O}(n) $
+![Knowledge Graph & Learning](img/c04/knowledge-graph-1.png)
+#### Knowledge Graph & Learning
 
     </div>
 
     <div 
     id            = "a19"
     class         = "step markdown"
-    data-rel-to   = "a18"
-    data-rel-x    = "0"
-    data-rel-y    = "1500"
+    data-rel-to   = "c42t"
+    data-rel-x    = "2600"
+    data-rel-y    = "-800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### Delete(int i)
+### 构建方法
 
-    public void Delete(int i)
-    {
-        if (i < 0 || i > size - 1)
-            throw new IllegalArgumentException(
-            "删除元素: i 不在有效范围内");
-        for (int j = i; j < size - 1; j++)
-            data[j] = data[j + 1];
-        size--;
-        if(capacity > initcapacity &&
-        size == capacity / 4)
-            updatecapacity(capacity / 2);
-    }
+- 确定核心主题和范围
+- 识别关键实体和概念
+- 描绘实体间的关系和属性
 
-- 时间复杂度 $ \mathcal{O}(n) $
+    </div>
+
+    <div
+    id            = "a20"
+    class         = "step markdown"
+    data-rel-to   = "a19"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![Knowledge Graph Construction](img/c04/kg-tools.png)
+#### Knowledge Graph Construction
 
     </div>
 
     <div 
-    id            = "a20"
+    id            = "a21"
     class         = "step markdown"
-    data-rel-to   = "a19"
-    data-rel-x    = "0"
-    data-rel-y    = "1400"
+    data-rel-to   = "a20"
+    data-rel-x    = "-1200"
+    data-rel-y    = "800"
     data-rel-z    = "0"
     data-rotate-y = "0"
     data-scale    = "2">
 
-### toString()
+### 技术支持
 
-    public String toString()
-    {
-        String ans = "";
-        for (int i = 0; i < size; i++)
-            ans += data[i].toString() + " ";
-        return ans;
-    }
-
-- 时间复杂度 $ \mathcal{O}(n) $
+- 使用图数据库和语义技术
+- 利用 NLP 工具提取和组织信息
+- 应用机器学习优化知识结构
 
     </div>
 
+    <div
+    id            = "a22"
+    class         = "step markdown"
+    data-rel-to   = "a21"
+    data-rel-x    = "1200"
+    data-rel-y    = "0"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+![NLP, Natural Language Processing](img/c04/kg-nlp.png)
+#### NLP, Natural Language Processing
+
+    </div>
+
+    <div 
+    id            = "a23"
+    class         = "step markdown"
+    data-rel-to   = "a22"
+    data-rel-x    = "-1200"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 工具和语言
+
+- RDF (Resource Description Framework)
+- OWL (Web Ontology Language)
+
+    </div>
+
+    <div 
+    id            = "a24"
+    class         = "step markdown"
+    data-rel-to   = "a23"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 挑战和前沿发展
+
+- 数据的动态性和不完整性
+- 知识融合和冲突解决
+- 增强的语义理解和自然语言处理
+
+    </div>
+
+    <div 
+    id            = "a25"
+    class         = "step markdown"
+    data-rel-to   = "a24"
+    data-rel-x    = "0"
+    data-rel-y    = "800"
+    data-rel-z    = "0"
+    data-rotate-y = "0"
+    data-scale    = "2">
+
+### 未来趋势
+
+- 人工智能和知识图谱的融合
+- 知识图谱的扩展性和开放性
+- 互联网上知识图谱的发展
+
+    </div>
 
     <div
-    id            = "mm91"
+    id            = "mm42"
     class         = "step markdown"
-    data-rel-to   = "c91t"
+    data-rel-to   = "c42t"
     data-rel-x    = "0"
     data-rel-y    = "-2000"
     data-rotate-y = "0"
     data-rotate   = "0"
     data-scale    = "1">
 
-![course 9.1 mindmap](img/c09/mindmap-9-1.png)
+![course 4.2 mindmap](img/c04/mindmap-4-2.png)
 
     </div>
 
 <!-- 本节问题 -->
 
     <div
-    id            = "c91q"
+    id            = "c42q"
     class         = "step markdown"
-    data-rel-to   = "c91t"
+    data-rel-to   = "c42t"
     data-rel-x    = "0"
     data-rel-y    = "-800"
     data-z        = "500"
@@ -598,19 +549,19 @@ $$ r = \lbrace &lt;a\_{i}, a\_{i+1}&gt; | a\_i, a\_{i+1} \in D, i = 0, \dots, n-
     data-rotate-z = "180"
     data-scale    = "2">
 
-### 9.1 线性表的定义
+### 4.2 知识图谱
 
-- 线性表的数据元素有什么特点?
-- 在线性表中, 如何定义前驱元素和后继元素?
-- Add(E e) 和 Insert(int i, E e) 有什么区别?
-- 什么是静态分配和动态分配?
-- 在顺序存储结构中, capacity 和 size 之间应满足什么条件?
+- 简述知识图谱的核心组成元素.
+- 知识图谱中的 "实体" 通常指什么? 给出一个例子.
+- 描述构建知识图谱的一般步骤.
+- 知识图谱如何帮助构建跨学科联系?
+- 知识图谱在复习和考试准备中如何应用?
 
 ----
 
-[ 8.4 数据结构的目标](dbds-8-4.html#/overview)
-[| 练习 |](dbds-exec.html)
-[ 9.3 线性表的链式存储结构](dbds-9-3.html#/overview)
+[ 4.1 知识的创造过程](il-4-1.html#/overview)
+[| 练习 |](il-exec.html)
+[ 4.3 知识管理](il-4-3.html#/overview)
 
     </div>
 
