@@ -95,6 +95,15 @@ table {
 }
 
 /*
+    Table Headings Sticky
+*/
+
+thead {
+    position: sticky;
+    top: 0;
+}
+
+/*
     Now here is when interesting things start to appear.
 
     We set up <body> styles with default font and nice gradient in the background.
