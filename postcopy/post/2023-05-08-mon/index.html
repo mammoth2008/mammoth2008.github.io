@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>日贴230508 Mon Deep Learning 1.1 - 人生玩家</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="猛犸" /><meta name="description" content="日日用功" /><meta name="keywords" content="AI, 读书, 生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.127.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/postcopy/post/2023-05-08-mon/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.e09733ababe6c5096d2effb981f7e388497fd20dac018979a0770a018e642f9e.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">人生玩家</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo"><img src="/mstile-150x150.png" style="width: 42px; height: 42px; display: inline-block; vertical-align: -4px;">人生玩家</a>
+</div>
+
+
+
+
+</style>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]}
+    });
+</script>
+
+<script type="text/javascript" async  src="/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</script>
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="ch1-引言">Ch1 引言</h2>
+<p>人工智能的真正挑战，在于解决哪些对人来说很容易执行、但很难形式化描述的任务。</p>
+<p>……本书讨论一种解决方案。该方案可以让计算机从经验中学习，并根据层次化的概念体系来理解世界，而每个概念则通过与某些相对简单的概念之间的关系来定义……如果绘制出表示这些概念如何建立在彼此之上的图，我们将得到一张“深”（层次很多）的图。基于这个原因，我们称这种方法为 AI <strong>深度学习</strong>。</p>
+<p>人工智能的一个关键挑战，就是如何将这些非形式化的知识传达给计算机。</p>
+<p>AI 系统需要具备自己获取知识的能力，即从原始数据中提取模式的能力。这种能力称为机器学习。</p>
+<p>机器学习算法的性能在很大程度上依赖于给定数据的<strong>表示（representation）</strong>。表示的选择会对机器学习算法的性能产生巨大的影响。</p>
+<p>许多人工智能任务都可以通过以下方式解决：先提取一个合适的特征集，然后将这些特征提供给简单的机器学习算法。这种方法的关键在于设计特征，而不是设计机器学习算法。然而，对于许多任务来说，我们很难知道该提取哪些特征。</p>
+<p>解决这个问题的途径之一，是使用机器学习来发现表示本身，而不仅仅是把表示映射到输出。这种方法称为<strong>表示学习（representation learning）</strong>。表示学习的典型例子是自编码器（autoencoder），它由一个编码器和一个解码器组成，编码器将输入数据转换为不同的表示，解码器将这个新的表示转换为重建的输入。自动编码器的训练目标是使重建的输入尽可能接近原始输入，但同时也使表示有某些特定的好处。例如，我们可以限制表示中的元素数量，从而使编码器被迫学习一种压缩数据的表示。我们也可以在训练过程中向表示中添加噪声，从而使编码器被迫学习鲁棒性较强的表示。</p>
+<p>当设计特征或设计用于学习特征的算法时，我们的目标通常是分离出能解释观察数据的<strong>变差因素(factors of variation)</strong>，即数据中的统计结构。如果我们能够完美地分离出这些因素，那么我们就能够构建一个完美的表示，其中包含关于数据生成方式的所有信息。在实际应用中，我们通常只能分离出一部分变差因素，或者只能分离出我们感兴趣的变差因素。这些变差因素通常被称为<strong>因果因素</strong>（causal factors）或<strong>因果机制</strong>（causal mechanisms）。</p>
+<p><em>深度学习</em>让计算机通过较简单的概念构建复杂的概念。深度学习模型的典型例子是前馈深度网络或<strong>多层感知机（multilayer perceptron, MLP）</strong>。多层感知机仅仅是一个将一组输入值映射到输出值的数学函数。这个函数由许多较简单的函数复合而成。每个较简单的函数只能对应于输入的一种简单模式，而复合函数则对应于输入的复杂模式。我们可以认为不同数学函数的每一次应用都为输入提供了新的表示。</p>
+<p><a href="https://book.douban.com/subject/27087503/">《深度学习》</a></p>
+<p>原作名: Deep Learning: Adaptive Computation and Machine Learning series</p>
+<p>作者: [美] 伊恩·古德费洛 / [加] 约书亚·本吉奥 / [加] 亚伦·库维尔</p>
+<p>译者: 赵申剑 / 黎彧君 / 符天凡 / 李凯</p>
+<p>出版年: 2017-7-1</p>
+<p>出版社: 人民邮电出版社</p>
+
+  </div>
+</article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:mengma@vip.163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.facebook.com/mengma2008/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://github.com/mammoth2008" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/ilifeplayer" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/mengma" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/mammoth2008" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.tumblr.com/blog/mammoth2008" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="https://www.instagram.com/mengma2008/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="/slides/index.html" class="iconfont icon-bilibili" title="bilibili"></a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>LifePlayer</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "CommonHTML": {
+        scale: 100
+      }
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

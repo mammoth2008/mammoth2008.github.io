@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>日贴230510 Wed Deep Learning 1.2 - 人生玩家</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="猛犸" /><meta name="description" content="日日用功" /><meta name="keywords" content="AI, 读书, 生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.127.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/postcopy/post/2023-05-10-wed/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.e09733ababe6c5096d2effb981f7e388497fd20dac018979a0770a018e642f9e.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">人生玩家</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo"><img src="/mstile-150x150.png" style="width: 42px; height: 42px; display: inline-block; vertical-align: -4px;">人生玩家</a>
+</div>
+
+
+
+
+</style>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]}
+    });
+</script>
+
+<script type="text/javascript" async  src="/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</script>
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <h2 id="ch1-12-深度学习的历史趋势">Ch1 1.2 深度学习的历史趋势</h2>
+<p>一般认为，深度学习到目前已经经历了三次发展浪潮：20 世纪 40 年代到 60 年代的控制论(Cybernetics)，20 世纪 80 年代到 90 年代的连接主义(connectionism)和 2006 年以来的深度学习。</p>
+<p>现代术语&quot;深度学习&quot;超越了目前机器学习模型的神经科学观点。它述诸于学习多层次组合这一更普遍的原理。</p>
+<p>现代深度学习最早的前身是从神经科学角度出发的简单线性模型。这些模型设计为使用一组 $ n $ 个输入 $ x_1,\dots,x_n$ 来预测一个输出 $ y $。这些模型希望学习一组权重 $ w_1,\dots,w_n $，并计算它们的输出 $ f(\mathbf{x,w} )=x_1w_1+\dots+x_nw_n $。</p>
+<p>McCulloch-Pitts 神经元是脑功能的早期模型。感知机成为第一个能根据每个类别的输入样本来学习权重的模型。自适应线性单元(ADALINE)简单地返回函数 $ f(\mathbf{x,w}) $ 的值来预测一个实数。用于调节 ADALINE 权重的学习算法被称为随机梯度下降(SGD, Stochasitc Gradient Descent)。 基于感知机和 ADALINE 的模型被称为线性模型。线性模型有许多局限性，最著名的是，它们不能学习异或函数(XOR)。</p>
+<p>在 20 世纪 80 年代，神经网络的研究者们开始研究如何训练多层神经网络。这些网络被称为多层感知机(MLP, Multilayer Perceptron)。MLP 由许多神经元组成，每个神经元都是一个线性模型，但是使用非线性函数来激活。这些非线性函数被称为激活函数(activation function)。MLP 可以学习异或函数，但是在 20 世纪 90 年代，研究者们发现，训练 MLP 是困难的。这些困难被称为梯度消失问题(gradient vanishing problem)。在 20 世纪 90 年代，研究者们开始使用其他模型，如支持向量机(SVM, Support Vector Machine)和决策树(decision tree)。</p>
+<p>20 世纪 80 年代，神经网络研究的第二次浪潮在很大程度上是伴随一个被称为联结主义(connectionism)或并行分布处理(parallel distributed processing)潮流而出现的，它的背景是认知科学。联结主义的中心思想是，当网络将大量简单的计算单元连接在一起时，可以实现智能行为。</p>
+<p>在 20 世纪 80 年代的联结主义期间，形成的几个关键概念，在今天的深度学习中仍然是非常重要的：</p>
+<ul>
+<li>分布式表示(distributed representation): 一个概念可以由许多不同的特征来表示，而不是由一个特定的特征来表示。例如，一个人可以被表示为年龄、性别、国籍、职业等特征的集合。这些特征可以以不同的方式组合来表示不同的人。这种分布式表示的好处是，它可以更容易地泛化到新的情况，并且可以更有效地利用统计信息。</li>
+<li>反向传播算法(backpropagation): 一种有效的训练多层神经网络的方法。它可以被看作是链式法则的应用，用于计算神经网络中每个参数的梯度。</li>
+<li>长短时记忆(LSTM, Long Short-Term Memory): 一种特殊的神经网络结构，可以有效地学习长期依赖关系。它是一种递归神经网络(RNN, Recurrent Neural Network)，它的参数可以在时间上共享。</li>
+</ul>
+<p>神经网络的第三次浪潮始于 2006 年的突破。Geoffrey Hinton 表明名为&quot;深度信念网络&quot;的神经网络可以使用一种称为&quot;贪婪逐层预训练&quot;的策略来有效训练。这种策略是，首先训练一个模型的第一层，然后将其输出作为第二层的训练数据，以此类推。这种策略的好处是，它可以避免梯度消失问题，并且可以更有效地训练深度模型。这种策略的缺点是，它不能直接应用于所有类型的模型，并且它需要一个预训练阶段，这增加了训练时间。</p>
+<p>在 2006 年之后，研究者们发现，使用更好的优化算法，如 AdaGrad， RMSProp 和 Adam，可以更有效地训练深度模型。这些算法的一个关键特性是，它们可以自动调整每个参数的学习率。这些算法的另一个关键特性是，它们可以使用更复杂的模型，如卷积神经网络(CNN, Convolutional Neural Network)和递归神经网络(RNN, Recurrent Neural Network)，而不需要预训练。</p>
+<p>在 2012 年，Alex Krizhevsky 等人使用卷积神经网络(CNN)赢得了 ImageNet 图像分类挑战赛。这是深度学习的一个重要里程碑，因为它表明，深度学习可以在实际应用中取得出色的结果。</p>
+<p>随着训练数据的增加，所需的技巧正在减少。截止 2016 年，一个简单的经验法则是：监督深度学习算法在每类给定 5000 个标记样本的情况下，可以很好地工作；当至少有 1000 万个标注样本的数据集用于训练时，它将达到或超过人类表现。</p>
+<p>深度学习的另一个重大成就，是在强化学习(reinforcement learning)中的扩展。在强化学习中，一个自主的智能体必须在没有人类操作者指导的情况下，通过试错来学习执行任务。</p>
+<p><a href="https://book.douban.com/subject/27087503/">《深度学习》</a></p>
+<p>原作名: Deep Learning: Adaptive Computation and Machine Learning series</p>
+<p>作者: [美] 伊恩·古德费洛 / [加] 约书亚·本吉奥 / [加] 亚伦·库维尔</p>
+<p>译者: 赵申剑 / 黎彧君 / 符天凡 / 李凯</p>
+<p>出版年: 2017-7-1</p>
+<p>出版社: 人民邮电出版社</p>
+
+  </div>
+</article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:mengma@vip.163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.facebook.com/mengma2008/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://github.com/mammoth2008" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/ilifeplayer" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/mengma" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/mammoth2008" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.tumblr.com/blog/mammoth2008" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="https://www.instagram.com/mengma2008/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="/slides/index.html" class="iconfont icon-bilibili" title="bilibili"></a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>LifePlayer</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "CommonHTML": {
+        scale: 100
+      }
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
