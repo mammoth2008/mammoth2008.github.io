@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Wed, 24 Jul 2024 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2024 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学点东西：Blender（二） 240725 Thu </title>
+      <link>https://yemengma.cn/post/2024-07-25-thu/</link>
+      <pubDate>Thu, 25 Jul 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/2024-07-25-thu/</guid>
+      <description>在 Blender 中有大量的快捷键可以帮助提升建模效率，但往往需要小数字键盘。 不过可以重新定义快捷键，来省掉小数字键盘。 打开设置-键位映射，可以看到大量的</description>
+    </item>
     <item>
       <title>学点东西：Blender（一） 240724 Wed </title>
       <link>https://yemengma.cn/post/2024-07-24-wed/</link>
       <pubDate>Wed, 24 Jul 2024 08:00:00 +0800</pubDate>
       <guid>https://yemengma.cn/post/2024-07-24-wed/</guid>
-      <description>设置和基础 开始学一下 Blender，使用的版本是长期支持版 4.2。教程是 Blender 官网上的 [4.2 版本文档和 B 站上的一个教程【Kurt】Blender零基</description>
+      <description>设置和基础 开始学一下 Blender，使用的版本是长期支持版 4.2。教程是 Blender 官网上的 4.2 版本文档 和 B 站上的一个教程【Kurt】Blender零基</description>
     </item>
     <item>
       <title>文明的进步 2024 Week 29 回顾</title>

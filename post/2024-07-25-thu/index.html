@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>学点东西：Blender（二） 240725 Thu  - 人生玩家</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="猛犸" /><meta name="description" content="在 Blender 中有大量的快捷键可以帮助提升建模效率，但往往需要小数字键盘。 不过可以重新定义快捷键，来省掉小数字键盘。 打开设置-键位映射，可以看到大量的" /><meta name="keywords" content="想法, 读书, 生活" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.127.0 with theme even" />
+
+
+<link rel="canonical" href="https://yemengma.cn/post/2024-07-25-thu/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.4185bd970ca3042b427a3fbf11185666c549e55a2f551da72c73597158c8460a.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">人生玩家</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo"><img src="/mstile-150x150.png" style="width: 42px; height: 42px; display: inline-block; vertical-align: -4px;">人生玩家</a>
+</div>
+
+
+
+
+</style>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]}
+    });
+</script>
+
+<script type="text/javascript" async  src="/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</script>
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">学点东西：Blender（二） 240725 Thu </h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-07-25 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%AC%94%E8%AE%B0/"> 笔记 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#建模基础操作">建模基础操作</a>
+          <ul>
+            <li><a href="#编辑模式的切换">编辑模式的切换</a></li>
+            <li><a href="#点线面的切换">点线面的切换</a></li>
+            <li><a href="#点线面的选择">点线面的选择</a></li>
+            <li><a href="#点线面的控制">点线面的控制</a></li>
+            <li><a href="#法向和法线">法向和法线</a></li>
+          </ul>
+        </li>
+        <li><a href="#建模操作和工具">建模操作和工具</a>
+          <ul>
+            <li><a href="#常用建模操作">常用建模操作</a></li>
+            <li><a href="#辅助工具">辅助工具</a></li>
+            <li><a href="#常用修改器">常用修改器</a></li>
+            <li><a href="#练习螺母-looptools">练习：螺母-LoopTools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>在 Blender 中有大量的快捷键可以帮助提升建模效率，但往往需要小数字键盘。</p>
+<p>不过可以重新定义快捷键，来省掉小数字键盘。</p>
+<p>打开设置-键位映射，可以看到大量的快捷键定义。找个自己喜欢的方式换一下就好。</p>
+<p>另外一个很有用的操作，是用快捷键 N 来打开和隐藏右侧的工具面板。</p>
+<h2 id="建模基础操作">建模基础操作</h2>
+<p>建模即构建想要的 3D 模型。</p>
+<h3 id="编辑模式的切换">编辑模式的切换</h3>
+<p>可以切换的模式有以下几类：</p>
+<ul>
+<li>物体模式；</li>
+<li>编辑模式；</li>
+<li>雕刻模式；</li>
+<li>顶点绘制；</li>
+<li>权重绘制；</li>
+<li>纹理绘制；</li>
+</ul>
+<p>默认情况下，按 Tab 键可以在物体模式和编辑模式之间切换。</p>
+<p>如果想要更方便地切换不同模式，可以在设置-键位映射中，选中“拖动时激活饼菜单”。这样按住 Tab 键，稍微活动一下光标，就会弹出一个包含所有模式的饼菜单，方便选择。</p>
+<h3 id="点线面的切换">点线面的切换</h3>
+<p>编辑模式下，右侧三个小按钮就是点、线、面的切换。快捷键是键盘主区的数字键 1、2、3。</p>
+<h3 id="点线面的选择">点线面的选择</h3>
+<p>可以按 Shift 来多选，例如按下 1，再按 Shift+3，就会同时操作点和面。</p>
+<p>也可以使用框选、刷选等选择工具来选择点线面对象，和选择物体类似。</p>
+<p>按住 Shift 可以多选。</p>
+<p>反选是 Ctrl+I，即选中除当前选中对象之外的其他所有对象。</p>
+<p>选中一个对象，按住 Ctrl 再选中另一个对象，则会选中两个对象之间路径上的所有对象。对多个对象也一样。</p>
+<p>选中一个对象，按 L，则会选择和当前对象连接在一起的所有对象。</p>
+<p>按住 Option，在对象上双击，则会选中一圈对象。横向和纵向都可以，视乎当前鼠标指针的位置而定。</p>
+<p>选中一根竖线，按住 Ctrl-Option，再在竖线上双击，则可以选中一圈竖线；横线也类似。这些操作挺好玩的。</p>
+<p>Option+Z 是切换透视模式。在这种模式下，可以用框选等选择工具选中物体对面的对象。</p>
+<p>当然，也可以使用编辑模式下的选择菜单。</p>
+<h3 id="点线面的控制">点线面的控制</h3>
+<p>同样，使用 R 旋转，使用 G 移动，使用 S 缩放。</p>
+<p>用 X 删除。可以选择多种删除方式。</p>
+<h3 id="法向和法线">法向和法线</h3>
+<p>在右上角的“视图叠加层”工具中打开“面朝向”，来方便分辨正面和反面。蓝色的是正面，红色的是反面。</p>
+<p>选中一个面，再按 Shift+N，就可以切换正反面。</p>
+<p>法线嘛，和当前对象垂直的线。同样，蓝色的线表示正面。</p>
+<p>在 Blender 4.2 里，显示法线的功能从“视图叠加层”挪到了“网格编辑模式叠加层”里。不过都在右上角，两个图标还紧挨着，很好找。</p>
+<h2 id="建模操作和工具">建模操作和工具</h2>
+<p>在 <a href="https://www.bilibili.com/video/BV14u41147YH/">Kurt 的教程</a>里，用了 12 个小模型来帮助学习常见建模操作和工具。</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/CleanShot%202024-07-24%20at%2018.32.50@2x.png" alt="CleanShot 2024-07-24 at 18.32.50@2x"></p>
+<h3 id="常用建模操作">常用建模操作</h3>
+<ul>
+<li>挤出 Extrude E：挤出并移动。可以对点线面操作，结果分别是挤出一个点、挤出一个面和挤出一个体。可以使用 Ctrl+鼠标右键连续挤出。挤出还有几种变形，包括挤出流形、沿法线挤出、挤出多个面和挤出至光标。稍微练习一下就能掌握。</li>
+<li>向内挤出 Insert I：将原有的面缩小，从而制作出一个面上的多个多边形。</li>
+<li>环切 Loopcut Ctrl+R：循环切割。用来将一个规则的对象分成多份。按下鼠标右键会从当前对象的正中间切割。</li>
+<li>倒角 Bevel Ctrl+B：选中一条边，可以制作倒角。可以调整段数来调整倒角的平滑程度。</li>
+<li>合并 Merge M：把多个点合并成一个点。有多种模式，在菜单中选择。按间距合并很有意思，可以快速把多个临近点合并。</li>
+<li>断开 Rip V：对于有三条边的点，可以把点拉开。</li>
+<li>切割 Knife Cut K：把线或者面以直线分成多个部分。按鼠标右键或空格键退出。</li>
+<li>填充 Fill Face F：基于多条连续且首尾相连的边生成一个面。</li>
+<li>桥接 Bridge Ctrl+E：把多个物体连接在一起，一般是用循环边来连接。需要先把要桥接的物体合并。合并的快捷键是 Ctrl+J。</li>
+<li>分离 Separate P：从一个物体中分离当前选中对象。</li>
+</ul>
+<p>下图是一个练习。从正方体开始，用了挤出、向内挤出、环切、倒角、合并、切割操作。</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/render.png" alt="render"></p>
+<h3 id="辅助工具">辅助工具</h3>
+<ul>
+<li>衰减编辑 Proportional</li>
+<li>吸附工具 Snapping</li>
+<li>曲线建模 Curve</li>
+<li>晶格形变 Lattice</li>
+<li>旋绕工具 Spin Tool</li>
+</ul>
+<h3 id="常用修改器">常用修改器</h3>
+<ul>
+<li>表面细化 Subdivision Surface</li>
+<li>实体化 Solidify</li>
+<li>阵列 Array</li>
+<li>简易形变 Simple Deform</li>
+<li>曲线 Curve</li>
+<li>镜像 Mirror</li>
+<li>置换 Displace</li>
+<li>蒙皮 Skin</li>
+<li>缩裹 Shrinkwrap</li>
+<li>倒角 Bevel</li>
+<li>布尔 Boolean</li>
+</ul>
+<h3 id="练习螺母-looptools">练习：螺母-LoopTools</h3>
+<ol>
+<li>建立一个棱柱，把边数改为 6；</li>
+<li>用向内挤出（I）工具，将上下两个面向内挤出一个小六边形；</li>
+<li>选中这两个小六边形的边，右键加细分；</li>
+<li>用 LoopTools 插件（若是设置-插件里没有，可以在设置-获取扩展中下载安装）的“圆环”和“细分”工具把小六边形改为圆形；</li>
+<li>删除这两个圆形面；</li>
+<li>选中这两个圆的边，用桥接工具（Ctrl+E）桥接循环边；</li>
+<li>用 Option 和 Shift+Option 选中外轮廓的边；</li>
+<li>按 1 切换到点模式，就会发现外部所有边都被选中了；</li>
+<li>用倒角工具（Ctrl+B）构建倒角；</li>
+<li>选中内部圆孔的任意一条边，在“选择”菜单中选择“选择锐边”，就可以选中这个圆的所有边；</li>
+<li>用倒角工具（Ctrl+B）构建倒角；</li>
+<li>布光，加材质，渲染。</li>
+</ol>
+<p>做出来的效果如图。</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/render1.png" alt="render1"></p>
+<p>总结一下：</p>
+<ol>
+<li>快捷键还是要多用才能记住；</li>
+<li>记住快捷键不难，难的是知道是用什么操作才能获得自己想要的效果；</li>
+<li>Blender 里的细节太多了。</li>
+</ol>
+<p>下一步：</p>
+<ol>
+<li>学习使用修改器来制作螺母；</li>
+<li>综合使用建模操作、修改器和辅助工具做出第一个模型：蘑菇。</li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">猛犸</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-07-25
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E6%83%B3%E6%B3%95/">想法</a>
+          <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+          <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/2024-07-24-wed/">
+            <span class="next-text nav-default">学点东西：Blender（一） 240724 Wed </span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:mengma@vip.163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.facebook.com/mengma2008/" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="https://github.com/mammoth2008" class="iconfont icon-github" title="github"></a>
+      <a href="https://weibo.com/ilifeplayer" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/mengma" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://www.douban.com/people/mammoth2008" class="iconfont icon-douban" title="douban"></a>
+      <a href="https://www.tumblr.com/blog/mammoth2008" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="https://www.instagram.com/mengma2008/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="/slides/index.html" class="iconfont icon-bilibili" title="bilibili"></a>
+  
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>LifePlayer</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        tags: 'ams',
+        }
+    };
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      "CommonHTML": {
+        scale: 100
+      }
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
