@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>改善节奏 2024 Week 01 回顾 - 人生玩家</title>
+  <title>学点东西：Blender（三） 240726 Fri  - 人生玩家</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="猛犸" /><meta name="description" content="前进吧" /><meta name="keywords" content="回顾, 想法, 生活" />
+<meta name="author" content="猛犸" /><meta name="description" content="上一篇用建模工具做了个螺母，这次用修改器做一个。 用修改器做螺母 修改器不是直接操作物体，而是先呈现操作后的效果，直到应用修改器后才会产生真正的" /><meta name="keywords" content="想法, 读书, 生活" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.127.0 with theme even" />
 
 
-<link rel="canonical" href="https://yemengma.cn/post/24w01-review/" />
+<link rel="canonical" href="https://yemengma.cn/post/2024-07-26-fri/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -90,6 +90,33 @@
 
 </style>
 
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$']]}
+    });
+</script>
+
+<script type="text/javascript" async  src="/lib/mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+</script>
+
 
 
 <nav class="site-navbar">
@@ -114,12 +141,12 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">改善节奏 2024 Week 01 回顾</h1>
+      <h1 class="post-title">学点东西：Blender（三） 240726 Fri </h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2024-01-06 </span>
+        <span class="post-time"> 2024-07-26 </span>
         <div class="post-category">
-            <a href="/categories/%E7%94%9F%E6%B4%BB/"> 生活 </a>
+            <a href="/categories/%E6%83%B3%E6%B3%95/"> 想法 </a>
             </div>
         
       </div>
@@ -134,11 +161,10 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#本周的成果">本周的成果</a></li>
-            <li><a href="#本周的改变">本周的改变</a></li>
-            <li><a href="#做得还不错">做得还不错</a></li>
-            <li><a href="#做得不太好">做得不太好</a></li>
-            <li><a href="#下周的目标">下周的目标</a></li>
+            <li><a href="#用修改器做螺母">用修改器做螺母</a></li>
+            <li><a href="#做个小蘑菇">做个小蘑菇</a></li>
+            <li><a href="#制作树桩">制作树桩</a></li>
+            <li><a href="#制作一朵花">制作一朵花</a></li>
           </ul>
         </li>
       </ul>
@@ -148,41 +174,96 @@
   </div>
 </div>
     <div class="post-content">
-      <p>新年伊始，总是要立几个 flag 的。今年的 flag 之一，是改善节奏。</p>
-<p>节奏分两部分，一部分是项目的节奏，一部分是时间的节奏。</p>
-<p>解决一个问题的过程看成是一个项目，例如写一个程序，完成一篇文章。如何安排项目中各项工作，哪些快哪些慢，哪些早哪些晚，哪些需要精细哪些可以粗放，就是项目的节奏。</p>
-<p>项目当然是需要分配在时间中的。有些人喜欢一鼓作气，甚至不眠不休，直到达到某个目标才停下来。另外一些人喜欢把项目时间分散，比方说每天早上固定时间写一点程序，下午学习晚上阅读等等。</p>
-<p>我自己是第二种，但是并不严格，经常会因为别的琐事打乱时间节奏。</p>
-<p>今年的这个 flag，就是尝试把节奏稳定下来。不一定有周目标，但是有周计划；固定作息，早睡早起；每天固定时间工作，但工作内容灵活。以高质量的工作时间来获得产出，而不是预先设定了产出再去投入时间。</p>
-<p>根据我过去的经验来看，这些不容易。不过这就像运动一样。</p>
-<p>毕竟人的适应能力是很强的，时间久了，人们总能自动忽视轻微的不便。</p>
-<hr>
-<p>本文由 ChatGPT 协助完成。图片由 DALL·E 3 生成。</p>
-<h3 id="本周的成果">本周的成果</h3>
+      <p>上一篇用建模工具做了个螺母，这次用修改器做一个。</p>
+<h3 id="用修改器做螺母">用修改器做螺母</h3>
+<p>修改器不是直接操作物体，而是先呈现操作后的效果，直到应用修改器后才会产生真正的改变。</p>
 <ul>
-<li>写了一篇长文</li>
-<li>看了一点书</li>
+<li>表面细分：右侧属性窗口-修改器-生成-表面细分。可以把立方体变成球体，配合 Ctrl+R 切割，可以方便地塑形。</li>
+<li>实体化：同样在修改器-生成中。用于给一个平面加厚度。偏移量为正，则向坐标系正数方向增加厚度。</li>
+<li>倒角：位置同上。加倒角。</li>
+<li>布尔修改器：位置同上。可以对物体做集合操作，包括并集、交集和差集。</li>
 </ul>
-<h3 id="本周的改变">本周的改变</h3>
+<p>在物体上打孔的操作如下：</p>
+<ol>
+<li>建立一个立方体；</li>
+<li>设置修改器-生成-布尔；</li>
+<li>建立一个柱体；</li>
+<li>在“运算对象物体”中选中柱体；</li>
+<li>选择“差值”；</li>
+<li>选中柱体，按 H 隐藏。</li>
+</ol>
+<p>几个修改器的效果如下：</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/task5.png" alt="task5"></p>
+<p>所以使用修改器来制作一个螺母的流程如下：</p>
+<ol>
+<li>新建一个圆环，设置细分为 6，变成一个六边形；</li>
+<li>F 填充，获得一个六边形的面；</li>
+<li>实体化，增加厚度；</li>
+<li>用一个圆柱做布尔运算，隐藏圆柱；</li>
+<li>用倒角修改器做倒角；</li>
+<li>应用修改器（在修改器窗口按 Ctrl+A）；</li>
+<li>渲染时注意在右侧上方大纲视图中禁用柱体的渲染。</li>
+</ol>
+<p>效果如下：</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/task4.png" alt="task4"></p>
+<h3 id="做个小蘑菇">做个小蘑菇</h3>
+<p>大致思路如下：</p>
+<ol>
+<li>
+<p>给正方体细分、切割、拖动、向内挤出等等，变成蘑菇伞；</p>
+</li>
+<li>
+<p>给柱体细分、切割、拖动、简易变形等等，变成蘑菇柄；</p>
+</li>
+<li>
+<p>将蘑菇伞和蘑菇柄组合，命名并设定层级；</p>
+</li>
+<li>
+<p>用小正方体做出斑点形状，使用吸附工具贴在蘑菇伞表面。</p>
+</li>
+</ol>
+<p>跟着教程一步步做就好。有几个地方需要注意：</p>
 <ul>
-<li>精力好了一些</li>
-<li>作息稳定了一点</li>
+<li>不要怕麻烦，记得给制作的物体命名；</li>
+<li>简易形变修改器：在修改器-形变中，有扭曲、弯曲、锥化、拉伸四种功能；</li>
+<li>在大纲视图可以新建集合，可以为物体设置不同层级  ，方便操作；</li>
+<li>设置集合层级时，先选择子级对象，再按住 Shift 选择父级对象，再按 Ctrl+P，在菜单中选择“物体”；</li>
+<li>吸附不在修改器中，在物体模式的主窗口上方，图标是一个磁铁。吸附工具窗口的内容和教程不一致，因为版本不同。</li>
 </ul>
-<h3 id="做得还不错">做得还不错</h3>
-<ul>
-<li>没怎么熬夜</li>
-<li>工作节奏比较稳定</li>
-</ul>
-<h3 id="做得不太好">做得不太好</h3>
-<ul>
-<li>没有运动</li>
-<li>花了不少时间玩手游</li>
-</ul>
-<h3 id="下周的目标">下周的目标</h3>
-<ul>
-<li>稳定作息</li>
-<li>每天的节奏稳定下来</li>
-</ul>
+<p>两个提醒：</p>
+<ol>
+<li>尽量不要在物体模式下缩放，尽量在编辑模式下缩放；</li>
+<li>假如在物体模式下做过缩放，要用 Ctrl+A 应用一下它。</li>
+</ol>
+<p>做出来的蘑菇模型如下：</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/task6.png" alt="task6"></p>
+<h3 id="制作树桩">制作树桩</h3>
+<p>基本操作是挤出、向内挤出、环切、修改器-表面细分、修改器-实体化，还有一些缩放、拖动。</p>
+<p>引入了一个新工具“衰减编辑”，位置在主窗口上方，“吸附工具”旁边。</p>
+<p>需要注意的点有两个：</p>
+<ol>
+<li>复制对象并且分离；</li>
+<li>实体化时注意方向。默认的方向是 -1.0，改成 1.0 比较好用。</li>
+</ol>
+<p>做出来效果如下。树杈和树桩上的苔藓有点奇怪，下次改进一下。</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/tree.png" alt="tree"></p>
+<h3 id="制作一朵花">制作一朵花</h3>
+<p>基本操作是环切、修改器-表面细分、修改器-实体化，以及缩放和拖动。</p>
+<p>引入了一个新工具“旋绕工具”，可以用来沿着特定方向旋转拉伸物体或者复制多个物体。</p>
+<p>除了“旋绕工具”的设置外，没有什么需要特别注意的。</p>
+<p>效果如下。</p>
+<p><img src="https://1-1256632535.cos.ap-beijing.myqcloud.com/img/flower.png" alt="flower"></p>
+<p>总结一下：</p>
+<ol>
+<li>坐久了要起来活动活动，要不然腰酸肩痛；</li>
+<li>压感笔还需要多练才能精确控制，特别是悬停和点击的点总是有偏差；</li>
+<li>观察能力和空间感太重要了。</li>
+</ol>
+<p>下一步：</p>
+<ol>
+<li>制作空心树干；</li>
+<li>制作龟背竹的叶子。</li>
+</ol>
 
     </div>
 
@@ -194,7 +275,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2024-01-06
+        2024-07-26
         
     </span>
   </p>
@@ -206,18 +287,14 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/%E5%9B%9E%E9%A1%BE/">回顾</a>
-          <a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a>
+          <a href="/tags/%E6%83%B3%E6%B3%95/">想法</a>
           <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+          <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/24w30-review/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">AI 和搜索引擎是两个极端 title 2024 Week 30 回顾</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/23w52-review/">
-            <span class="next-text nav-default">提示词工程的问题视角 2023 Week 52 回顾</span>
+        
+        <a class="next" href="/post/2024-07-25-thu/">
+            <span class="next-text nav-default">学点东西：Blender（二） 240725 Thu </span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

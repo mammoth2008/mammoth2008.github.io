@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Mon, 21 Aug 2023 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/categories/%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学点东西：Blender（三） 240726 Fri </title>
+      <link>https://yemengma.cn/post/2024-07-26-fri/</link>
+      <pubDate>Fri, 26 Jul 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/2024-07-26-fri/</guid>
+      <description>上一篇用建模工具做了个螺母，这次用修改器做一个。 用修改器做螺母 修改器不是直接操作物体，而是先呈现操作后的效果，直到应用修改器后才会产生真正的</description>
+    </item>
     <item>
       <title>日贴230821 Mon 把温故变成知新</title>
       <link>https://yemengma.cn/post/2023-08-21-mon/</link>

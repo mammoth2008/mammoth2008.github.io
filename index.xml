@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>LifePlayer</copyright>
-    <lastBuildDate>Thu, 25 Jul 2024 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2024 08:00:00 +0800</lastBuildDate>
     <atom:link href="https://yemengma.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学点东西：Blender（三） 240726 Fri </title>
+      <link>https://yemengma.cn/post/2024-07-26-fri/</link>
+      <pubDate>Fri, 26 Jul 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/2024-07-26-fri/</guid>
+      <description>上一篇用建模工具做了个螺母，这次用修改器做一个。 用修改器做螺母 修改器不是直接操作物体，而是先呈现操作后的效果，直到应用修改器后才会产生真正的</description>
+    </item>
     <item>
       <title>学点东西：Blender（二） 240725 Thu </title>
       <link>https://yemengma.cn/post/2024-07-25-thu/</link>
       <pubDate>Thu, 25 Jul 2024 08:00:00 +0800</pubDate>
       <guid>https://yemengma.cn/post/2024-07-25-thu/</guid>
-      <description>在 Blender 中有大量的快捷键可以帮助提升建模效率，但往往需要小数字键盘。 不过可以重新定义快捷键，来省掉小数字键盘。 打开设置-键位映射，可以看到大量的</description>
+      <description>在 Blender 中有大量的快捷键可以帮助提升建模效率，但有一些重要的视图功能需要小数字键盘。 可以重新定义快捷键，来省掉小数字键盘：打开设置-键位映射，可</description>
     </item>
     <item>
       <title>学点东西：Blender（一） 240724 Wed </title>
@@ -218,6 +225,13 @@
       <pubDate>Sat, 13 Jan 2024 08:00:00 +0800</pubDate>
       <guid>https://yemengma.cn/post/24w02-review/</guid>
       <description>莫名其妙生病了。还是和上次一样，先是嗓子疼痛了两天，然后才流鼻涕，之后咳嗽、有脓痰。 和之前的流程不一样，和去年 10 月初生病的状态相仿。 昨天尝试</description>
+    </item>
+    <item>
+      <title>AI 和搜索引擎是两个极端 title 2024 Week 30 回顾</title>
+      <link>https://yemengma.cn/post/24w30-review/</link>
+      <pubDate>Sat, 06 Jan 2024 08:00:00 +0800</pubDate>
+      <guid>https://yemengma.cn/post/24w30-review/</guid>
+      <description>以下是一个草稿，先放在这里，以后再扩充修改。 最近我在玩《绝区零》。我扮演一位录像带出租店的店主，有时候会为顾客推荐电影。 基本上扮演一个搜索引</description>
     </item>
     <item>
       <title>改善节奏 2024 Week 01 回顾</title>
