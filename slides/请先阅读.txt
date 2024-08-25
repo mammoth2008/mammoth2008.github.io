@@ -1,0 +1,31 @@
+1. 打开名为「3itpm」的文件夹。
+1. Open the folder titled "3itpm".
+1. 「3itpm」と名付けられたフォルダを開いてください。
+
+2. 使用最新版本的 Chrome、Firefox 或 Edge 浏览器打开文件「itpm-0.html」。
+2. Open the file "itpm-0.html" using the latest version of Chrome, Firefox, or Edge.
+2. Chrome、Firefox、Edgeの最新バージョンを使用して、「itpm-0.html」ファイルを開いてください。
+
+### 使用说明 Instructions for Use 使用説明
+
+- **翻页操作**：请使用空格键或键盘的方向键来翻页。
+- **Navigating Pages**: Use the space bar or the arrow keys on your keyboard to navigate through pages.
+- **ページ送り**：スペースキーや方向キーでページをめくることができます。
+
+- **超级链接**：文本中颜色与普通文本不同的部分为超级链接，点击可以直接跳转到相关页面或资源。
+- **Hyperlinks**: Text in a different color from the usual indicates hyperlinks, which you can click to be redirected to related pages or resources.
+- **ハイパーリンク**：テキスト内の色が通常と異なる部分はハイパーリンクです。クリックすると、関連するページやリソースに直接移動します。
+
+### 关于本课件 About This Slides この教材について
+
+- **平台兼容性**：本课件采用网站格式而非传统的 PowerPoint，支持所有 2021 年之后发布的浏览器（如 Chrome 88+、Firefox 85+、Edge 88+），确保在各种设备上都能顺畅访问，包括电脑和手机。
+- **Compatibility with Platforms**: Unlike traditional PowerPoint, this slides is created as a website. It supports all modern browsers (like Chrome 88+, Firefox 85+, Edge 88+) launched after 2021, ensuring seamless access on various devices, including PCs and smartphones.
+- **多様なプラットフォーム対応**：この教材は従来の PowerPoint とは異なり、ウェブサイト形式を採用しており、2021年以降にリリースされたブラウザ（Chrome 88+、Firefox 85+、Edge 88+など）に完全対応しています。パソコンやスマートフォンなど、様々なデバイスで快適に利用できます。
+
+- **随时访问**：所有内容托管在 github.com 上，便于所有学生随时通过互联网访问。
+- **Always Accessible**: The content is available on github.com, enabling students to access it anytime online.
+- **アクセスの容易さ**：教材の全てが github.com にホストされており、インターネットを通じていつでもどこからでもアクセス可能です。
+
+- **易于更新**：课件设计便于快速修改和调整。每当内容更新后，学生可以实时接收到最新信息。
+- **Updates Made Simple**: The courseware is designed for ease of updates and adjustments, allowing students to immediately receive the latest information whenever there are updates.
+- **更新の容易さ**：教材は迅速な更新と調整が可能な設計で、内容の更新があるたびに学生は即座に最新情報を得ることができます。
